@@ -1,0 +1,523 @@
+
+[foundations:C01] (confirmed)
+STATEMENT: Uniform play (1/3 Rock, 1/3 Paper, 1/3 Scissors, independent of anything the opponent can observe) is the unique Nash/minimax strategy of RPS. It guarantees an expected net of 0 per throw against any opponent, and it also earns exactly 0 against any opponent, however predictable (Shoham & Leyton-Brown 2009, Sec. 3.4.1 and Thm 3.4.4; Batzilis et al. 2019, Prop. 1). In Billings's 1999 RoShamBo competition (45 programs plus 10 dummy bots, 1,000-turn matches), the random entry drew every match and finished 27th overall. It was entered as 'Meta-Meta-Random', i.e. Random (Optimal), and placed 32nd on Open points and 19th in Best-of-the-Best. In Lanctot et al.'s re-evaluation of 43 released bots (TMLR 2023), randbot averaged +0.234 per 1,000 throws and had the lowest within-population exploitability (1.197 per 1,000).
+EFFECT: - Expected net is 0 per throw against any opponent (win, draw and loss each 1/3 by construction).
+- The random bot scored +0.00023 per throw (≈0) against the population, and its exploitability was 0.0012 per throw (≈0).
+- It finished 27th of 55 in 19
+IMPLICATION: Random play is the safe floor and the only option that cannot be exploited. Use it against strong or unknown opponents, and whenever you suspect you are being read.
+
+It cannot create an edge: it wins about 50% of matches. Any plan that aims to win must therefore deviate from it and accept some exploitability.
+CAVEATS: - The guarantee holds in expectation only; best-of-3 or best-of-5 matches are high-variance.
+- It requires true independence from history (e.g., an external random device), which unaided humans do not reliably produce (C08–C13).
+- The tournament evidence comes from programs, not people.
+RELIABILITY: - The minimax theorem is a textbook proof and is definitive.
+- The organizer's archived 1999 reports are primary but not peer reviewed.
+- Lanctot et al. was accepted at TMLR (peer reviewed).
+- All the
+
+[foundations:C02] (corrected)
+STATEMENT: **Bot evidence** (Lanctot et al., TMLR 2023; 43 released RoShamBo bots; 1,000-throw episodes; return and within-population exploitability per 1,000 throws):
+
+| Bot | Return | Exploitability |
+|---|---|---|
+| greenberg (2000 winner) | +288 | 3.6 |
+| Iocaine Powder (1999 winner; won all 25 Open tournaments) | +255 | 5.0 |
+| phasenbott | +232 | 112 |
+| halbot | +212 | 176 |
+| russrocker4 | +172 | 530 |
+
+The top programs combined exploitation with near-unexploitability.
+
+**Poker result that does not transfer.** Johanson et al. (NIPS 2007) found best responses brittle and restricted-Nash-response frontiers 'highly concave'. That was in limit Texas Hold'em, and it does not carry over to simple frequency exploitation in RPS.
+
+**RPS arithmetic.** Against a 36/32/32 Rock-leaning opponent:
+- The sweep's leans (pure Paper, 50/25/25, 40/30/30) gain +4.0, +1.0 and +0.4 pp, with worst cases of −100, −25 and −10 pp. That is a constant 0.04 ratio, i.e. a linear trade-off, not a concave one.
+- The efficient lean keeps Rock at 1/3 and moves weight from Scissors to Paper. This gives 0.08 pp of gain per pp of exploitability, up to Rock 33% / Paper 67% / Scissors 0% (+2.67 pp at a −33 pp worst case).
+- Example: Rock 33% / Paper 58% / Scissors 8% gives +2.0 pp at −25 pp.
+
+Safe-exploitation evidence specific to RPS comes from McCracken & Bowling (2004).
+EFFECT: Per throw, compared with the uniform-random benchmark of 0:
+
+- greenberg: +0.288, exploitable by 0.0036.
+- Iocaine Powder: +0.255, exploitable by 0.005.
+- RussRocker4: +0.172, but exploitable by 0.530.
+- halbot: +0.212, exploitable by 0.176.
+- phasen
+IMPLICATION: Treat exploitation as a dial, not a switch: lean toward the counter of a suspected bias only partly, and keep randomness in your play.
+
+My own worked example (my arithmetic) against a 36/32/32 Rock-leaning opponent:
+
+| Your mix | Gain vs that opponent | Worst case if they counter you |
+|---|---|---|
+| Pure Paper | +4.0 pp/throw | −100 pp/throw (the
+CAVEATS: - The evidence comes from bots and poker programs, not humans.
+- Exploitability measured within the bot population understates the true worst case (S06: on average it reached 75.2% of the exploitability that trained RL agents could achieve).
+- Human opponents rarely compute best responses (C16), so 
+RELIABILITY: - Lanctot et al. is peer-reviewed (TMLR 2023), but covers bots only.
+- Johanson et al. is a peer-reviewed NIPS paper, but about poker.
+- The RPS frontier is exact arithmetic for a known opponent mix.
+
+[foundations:C03] (corrected)
+STATEMENT: **Iocaine Powder** (Egnor, 1999 winner) expands any predictor P into several strategies:
+- **P.0** beats the prediction (P says Rock → throw Paper).
+- **P.1** beats the opponent's counter to P.0 (→ Rock).
+- **P.2** goes one level higher (→ Scissors).
+- **P.3** equals P.0, so for a single anchor the reasoning ladder cycles with period 3.
+
+Iocaine adds mirror variants P'.0–P'.2 (assuming the opponent applies P to you) and a random predictor. It plays whichever variant has the best running score, with a meta-meta layer choosing the scoring horizon (1 to 1,000 moves). It won all 25 Open tournaments and all six sets of 25 Best-of-the-Best tournaments.
+
+**Batzilis et al.'s levels have a 6-level cycle, not the same 3-level one.** Their odd levels are anchored on the opponent's displayed history and their even levels on one's own history. So k(j+6)=k(j), and the authors explicitly say k(j) is not equivalent to k(j+3).
+EFFECT: Qualitative. Iocaine Powder won all 25 Open tournaments and finished first in all six sets of 25 'Best of the Best' tournaments (S03).
+IMPLICATION: No depth of reasoning is safe: each depth is beaten by the next one up. Choosing a depth amounts to choosing a hand relative to a focal guess, and mixing evenly over depths amounts to random play.
+
+The practical question is how deep this particular opponent goes (usually level 0–1; see C04–C05). Play one step deeper, and change approach based on ru
+CAVEATS: This describes an algorithm, not human cognition. A person cannot keep running scores for six or more strategies without help; a teammate with a notepad could.
+RELIABILITY: - The winner's own description of his algorithm, plus the organizer's report.
+- Batzilis et al. is a peer-reviewed journal article.
+- This is algorithm design, not evidence about how humans reason.
+
+[foundations:C04] (confirmed)
+STATEMENT: **Data:** Roshambull (Facebook app): 2,636,417 best-of-3 matches, 23 May – 14 Aug 2007, no money, opponents' histories displayed. The level-k estimates cover 6,639 players with ≥100 clean matches and well-defined strategies, a subset of the 7,758 'experienced' players.
+
+**Level-k shares (first throws, average across players):**
+- k0 (play unaffected by any history) 73.8% of throws.
+- k1 (best response to the opponent's displayed first-throw history) 18.5%.
+- k2 7.7%.
+- 93% of players use k0 at some point, 63% use k1, and only about 12% show significant k2.
+
+**Model comparison:** a naive level-k model, where k1 means beating the opponent's most frequent past throw, was the likeliest of three models:
+- for 48.6% of 5,405 players (the text says 50%), and for 85% of the 1,349 players with a decisive model;
+- within that model, k0 still accounts for 72.2% of throws and naive k1 for 21.1%.
+
+**Depth and payoff:** average depth is 0.339 levels, against about 1.5 in Camerer et al. Always playing k2 would have won 42.68% and lost 27.74% of throws (+14.9 pp), but it requires tracking your own history, which the app did not show.
+EFFECT: - Compared with the 1/3 baseline for any one hand: level-1 throws are about 12 pp more likely to be the level-1-consistent hand (S01, p.13: 'a throw being k1-consistent means it is 12 percentage points more likely to be played').
+- Always playing lev
+IMPLICATION: Most opponents, even experienced ones, mostly throw without modelling you. When they do model you, it is one step and naive ('beat their favourite').
+
+Against this population, level-2 play is profitable: throw the hand that beats the hand that beats the opponent's estimate of your favourite. Going deeper is rarely needed.
+CAVEATS: - The setting differed from live play: opponent histories were displayed, own history was not, there was no money, and it was the 2007 Facebook population.
+- Levels are defined relative to displayed history, not salience.
+- Level-0 play may include genuine Nash randomizers.
+- The estimates come from
+RELIABILITY: - Peer-reviewed (Games 2019), very large N and within-player estimation.
+- Self-selected online users, no stakes, with an information display unlike live play.
+
+[foundations:C05] (confirmed)
+STATEMENT: **Strategic depth in lab games (none of them RPS) is shallow:**
+- **Nagel (1995):** in the p=1/2 and p=2/3 sessions, almost 50% of first-period choices are near reasoning step 1 or 2; in all sessions only 6–10% are at step 3 or higher.
+- **Camerer–Ho–Chong (2004):** a Poisson mean of about 1.5 steps fits many games. Across 60 game-level estimates the median is 1.55 (IQR 0.98–2.21). τ=1.5 implies about 22/34/25/13/7% at L0/L1/L2/L3/L4+. In mixed-strategy games, CH improves 'only a little' on equilibrium.
+- **Crawford et al. (2013):** most weight on L1, L2 and perhaps L3. Of 88 guessing-game subjects, 43 complied exactly with one type: 20 L1, 12 L2, 3 L3, 8 Equilibrium.
+- **Rubinstein–Tversky hide-and-seek:** central A was chosen by 37% of hiders and 46% of seekers, against 25% under uniform play.
+- **Time pressure:** shifted play toward nonstrategic rules, especially Level-1 (Spiliopoulos et al. 2018, 29 games). In the 11–20 game it moved play closer to equilibrium (Lindner & Sutter 2013).
+EFFECT: - **Nagel:** about 50% of choices at step 1 or 2; 6–10% at step 3 or higher.
+- **CHC:** τ median 1.55. The implied shares (my calculation for τ = 1.5) are 22.3%, 33.5%, 25.1% and 12.6% for L0–L3, and 6.6% for L4+.
+- **Hide-and-seek:** central A at +1
+IMPLICATION: Expect opponents at levels 0–2, most often level 1. Under tight tournament timing, expect even shallower reasoning, which makes 'one step above naive' (level-2) choices attractive.
+
+In mixed-strategy games these models add only a little beyond random play, so keep any bet on reading levels modest.
+CAVEATS: - None of these games is RPS, and τ has not been estimated for RPS.
+- The derived Poisson shares are model outputs.
+- The time-pressure evidence is mixed.
+- The hide-and-seek figures come via the review, not the original paper.
+RELIABILITY: - All peer-reviewed lab studies or reviews; none involves RPS.
+- The Crawford et al. text is the 2012 working paper; the published version is JEL 51(1):5–62.
+
+[foundations:C06] (confirmed)
+STATEMENT: **Roshambull first throws** (Batzilis et al. 2019, Table 1), with EV = P(hand you beat) − P(hand that beats you):
+- Full sample (N=5,012,128): Rock 33.99%, Paper 34.82%, Scissors 31.20%. EVs: Paper +2.79 pp, Scissors +0.83 pp, Rock −3.62 pp.
+- Experienced players (N=1,472,319): Rock 32.60%, Paper 34.56%, Scissors 32.84%. EVs: Scissors +1.96 pp, Paper −0.24 pp, Rock −1.72 pp.
+
+**Lab RPS, all rounds:**
+- Wang–Xu–Zhou 2014: R .36 / P .33 / S .32 (354 players, human vs human).
+- Dyson et al. 2016: 35.60 / 32.24 / 32.16%, not significant.
+- Wang et al. 2020: 35.5 / 32.1 / 32.4% of 300 throws, against an exploiting AI.
+- In these samples Paper is worth +3.2 to +4.0 pp.
+
+**Match odds** if the edge held on every throw: best-of-3 win chances of 53.2% (Paper vs the full first-throw mix), 52.2% (Scissors vs the experienced mix) and 54.4% (Paper vs a 36/32/32 mix).
+EFFECT: Deviation from the 1/3 baseline:
+
+- Roshambull first throws: Rock +0.66 pp, Paper +1.49 pp, Scissors −2.13 pp.
+- Experienced players: Rock −0.73 pp, Paper +1.23 pp, Scissors −0.49 pp.
+- Lab Rock share: +2.2 to +2.7 pp.
+
+If the same per-throw edge hel
+IMPLICATION: **Opening throw:**
+
+- Against unknown or naive players, Paper. This is the level-1 answer to a Rock-leaning level-0.
+- Against players who know Rock is common and will open with Paper, Scissors (level 2).
+
+The edges are at most about 5 pp per throw, so do not over-commit. Randomize between these when you cannot tell the opponent's type.
+CAVEATS: - The effects are small, and the Rock bias in Dyson et al. is not significant.
+- The populations differ: Chinese students, Canadian/UK students, and Facebook users in 2007.
+- These are mostly all-throw rates. Only S01 isolates first throws, and S01 showed opponent histories.
+- Korean 가위바위보 habits ar
+RELIABILITY: - The sources are peer reviewed.
+- The effects are tiny compared with between-player SDs (±0.06–0.08 in Wang–Xu–Zhou).
+- The populations differ, and only S01 isolates first throws (in a history-displa
+
+[foundations:C07] (corrected)
+STATEMENT: This is an anecdote (n=1), per the original NYT report (Vogel, 29 Apr 2005).
+- **Setup:** Maspro Denkoh's president asked Christie's and Sotheby's to settle by RPS which house would sell the company's collection. The collection was worth more than $20M, and its Cézanne was expected to fetch more than $12M. Each side wrote one word (rock, paper or scissors) on a form; hands were not used.
+- **Christie's** followed an employee's 11-year-old twins and wrote Scissors. Their stated reasons were 'Everybody knows you always start with scissors ... Rock is way too obvious, and scissors beats paper', plus 'Everybody expects you to choose rock' as the reason to stay on scissors after a tie.
+- **Sotheby's** wrote Paper and said 'this is a game of chance, so we didn't really give it that much thought. We had no strategy in mind.'
+- **Result:** Christie's won.
+
+The twins reasoned one step beyond an 'obvious Rock' focal point. However, Sotheby's Paper was by its own account not a reasoned anti-Rock (level-1) choice, so this is not level-2 beating level-1, and it says nothing about frequencies.
+EFFECT: Not applicable (one event).
+IMPLICATION: This is only an illustration of the idea in C06: against an opponent who reasons 'avoid the obvious Rock, so throw Paper', Scissors wins. It is not evidence about frequencies.
+CAVEATS: - The quotes differ between secondary sources.
+- The value at stake differs too: $12M Cézanne in S01, $16M in S38, and a collection worth more than $20M in a search snippet.
+- One event cannot establish a strategy.
+RELIABILITY: - Primary newspaper report.
+- One event; no inferential value.
+
+[foundations:C08] (confirmed)
+STATEMENT: Unaided 'random' human sequences are reliably non-random, but the direction of the bias depends on the task:
+- **Wagenaar (1972):** in a review of 15 experiments, almost all found systematic deviations, and most found negative recency (too many alternations).
+- **Towse (1998):** a strong tendency to suppress immediate repetitions, decaying over intervening responses.
+- **Billings's 'Flat' bot:** built on the 'common weakness' of too-even frequencies; theoretical exploitability 420 per 1,000.
+- **Too few alternations in binary key-pressing:** Neuringer (1986) baseline; Guseva et al. (2023) mean run lengths 3.04–3.81 under random, free and perceptual-guessing instructions, against 2.00 for a pseudorandom generator.
+- **Nickerson (2002):** the view that people cannot be random 'lack[s] the strong experimental support' claimed.
+- **Komai et al. (2022):** RPS series from 500 people (50 games each vs a GA/GP algorithm) differed clearly from Mersenne Twister series in complexity and determinism.
+EFFECT: - Run length: humans 3.0–3.8 against 2.00 for a computer generator (binary task).
+- Flat bot: exploitable for 0.42 per throw.
+- Wagenaar: most of the 15 experiments found over-alternation.
+IMPLICATION: Do not trust a feeling of being random. The common human patterns — avoiding repeats, keeping counts too even, or getting stuck on one hand — can each be exploited. Use an external device instead of intuition.
+CAVEATS: - The direction (too many vs too few switches) depends on the task and response mode.
+- Most studies are binary, not three-option, and have no opponent.
+- Wagenaar notes the older methods are hard to compare.
+RELIABILITY: - Peer-reviewed reviews and experiments.
+- Mostly binary tasks with no opponent; Komai is RPS against an algorithm.
+
+[foundations:C09] (corrected)
+STATEMENT: **Tennis servers equalize win rates but switch serve direction too often.**
+- Walker & Wooders (2001), 10 Wimbledon-level matches, 40 point games: minimax rejected in 1 of 40; serial independence rejected in 5 of 40 (2 expected; 3 for too many runs); joint KS K=1.948, p=0.001.
+- In O'Neill's lab data, 15 of 50 subjects were rejected (13 for too many runs).
+- Gauriot, Page & Wooders (2016 working paper; published in Quantitative Economics 2023 under a new title), about 465k Hawk-Eye serves: serial independence rejected for men and women, on first and second serves. Excess switching is stronger for women, and weaker for higher-ranked men. For men's first serves, 7.0% of point games were rejected for too many runs and 2.9% for too few.
+
+**Penalty kicks show no detectable serial dependence.** Palacios-Huerta (2003): 'players' choices are serially independent'. Chiappori et al. (2002), 459 kicks: equal scoring rates not rejected, and the previous kick never predicts the next one. Kicks are days or weeks apart.
+
+**Lab transfer:** professionals did not play minimax in lab games (Levitt, List & Reiley 2010).
+
+**Not established for RPS:** binary-serve over-switching does not show that RPS players repeat less than 1/3. In Wang–Xu–Zhou (2014), RPS players repeated their last hand more often than they shifted in either direction.
+EFFECT: - **Tennis:** serial-independence rejections at 12.5% of point games against 5% expected. Hawk-Eye first serves: 7.0% of point games rejected for too many runs and 2.9% for too few.
+- **O'Neill:** 30% of subjects rejected against 5% expected.
+IMPLICATION: Over-alternation survives expertise and high stakes. In RPS it shows up as repeating your previous hand less than 1/3 of the time, which an alert opponent can punish (C10).
+
+Skill at randomizing in one setting does not transfer to another, so practise in the actual RPS format.
+CAVEATS: - These are binary choices (serve direction), not RPS.
+- The per-point effects are small.
+- I read only the abstract of Palacios-Huerta.
+- Levitt, List & Reiley contradicts Palacios-Huerta & Volij (2008), whose abstract I read only in paraphrase.
+RELIABILITY: - Peer-reviewed field studies with high stakes.
+- The tennis serve is a binary choice; the RPS mapping is an inference.
+
+[foundations:C10] (corrected)
+STATEMENT: **The rule.** Suppose the opponent repeats their previous hand with probability r and splits the rest equally. If r < 1/3, throw the hand their previous hand beats (they threw Rock → you throw Scissors): EV = (1−3r)/2. If r > 1/3, throw the hand that beats their previous hand: EV = (3r−1)/2. This follows from Billings's EV[x] = Pr[x+2] − Pr[x+1].
+
+**Values:**
+
+| r | EV per throw |
+|---|---|
+| 0 | +0.50 |
+| 0.12 | +0.32 |
+| 0.20 | +0.20 |
+| 0.25 | +0.125 |
+| 0.30 | +0.05 |
+
+At r=0.12 the counter wins 44%, ties 44% and loses 12% of throws, which is about 79% wins and 21% losses among decisive throws (not 66/34).
+
+**Bot checks:**
+- Billings's 'Always Switchin'' (r=0): the simple counter nets +500 per 1,000.
+- 'Switch A Lot' (r=0.12): theoretical exploitability 320 per 1,000.
+- Lanctot et al.: switchbot −173 return / 497 exploitability; switchalot −83 / 316.
+
+Whether a given human over- or under-repeats must be measured. In the largest human-vs-human RPS lab study, players repeated more often than they shifted.
+EFFECT: - Against the 1/3 baseline for repeating: each 0.01 drop in r below 1/3 adds 0.015 per throw to the counter-strategy's EV.
+- r = 0.12 corresponds to 0.32 per throw. That is roughly 66% wins vs 34% losses among non-tied throws (my calculation).
+IMPLICATION: Track how often each opponent repeats their last hand.
+
+- **Below about 25% (typical over-switcher):** throw the hand their last throw beats.
+- **Above about 40%:** throw the hand that beats their last throw.
+- **Yourself:** a true random device repeats 1/3 of the time. Do not 'correct' it.
+CAVEATS: - Human repeat rates in RPS depend on the setting and the previous outcome (C15), and are not established for tournament play.
+- In short matches the estimate is noisy. With 9 transitions the standard error of r is about 0.16; with 20 it is about 0.10 (my calculation).
+- The arithmetic assumes the t
+RELIABILITY: - Exact arithmetic, checked against bots with known repeat rates.
+- Human repeat rates in tournaments are unknown.
+
+[foundations:C11] (corrected)
+STATEMENT: **Wong, Merholz & Maoz (2021).** UCLA undergraduates for course credit. Each part had 200 trials with a 500-ms response deadline. Against a computer that exploited patterns in choice history and in win/lose/tie sequences (Unaware n=51, Aware n=48; a further 42 Control participants faced a cyclic bot):
+- In-game Lempel–Ziv complexity was, on average, statistically indistinguishable from Python's PRNG and higher than in pre-game generation.
+- The gain did not transfer to post-game generation.
+- In-game runs were longer than pre-game runs.
+- Telling players explicitly to be random did not help.
+- Players still lost: final scores were 75.8 and 78.8 from a start of 100, about −0.12 and −0.11 net per throw. Only 3 of 51 and 4 of 48 beat the computer.
+- The paper does not show which patterns the computer exploited. The claim that 'the leaks are outcome-tied patterns, not frequencies' is therefore unsupported.
+
+**Contrast:** Komai et al. (2022; 500 open-day visitors; 50 games against a GA/GP algorithm) found human RPS series clearly less complex than Mersenne Twister series.
+
+**Morra:** expert players were more random than novices only inside Morra games, not in a standard random-number task (Delogu et al. 2020, N=18).
+
+**Matching pennies:** better randomization in competitive play than in plain generation is reported only second-hand (Rapoport & Budescu 1992).
+EFFECT: - **Game vs pattern-detector:** about 10–12 pp net loss per throw.
+- **Share who beat the computer:** 6–8%, against about 50% expected if they were truly random.
+- **Complexity:** in the game, inside the 95% range of the computer generator.
+IMPLICATION: The pressure of a real game helps, but a typical person still loses about 10–12% of throws net to an algorithm. The leaks are patterns tied to outcomes (what you do after a win, loss or draw), not overall frequencies.
+
+Randomness can become a practised habit, but only within the specific game: practise the actual 가위바위보 format against a pattern-dete
+CAVEATS: - Students for course credit, not motivated competitors.
+- Delogu et al. had N=18.
+- I could not read the Rapoport & Budescu abstracts; their results are reported here second-hand.
+- Guseva et al. date the paper 1992 but list the authors in the 1994 order.
+RELIABILITY: - Peer-reviewed (Scientific Reports).
+- Course-credit students under a speeded response deadline.
+- The equivalence is a group-mean permutation test.
+
+[foundations:C12] (confirmed)
+STATEMENT: **Neuringer (1986), Experiment 1:** 7 Reed College undergraduates; binary key presses; $2.50/h plus a $15 bonus.
+- All 7 were significantly non-random at baseline (60 trials × 100 = 6,000 responses each).
+- With feedback on 5 statistics, all 7 became statistically indistinguishable from the random generator over their last 60 trials, after 166–483 trials of 100 responses, i.e. less than an average of 6 hours.
+- Without feedback, only 2 of 7 stayed random. Failed tests fell from about 4 at baseline to about 1.
+
+**Experiment 2:** 4 high-school students; 10 statistics; about 35 hours of practice. Concatenated output still failed chi-square and autocorrelation tests at lags 4–5.
+EFFECT: - All participants moved from significant deviation to non-significant deviation on the tests they were trained on.
+- Without feedback, only 29% (2 of 7) retained it.
+IMPLICATION: Learning to be random by feel is possible but impractical before a tournament, and it decays without feedback. An external randomizer is the cheaper route. If you do train, use an app that scores you on repeats, alternations and patterns tied to outcomes.
+CAVEATS: - Very small N; binary choices with no opponent.
+- Higher-order patterns persisted.
+- Unclear whether this generalizes to three options under time pressure.
+RELIABILITY: - Peer-reviewed, but with very small N.
+- Binary choices with no opponent.
+
+[foundations:C13] (confirmed)
+STATEMENT: Guseva et al. (2023): preregistered online study, n=388 Prolific participants, 1,000 binary choices each, €7/h with no performance pay.
+- **Conditional entropy** (order 3, maximum 1 bit), median: 'as irregular/chaotic as possible' 0.94; 'mental coin toss' 0.92; 'random' 0.84; perceptual guessing 0.83; 'free choice' 0.75.
+- **Effect size:** Kruskal–Wallis η²=0.20 (d≈0.99).
+- **Run length:** the mental-coin condition came closest to the pseudorandom generator (1.88 vs 2.00).
+EFFECT: - Conditional entropy: about +0.10 to +0.19 bits over 'random' or 'free' instructions.
+- Kruskal–Wallis η² = 0.20 (reported as Cohen's d ≈ 0.99).
+IMPLICATION: If you cannot use a device, frame each throw as 'as irregular as possible so an observer can't find a pattern', or as rolling an imaginary three-sided die. Avoid 'just pick freely', which was the least random condition.
+CAVEATS: - Binary, non-competitive and online.
+- Not tested in RPS or in face-to-face play.
+- How hard this is to exploit for a pattern-detecting opponent is unknown.
+RELIABILITY: - Peer-reviewed, preregistered, large N.
+- Binary choices, no opponent, no incentives.
+
+[foundations:C14] (confirmed)
+STATEMENT: - **Baddeley et al. (1998):** faster generation increased redundancy for both spoken digits and key presses, via 'a limited number of stereotyped response sets'. Concurrent recall, category fluency and digit-generation tasks reduced randomness.
+- **Towse (1998):** spoken generation was strongly affected by response speed, unlike key-pressing.
+- **Wagenaar (1972):** speed effects conflict (Teraoka vs Warren & Morin).
+- **Duffy et al. (2024):** repeated hide-and-seek against a computer showed serial correlation but no strong link to cognitive load. There was some evidence that high-load subjects earned more.
+EFFECT: Direction only; the abstracts give no effect sizes.
+IMPLICATION: Under fast pacing or nerves, unaided choices drift toward habits. Taking randomness out of your head entirely — a pre-generated sequence or a device you glance at — removes the dependence on concentration.
+
+Also expect opponents under time pressure to reason more shallowly (C05).
+CAVEATS: - Mostly non-competitive generation tasks.
+- The competitive-game evidence (S27) is null rather than positive.
+- I read only abstracts for S20, S21 and S27.
+RELIABILITY: - Peer-reviewed; abstracts only for S20, S21 and S27.
+- Mostly non-competitive tasks.
+
+[foundations:C15] (confirmed)
+STATEMENT: - **Dyson et al. (2016):** 31 students, 225 throws against a computer playing each hand 25 times per 75-trial block in random order. Participants switched more after losses and draws. After losses, switches were numerically more often 'downgrades' (Rock→Scissors); after draws, significantly more 'upgrades' (Rock→Paper). Each type tended to continue on the next throw. Win-stay was only numerical.
+- **Wang–Xu–Zhou (2014):** 360 paid students. After a win, W0 (repeat) is 'considerably higher' than either shift. For win payoff a≥2, a loss is most often followed by a clockwise shift (R→S, S→P, P→R).
+- **Zhou (2016):** W0 > T0 > L0.
+- **Kikumoto & Mayr (2019):** 5 experiments, matching-pennies variant, N=56/40/44/100/38/25. Choices were model-based after wins and more stochastic after losses.
+EFFECT: - Direction only: the probabilities appear in figures that I could not read.
+- Dyson et al.'s 'downgrade after loss' effect is described as numerical in their Results.
+IMPLICATION: The S31/S32 tendencies imply the following (my mapping):
+
+- **Opponent just lost with hand X:** they will probably switch to the hand X beats (Rock → Scissors). Throw X again (Rock beats Scissors).
+- **Opponent just won with X:** they will probably repeat X. Throw the hand that beats X.
+- **Yourself:** a loss is when you are most predictable. Hand 
+CAVEATS: - Small effects; the evidence comes from labs in Canada/UK and China.
+- Kikumoto & Mayr's 'more random after losses' partly contradicts the switch pattern in Dyson et al.; they measure different things.
+- This angle only touches outcome-conditioned patterns; other angles cover them in depth.
+RELIABILITY: - Peer-reviewed lab studies.
+- Effect sizes appear only in figures.
+
+[foundations:C16] (confirmed)
+STATEMENT: **Roshambull** (Batzilis et al. Table 5, first throws):
+- Experienced players won 34.66%, drew 32.17% and lost 33.17% (+1.49 pp).
+- A best response to the predictable part of play would have won 41.66% and lost 27.37% (+14.29 pp).
+- Opponents did not exploit this predictability.
+
+**Multi-Markov AI** (Wang et al. 2020): beat more than 95% of 52 paid Zhejiang students over 300 throws. The Multi-10AI net margins against 11 players were +8 to +73 (mean +35.6, i.e. +0.119 per throw).
+
+**Human pairs** (Brockbank & Vul 2021; 58 dyads × 300 rounds): win differentials exceeded chance. They were predicted by stay/up/down transition biases (β=0.19, p=0.027) and by responses to the opponent's previous move (β=0.45, p=0.015).
+
+**Match odds** if the edge held on every throw: +1.49 pp gives 51.6–51.7% best-of-3 and 52.1% best-of-5; +14.29 pp gives 65.3% and 68.9%.
+EFFECT: Net per throw:
+
+- Experienced humans: +0.015.
+- Ideal best response: +0.143.
+- AI vs human: about +0.12.
+
+If the same per-throw edge held on every throw (my calculation), the chance of winning a match would be:
+
+- At +1.49 pp: 51.7% best-of-3, 52.1% 
+IMPLICATION: In a team event, modelling is a team job. Have one teammate record each opponent's throws, stay/up/down transitions, and reactions to the previous throw, and brief the next player.
+
+Expect gains in the low single digits of percentage points unless an opponent has a strong habit.
+CAVEATS: - The match probabilities assume the same edge on every throw.
+- The AI result is against students over 300 throws, far longer than tournament matches.
+- S01 covers first throws with visible histories only.
+RELIABILITY: - Peer-reviewed.
+- The AI result is over 300-throw sessions, much longer than tournament matches.
+
+[foundations:C17] (confirmed)
+STATEMENT: - **Okano (2013, GEB 77(1):168–180):** two-person teams playing O'Neill's 4×4 game against teams chose frequencies consistent with equilibrium, while individuals played far from it. Teams were less heterogeneous in hide-and-seek. Teams beat individuals at above the equilibrium rate in one treatment but not the other.
+- **Kugler, Kausel & Kocher (2012, WIREs Cogn Sci 3(4):471–482):** group decisions are closer to game-theoretic rationality.
+- **Towse et al. (2016, PLOS ONE):** when pairs take turns building one random sequence, repetition avoidance persists and 'sequence stereotypy' spreads immediately between partners. Directing effort away from the shared task can help. Abstract-level evidence only.
+EFFECT: Not reported in the abstracts.
+IMPLICATION: For 단체전:
+
+- Decide the team's throwing plan together, and use a team-level random protocol (e.g., a shared die-roll list per member) rather than individual hunches.
+- When members play in sequence, do not let one member's habits (such as avoiding repeats) spread to the others.
+- Deliberating as a team appears to help in mixing games.
+CAVEATS: - Not RPS.
+- The team effect may come from deliberation, which may not be allowed in live play.
+- I read only abstracts.
+RELIABILITY: - Peer-reviewed; abstracts only (the Okano working paper was unreachable).
+- Not RPS.
+
+[foundations:C18] (corrected)
+STATEMENT: **Players react to an opponent's displayed first-throw history** (Batzilis et al. 2019):
+- Opponents with a 42–100% Rock history drew Paper 46.58%, Rock 30.35% and Scissors 23.06%.
+- Opponents with a 0–25% Rock history drew Paper 27.07% and Scissors 37.09%.
+- A one-SD (0.176) rise in the opponent's historical Scissors share raised Rock by 4.2 pp for inexperienced players and by 9.4 pp for experienced players after their first 100 games.
+- 47% of experienced players responded significantly.
+
+**The 'eight times' figure is not supported by the authors' own tables.** The text says players react about 8× more to 'what I can beat' than to 'what beats me'. The regression coefficients imply:
+- 4.4–7.0× for the pooled sample, across hands;
+- only about 2.5× for experienced players.
+So experienced players do weigh the risk of losing.
+EFFECT: Paper rises from 27.07% to 46.58% (−6.3 pp to +13.2 pp relative to 1/3) as the opponent's historical Rock share rises.
+IMPLICATION: If opponents can watch your earlier rounds (spectating teammates or opponents in a team event), expect them to throw the hand that beats your most-shown hand. Counter one level up: if your visible history leans Rock, they will lean Paper, so throw Scissors.
+
+Keep track of what each opponent has seen of you, and scout opponents' visible tendencies i
+CAVEATS: - In the app, history was shown on screen. Live opponents must remember it, which weakens the effect.
+- First throws only.
+- Low stakes.
+RELIABILITY: - Peer-reviewed, very large N, but the setting is an on-screen history display with low stakes.
+
+[foundations:C19] (corrected)
+STATEMENT: **Billings's fail-safe.** His Anti-rotn bot plays uniformly at random on any turn while its running score is below −trials/25, i.e. −4% of the match length (−40 in 1,000 turns). This is a per-turn condition, not a permanent switch. Billings judged it 'would have saved many entries thousands of points against stronger opposition', though it 'would not prevent a match loss'. RussRocker4, which lacked a bail-out, could have cut more than 1,000 points of losses and moved up to 3rd.
+
+**Deviating only on significant evidence.** Biopic, Robertot and Boom deviated from random only on statistically significant weaknesses. They drew against very strong opposition, though Iocaine Powder and Phasenbott still beat them narrowly. In Lanctot et al. 2023 they combine low exploitability (36.7, 50.2 and 27.9 per 1,000) with returns of +196, +178 and +169, ranking 3rd, 6th and 4th on return minus exploitability.
+
+**Random fallback.** Iocaine Powder's random 'predictor' makes it 'cut its losses' when it is being read. Egnor: 'any good strategy should have a random fallback'.
+
+**RPS-specific test.** In McCracken & Bowling (2004), capping each bot's risk at the winnings it had already banked (ε-safe/SPS) significantly raised scores for 15 of 24 competition bots and significantly lowered none.
+EFFECT: Qualitative ('thousands of points' across tournaments). The trigger threshold is −4% of the match length.
+IMPLICATION: A human version, which is my adaptation and has not been tested on people:
+
+- **Default:** random from a device.
+- **Deviate:** only when a clear opponent habit appears, such as repeating far below or above 1/3 (C10), or post-loss switches (C15).
+- **Revert:** go back to the device as soon as you fall behind, or right after a loss to an opponent wh
+CAVEATS: - The evidence is from bots in long matches. For best-of-3 human matches, the right trigger is unknown.
+- Opponents who deliberately induce patterns (as Iocaine Powder did) can still edge out this approach.
+RELIABILITY: - Bot evidence from 1,000-throw matches: organizer reports, TMLR and an AAAI symposium paper.
+- The human adaptation is untested.
+
+=== VERIFIER ADDED ===
+
+[MF1] conf=medium
+STATEMENT: **RPS-specific safe exploitation works.** The setup: round-robins of 24 RoShamBo-1999 bots plus a random player (1,000-game matches, 50 tournaments). Each bot's opponent model was wrapped in ε-safe strategies with Safe Policy Selection, where the allowed worst-case loss grows only with what the bot has already won above the safety value of 0.
+- Total score rose significantly for 15 of 24 bots and fell significantly for none; 15 rose in rank.
+- RussRocker4's losses to Iocaine Powder, Phasenbott and MegaHAL shrank from −519/−530/−94 to −14/−6/−5 per match. Its wins over weak bots were kept (189→222, 477→478, 992→992), and it rose from 11th to 4th.
+- Mixing via Hedge instead significantly lowered the scores of 5 of the strongest players.
+EFFECT: - Significant score gains for 15 of 24 bots.
+- About 500 points per 1,000 throws of losses removed against the top bots.
+- No significant score losses.
+IMPLICATION: - Exploit only with what you have already won: let the size of your deviation from the device's random throws grow with your current lead.
+- Revert to random when you are level or behind.
+- This is RPS evidence for C02 and C19, rather than evidence borrowed from poker.
+CAVEATS: - Bots in long matches; untested in humans and in best-of-3.
+- A workshop/symposium paper.
+
+[MF2] conf=medium
+STATEMENT: **Human RPS players tend to over-repeat, not over-switch.** In the largest human-vs-human RPS lab study (360 paid students, groups of 6, 300 rounds), players were more likely to repeat their previous hand than to shift to either other hand, which implies a repeat rate above 1/3.
+- The effect is strongest at the lowest win payoff and 'still very significant even at a = 100'.
+- When players did change hand, clockwise and counter-clockwise shifts were about equally likely.
+- This contradicts the over-switching assumption carried over from tennis serves and random-generation tasks in C09 and C10.
+EFFECT: - Direction only; the values are in figures.
+- Repeat > each shift implies r > 1/3.
+- Against a player with r=0.45, throwing what beats their last hand earns (3r−1)/2 = +0.175 per throw.
+IMPLICATION: - Do not assume opponents over-switch; tally each opponent's stay/up/down counts.
+- If repeats exceed about 40%, throw what beats their last hand.
+- If repeats fall below about 25%, throw what their last hand beats.
+CAVEATS: - Chinese students in a lab, with random re-pairing.
+- Dyson 2016 (against a computer) found more switching after losses and draws.
+- No data from tournaments or Korea.
+
+[MF3] conf=medium
+STATEMENT: **Scoring by match results favours unexploitable designs.** In Billings's 1999 'Best of the Best' division (match result only, with progressive elimination), defensive programs beat stronger margin-maximizers:
+- A fixed De Bruijn sequence finished 3rd, losing only to Iocaine Powder and Phasenbott; it was 28th on points.
+- RoShamBot, 'designed to win a match in the long run' and capped at +500 even against Always Rock, finished 4th (13th on points); it was unbeaten until Iocaine Powder arrived.
+- Majikthise finished 5th (25th on points).
+- MegaHAL fell from 3rd on points to 7th, and RussRocker4 from 4th to 8th.
+EFFECT: Rank changes of up to 25 places between the points scoring and the match-result scoring.
+IMPLICATION: In a 단체전 decided by match wins, robustness beats margin. Small edges that never expose you to a match loss are worth more than big exploitative leans.
+CAVEATS: - Bots in long matches.
+- De Bruijn's success relied on opponents over-fitting to apparent patterns.
+
+[MF4] conf=medium
+STATEMENT: **Two failure modes of pattern-hunting** (Billings's dummy bots):
+- **Decoys:** a statistically balanced De Bruijn sequence 'naturally gives the appearance of certain tendencies', so over-zealous exploiters are 'continuously deceived and punished'. The stronger the pattern detector, the more susceptible it is.
+- **Missing absences:** simple habits defined by the absence of a pattern are missed by sophisticated predictors. Against 'Always Switchin'' (never repeats; best counter +500 per 1,000), even some of the strongest programs managed only +350. Against Switch A Lot (12% repeats; maximum 320), the simple Anti-rotn bot, which counts only repeat/up/down rotations, 'scored close to the maximum', while Iocaine Powder and Phasenbott scored under +100.
+EFFECT: Simple stay/up/down tracking earned about 3× more against Switch A Lot than the top general-purpose predictors.
+IMPLICATION: - Have a teammate tally each opponent's stay/up/down counts; that simple statistic catches habits that intuition misses.
+- In short matches, do not chase apparent streaks: balanced-looking sequences can bait you.
+CAVEATS: Bots in long matches; humans read patterns differently.
+
+[MF5] conf=medium
+STATEMENT: **Salience-driven choices are costly in zero-sum games.** In Rubinstein–Tversky hide-and-seek (four boxes, six experiments), seekers found hiders 32% of the time, against the 25% that the equilibrium mix guarantees. Seekers chose the 'least salient' central box even more often (46%) than hiders did (37%). A level-k model with a uniformly random L0 coincides with equilibrium, so such deviations require a salient anchor.
+EFFECT: +7 pp detection rate (32% vs 25%) against hiders who followed the salient pattern.
+IMPLICATION: - Any choice driven by an anchor that opponents can also guess creates an exploitable tilt. Examples: 'Rock is obvious', 'don't repeat', 'beat their favourite'.
+- Edges arise only from salience. Without a read, use a device.
+CAVEATS: Not RPS; the figures come via a review, not the original paper.
+
+[MF6] conf=high
+STATEMENT: **Most experienced Roshambull players show no frequency bias; their exploitable structure is in reactions.**
+- Only 18% of experienced players (≥100 matches; n=7,758) had throw distributions significantly different from uniform (20% for their k0 play).
+- About half (47%) responded significantly to opponents' displayed histories.
+- Responses grew with the evidence: per SD of k1 payoff, k1-consistency rose 1.6 pp against opponents with fewer than 14 games and 14 pp against opponents with more than 46 games.
+EFFECT: - 18% non-uniform in frequencies vs 47% reacting to information.
+- Reaction size scales about 9× with the length of the opponent's history.
+IMPLICATION: - Against experienced opponents, static hand-frequency leans (C06) have little to exploit.
+- Read how opponents react to information: your visible history and previous outcomes.
+- The longer opponents can watch you, the more they will react, so vary your visible tendencies.
+CAVEATS: Online, low stakes, with a history display; live play may differ.
+
+[MF7] conf=high
+STATEMENT: **Efficient partial exploitation** (my derivation). Against an opponent who over-plays one hand X while the other two are balanced, the most efficient partial exploitation keeps X itself at 1/3 and shifts probability from the hand X beats to the hand that beats X.
+
+Against a 36/32/32 Rock-leaning opponent, the mix R 1/3, P 1/3+ε, S 1/3−ε earns 0.08ε of expected gain at a worst-case loss of ε:
+- 33/58/8: +2.0 pp at −25 pp.
+- 33/67/0: +2.67 pp at −33 pp.
+
+That is twice the efficiency of the symmetric leans 50/25/25 (+1.0 pp at −25) and 40/30/30 (+0.4 pp at −10). For small leans the trade-off is linear, not 'highly concave'.
+EFFECT: Twice the gain per unit of worst-case exposure compared with symmetric leans; absolute gains are at most +2–4 pp per throw.
+IMPLICATION: - If you lean at all against a 'Rock-heavy' opponent, take Scissors out and add Paper; do not cut Rock.
+- In general: drop the hand their favourite beats, add the hand that beats their favourite, and keep their favourite hand at 1/3.
+CAVEATS: - Assumes the estimated bias is real; real biases are small (1–3 pp) and noisy.
+- The worst case assumes an opponent who reads your lean.
+
+DEAD ENDS: [
+"Rapoport & Budescu (1992), 'Generation of random series in two-person strictly competitive games', JEP: General 121(3):352–363. The paper exists: DOI 10.1037/0096-3445.121.3.352 confirmed via Semantic Scholar metadata and Wong et al. (2021) ref. 2. I could not retrieve an abstract or full text (APA PsycNet only shows 'Loading…'; Semantic Scholar has no abstract). Its finding is reported here only second-hand (Guseva et al. 2023; Wong et al. 2021; Sanabria & Thrailkill 2009, PMC2648521).",
+"Budescu & Rapoport (1994), 'Subjective randomization in one- and two-person games', J. Behavioral Decision Making 7:261–278. Title and year confirmed (Semantic Scholar; Wong et al. ref. 11), but no abstract or text was retrievable.",
+"Towse & Neil (1998), BRMIC, 'Analyzing human random generation behavior: A review of methods used and a computer program for describing performance'. Title and year confirmed via Semantic Scholar, but the Springer PDF link returned HTML, so I did not read it. I used the Towse (1998) Br J Psychol abstract instead.",
+"Billings (2000) ICGA Journal 23(1): 'Thoughts on RoShamBo' (pp.3–8) and 'The First International RoShamBo Programming Competition' (pp.42–50); Egnor 'Iocaine Powder' (pp.33–35). Existence and pages confirmed on icga.org, but the IOS Press pages returned 403 and the live ualberta pages return 404. I substituted the archived 1999 web reports by the organizer and Egnor's archived web explanation.",
+"NYT, Carol Vogel (29 Apr 2005), 'Rock, Paper, Payoff: Child's Play Wins Auction House an Art Sale'. nytimes.com blocked both WebFetch and curl. The article's existence is confirmed by Batzilis et al.'s reference [31]. Secondary sources disagree on the children's quote and on the value at stake.",
+"Palacios-Huerta (2003), Review of Economic Studies. No full text was accessible (LSE: 'Full text not available'; OUP blocked). The sample size often cited for it (1,417 kicks) appeared only in a search-engine summary and was not verified, so I do not use it.",
+"Ganzfried & Sandholm, 'Safe Opponent Exploitation' (ACM TEAC 2015). I could not find the full text. arXiv:1603.03491, which looked like the right paper, is a different one (Ganzfried & Sun, 'Bayesian Opponent Exploitation in Imperfect-Information Games'). An AAMAS 2011 PDF by the same authors is yet another paper.",
+"Kocher & Sutter (2005), Economic Journal (groups vs individuals in beauty contests). The Crossref lookup failed and I did not read it. I used the Kugler, Kausel & Kocher
+
+OPEN Q: [
+"No study tested human RPS players who pre-commit to an external random sequence (die, phone RNG, a pre-rolled list) in live head-to-head play. The zero-expected-loss guarantee follows from the minimax theorem, but whether people stick to the sequence, whether timing or gesture cues leak, and how opponents react remain untested.",
+"The direction of human serial dependence in RPS seems to depend on the setting. Wang–Xu–Zhou found repeats more likely than shifts, especially when the win payoff is low. Classic random-generation tasks show repetition avoidance. Batzilis et al. found a weak negative correlation across first throws, and key-press tasks can show too FEW alternations. Which applies to Korean live 가위바위보 best-of-N matches is unknown, and short matches give too few throws to estimate an opponent's repeat rate reliably.",
+"Level-k shares for one-shot, face-to-face opening throws with no visible history have not been estimated. The large-scale RPS estimates come from an online app that displayed opponent histories, and the CHC τ≈1.5 comes from non-RPS games.",
+"The literature found does not address how specific 단체전 rules change optimal play: relay or winner-stays elimination, simultaneous team throws, captain decisions, or whether teammates may confer between throws. Okano's team advantage is for two-person deliberating teams in O'Neill's 4×4 game.",
+"Whether stress or time pressure makes competitive play more or less predictable is unresolved. Classic generation tasks 

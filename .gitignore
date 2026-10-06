@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+_site/
+# Large downloaded research datasets and papers remain local.
+04_원문자료/다운로드/

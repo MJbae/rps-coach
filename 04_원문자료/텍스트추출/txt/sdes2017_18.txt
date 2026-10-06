@@ -1,0 +1,3152 @@
+Social Design Engineering Series                                                                                         SDES-2017-18
+
+
+Team vs. Individual, Hypothesis Testing vs. Model Se-
+lection, and the Minimax Model
+
+
+
+Yoshitaka Okano
+School of Economics and Management, Kochi University of Technology
+
+
+
+23rd October, 2017
+
+
+
+
+School of Economics and Management
+Research Center for Future Design
+Kochi University of Technology
+KUT-SDE working papers are preliminary research documents published by the School of Economics and Management jointly with the Research
+Center for Social Design Engineering at Kochi University of Technology. To facilitate prompt distribution, they have not been formally reviewed
+and edited. They are circulated in order to stimulate discussion and critical comment and may be revised. The views and interpretations expressed
+in these papers are those of the author(s). It is expected that most working papers will be published in some other form.
+ Team vs. Individual, Hypothesis Testing vs.
+  Model Selection, and the Minimax Model∗
+                                  Yoshitaka Okano†
+                                  October 10, 2017
+
+
+
+                                         Abstract
+
+          We report results of an experiment comparing team and individual
+       behavior in a two-player zero-sum game, and assess the predictive power
+       of the minimax model. Based on hypothesis testing, the play of teams is
+       consistent with the minimax hypothesis in the first half of the experiment,
+       but the play of teams in the second half, and that of individuals in both
+       halves are not. Based on model selection, the aggregated behavior of teams
+       in the first half is best fitted by a belief-based learning model, whereas that
+       of teams in the second half and that of individuals in both halves are best
+       fitted by the minimax model. At the decision-maker level, the minimax
+       model is best for about half of the teams and individuals.
+
+
+Keywords: Minimax, team decision-making, model selection, learning
+JEL Classification: C72, C92
+
+
+
+
+   ∗
+      I am grateful to Tatsuya Kameda, Akitoshi Ogawa, Toshiji Kawagoe, and participants
+at the 20th Experimental Social Sciences Conference at Doshisha University and Seminar at
+The University of Tokyo for their helpful comments and discussions. Financial support from
+the Grant-in-Aid for Scientific Research from the Japan Society for the Promotion of Science
+(JSPS) and from the Ministry of Education, Culture, Sports, Science and Technology (MEXT) is
+gratefully acknowledged. The author is responsible for any errors.
+    †
+      School of Economics and Management, Kochi University of Technology, 2-22 Eikokuji,
+Kochi, Kochi 780-8515 JAPAN E-mail: oknystk@gmail.com. Phone: +81-88-821-7148. Fax:
++81-88-821-7198.
+
+
+                                             1
+1        Introduction
+
+Two-player zero-sum games are an important class of non-cooperative games.
+In addition to the historical reason that the original research on game theory
+focused on this context, these games provide solid theoretical predictions under
+the assumption of rational play. In every two-player zero-sum games, the min-
+imax strategy coincides with the maximin strategy. Furthermore, the strategy
+profile that consists of minimax (maximin) strategies coincides with the Nash
+equilibrium of the game. In this sense, game theory makes a confident pre-
+diction in this class of games. However, earlier experiments using two-player
+zero-sum games with unique mixed strategy equilibria found that subjects typ-
+ically do not play near the minimax prediction, especially at the decision-maker
+level (O’Neill, 1987; Brown and Rosenthal, 1990; Rapoport and Boebel, 1992;
+Ochs, 1995; Mookherjee and Sopher, 1997; Binmore et al., 2001; Shachat, 2002;
+Rosenthal et al., 2003; Geng et al., 2015; Van Essen and Wooders, 2015).
+        Given a substantial deviation of behavior from the minimax prediction, one
+of the next important issues is whether subject behavior approaches it as the
+experiment progresses. We might retain some confidence in the minimax model
+as a good predictor for subject behavior if deviation from the minimax is con-
+centrated in the early rounds of the experiment. Some papers have addressed
+this question, but they have revealed no such tendency. Typically, a substantial
+deviation from the minimax was established in the early rounds of experiments,
+and maintained persistently thereafter.1 One possibility for these results is that
+they are a consequence of the insuﬃciency of repetition, although subjects can
+play minimax with suﬃcient experiences of the game. Another is that they are a
+consequence of the lack of ability of subjects to learn and approach the minimax.
+        This paper presents an examination of the behavior of common-purpose
+
+    1
+     See Brown and Rosenthal (1990), Ochs (1995), Mookherjee and Sopher (1997), Rosenthal
+et al. (2003), and Van Essen and Wooders (2015). Palacios-Huerta and Volij (2008) found that
+professional soccer players playing two-player zero-sum games behave consistently with the
+minimax prediction. Wooders (2010), after re-examining their data, reported that professionals
+tend to follow nonstationary mixtures, with action frequencies that are negatively correlated
+between the first and second halves of the experiment.
+
+
+                                              2
+freely-discussing two-person teams that have been known to be able to be-
+have consistently with the minimax, and assesses the predictive power of the
+minimax model over time. Okano (2013) revealed that when teams play a
+well-known 4 × 4 O’Neill (1987) game against each other, the choice frequen-
+cies conform closely to those implied by the minimax hypothesis, even at the
+decision-maker level. Furthermore, Okano (2016) re-examined the data by split-
+ting the data into halves, which revealed that teams behave consistently with
+the minimax both in the first and second halves of the experiment. To ob-
+serve the movement of behavior over time, this paper presents a study of a
+slightly more complex 5 × 5 game developed by Rapoport and Boebel (1992).
+It requires subjects to engage in a cognitively more demanding task than the
+O’Neill game. Therefore, we expect that this game gives a more reasonable
+chance of divergence from the minimax. We also conducted an experiment
+with single individuals for comparison with the behavior of teams.
+   We evaluate the predictive power of the minimax model in two ways: hy-
+pothesis testing and model selection. Hypothesis testing provides an objective
+method to either accept or reject a null hypothesis that no diﬀerence exists
+between two or more variables. Because the minimax theory gives an exact pre-
+diction, e.g., the relative frequencies of choices are exactly equal to the minimax
+strategy, it must be the null hypothesis. We can claim that the subjects do not
+follow the minimax if the null hypothesis is rejected. If the null hypothesis is
+not rejected, however, we cannot say that the subjects follow the minimax, but
+that the behavior of subjects is consistent with the minimax hypothesis in the
+sense that no compelling evidence exists that subjects do not follow the min-
+imax, although they might follow a logic other than the minimax. Therefore,
+hypothesis testing addresses the question of whether the minimax is incorrect
+or the research is inconclusive.
+   We find, using overall round data, that the relative frequencies of actions
+depart from the minimax prediction for both teams and individuals. When we
+partition the data into the first and second half, however, the relative frequencies
+
+
+
+                                         3
+of actions by teams in the first half are reasonably close to those implied by the
+minimax prediction, although those of teams in the second half, and those of
+individuals in both halves are not. These observations suggest that, although
+teams play consistently with the minimax prediction for the early rounds of
+experiment, they gradually depart from it as the experiment progresses, whereas
+individuals do not follow the minimax play in the course of the experiment.
+      Model selection is a statistical method by which we select the best fit model
+to the data from a set of two or more competing models. For several reasons,
+model selection is important to evaluate the performance of the minimax model
+in this context, though previous research did not pay attention to it so much.
+First, even if we have found, based on hypothesis testing, that the minimax is
+incorrect (such as the cases for teams in the second half and individuals in both
+halves in our experiment), it does not mean that the minimax is very wrong.
+The possibility exists that the minimax fits the data better than other compet-
+ing models. Model selection therefore addresses the question of how close the
+minimax is to the experimental data over the other models.2 Secondly, even if
+we have found that the relative frequencies of choices are close to the minimax
+prediction (such as the case for teams in the first half in our experiment), the pos-
+sibility exists that subjects follow a model other than the minimax. For example,
+Brown (1951) and Robinson (1951) showed that, in every two-player zero-sum
+games, if both players follow an adaptive learning model called fictitious play,
+then the relative frequencies of choices converge to the mixed-strategy Nash
+equilibrium of the game. This implies that consistency of the choice frequencies
+with the minimax is also supported by an adaptive learning model. Model
+selection can clarify whether the data are best fitted by the minimax or by the
+other models. Thirdly, related to the general criticisms of hypothesis testing, the
+conclusion is aﬀected by which value of significance levels we choose. Although
+we adhere strictly to adoption of the 5 percent significance level in Section 3,
+selection of the significance level is basically arbitrary. If we adopt, for example,
+the 10 percent significance level, then the results of teams in the first half are
+  2
+      This point is also emphasized by O’Neill (1991) and by Rapoport and Boebel (1992).
+
+
+                                               4
+somewhat weakened because the p-values of three tests presented in Table 4 lie
+between 0.05 and 0.10 (see the fourth column in Table 4). Model selection is one
+method to complement the findings from hypothesis testing.3
+    Rapoport and Boebel (1992) recognized the importance of model selection.
+As rivals of the minimax model, they considered equiprobable model that pre-
+dicts random play with equal probability, and win-weighted model in which the
+probability of choosing each strategy is proportional to that strategy’s number
+of win opportunities. They found that the minimax model mostly outperforms
+these two models. This paper presents consideration of the experience-weighted
+attraction learning model (Camerer and Ho, 1999; Camerer et al., 2002; Ho et al.,
+2008), reinforcement learning model (Arthur, 1991, 1993; Roth and Erev, 1995;
+Erev and Roth, 1998), belief-based learning model (Cheung and Friedman, 1997;
+Fudenberg and Levine, 1998), and quantal response equilibrium (McKelvey and
+Palfrey, 1995) as rivals of the minimax model. Each is a prominent model known
+as a good predictor of the experimental data.
+    Using overall round data, we find that aggregated data are best fitted by
+the minimax model for both teams and individuals. When we partition the
+data into halves, aggregated data of teams in the first half are best fitted by
+the belief-based learning model, whereas those of teams in the second half and
+those of individuals in both halves are best fitted by the minimax model. At the
+decision-maker level, the minimax model is best for more than or equal to half
+of subjects for both teams and individuals. Teams for which the best fit model
+is the minimax in the first half are more likely to continue to play in the same
+manner in the second half than individuals are. Furthermore, we detect several
+diﬀerences in learning parameters of experience-weighted attraction learning
+model between teams and individuals.
+    Aside from the literature on experiments on two-player zero-sum games,
+the present paper contributes to the literature on team decision-making. In
+much of economic theory, game theory, and most experimental investigations
+
+    3
+      Weakliem (2016) presents general arguments related to criticisms of conventional hypothesis
+testing and the importance of model selection as an alternative method.
+
+
+                                               5
+of these theories, no distinction exists between decisions by teams and those
+by individuals. In many real life situations, however, decisions are often made
+by teams or groups in which two or more individuals are freely interacting.
+Households, firms, and governments, which are important objects of analysis
+in economics, are typically not individuals, but groups of people. On the back-
+ground of practical relevance, a growing body of literature compares individual
+decision-making to team decision-making in various strategic environments.
+       Most studies have demonstrated that teams are more self-interested, and
+strategically more sophisticated than individuals.4 For example, teams make
+and accept smaller transfers in the ultimatum game (Bornstein and Yaniv, 1998),
+send or return smaller amounts in the trust game (Cox, 2002; Kugler et al., 2007),
+exit the game earlier in the centipede game (Bornstein et al., 2004), act more
+strategically in the signaling game (Cooper and Kagel, 2005), better anticipate
+the game dynamics in the beauty contest game (Kocher and Sutter, 2005; Sutter,
+2005; Kocher et al., 2006), choose smaller transfers in the dictator game (Luhan
+et al., 2009)5 , are better at coordinating on eﬃcient outcomes in the coordination
+game (Feri et al., 2010), play a Nash equilibrium strategy more often in various
+normal-form games (Sutter et al., 2013), and contribute less in the public goods
+game (Huber et al., 2017).6
+       Our analysis can detect driving forces underlying the diﬀerences in the
+behaviors of teams and individuals. In our experiment, teams and individuals
+can access information on their own choice, the opponent’s choice, the outcome
+of the game up to then, and the current amount of money. They need to process
+this information to reach better decisions (i.e., exploit the opponent). Not only
+in economics, but also in social psychology, teams are known to have higher
+
+   4
+     Here, we briefly review the literature. Bornstein (2008), Charness and Sutter (2012), and
+Kugler et al. (2012) provide more thorough reviews.
+   5
+     Cason and Mui (1997) found that team decision-making in the dictator game is likely to be
+dominated by the more other-regarding member.
+   6
+     Auerswald et al. (2016) and Cox and Stoddard (2016) found that teams contribute more
+than individuals in public goods games. Kagel and McGee (2016) reported that, in a finitely
+repeated prisoner’s dilemma game, teams choose less cooperation than individuals in the first
+super-game. Then, they change the behavior to more cooperation in the subsequent super-
+games.
+
+
+                                              6
+abilities for processing available information than individuals have (Chalos and
+Pickard, 1985; Blinder and Morgan, 2005). These findings lead us to predict that
+teams and individuals follow diﬀerent learning processes in the experiments.
+    An eﬀective mode of addressing the question of whether and how learning
+processes by teams and individuals diﬀer is to apply a behavioral learning
+model to the experimental data, examine model fits, and compare estimates
+of the parameters. Although learning is important for virtually every area of
+economics, little is known about the diﬀerences in learning processes used by
+teams and individuals. We are aware of two studies that have addressed this
+issue. Kocher and Sutter (2005) applied EWA, belief-based, and reinforcement
+learning model to team and individual decisions in the beauty contest game,
+and examined model fits. Feri et al. (2010) applied the EWA learning model to
+team and individual decisions in various coordination games, and compared
+their coeﬃcients. We are the first to provide evidence for the diﬀerence in
+learning between teams and individuals in two-player zero-sum games.
+    The paper is organized as follows. Section 2 describes the experimental
+design that enables us to examine the behavior of teams and individuals in a
+two-player zero-sum game. Section 3 presents the results of hypothesis-testing
+for the minimax model. Section 4 presents model selection. We first present
+details of competing models, and then clarify the best fit model for teams and
+individuals. Section 5 provides some discussion and concluding remarks.
+
+
+
+2    Experimental Design
+
+There are two treatments in our experiment. In the team treatment, subjects
+were assigned to a two-person team. Each team interacted with another team.
+Subjects were seated with their teammate at one computer terminal, were al-
+lowed to discuss matters freely face-to-face, and were required to reach a single
+decision in each round. No decision rule was imposed. They were requested
+to speak softly and were strictly forbidden to speak to members of other teams.
+The minimum distance from the next team (computer terminal) was about three
+
+                                       7
+                                    Table 1: Payoﬀ Matrix
+
+                                                 Player Y
+                                           C    L F      I      O
+                                      C    W    L L L           L
+                                      L    L    L W W           W
+                         Player X     F    L    W L L           W
+                                      I    L    W L W           L
+                                      O    L    W W L           L
+
+Notes: W and L in cells denote a win and a loss for player X, respectively. Player Y’s payoﬀs are
+the reverse of X’s.
+
+
+meters. In the individual treatment, subjects were mutually isolated and were
+not allowed to communicate.
+       Subjects repeatedly played a 5 × 5 two-player zero-sum game developed
+by Rapoport and Boebel (1992). Decision-makers (teams/individuals) were as-
+signed randomly to one of two player roles: X or Y. Players X and Y chose
+one of five pure strategies denoted by the letters C, L, F, I, and O. That choice
+determines the winner. The payoﬀ matrix is displayed in Table 1. W and L in
+each cell denote a win and a loss for player X, respectively. The game has a
+unique mixed strategy equilibrium in which both players choose C, L, F, I, and O
+with probabilities 3/8, 2/8, 1/8, 1/8, and 1/8, respectively. Subjects were matched
+anonymously with a fixed opponent, with whom they played 120 game rounds.
+       We kept the per-subject monetary incentives constant across teams and in-
+dividuals. At the beginning of play, each team (individual) was given 7200 yen
+(3600 yen).7 In each round, when teams (individuals) assigned player X won
+the game, they received 200 yen (100 yen) from the opponent. When teams (in-
+dividuals) assigned player Y won the game, they received 120 yen (60 yen) from
+the opponent. Earnings of teams were divided equally between team members.
+Because player X (Y) should win 37.5 percent (62.5 percent) of the time when
+both players choose the action according to the equilibrium, the expected pay-
+oﬀs were zero for both players. In addition to the earnings from the experiment,
+subjects were paid 1400 yen as a show-up fee.
+   7
+       1 US dollar was about 80 yen at the time the experiments were conducted.
+
+
+                                                8
+      The experiment was conducted in February 2011 and February 2012 at Osaka
+University. Subjects were recruited through campus-wide advertisements. The
+experiment consisted of eight sessions (six for the team treatment, and two for
+the individual treatment), with 12 to 24 subjects for each session. In total, 152
+undergraduate and graduate students participated in this experiment. No sub-
+ject participated in more than one experimental session. Of these, 112 subjects
+participated in the team treatment. Consequently, we have 56 teams (28 pairs).
+The remaining 40 subjects (20 pairs) participated in the individual treatment.
+      Experimental sessions lasted about two hours, and proceeded as follows.8 At
+the beginning of the session, participants received written instructions, which
+were read aloud. Participants were oﬀered the opportunity to ask private
+questions. After reading the instructions, participants picked a card with a seat
+number. For all participants in the team treatment, another participant was
+assigned to the same seat, who is the participant’s teammate. Therefore, the
+assignment to the team was at random. Before the play for real money, subjects
+had an opportunity to review the experiment contents for five minutes. From
+this time on, in the team treatment, subjects were allowed to discuss experiment-
+related matters freely with the teammate. Immediately after the experiment,
+subjects received a payment in cash.
+      The experiment was programmed and conducted using z-Tree software (Fis-
+chbacher, 2007). At the top of the screen display, the number and remaining
+time of the current round were shown. Subjects were requested to come up
+with a decision within 30 seconds. A red sign would appear on the screen and
+ask them to reach a decision immediately if they did not enter their decision
+after 30 seconds. At the middle-left, the payoﬀ matrix was displayed. On the
+screen of player X, the payoﬀ matrix in Table 1 was displayed. On the screen of
+player Y, the row and column players in Table 1 were switched, and W and L
+were reversed. At the middle-right of the screen, the current money total was
+displayed, with five buttons labeled C, L, F, I, and O. Subjects chose their action
+by clicking one of these buttons. At the bottom, history information was shown,
+  8
+      See Supplementary Appendix C and D for the details of instructions.
+
+
+                                               9
+           Table 2: Relative Frequencies of Choices in Team Treatment
+
+                                         Player Y                         Marginal
+                          C         L       F       I             O      Frequencies
+                   C    0.148     0.104   0.055   0.035         0.036        0.379
+                       (0.141)   (0.094) (0.047) (0.047)       (0.047)      (0.375)
+
+                   L    0.086     0.063     0.037     0.034     0.025       0.245
+                       (0.094)   (0.063)   (0.031)   (0.031)   (0.031)     (0.250)
+
+       Player X    F    0.052     0.043     0.017     0.014     0.015       0.140
+                       (0.047)   (0.031)   (0.016)   (0.016)   (0.016)     (0.125)
+
+                   I    0.038     0.033     0.018     0.014     0.015       0.118
+                       (0.047)   (0.031)   (0.016)   (0.016)   (0.016)     (0.125)
+
+                  O     0.037     0.032     0.019     0.015     0.016       0.119
+                       (0.047)   (0.031)   (0.016)   (0.016)   (0.016)     (0.125)
+
+           Marginal     0.360     0.275     0.145     0.113     0.107
+        Frequencies    (0.375)   (0.250)   (0.125)   (0.125)   (0.125)
+
+Notes: Numbers in parentheses represent the relative frequencies predicted under the minimax
+hypothesis.
+
+
+which included the round number, one’s own and the opponent’s choice, and
+the outcome of the game. After subjects chose an action, the outcome was dis-
+played, which included the current money total, one’s own and the opponent’s
+choice, and the outcome of the game for that round.
+
+
+
+3    Hypothesis Testing for Minimax Model
+
+This section presents results of hypothesis testing for the minimax prediction.
+Throughout this section, we adopt the 5 percent significance level for classifica-
+tion of the minimax hypothesis as accepted or rejected.
+
+
+3.1 Overall Round Data
+
+First, we describe the results obtained using data during all 120 rounds. Tables 2
+and 3 show the aggregate-level relative frequencies of action profiles (interior of
+
+
+                                            10
+        Table 3: Relative Frequencies of Choices in Individual Treatment
+
+                                          Player Y                         Marginal
+                           C         L       F       I             O      Frequencies
+                   C     0.137     0.105   0.048   0.036         0.042        0.368
+                        (0.141)   (0.094) (0.047) (0.047)       (0.047)      (0.375)
+
+                   L     0.092     0.070     0.036     0.034     0.029        0.261
+                        (0.094)   (0.063)   (0.031)   (0.031)   (0.031)      (0.250)
+
+       Player X    F     0.046     0.032     0.010     0.009     0.013        0.111
+                        (0.047)   (0.031)   (0.016)   (0.016)   (0.016)      (0.125)
+
+                    I    0.041     0.025     0.015     0.010     0.011        0.103
+                        (0.047)   (0.031)   (0.016)   (0.016)   (0.016)      (0.125)
+
+                   O     0.065     0.040     0.021     0.016     0.015        0.157
+                        (0.047)   (0.031)   (0.016)   (0.016)   (0.016)      (0.125)
+
+           Marginal      0.382     0.272     0.131     0.105     0.110
+        Frequencies     (0.375)   (0.250)   (0.125)   (0.125)   (0.125)
+
+Notes: Numbers in parentheses represent the relative frequencies predicted under the minimax
+hypothesis.
+
+
+the box) and choices for player roles (right and bottom of the table) in the team
+and individual treatments, respectively. In parentheses below these numbers,
+the corresponding relative frequencies expected under the minimax hypothesis
+are listed. In both treatments, the relative frequencies show a rough adherence
+to the minimax prediction, as previous experiments also revealed.
+    Table 4 presents results of hypothesis testing for the minimax prediction.
+Each column corresponds to a diﬀerent round interval (overall, first half, and
+second half) and a diﬀerent type of decision-maker (team and individual).9
+Panel I in Table 4 presents the results of statistical tests using the aggregated data.
+The first two rows are p-values of chi-square goodness-of-fit tests of the marginal
+frequencies for players X and Y to the minimax hypothesis, whereas the third
+row shows p-values of chi-square goodness-of-fit tests of the action profiles to
+
+
+  9
+    Readers interested in these findings in more detail are directed to the tables presented in
+Supplementary Appendix A.
+
+
+                                              11
+                     Table 4: Summary of Statistical Test Results
+
+               Rounds:            1-120              1-60                    61-120
+             Treatment:        Team Indiv.    Team Indiv.                 Team Indiv.
+                                           I. Aggregate Level
+      P-values from chi-square goodness-of-fit test:
+        Player X           0.060 0.000        0.115 0.000                 0.045    0.001
+        Player Y           0.000 0.002        0.061 0.001                 0.000    0.150
+        Action Profile     0.000 0.000        0.006 0.000                 0.000    0.014
+
+                                      II. Decision-Maker and Pair Level
+      Percentage of rejections at the 5 percent:
+        Player X            17.9% 20.0%           3.6% 15.0%       10.7%           15.0%
+        Player Y            28.6% 25.0%          14.3% 20.0%       17.9%           15.0%
+        Action Profile      39.3% 15.0%           7.1% 25.0%       21.4%           20.0%
+
+                                           III. Joint Level
+      P-values from chi-square joint test:
+        Player X           0.015 0.001     0.878 0.095                    0.105    0.002
+        Player Y           0.000 0.000     0.066 0.001                    0.000    0.002
+        Action Profile     0.000 0.004     0.072 0.008                    0.000    0.012
+      P-values from Kolmogorov-Smirnov test:
+                           0.000 0.000     0.635 0.053                    0.003    0.024
+
+Notes: Columns correspond to diﬀerent round intervals (overall, first half, second half), and
+diﬀerent types of decision-maker (team and individual). Rows show results for respective
+tests. Panel I presents p-values from the chi-square goodness-of-fit tests of aggregated marginal
+frequencies of players X and Y, and aggregated action profiles to the minimax prediction. Panel
+II presents percentages of decision-makers and pairs for which we can reject the null hypothesis
+at the 5 percent level for the same chi-square test as in Panel I. Panel III presents results of
+statistical tests in which the null hypothesis is that all decision makers play minimax. The
+first three rows show p-values from the chi-square joint tests for player X, player Y, and action
+profiles, respectively. The last row shows p-values obtained from Kolmogorov-Smirnov tests
+using p-values from chi-square goodness-of-fit tests at the decision-maker level to the uniform
+distribution on [0, 1].
+
+
+
+
+                                               12
+the joint probability distribution implied by the minimax hypothesis.10 For
+overall round data (the second and third columns), the minimax hypothesis is
+mostly rejected in both treatments. We cannot reject it only for player X in the
+team treatment.
+       Panel II in Table 4 presents results of chi-square tests at the individual
+decision-maker level and pair level, rather than the aggregated data. Instead of
+reporting p-values, we present the percentage of decision-makers and pairs for
+which we reject the null hypothesis at the 5 percent level. For the test of action
+profiles, we aggregate choices F, I, and O into a single choice to increase the
+credibility of the chi-square test.11 If all decision-makers follow the minimax
+strategy, then we expect that 5 percent of decision-makers exhibit the rejection of
+these tests at the 5 percent level. For overall round data, we have more rejections
+in both treatments than theory predicts. Furthermore, for tests of player Y and
+action profiles, a greater fraction of teams exhibit the violation from minimax
+than individuals.
+       Panel III in Table 4 presents examination of the joint hypothesis that all
+decision-makers follow the minimax strategy. The first three rows show p-
+values from the chi-square joint test. The test statistic is simply the sum of all test
+statistics of the chi-square test at the decision-maker level.12 The null hypothesis
+is rejected for player X, player Y, and action profiles in both treatments.
+       Under the minimax prediction, while the choice frequencies of each decision-
+maker should adhere to the equilibrium proportion, they should also be scat-
+
+  10
+      Under the null hypothesis, the test statistic is distributed asymptotically as χ2 (4) for the test
+of marginal frequencies, and χ2 (24) for the test of action profiles.
+   11
+      At the decision-maker level, we have only 60 observations in each half, which lacks the
+credibility of the statistical test. For example, the expected frequency of FF play is 0.9375
+(= 18 × 18 × 60) with 60 observations under the minimax prediction. According to Gibbons
+and Chakraborti (2003), when using the chi-square test, we should have data with which the
+expected frequency exceeds 1.5 in each category. Otherwise, we should combine two or more
+categories into a single one. We decided to combine F, I, and O into a single choice, because
+they are strategically equivalent. With this manipulation, the minimum expected frequency is
+LL play, which is 3.75 (= 28 × 28 × 60) with 60 observations. Under the null hypothesis, the test
+statistic is distributed asymptotically as χ2 (8).
+   12
+      Under the null hypothesis that all decision-makers follow the minimax strategy, the test
+statistic is distributed asymptotically as χ2 (4 × n/2) for players X and Y, and χ2 (8 × n/2) for
+action profiles where n is the number of decision-makers in the treatment.
+
+
+                                                  13
+Figure 1: Empirical Cumulative Distribution Functions for Observed p-values
+from Chi-square Goodness-of-Fit Tests at the Decision-Maker Level.
+
+tered adequately around the equilibrium proportion because playing a mixed
+strategy indicates that each action is a random draw from the multinomial dis-
+tribution. This implies that p-values from the chi-square tests at the decision-
+maker level should be distributed as the uniform distribution U[0, 1] under the
+hypothesis that all decision-makers follow the minimax strategy. Figure 1 por-
+trays empirical cumulative distribution functions (CDF) for observed p-values.
+The CDF of the uniform distribution is represented by the 45 degree line in the
+figure. For overall round data (on the left side of Figure 1), the empirical CDF
+are skewed upwardly in both treatments, indicating that there are a lot of small
+p-values. The last row of Panel III in Table 4 shows p-values of a one-tailed
+Kolmogorov-Smirnov test of these p-values to U[0, 1]. The null hypothesis is
+rejected in both treatments, indicating that the plays of all teams and individuals
+are scattered excessively around the equilibrium proportion.
+   In summary, a substantial deviation from the minimax play exists in the
+choice frequencies in terms of the aggregated, decision-maker, and joint levels
+for both treatments. Furthermore, no prominent diﬀerence is apparent between
+teams and individuals. These results contrast to those reported by Okano
+(2013; 2016), who confirmed more consistency with the theory by teams than
+by individuals in 4 × 4 games. This result might derive from adopting a 5 × 5
+game in our experiment in which greater complexity of the game lead subjects
+(even teams) to diverge from minimax play.
+
+
+                                        14
+3.2 Half Data
+
+In this subsection, we simply split data into the first and second 60 rounds,
+and apply the same analysis as in the previous subsection. The fourth and
+fifth columns in Table 4 present results of statistical tests using data of the first
+60 rounds. In the team treatment, we cannot reject the null hypotheses that
+aggregated marginal frequencies for players X and Y are the same as those
+under the minimax play, although we reject it for the test on action profiles
+(Panel I). In the individual treatment, we reject the same null hypotheses in all
+cases. For the decision-maker level data (Panel II), in the team treatment, we
+observe the near numbers of rejection to those we expect at the 5 percent level
+under the null hypothesis. It is rejected for 3.6% of player X and 7.1% of action
+profiles, although the rejection rate is somewhat higher for player Y (14.3%).
+The individual treatment shows more rejections than the team treatment, and
+more than theory predicts. The chi-square joint tests for player X, player Y,
+and action profiles do not reject the joint null hypothesis in the team treatment
+(the first three rows of panel III). In the individual treatment, the same tests
+reject the null hypothesis for player Y, and action profiles, although the test for
+player X cannot reject it. The visual comparison shown in Figure 1 reveals the
+conformity of the empirical CDF of observed p-values of teams to the CDF for
+U[0, 1], whereas those of individuals are slightly skewed upwardly. The one-
+tailed Kolmogorov-Smirnov test shows that we cannot reject the null hypothesis
+that observed p-values are drawn from U[0, 1] for both teams and individuals.
+   The sixth and seventh columns in Table 4 show results of statistical tests
+obtained using data in the second half. At the aggregate level, decision-maker
+level, and joint level, the choice frequencies of teams and individuals are far
+from the minimax prediction. The exceptions are the chi-square joint test for
+player X in the team treatment (p = 0.105), and the chi-square test of aggregated
+marginal frequencies for player Y in the individual treatment (p = 0.150).
+   In summary, regarding choice frequencies, teams behave consistently with
+the minimax prediction in the first half in most cases. In the second half, how-
+
+
+                                         15
+                                   Table 5: Runs Test
+
+             Rounds:          1-120               1-60               61-120
+           Treatment:     Team Indiv.         Team Indiv.         Team Indiv.
+               C          5.4% 10.0%          5.4% 5.0%           0.0% 10.0%
+                L         5.4% 10.0%          1.8% 7.5%           5.4% 5.0%
+                F         3.6% 7.5%           3.6% 2.5%           0.0% 0.0%
+                I         1.8% 10.0%          0.0% 2.6%           0.0% 5.0%
+               O          0.0% 0.0%           0.0% 0.0%           0.0% 0.0%
+
+Notes: Columns correspond to diﬀerent round intervals (overall, first half, second half), and
+diﬀerent types of decision-maker (team and individual). Rows present percentage of decision
+makers that we can reject the serial independence hypothesis at the 5 percent level for each
+choice.
+
+
+ever, they play far from the minimax prediction. Therefore, as the experiment
+progresses, team behavior departs from minimax play, rather than converges
+to it. In this sense, the minimax model is successful in predicting the short-run
+behavior of teams, but not the long-run behavior. In the individual treatment,
+subjects choose actions that are inconsistent with the minimax prediction in
+both halves, as observed in previous experiments.
+
+
+3.3 Serial Independence Hypothesis
+
+Another implication of minimax play is that subject’s choices are serially inde-
+pendent. Table 5 shows results of runs test for respective choices. The first row,
+for example, presents the percentage of decision-makers for which we reject
+the serial independence hypothesis at the 5 percent level for the sequence of
+C and non-C choices.13 For both teams and individuals, our subjects do not
+exhibit serial correlation to the degree found in earlier experiments. We observe
+fewer or nearly equal numbers of rejections to those we expect at the 5 percent
+level under the null hypothesis, although individuals sometimes exhibit more
+rejections than theory predicts (especially when applying tests to overall round
+data).
+
+
+  13
+     One team and one individual did not choose I in the first half. Because we cannot apply
+runs test to these data, we excluded those.
+
+
+                                             16
+4         Model Selection
+
+This section provides results of model selection by which we select the model
+that best predicts the subject behavior across five models including the minimax
+model. Alternative models are experience-weighted attraction learning model
+(EWA), reinforcement learning model (RL), belief-based learning model (BL),
+and quantal response equilibrium (QRE).
+         We use maximum likelihood estimation. Players are indexed by i ∈ {1, · · · , n}.
+                                                                                                j
+Let si (t) ∈ {C, L, F, I, O} be player i’s strategy in round t ∈ {1, . . . , T}, and Pi (t) be
+player i’s probability of choosing j ∈ {C, L, F, I, O} in round t that the model
+predicts. Then, the log-likelihood function for the aggregate level is
+
+                                 ∑
+                                 n ∑
+                                   T                (      ∑                                )
+                                                                                      j
+                          LL =             log                          I( j, si (t))Pi (t) ,
+                                 i=1 t=1                j∈{C,L,F,I,O}
+
+
+and that for the decision-maker level is
+
+                                    ∑
+                                    T           (        ∑                              )
+                                                                                  j
+                            LLi =         log                       I( j, si (t))Pi (t) ,
+                                    t=1             j∈{C,L,F,I,O}
+
+
+where I( j, si (t)) is the indicator function, taking the value one if j = si (t), and zero
+otherwise.
+         Five models we examine have diﬀerent numbers of parameters to be esti-
+mated.14 Basically, a model with too many parameters becomes sensitive, mean-
+ing that it can fit the observed data very well, but can be too closely tailored to it.
+The estimates of such a model become unstable. Therefore, it generalizes poorly
+for the other random samples from the population. Conversely, a model with
+too few parameters becomes rigid, indicating that it causes high bias and poor
+prediction, although the estimates of such models become stable. Penalized-
+likelihood information criteria are used widely for model selection. Across
+those, we use the Akaike information criterion (AIC) and Bayesian information
+
+
+    The minimax model has no parameter to be estimated. Under the minimax model, PCi (t) =
+    14
+
+3/8, PLi (t) = 2/8, and PFi (t) = PIi (t) = PO
+                                             i
+                                               (t) = 1/8, for all i and t.
+
+
+                                                         17
+criterion (BIC). AIC is given as −2LL∗ + 2k and BIC is given as −2LL∗ + k log(M),
+where LL∗ is the maximized log-likelihood, k is the number of parameters, and
+M is the number of observations. The model with the smallest information
+criterion is preferred.
+
+
+4.1 Three Learning Models
+
+The central feature of all three learning models (RL, BL, and EWA) is a set of
+                                                                                        j
+variables known as “attraction,” which are updated each round. Let Ai (t) be
+player i’s attraction to strategy j in round t. The attractions in round t determine
+the choice probabilities in round t + 1. We use the following logistic function,
+
+                                                            j
+                            j                     exp(λAi (t))
+                           Pi (t + 1) = ∑                       m      ,
+                                            m∈{C,L,F,I,O} exp(λAi (t))
+
+
+where λ represents the sensitivity of players to diﬀerences among attractions.1516
+It is a free parameter to be estimated. When λ = 0, a player chooses all strategies
+with equal probability. As λ gets larger, a player chooses a strategy with the
+highest attraction with greater probability. Three learning models diﬀer in the
+way in which attractions are updated each round, which we describe next.
+
+
+4.1.1   Reinforcement Learning Model
+
+The RL model incorporates the basic idea that strategies that have earned greater
+payoﬀs in the past are more likely to be played in the future, which is known
+as the law of eﬀect in psychology. Letting πi (j, s−i (t)) be player i’s payoﬀ in round
+t when i chooses j and the opponent chooses s−i (t), the updating rule for each
+attraction is
+                           j           j
+                         Ai (t) = ϕAi (t − 1) + I(j, si (t))πi ( j, s−i (t)).
+
+
+  15
+      Arthur (1991; 1993), Roth and Erev (1995), and Erev and Roth (1998) used the probabilistic
+                        j          j     ∑
+choice rule given by Pi (t + 1) = Ai (t)/ m Am
+                                             i
+                                               (t). Cheung and Friedman (1997) used the probit
+function. Which of these forms fits better has not been established (Dhami, 2016).
+   16
+      Cheung and Friedman (1997) included the term of the player’s own idiosyncratic tendency
+to favor a strategy when attractions of two strategies have the same value.
+
+
+                                                 18
+Because of indicator function, attraction to a strategy is reinforced only if that
+strategy was actually chosen in that round. Parameter ϕ represents the de-
+preciation rate of the previous attractions, taking account of forgetting, limited
+memory, or a rapidly changing environment. When ϕ = 0, a player remembers
+only the most recent payoﬀ. When ϕ = 1, a player remembers all past payoﬀs
+and weights them equally in the current decision. For the RL model, we have
+two parameters (λ and ϕ) to be estimated.1718
+
+
+4.1.2   Belief-Based Learning Model
+
+In the BL model, players form their beliefs about what the opponent will do.
+Beliefs are calculated from the opponent’s play in the past. Given these beliefs,
+players then choose actions that have higher expected payoﬀs. Although there
+are many ways of forming beliefs, we consider a general weighted fictitious play
+model (Cheung and Friedman, 1997). The updating rules for each attraction are
+
+                                               j
+                     j           ϕN(t − 1)Ai (t − 1) + πi ( j, s−i (t))
+                    Ai (t)   =                                            , and
+                                        N(t)
+                    N(t) = ϕN(t − 1) + 1.
+
+
+Parameter N(t) represents an “experience” variable. To see how N(t) works, set
+                                                                          j
+N(0) = 0 for simplicity. When ϕ = 0, then N(t) = 1, and Ai (t) = πi (j, s−i (t)). This
+arrangement indicates that, each round, each attraction is the payoﬀ that was,
+or would have been, received in the previous round, given the opponent choice
+s−i (t). In this case, the BL model assumes that a player (tends to) choose the
+strategy that is the best response to the opponent choice in the previous round.
+This model is sometimes called a Cournot learning model. When ϕ = 1, then
+
+
+  17
+      In addition to the forgetting parameter ϕ, Roth and Erev (1995) introduced two additional
+parameters into the basic RL model. One is a cutoﬀ parameter. Whenever, in the basic model,
+the probability with which a strategy is played falls below some small “cutoﬀ” probability, that
+strategy will never be played. Another is an experimentation parameter, which captures the
+idea that not only are choices which were successful in the past more likely to be played in the
+future, but similar choices will be played more often as well.
+   18
+      Mookherjee and Sopher (1997) considered another kind of RL model so that attractions are
+average payoﬀs in the past, rather than cumulative ones.
+
+
+                                                   19
+N(t) = t, which is simply the number of plays. Furthermore, we obtain
+
+                     j      πi (j, s−i (1)) + πi (j, s−i (2)) + · · · + πi ( j, s−i (t))
+                 Ai (t) =                                                                ,
+                                                         t
+
+which is the average payoﬀ that was, or would have been received by that
+strategy up to the current round, given the opponent choices (s−i (1), s−i (2), . . . ,
+s−i (t)). In this case, the BL model assumes that a player (tends to) choose the
+strategy that is best response to the accumulated mixed strategy of the opponent
+up to then, indicating fictitious play (Brown, 1951; Robinson, 1951). N(0) is
+interrupted as a pregame experience, and is a parameter to be estimated. For
+the BL model, we have three parameters (λ, ϕ, and N(0)) to be estimated.
+
+
+4.1.3   Experience-Weighted Attraction Learning Model
+
+The EWA model combines the RL and BL models. Attractions are updated
+according to either the payoﬀ the strategy actually earned, or some fraction of
+the payoﬀ an unchosen strategy would have earned. The updating rules for
+respective attractions are
+
+                                    j
+         j           ϕN(t − 1)Ai (t − 1) + [δ + (1 − δ)I(j, si (t))]πi ( j, s−i (t))
+        Ai (t)   =                                                                           , and
+                                                     N(t)
+        N(t) = ϕ(1 − κ)N(t − 1) + 1.
+
+
+The parameter δ represents the relative weight given to the foregone payoﬀ. One
+might interpret it as a form of regret over foregone payoﬀs. When δ = 0, only the
+actual payoﬀs matter, which is the key feature of the RL model. When δ = 1, both
+the actual and foregone payoﬀs equally matter, which the BL model requires.
+The EWA model takes the middle ground. The parameter κ determines the
+growth rate of attractions. When κ = 1, then N(t) = 1. Consequently, attractions
+accumulate past actual and hypothetical payoﬀs, indicating that they can grow
+and grow as time passes. When κ = 0, then attractions are the weighted averages
+of those payoﬀs, indicating that they cannot grow beyond the payoﬀ bounds.
+   When δ = 0, N(0) = 1, and κ = 1, then the updating rules are reduced to
+
+                                                   20
+those of the RL model. When δ = 1, and κ = 0, then the updating rules are
+reduced to those of the BL model. For the EWA model, we have five parameters
+(λ, ϕ, κ, N(0), and δ) to be estimated.
+       For estimation in the RL, BL, and EWA models, we imposed restrictions on
+the parameters that
+
+                                                        [                                  ]
+                                                                                    1
+                λ ∈ [0, ∞), ϕ, κ, δ ∈ [0, 1], and N(0) ∈ 0,                                  ,
+                                                                              1 − (1 − κ)ϕ
+
+to ensure model identification.19 Furthermore, we estimated initial attractions
+(common to all players) from the actual data in the first round, as suggested by
+Ho et al. (2008).20
+
+
+4.2 Quantal Response Equilibrium
+
+QRE is a parameterized family of a static equilibrium model in which each
+player’s utility is subject to random error. Formally, let q = (qC , qL , qF , qI , qO )
+and r = (rC , rL , rF , rI , rO ) be mixed strategies for players X and Y, respectively.
+Let πX ( j, r) be the player X’s expected payoﬀ of choosing the pure strategy
+  19
+      For each of model parameters to fall within the restricted range, we apply an appropriate
+transformation. For example, we estimate q1 without restriction such that λ = exp(q1 ), which
+ensures that λ ∈ [0, ∞). Similarly, we estimate q2 , q3 , q4 , and q5 without restriction such that
+ϕ = 1/[1+exp(q2 )], κ = 1/[1+exp(q3 )], δ = 1/[1+exp(q4 )], and N(0) = [1/(1−(1−κ)ϕ)]/[1+exp(q5 )]
+to restrict each parameter to fall within the restricted range.
+   20
+      For estimation of the initial attractions in the RL and EWA models, we adopt the following
+procedure. Let f j be the relative frequency of strategy j in the first round. Then, we can obtain
+initial attractions from the equations
+                                             j
+                                    exp(λAi (0))
+                           ∑                       m      = f j,   j ∈ {C, L, F, I, O}.
+                               m∈{C,L,F,I,O} exp(λAi (0))
+
+The initial attractions are solvable, as a function of λ, as
+
+                                        j        1∑ j      1
+                                     Ai (0) −      Ai (0) = log( f˜j ),
+                                                 5         λ
+                                                    j
+
+                  ∏
+where f˜j = f j /( m f m )1/5 . For identification, we set the initial attraction with the lowest relative
+frequency to be zero, and solve for the other attractions as a function of λ and f˜j .
+   The estimation of initial attractions for the BL model diﬀers from the RL and EWA models. In
+the BL model, initial attractions are the same as the expected payoﬀ given initial beliefs. There-
+fore, we estimated the initial beliefs that maximize the likelihood given the relative frequency in
+the first round, with λ being one for identification. Then, we can calculate the expected payoﬀs
+from these initial beliefs rescaled with 1/λ. Then they are used as initial attractions.
+
+
+                                                        21
+j ∈ {C, L, F, I, O} when player Y chooses r. We define the function π̂X (j, r) as
+
+
+                                     π̂X (j, r) = πX (j, r) + ϵX j ,
+
+
+where ϵX j is a random payoﬀ disturbance for strategy j of player X. QRE
+assumes that each player chooses a strategy j such that π̂X ( j, r) ≥ π̂X (m, r) for all
+m ∈ {C, L, F, I, O}. If {ϵX j } are distributed independently with an extreme value
+distribution with variance parameter 1/λ, then the choice probabilities of player
+X are given as
+                                             exp(λπX ( j, r))
+                               qj = ∑                                 .
+                                        m∈{C,L,F,I,O} exp(λπX (m, r))
+
+Similarly, let πY (j, q) be the player Y’s expected payoﬀ of choosing j when player
+X chooses q. Then, similar calculations yield the choice probabilities of player
+Y, as follows:
+                                             exp(λπY ( j, q))
+                               rj = ∑                                 .
+                                        m∈{C,L,F,I,O} exp(λπY (m, q))
+
+For any fixed value of λ, a logistic QRE is a mixed strategy pair (q∗ (λ), r∗ (λ))
+satisfying
+
+                   exp(λπX ( j, r∗ (λ)))                ∗
+                                                                       exp(λπY (j, q∗ (λ)))
+q∗j (λ) = ∑                              ∗
+                                                , and r j (λ) = ∑                            ∗
+                                                                                                    .
+              m∈{C,L,F,I,O} exp(λπX (m, r (λ)))                   m∈{C,L,F,I,O} exp(λπY (m, q (λ)))
+
+
+When λ = 0, each player chooses all strategies with equal probability. As λ goes
+to infinity, the variance of the shocks goes to zero, with behavior approaching
+a Nash equilibrium. For QRE, λ is the only parameter to be estimated. Note
+that λ is common across players X and Y. Therefore, in our estimation, we
+first estimated λ∗ in the pair. Then, we obtained each player’s log-likelihood by
+          j                                                    j
+setting Pi (t) = q∗j (λ∗ ) for all t for player X, and Pi (t) = r∗j (λ∗ ) for all t for player Y.
+
+
+
+
+                                                  22
+              Table 6: Model Fits at the Aggregate Level (Rounds 1-120)
+
+                                     Team                            Individual
+        Player   Model LL∗           AIC         BIC         LL∗        AIC     BIC
+          X      EWA −5000.0        10010.1    10040.7     −3614.5     7239.0 7268.0
+                  RL −5151.0        10306.0    10318.3     −3683.0     7370.0 7381.5
+                  BL −5016.0        10038.0    10056.4     −3779.6     7565.2 7582.6
+                 QRE −5017.5        10037.0    10043.2     −3586.0     7174.0 7179.7
+                  MM −5017.5        10035.0    10035.0     −3586.0     7172.0 7172.0
+          Y      EWA −5074.4        10158.8    10189.4     −3545.1     7100.3 7129.2
+                  RL −5197.6        10399.3    10411.5     −3586.2     7176.4 7188.0
+                  BL −5073.5        10153.0    10171.3     −3765.5     7537.0 7554.4
+                 QRE −5017.5        10037.1    10043.2     −3532.4     7066.8 7072.6
+                  MM −5017.5        10035.1    10035.1     −3532.4     7064.8 7064.8
+
+Notes: LL∗ is maximized log-likelihood. AIC is given as −2LL∗ + 2k, and BIC is given as
+−2LL∗ + k log(M), where k is the number of parameters, and M is the number of observations.
+Best fits are shown in bold typeface.
+
+
+4.3 Results
+
+4.3.1   Overall Round Data
+
+Table 6 presents maximized log-likelihoods and information criteria at the ag-
+gregate level for each player role in each treatment. Numbers with the minimum
+information criterion are presented in bold typeface. Because we pool the data
+across subjects with the same player role in the same treatment, this analysis
+assumes that all these subjects follow the model with the same parameters (i.e.,
+homogeneous single-representative agent model).
+    Model selection reveals that the minimax model (MM) actually performs
+well. The minimax model is best for player Y in the team treatment and both
+players in the individual treatment, according to both AIC and BIC. For player
+X in the team treatment, the EWA model is best according to AIC, whereas the
+minimax model is best according to BIC.
+    We next proceed to the analysis at the decision-maker level, allowing het-
+erogeneity in learning across subjects.21 Table 7 shows the percentages of the
+
+  21
+     Several papers have found considerable heterogeneity in parameters of the learning models
+across subjects (Cheung and Friedman, 1997; Ho et al., 2008; Dittrich et al., 2012), indicating
+that subjects follow diﬀerent learning dynamics.
+
+
+                                              23
+Table 7: Percentage of the Best Fit Model at the Decision-Maker Level (Rounds
+1-120)
+
+                                                         Model
+            Criterion   Treatment     EWA         RL       BL    QRE     MM
+              AIC         Team         8.9%      10.7%   26.8%   1.8%   51.8%
+                        Individual    35.0%      7.5%     2.5%   5.0%   50.0%
+               BIC        Team         1.8%      10.7%   10.7%   0.0%   76.8%
+                        Individual     5.0%      7.5%     7.5%   0.0%   80.0%
+
+
+
+best fit models. According to BIC, which prefers simpler models than AIC, the
+behavior of 76.8 percent of teams and 80.0 percent of individuals is best fitted by
+the minimax model.22 For the remaining subjects, the adaptive learning models
+(EWA, RL, and BL) are selected for both teams and individuals. QRE is never
+selected. Because our primary concern is how well the minimax model fits to
+the experimental data, and to argue conservatively, in what follows, we focus
+only on the results according to AIC.
+   Even according to AIC, the minimax model performs well for predicting the
+decision-maker level behavior, irrespective of the type of decision-maker. The
+minimax model is best for about half of subjects in both treatments (51.8% in
+the team treatment, and 50.0% in the individual treatment). Combined with
+the results of hypothesis testing in section 3.1, we have deeper insight into the
+performance of the minimax model. Recall that, by examining the overall round
+data, a substantial deviation exists in the choice frequencies of the minimax
+prediction both in the team and individual treatments at both the aggregate
+and decision-maker levels. This indicates that the minimax hypothesis is not
+correct. However, model selection reveals that the minimax model still fits the
+experimental data well over the alternative models considered here.
+   The learning models (EWA, RL, and BL) are mostly selected for the remaining
+subjects, but the composition is fairly diﬀerent between teams and individuals.
+The share of the EWA model is the lowest across three learning models in the
+
+  22
+     Because e2 ≈ 7.4, BIC penalizes complex models more strongly than AIC does, given data
+with a sample size of no less than 8.
+
+
+                                            24
+team treatment, whereas most subjects are classified into the EWA model in the
+individual treatment. The shares of the three learning models are significantly
+diﬀerent (chi-square test, p = 0.000). This result leads us to expect that the
+weights on the foregone payoﬀs in the EWA model might diﬀer between teams
+and individuals. Teams tend to assign weight on foregone payoﬀs near one or
+zero, whereas individuals tend to put it in the middle way on [0,1], as confirmed
+in Section 4.5.
+
+
+4.3.2 Half Data
+
+Here, we split the data into the first and second half, and apply model selection
+separately for each half.23 Table 8 presents the respective results of model
+selection at the aggregate level in the first and second half. The best fit model
+is changed over time in the team treatment. The BL model is best in the first
+half, whereas the minimax model is best in the second half for both players
+according to both AIC and BIC. In the individual treatment, the minimax model
+is best for both players in both halves with the exception that QRE is selected for
+player X in the first half according to AIC. Recall that, in section 3.2, the relative
+frequencies of choices for players X and Y are close to those by the minimax
+model in the first half of the team treatment. Model selection reveals that this
+is a result in which teams have exhibited behavior that is best fitted by the BL
+model, not the minimax model. In the second half of the team treatment, and
+in both halves of the individual treatment, the minimax model is best, although
+the relative frequencies of choices are far from those by minimax play.
+    We examine more deeply the performance of the BL model in the first half
+of the team treatment. Since the Cournot learning model (ϕ = 0) and fictitious
+play (ϕ = 1) are nested within the BL model, we can compare the performance
+of the BL model against those models, using the likelihood ratio test. Test
+statistic LR is given as 2(LL∗u − LL∗r ), where LL∗u and LL∗r represent the maximized
+
+  23
+     Some studies have divided the data into some successive time blocks, and have examined
+the model fits to evaluate the eﬀect of the subject’s experience on the performance of the model
+(McKelvey and Palfrey, 1995; Erev and Roth, 1998).
+
+
+                                              25
+              Table 8: Model Fits at the Aggregate Level for Each Half
+
+                                             Team                        Individual
+   Rounds      Player    Model LL∗            AIC      BIC       LL∗        AIC     BIC
+    1-60         X       EWA −2441.8         4893.5   4920.7   −1800.8     3611.5 3637.0
+                          RL −2499.7         5003.3   5014.2   −1834.3     3672.6 3682.8
+                          BL −2443.5         4892.9   4909.2   −1877.2     3760.5 3775.7
+                         QRE −2476.2         4954.4   4959.9   −1786.3     3574.7 3579.8
+                          MM −2476.2         4952.4   4952.4   −1787.8     3575.7 3575.7
+                 Y       EWA −2510.6         5031.2   5058.4   −1749.4     3508.8 3534.3
+                          RL −2546.8         5097.7   5108.5   −1781.8     3567.6 3577.7
+                          BL −2496.1         4998.1   5014.4   −1862.2     3730.5 3745.8
+                         QRE −2507.9         5017.7   5023.1   −1743.6     3489.2 3494.3
+                          MM −2507.9         5015.7   5015.7   −1743.1     3486.1 3486.1
+    61-120       X       EWA −2566.4         5142.8   5170.0   −1821.5     3652.9 3678.4
+                          RL −2578.1         5160.1   5171.0   −1844.8     3693.6 3703.8
+                          BL −2572.2         5150.4   5166.7   −1838.9     3683.8 3699.0
+                         QRE −2541.3         5084.6   5090.0   −1798.1     3598.3 3603.4
+                          MM −2541.3         5082.6   5082.6   −1798.1     3596.3 3596.3
+                 Y       EWA −2518.2         5046.4   5073.5   −1794.1     3598.2 3623.7
+                          RL −2528.3         5060.6   5071.4   −1825.8     3655.7 3665.9
+                          BL −2535.7         5077.4   5093.7   −1792.8     3591.6 3606.8
+                         QRE −2509.7         5021.4   5026.8   −1789.3     3580.7 3585.8
+                          MM −2509.7         5019.4   5019.4   −1789.3     3578.7 3578.7
+
+Notes: For explanations, see notes to Table 6.
+
+
+log-likelihoods from the unrestricted (BL model) and restricted models (either
+Cournot model or fictitious play), respectively. Under the null hypothesis (that
+the restricted model is true), LR has a χ2 (1) distribution.
+    Table 9 shows parameter estimates in the first half of the team treatment,
+and results of the likelihood ratio test. The estimated ϕ is equal to or nearly
+one for each player. Actually, the likelihood ratio test does not reject the null
+hypothesis that fictitious play is the true model for player X. However, in spite
+of ϕ being near one (0.973), the null hypothesis is rejected for player Y, in favor
+of the BL model. The Cournot model is clearly rejected for both players.
+    Table 10 provides the percentages of the best fit model at the decision-
+maker level in the first and second half, respectively. As in overall round data,
+according to BIC, the minimax model is best for about 80 percent of teams and
+individuals. Therefore, to evaluate the predictive power of the minimax model
+
+
+                                                 26
+Table 9: Parameter Estimates of BL models, and Likelihood Ratio Tests in the
+First Half of the Team Treatment
+
+     Player           Model            ϕ        λ      N(0)    LL∗           LR       p-value
+       X                 BL          1.000    0.011   18.704 −2443.5
+                  Cournot Model      0.000    0.000   0.214 −2686.7        486.461      0.000
+                  Fictitious Play    1.000    0.011   18.704 −2443.5        0.000       1.000
+        Y                BL          0.973    0.016   30.951 −2496.1
+                  Cournot Model      0.000    0.001    0.191 −2683.4       374.633      0.000
+                  Fictitious Play    1.000    0.014   20.726 −2499.9        7.751       0.005
+
+Notes: LL∗ is maximized log-likelihood. LR is given as 2(LL∗u − LL∗r ), where LL∗u and LL∗r represent
+the maximized log-likelihoods from the unrestricted (BL model) and restricted models (either
+Cournot model or fictitious play), respectively. Numbers in italic face are fixed.
+
+
+
+
+Table 10: Percentage of the Best Fit Model at the Decision-Maker Level for Each
+Half
+
+                                                                   Model
+       Criterion      Rounds     Treatment      EWA        RL        BL      QRE       MM
+         AIC           1-60        Team          5.4%     17.9%    25.0%     1.8%     50.0%
+                                 Individual     20.0%     7.5%      7.5%     5.0%     60.0%
+                       61-120      Team          3.6%     17.9%     7.1%     5.4%     66.1%
+                                 Individual      0.0%     20.0%    20.0%     0.0%     60.0%
+            BIC         1-60       Team          0.0%     10.7%    10.7%     0.0%     78.6%
+                                 Individual      5.0%     5.0%      7.5%     0.0%     82.5%
+                       61-120      Team          0.0%     12.5%     1.8%     3.6%     82.1%
+                                 Individual      0.0%     10.0%     7.5%     5.0%     77.5%
+
+
+
+
+                                                 27
+conservatively, we again present only the results according to AIC.
+   Even according to AIC, the minimax model again performs well for both
+halves of both treatments. It is best for more than or exactly half of subjects.
+Across those, the share in the first half of the team treatment is the lowest (50.0
+percent). Then, it increases in the second half, from 50.0 to 66.1 percent. This
+increase is not significant at the 5 percent level (chi-square test, p = 0.085). In the
+individual treatment, the minimax model is selected for 60.0 percent of subjects
+in both halves.
+   The remaining subjects are mostly classified into three learning models. The
+share of learning models in the first half is similar to that of overall round data.
+In the team treatment, the share of the EWA model is the lowest of the three
+learning models, and that of the BL model is the highest. In the individual
+treatment, many subjects are classified into the EWA model. The shares of three
+learning models are significantly diﬀerent between treatments (chi-square test,
+p = 0.007). At the decision-maker level, we cannot clearly observe that BL
+performs well in the team treatment, although we have weaker evidence that
+the share of MM is relatively lower, and that of BL is relatively higher.
+   The mode of change in the share of three learning models between halves
+for teams diﬀers greatly from individuals. In the team treatment, only the
+share of the BL model decreases considerably, which is significant (chi-square
+test, p = 0.010), although the share of three learning models is not significantly
+diﬀerent between halves (chi-square test, p = 0.207). In the individual treatment,
+all subjects are classified into either the RL or BL model in the second half. The
+EWA model is never selected. The share of the three learning models are
+significantly diﬀerent between halves (chi-square test, p = 0.002).
+   Finally, we address how each subject changes the behavior over time. The
+best fit model is changed between halves for 53.6 percent of teams and 67.5
+percent of individuals. Therefore, changing behavior over time is commonly
+observed. Tables 11 and 12 present the empirical transition probability with
+which subjects for whom the best fit model changes from the model in the
+
+
+
+                                          28
+           Table 11: Empirical Transition Probability in Team Treatment
+
+                                                          Second Half
+                                      EWA            RL       BL    QRE        MM
+                                      0.036        0.179     0.071 0.054      0.661
+                                      (2/56)      (10/56) (4/56) (3/56)      (37/56)
+             First        EWA         0.000        0.667     0.000 0.000      0.333
+             Half     0.054 (3/56)     (0/3)        (2/3)    (0/3)   (0/3)     (1/3)
+                           RL         0.000        0.200     0.100 0.100      0.600
+                      0.179 (10/56)   (0/10)       (2/10) (1/10) (1/10)       (6/10)
+                           BL         0.071        0.214     0.143 0.071      0.500
+                      0.250 (14/56)   (1/14)       (3/14) (2/14) (1/14)       (7/14)
+                          QRE         0.000        0.000     0.000 0.000      1.000
+                      0.018 (1/56)     (0/1)        (0/1)    (0/1)   (0/1)     (1/1)
+                          MM          0.036        0.107     0.036 0.036      0.786
+                      0.500 (28/56)   (1/28)       (3/28) (1/28) (1/28)      (22/28)
+
+Notes: Each cell shows the percentage of subjects with the best model change from the model in
+the corresponding row in the first half to that in the corresponding column in the second half
+among the total subjects for whom the best model is that in the corresponding row. Percentages
+below the model name represent percentages with which the model is selected as the best model
+in each half.
+
+
+
+
+       Table 12: Empirical Transition Probability in Individual Treatment
+
+                                                         Second Half
+                                       EWA          RL       BL    QRE        MM
+                                       0.000      0.200 0.200 0.000           0.600
+                                       (0/40)     (8/40) (8/40) (0/40)       (24/40)
+              First       EWA          0.000      0.250 0.125 0.000           0.625
+              Half    0.200 (8/40)      (0/8)      (2/8)    (1/8)  (0/8)      (5/8)
+                           RL          0.000      0.000 0.000 0.000           1.000
+                       0.075 (3/40)     (0/3)      (0/3)    (0/3)  (0/3)      (3/3)
+                           BL          0.000      0.000 0.333 0.000           0.667
+                       0.075 (3/40)     (0/3)      (0/3)    (1/3)  (0/3)      (2/3)
+                          QRE          0.000      0.000 0.000 0.000           1.000
+                       0.050 (2/40)     (0/2)      (0/2)    (0/2)  (0/2)      (2/2)
+                           MM          0.000      0.250 0.250 0.000           0.500
+                      0.600 (24/40)    (0/24)     (6/24) (6/24) (0/24)       (12/24)
+
+Notes: For explanations, see notes to Table 11.
+
+
+
+
+                                                  29
+corresponding row to the one in the corresponding column out of total subjects
+for whom the best fit model is the one in the corresponding row (the percentages
+of the same row sum to one). The percentages below the model name represent
+the one with which the model is selected as the best fit model, as presented in
+Table 10.
+   In the team treatment, except the EWA model, more than or equal to half
+of teams change the best fit model from the corresponding one to the minimax
+model. Of 28 teams with a best fit model that is non-minimax in the first half,
+15 teams (53.6 percent) changed the best fit model to the minimax. This phe-
+nomenon is also found in the individual treatment. Of 16, it is 12 individuals
+(75.0 percent). These percentages were not significantly diﬀerent between treat-
+ments (chi-square test, p = 0.160). The important diﬀerence is that 78.6 percent
+of teams for which the best model is the minimax model in the first half keep
+the behavior invariant in the second half, although it is 50.0 percent in the in-
+dividual treatment, which is significantly diﬀerent (chi-square test, p = 0.031).
+This result shows that once teams behave in the way that the minimax fits well,
+they are more likely to continue to play in the same way even if time progresses,
+than individuals do.
+
+
+4.4 Performance of Competing Models
+
+Some readers might wonder at our results that the minimax performs well in
+most cases because competing models (EWA, RL, BL, and QRE) are known to
+be a good predictor for the experimental data. Here, it is worth filling a gap
+separating the results of earlier research and our own.
+   First, related to three learning models, we will clarify, by reviewing previous
+research closely, that our results are not so diﬀerent from previously reported
+results. Camerer and Ho (1999) found that EWA generally performs well,
+examining various experimental data gathered by other researchers. Moreover,
+they found that the BL model, as well as EWA, fits well to the data in Mookherjee
+
+
+
+
+                                       30
+and Sopher’s (1997) two-player zero-sum games.24 They considered the RL,
+BL, and random choice models as rivals of EWA, but not Nash equilibrium.
+Therefore, they did not evaluate the relative performances of EWA and MM.
+When we particularly focus on the three learning models (EWA, RE, and BL) in
+our analysis, Tables 6 and 8 reveal that EWA and BL show better performance.
+Therefore, our results are consistent with theirs.
+       Erev and Roth (1998) examined the performance of their RL models using 12
+experimental datasets of games with unique mixed strategy equilibria gathered
+by them and other researchers. Their results show that RL models generally
+outperform Nash equilibrium. However, a closer examination of their results
+reveals that when we particularly focus on complex games such as O’Neill’s
+(1987) 4 × 4 game and Rapoport and Boebel’s (1992) 5 × 5 game, Nash equilib-
+rium often outperforms their RL models.25
+       Feltovich (2000) examined the performance of the RL and BL models using
+data from asymmetric-information game experiment and the data from other ex-
+periments, and found that the RL model generally outperforms the BL model,
+and that both the RL and BL models perform better than Nash equilibrium.
+However, he also found through re-examination of the data in Mookherjee and
+Sopher’s (1997) 6 × 6 two-player zero-sum game, that Nash equilibrium out-
+performs the RL and BL models with some criteria.26 In summary, considering
+the evidence for two-player zero-sum games with many strategies (such as 4 ×
+4, 5 × 5, and 6 × 6), performance of Nash equilibrium (minimax) exceeding that
+of adaptive learning models is commonly observed.
+       Related to QRE, it is noteworthy that maximized log-likelihoods for QRE in
+Table 6 are equal to those for MM. Actually, the estimates of λ for QRE are very
+large values in our estimation. Because QRE has a parameter to be estimated
+and because MM does not, both AIC and BIC for QRE become larger than those
+for MM, leading the result that QRE is not selected as the best fit model.
+
+  24
+     Table I in Camerer and Ho (1999) presents this result.
+  25
+     See Tables 1 and 2 in Erev and Roth (1998). In simpler 2 × 2 games, RL models generally
+perform well.
+  26
+     Tables VII and VIII in Feltovich (2000) illustrate that point.
+
+
+                                            31
+            Figure 2: Quantal Response Equilibrium as a Function of λ.
+
+    Figure 2 portrays a QRE graph as a function of λ. The q j and r j ( j ∈ {C, L, FIO})
+represent probabilities with which players X and Y choose strategy j in QRE,
+respectively.27 Figure shows that qC < rC , and qL > rL for any λ > 0. In other
+words, QRE predicts that (for any intermediate error level) player X always
+chooses C less often than player Y, and that player X always chooses L more
+often than player Y. However, Tables 2 and 3 show that our data violate it in
+both treatments, indicating that QRE predicts in the wrong direction the way
+in which subjects deviate from the equilibrium. Then, the λ that maximize the
+likelihood must be arbitrarily large because the diﬀerence between qC and rC ,
+and that between qL and rL are zero under the equilibrium, which is the closest
+to the observed data.28 The same problem occurred in both halves of the team
+treatment and in the second half of the individual treatment. In the first half of
+the individual treatment, the experimental data satisfy qC < rC and qL > rL , and
+QRE is selected for player X according to AIC. At the decision-maker level, we
+encountered the same problem for about 70 percent of pairs in both treatments.
+    Finally, for a robustness check to examine the extent to which our results
+can be generalized, we apply model selection to the data reported by Palacios-
+
+   27
+      Because F, I, and O are strategically equivalent, QRE predicts that the probabilities with
+which each player chooses those strategies are the same.
+   28
+      In the individual treatment, player X chooses C more often than player Y, as QRE predicts,
+although it fails to predict correctly the way of deviation for L. In this case, it is case-by-case
+whether we can obtain reasonable estimate of λ. Then, we were unable to do so for our case.
+
+
+                                                32
+             Figure 3: Distributions of EWA Parameters (Rounds 1–120).
+
+Huerta and Volij (2008), which are presented in Supplementary Appendix B. We
+used their data in which professional soccer players and their college students
+played O’Neill’s (1987) 4 × 4 game. Again, we find that the minimax model
+mostly performs well for predicting their behavior at both the aggregate and
+decision-maker level with some exceptions.29 Furthermore, the estimate of λ
+for QRE often becomes arbitrarily large for the reason presented above.
+
+
+4.5 Comparison of EWA Parameters
+
+Although our primary objective is investigation of the best fit models across
+five models, it is worth comparing EWA parameter estimates between teams
+and individuals, and clarifying how they use available information, under the
+assumption that all teams and individuals follow the EWA model. Figure 3
+depicts the distributions of key parameters (ϕ, κ, and δ) in the EWA model at
+the decision-maker level using overall round data.
+      Figure 3 reveals that ϕ concentrated on the value near one in both treatments.
+The values are not significantly diﬀerent between treatments (Wilcoxon rank-
+sum test, p = 0.144). This result indicates that both teams and individuals
+tend to treat the entire history as equally important. This may caused by our
+
+
+ 29
+      The aggregated behavior of professionals in the second half is mostly best fitted by QRE.
+
+
+                                                33
+experimental design in which the screen display includes all history information
+up to the current round, which avoids subjects from forgetting the past events.
+       The mean value of κ is smaller for teams than for individuals. Figure 3
+shows that distributions of κ have bimodal peaks for both treatments, but it
+tends to concentrate near zero for teams, and near one for individuals. The
+values are significantly diﬀerent between treatments (Wilcoxon rank-sum test,
+p = 0.006) This result indicates that teams tend to respond to the (weighted)
+average payoﬀs, whereas individuals tend to respond to the cumulative payoﬀs.
+       The values of δ are similar between teams and individuals. The values are
+not significantly diﬀerent (Wilcoxon rank-sum test, p = 0.574). Figure 3 shows
+that the distributions of δ also have bimodal peaks concentrating near either
+zero or one for both treatments, but their tendency is stronger for teams than
+for individuals. The fraction of teams with δ being either more than 0.9 or
+fewer than 0.1 are 64.3 percent, whereas it is 47.5 percent for individuals. The
+squared ranks test rejects the null hypothesis that two distributions have equal
+variance (p = 0.009). This result indicates that teams either tend to extremely
+take the hypothetical payoﬀs into account, or tend not to care about those at
+all.30 This result is consistent with the finding of model selection that (when
+we particularly examine three learning models) teams tend to be classified into
+either the RL or BL model, whereas individuals tend to be classified into the
+EWA model, as presented in Table 7.
+       Figures 4 and 5 depict the distributions of estimated parameters in the first
+and second halves, respectively. As in overall round data, ϕ concentrated on the
+values near one in both halves of both treatments, indicating that both teams and
+
+  30
+     This result might be explained by group polarization, which is a well-known phenomenon
+in social psychology (see, for example, Brown, 1986) by which group discussion leads the group
+decision to more extreme points in the same direction as the initial tendencies of a member’s
+individual preference. A main source for group polarization is the persuasive argument theory
+by which, during discussion, a member is exposed to persuasive arguments that were not
+available before the discussion. A person then changes his position in favor of that direction
+(Burnstein, and Vinokur, 1973; Burnstein, Vinokur, and Trope, 1973). If subjects in a group find
+it persuasive that they should care only about the realized payoﬀ, then that team is more likely
+to behave according to the RL model (δ tends to be near zero). If subjects in a group find it
+persuasive that they should care about the foregone payoﬀ as well as the realized payoﬀ, then
+that team is more likely to be a BL learner (δ tends to be near one).
+
+
+                                              34
+           Figure 4: Distributions of EWA Parameters (Rounds 1–60).
+
+
+
+
+         Figure 5: Distributions of EWA Parameters (Rounds 61–120).
+
+individuals only slightly discount past events. The values are not significantly
+diﬀerent between treatments in both halves (Wilcoxon rank-sum test, p = 0.991
+in the first half, and p = 0.297 in the second half).
+   In the first half, the distributions of κ have similar characteristics to the
+overall round data for both treatments. They have bimodal peaks, but tend to
+concentrate near zero for teams, and to concentrate near one for individuals.
+The values are significantly diﬀerent between treatments (Wilcoxon rank-sum
+test, p = 0.007). However, this tendency is not apparent in the second half. The
+values are not significantly diﬀerent between treatments (p = 0.166). This result
+indicates that tendency of teams to respond to the average payoﬀs and that of
+
+                                         35
+individuals to respond to the cumulative payoﬀs only hold in the early rounds
+of the experiment.
+   The distributions of δ again have bimodal peaks in both halves of both
+treatments. However, as opposed to overall round data, we cannot observe
+polarization by teams that δ concentrates on either zero or one. The variance of
+distributions are not significantly diﬀerent between treatments in both halves
+(squared ranks test, p = 0.588 in the first half, and p = 0.788 in the second
+half). Furthermore, we cannot clarify by this analysis why the aggregated data
+of teams in the first half is best fitted by the BL model. In the first half, the
+mean value of δ is smaller for teams, and not significantly diﬀerent from that
+of individuals (Wilcoxon rank-sum test, p = 0.341). In addition, the fraction of
+teams with δ being higher than 0.9 is lower than that of individuals with the
+same category.
+
+
+
+5 Discussion and Conclusion
+
+To evaluate the performance of the minimax model over time, we conducted an
+experiment in which teams and individuals play a two-player zero-sum game
+with a unique mixed strategy equilibrium. Based on the relative frequencies
+of choices, teams play near the minimax prediction in the first half of the ex-
+periment. However, adherence to minimax play does not last in the second
+half. We must conclude that the minimax model is successful in predicting the
+short-run behavior of teams, but not long-run behavior. The play of individuals
+is far from the minimax prediction throughout the course of the experiment, as
+previous experiments have found.
+   Model selection provides further evidence for the performance of the mini-
+max model. The aggregated behavior of teams in the first half is best fitted by
+a belief-based learning model, not the minimax model. Therefore, although the
+relative frequencies of teams in the first half are close to the minimax prediction,
+the minimax model is not the best predictor, given the team’s history of play.
+The minimax model is best in predicting the behavior of teams in the second
+
+                                        36
+half and that of individuals in both halves. Therefore, although the relative
+frequencies of teams in the second half and those of individuals in both halves
+are far from the minimax prediction, the minimax model is still close to the
+experimental data over the alternative models.
+   How can we interpret these observations? The belief-based learning model
+imposes a greater degree of rationality and ability of information processing.
+Players must know the underlying game structure and track the entire past
+history of the opponent’s choice (unless they are not Cournot learners). They
+must calculate the hypothetical payoﬀs from the opponent’s play that each
+strategy would have earned to form their beliefs. Then they (tend to) choose
+the action with the highest expected payoﬀ with greater probability. Given that
+teams are known to be strategically sophisticated and to have higher abilities
+of processing available information, teams can engage in performing belief
+learners in the first half of the experiment, but individuals cannot.
+   Given that the relative frequencies are far from the minimax prediction, good
+performance of the minimax model in the second half of teams and both halves
+of individuals should be interrupted by poor performance (mis-prediction) of
+the competing models, rather than giving rise to the interpretation such that
+subjects know how to play minimax. Related to teams, tracking the entire past
+history becomes a greater information load as time progresses. This might
+lead teams to give up tracking all such information, and to play without ample
+consideration of past events in the second half. Then, learning models fail to
+predict team behavior correctly, and the minimax becomes a relatively good
+performer. Individuals, in the first place, might not have suﬃcient ability to
+process the available information, which leads them to choose the actions that
+are not correlated so much to the past events. Consequently, the minimax
+model performs relatively better, although the choice frequencies of individuals
+are not close to the minimax prediction. If these interpretations have a point, the
+important message is that we should still strive to develop behavioral models of
+learning and equilibrium that predict the behavior of subjects well in complex
+
+
+
+                                        37
+two-player zero-sum games such as those in our experiment.
+   At the decision-maker level, the minimax model is best for most teams and
+individuals in both halves. This result is consistent with model selection at the
+aggregate level in the second half of teams and in both halves of individuals.
+However, this is not consistent with good performance of the BL model in the
+first half of teams, although we have weaker evidence that the fraction of the
+minimax model as best is relatively lower, and that of belief-based learning
+model as best is relatively higher. This inconsistency must be addressed in
+future research.
+   Comparison of the parameter estimates of the EWA model clarified how
+teams learn diﬀerently from or similarly to individuals in several respects. The
+important findings of this analysis are the following: (1) both teams and in-
+dividuals treat the entire past history as equally important, (2) teams tend to
+respond to the average past payoﬀs, while individuals tend to respond to the
+cumulative past payoﬀs (using overall round and first half data), (3) teams either
+tend to extremely take the hypothetical payoﬀs into account, or tend not to care
+about those at all (using overall round data), and (4) learning parameters in the
+second half are mutually similar. We cannot clarify by these analyses why the
+aggregated data of teams in the first half are best fitted by the BL model. That
+point must be addressed in future research.
+   From a methodological perspective, we use the method of model selec-
+tion, as well as hypothesis testing, to evaluate the performance of the minimax
+model. As noted before, model selection can address questions of how close
+the minimax is to the experimental data, whereas hypothesis testing addresses
+the question of whether the minimax is incorrect or not. These questions are
+equally important. We have no reason to discuss it based only on either one of
+the two.
+
+
+
+
+                                       38
+References
+
+[1] Arthur, W. B. (1991): “Designing Economic Agents that Act Like Human
+  Agents: A Behavioral Approach to Bounded Rationality,” American Economic
+  Review Papers and Proceedings, 81 (2), 353–359.
+
+[2] Arthur, W. B. (1993): “On Designing Economic Agents that Behave Like
+  Human Agents,” Journal of Evolutionary Economics, 3 (1), 1–22.
+
+[3] Auerswald, H., C. Schmidt, M. Thum, and G. Torsvik (2016): “Teams Con-
+  tribute More and Punish Less,” Working Paper.
+
+[4] Binmore, K., J. Swierzbinski, and C. Proulx (2001): “Does Minimax Work?
+  An Experimental Study,” Economic Journal, 111 (473), 445–464.
+
+[5] Blinder, A. S., and J. Morgan (2005): “Are Two Heads Better Than One?
+  Monetary Policy by Committee,” Journal of Money, Credit and Banking, 37 (5),
+  789–811.
+
+[6] Bornstein, G. (2008): “A Classification of Games by Player Type,” in New
+  Issues and Paradigms in Research on Social Dilemmas, ed. by A. Biel, D. Eek, T.
+  Gärling, and M. Gustafsson. New York: Springer. 27–42.
+
+[7] Bornstein, G., T. Kugler, and A. Ziegelmeyer (2004): “Individual and Group
+  Decisions in the Centipede Game: Are Groups More “Rational” Players?,”
+  Journal of Experimental Social Psychology, 40 (5), 599–605.
+
+[8] Bornstein, G., and I. Yaniv (1998): “Individual and Group Behavior in the
+  Ultimatum Game: Are Groups More “Rational” Players?,” Experimental Eco-
+  nomics, 1 (1), 101–108.
+
+[9] Brown, G. W. (1951): “Iterative Solution of Games by Fictitious Play,” in
+  Activity Analysis of Production and Allocation, ed. by T. C. Koopmans. New
+  York: Wiley. 374–376.
+
+
+
+
+                                        39
+[10] Brown, R. (1986): Social Psychology; The Second Edition. New York: Free
+  Press.
+
+[11] Brown, J. N., and R. W. Rosenthal (1990): “Testing the Minimax Hypothesis:
+  A Re-Examination of O’Neill’s Game Experiment,” Econometrica, 58 (5), 1065–
+  1081.
+
+[12] Burnstein, E., and A. Vinokur (1973): “Testing Two Classes of Theories
+  about Group Induced Shifts in Individual Choice,” Journal of Experimental
+  Social Psychology, 9 (2), 123–137.
+
+[13] Burnstein, E., A. Vinokur, and Y. Trope (1973): “Interpersonal Compar-
+  ison Versus Persuasive Argumentation: A More Direct Test of Alternative
+  Explanations for Group-Induced Shifts in Individual Choice,” Journal of Ex-
+  perimental Social Psychology, 9 (3), 236–245.
+
+[14] Camerer, C., and T.-H. Ho (1999): “Experience-Weighted Attraction Learn-
+  ing in Normal Form Games,” Econometrica, 67 (4), 827–874.
+
+[15] Camerer, C. F., T.-H. Ho, and J.-K. Chong (2002):             “Sophisticated
+  Experience-Weighted Attraction Learning and Strategic Teaching in Repeated
+  Games,” Journal of Economic Theory, 104 (1), 137–188.
+
+[16] Cason, T. N., and V.-L. Mui (1997): “A Laboratory Study of Group Polari-
+  sation in the Team Dictator Game,” Economic Journal, 107 (444), 1465–1483.
+
+[17] Chalos, P., and S. Pickard (1985): “Information Choice and Cue Use: An
+  Experiment in Group Information Processing,” Journal of Applied Psychology,
+  70 (4), 634–641.
+
+[18] Charness, G., and M. Sutter (2012): “Groups Make Better Self-Interested
+  Decisions,” Journal of Economic Perspectives, 26 (3), 157–176.
+
+[19] Cheung, Y.-W., and D. Friedman (1997): “Individual Learning in Normal
+  Form Games: Some Laboratory Results,” Games and Economic Behavior, 19 (1),
+  46–76.
+
+                                        40
+[20] Cooper, D. J., and J. H. Kagel (2005): “Are Two Heads Better Than One?
+  Team versus Individual Play in Signaling Games,” American Economic Review,
+  95 (3), 477–509.
+
+[21] Cox, J. C. (2002): “Trust, Reciprocity, and Other-Regarding Preferences:
+  Groups vs. Individuals and Males vs. Females,” in Experimental Business Re-
+  search, ed. by R. Zwick and A. Rapoport. New York: Springer. 331–350.
+
+[22] Cox, C. A., and B. Stoddard (2016): “Strategic Thinking in Public Goods
+  Games with Teams,” Working Paper.
+
+[23] Dhami, Sanjit (2016): The Foundations of Behavioral Economic Analysis. Ox-
+  ford: Oxford Univesity Press.
+
+[24] Dittrich, D. A. V., W. Güth, M. G. Kocher, and P. Pezanis-Christou (2012):
+  “Loss Aversion and Learning to Bid,” Economica, 79 (314), 226–257.
+
+[25] Erev, I., and A. E. Roth (1998): “Predicting How People Play Games: Re-
+  inforcement Learning in Experimental Games with Unique, Mixed Strategy
+  Equilibria,” American Economic Review, 88 (4), 848–881.
+
+[26] Feltovich, N. (2000): “Reinforcement-Based vs. Belief-Based Learning
+  Models in Experimental Asymmetric-Information Games,” Econometrica, 68
+  (3), 605–641.
+
+[27] Feri, F., B. Irlenbusch, and M. Sutter (2010): “Eﬃciency Gains from Team-
+  Based Coordination – Large-Scale Experimental Evidence,” American Eco-
+  nomic Review, 100 (4), 1892–1912.
+
+[28] Fischbacher, U. (2007): “z-Tree: Zurich Toolbox for Ready-Made Economic
+  Experiments,” Experimental Economics, 10 (2), 171–178.
+
+[29] Fudenberg, D., and D. K. Levine (1998): The Theory of Learning in Games.
+  Cambridge, MA: The MIT Press.
+
+[30] Geng, S., Y. Peng, J. Shachat, and H. Zhong (2015): “Adolescents, Cognitive
+  Ability, and Minimax Play,” Economics Letters, 128, 54–58.
+
+                                      41
+[31] Gibbons, J. D., and S. Chakraborti (2003): Nonparametric Statistical Inference.
+  New York: Marcel Dekker.
+
+[32] Ho, T.-H., X. Wang, and C. F. Camerer (2008): “Individual Diﬀerences in
+  EWA Learning with Partial Payoﬀ Information,” Economic Journal, 118 (525),
+  37–59.
+
+[33] Huber, S., J. Model, and S. Städter (2017): “The Behavior of Teams and
+  Individuals in Public Goods Games with Ostracism,” Working Paper.
+
+[34] Kagel, J. H., and P. McGee (2016): “Team versus Individual Play in Finitely
+  Repeated Prisoner Dilemma Games,” American Economic Journal: Microeco-
+  nomics, 8 (2), 253–276.
+
+[35] Kocher, M., S. Strauß, and M. Sutter (2006): “Individual or Team Decision-
+  Making – Causes and Consequences of Self-Selection,” Games and Economic
+  Behavior, 56 (2), 259–270.
+
+[36] Kocher, M. G., and M. Sutter (2005): “The Decision Maker Matters: In-
+  dividual versus Group Behaviour in Experimental Beauty-Contest Games,”
+  Economic Journal, 115 (500), 200–223.
+
+[37] Kugler, T., G. Bornstein, M. G. Kocher, and M. Sutter (2007): “Trust between
+  Individuals and Groups: Groups Are Less Trusting Than Individuals but Just
+  as Trustworthy,” Journal of Economic Psychology, 28 (6), 646–657.
+
+[38] Kugler, T., E. E. Kausel, and M. G. Kocher (2012): “Are Groups More
+  Rational Than Individuals? A Review of Interactive Decision Making in
+  Groups,” Wiley Interdisciplinary Reviews: Cognitive Science, 3 (4), 471–482.
+
+[39] Luhan, W. J., M. G. Kocher, and M. Sutter (2009): “Group Polarization in
+  the Team Dictator Game Reconsidered,” Experimental Economics, 12 (1), 26–41.
+
+[40] McKelvey, R. D., and T. R. Palfley (1995): “Quantal Response Equilibria for
+  Normal Form Games,” Games and Economic Behavior, 10 (1), 6–38.
+
+
+
+                                        42
+[41] Mookherjee, D., and B. Sopher (1997): “Learning and Decision Costs in
+  Experimental Constant Sum Games,” Games and Economic Behavior, 19 (1),
+  97–132.
+
+[42] Ochs, J. (1995): “Games with Unique, Mixed Strategy Equilibria: An Ex-
+  perimental Study,” Games and Economic Behavior, 10 (1), 202–217.
+
+[43] Okano, Y. (2013): “Minimax Play by Teams,” Games and Economic Behavior,
+  77 (1), 168–180.
+
+[44] Okano, Y. (2016): “Re-examination of Team’s Play in a Mixed-Strategy
+  Game Experiment,” Applied Economics Letters, 23 (8), 601–604.
+
+[45] O’Neill, B. (1987): “Nonmetric Test of the Minimax Theory of Two-Person
+  Zerosum Games,” Proceedings of the National Academy of Sciences, 84 (7), 2106–
+  2109.
+
+[46] O’Neill, B. (1991): “Comments on Brown and Rosenthal’s Reexamination,”
+  Econometrica, 59 (2), 503–507.
+
+[47] Palacios-Huerta, I., and O. Volij (2008): “Experientia Docet: Professionals
+  Play Minimax in Laboratory Experiments,” Econometrica, 76 (1), 71–115.
+
+[48] Rapoport A., and R. B. Boebel (1992): “Mixed Strategies in Strictly Compet-
+  itive Games: A Further Test of the Minimax Hypothesis,” Games and Economic
+  Behavior, 4 (2), 261–283.
+
+[49] Robinson, J. (1951): “An Iterative Method of Solving a Game,” Annals of
+  Mathematics, 54 (2), 296–301.
+
+[50] Rosenthal, R. W., J. Shachat, and M. Walker (2003): “Hide and Seek in
+  Arizona,” International Journal of Game Theory, 32 (2), 273–293.
+
+[51] Roth, A. E., and I. Erev (1995): “Learning in Extensive-Form Games: Exper-
+  imental Data and Simple Dynamic Models in the Intermediate Term,” Games
+  and Economic Behavior, 8 (1), 164–212.
+
+
+                                       43
+[52] Shachat, J. M. (2002): “Mixed Strategy Play and the Minimax Hypothesis,”
+  Journal of Economic Theory, 104 (1), 189–226.
+
+[53] Sutter, M. (2005): “Are Four Heads Better Than Two? An Experimental
+  Beauty-Contest Game with Teams of Diﬀerent Size,” Economics Letters, 88 (1),
+  41–46.
+
+[54] Sutter, M., S. Czermak, and F. Feri (2013): “Strategic Sophistication of
+  Individuals and Teams. Experimental Evidence,” European Economic Review,
+  64, 395–410.
+
+[55] Van Essen, M., and J. Wooders (2015): “Blind Stealing: Experience and Ex-
+  pertise in a Mixed-Strategy Poker Experiment,” Games and Economic Behavior,
+  91, 186–206.
+
+[56] Weakliem, D. L. (2016): Hypothesis Testing and Model Selection in the Social
+  Sciences. New York: Guilford Press.
+
+[57] Wooders, J. (2010): “Does Experience Teach? Professionals and Minimax
+  Play in the Lab,” Econometrica, 78 (3), 1143–1154.
+
+
+
+
+                                        44
+       Supplementary Appendix to
+“Team vs. Individual, Hypothesis Testing vs.
+ Model Selection, and the Minimax Model”
+                                Yoshitaka Okano∗
+
+
+
+
+Contents
+
+A Additional Tables                                                                  2
+
+B Robustness Check: Model Selection to Data from Professional vs.
+   Student Behavior Experiment                                                      18
+
+C Translated Instructions for the Team Treatment                                    23
+
+D Translated Instructions for the Individual Treatment                              31
+
+
+
+
+   ∗
+     School of Economics and Management, Kochi University of Technology, 2-22 Eikokuji,
+Kochi, Kochi 780-8515 JAPAN E-mail: oknystk@gmail.com. Phone: +81-88-821-7148. Fax:
++81-88-821-7198.
+                                     Supplementary Appendix
+
+
+A      Additional Tables
+
+This section provides additional tables. Tables from A1 to A6 show the relative
+frequencies of choices, number of runs, and the results of statistical tests in the
+team and individual treatments with diﬀerent round intervals (overall round,
+first half, and second half). Symbols ** and * denote the rejection of the chi-
+square goodness-of-fit test of the frequencies for a given choice to the minimax
+prediction at the 5% and 10% levels, respectively. The test statistic is distributed
+asymptotically with χ2 (1) under the minimax hypothesis. Symbols ♯♯ and ♯
+represent the rejection of the chi-square goodness-of-fit test of the frequencies
+for all choices (C, L, F, I, and O) to the minimax prediction at the 5% and 10%
+levels, respectively. The test statistic is distributed asymptotically with χ2 (4)
+under the minimax hypothesis. Columns “Number of Runs” show the total
+number of runs in the sequence of the corresponding choice and choices other
+than that choice (e.g., in the sequence of C and Non-C choices). Let R j be the
+number of runs for j ∈ {C, L, F, I, O}, and N j and Nn j be the number of j and Non- j
+choices. Under the null hypothesis of serial independence, the probability that
+there are exactly R j runs conditional on N j and Nn j occurrences is given as
+
+                        (                         / (N +N )
+                       
+                             N j −1 )( Nnj −1 )
+                       
+                        2  (R j /2)−1 (R j /2)−1
+                                                       j
+                                                         Nj
+                                                            nj
+                                                               ,                if R j is even,
+ f (R j |N j , Nnj ) = 
+                        (( N −1 )( N −1 ) ( N −1 )( N −1 )) / (N +N )
+                       
+                             j         nj
+                                                  +     j        nj j   nj
+                                                                           ,    if R j is odd.
+                        (R j −1)/2   (R j −3)/2   (R j −3)/2   (R j −1)/2
+                                                                      N     j
+
+
+
+The serial independence hypothesis is rejected at the 5% level if F(R j |N j , Nn j ) <
+                                                                       ∑R
+0.025 or if F(R j − 1|N j , Nn j ) > 0.975, where F(R j |N j , Nn j ) = i=1j f (R j |N j , Nnj ).
+Symbols ‡ and † denote the rejection of runs test for a given choice at the 5%
+and 10% levels, respectively.
+    Tables from A7 to A12 show the relative frequencies of action profiles, with
+results of chi-square tests with F, I, and O combined. Symbols ♯♯ and ♯ denote
+the rejection of the chi-square test of the frequencies for action profiles to the
+minimax prediction at the 5% and 10% levels, respectively. The test statistic is
+distributed asymptotically with χ2 (8) under the minimax hypothesis.
+
+
+
+                                                  A-2
+                         Supplementary Appendix
+
+
+
+
+                 Table A1: Team Treatment (Rounds 1-120)
+
+                        Relative Frequencies       χ2      Number of Runs
+Pair   Player     C       L       F      I    O   Test   C L    F     I   O
+ 1       X      0.400 0.275 0.125 0.142 0.058**          64 52 27 33 15
+         Y      0.425 0.158** 0.183* 0.133 0.100   ♯     70† 37 40 31 25
+ 2       X      0.358 0.233 0.150 0.117 0.142            55 45 33 25 31
+         Y      0.233** 0.233 0.233** 0.167 0.133  ♯♯    42 42 43 37 27
+ 3       X      0.317 0.292 0.125 0.100 0.167            52 54 27 21 39
+         Y      0.325 0.217 0.183* 0.183* 0.092    ♯     54 47 29‡ 34 19
+ 4       X      0.417 0.208 0.142 0.133 0.100            51 31‡ 33 23† 23
+         Y      0.367 0.308 0.083 0.142 0.100            46‡ 56 17 29 23
+ 5       X      0.325 0.333** 0.125 0.133 0.083          54 45† 30 25 21
+         Y      0.275** 0.333** 0.142 0.108 0.142        53 47 31 25 25
+ 6       X      0.325 0.317* 0.092 0.083 0.183* ♯        59 55 23 17 37
+         Y      0.300* 0.325* 0.100 0.150 0.125          53 60 24 33 31
+ 7       X      0.383 0.250 0.158 0.075* 0.133           63 47 33 15 29
+         Y      0.408 0.325* 0.117 0.042** 0.108   ♯♯    60 62† 29 11 25
+ 8       X      0.317 0.283 0.125 0.133 0.142            53 47 29 31 33
+         Y      0.333 0.292 0.183* 0.100 0.092           46 55 38 25 19
+ 9       X      0.442 0.242 0.150 0.083 0.083            53 43 33 15† 19
+         Y      0.342 0.267 0.150 0.108 0.133            45† 49 31 21 29
+10       X      0.433 0.225 0.092 0.117 0.133            67 41 23 25 31
+         Y      0.450* 0.183* 0.133 0.083 0.150          58 34 29 19 31
+11       X      0.350 0.275 0.125 0.142 0.108            60 42 31 29 25
+         Y      0.292* 0.308 0.233** 0.075* 0.092  ♯♯    44 47 49 19 22
+12       X      0.358 0.217 0.150 0.158 0.117            53 33‡ 31 37 27
+         Y      0.458* 0.267 0.108 0.067* 0.100          59 46 21 17 20
+13       X      0.400 0.217 0.133 0.117 0.133            65 49† 31 27 31
+         Y      0.325 0.275 0.167 0.108 0.125            50 52 39 27 29
+14       X      0.342 0.267 0.158 0.108 0.125            53 42 33 23 24
+         Y      0.308 0.233 0.158 0.150 0.150            54 45 33 30 29
+15       X      0.442 0.292 0.125 0.100 0.042** ♯♯       63 50 30 25 11
+         Y      0.417 0.358** 0.108 0.017** 0.100  ♯♯    58 66† 25 5 23
+16       X      0.242** 0.275 0.217** 0.167 0.100  ♯♯    41 55 41 35 23
+         Y      0.250** 0.275 0.233** 0.125 0.117  ♯♯    49 53 48 24 29
+17       X      0.400 0.242 0.117 0.142 0.100            55 45 25 33 23
+         Y      0.433 0.267 0.117 0.100 0.083            56 39† 24 23 21
+18       X      0.375 0.275 0.133 0.100 0.117            54 48 31 25 25
+         Y      0.450* 0.308 0.083 0.083 0.075* ♯        63 63‡ 21 21 19
+19       X      0.350 0.275 0.142 0.067* 0.167           51 51 31 15 31
+         Y      0.450* 0.233 0.133 0.100 0.083           61 43 32 25 18
+20       X      0.400 0.225 0.150 0.117 0.108            47‡ 41 35 25 25
+         Y      0.350 0.183* 0.192** 0.150 0.125         67‡ 39 32† 31 24
+
+
+
+
+                                    A-3
+                                Supplementary Appendix
+
+
+
+
+                                   Table A1: Continued
+
+                            Relative Frequencies           χ2           Number of Runs
+  Pair    Player      C       L       F      I       O    Test        C L    F     I   O
+   21       X       0.542** 0.167** 0.175* 0.058** 0.058** ♯♯         52 38 31 15 15
+            Y       0.375 0.317* 0.117 0.108 0.083                    51 50 21† 24 19
+   22       X       0.458* 0.200 0.150 0.083 0.108                    61 39 31 21 25
+            Y       0.483** 0.283 0.125 0.075* 0.033** ♯♯             65 51 29 19 9
+   23       X       0.358 0.225 0.092 0.158 0.167                     64 47 23 36 35
+            Y       0.350 0.283 0.133 0.175* 0.058**                  59 54 31 42‡ 15
+   24       X       0.458* 0.208 0.125 0.117 0.092                    57 33† 23 25 19
+            Y       0.333 0.367** 0.133 0.108 0.058** ♯♯              60 63 31 22 13
+   25       X       0.300* 0.192 0.158 0.192** 0.158       ♯♯         55 41 34 38 33
+            Y       0.325 0.308 0.117 0.142 0.108                     52 48 25 27 27
+   26       X       0.367 0.217 0.117 0.117 0.183*                    56 43 27 28 35
+            Y       0.375 0.300 0.125 0.083 0.117                     55 44 20‡ 17 23
+   27       X       0.425 0.208 0.142 0.108 0.117                     61 43 33 25 27
+            Y       0.267** 0.208 0.175* 0.150 0.200** ♯♯             46 45 35 27 42
+   28       X       0.333 0.217 0.225** 0.125 0.100        ♯♯         51 45 49 29 25
+            Y       0.375 0.292 0.100 0.117 0.117                     57 49 23 27 25
+   All      X       0.379 0.245 0.140** 0.118 0.119        ♯
+            Y       0.360* 0.275** 0.145** 0.113** 0.107** ♯♯
+
+Notes: Symbols ** and * denote the rejection of the chi-square goodness-of-fit test of the fre-
+quencies for a given choice to the minimax prediction at the 5% and 10% significance levels,
+respectively. Symbols ♯♯ and ♯ denote the rejection of the chi-square goodness-of-fit test of the
+frequencies for all choices (C, L, F, I, and O) to the minimax prediction at the 5% and 10%
+significance levels, respectively. Symbols ‡ and † denote the rejection of runs test for a given
+choice at the 5% and 10% significance levels, respectively.
+
+
+
+
+                                              A-4
+                          Supplementary Appendix
+
+
+
+
+                   Table A2: Team Treatment (Rounds 1-60)
+
+                       Relative Frequencies          χ2       Number of Runs
+Pair   Player     C      L       F      I       O   Test   C L     F     I   O
+ 1       X      0.367 0.283 0.133 0.150 0.067              30 26 15 19       9
+         Y      0.417 0.150* 0.183 0.150 0.100             38‡ 19 18 17 13
+ 2       X      0.367 0.233 0.150 0.117 0.133              29 21 19 13 15
+         Y      0.283 0.133** 0.233** 0.200* 0.150   ♯♯    23 15 23 21 13
+ 3       X      0.367 0.300 0.100 0.067 0.167              24 27 13      9   20
+         Y      0.367 0.133** 0.250** 0.133 0.117    ♯♯    24 17 18† 15 11
+ 4       X      0.433 0.183 0.167 0.117 0.100              28 17 18 11 11
+         Y      0.367 0.267 0.033** 0.183 0.150            25 24 5      19 18
+ 5       X      0.317 0.383** 0.100 0.133 0.067            26 23 12 13       9
+         Y      0.267* 0.267 0.150 0.117 0.200*            24 20 15 15 17
+ 6       X      0.350 0.300 0.083 0.083 0.183              31 27 11 10 20
+         Y      0.367 0.267 0.133 0.133 0.100              34 27 16 17 13
+ 7       X      0.417 0.217 0.117 0.117 0.133              34 18 15 11 13
+         Y      0.350 0.367** 0.117 0.067 0.100            31 33 15      9   11
+ 8       X      0.333 0.267 0.133 0.150 0.117              27 25 15 17 15
+         Y      0.283 0.300 0.183 0.133 0.100              18‡ 29 20 17 13
+ 9       X      0.483* 0.200 0.133 0.083 0.100             27 19 15      9   11
+         Y      0.367 0.217 0.117 0.117 0.183              25 20 13 12 19
+10       X      0.450 0.200 0.100 0.133 0.117              39‡ 21 13 13 13
+         Y      0.383 0.217 0.133 0.100 0.167              26 20 15 11 17
+11       X      0.367 0.350* 0.117 0.117 0.050*            30 22† 15 11      7
+         Y      0.383 0.233 0.200* 0.083 0.100             22† 19 22 11 13
+12       X      0.383 0.233 0.150 0.167 0.067              28 17† 14 21      9
+         Y      0.433 0.250 0.133 0.083 0.100              25 20 10‡ 11      9
+13       X      0.367 0.250 0.117 0.133 0.133              32 27 15 16 15
+         Y      0.317 0.233 0.183 0.117 0.150              25 23 21 15 17
+14       X      0.367 0.233 0.150 0.050* 0.200*            28 21 15      7   18
+         Y      0.333 0.267 0.183 0.067 0.150              28 26 17      9   13
+15       X      0.417 0.317 0.100 0.100 0.067              28 20† 13 13      9
+         Y      0.483* 0.367** 0.050* 0.000** 0.100  ♯♯    31 31 7 n.a. 11
+16       X      0.317 0.267 0.167 0.150 0.100              27 28 18 17 13
+         Y      0.283 0.333 0.200* 0.117 0.067             23 31 21 13        9
+17       X      0.400 0.317 0.083 0.100 0.100              29 29 11 13 13
+         Y      0.400 0.317 0.067 0.117 0.100              26 21 9      14 13
+18       X      0.417 0.283 0.117 0.083 0.100              27 25 15 11 13
+         Y      0.450 0.317 0.067 0.100 0.067              29 33† 9     13   9
+19       X      0.333 0.317 0.150 0.067 0.133              25 27 17      9   13
+         Y      0.400 0.250 0.167 0.117 0.067              30 21 20 15        7
+20       X      0.350 0.250 0.167 0.100 0.133              24 24 21 13 17
+         Y      0.317 0.183 0.217** 0.167 0.117            33† 21 18 17 12
+
+
+
+
+                                      A-5
+                                Supplementary Appendix
+
+
+
+
+                                   Table A2: Continued
+
+                            Relative Frequencies      χ2      Number of Runs
+  Pair    Player      C       L       F      I   O   Test   C L    F     I   O
+   21       X       0.533** 0.183 0.150 0.050* 0.083  ♯     26 20 15 7 11
+            Y       0.400 0.317 0.067 0.100 0.117           26 26 7 11 13
+   22       X       0.450 0.250 0.150 0.067 0.083           30 23 14 9 11
+            Y       0.517** 0.283 0.083 0.067 0.050* ♯      33 27 11 9       7
+   23       X       0.417 0.250 0.033** 0.167 0.133         34 24 5 21 13
+            Y       0.433 0.233 0.117 0.150 0.067           34 22 15 19 9
+   24       X       0.433 0.250 0.150 0.067 0.100           26 18† 13 9 11
+            Y       0.317 0.400** 0.167 0.083 0.033** ♯♯    32 33 21 10 5
+   25       X       0.350 0.217 0.133 0.133 0.167           31 21 14 16 15
+            Y       0.350 0.283 0.133 0.133 0.100           24 22 15 13 13
+   26       X       0.383 0.200 0.150 0.067 0.200*          30 20 17 9 17
+            Y       0.367 0.267 0.133 0.117 0.117           29 20 10‡ 11 11
+   27       X       0.450 0.217 0.117 0.100 0.117           30 23 15 12 15
+            Y       0.300 0.283 0.133 0.117 0.167           26 32‡ 15 13 19
+   28       X       0.283 0.233 0.267** 0.117 0.100   ♯♯    24 27 29 14 13
+            Y       0.350 0.267 0.133 0.117 0.133           26 24 15 15 13
+   All      X       0.389 0.257 0.132 0.107** 0.116
+            Y       0.367 0.264 0.142** 0.114 0.113   ♯
+
+Notes: For explanations, see notes to Table A1.
+
+
+
+
+                                              A-6
+                          Supplementary Appendix
+
+
+
+
+                 Table A3: Team Treatment (Rounds 61-120)
+
+                        Relative Frequencies         χ2      Number of Runs
+Pair   Player     C       L       F       I     O   Test   C L    F     I   O
+ 1       X      0.433 0.267 0.117 0.133 0.050*             34 27 13 14 7
+         Y      0.433 0.167 0.183 0.117 0.100              33 19 23 15 13
+ 2       X      0.350 0.233 0.150 0.117 0.150              26 24 15 13 17
+         Y      0.183** 0.333 0.233** 0.133 0.117    ♯♯    19 27 21 17 15
+ 3       X      0.267* 0.283 0.150 0.133 0.167             28 28 15 13 19
+         Y      0.283 0.300 0.117 0.233** 0.067      ♯     31† 31 11 19 9
+ 4       X      0.400 0.233 0.117 0.150 0.100              24 15‡ 15 13 12
+         Y      0.367 0.350* 0.133 0.100 0.050*            22† 33 13 11 6
+ 5       X      0.333 0.283 0.150 0.133 0.100              29 23 19 13 13
+         Y      0.283 0.400** 0.133 0.100 0.083      ♯     29 27 17 11 9
+ 6       X      0.300 0.333 0.100 0.083 0.183              28 29 13 8 17
+         Y      0.233** 0.383** 0.067 0.167 0.150    ♯♯    19 33 9 17 19
+ 7       X      0.350 0.283 0.200* 0.033** 0.133           30 30 19 5 17
+         Y      0.467 0.283 0.117 0.017** 0.117            29 29 15 3 15
+ 8       X      0.300 0.300 0.117 0.117 0.167              26 22 15 15 19
+         Y      0.383 0.283 0.183 0.067 0.083              28 26 19 9       7†
+ 9       X      0.400 0.283 0.167 0.083 0.067              27 25 19 7† 9
+         Y      0.317 0.317 0.183 0.100 0.083              21 29 19 10 10
+10       X      0.417 0.250 0.083 0.100 0.150              28 21 11 13 18
+         Y      0.517** 0.150* 0.133 0.067 0.133           33 15 15 9 15
+11       X      0.333 0.200 0.133 0.167 0.167              30 20 17 19 19
+         Y      0.200** 0.383** 0.267** 0.067 0.083  ♯♯    23 29 28 9 10
+12       X      0.333 0.200 0.150 0.150 0.167              26 17 17 17 18
+         Y      0.483* 0.283 0.083 0.050* 0.100            35 26 11 7 12
+13       X      0.433 0.183 0.150 0.100 0.133              34 23 16 11 17
+         Y      0.333 0.317 0.150 0.100 0.100              25 29 19 13 13
+14       X      0.317 0.300 0.167 0.167 0.050*             26 22 19 17 7
+         Y      0.283 0.200 0.133 0.233** 0.150      ♯     27 19 16 22 17
+15       X      0.467 0.267 0.150 0.100 0.017**            36 31‡ 18 13 3
+         Y      0.350 0.350* 0.167 0.033** 0.100           27 36‡ 18 5 13
+16       X      0.167** 0.283 0.267** 0.183 0.100    ♯♯    15 28 23 18 11
+         Y      0.217** 0.217 0.267** 0.133 0.167    ♯♯    26† 23 27 12 21
+17       X      0.400 0.167 0.150 0.183 0.100              26 17 14 21 11
+         Y      0.467 0.217 0.167 0.083 0.067              31 19 15 9       9
+18       X      0.333 0.267 0.150 0.117 0.133              28 24 17 15 13
+         Y      0.450 0.300 0.100 0.067 0.083              34 30 13 9 11
+19       X      0.367 0.233 0.133 0.067 0.200*             26 25 15 7 18
+         Y      0.500** 0.217 0.100 0.083 0.100            31 22 13 11 12
+20       X      0.450 0.200 0.133 0.133 0.083              23† 17 15 13 9
+         Y      0.383 0.183 0.167 0.133 0.133              35 19 15 15 13
+
+
+
+
+                                      A-7
+                                Supplementary Appendix
+
+
+
+
+                                   Table A3: Continued
+
+                            Relative Frequencies          χ2      Number of Runs
+  Pair    Player      C       L       F       I     O    Test   C L    F     I   O
+   21       X       0.550** 0.150* 0.200* 0.067 0.033** ♯♯      26 19 16 9       5
+            Y       0.350 0.317 0.167 0.117 0.050*              25 24 15 14 7
+   22       X       0.467 0.150* 0.150 0.100 0.133              32 16 17 13 15
+            Y       0.450 0.283 0.167 0.083 0.017** ♯           33 25 19 11 3
+   23       X       0.300 0.200 0.150 0.150 0.200*              30 23 19 16 23
+            Y       0.267* 0.333 0.150 0.200* 0.050* ♯          25 32 17 24 7
+   24       X       0.483* 0.167 0.100 0.167 0.083              32 16 11 17 9
+            Y       0.350 0.333 0.100 0.133 0.083               28 31 11 12 9
+   25       X       0.250** 0.167 0.183 0.250** 0.150     ♯♯    24 21 21 22 19
+            Y       0.300 0.333 0.100 0.150 0.117               28 26 11 15 15
+   26       X       0.350 0.233 0.083 0.167 0.167               27 23 11 20 18
+            Y       0.383 0.333 0.117 0.050* 0.117              26 24 11 7 13
+   27       X       0.400 0.200 0.167 0.117 0.117               32 20 19 13 13
+            Y       0.233** 0.133** 0.217** 0.183 0.233** ♯♯    21 14 21 15 24
+   28       X       0.383 0.200 0.183 0.133 0.100               28 19 20 15 13
+            Y       0.400 0.317 0.067 0.117 0.100               32 26 9 13 13
+   All      X       0.369 0.233 0.148** 0.129 0.121       ♯♯
+            Y       0.352* 0.286** 0.149** 0.111* 0.101** ♯♯
+
+Notes: For explanations, see notes to Table A1.
+
+
+
+
+                                              A-8
+                                Supplementary Appendix
+
+
+
+                   Table A4: Individual Treatment (Rounds 1-120)
+
+                            Relative Frequencies        χ2      Number of Runs
+  Pair    Player      C       L       F      I     O   Test   C L     F    I   O
+   1        X       0.350 0.292 0.067* 0.058** 0.233** ♯♯     59 55 17 15 49
+            Y       0.275** 0.292 0.158 0.175* 0.100    ♯     48 53 37 40 25
+    2       X       0.383 0.250 0.075* 0.083 0.208** ♯♯       61 55‡ 19 19 45
+            Y       0.317 0.267 0.175* 0.142 0.100            57 52 37 35 24
+    3       X       0.367 0.217 0.167 0.125 0.125             63 45 41‡ 29 29
+            Y       0.475** 0.150** 0.158 0.117 0.100   ♯♯    53 32 32 29 23
+    4       X       0.375 0.208 0.150 0.117 0.150             53 35 31 17‡ 33
+            Y       0.375 0.283 0.100 0.108 0.133             42‡ 49 21 22 29
+    5       X       0.350 0.275 0.092 0.150 0.133             49 49 21 31 25
+            Y       0.317 0.367** 0.150 0.042** 0.125   ♯♯    58 56 29 11 27
+    6       X       0.367 0.217 0.200** 0.092 0.125           58 45 42 23 31
+            Y       0.425 0.208 0.158 0.083 0.125             64 43 34 19 29
+    7       X       0.383 0.250 0.092 0.150 0.125             52 51 20 29 27
+            Y       0.400 0.267 0.125 0.100 0.108             40‡ 40† 27 23 21
+    8       X       0.333 0.267 0.083 0.125 0.192**           42‡ 43 19 30 41
+            Y       0.350 0.325* 0.158 0.075* 0.092           48 54 31 11‡ 19
+    9       X       0.308 0.342** 0.100 0.117 0.133           52 56 21 23 29
+            Y       0.442 0.233 0.092 0.108 0.125             54 37 23 24 25
+   10       X       0.417 0.208 0.075* 0.083 0.217** ♯♯       54 42 13‡ 19 41
+            Y       0.408 0.217 0.167 0.108 0.100             61 36 37 16‡ 21
+   11       X       0.400 0.217 0.108 0.075* 0.200** ♯        48† 32‡ 23 17 39
+            Y       0.358 0.283 0.133 0.108 0.117             55 47 29 23 27
+   12       X       0.375 0.333** 0.092 0.067* 0.133          63 67‡ 21 17 25
+            Y       0.292* 0.425** 0.117 0.042** 0.125  ♯♯    45 59 25 11 25
+   13       X       0.375 0.300 0.108 0.125 0.092             46‡ 48 23 27 19
+            Y       0.333 0.200 0.200** 0.125 0.142           52 42 37 27 31
+   14       X       0.425 0.308 0.083 0.042** 0.142     ♯♯    58 39‡ 19 11 32
+            Y       0.500** 0.192 0.133 0.125 0.050** ♯♯      51† 37 27 25 13
+   15       X       0.333 0.208 0.158 0.108 0.192**           63† 41 31 25 39
+            Y       0.458* 0.308 0.067* 0.092 0.075* ♯♯       62 56 17 23 17
+   16       X       0.392 0.217 0.158 0.092 0.142             52 40 35 21 29
+            Y       0.333 0.267 0.133 0.125 0.142             53 48 30 23 33
+   17       X       0.417 0.267 0.075* 0.117 0.125            55 49 17 23 27
+            Y       0.383 0.267 0.175* 0.075* 0.100           61 51 37 17 23
+   18       X       0.367 0.250 0.092 0.117 0.175*            53 47 23 19‡ 31
+            Y       0.375 0.317* 0.058** 0.117 0.133          48† 48 15 21† 25
+   19       X       0.300* 0.283 0.125 0.108 0.183*           44 42 23 27 35
+            Y       0.358 0.308 0.042** 0.150 0.142     ♯     61 53 8‡ 33 28
+   20       X       0.342 0.317* 0.117 0.108 0.117            49 53 23 21 27
+            Y       0.458* 0.258 0.117 0.092 0.075*           69 48 25 20 19
+   All      X       0.368 0.261 0.111** 0.103** 0.157** ♯♯
+            Y       0.382 0.272** 0.131 0.105** 0.110** ♯♯
+
+Notes: For explanations, see notes to Table A1.
+
+                                              A-9
+                                Supplementary Appendix
+
+
+
+                    Table A5: Individual Treatment (Rounds 1-60)
+
+                           Relative Frequencies         χ2       Number of Runs
+  Pair   Player      C       L       F      I      O   Test   C L     F     I   O
+   1       X       0.350 0.317 0.100 0.067 0.167              30 30 13      9   21
+           Y       0.283 0.300 0.150 0.150 0.117              21 29 17 17 15
+   2       X       0.383 0.233 0.117 0.117 0.150              32 27 15 13 18
+           Y       0.367 0.200 0.200* 0.117 0.117             32 20 21 15 15
+   3       X       0.333 0.217 0.183 0.133 0.133              32 19 22 15 15
+           Y       0.450 0.183 0.183 0.050* 0.133             24 18 17      7   15
+   4       X       0.317 0.250 0.150 0.133 0.150              25 17‡ 15 11† 17
+           Y       0.367 0.300 0.067 0.117 0.150              24 25 7      13 14
+   5       X       0.333 0.300 0.100 0.200* 0.067             22 25 13 20        9
+           Y       0.250** 0.433** 0.167 0.017** 0.133  ♯♯    24 30 17      3   15
+   6       X       0.367 0.200 0.183 0.083 0.167              27 22 18 11 21
+           Y       0.400 0.183 0.217** 0.100 0.100            32 21 23 10 13
+   7       X       0.300 0.283 0.150 0.167 0.100              21 27 15 17 13
+           Y       0.467 0.217 0.117 0.100 0.100              23† 17 13 11 11
+   8       X       0.383 0.250 0.083 0.117 0.167              19‡ 25 11 14 18
+           Y       0.433 0.333 0.167 0.017** 0.050* ♯♯        26 26 15      3    7
+   9       X       0.350 0.333 0.083 0.117 0.117              27 27 9      11 15
+           Y       0.500** 0.200 0.050* 0.083 0.167           18‡ 15† 7     9   14
+   10      X       0.467 0.200 0.067 0.083 0.183              23† 21 7     11 19
+           Y       0.467 0.117** 0.150 0.183 0.083      ♯     32 11 17 12‡ 9
+   11      X       0.400 0.267 0.100 0.067 0.167              24 16‡ 11     7   21
+           Y       0.350 0.267 0.167 0.100 0.117              25 19 19 11 15
+   12      X       0.333 0.400** 0.067 0.050* 0.150     ♯♯    29 37† 7      7   13
+           Y       0.367 0.317 0.133 0.067 0.117              24 26 13      9   11
+   13      X       0.383 0.300 0.100 0.100 0.117              23 24 10 11 11
+           Y       0.467 0.183 0.133 0.100 0.117              32 21 17 11 12
+   14      X       0.367 0.450** 0.083 0.000** 0.100    ♯♯    22† 22‡ 9 n.a. 13
+           Y       0.533** 0.167 0.167 0.083 0.050* ♯♯        25 17 17      9    7
+   15      X       0.367 0.267 0.117 0.083 0.167              32 26 15 11 21
+           Y       0.450 0.317 0.083 0.117 0.033**            33 31 11 15        5
+   16      X       0.433 0.217 0.167 0.017** 0.167      ♯     26 21 18      3   17
+           Y       0.317 0.283 0.167 0.067 0.167              25 24 19      7   18
+   17      X       0.400 0.250 0.117 0.100 0.133              25 21 13 13 13
+           Y       0.400 0.300 0.150 0.067 0.083              27 27 15      9    9
+   18      X       0.350 0.217 0.083 0.083 0.267** ♯♯         24 18 11      7† 23
+           Y       0.333 0.283 0.083 0.100 0.200*             25 27 11 11 17
+   19      X       0.317 0.317 0.067 0.083 0.217** ♯          22 22 7      11 21
+           Y       0.367 0.383** 0.050* 0.133 0.067     ♯     29 29 4‡ 14       7
+   20      X       0.267* 0.333 0.117 0.150 0.133             19 27 13 13 17
+           Y       0.533** 0.283 0.117 0.033** 0.033** ♯♯     30 22 13      5    5
+  All      X       0.360 0.280** 0.112 0.098** 0.151** ♯♯
+           Y       0.405** 0.263 0.136 0.090** 0.107* ♯♯
+
+Notes: For explanations, see notes to Table A1.
+
+                                             A-10
+                                Supplementary Appendix
+
+
+
+                   Table A6: Individual Treatment (Rounds 61-120)
+
+                            Relative Frequencies         χ2      Number of Runs
+  Pair    Player      C       L       F      I      O   Test   C L     F    I   O
+   1        X       0.350 0.267 0.033** 0.050* 0.300** ♯♯      29 25 5      7 29
+            Y       0.267* 0.283 0.167 0.200* 0.083            28 24 21 23 11
+    2       X       0.383 0.267 0.033** 0.050* 0.267** ♯♯      29 29 5      7 27
+            Y       0.267* 0.333 0.150 0.167 0.083             25 32 17 21 10
+    3       X       0.400 0.217 0.150 0.117 0.117              32 27‡ 19 14 15
+            Y       0.500** 0.117** 0.133 0.183 0.067    ♯♯    30 15 16 23      9
+    4       X       0.433 0.167 0.150 0.100 0.150              29 19 17 7‡ 17
+            Y       0.383 0.267 0.133 0.100 0.117              19‡ 25 14 10 15
+    5       X       0.367 0.250 0.083 0.100 0.200*             28 24 9 11 17
+            Y       0.383 0.300 0.133 0.067 0.117              34 27 13 9 12
+    6       X       0.367 0.233 0.217** 0.100 0.083            31 23 25 13 11
+            Y       0.450 0.233 0.100 0.067 0.150              32 23 12 9 17
+    7       X       0.467 0.217 0.033** 0.133 0.150            31 25 5 13 15
+            Y       0.333 0.317 0.133 0.100 0.117              17‡ 23 15 13 11
+    8       X       0.283 0.283 0.083 0.133 0.217**            24 19† 9 16 23
+            Y       0.267* 0.317 0.150 0.133 0.133             23 29 17 9‡ 13
+    9       X       0.267* 0.350* 0.117 0.117 0.150            25 29 13 13 15
+            Y       0.383 0.267 0.133 0.133 0.083              37‡ 23 17 15 11
+   10       X       0.367 0.217 0.083 0.083 0.250** ♯          32 22 7† 9 23
+            Y       0.350 0.317 0.183 0.033** 0.117            29 25 21 5 13
+   11       X       0.400 0.167 0.117 0.083 0.233** ♯          25 16 13 10 19
+            Y       0.367 0.300 0.100 0.117 0.117              31 28 11 12 13
+   12       X       0.417 0.267 0.117 0.083 0.117              35 31‡ 15 11 13
+            Y       0.217** 0.533** 0.100 0.017** 0.133  ♯♯    22 34 13 3 15
+   13       X       0.367 0.300 0.117 0.150 0.067              23 25 13 17      9
+            Y       0.200** 0.217 0.267** 0.150 0.167    ♯♯    20 22 21 17 19
+   14       X       0.483* 0.167 0.083 0.083 0.183             37 17 11 11 19
+            Y       0.467 0.217 0.100 0.167 0.050*             27 21 11 17      7
+   15       X       0.300 0.150* 0.200* 0.133 0.217** ♯♯       31 15 17 15 19
+            Y       0.467 0.300 0.050* 0.067 0.117             30 26 7      9 13
+   16       X       0.350 0.217 0.150 0.167 0.117              27 20 17 19 12
+            Y       0.350 0.250 0.100 0.183 0.117              28 25 12 17 15
+   17       X       0.433 0.283 0.033** 0.133 0.117            31 29 5 11† 15
+            Y       0.367 0.233 0.200* 0.083 0.117             34 24 23 9 15
+   18       X       0.383 0.283 0.100 0.150 0.083              30 29 12 13      9
+            Y       0.417 0.350* 0.033** 0.133 0.067     ♯     23† 21† 5 11† 9
+   19       X       0.283 0.250 0.183 0.133 0.150              22 20 17 17 15
+            Y       0.350 0.233 0.033** 0.167 0.217** ♯        33 24 5 19 22
+   20       X       0.417 0.300 0.117 0.067 0.100              31 27 11 9 11
+            Y       0.383 0.233 0.117 0.150 0.117              40‡ 27 13 16 15
+   All      X       0.376 0.243 0.110 0.108* 0.163** ♯♯
+            Y       0.358 0.281** 0.126 0.121 0.114
+
+Notes: For explanations, see notes to Table A1.
+
+                                             A-11
+                                 Supplementary Appendix
+
+
+
+
+Table A7: Relative Frequencies of Action Profiles in the Team Treatment (Rounds
+1-120)
+
+
+                                          Action Profile                                        χ2
+ Pair    C, C     C, L    C, FIO     L, C   L, L L, FIO        FIO, C    FIO, L    FIO, FIO    Test
+  1     0.242    0.058    0.100     0.092 0.008 0.175          0.092     0.092       0.142      ♯♯
+  2     0.133    0.058    0.167     0.042 0.067 0.125          0.058     0.108       0.242      ♯♯
+  3     0.125    0.075    0.117     0.125 0.042 0.125          0.075     0.100       0.217
+  4     0.200    0.158    0.058     0.050 0.058 0.100          0.117     0.092       0.167       ♯♯
+  5     0.125    0.067    0.133     0.075 0.142 0.117          0.075     0.125       0.142       ♯♯
+  6     0.133    0.117    0.075     0.083 0.058 0.175          0.083     0.150       0.125       ♯♯
+  7     0.117    0.175    0.092     0.117 0.067 0.067          0.175     0.083       0.108        ♯
+  8     0.108    0.100    0.108     0.083 0.067 0.133          0.142     0.125       0.133
+  9     0.175    0.100    0.167     0.067 0.033 0.142          0.100     0.133       0.083       ♯
+  10    0.158    0.083    0.192     0.125 0.017 0.083          0.167     0.083       0.092
+  11    0.117    0.100    0.133     0.083 0.092 0.100          0.092     0.117       0.167
+  12    0.142    0.117    0.100     0.075 0.083 0.058          0.242     0.067       0.117       ♯
+  13    0.133    0.117    0.150     0.042 0.083 0.092          0.150     0.075       0.158
+  14    0.117    0.075    0.150     0.092 0.050 0.125          0.100     0.108       0.183
+  15    0.142    0.167    0.133     0.142 0.083 0.067          0.133     0.108       0.025       ♯♯
+  16    0.092    0.067    0.083     0.042 0.092 0.142          0.117     0.117       0.250       ♯♯
+  17    0.175    0.142    0.083     0.108 0.050 0.083          0.150     0.075       0.133
+  18    0.192    0.100    0.083     0.117 0.075 0.083          0.142     0.133       0.075
+  19    0.175    0.058    0.117     0.125 0.058 0.092          0.150     0.117       0.108
+  20    0.108    0.058    0.233     0.067 0.067 0.092          0.175     0.058       0.142        ♯
+  21    0.167    0.192    0.183     0.100 0.033 0.033          0.108     0.092       0.092       ♯♯
+  22    0.233    0.150    0.075     0.100 0.033 0.067          0.150     0.100       0.092       ♯♯
+  23    0.108    0.125    0.125     0.117 0.033 0.075          0.125     0.125       0.167
+  24    0.200    0.125    0.133     0.050 0.083 0.075          0.083     0.158       0.092       ♯♯
+  25    0.100    0.083    0.117     0.042 0.083 0.067          0.183     0.142       0.183
+  26    0.150    0.100    0.117     0.092 0.083 0.042          0.133     0.117       0.167
+  27    0.150    0.083    0.192     0.067 0.050 0.092          0.050     0.075       0.242       ♯♯
+  28    0.125    0.067    0.142     0.083 0.075 0.058          0.167     0.150       0.133
+ All    0.148    0.104    0.127     0.086 0.063 0.096          0.126     0.108       0.142       ♯♯
+
+Symbols ♯♯ and ♯ denote the rejection of the chi-square test of the frequencies for action profiles
+to the minimax prediction at the 5% and 10% significance levels, respectively.
+
+
+
+
+                                              A-12
+                                Supplementary Appendix
+
+
+
+
+Table A8: Relative Frequencies of Action Profiles in the Team Treatment (Rounds
+1-60)
+
+
+                                         Action Profile                                 χ2
+ Pair    C, C     C, L   C, FIO     L, C   L, L L, FIO    FIO, C   FIO, L   FIO, FIO   Test
+  1     0.217    0.050   0.100     0.083 0.017 0.183      0.117    0.083      0.150
+  2     0.183    0.000   0.183     0.050 0.050 0.133      0.050    0.083      0.267     ♯♯
+  3     0.183    0.050   0.133     0.117 0.033 0.150      0.067    0.050      0.217
+  4     0.250    0.117   0.067     0.033 0.050 0.100      0.083    0.100      0.200
+  5     0.117    0.050   0.150     0.067 0.150 0.167      0.083    0.067      0.150     ♯
+  6     0.167    0.117   0.067     0.067 0.033 0.200      0.133    0.117      0.100
+  7     0.117    0.233   0.067     0.083 0.050 0.083      0.150    0.083      0.133     ♯
+  8     0.133    0.083   0.117     0.033 0.100 0.133      0.117    0.117      0.167
+  9     0.200    0.100   0.183     0.050 0.033 0.117      0.117    0.083      0.117
+  10    0.133    0.100   0.217     0.083 0.017 0.100      0.167    0.100      0.083
+  11    0.133    0.067   0.167     0.150 0.083 0.117      0.100    0.083      0.100
+  12    0.117    0.117   0.150     0.083 0.100 0.050      0.233    0.033      0.117
+  13    0.133    0.100   0.133     0.033 0.083 0.133      0.150    0.050      0.183
+  14    0.150    0.083   0.133     0.083 0.050 0.100      0.100    0.133      0.167
+  15    0.200    0.150   0.067     0.150 0.117 0.050      0.133    0.100      0.033     ♯♯
+  16    0.133    0.100   0.083     0.033 0.100 0.133      0.117    0.133      0.167
+  17    0.167    0.167   0.067     0.100 0.100 0.117      0.133    0.050      0.100
+  18    0.183    0.133   0.100     0.150 0.067 0.067      0.117    0.117      0.067
+  19    0.150    0.067   0.117     0.117 0.083 0.117      0.133    0.100      0.117
+  20    0.117    0.050   0.183     0.083 0.067 0.100      0.117    0.067      0.217
+  21    0.200    0.183   0.150     0.083 0.050 0.050      0.117    0.083      0.083
+  22    0.250    0.133   0.067     0.117 0.033 0.100      0.150    0.117      0.033     ♯
+  23    0.150    0.150   0.117     0.150 0.000 0.100      0.133    0.083      0.117
+  24    0.217    0.117   0.100     0.050 0.117 0.083      0.050    0.167      0.100     ♯
+  25    0.133    0.083   0.133     0.067 0.083 0.067      0.150    0.117      0.167
+  26    0.150    0.100   0.133     0.067 0.050 0.083      0.150    0.117      0.150
+  27    0.167    0.150   0.133     0.083 0.050 0.083      0.050    0.083      0.200
+  28    0.067    0.050   0.167     0.100 0.067 0.067      0.183    0.150      0.150
+ All    0.161    0.104   0.124     0.085 0.065 0.107      0.121    0.095      0.138     ♯♯
+
+Notes: For explanations, see notes to Table A7.
+
+
+
+
+                                             A-13
+                                Supplementary Appendix
+
+
+
+
+Table A9: Relative Frequencies of Action Profiles in the Team Treatment (Rounds
+61-120)
+
+
+                                         Action Profile                                 χ2
+ Pair    C, C     C, L   C, FIO     L, C   L, L L, FIO    FIO, C   FIO, L   FIO, FIO   Test
+  1     0.267    0.067   0.100     0.100 0.000 0.167      0.067    0.100      0.133     ♯♯
+  2     0.083    0.117   0.150     0.033 0.083 0.117      0.067    0.133      0.217
+  3     0.067    0.100   0.100     0.133 0.050 0.100      0.083    0.150      0.217
+  4     0.150    0.200   0.050     0.067 0.067 0.100      0.150    0.083      0.133
+  5     0.133    0.083   0.117     0.083 0.133 0.067      0.067    0.183      0.133
+  6     0.100    0.117   0.083     0.100 0.083 0.150      0.033    0.183      0.150     ♯
+  7     0.117    0.117   0.117     0.150 0.083 0.050      0.200    0.083      0.083
+  8     0.083    0.117   0.100     0.133 0.033 0.133      0.167    0.133      0.100
+  9     0.150    0.100   0.150     0.083 0.033 0.167      0.083    0.183      0.050     ♯
+  10    0.183    0.067   0.167     0.167 0.017 0.067      0.167    0.067      0.100
+  11    0.100    0.133   0.100     0.017 0.100 0.083      0.083    0.150      0.233     ♯
+  12    0.167    0.117   0.050     0.067 0.067 0.067      0.250    0.100      0.117
+  13    0.133    0.133   0.167     0.050 0.083 0.050      0.150    0.100      0.133
+  14    0.083    0.067   0.167     0.100 0.050 0.150      0.100    0.083      0.200
+  15    0.083    0.183   0.200     0.133 0.050 0.083      0.133    0.117      0.017     ♯♯
+  16    0.050    0.033   0.083     0.050 0.083 0.150      0.117    0.100      0.333     ♯♯
+  17    0.183    0.117   0.100     0.117 0.000 0.050      0.167    0.100      0.167
+  18    0.200    0.067   0.067     0.083 0.083 0.100      0.167    0.150      0.083
+  19    0.200    0.050   0.117     0.133 0.033 0.067      0.167    0.133      0.100
+  20    0.100    0.067   0.283     0.050 0.067 0.083      0.233    0.050      0.067     ♯♯
+  21    0.133    0.200   0.217     0.117 0.017 0.017      0.100    0.100      0.100     ♯♯
+  22    0.217    0.167   0.083     0.083 0.033 0.033      0.150    0.083      0.150
+  23    0.067    0.100   0.133     0.083 0.067 0.050      0.117    0.167      0.217
+  24    0.183    0.133   0.167     0.050 0.050 0.067      0.117    0.150      0.083
+  25    0.067    0.083   0.100     0.017 0.083 0.067      0.217    0.167      0.200     ♯
+  26    0.150    0.100   0.100     0.117 0.117 0.000      0.117    0.117      0.183
+  27    0.133    0.017   0.250     0.050 0.050 0.100      0.050    0.067      0.283     ♯♯
+  28    0.183    0.083   0.117     0.067 0.083 0.050      0.150    0.150      0.117
+ All    0.135    0.105   0.130     0.087 0.061 0.085      0.131    0.121      0.146     ♯♯
+
+Notes: For explanations, see notes to Table A7.
+
+
+
+
+                                             A-14
+                                Supplementary Appendix
+
+
+
+
+Table A10: Relative Frequencies of Action Profiles in the Individual Treatment
+(Rounds 1-120)
+
+
+                                         Action Profile                                 χ2
+ Pair    C, C     C, L   C, FIO     L, C   L, L L, FIO    FIO, C   FIO, L   FIO, FIO   Test
+  1     0.083    0.125   0.142     0.067 0.092 0.133      0.125    0.075      0.158
+  2     0.133    0.117   0.133     0.058 0.067 0.125      0.125    0.083      0.158
+  3     0.167    0.067   0.133     0.083 0.025 0.108      0.225    0.058      0.133
+  4     0.167    0.100   0.108     0.058 0.058 0.092      0.150    0.125      0.142
+  5     0.100    0.167   0.083     0.075 0.075 0.125      0.142    0.125      0.108     ♯
+  6     0.150    0.058   0.158     0.092 0.050 0.075      0.183    0.100      0.133
+  7     0.158    0.083   0.142     0.067 0.083 0.100      0.175    0.100      0.092
+  8     0.142    0.133   0.058     0.083 0.058 0.125      0.125    0.133      0.142
+  9     0.133    0.083   0.092     0.175 0.075 0.092      0.133    0.075      0.142
+  10    0.183    0.075   0.158     0.050 0.033 0.125      0.175    0.108      0.092
+  11    0.175    0.117   0.108     0.058 0.083 0.075      0.125    0.083      0.175
+  12    0.092    0.142   0.142     0.117 0.125 0.092      0.083    0.158      0.050     ♯♯
+  13    0.158    0.083   0.133     0.100 0.050 0.150      0.075    0.067      0.183
+  14    0.192    0.100   0.133     0.167 0.042 0.100      0.142    0.050      0.075     ♯♯
+  15    0.108    0.125   0.100     0.108 0.067 0.033      0.242    0.117      0.100     ♯♯
+  16    0.117    0.108   0.167     0.058 0.050 0.108      0.158    0.108      0.125
+  17    0.142    0.108   0.167     0.108 0.075 0.083      0.133    0.083      0.100
+  18    0.133    0.100   0.133     0.083 0.100 0.067      0.158    0.117      0.108
+  19    0.075    0.117   0.108     0.092 0.117 0.075      0.192    0.075      0.150     ♯
+  20    0.125    0.092   0.125     0.142 0.067 0.108      0.192    0.100      0.050
+ All    0.137    0.105   0.126     0.092 0.070 0.100      0.153    0.097      0.121     ♯♯
+
+Notes: For explanations, see notes to Table A7.
+
+
+
+
+                                             A-15
+                                Supplementary Appendix
+
+
+
+
+Table A11: Relative Frequencies of Action Profiles in the Individual Treatment
+(Rounds 1-60)
+
+
+                                         Action Profile                                 χ2
+ Pair    C, C     C, L   C, FIO     L, C   L, L L, FIO    FIO, C   FIO, L   FIO, FIO   Test
+  1     0.100    0.117   0.133     0.083 0.083 0.150      0.100    0.100      0.133
+  2     0.100    0.100   0.183     0.100 0.017 0.117      0.167    0.083      0.133
+  3     0.133    0.083   0.117     0.117 0.033 0.067      0.200    0.067      0.183
+  4     0.100    0.133   0.083     0.067 0.083 0.100      0.200    0.083      0.150
+  5     0.050    0.183   0.100     0.050 0.117 0.133      0.150    0.133      0.083     ♯♯
+  6     0.150    0.067   0.150     0.067 0.033 0.100      0.183    0.083      0.167
+  7     0.100    0.033   0.167     0.083 0.083 0.117      0.283    0.100      0.033     ♯♯
+  8     0.183    0.150   0.050     0.083 0.017 0.150      0.167    0.167      0.033     ♯♯
+  9     0.183    0.050   0.117     0.167 0.083 0.083      0.150    0.067      0.100
+  10    0.233    0.050   0.183     0.067 0.000 0.133      0.167    0.067      0.100
+  11    0.183    0.133   0.083     0.050 0.083 0.133      0.117    0.050      0.167
+  12    0.083    0.100   0.150     0.167 0.100 0.133      0.117    0.117      0.033
+  13    0.200    0.100   0.083     0.167 0.017 0.117      0.100    0.067      0.150
+  14    0.200    0.067   0.100     0.233 0.050 0.167      0.100    0.050      0.033     ♯♯
+  15    0.100    0.133   0.133     0.167 0.067 0.033      0.183    0.117      0.067
+  16    0.150    0.150   0.133     0.033 0.050 0.133      0.133    0.083      0.133
+  17    0.167    0.117   0.117     0.083 0.100 0.067      0.150    0.083      0.117
+  18    0.083    0.100   0.167     0.067 0.083 0.067      0.183    0.100      0.150
+  19    0.067    0.167   0.083     0.100 0.133 0.083      0.200    0.083      0.083      ♯
+  20    0.117    0.100   0.050     0.167 0.083 0.083      0.250    0.100      0.050     ♯♯
+ All    0.134    0.107   0.119     0.106 0.066 0.108      0.165    0.090      0.105     ♯♯
+
+Notes: For explanations, see notes to Table A7.
+
+
+
+
+                                             A-16
+                                Supplementary Appendix
+
+
+
+
+Table A12: Relative Frequencies of Action Profiles in the Individual Treatment
+(Rounds 61-120)
+
+
+                                         Action Profile                                 χ2
+ Pair    C, C     C, L   C, FIO     L, C   L, L L, FIO    FIO, C   FIO, L   FIO, FIO   Test
+  1     0.067    0.133   0.150     0.050 0.100 0.117      0.150    0.050      0.183
+  2     0.167    0.133   0.083     0.017 0.117 0.133      0.083    0.083      0.183
+  3     0.200    0.050   0.150     0.050 0.017 0.150      0.250    0.050      0.083     ♯♯
+  4     0.233    0.067   0.133     0.050 0.033 0.083      0.100    0.167      0.133
+  5     0.150    0.150   0.067     0.100 0.033 0.117      0.133    0.117      0.133
+  6     0.150    0.050   0.167     0.117 0.067 0.050      0.183    0.117      0.100
+  7     0.217    0.133   0.117     0.050 0.083 0.083      0.067    0.100      0.150
+  8     0.100    0.117   0.067     0.083 0.100 0.100      0.083    0.100      0.250
+  9     0.083    0.117   0.067     0.183 0.067 0.100      0.117    0.083      0.183
+  10    0.133    0.100   0.133     0.033 0.067 0.117      0.183    0.150      0.083
+  11    0.167    0.100   0.133     0.067 0.083 0.017      0.133    0.117      0.183
+  12    0.100    0.183   0.133     0.067 0.150 0.050      0.050    0.200      0.067     ♯♯
+  13    0.117    0.067   0.183     0.033 0.083 0.183      0.050    0.067      0.217     ♯♯
+  14    0.183    0.133   0.167     0.100 0.033 0.033      0.183    0.050      0.117
+  15    0.117    0.117   0.067     0.050 0.067 0.033      0.300    0.117      0.133     ♯♯
+  16    0.083    0.067   0.200     0.083 0.050 0.083      0.183    0.133      0.117
+  17    0.117    0.100   0.217     0.133 0.050 0.100      0.117    0.083      0.083
+  18    0.183    0.100   0.100     0.100 0.117 0.067      0.133    0.133      0.067
+  19    0.083    0.067   0.133     0.083 0.100 0.067      0.183    0.067      0.217
+  20    0.133    0.083   0.200     0.117 0.050 0.133      0.133    0.100      0.050
+ All    0.139    0.103   0.133     0.078 0.073 0.091      0.141    0.104      0.137
+
+Notes: For explanations, see notes to Table A7.
+
+
+
+
+                                             A-17
+                           Supplementary Appendix
+
+
+B Robustness Check: Model Selection to Data from
+     Professional vs. Student Behavior Experiment
+
+This section presents results of model selection applied to the data gathered
+by Palacios-Huerta and Volij (2008) in which professional soccer players and
+college students play two-player zero-sum games. The main purpose of this
+re-examination is a robustness check. Using data from the other experiment
+determines the extent to which our results of model selection are generalizable.
+Particularly, we are interested in how often the minimax model is selected as the
+best fit model in the similar but diﬀerent strategic environment where diﬀerent
+types of decision makers play.
+   Palacios-Huerta and Volij (2008) (henceforth PH-V) recruited professional
+soccer players and college students, and compared their behaviors in two games
+with unique mixed strategy equilibria: “penalty kick” game they introduced
+and the well-known O’Neill (1987) game. They found that the play of pro-
+fessional soccer players conforms closely to the behavior under the minimax
+prediction, although that of college students does not. Wooders (2010) re-
+examined the PH-V data and found that the play of professionals is inconsistent
+with the minimax hypothesis in several respects. A main finding was that,
+when the data are partitioned into halves, the choice frequencies are far from
+those implied by the minimax hypothesis at more than the expected rate for
+professionals, just as those of the college students. Professionals tend to follow
+nonstationary mixtures, with action frequencies that are negatively correlated
+between the first and second halves of the experiment.
+   This section applies model selection to PH-V data where subjects play the
+O’Neill game. The payoﬀ matrix of O’Neill game is shown in Table A13. A
+win was worth 1 Euro. The game has a unique mixed strategy equilibrium
+in which both players choose J, 1, 2, and 3 with probabilities of 0.4, 0,2, 0.2,
+and 0.2, respectively. This experiment examined 40 professional soccer players
+who were paired with a fixed opponent. They played 200 rounds of the game.
+
+
+
+                                      A-18
+                               Supplementary Appendix
+
+
+
+                               Table A13: O’Neill Game
+                                         Column Player
+                                         J   1  2    3
+                                     J   W L    L    L
+                             Row     1   L   L W W
+                            Player   2   L W L W
+                                     3   L W W L
+
+Notes: W and L indicate a win and a loss for row player, respectively. Column player’s payoﬀs
+are the reverse of row’s.
+
+
+Similarly, 40 college students formed 20 fixed pairs, and played 200 rounds of
+the game.
+   There are several reasons to use PH-V data with O’Neill game for robustness
+check. First, it is important to use data gathered by other experimenters because
+they are unaﬀected by our purpose of analysis. We can avoid the danger
+of unconsciously promoting our desiring behavior both in making details of
+experimental design and during the experimental session. Second, the O’Neill
+game is a similar but diﬀerent strategic environment to the game in Rapoport
+and Boebel (1992) (RB game, hereafter). The shared features are that the payoﬀ
+matrix includes only two outcomes. Moreover, in equilibrium, the game is
+symmetric with respect to the mixed strategies of the row and column players.
+The diﬀerent feature is that O’Neill game is a 4 × 4 game rather than a 5 × 5
+game. Third, PH-V data include behaviors which are both consistent (overall
+round data for professionals) and inconsistent (half data for professionals, and
+overall and half data for college students) with the minimax prediction based
+on hypothesis testing. We can see the contrast of the results between model
+selection and hypothesis testing. Fourth, details of the experimental procedures
+used in the PH-V experiment diﬀer from ours in several respects. The PH-V
+experiment was not computerized. Subjects in the same pair sat opposite each
+other at a table. Each subject held four cards, and chose one of these at each
+hand. The game was presented without the help of a matrix. Subjects learned
+the rules through practice. We can assess the degree to which the results of
+model selection are robust to these diﬀerences.
+
+                                           A-19
+                              Supplementary Appendix
+
+
+
+
+Table A14: Model Fits at the Aggregate Level with Professionals and College
+Students in PH-V Experiment
+
+
+                                        Professional                      Student
+ Rounds      Player    Model LL∗            AIC       BIC        LL∗        AIC        BIC
+  1-200       Row      EWA −5330.5        10671.0 10702.5      −5363.9    10737.8    10769.2
+             Player     RL −5405.3        10814.6 10827.2      −5393.6    10791.2    10803.8
+                        BL −5336.2        10678.3 10697.2      −5354.3    10714.7    10733.6
+                       QRE −5332.2        10666.4 10672.7      −5351.6    10705.2    10711.5
+                        MM −5332.2        10664.4 10664.4      −5351.6    10703.2    10703.2
+            Column     EWA −5377.6        10765.2 10796.6      −5386.5    10783.1    10814.5
+             Player     RL −5388.6        10781.3 10793.9      −5386.8    10777.6    10790.2
+                        BL −5439.4        10884.8 10903.7      −5387.4    10780.7    10799.6
+                       QRE −5335.6        10673.3 10679.6      −5364.8    10731.5    10737.8
+                        MM −5335.6        10671.3 10671.3      −5364.8    10729.5    10729.5
+  1-100       Row      EWA −2631.7         5273.3    5301.3    −2670.1     5350.3     5378.3
+             Player     RL −2676.0         5356.0    5367.2    −2688.8     5381.6     5392.8
+                        BL −2636.0        5277.9     5294.7    −2662.2    5330.4      5347.2
+                       QRE −2635.9        5273.9     5279.5    −2660.5    5322.9      5328.5
+                        MM −2635.9         5271.9    5271.9    −2660.2     5320.4    5320.4
+            Column     EWA −2739.9         5489.9    5517.9    −2664.7     5339.4     5367.4
+             Player     RL −2744.4         5492.9    5504.1    −2664.7     5333.5     5344.7
+                        BL −2745.1        5496.1     5513.0    −2772.0    5550.0      5566.8
+                       QRE −2721.2        5444.4     5450.0    −2643.0    5288.1      5293.7
+                        MM −2721.2         5442.4    5442.4    −2643.6     5287.1    5287.1
+ 101-200      Row      EWA −2725.9        5461.8     5489.8    −2770.5    5550.9      5578.9
+             Player     RL −2764.1        5532.1     5543.3    −2770.5    5544.9      5556.1
+                        BL −2769.1        5544.1     5560.9    −2770.6    5547.2      5564.0
+                       QRE −2694.2         5390.5    5396.1    −2691.4     5384.8     5390.4
+                        MM −2696.2         5392.5    5392.5    −2691.4     5382.8    5382.8
+            Column     EWA −2660.9         5331.9    5359.9    −2704.0     5418.1     5446.1
+             Player     RL −2740.4         5484.8    5496.0    −2731.3     5466.6     5477.8
+                        BL −2736.1         5478.1    5494.9    −2732.6     5471.1     5487.9
+                       QRE −2609.9         5221.9    5227.5    −2721.2     5444.4     5450.0
+                        MM −2614.5         5228.9    5228.9    −2721.2     5442.4     5442.4
+
+Notes: LL∗ is maximized log-likelihood. AIC is given as −2LL∗ + 2k, and BIC is given as
+−2LL∗ + k log(M), where k is the number of parameters, and M is the number of observations.
+Best fits are denoted using bold typeface.
+
+
+
+
+                                          A-20
+                           Supplementary Appendix
+
+
+   Table A14 shows results of model selection with aggregated data. The min-
+imax model mostly performs well for predicting the behaviors of both profes-
+sionals and college students. Using overall round data and first half data, the
+minimax model is best for both professionals and college students according
+to both AIC and BIC. In the second half, however, the other models are often
+preferred. For professionals, QRE is best for both players according to AIC, and
+for column player, even according to BIC. For college students, EWA is best for
+column player according to AIC.
+   Combined with the results obtained by Palacios-Huerta and Volij (2008), for
+overall round data, the minimax model is highly successful in predicting the
+behavior of professionals. When we partition the data into halves, however, we
+obtain diﬀerent conclusions. Although Wooders (2010) found that the choice
+frequencies of professionals in the first half is far from those implied by the
+minimax prediction, their behavior is still best fitted by the minimax model
+over the other competing models. Furthermore, in the second half, the mini-
+max model performs poorly in the sense that, in addition to the fact that the
+choice frequencies of professionals are far from those implied by the minimax
+prediction, QRE outperforms the minimax model.
+   It is interesting to compare the results of teams and professionals from the
+perspective of model selection. The choice frequencies of teams from the first
+half data in our experiment and those of professionals from overall round data in
+PH-V experiment conform closely to those implied by the minimax prediction.
+However, their behavior diﬀers in learning process because teams exhibit the
+behavior that is best fitted by the BL model, whereas professionals exhibit the
+behavior that is best fitted by the minimax model.
+   Next, we assess results of model selection at the decision-maker level in Table
+A15. The minimax model performs overwhelmingly well. Even according to
+AIC, the behavior of 75.0–80.0 percent of professionals and students is best
+fitted by the minimax model. According to BIC, its value becomes more than
+90 percent. The learning models (EWA, RL, and BL) perform poorly compared
+
+
+
+                                      A-21
+                           Supplementary Appendix
+
+
+
+Table A15: The Percentage of the Best Fit Model at the Decision-Maker Level
+with Professionals and College Students in PH-V Experiment
+
+                                                          Model
+     Criterion   Rounds     Treatment      EWA      RL     BL   QRE     MM
+       AIC        1-200    Professional    0.0%   10.0%   2.5% 7.5%    80.0%
+                             Student       0.0%   12.5%   0.0% 12.5%   75.0%
+                  1-100    Professional    0.0%   12.5%   2.5% 5.0%    80.0%
+                             Student       0.0%    7.5%   2.5% 10.0%   80.0%
+                 101-200   Professional    0.0%    2.5%   2.5% 17.5%   77.5%
+                             Student       0.0%   12.5%   2.5% 10.0%   75.0%
+        BIC       1-200    Professional    0.0%    2.5%   0.0% 2.5%    95.0%
+                             Student       0.0%    0.0%   0.0% 2.5%    97.5%
+                  1-100    Professional    0.0%    5.0%   0.0% 0.0%    95.0%
+                             Student       0.0%    2.5%   0.0% 2.5%    95.0%
+                 101-200   Professional    0.0%    2.5%   2.5% 2.5%    92.5%
+                             Student       0.0%    2.5%   0.0% 0.0%    97.5%
+
+
+
+to our results. They are selected as the best fit models for less than or equal
+to 15 percent for all time intervals, perhaps because of the diﬀerence of the
+game played and/or the experimental design. First, the O’Neill game is simpler
+than RB game. As a result, subjects in RB game faced a cognitively more
+demanding task than those in O’Neill game, which led subjects in RB game
+to play more adaptively than subjects in O’Neill game. Second, in the PH-V
+experiment, subjects played the game face-to-face. This design might prevent
+subjects from calculating the optimal behavior from the previous information to
+avoid facial expressions that might reveal a move. Conversely, our experiment
+was computerized, and teams and individuals were isolated from each other.
+This allowed them to consider past outcomes deeply. Third, in our experiment,
+all information (the own choice, the opponent choice, and outcome of the game)
+up to the current round was displayed in the screen display. Subjects could
+access those information easily, perhaps facilitating adaptive play.
+
+
+
+
+                                          A-22
+                          Supplementary Appendix
+
+
+C    Translated Instructions for the Team Treatment
+
+Today, we’re going to ask you make a simple decision. You will receive the
+rewards gained from the decisions as well as a participation reward of Y1,400.
+Please read the guidelines below carefully before participating in the experi-
+ment. Do not talk or give signals to each other while reading the directions.
+We may ask you to leave if you do so. You cannot leave the room during the
+experiment unless it’s an emergency. Please turn oﬀ your cellphones during the
+experiment. The use of writing implements during the experiment is prohibited.
+
+
+The Experiment Description
+First, you will pair up with another participant. You and your teammate will
+discuss and make a decision as a team. Teams will be formed as follows. First,
+you will draw a card with a seat number, and take a seat according to the
+number. There will be another participant who will be assigned to the same
+seat. That participant is your teammate. When making a decision, the two of
+you will freely speak about this experiment. Then, one of you will select the
+choices the team has made at the computer. Either one of you can operate the
+computer.
+
+
+Take a look at a paper with the sign. On the document is either an X or Y.
+It represents the player role of your team. Teams assigned X are known as
+“Player X” and teams assigned Y will be “Player Y”. The roles of Player (X
+or Y) do not change during the experiment. Teams assigned X will stay as
+Player X, and teams assigned Y will remain as Player Y until the experiment
+ends. Furthermore, depending on your letters X or Y, the experiment location
+will be diﬀerent. Players will move to their experiment areas after reading this
+guideline.
+
+
+You will be divided into pairs of two teams to play a simple game. A computer
+automatically chooses the pairs. Each pair comprises a team of Player X and
+
+
+                                     A-23
+                           Supplementary Appendix
+
+
+a team of Player Y. Because Player X and Player Y are in diﬀerent locations,
+your pair will not be in the same space. Your pair will not change during the
+experiment.
+
+
+The rules of the game you play are as follows. Each team will receive Y7,200 at
+the beginning of the experiment. In every round, each team will choose a letter
+from “C”, “L”, “F”, “I”, or “O”. Winning and losing depends on the choice of
+Players X and Y.
+
+                                          Player Y
+                         Loss     C       L     F      I      O
+                          C      Win    Loss   Loss   Loss   Loss
+                Player    L      Loss   Loss   Win    Win    Win
+                   X      F      Loss    Win   Loss   Loss   Win
+                           I     Loss    Win   Loss   Win    Loss
+                          O      Loss    Win   Win    Loss   Loss
+                                Player X Win-Loss Standing
+
+The table above shows the standings for Player X. The letters “C”, “L”, “F”,
+“I”, and “O” on the left side indicate Player X’s choice while the letters on top
+indicate Player Y’s choice. Wins and losses in the table represent the win or loss
+of Player X.
+
+                                          Player X
+                         Loss     C       L     F      I      O
+                          C      Loss    Win   Win    Win    Win
+                Player    L      Win     Win   Loss   Loss   Loss
+                   Y      F      Win    Loss   Win    Win    Loss
+                           I     Win    Loss   Win    Loss   Win
+                          O      Win    Loss   Loss   Win    Win
+                                Player Y Win-Loss Standing
+
+The table above shows the standings for Player Y. The letters “C”, “L”, “F”,
+“I”, and “O” on the left side indicate Player Y’s choice while the letters on top
+
+                                        A-24
+                            Supplementary Appendix
+
+
+indicate Player X’s choice. Wins and losses in the table represent win or loss of
+Player Y. Note that the win of Player X is the loss of Player Y and the loss of
+Player X is the win of Player Y.
+
+
+For instance, if Player X and Player Y choose C, then Player X wins and Player
+Y loses. If Player X chooses C and Player Y chooses L, then Player X loses and
+Player Y wins.
+
+
+If Player X wins, then Player X will receive Y200 from Player Y, meaning that the
+money total of Player X will increase Y200, and that of Player Y will decrease
+Y200. If Player Y wins, then Player Y will receive Y120 from Player X, meaning
+that the money total of Player Y will increase Y120, and that of Player X will
+decrease Y120.
+
+
+You are going to play 120 rounds of this game. If either team run out of money,
+then that is game over for that pair. The money you have at the end of the
+experiment will be your reward. The reward will be divided in half for you
+and your teammate. If your team has Y6,000 at the end of the game, then
+each member will receive a reward of Y4,400 composed of a Y3,000 reward and
+the Y1,400 participation reward. For the pairs of teams with a team that ran
+out of money, the members of the losing team will receive a reward of Y1,400
+composed of a Y0 reward and the Y1,400 participation reward. The members
+of the winning team will receive the reward of Y8,600 composed of half the
+Y14,400 reward and the Y1,400 participation reward.
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                      A-25
+                            Supplementary Appendix
+
+
+Computer Display Descriptions and the Experimental Procedures
+
+
+Player X Selection Screen
+
+
+
+
+The screen above will be displayed on Player X’s selection screen. On the top
+left is the current number of rounds. This display shows that this is the 5th
+round. In the middle left is the Player X standing. Wins and losses represent
+the wins and losses of Player X. On the bottom is the history that displays the
+round number, your choice, your opponent’s choice and the outcome. On the
+upper middle right is your current money total. Right below that is the selection
+screen. You can choose and click either one of “C”, “L”, “F”, “I”, or “O”. Once
+all teams finish choosing an action, the outcome will be displayed.
+
+
+
+
+                                      A-26
+                            Supplementary Appendix
+
+
+Player Y Selection Screen
+
+
+
+
+The screen above will be displayed on Player Y’s selection screen. The screen
+display is the same as player X’s display. In the middle left is the Player Y
+standing. Wins and losses represent the wins and losses of Player Y. You can
+choose and click either one of “C”, “L”, “F”, “I”, or “O”. Once all teams finish
+choosing an action, the outcome will be displayed.
+
+
+
+
+                                     A-27
+                           Supplementary Appendix
+
+
+Player X Outcome Screen
+
+
+
+
+The screen above is Player X’s outcome screen. Similarly to the selection screen,
+it shows the current round on the top left, and the history on the bottom. It
+shows your current money total on the upper middle of the display and your
+choice, your opponent’s choice, and the outcome below. Once you have checked
+the outcome screen, click Next.
+
+
+
+
+                                      A-28
+                            Supplementary Appendix
+
+
+Player Y Outcome Screen
+
+
+
+
+The screen above is Player Y’s outcome screen. The screen display is the same
+as Player X’s display. Once you have checked the outcome screen, click Next.
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                    A-29
+                            Supplementary Appendix
+
+
+Below is the description of the experimental procedures.
+Experimental Procedures
+
+  1. We will begin by assigning seats. Follow the staﬀ directions and take a
+     card. Please take a seat according to the number indicated on the card.
+
+  2. Once you take a seat, there will be 5 minutes for you to think over the
+     experiment. Discuss the experiment freely with your teammate.
+
+  3. 5 minutes later, the experiment will begin with the announcement, ”The
+     experiment starts now. Please look at the display.”
+
+
+
+Notes
+
+   • Please discuss quietly so that the other teams cannot hear you. Inappro-
+     priate behaviors such as loud conversations or speaking to other teams
+     may result in a Y0 reward.
+
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                    A-30
+                           Supplementary Appendix
+
+
+D Translated Instructions for the Individual Treat-
+      ment
+
+Today, we’re going to ask you make a simple decision. You will receive the
+rewards gained from the decisions as well as a participation reward of Y1,400.
+Please read the guidelines below carefully before participating in the experi-
+ment. Do not talk or give signals to each other while reading the directions.
+We may ask you to leave if you do so. You cannot leave the room during the
+experiment unless it’s an emergency. Please turn oﬀ your cellphones during the
+experiment. The use of writing implements during the experiment is prohibited.
+
+
+The Experiment Description
+First, take a look at a paper with the sign. On the document is either an X or Y.
+It represents your player role. Persons assigned X are known as “Player X” and
+persons assigned Y will be “Player Y”. The roles of Player (X or Y) do not change
+during the experiment. Persons assigned X will stay as Player X, and persons
+assigned Y will remain as Player Y until the experiment ends. Furthermore,
+depending on your letters X or Y, the experiment location will be diﬀerent.
+Players will move to their experiment areas after reading this guideline.
+
+
+You will be divided into pairs of two persons to play a simple game. A computer
+automatically chooses the pairs. Each pair comprises a person of Player X and
+a person of Player Y. Because Player X and Player Y are in diﬀerent locations,
+your pair will not be in the same space. Your pair will not change during the
+experiment.
+
+
+The rules of the game you play are as follows. Each of you will receive Y3,600
+at the beginning of the experiment. In every round, each of you will choose a
+letter from “C”, “L”, “F”, “I”, or “O”. Winning and losing depends on the choice
+of Players X and Y.
+
+
+
+                                      A-31
+                           Supplementary Appendix
+
+
+                                            Player Y
+                          Loss      C       L     F      I      O
+                           C       Win    Loss   Loss   Loss   Loss
+                 Player    L       Loss   Loss   Win    Win    Win
+                   X       F       Loss    Win   Loss   Loss   Win
+                           I       Loss    Win   Loss   Win    Loss
+                           O       Loss    Win   Win    Loss   Loss
+                                 Player X Win-Loss Standing
+
+The table above shows the standings for Player X. The letters “C”, “L”, “F”,
+“I”, and “O” on the left side indicate Player X’s choice while the letters on top
+indicate Player Y’s choice. Wins and losses in the table represent the win or loss
+of Player X.
+
+                                            Player X
+                          Loss      C       L     F      I      O
+                           C       Loss    Win   Win    Win    Win
+                 Player    L       Win     Win   Loss   Loss   Loss
+                   Y       F       Win    Loss   Win    Win    Loss
+                           I       Win    Loss   Win    Loss   Win
+                           O       Win    Loss   Loss   Win    Win
+                                 Player Y Win-Loss Standing
+
+The table above shows the standings for Player Y. The letters “C”, “L”, “F”,
+“I”, and “O” on the left side indicate Player Y’s choice while the letters on top
+indicate Player X’s choice. Wins and losses in the table represent win or loss of
+Player Y. Note that the win of Player X is the loss of Player Y and the loss of
+Player X is the win of Player Y.
+
+
+For instance, if Player X and Player Y choose C, then Player X wins and Player
+Y loses. If Player X chooses C and Player Y chooses L, then Player X loses and
+Player Y wins.
+
+
+
+                                          A-32
+                            Supplementary Appendix
+
+
+If Player X wins, then Player X will receive Y100 from Player Y, meaning that the
+money total of Player X will increase Y100, and that of Player Y will decrease
+Y100. If Player Y wins, then Player Y will receive Y60 from Player X, meaning
+that the money total of Player Y will increase Y60, and that of Player X will
+decrease Y60.
+
+
+You are going to play 120 rounds of this game. If either person run out of
+money, then that is game over for that pair. The money you have at the end of
+the experiment will be your reward. If you have Y3,000 at the end of the game,
+then you will receive a reward of Y4,400 composed of a Y3,000 reward and the
+Y1,400 participation reward. For the pairs with a person that ran out of money,
+the losing person will receive a reward of Y1,400 composed of a Y0 reward and
+the Y1,400 participation reward. The winning person will receive the reward of
+Y8,600 composed of Y7,200 reward and the Y1,400 participation reward.
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                      A-33
+                            Supplementary Appendix
+
+
+Computer Display Descriptions and the Experimental Procedures
+
+
+Player X Selection Screen
+
+
+
+
+The screen above will be displayed on Player X’s selection screen. On the top
+left is the current number of rounds. This display shows that this is the 5th
+round. In the middle left is the Player X standing. Wins and losses represent
+the wins and losses of Player X. On the bottom is the history that displays the
+round number, your choice, your opponent’s choice and the outcome. On the
+upper middle right is your current money total. Right below that is the selection
+screen. You can choose and click either one of “C”, “L”, “F”, “I”, or “O”. Once
+all of you finish choosing an action, the outcome will be displayed.
+
+
+
+
+                                      A-34
+                            Supplementary Appendix
+
+
+Player Y Selection Screen
+
+
+
+
+The screen above will be displayed on Player Y’s selection screen. The screen
+display is the same as player X’s display. In the middle left is the Player Y
+standing. Wins and losses represent the wins and losses of Player Y. You can
+choose and click either one of “C”, “L”, “F”, “I”, or “O”. Once all of you finish
+choosing an action, the outcome will be displayed.
+
+
+
+
+                                      A-35
+                           Supplementary Appendix
+
+
+Player X Outcome Screen
+
+
+
+
+The screen above is Player X’s outcome screen. Similarly to the selection screen,
+it shows the current round on the top left, and the history on the bottom. It
+shows your current money total on the upper middle of the display and your
+choice, your opponent’s choice, and the outcome below. Once you have checked
+the outcome screen, click Next.
+
+
+
+
+                                      A-36
+                            Supplementary Appendix
+
+
+Player Y Outcome Screen
+
+
+
+
+The screen above is Player Y’s outcome screen. The screen display is the same
+as Player X’s display. Once you have checked the outcome screen, click Next.
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                    A-37
+                            Supplementary Appendix
+
+
+Below is the description of the experimental procedures.
+Experimental Procedures
+
+  1. We will begin by assigning seats. Follow the staﬀ directions and take a
+     card. Please take a seat according to the number indicated on the card.
+
+  2. Once you take a seat, there will be 5 minutes for you to think over the
+     experiment.
+
+  3. 5 minutes later, the experiment will begin with the announcement, ”The
+     experiment starts now. Please look at the display.”
+
+
+
+If you have any questions, raise your hand quietly. A staﬀ member will answer
+your questions privately.
+
+
+
+
+                                    A-38
+

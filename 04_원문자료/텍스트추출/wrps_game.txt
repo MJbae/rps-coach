@@ -1,0 +1,9 @@
+ 
+ 404 Error - Document Not Found 
+404 - Document Not Found 
+The requested object or URL,   /game-basics/ 
+was not found on this server. 
+The link you followed is either outdated, inaccurate, or the server has been
+instructed not to let you have it. 
+Please inform the administrator of the referring page,
+ (none) .

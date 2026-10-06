@@ -1,0 +1,581 @@
+                                                               Cycle frequency in standard Rock-Paper-Scissors games:
+                                                                        Evidence from experimental economics
+
+                                                                                       Bin Xu1,2,3 , Hai-Jun Zhou3 , Zhijian Wang2,3∗
+                                                                    1 Public Administration College, Zhejiang Gongshang University, Hangzhou, 310018, China
+                                                                     2
+                                                                         Experimental Social Science Laboratory, Zhejiang University, Hangzhou, 310058, China
+                                                3 State Key Laboratory of Theoretical Physics, Institute of Theoretical Physics, Chinese Academy of Sciences, Beijing, 100190, China
+
+
+
+
+arXiv:1301.3238v3 [nlin.AO] 12 Aug 2013
+                                          Abstract
+                                          The Rock-Paper-Scissors (RPS) game is a widely used model system in game theory. Evolutionary game theory
+                                          predicts the existence of persistent cycles in the evolutionary trajectories of the RPS game, but experimental evidence
+                                          has remained to be rather weak. In this work we performed laboratory experiments on the RPS game and analyzed the
+                                          social-state evolutionary trajectories of twelve populations of N = 6 players. We found strong evidence supporting the
+                                          existence of persistent cycles. The mean cycling frequency was measured to be 0.029 ± 0.009 period per experimental
+                                          round. Our experimental observations can be quantitatively explained by a simple non-equilibrium model, namely the
+                                          discrete-time logit dynamical process with a noise parameter. Our work therefore favors the evolutionary game theory
+                                          over the classical game theory for describing the dynamical behavior of the RPS game.
+                                          Keywords: Rock-Paper-Scissors game; cycle; social state; population dynamics; evolutionary trajectory
+
+
+                                          1. Introduction                                                            lizard [11] and others [12, 13]. The environment for
+                                                                                                                     animal contests is decentralized, in which the encounter
+                                             Evolutionary game theory (EGT) is becoming a gen-                       is pairwise, but population strategy shows cyclic behav-
+                                          eral theoretical framework to analysis strategies behav-                   iors [1, 11]. In general, human economic behaviors
+                                          iors [1, 2, 3]. EGT is rooted in the classical game the-                   (e.g., exchanges) are also pairwise and not centralized
+                                          ory (CGT) [4] and the theory of evolution [5]. Different                   [14]. To test EGT in human game experiments [15],
+                                          from CGT, EGT predicts there could exist persistent cy-                    the traditional setting is decentralized (see review [16]),
+                                          cles in the evolutionary trajectories in the strategy space                in which a subject in each round competes with one
+                                          [6, 7, 8].                                                                 random-pairwise opponent within a finite population
+                                             As an example let us consider the standard Rock-                        [17, 18, 19, 20, 21, 22, 23]. In such traditional set-
+                                          Paper-Scissors (RPS) game. This is a prototype game in                     ting experiment, whether the trajectories are persistent
+                                          textbooks [1, 4, 6, 9, 7]. In this game, dynamics equa-                    cycles instead of convergence to a Nash equilibrium re-
+                                          tions (e.g., the standard replicator dynamics equations)                   mains an open question [16, 24, 10]. Till now, no persis-
+                                          in EGT predict that the evolutionary trajectory will cy-                   tent cycle has been confirmed in the RPS experiment un-
+                                          cle around the Nash equilibrium persistently. However,                     der such a traditional setting [8, 10], and furthermore no
+                                          the CGT predicts full random behavior: the system is in                    dynamics observation has been reported quantitatively.
+                                          a mixed-strategy equilibrium with each cyclic motion
+                                          being balanced completely by its reverse cyclic motion.                       In this paper we study the evolutionary trajectories
+                                          According to the CGT theory, cycles (also referred to                      of the Rock-Paper-Scissors game from the perspec-
+                                          as excess loops) cannot be observed in the evolutionary                    tive of non-equilibrium statistical physics. In non-
+                                          trajectories in the long run [8, 10].                                      equilibrium statistical physics studies, formulating a
+                                             Empirical examples of the RPS cycles are constantly                     physically meaningful measure of the distance from
+                                          being discovered in nature, e.g., three morphs male                        equilibrium is an area of active research [25]. An equi-
+                                                                                                                     librium system satisfies the detailed balance condition,
+                                                                                                                     which ensures the time reversal symmetry. However,
+                                             ∗ Corresponding author. email: wangzj@zju.edu.cn                        detailed balance is broken in a non-equilibrium system
+                                          Preprint submitted to Elsevier                                                                                                  August 13, 2013
+even in its stationary state, therefore various dynami-                                         R     P     S
+cal patterns may show up in the evolutionary trajectory.                                  R      1    0     2
+Several non-equilibrium order parameters, such as en-                                     P      2    1     0
+tropy production [26, 27] and velocity [28], have been                                    S      0    2     1
+constructed to characterize the distance from equilib-
+rium. In this work we carry out laboratory experiments           Table 1: Payoff matrix of the Rock-Paper-Scissors game. The value
+                                                                 of each matrix element is the payoff of the row player’s strategy given
+on the RPS game, and we detect the possible existence            the strategy of the column player.
+of persistent cyclic flows using an angular frequency as
+the non-equilibrium order parameter. A non-zero an-
+gular frequency serves as a quantitative measure of the
+distance from equilibrium for the evolutionary trajecto-         2.1. Experimental setting
+ries. We also compare our experimental observations                 There were twelve independent and disjoint groups
+with the predictions of a simple non-equilibrium model,          in our laboratory experiments. Each group was formed
+the discrete-time logit dynamical process with a noise           by six players, therefore the RPS game is a finite pop-
+parameter β.                                                     ulation game with population size N = 6. Each group
+   Our experiments are the standard RPS games with the           played the RPS game 300 rounds (we will explain the
+experimental setting of discrete time, random pairwise           motivation to use 300 rounds later on). In each round
+matching and local information. This setting has its re-         of the play, the six players of each group were first
+ality in biology and economics [16, 14, 18, 19, 8, 17, 20,       randomly assigned to three disjoint sub-groups by a
+21, 22, 29, 30]. We collect a total number of twelve ex-         computer program, and then the two players of each
+perimental trajectories from our experiments (each tra-          sub-group played the RPS game once. All players
+jectory is the result of 300 rounds of the game) and then        made their own decisions simultaneously and anony-
+analyze these trajectories. Like other previous exper-           mously. After all the players had submitted their
+iments [17, 19, 21, 22, 31] and theories [32, 33], the           choices, each player then got the feedback information
+evolutionary trajectories are highly stochastic, but us-         through her/his private computer screen. The feedback
+ing our non-equilibrium order parameter we are able to           information included her/his own strategy, her/his op-
+confirm that cycles exist and do not dissipate. The mean         ponent’s strategy, and her/his own payoff. No other
+frequency of cycles is about 0.029±0.009 period per ex-          information was provided to the players. Each player
+perimental round. This mean value is used to evaluate            also understood that her/his strategy in each round of
+the noise parameter β of the logit dynamics model, and           the play is only shown to her/his opponent of this round
+a value of β ≈ 0.20 is obtained.                                 but not shown to the other players.
+   This paper is organized as following. In the next sec-           These 12 experimental sessions were conducted dur-
+tion we introduce the standard RPS game in the tradi-            ing December 2010 in the experimental social science
+tional setting and describe our data analysis protocol.          laboratory of Zhejiang University. The 72 experimental
+In section 3 we describe our main experimental results.          subjects (players) were recruited broadly from the stu-
+The experimental results are compared with the predic-           dent population of the university. They were sitting in
+tions of the discrete-time logit dynamics model in sec-          an isolated seat with a computer during the games. Both
+tion 4. We conclude this work in the last section.               written and oral instructions were provided for each
+                                                                 player before the experiment. During the experiment,
+                                                                 the players gained experimental points in each round of
+2. Experimental setup and data analysis
+                                                                 the game according to the payoff matrix. The experi-
+   There are three different pure strategies in the Rock-        mental sessions lasted about 1.5-2 hours. The players
+Paper-Scissors game, namely Rock (R), Paper (R) and              got their earnings in cash privately after the experiment
+Scissors (S ). These three strategies form a directed cir-       according to the accumulated experimental points over
+cle R → S → P → R, namely R beats S , S beats P,                 the 300 rounds. The exchange rule is one experimental
+and P in turn beats R. In our experiments we use the             point equals 0.15 Yuan RMB. In addition, each player
+simple payoff matrix shown in Table 1 to make the RPS            got 5 Yuan RMB as show-up fee. The average earning
+game a constant-sum game: In each play between two               was about 50 Yuan RMB.
+players, the winning player gets a payoff 2 (i.e., two ex-
+perimental points) while the losing player gets a payoff         2.2. Data analysis
+0; if there is a tie then each player gets an equal payoff         There are three pure strategies in the RPS game,
+1.                                                               therefore we use a vector (x, y, z) to denote a generic
+                                                             2
+social state of the population, with x, y and z being re-
+spectively the fraction of players using strategy R, P and
+S . Suppose at the t-th round of the game, nR (t) play-
+ers used strategy R, nP (t) players used strategy P, and
+nS (t) = N − nR (t) − nP (t) players used strategy S . Then
+
+              nR (t)           nP (t)          nS (t)
+         x≡          ,    y≡          ,   z≡          ).
+               N                N               N
+Obviously x, y, and z should satisfy x ≥ 0, y ≥ 0, z ≥ 0,
+and x + y + z = 1. The total number of different social
+states for a population of size N is simply (N+1)(N+2)
+                                                     2     . In
+the studied case of N = 6 this number is 28.
+   The social state (x, y, z) of a population at a given time
+point is a coarse-grained description about the strategies
+used by the members of this population [23, 8]. The set
+of all the social states of a population is referred to as
+the social state space of the population. It can be repre-
+sented graphically by an equilateral triangle in a three-                     1
+dimensional Euclidian coordinate system, see Fig. 1.
+                                                                             5/6
+Each social state (x, y, z) corresponds to a point in the
+interior or on the boundary of this triangle. The central                    4/6
+                                                                                                                 NE
+point ( 31 , 13 , 31 ) of the triangle is the Nash equilibrium           S   3/6
+(NE) point of the RPS game.
+                                                                             2/6
+   Generically speaking, the social state of the popula-
+tion is different at different rounds t of the repeated RPS                  1/6
+game. The social state (x, y, z) as a function of the dis-                    0                                                                       0
+crete time t forms an evolutionary trajectory in the so-                      0                                                                 1/6
+cial state space [23, 8, 10, 22], see Fig. 2 for a simple                          1/6                                                    2/6
+                                                                                         2/6                                        3/6
+illustration. After an evolution trajectory of T time steps                                    3/6
+                                                                                                                              4/6         R
+                                                                                           P         4/6
+has been collected, we then perform statistical analysis                                                   5/6          5/6
+on it. The first quantities of interest are the mean values                                                      1 1
+of x, y and z, namely
+          T                T                T                            Figure 1: Social state space and Poincaré section of the RPS game
+       1X               1X               1X
+ x≡          x(t) , y ≡       y(t) , z ≡       z(t) .         (1)        with N = 6 players. Each social state is represented by a point (x, y, z)
+       T t=1            T t=1            T t=1                           on the plane characterized by x + y + z = 1. All the 28 social states
+                                                                         are distributed within or on the boundary of an equilateral triangle.
+   To detect weak but persist directional motion in the                  The social state ( 31 , 13 , 31 ) is the Nash equilibrium (NE) point. To de-
+                                                                         tect possible persistent flow within the social state space, a line seg-
+social state space, we follow Ref. [10, 34] and set a line               ment linking the Nash equilibrium point and the social state ( 12 , 12 , 0)
+segment between the Nash equilibrium point and a point                   is drawn. This line is referred to as the Poincaré section.
+chosen at the boundary of the triangle (see Fig. 1). Such
+a line segment is referred to as a Poincarésection. Con-
+sider two consecutive social states ~s(t) ≡ x(t), y(t), z(t)
+                                                
+and ~s(t + 1) ≡ x(t + 1), y(t + 1), z(t + 1) . If either s~(t)
+or ~s(t + 1) is identical to the Nash equilibrium point, or
+if the line segment from ~s(t) to ~s(t + 1) does not cross
+the Poincaré section, then the transition s~(t) → s~(t + 1)
+is assigned a counting number Ct = 0. Otherwise, (1) if
+the transition ~s(t) → ~s(t + 1) crosses the Poincaré sec-
+tion from left to right (count-clockwise with respect to
+the direction axis ( √13 , √13 , √13 ) of the social state plane),
+then Ct = +1; (2) if this transition crosses the Poincaré
+                                                                     3
+                                                                                        Table 2: Statistics on the strategies. #R denotes the total number of
+                                                                                        times the strategy R being chosen by members of a given population
+                                                                                        (#P and #S have similar meanings). x, y, z are defined by Eq. (1).
+
+                                                                                                group      #R    #P    #S       x       y        z
+                                                                                                  1        675   601   524    0.375   0.334    0.291
+      1                                                                                           2        632   533   635    0.351   0.296    0.353
+                                                                                                  3        584   591   625    0.324   0.328    0.347
+     5/6                                                                                          4        688   615   497    0.382   0.342    0.276
+                                              187     190                                         5        669   568   563    0.372   0.316    0.313
+     4/6                                                                                          6        642   578   580    0.357   0.321    0.322
+                                         NE                                                       7        606   583   611    0.337   0.324    0.339
+ S   3/6                         189                                                              8        625   558   617    0.347   0.31     0.343
+                                                                                                  9        675   581   544    0.375   0.323    0.302
+     2/6                                                                                          10       604   604   592    0.336   0.336    0.329
+                                              188                                                 11       643   567   590    0.357   0.315    0.328
+                 185                                                                              12       659   558   583    0.366   0.31     0.324
+     1/6
+      0                                  186                                  0
+      0                                                                 1/6
+           1/6                                                    2/6
+                 2/6                                        3/6                         time interval [t0 , t1 ] is defined as
+                       3/6                            4/6         R
+                   P         4/6                                                                                          t −1
+                                   5/6          5/6                                                        Ct0 ,t1   1 1X
+                                         1 1                                                  ft0 ,t1 ≡            =           Ct .                      (3)
+                                                                                                          t1 − t0 t1 − t0 t=t
+                                                                                                                              0
+
+
+                                                                                        Starting from the initial time t0 = 1, we are interested in
+Figure 2: A pictorial view of a short segment of an experimentally
+recorded evolutionary trajectory, starting from t = 185 and ending at                   the value of f1,t as t becomes large.
+t = 190. The counting numbers of the four social state transitions
+are, respectively, C185 = 0.5, C186 = 0.5, C187 = 0, C188 = −1
+and C189 = 0. Therefore the accumulated counting number of this                         3. Experimental results
+trajectory segment is C185,190 = 0.
+                                                                                           Table 2 lists the total number of times the three strate-
+                                                                                        gies have been used in each of the 12 evolutionary tra-
+section from right to left (clockwise), then Ct = −1; (3)                               jectories. Among the twelve evolutionary trajectories of
+if ~s(t) is on the Poincaré section but is different from the                          length 300, the total number of times the strategy R, P
+Nash equilibrium point, then Ct = 0.5 (Ct = −0.5) if                                    and S being used is, respectively, 7702, 6937 and 6961.
+~s(t + 1) is to the right (left) of the Poincaré section; (4)                          The mean value of x, y and z as defined in Eq. (1),
+if s~(t + 1) is on the Poincaré section but is different from                          is then x = 0.357 ± 0.005, y = 0.321 ± 0.004 and
+the Nash equilibrium point, then Ct = 0.5 (Ct = −0.5) if                                z = 0.322 ± 0.007 (the standard deviation is estimated
+~s(t) is to the left (right) of the Poincaré section. We give                          over the 12 evolution trajectories, see Table 2). The ob-
+some concrete examples of computing Ct in Fig. 2.                                       served mean point (x, y, z) is only slightly different from
+    The accumulated counting number Ct0 ,t1 of the evolu-                               the theoretical Nash equilibrium point ( 13 , 31 , 31 ).
+tionary trajectory during the time interval [t0 , t1 ] is de-                              The experimental trajectories are highly stochastic,
+fined as                                                                                similar to the observations on other game processes
+                                                                                        [17, 19, 21, 29, 22]. However, if we plot the evolution
+                  t1 −1
+                  X                                                                     behavior of the accumulated counting number C1,t with
+      Ct0 ,t1 ≡           Ct .                                                (2)
+                  t=t0
+                                                                                        time t in Fig. 3, we find that C1,t increases with t in most
+                                                                                        of the data sets. The value of C1,300 for each of the 12
+The accumulated counting number Ct0 ,t1 quantifies the                                  experimental trajectories is shown in the last column of
+net number of cycles around the Nash equilibrium point.                                 Table 3. We obtain that the mean value of C1,300 to be
+Such a quantity can help us to detect deterministic be-                                 C 1,300 = 8.54 ±2.66. Accordingly, the mean cycling fre-
+haviors in a stochastic process [34]. Starting from the                                 quency of these 12 evolutionary trajectories in 300 steps
+initial time t0 = 1, if C1,t scales linearly with t during                              is f 1,300 = 0.029 ± 0.009. In other words, the empirical
+the social-state evolution process, then it indicates the                               frequency of the cycles is 0.029 ± 0.009 period per ex-
+existence of persistent cycles around the Nash equilib-                                 perimental round. The 95% confidence interval of this
+rium; if C1,t as a curve of t only fluctuates around 0,                                 frequency is [0.009, 0.048].
+then there is no persistent cycles around the Nash equi-                                   Statistical analysis on the 12 sampled values of C1,300
+librium. The mean frequency of cyclic motion in the                                     suggests that the null hypothesis H1 that C1,300 = 0 can
+                                                                                    4
+        25                                                                      Table 3: The accumulated counting number C1,t in the twelve
+                                                                                evolutionary trajectories.
+                                                                                   Group            C1,50     C1,100    C1,150   C1,200   C1,250   C1,300
+        20                                                                            1              0.50      3.00      5.50     5.50     8.50     9.00
+                                                                                      2              0.00      2.00      4.00     3.00     5.00     6.00
+                                                                                      3              1.00      1.50      4.50     7.00    10.00    14.00
+        15                                                                            4              1.50      2.00      3.00     6.50     9.50    11.00
+                                                                                      5             -3.00     -4.00     -5.00    -6.00    -4.00    -5.00
+                                                                                      6              3.00      4.50      7.00    13.00    18.00    21.00
+        10                                                                            7              4.00      5.50     12.50    17.00    21.00    25.00
+C1,t                                                                                  8              1.50      4.50      5.50     6.00    11.00    12.00
+                                                                                      9             -3.50     -5.50     -3.50    -4.50    -2.50    -1.00
+         5
+                                                                                     10              1.50      4.50      6.50     3.50     5.50     5.50
+                                                                                     11             -2.00     -5.00     -3.50    -3.50    -3.50    -4.50
+         0                                                                           12             -0.50      0.50      2.50     3.50     6.50     9.50
+                                                                                    Mean             0.33      1.13      3.25     4.25     7.08     8.54
+                                                                                   95%L             -1.12     -1.35      0.03    -0.04     2.09     2.68
+        −5                                                                         95%U              1.78      3.60      6.47     8.54    12.07    14.40
+                                                                                   p-value           0.62      0.34      0.05     0.05     0.01     0.01
+                                                                                The last four rows are the statistical results of the 12 experimental
+       −10                                                                      groups above. The row titled as p-value is t-test result by setting the
+          0     50       100     150      200          250       300
+                               Round (t )                                       null hypothesis C1,t = 0 for the 12 samples. 95%U(L) means the upper
+                                                                                (lower) bound of 95% confidence interval over the 12 samples.
+
+
+
+Figure 3: Accumulated counting number C1,t as a function of evolu-
+tion time t. Each of the twelve curves corresponds to one evolutionary
+trajectory involving six players.                                            a simple model for the RPS game, namely the discrete-
+                                                                             time logit dynamics [35]. Multiple equilibria and limit
+                                                                             cycles in the logit dynamics has also been studied in a
+be rejected (p < 0.01, t-test). Therefore we can say that                    very recent paper by Hommes and Ochea [36] in the
+cycles do exist in the RPS game in our experiments. Sta-                     continuous-time limit.
+tistical analysis also shows that C1,300 > 0 (p < 0.01),                        Suppose the population of N players is in the social
+i.e., the cycles are counter-clockwise around the Nash                       state (x, y, z) after the t-th round of the game. Let us
+equilibrium point. This result is consistent with the                        denote by ui the mean payoff of the strategy i ∈ {R, P, S }
+theoretical predictions of some evolutionary dynamics                        for this social state. From the payoff matrix of Table 1
+models [8, 1, 7].                                                            we can easily obtain that
+   According to the last row in Table 3, to confirm
+the existence of cycles using 12 samples, the trajectory                             uR = x + 2z ,                 uP = y + 2x ,      uS = z + 2y .         (4)
+length t should be at least 150. This is because the the
+                                                                             We assume that at the (t + 1)-round of the game, each
+null hypothesis (C1,t = 0) can be rejected (p < 0.05)
+                                                                             player of the population will choose a strategy from
+only when t ≥ 150. That long evolutionary trajectories
+                                                                             {S , R, P} independently of all the other players. And
+are needed to confirm the existence of cycles can also
+                                                                             we further assume that the time-dependent probability
+be understood from the empirical fact that the mean cy-
+                                                                             pi for a player to choose strategy i is
+cling frequency is very small.
+   To see the persistence of cycles, setting null hypoth-                                                   eβui
+esis as C1,150 > C151,300 which means the cycles is                                  pi =                                  ,       ∀i ∈ {R, P, S } .        (5)
+                                                                                                  eβuS + eβuR + eβuP
+disappearing along time. This hypothesis can be re-
+jected by experimental data (p = 0.06 < 0.10). Set-                          The parameter β is referred to as the “inverse tempera-
+ting C1,100 > C201,300 , this null hypothesis can be re-                     ture” of the logit dynamics, its value quantifies the ra-
+jected strongly (p < 0.01). Concerning the question                          tionality degree of human agents in strategy interaction
+“Do cycles dissipate when subjects must choose simul-                        [35, 37, 38, 20, 39, 40, 7, 41, 42]. In the limiting case
+taneously?” raised recently by the authors of Ref. [10],                     of β = 0 each strategy will be chosen with the uniform
+our experimental data therefore suggest that cycles do                       probability 13 .
+not dissipate.                                                                  For this simple Markovian process, the transition
+                                                                                             (x,y,z)
+                                                                             probability T (x  ′ ,y′ ,z′ ) from a social state (x, y, z) at time
+
+                                                                             t to another social state (x′ , y′ , z′ ) at time (t + 1) is ex-
+4. Comparison with a simple model                                            pressed as (noticing that z′ = 1 − x′ − y′ )
+  To theoretically understand the experimental obser-                                                               N!               ′    ′      ′
+
+vations, we now study a noisy best-response process as
+                                                                                 (x,y,z)
+                                                                               T (x ′ ,y′ ,z′ )     =           ′     ′     ′
+                                                                                                                                pRN x pNy
+                                                                                                                                       P    pSNz
+                                                                                                            (N x )!(Ny )!(Nz )!
+                                                                         5
+                                    N!
+                  =                                ×
+                          (N x′ )!(Ny′ )!(Nz′ )!
+                                   ′   ′  ′      ′   ′  ′                                          0.30
+                            eNβ[xx +yy +zz +2(xy +yz +zx )]
+                                                             .             (6)
+                          (eβ(x+2z) + eβ(y+2x) + eβ(z+2y) )N                                       0.25
+                                        ∗
+The steady-state probability W(x,y,z)               that the system is
+
+
+                                                                                       frequency
+                                                                                                   0.20
+in the social state (x, y, z) at t = ∞ can be obtained by
+solving the following fixed-point equation                                                         0.15
+                         (x′ ,y′ ,z′ ) ∗
+                 X
+        ∗
+     W(x,y,z) =        T (x,y,z)      W(x′ ,y′ ,z′ ) .             (7)                             0.10
+                      (x′ ,y′ ,z′ )
+
+Because the transition probability from any social state
+                                                                                                   0.05
+(x, y, z) to any another social state (x′ , y′ , z′ ) is positive,                                 0.00
+Eq. (7) has a unique solution with the normalization
+            P       ∗
+property (x,y,z) W(x,y,z) = 1 [43]. It is not difficult to                                         −0.05
+prove that the steady-state probability distribution has                                                0               1                2               3                4
+the following rotational symmetry                                                                                                        β
+         ∗        ∗        ∗
+       W x,y,z = Wy,z,x = Wz,x,y .                                         (8)
+                                                                                       Figure 4: The steady-state mean cycling frequency f ∗ of the discrete-
+This rotational symmetry ensures that                                                  time logit dynamical process with population size N = 6. The solid
+                                                                                       line is theoretical result obtained with Eq. (10); the cross (×) symbols
+  X
+           ∗
+                      X
+                               ∗
+                                          X
+                                                   ∗        1                          with error bars are obtained by averaging over many simulated evolu-
+         xW(x,y,z) =         yW(x,y,z) =         zW(x,y,z) = , (9)
+                                                            3                          tionary trajectories of length 300. The mean experimental frequency
+ (x,y,z)             (x,y,z)             (x,y,z)                                       of f 1,300 ≈ 0.029 and its 95% confidence upper and lower bound are
+                                                                                       marked by the dashed lines.
+namely the logit dynamics will reach the Nash equilib-
+rium ( 13 , 13 , 31 ) at t → ∞.
+   It can be checked numerically and analytically that,                                just the angle of this triangle at vertex point ( 31 , 31 , 13 ), it
+for any β > 0, the detailed balance condition is violated                              must be less than π. The rotational angle θ(x                     (x,y,z)
+                                                                                                                                                            ′ ,y′ ,z′ ) is de-
+at the steady-state of the logit dynamics. For two dif-                                fined as positive if the rotation from (x, y, z) to (x′ , y′ , z′ )
+ferent social states (x, y, z) and (x′ , y′ , z′ ), in general we                      with respect to the Nash equilibrium point is counter-
+will find that                                                                         clockwise, otherwise it is defined as negative.
+                 (x,y,z)         ∗             ′   ′   ′
+                                             (x ,y ,z ) ∗                                 At the steady-state of the discrete-time logit dynam-
+               T (x ′ ,y′ ,z′ ) W(x,y,z) , T (x,y,z)   W(x′ ,y′ ,z′ ) .
+                                                                                       ics, the mean frequency f ∗ that the evolution trajectory
+Because of the violation of detailed balance, directional                              rotates around the Nash equilibrium point can then be
+flows may persist in the system even at t → ∞.                                         computed by the following formula
+    We are especially interested in the directional flow                                           1 X ∗                X
+                                                                                                                                      (x,y,z)        (x,y,z)
+around the Nash equilibrium point. Consider two so-                                          f∗ ≡            W(x,y,z)               T (x′ ,y′ ,z′ ) θ(x′ ,y′ ,z′ ) . (10)
+                                                                                                  2π (x,y,z)          (x′ ,y′ ,z′ )
+cial states (x, y, z) and (x′ , y′ , z′ ) on the evolutionary tra-
+jectory at two consecutive time points t and t + 1. If                                    For the population size N = 6, we show in Fig. 4 the
+either (x, y, z) or (x′ , y′ , z′ ) is identical to the Nash equi-                     steady-state mean frequency f ∗ as a function of the in-
+librium point, the transition (x, y, z) → (x′ , y′ , z′ ) is not                       verse temperature β. To check the correctness of the the-
+a rotational motion around the Nash equilibrium, and                                   oretical calculations, we also perform computer simula-
+                                                        (x,y,z)
+we set the corresponding rotational angle θ(x             ′ ,y′ ,z′ ) to be            tions based on the discrete-time logit dynamics model
+zero. The Nash equilibrium point may be sitting on                                     to generate a set of simulated evolutionary trajectories
+the rectilinear line that passing through the social states                            of length 300. The mean cycling frequencies of these
+(x, y, z) and (x′ , x′ , z′ ). If this is the case, the transi-                        simulated evolutionary trajectories are also shown in
+tion (x, y, z) → (x′ , y′ , z′ ) is also not a rotational motion                       Fig. 4. The agreement between analytical calculations
+around the Nash equilibrium, and its rotational angle                                  and computer simulation results are very good. We find
+  (x,y,z)
+θ(x ′ ,y′ ,z′ ) is again set to be zero. In all the remaining cases,                   that f ∗ increases almost linearly with the inverse tem-
+the social states (x, y, z), (x′ , y′ , z′ ) and the Nash equilib-                     perature β when β < 1.5. Comparing the theoretical
+rium point form a triangle in the social state plane of                                results with the mean frequency value of f 1,300 = 0.029,
+                                                              (x,y,z)
+Fig. 1. The magnitude of the rotational angle θ(x                 ′ ,y′ ,z′ ) is       we infer the inverse parameter should be set to β = 0.20.
+                                                                                   6
+                                                                                                                            At β = 0.20, we also perform computer simula-
+                                                                                                                         tions based on the discrete-time logic dynamics model
+                                                                                                                         to generate a set of independent evolution trajectories of
+                                                                                                                         length T = 300. We then perform the same analysis on
+                                                                                                                         these trajectories and find that the direction of the cycles
+                                                                                                                         is counter-clockwise and the mean cycling frequency is
+                                                                                                                          f ≈ 0.029, consistent with the experimental result.
+                                                                                                                                                                               ∗
+                                                                                                                            At β = 0.20, the steady-state probability W(x,y,z)      of
+                                                                                                                         visiting each social state (x, y, z) as predicted by the logit
+                                                                                                                         dynamics is compared with the empirically observed
+                                                                                                                         probability of visiting (x, y, z), see Fig. 5. The agree-
+                         0.15
+                                                                                                                         ment between theory and experiment is again very good.
+                                                                                         10                                 Although the discrete-time noisy-response logit dy-
+                                                                                                                         namic model can describe our experimental observa-
+
+
+
+
+ Empirical Probability
+                                                                                                                         tions excellently, we should point out an important dif-
+                         0.10                                                                                            ference between the model assumption and the experi-
+                                                                   7
+                                                                                                                         mental setting. In our experiments, after each round of
+                                                                   9                                                     the game, each player only knows the strategy of her/his
+                                                                                                                         opponent but not the social state of the whole popula-
+                         0.05               6                                                                            tion. However in the logit dynamics model, we assume
+                                                                                                                         that each player choose a strategy based on the knowl-
+                                  34                                                                                     edge of the current social state of the population, see
+                                                                                                                         Eq. (5). In this sense, the logit dynamics model is still
+                              12 8                                                                                       a phenomenological model. It is of interest to quanti-
+                         0.00 5                                                                                          tatively describe the RPS evolutionary dynamics by a
+                             0.00    0.05        0.10                                                0.15                more microscopic model. We hope to return to this is-
+                                  Theoretical Probability                                                                sue in a future study.
+
+                                                                                                                         5. Conclusion and discussions
+Figure 5: Probability of staying in the social state (x, y, z) for a pop-
+ulation of size N = 6. The horizontal axis is the predicted probability                                                     As a brief summary, in this work we studied the
+by the discrete-time logit dynamics model with inverse temperature
+β = 0.20, while the vertical axis is the empirical probability measured
+                                                                                                                         Rock-Paper-Scissors game both experimentally and an-
+from the 12 experimental trajectories. Because of the rotational sym-                                                    alytically. Our experimental data gave strong evidence
+metry (8), the 28 social states can be coarse-grained into ten groups:                                                   that counter-clockwise cycles around the Nash equilib-
+(1), {(0, 0, 1), (0, 1, 0), (1, 0, 0)}; (2), {(0, 16 , 65 ), ( 16 , 65 , 0), ( 56 , 0, 61 )}; (3),                       rium point exist in the social-state evolutionary trajec-
+{(0, 13 , 23 ), ( 13 , 32 , 0), 23 , 0, 31 )}; (4), {(0, 12 , 12 ), ( 21 , 12 , 0), ( 21 , 0, 12 )}; (5),                tory of a finte population. We demonstrated that our
+{( 61 , 0, 56 ), ( 56 , 61 , 0), (0, 65 , 16 )}; (6), {( 61 , 16 , 32 ), ( 16 , 32 , 16 ), ( 23 , 16 , 61 )}; (7),
+                                                                                                                         experimental observations can be quantitatively under-
+{( 61 , 13 , 21 ), ( 31 , 12 , 61 ), ( 12 , 16 , 31 )}; (8), {( 31 , 0, 23 ), ( 32 , 13 , 0), (0, 32 , 31 )}; (9),
+                                                                                                                         stood by a simple theoretical model of noisy-response
+{( 31 , 16 , 21 ), ( 21 , 13 , 61 ), ( 16 , 12 , 31 )}; (10), {( 13 , 31 , 13 )}. All the social states
+of a given group have the same stationary probability (the same                                                          logit dynamics.
+horizontal-axis value) according to the theoretical model, but their                                                        RPS game experiments on EGT were also reported
+measured probabilities might be different (the mean vertical-axis                                                        quite recently by Cason and co-authors and by Hoffman
+value and the standard error).
+                                                                                                                         and co-authors [10, 8]. The backgrounds and cutting
+                                                                                                                         edges of the experiment research are well documented
+                                                                                                                         in these two references [10, 8]. Compared with the de-
+                                                                                                                         centralized setting of our present work, the experimen-
+                                                                                                                         tal environments of the RPS game in these two recent
+                                                                                                                         works [10, 8] are all centralized: Instead of pairwise
+                                                                                                                         meetings, in all of the experiments reported in [10, 8],
+                                                                                                                         each subject competes against the choices of all other
+                                                                                                                         subjects. However, the decentralized setting (especially
+                                                                                                                         the random matching pairwise setting) is more closer
+                                                                                                                         to the natural environments in biology and economics
+                                                                                                                     7
+(e.g., [16, 14]). For example, the encounters of male                        [4] J. Von Neumann, O. Morgenstern, Theory of Games and Eco-
+lizards are pairwise meetings [11]. For decentralized                            nomic Behavior, Princeton university press, 1944.
+                                                                             [5] C. Darwin, On the origin of species, Murray, London, 1859.
+population RPS games, according to our knowledge, the                        [6] J. Weibull, Evolutionary game theory, The MIT Press, 1997.
+existence of persistent cyclic motions was not confirmed                     [7] W. Sandholm, Population games and evolutionary dynamics,
+by any previous laboratory experiments.                                          The MIT Press, 2011.
+   Going back to traditional (decentralized) setting ex-                     [8] M. Hoffman, S. Suetens, M. Nowak, U. Gneezy, An experimen-
+                                                                                 tal test of nash equilibrium versus evolutionary stability (2012),
+periments of the simplest RPS game, the present work                             preprint.
+added strong evidence in favor of the existence of per-                      [9] M. A. Nowak, Evolutionary dynamics: exploring the equations
+sistent cycles. As a fundamental observation on cycle,                           of life, Harvard University Press, 2006.
+the mean frequency of cycles was quantitatively meas-                       [10] T. Cason, D. Friedman, E. Hopkins, Cycles and instability in a
+                                                                                 rock-paper-scissors population game: a continuous time experi-
+sured. There are tens of dynamics models which have                              ment (2012), preprint.
+been build to interpret cyclic behavior in RPS game,                        [11] B. Sinervo, C. Lively, The rock-paper-scissors game and the
+however there are rare quantitative observations from                            evolution of alternative male strategies, Nature 380 (1996) 240–
+                                                                                 243.
+real experiments. Quantitative measurements from ex-
+                                                                            [12] S. R. Pryke, S. C. Griffith, Red dominates black: agonistic sig-
+periments is important, without which to evaluate a dy-                          nalling among head morphs in the colour polymorphic gouldian
+namics equation precisely is almost impossible (or plau-                         finch, Proc.Royal Society B: Biol. Sci. 273 (2006) 949–957.
+sible). As demonstrated, our experimental observations                      [13] B. Kerr, M. Riley, M. Feldman, B. Bohannan, Local dispersal
+                                                                                 promotes biodiversity in a real-life game of rock-paper-scissors,
+can be quantitatively understood by a simple theoretical                         Nature 418 (2002) 171–174.
+model of noisy-response logit dynamics.                                     [14] F. A. Hayek, The use of knowledge in society, American Eco-
+   We wish to emphasize two major points of our exper-                           nomic Review 35 (1945) 519–530.
+imental approach. First, by recording sufficiently long                     [15] A. Falk, J. Heckman, Lab experiments are a major source of
+                                                                                 knowledge in the social sciences, Science 326 (2009) 535.
+evolutionary trajectories, we were able to detect weak                      [16] L. Samuelson, Evolution and game theory, Journal of Economic
+deterministic motion in a highly stochastic process. We                          Perspectives 16 (2002) 47–66.
+noticed that cycles can only be confirmed (p < 0.05)                        [17] D. Friedman, Equilibrium in evolutionary games: Some experi-
+when the trajectories are longer than 150 rounds in                              mental results, Economic Journal 106 (1996) 1–25.
+                                                                            [18] J. Van Huyck, F. Rankin, R. Battalio, What does it take to elim-
+twelve samples. Second, we focus on time asymmetry                               inate the use of a strategy strictly dominated by a mixture?, Ex-
+of social state transitions. Importance of time asymme-                          perimental Economics 2 (1999) 129–150.
+try has been well emphasised in non-equilibrium statis-                     [19] Y. Cheung, D. Friedman, A comparison of learning and repli-
+tical physics [34, 25, 44]. The frequency is observed                            cator dynamics using experimental data, Journal of Economic
+                                                                                 Behavior and Organization 35 (1998) 263–280.
+from the loops out of detailed balance.                                     [20] R. Battalio, L. Samuelson, J. Van Huyck, Optimization incen-
+                                                                                 tives and coordination failure in laboratory stag hunt games,
+                                                                                 Econometrica 69 (2001) 749–764.
+Acknowledgements                                                            [21] J. Van Huyck, Emergent conventions in evolutionary games,
+                                                                                 Handbook of Experimental Economics Results 1 (2008) 520–
+  We thank Ken Binmore for helpful discussion and                                530.
+Zunfeng Wang for technical assistance. The work of                          [22] K. Binmore, J. Swierzbinski, C. Proulx, Does minimax work?
+                                                                                 an experimental study, Economic Journal 111 (2001) 445–464.
+B.X. and Z.W. was supported by a grant from the 985                         [23] B. Xu, Z. Wang, Evolutionary Dynamical Pattern of ”Coyness
+Project at Zhejiang University and by SKLTP of ITP-                              and Philandering”: Evidence from Experimental Economics,
+CAS (No. Y3KF261CJ1). The work of H.J.Z. was                                     Vol. VIII, p1313-1326, NECSI Knowledge Press, ISBN 978-
+                                                                                 0-9656328-4-3., 2011.
+supported by the Knowledge Innovation Program of
+                                                                            [24] M. Benaı̄m, J. Hofbauer, E. Hopkins, Learning in games with
+Chinese Academy of Sciences (No. KJCX2-EW-J02)                                   unstable equilibria, Journal of Economic Theory 144 (2009)
+and the National Science Foundation of China (grant                              1694–1709.
+No. 11121403 and 11225526).                                                 [25] D. Sivak, G. Crooks, Near-equilibrium measurements of
+                                                                                 nonequilibrium free energy, Phys. Rev. Lett. 108 (2012) 150601.
+                                                                            [26] G. Wang, E. Sevick, E. Mittag, D. Searles, D. Evans, Experi-
+                                                                                 mental demonstration of violations of the second law of ther-
+References
+                                                                                 modynamics for small systems and short time scales, Phys. Rev.
+ [1] J. Smith, Evolution and the Theory of Games, Cambridge uni-                 Lett. 89 (2002) 50601.
+                                                                            [27] B. Andrae, J. Cremer, T. Reichenbach, E. Frey, Entropy produc-
+     versity press, 1982.
+                                                                                 tion of cyclic population dynamics, Phys. Rev. Lett. 104 (2010)
+ [2] E. Frey, Evolutionary game theory: Theoretical concepts and
+     applications to microbial communities, Physica A 389 (2010)                 218102.
+     4265–4298.                                                             [28] N. Kumar, S. Ramaswamy, A. Sood, Symmetry properties of the
+ [3] D. Friedman, Evolutionary economics goes mainstream: a re-                  large-deviation function of the velocity of a self-propelled polar
+     view of the theory of learning in games, Journal of Evolutionary            particle, Phys. Rev. Lett. 106 (2011) 118001–118004.
+     Economics 8 (1998) 423–432.                                            [29] R. Selten, T. Chmura, Stationary concepts for experimental 2×2-
+
+                                                                        8
+     games, American Economic Review 98 (2008) 938–966.
+[30] C. Plott, V. Smith, Handbook of experimental economics results,
+     North-Holland, 2008.
+[31] D. Semmann, H.-J. Krambeck, M. Milinski, Volunteering leads
+     to rock-paper-scissors dynamics in a public goods game, Nature
+     425 (2003) 390–393.
+[32] D. Vilone, A. Robledo, A. Sánchez, Chaos and unpredictability
+     in evolutionary dynamics in discrete time, Phys. Rev. Lett. 107
+     (2011) 038101.
+[33] T. Galla, Intrinsic noise in game dynamical learning, Phys. Rev.
+     Lett. 103 (2009) 198702.
+[34] D. ben Avraham, S. Dorosz, M. Pleimling, Entropy production
+     in nonequilibrium steady states: A different approach and an ex-
+     actly solvable canonical model, Phys. Rev. E 84 (2011) 011115.
+[35] L. E. Blume, The statistical mechanics of strategic interaction,
+     Games and Economic Behavior 5 (1993) 387–424.
+[36] C. H. Hommes and M. I. Ochea, Multiple equilibria and limit
+     cycles in evolutionary games with logit dynamics, Games and
+     Economic Behavior 74 (2012) 434–441.
+[37] C. Watkins, P. Dayan, Q-learning, Machine Learning 8 (1992)
+     279–292.
+[38] R. McKelvey, T. Palfrey, Quantal response equilibria for normal
+     form games, Games and Economic Behavior 10 (1995) 6–38.
+[39] D. H. Wolpert, M. Harre, E. Olbrich, N. Bertschinger, J. Jost,
+     Hysteresis effects of changing the parameters of noncooperative
+     games, Phys. Rev. E 85 (2012) 036102.
+[40] J. Hofbauer, K. Sigmund, Evolutionary game dynamics, Bull.
+     Amer. Math. Soc. 40 (2003) 479.
+[41] A. Traulsen, D. Semmann, R. D. Sommerfeld, H.-J. Krambeck,
+     M. Milinski, Human strategy updating in evolutionary games,
+     Proc. Natl. Acad. Sci. 107 (2010) 2962–2966.
+[42] A. Kianercy, A. Galstyan, Dynamics of boltzmann q learning in
+     two-player two-action games, Phys. Rev. E 85 (2012) 041145.
+[43] J. G. Kemeny, J. L. Snell, Finite Markov Chains; with a New
+     Appendix ”Generalization of a Fundamental Matrix”, Springer-
+     Verlag, New York, 1983.
+[44] D. Evans, E. Cohen, G. Morriss, Probability of second law vi-
+     olations in shearing steady states, Phys. Rev. Lett. 71 (1993)
+     2401–2404.
+
+
+
+
+                                                                        9
+

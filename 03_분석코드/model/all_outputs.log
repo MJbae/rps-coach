@@ -1,0 +1,405 @@
+##### s1_first_throw.py
+Calibration of clustering (Paper edge, naive vs reported cluster bootstrap):
+  Moerel 2025 AU fixed pairs (29,511 throws): naive SE 0.48pp, bootstrap SE 0.97pp, deff 4.12, implied ICC 0.0066
+  Brockbank & Vul 2020 US dyads (all games): naive SE 0.43pp, bootstrap SE 1.05pp, deff 5.93, implied ICC 0.0166
+  Wang 2014 implied ICC for Rock share (SD .08, 300 rounds): 0.0244
+  -> ICC used for adjusted CIs: 0.0166 (larger of the two raw-data values)
+
+| Dataset | kind | n | R/P/S % | edge R | edge P | edge S | best | naive 95% CI best | adj. 95% CI best |
+| Batzilis 2019 first throws, full (online 2007) | first | 5012128 | 34.0/34.8/31.2 | -3.6 | +2.8 | +0.8 | P | [+2.7, +2.9] | [+2.7, +2.9] (x1.1) |
+| Batzilis 2019 first throws, experienced (>=100 matches) | first | 1472319 | 32.6/34.6/32.8 | -1.7 | -0.2 | +2.0 | S | [+1.8, +2.1] | [+1.7, +2.2] (x2.0) |
+| Eyler 2009 first throws (US, vs computer) | first | 119 | 55.5/32.8/11.8 | -21.0 | +43.7 | -22.7 | P | [+31.2, +56.2] | n/a |
+| Brockbank & Vul round 1 (US dyads) | first | 120 | 33.3/44.2/22.5 | -21.7 | +10.8 | +10.8 | S | [-4.8, +26.5] | n/a |
+| Moerel 2025 game 1 (AU pairs) | first | 49 | 28.6/24.5/46.9 | +22.4 | -18.4 | -4.1 | R | [-0.4, +45.3] | n/a |
+| Toint 2023 STATED opener, all (JP survey) | stated | 1000 | 37.4/20.6/42.0 | +21.4 | -4.6 | -16.8 | R | [+16.7, +26.1] | n/a |
+| Toint 2023 STATED opener, men | stated | 337 | 42.4/25.2/32.3 | +7.1 | +10.1 | -17.2 | P | [+0.9, +19.3] | n/a |
+| Toint 2023 STATED opener, women | stated | 663 | 34.8/18.3/46.9 | +28.7 | -12.1 | -16.6 | R | [+22.9, +34.4] | n/a |
+| Batzilis 2019 all-throws proxy (avg of opp. histories) | all | n/a | 35.4/34.0/30.5 | -3.5 | +4.9 | -1.4 | P | n/a | n/a |
+| Xu 2013 Zhejiang lab (a=2, 72 x 300) | all | 21600 | 35.7/32.1/32.2 | +0.1 | +3.4 | -3.5 | P | [+2.3, +4.5] | [+0.8, +6.1] (x2.4) |
+| Wang L 2020 Zhejiang vs AI (41 x 300) | all | 12300 | 35.5/32.1/32.4 | +0.3 | +3.2 | -3.4 | P | [+1.7, +4.6] | [-0.4, +6.7] (x2.4) |
+| Dyson 2016 Canada vs computer (31 x 225) | all | 6975 | 35.6/32.2/32.2 | -0.1 | +3.4 | -3.4 | P | [+1.5, +5.4] | [-0.8, +7.6] (x2.2) |
+| Forder & Dyson 2016 UK vs computer (36 x 450) | all | 16200 | 35.2/32.5/32.4 | -0.1 | +2.8 | -2.7 | P | [+1.5, +4.1] | [-0.9, +6.5] (x2.9) |
+| Dyson 2022 Canada vs computer (avg of 3 conditions) | all | 14400 | 35.8/32.8/31.4 | -1.5 | +4.4 | -3.0 | P | [+3.1, +5.8] | [+0.9, +8.0] (x2.6) |
+| Moerel 2025 AU fixed pairs (29,511 throws) | all | 29511 | 35.3/32.5/32.1 | -0.4 | +3.2 | -2.8 | P | [+2.3, +4.2] | [+1.4, +5.2] (reported bootstrap) |
+| Brockbank & Vul 2020 US dyads (all games) | all | 35969 | 31.9/33.6/34.6 | +1.0 | -2.7 | +1.7 | S | [+0.9, +2.5] | Paper edge bootstrap [-4.8, -0.7] |
+| Cook 2012 UK live hands | all | 5040 | 32.4/33.3/34.4 | +1.1 | -2.0 | +0.9 | R | [-1.2, +3.4] | [-4.9, +7.1] (x2.6) |
+| Yoshizawa JP live hands (725 people) | all | 11567 | 35.0/33.3/31.7 | -1.6 | +3.4 | -1.8 | P | [+1.9, +4.9] | [+1.7, +5.0] (x1.1) |
+| Sazae-san TV sequence (anecdotal) | all | 1347 | 32.4/33.0/34.7 | +1.7 | -2.3 | +0.6 | R | [-2.7, +6.1] | n/a |
+
+All-hand naive 95% CIs (pp):
+  Batzilis 2019 first throws, full (online 2007): R -3.6 [-3.7,-3.5]; P +2.8 [+2.7,+2.9]; S +0.8 [+0.8,+0.9]
+  Batzilis 2019 first throws, experienced (>=100 matches): R -1.7 [-1.9,-1.6]; P -0.2 [-0.4,-0.1]; S +2.0 [+1.8,+2.1]
+  Eyler 2009 first throws (US, vs computer): R -21.0 [-32.4,-9.6]; P +43.7 [+31.2,+56.2]; S -22.7 [-39.1,-6.3]
+  Brockbank & Vul round 1 (US dyads): R -21.7 [-35.8,-7.6]; P +10.8 [-2.4,+24.1]; S +10.8 [-4.8,+26.5]
+  Moerel 2025 game 1 (AU pairs): R +22.4 [-0.4,+45.3]; P -18.4 [-42.1,+5.4]; S -4.1 [-24.4,+16.3]
+  Toint 2023 STATED opener, all (JP survey): R +21.4 [+16.7,+26.1]; P -4.6 [-10.1,+0.9]; S -16.8 [-21.4,-12.2]
+  Toint 2023 STATED opener, men: R +7.1 [-0.9,+15.2]; P +10.1 [+0.9,+19.3]; S -17.2 [-25.8,-8.6]
+  Toint 2023 STATED opener, women: R +28.7 [+22.9,+34.4]; P -12.1 [-18.9,-5.2]; S -16.6 [-22.0,-11.2]
+  Xu 2013 Zhejiang lab (a=2, 72 x 300): R +0.1 [-1.0,+1.2]; P +3.4 [+2.3,+4.5]; S -3.5 [-4.6,-2.4]
+  Wang L 2020 Zhejiang vs AI (41 x 300): R +0.3 [-1.2,+1.7]; P +3.2 [+1.7,+4.6]; S -3.4 [-4.9,-2.0]
+  Dyson 2016 Canada vs computer (31 x 225): R -0.1 [-2.0,+1.8]; P +3.4 [+1.5,+5.4]; S -3.4 [-5.3,-1.4]
+  Forder & Dyson 2016 UK vs computer (36 x 450): R -0.1 [-1.4,+1.1]; P +2.8 [+1.5,+4.1]; S -2.7 [-3.9,-1.4]
+  Dyson 2022 Canada vs computer (avg of 3 conditions): R -1.5 [-2.8,-0.2]; P +4.4 [+3.1,+5.8]; S -3.0 [-4.3,-1.6]
+  Moerel 2025 AU fixed pairs (29,511 throws): R -0.4 [-1.3,+0.5]; P +3.2 [+2.3,+4.2]; S -2.8 [-3.7,-1.9]
+  Brockbank & Vul 2020 US dyads (all games): R +1.0 [+0.2,+1.9]; P -2.7 [-3.6,-1.9]; S +1.7 [+0.9,+2.5]
+  Cook 2012 UK live hands: R +1.1 [-1.2,+3.4]; P -2.0 [-4.3,+0.3]; S +0.9 [-1.3,+3.1]
+  Yoshizawa JP live hands (725 people): R -1.6 [-3.1,-0.1]; P +3.4 [+1.9,+4.9]; S -1.8 [-3.3,-0.3]
+  Sazae-san TV sequence (anecdotal): R +1.7 [-2.7,+6.1]; P -2.3 [-6.7,+2.1]; S +0.6 [-3.7,+4.9]
+
+Explicit W/T/L (%) when throwing each hand:
+  Batzilis 2019 first throws, full (online 2007): Rock 31.2/34.0/34.8 | Paper 34.0/34.8/31.2 | Scissors 34.8/31.2/34.0
+  Batzilis 2019 first throws, experienced (>=100 matches): Rock 32.8/32.6/34.6 | Paper 32.6/34.6/32.8 | Scissors 34.6/32.8/32.6
+  Eyler 2009 first throws (US, vs computer): Rock 11.8/55.5/32.8 | Paper 55.5/32.8/11.8 | Scissors 32.8/11.8/55.5
+  Brockbank & Vul round 1 (US dyads): Rock 22.5/33.3/44.2 | Paper 33.3/44.2/22.5 | Scissors 44.2/22.5/33.3
+  Moerel 2025 game 1 (AU pairs): Rock 46.9/28.6/24.5 | Paper 28.6/24.5/46.9 | Scissors 24.5/46.9/28.6
+  Toint 2023 STATED opener, all (JP survey): Rock 42.0/37.4/20.6 | Paper 37.4/20.6/42.0 | Scissors 20.6/42.0/37.4
+  Toint 2023 STATED opener, men: Rock 32.3/42.4/25.2 | Paper 42.4/25.2/32.3 | Scissors 25.2/32.3/42.4
+  Toint 2023 STATED opener, women: Rock 46.9/34.8/18.3 | Paper 34.8/18.3/46.9 | Scissors 18.3/46.9/34.8
+  Batzilis 2019 all-throws proxy (avg of opp. histories): Rock 30.5/35.4/34.0 | Paper 35.4/34.0/30.5 | Scissors 34.0/30.5/35.4
+  Xu 2013 Zhejiang lab (a=2, 72 x 300): Rock 32.2/35.7/32.1 | Paper 35.7/32.1/32.2 | Scissors 32.1/32.2/35.7
+  Wang L 2020 Zhejiang vs AI (41 x 300): Rock 32.4/35.5/32.1 | Paper 35.5/32.1/32.4 | Scissors 32.1/32.4/35.5
+  Dyson 2016 Canada vs computer (31 x 225): Rock 32.2/35.6/32.2 | Paper 35.6/32.2/32.2 | Scissors 32.2/32.2/35.6
+  Forder & Dyson 2016 UK vs computer (36 x 450): Rock 32.4/35.2/32.5 | Paper 35.2/32.5/32.4 | Scissors 32.5/32.4/35.2
+  Dyson 2022 Canada vs computer (avg of 3 conditions): Rock 31.4/35.8/32.8 | Paper 35.8/32.8/31.4 | Scissors 32.8/31.4/35.8
+  Moerel 2025 AU fixed pairs (29,511 throws): Rock 32.1/35.3/32.5 | Paper 35.3/32.5/32.1 | Scissors 32.5/32.1/35.3
+  Brockbank & Vul 2020 US dyads (all games): Rock 34.6/31.9/33.6 | Paper 31.9/33.6/34.6 | Scissors 33.6/34.6/31.9
+  Cook 2012 UK live hands: Rock 34.4/32.4/33.3 | Paper 32.4/33.3/34.4 | Scissors 33.3/34.4/32.4
+  Yoshizawa JP live hands (725 people): Rock 31.7/35.0/33.3 | Paper 35.0/33.3/31.7 | Scissors 33.3/31.7/35.0
+  Sazae-san TV sequence (anecdotal): Rock 34.7/32.4/33.0 | Paper 32.4/33.0/34.7 | Scissors 33.0/34.7/32.4
+
+Wang 2014 Paper edge +4.0pp; corr(R,S) across players=0.0: 95% CI [+3.0, +5.0]
+
+Wang 2014 Paper edge +4.0pp; corr(R,S) across players=-0.5: 95% CI [+2.7, +5.3]
+
+Wang 2014 Paper edge +4.0pp; corr(R,S) across players=-1.0: 95% CI [+2.5, +5.5]
+Wang 2014 edges: R -1.0, P +4.0, S -3.0
+Aczel S=36.76%: if R=P=31.62% then Rock edge +5.1pp, Paper edge -5.1pp, Scissors 0
+Aczel S=36.64%: if R=P=31.68% then Rock edge +5.0pp, Paper edge -5.0pp, Scissors 0
+##### s2_conditional.py
+=== Per-state edges (pp) of responses X+ / X / X- relative to OPP's last hand; BR marked ===
+ZJ a=2 (Wang 2014): W: X+ +28.1, X +2.1, X- -30.2 -> X+ +28.1 | T: X+ +19.8, X -10.0, X- -9.8 -> X+ +19.8 | L: X+ -0.5, X +8.9, X- -8.4 -> X +8.9
+Dyson 2016 (CA vs PC): W: X+ +2.1, X +2.9, X- -5.0 -> X +2.9 | T: X+ -4.9, X -7.7, X- +12.6 -> X- +12.6 | L: X+ -18.2, X +3.3, X- +14.9 -> X- +14.9
+Forder&Dyson 2016 (UK vs PC): W: X+ +14.2, X -1.1, X- -13.1 -> X+ +14.2 | T: X+ -4.1, X -3.9, X- +8.0 -> X- +8.0 | L: X+ -17.9, X +0.3, X- +17.7 -> X- +17.7
+Dyson 2021 E1 (CA vs PC): W: X+ +8.1, X -3.4, X- -4.7 -> X+ +8.1 | T: X+ -3.3, X -5.3, X- +8.6 -> X- +8.6 | L: X+ -14.8, X -0.3, X- +15.1 -> X- +15.1
+ZJ vs AI (Wang L 2020): W: X+ +22.1, X -3.6, X- -18.5 -> X+ +22.1 | T: X+ +9.1, X +0.0, X- -9.1 -> X+ +9.1 | L: X+ +7.0, X -1.5, X- -5.5 -> X+ +7.0
+US dyads (Brockbank): W: X+ +0.2, X -3.8, X- +3.6 -> X- +3.6 | T: X+ -6.0, X +0.2, X- +5.8 -> X- +5.8 | L: X+ -14.9, X +0.9, X- +14.0 -> X- +14.0
+AU pairs (Moerel): W: X+ -11.0, X +0.7, X- +10.3 -> X- +10.3 | T: X+ -10.1, X +4.5, X- +5.6 -> X- +5.6 | L: X+ -8.9, X +3.4, X- +5.5 -> X- +5.5
+US dyads r1-20: W: X+ -6.1, X -4.1, X- +10.2 -> X- +10.2 | T: X+ -1.0, X +1.3, X- -0.3 -> X +1.3 | L: X+ -5.6, X +0.0, X- +5.6 -> X- +5.6
+AU pairs r1-20: W: X+ -7.4, X -6.9, X- +14.3 -> X- +14.3 | T: X+ -11.8, X +9.1, X- +2.7 -> X +9.1 | L: X+ -8.3, X -0.9, X- +9.2 -> X- +9.2
+ZJ vs AI r1-20: W: X+ +6.4, X -0.3, X- -6.1 -> X+ +6.4 | T: X+ +2.3, X -5.9, X- +3.6 -> X- +3.6 | L: X+ +0.3, X +0.2, X- -0.5 -> X+ +0.3
+
+=== Approximate CIs on BR state edges ===
+US dyads r1-20: W(746) X- +10.2 [+4.4,+16.0]; T(686) X +1.3 [-4.8,+7.4]; L(744) X- +5.6 [-0.2,+11.4]
+AU pairs r1-20: W(364) X- +14.3 [+6.1,+22.5]; T(372) X +9.1 [+0.6,+17.6]; L(360) X- +9.2 [+1.0,+17.4]
+ZJ vs AI r1-20: W(309) X+ +6.4 [-2.8,+15.6]; T(310) X- +3.6 [-5.7,+12.9]; L(369) X+ +0.3 [-8.0,+8.6]
+  US dyads (Brockbank) after opp W, X+: +0.2pp; 95% CI between [-3.9,+4.3] and [-5.5,+5.9]
+  US dyads (Brockbank) after opp W, X: -3.8pp; 95% CI between [-7.3,-0.3] and [-8.8,+1.2]
+  US dyads (Brockbank) after opp W, X-: +3.6pp; 95% CI between [-0.4,+7.6] and [-1.9,+9.1]
+  US dyads (Brockbank) after opp T, X+: -6.0pp; 95% CI between [-9.1,-2.9] and [-10.4,-1.6]
+  US dyads (Brockbank) after opp T, X: +0.2pp; 95% CI between [-2.3,+2.7] and [-3.4,+3.8]
+  US dyads (Brockbank) after opp T, X-: +5.8pp; 95% CI between [+2.9,+8.7] and [+1.8,+9.8]
+  US dyads (Brockbank) after opp L, X+: -14.9pp; 95% CI between [-18.0,-11.8] and [-19.3,-10.5]
+  US dyads (Brockbank) after opp L, X: +0.9pp; 95% CI between [-1.9,+3.7] and [-3.1,+4.9]
+  US dyads (Brockbank) after opp L, X-: +14.0pp; 95% CI between [+10.9,+17.1] and [+9.6,+18.4]
+  AU pairs (Moerel) after opp W, X+: -11.0pp; 95% CI between [-15.3,-6.8] and [-17.0,-5.0]
+  AU pairs (Moerel) after opp W, X: +0.7pp; 95% CI between [-3.4,+4.8] and [-5.1,+6.5]
+  AU pairs (Moerel) after opp W, X-: +10.3pp; 95% CI between [+6.5,+14.1] and [+4.9,+15.7]
+  Dyson 2016 (CA vs PC) after opp L, X+: -18.2pp; 95% CI between [-26.0,-10.4] and [-29.2,-7.2]
+  Dyson 2016 (CA vs PC) after opp L, X: +3.3pp; 95% CI between [-3.5,+10.1] and [-6.1,+12.7]
+  Dyson 2016 (CA vs PC) after opp L, X-: +14.9pp; 95% CI between [+8.4,+21.4] and [+5.9,+23.9]
+  ZJ a=2 (Wang 2014) after opp W, X+: +28.1pp; 95% CI between [+17.8,+38.3] and [+14.0,+42.2]
+
+=== Own-BR exploitation: stationary per-throw edge and match outcomes (first throw random) ===
+| Opponent table | BR rule (after opp W/T/L) | unweighted mean state edge | stationary pi(W,T,L) | stationary edge/throw | tie rate | q=w/(w+l) | P(win 1 decisive) | P(win Bo3) | edge/throw in Bo3 | E[throws Bo3] | P(win Bo5) |
+| ZJ a=2 (Wang 2014) | X+/X+/X | +18.9 | 0.26/0.32/0.43 | +17.2 | 31.7 | 0.626 | 0.550 | 0.659 | +13.5 | 3.71 | 0.715 |
+| Dyson 2016 (CA vs PC) | X/X-/X- | +10.1 | 0.26/0.36/0.37 | +10.9 | 36.3 | 0.586 | 0.531 | 0.595 | +8.0 | 3.78 | 0.630 |
+| Forder&Dyson 2016 (UK vs PC) | X+/X-/X- | +13.3 | 0.26/0.35/0.39 | +13.4 | 34.7 | 0.603 | 0.520 | 0.610 | +9.1 | 3.76 | 0.656 |
+| Dyson 2021 E1 (CA vs PC) | X+/X-/X- | +10.6 | 0.27/0.35/0.38 | +10.9 | 34.8 | 0.584 | 0.521 | 0.591 | +7.6 | 3.76 | 0.628 |
+| ZJ vs AI (Wang L 2020) | X+/X+/X+ | +12.7 | 0.29/0.30/0.41 | +12.0 | 30.4 | 0.586 | 0.522 | 0.603 | +8.7 | 3.68 | 0.645 |
+| US dyads (Brockbank) | X-/X-/X- | +7.8 | 0.28/0.36/0.36 | +8.2 | 35.6 | 0.563 | 0.515 | 0.567 | +5.5 | 3.79 | 0.595 |
+| AU pairs (Moerel) | X-/X-/X- | +7.1 | 0.28/0.38/0.35 | +6.9 | 37.7 | 0.555 | 0.515 | 0.564 | +5.0 | 3.96 | 0.590 |
+| US dyads r1-20 | X-/X/X- | +5.7 | 0.30/0.34/0.36 | +5.5 | 34.1 | 0.542 | 0.503 | 0.544 | +3.6 | 3.79 | 0.565 |
+| AU pairs r1-20 | X-/X/X- | +10.9 | 0.28/0.33/0.39 | +10.6 | 32.8 | 0.579 | 0.521 | 0.591 | +7.7 | 3.71 | 0.628 |
+| ZJ vs AI r1-20 | X+/X-/X+ | +3.4 | 0.32/0.32/0.36 | +3.3 | 31.8 | 0.524 | 0.509 | 0.529 | +2.5 | 3.70 | 0.541 |
+
+=== Robustness: same BR rule vs opponent with biases halved; vs opponent with ONLY its after-loss bias ===
+| Opponent table | full: edge/throw, Bo3 | biases x0.5: edge/throw, Bo3 | only lose-shift: BR after opp loss, edge/throw, Bo3 |
+| ZJ a=2 (Wang 2014) | +17.25, 0.659 | +9.02, 0.582 | X (+8.9 on post-loss throws), +3.06, 0.522 |
+| Dyson 2016 (CA vs PC) | +10.90, 0.595 | +5.25, 0.547 | X- (+14.9 on post-loss throws), +5.17, 0.537 |
+| Forder&Dyson 2016 (UK vs PC) | +13.43, 0.610 | +6.69, 0.555 | X- (+17.7 on post-loss throws), +6.25, 0.544 |
+| Dyson 2021 E1 (CA vs PC) | +10.93, 0.591 | +5.38, 0.545 | X- (+15.1 on post-loss throws), +5.30, 0.538 |
+| ZJ vs AI (Wang L 2020) | +11.98, 0.603 | +6.17, 0.552 | X+ (+7.0 on post-loss throws), +2.43, 0.517 |
+| US dyads (Brockbank) | +8.16, 0.567 | +3.99, 0.533 | X- (+14.0 on post-loss throws), +4.88, 0.535 |
+| AU pairs (Moerel) | +6.87, 0.564 | +3.50, 0.531 | X- (+5.5 on post-loss throws), +1.85, 0.514 |
+| US dyads r1-20 | +5.52, 0.544 | +2.80, 0.522 | X- (+5.6 on post-loss throws), +1.90, 0.514 |
+| AU pairs r1-20 | +10.61, 0.591 | +5.37, 0.546 | X- (+9.2 on post-loss throws), +3.17, 0.523 |
+| ZJ vs AI r1-20 | +3.33, 0.529 | +1.69, 0.515 | X+ (+0.3 on post-loss throws), +0.10, 0.501 |
+
+Generic lose-shift opponent (repeat-after-loss r, shifts split evenly; W,T uniform):
+  r=0.177: post-loss X- edge +23.5pp; stationary +8.48pp/throw; Bo3 0.559
+  r=0.215: post-loss X- edge +17.8pp; stationary +6.31pp/throw; Bo3 0.545
+  r=0.223: post-loss X- edge +16.5pp; stationary +5.84pp/throw; Bo3 0.541
+  r=0.261: post-loss X- edge +10.8pp; stationary +3.75pp/throw; Bo3 0.527
+  r=0.300: post-loss X- edge +5.0pp; stationary +1.69pp/throw; Bo3 0.512
+
+=== Late-session comparison (rounds 51-300) BR ===
+US dyads r51-300: BR X-/X-/X- state edges W +3.5, T +7.1, L +15.7; stationary +9.3pp
+ZJ vs AI r51-300: BR X+/X+/X+ state edges W +22.6, T +8.6, L +11.3; stationary +13.7pp
+##### s2b_cross.py
+Stationary per-throw edge (pp, win-loss) of each fixed rule (after opp W/T/L) vs each opponent table
+| Rule | ZJa2 | DY16 | FD16 | DY21 | ZJAI | US | AU | US1-20 | AU1-20 | ZJAI1-20 | min full(7) | mean West(5) | mean ZJ(2) | min early(3) | Bo3 P(win) at full-min |
+| R1 ZJ-BR: X+/X+/X | +17.2 | +0.4 | +3.7 | +1.6 | +8.9 | -1.5 | -6.4 | -2.4 | -6.9 | +2.9 | -6.4 (AU) | -0.4 | +13.1 | -6.9 | 0.444 |
+| R2 always X+ (beat their last) | +13.5 | -6.3 | -2.3 | -3.0 | +12.0 | -6.4 | -10.1 | -4.1 | -9.2 | +2.9 | -10.1 (AU) | -5.6 | +12.8 | -9.2 | 0.411 |
+| R3 always X- (play what their last beats) | -18.7 | +8.5 | +5.0 | +7.0 | -12.0 | +8.2 | +6.9 | +5.0 | +8.2 | -1.1 | -18.7 (ZJa2) | +7.1 | -15.3 | -1.1 | 0.374 |
+| R4 West-lab BR: X+/X-/X- | +3.7 | +10.6 | +13.4 | +10.9 | +2.7 | +7.1 | +0.4 | -0.3 | +1.7 | +3.1 | +0.4 (AU) | +8.5 | +3.2 | -0.3 | 0.511 |
+| R5 Dyson16-BR: X/X-/X- | -5.3 | +10.9 | +9.0 | +7.5 | -6.1 | +5.9 | +4.1 | +0.4 | +1.8 | +0.9 | -6.1 (ZJAI) | +7.5 | -5.7 | +0.4 | 0.441 |
+| R6 MF1 cycle (self-downgrade): X+/X-/X | +9.6 | +5.5 | +7.0 | +5.1 | +3.6 | +2.2 | -0.6 | -2.2 | -1.7 | +3.3 | -0.6 (AU) | +3.8 | +6.6 | -2.2 | 0.503 |
+| R7 C2 rules, tie random: X+/rand/X | +11.6 | +1.9 | +4.9 | +2.6 | +6.1 | +0.4 | -2.8 | -2.1 | -2.8 | +2.2 | -2.8 (AU) | +1.4 | +8.9 | -2.8 | 0.481 |
+| R8 example 'beat last winning hand': X+/rand/X- | +5.7 | +5.9 | +10.6 | +7.8 | +5.0 | +4.9 | -1.9 | -0.2 | +0.6 | +1.9 | -1.9 (AU) | +5.5 | +5.4 | -0.2 | 0.486 |
+| R9 core West: rand/X-/X- | -5.7 | +10.0 | +9.4 | +8.6 | -4.6 | +7.1 | +3.9 | +1.8 | +4.1 | +1.0 | -5.7 (ZJa2) | +7.8 | -5.2 | +1.0 | 0.446 |
+| R10 tie-only X-: rand/X-/rand | -3.0 | +4.2 | +2.7 | +2.8 | -2.9 | +2.0 | +2.0 | -0.1 | +1.0 | +1.2 | -3.0 (ZJa2) | +2.7 | -3.0 | -0.1 | 0.468 |
+| R11 loss-only X-: rand/rand/X- | -2.6 | +5.2 | +6.3 | +5.3 | -1.8 | +4.9 | +1.8 | +1.9 | +3.2 | -0.2 | -2.6 (ZJa2) | +4.7 | -2.2 | -0.2 | 0.479 |
+| R0 uniform random | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 | +0.0 (ZJa2) | +0.0 | +0.0 | +0.0 | 0.500 |
+
+Same, opponents' biases halved (x0.5 toward 1/3):
+| Rule | min full(7) | mean West(5) | mean ZJ(2) | min early(3) |
+| R1 ZJ-BR: X+/X+/X | -3.1 | -0.2 | +6.8 | -3.4 |
+| R2 always X+ (beat their last) | -5.0 | -2.9 | +6.7 | -4.6 |
+| R3 always X- (play what their last beats) | -8.7 | +3.4 | -7.2 | -0.5 |
+| R4 West-lab BR: X+/X-/X- | +0.1 | +4.1 | +1.5 | -0.1 |
+| R5 Dyson16-BR: X/X-/X- | -3.0 | +3.6 | -2.9 | +0.2 |
+| R6 MF1 cycle (self-downgrade): X+/X-/X | -0.3 | +2.0 | +3.3 | -1.1 |
+| R7 C2 rules, tie random: X+/rand/X | -1.3 | +0.7 | +4.6 | -1.4 |
+| R8 example 'beat last winning hand': X+/rand/X- | -0.9 | +2.7 | +2.8 | -0.1 |
+| R9 core West: rand/X-/X- | -2.9 | +3.7 | -2.7 | +0.5 |
+| R10 tie-only X-: rand/X-/rand | -1.6 | +1.4 | -1.5 | -0.1 |
+| R11 loss-only X-: rand/rand/X- | -1.4 | +2.3 | -1.1 | -0.1 |
+| R0 uniform random | +0.0 | +0.0 | +0.0 | +0.0 |
+
+Bo3 match-win probability (first throw random) for selected rules vs each opponent:
+  R1 ZJ-BR: X+/X+/X: ZJa2 0.659, DY16 0.496, FD16 0.522, DY21 0.508, ZJAI 0.584, US 0.481, AU 0.444, US1-20 0.481, AU1-20 0.436, ZJAI1-20 0.525
+  R3 always X- (play what their last beats): ZJa2 0.374, DY16 0.575, FD16 0.542, DY21 0.558, ZJAI 0.411, US 0.567, AU 0.564, US1-20 0.538, AU1-20 0.570, ZJAI1-20 0.496
+  R6 MF1 cycle (self-downgrade): X+/X-/X: ZJa2 0.563, DY16 0.554, FD16 0.562, DY21 0.548, ZJAI 0.519, US 0.524, AU 0.503, US1-20 0.484, AU1-20 0.491, ZJAI1-20 0.529
+  R8 example 'beat last winning hand': X+/rand/X-: ZJa2 0.549, DY16 0.542, FD16 0.580, DY21 0.558, ZJAI 0.541, US 0.535, AU 0.486, US1-20 0.499, AU1-20 0.504, ZJAI1-20 0.515
+  R9 core West: rand/X-/X-: ZJa2 0.446, DY16 0.587, FD16 0.576, DY21 0.571, ZJAI 0.455, US 0.559, AU 0.537, US1-20 0.513, AU1-20 0.535, ZJAI1-20 0.512
+  R10 tie-only X-: rand/X-/rand: ZJa2 0.468, DY16 0.547, FD16 0.530, DY21 0.532, ZJAI 0.467, US 0.522, AU 0.523, US1-20 0.499, AU1-20 0.511, ZJAI1-20 0.513
+  R11 loss-only X-: rand/rand/X-: ZJa2 0.479, DY16 0.537, FD16 0.544, DY21 0.538, ZJAI 0.486, US 0.535, AU 0.514, US1-20 0.514, AU1-20 0.523, ZJAI1-20 0.499
+##### s2c_maximin.py
+Top 8 by worst case over all 10 tables (7 full + 3 early):
+  rand/rand/rand: min10 +0.00 | min full +0.00 mean full +0.00 | min early +0.00 mean early +0.00 | West +0.00 ZJ +0.00
+  X+/X-/X-: min10 -0.28 | min full +0.41 mean full +6.99 | min early -0.28 mean early +1.50 | West +8.50 ZJ +3.20
+  X+/X/X-: min10 -0.32 | min full -0.32 mean full +4.46 | min early +0.07 mean early +1.49 | West +4.75 ZJ +3.72
+  rand/rand/X: min10 -0.49 | min full -0.49 mean full +0.75 | min early -0.31 mean early -0.08 | West +0.54 ZJ +1.29
+  X+/X/X: min10 -1.64 | min full -1.31 mean full +2.59 | min early -1.64 mean early -0.41 | West +0.87 ZJ +6.90
+  rand/X+/X-: min10 -1.76 | min full -1.76 mean full +2.41 | min early -0.93 mean early +0.42 | West +2.41 ZJ +2.42
+  rand/X/X: min10 -1.90 | min full -1.63 mean full -0.31 | min early -1.90 mean early +0.30 | West -0.12 ZJ -0.77
+  X+/rand/X-: min10 -1.93 | min full -1.93 mean full +5.44 | min early -0.17 mean early +0.79 | West +5.46 ZJ +5.39
+Top 5 by mean over 7 full tables:
+  X+/X-/X-: mean full +6.99 min full +0.41 min early -0.28
+  X+/rand/X-: mean full +5.44 min full -1.93 min early -0.17
+  X+/X+/X-: mean full +4.87 min full -5.87 min early -3.97
+  X+/X-/X: mean full +4.62 min full -0.60 min early -2.18
+  X+/X/X-: mean full +4.46 min full -0.32 min early +0.07
+Count of the 63 non-random rules with min over 7 full tables > 0: 1
+##### s2d_early_boot.py
+US dyads r1-20: R3 always X- +5.0 [+1.6,+8.3]; R2 always X+ -4.1 [-7.5,-0.7]; R4 X+/X-/X- -0.3 [-3.8,+3.3]; R6 MF1 cycle X+/X-/X -2.2 [-5.7,+1.3]; R10 tie-only X- -0.1 [-2.1,+1.9]; R11 loss-only X- +1.9 [-0.0,+4.0]
+AU pairs r1-20: R3 always X- +8.2 [+3.6,+12.7]; R2 always X+ -9.2 [-14.0,-4.5]; R4 X+/X-/X- +1.7 [-3.5,+6.7]; R6 MF1 cycle X+/X-/X -1.7 [-6.6,+3.1]; R10 tie-only X- +1.0 [-1.9,+3.8]; R11 loss-only X- +3.2 [+0.3,+6.3]
+ZJ vs AI r1-20: R3 always X- -1.1 [-6.6,+4.1]; R2 always X+ +2.9 [-2.2,+8.0]; R4 X+/X-/X- +3.1 [-1.8,+8.0]; R6 MF1 cycle X+/X-/X +3.3 [-1.8,+8.1]; R10 tie-only X- +1.2 [-1.8,+4.2]; R11 loss-only X- -0.2 [-2.8,+2.8]
+##### s3_tie.py
+| After-tie data | src | stay/up/down % | X+ (beat tied hand) | X (repeat tied hand) | X- (hand tied hand beats) | BR | CI |
+| Wang&Xu a=1 (tie pays = win) | baserates:C08/MF02 | 80.2/13.8/6.0 | +74.1 | -7.8 | -66.3 | X+ +74.1 |  |
+| Wang 2014 a=1.1 | baserates:C08 | 60.4/25.3/14.3 | +46.1 | -11.0 | -35.1 | X+ +46.1 |  |
+| Wang 2014 a=2 | sequential:A1 | 43.2/33.4/23.4 | +19.8 | -10.0 | -9.8 | X+ +19.8 |  |
+| Wang 2014 a=4 | baserates:C08 | 38.8/38.2/23.0 | +15.8 | -15.2 | -0.6 | X+ +15.8 |  |
+| Wang 2014 a=9 | baserates:C08 | 35.9/35.0/29.2 | +6.7 | -5.8 | -0.9 | X+ +6.7 |  |
+| Wang 2014 a=100 | baserates:C08 | 36.4/36.8/26.9 | +9.5 | -9.9 | +0.4 | X+ +9.5 |  |
+| Wang&Xu a=inf (tie pays 0) | baserates:C08/MF02 | 33.9/37.8/28.4 | +5.5 | -9.4 | +3.9 | X+ +5.5 |  |
+| Wang L 2020 ZJ vs AI | sequential:C2 | 39.4/30.3/30.3 | +9.1 | +0.0 | -9.1 | X+ +9.1 |  |
+| Dyson 2016 CA (unweighted) | sequential:B1 | 27.5/40.1/32.4 | -4.9 | -7.7 | +12.6 | X- +12.6 |  |
+| Dyson 2016 CA (hand-weighted) | baserates:C07 | 28.7/39.6/31.7 | -3.0 | -7.9 | +10.9 | X- +10.9 |  |
+| Forder&Dyson 2016 UK | sequential:B2 | 29.3/37.3/33.4 | -4.1 | -3.9 | +8.0 | X- +8.0 |  |
+| Dyson 2021 Exp1 (avg credit) | sequential:MF5 | 29.7/36.6/33.8 | -4.1 | -2.8 | +6.9 | X- +6.9 |  |
+| Dyson 2021 Exp2 (avg credit) | sequential:MF5 | 26.3/35.7/38.0 | -11.7 | +2.3 | +9.4 | X- +9.4 |  |
+| Dyson 2021 Exp3 (avg credit) | sequential:MF5 | 33.9/35.1/30.9 | +3.0 | -4.2 | +1.2 | X+ +3.0 |  |
+| US dyads (per-player means) | sequential:C1 | 29.4/35.2/35.4 | -6.0 | +0.2 | +5.8 | X- +5.8 |  |
+| US dyads (pooled, 11,656 ties) | baserates:MF01 | 29.1/35.2/35.6 | -6.5 | +0.4 | +6.1 | X- +6.1 | X- +5.8 [+2.4,+9.1]; X+ -6.3 [-10.6,-1.7] (cluster bootstrap) |
+| AU pairs (per-player means) | sequential:C1 | 28.1/33.7/38.2 | -10.1 | +4.5 | +5.6 | X- +5.6 |  |
+| AU pairs (pooled, 9,661 ties) | baserates:MF01 | 28.3/33.7/38.0 | -9.7 | +4.3 | +5.4 | X- +5.4 | X- +5.4 [+1.2,+9.7]; X+ -9.8 [-14.0,-5.3] (cluster bootstrap) |
+| US dyads rounds 1-20 | sequential:MF2 | 33.1/32.8/34.1 | -1.0 | +1.3 | -0.3 | X +1.3 | n=686: X+ -1.0 [-7.1,+5.1]; X- -0.3 [-6.4,+5.8] |
+| AU pairs rounds 1-20 | sequential:MF2 | 28.5/31.2/40.3 | -11.8 | +9.1 | +2.7 | X +9.1 | n=372: X+ -11.8 [-20.1,-3.5]; X- +2.7 [-5.1,+10.5] |
+| ZJ vs AI rounds 1-20 | sequential:MF2 | 32.9/36.5/30.6 | +2.3 | -5.9 | +3.6 | X- +3.6 | n=310: X+ +2.3 [-6.6,+11.2]; X- +3.6 [-5.7,+12.9] |
+| Toint 2023 JP STATED | baserates:MF07 | 19.3/36.9/43.8 | -24.5 | +6.9 | +17.6 | X- +17.6 |  |
+
+Yoshizawa overall repeat 22.75% (all pairs). If after-tie repeat = 22.75% and shifts split evenly: X- edge +15.9pp, X+ edge -15.9pp (equal by symmetry: both switches beat a repeat-avoider's switch half the time).
+
+Per tied hand (next R/P/S %), edges of X- (hand tied hand beats) and X+ (hand that beats tied hand):
+  AU pairs (Moerel) [baserates:MF01]: R-tie: X-(S) +1.0, X+(P) -7.8, X(R) +6.8 | P-tie: X-(R) +4.4, X+(S) -12.3, X(P) +7.9 | S-tie: X-(P) +11.8, X+(R) -9.6, X(S) -2.2
+  US dyads (Brockbank) [baserates:MF01]: R-tie: X-(S) +4.0, X+(P) -3.9, X(R) -0.1 | P-tie: X-(R) +12.4, X+(S) -9.3, X(P) -3.1 | S-tie: X-(P) +1.7, X+(R) -5.9, X(S) +4.2
+  Dyson 2016 CA [baserates:C07]: R-tie: X-(S) +5.1, X+(P) +1.4, X(R) -6.5 | P-tie: X-(R) +16.0, X+(S) -9.5, X(P) -6.5 | S-tie: X-(P) +16.8, X+(R) -6.6, X(S) -10.2
+##### s4_formats.py
+| q (P win a decisive throw) | 1 decisive throw | Bo3 | Bo5 | relay n=3 | relay n=5 | relay n=7 | 5-member points, 1-throw bouts | 5-member points, Bo3 bouts | 5-member points, Bo5 bouts |
+| 0.50 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 | 0.500 |
+| 0.52 | 0.520 | 0.530 | 0.537 | 0.537 | 0.549 | 0.558 | 0.537 | 0.556 | 0.570 |
+| 0.55 | 0.550 | 0.575 | 0.593 | 0.593 | 0.621 | 0.644 | 0.593 | 0.638 | 0.671 |
+| 0.60 | 0.600 | 0.648 | 0.683 | 0.683 | 0.733 | 0.771 | 0.683 | 0.762 | 0.813 |
+(relay DP == P(Bin(2n-1,q) >= n) verified to 1e-12)
+
+Extra: 3-member points with Bo3 bouts (PBR Indy format, team:C3): q=0.50: 0.500, q=0.52: 0.545, q=0.55: 0.611, q=0.60: 0.716
+
+Bridge from per-throw edge to q (q = 1/2 + e/(2(1-t))):
+  Batzilis experienced players, realised first throws (34.66/32.17/33.17): e=+1.49pp, t=32.2% -> q=0.5110; Bo3 0.516; Bo5 0.521; relay5 0.527; points5(Bo3) 0.531
+  Batzilis best response to predicted play (41.66/30.97/27.37): e=+14.29pp, t=31.0% -> q=0.6035; Bo3 0.653; Bo5 0.689; relay5 0.741; points5(Bo3) 0.770
+  Persistent Rock bias, always Paper vs Moerel all-throws (35.3/32.5/32.1): e=+3.22pp, t=32.5% -> q=0.5239; Bo3 0.536; Bo5 0.545; relay5 0.559; points5(Bo3) 0.567
+  Persistent bias, always Paper vs Xu 2013 (35.7/32.1/32.2): e=+3.43pp, t=32.1% -> q=0.5253; Bo3 0.538; Bo5 0.547; relay5 0.562; points5(Bo3) 0.571
+
+First-throw-only edge e1 (all later throws fair): Bo3 = 0.5 + 0.25*e1 ; Bo5 = 0.5 + 0.1875*e1 (derived)
+  Paper vs Batzilis full first throws: e1=+2.8pp -> Bo3 0.507, Bo5 0.505
+  Scissors vs Batzilis experienced: e1=+2.0pp -> Bo3 0.505, Bo5 0.504
+  Paper vs Eyler novices (n=119): e1=+43.7pp -> Bo3 0.609, Bo5 0.582
+  check: P(win Bo5 | 1-0)=0.6875, P(win Bo5 | 0-1)=0.3125 -> coefficient 0.1875
+##### s5_host.py
+| n players | P(decisive) closed form 3(2^n-2)/3^n | enumeration | expected throws to first decisive round |
+| 2 | 0.6667 (2/3) | 0.6667 | 1.50 |
+| 3 | 0.6667 (2/3) | 0.6667 | 1.50 |
+| 4 | 0.5185 (14/27) | 0.5185 | 1.93 |
+| 5 | 0.3704 (10/27) | 0.3704 | 2.70 |
+| 6 | 0.2551 (62/243) | 0.2551 | 3.92 |
+| 7 | 0.1728 (14/81) | 0.1728 | 5.79 |
+| 8 | 0.1161 (254/2187) | 0.1161 | 8.61 |
+| 9 | 0.0777 (170/2187) | 0.0777 | 12.86 |
+| 10 | 0.0519 (1022/19683) | 0.0519 | 19.26 |
+
+Rule A (only winners survive): P(at least one member survives k rounds) vs uniform random host
+| team n | k | independent random | coordinated even split | optimal (DP over all splits) | herding (all same hand) | gain even-indep (pp) | expected survivors (any strategy) |
+| 3 | 1 | 0.704 | 1.000 | 1.000 | 0.333 | +29.6 | 1.000 |
+| 3 | 2 | 0.298 | 0.333 | 0.333 | 0.111 | +3.6 | 0.333 |
+| 3 | 3 | 0.107 | 0.111 | 0.111 | 0.037 | +0.4 | 0.111 |
+| 3 | 4 | 0.037 | 0.037 | 0.037 | 0.012 | +0.0 | 0.037 |
+| 3 | 5 | 0.012 | 0.012 | 0.012 | 0.004 | +0.0 | 0.012 |
+| 5 | 1 | 0.868 | 1.000 | 1.000 | 0.333 | +13.2 | 1.667 |
+| 5 | 2 | 0.445 | 0.556 | 0.556 | 0.111 | +11.0 | 0.556 |
+| 5 | 3 | 0.172 | 0.185 | 0.185 | 0.037 | +1.3 | 0.185 |
+| 5 | 4 | 0.060 | 0.062 | 0.062 | 0.012 | +0.2 | 0.062 |
+| 5 | 5 | 0.020 | 0.021 | 0.021 | 0.004 | +0.0 | 0.021 |
+| 10 | 1 | 0.983 | 1.000 | 1.000 | 0.333 | +1.7 | 3.333 |
+| 10 | 2 | 0.692 | 1.000 | 1.000 | 0.111 | +30.8 | 1.111 |
+| 10 | 3 | 0.314 | 0.370 | 0.370 | 0.037 | +5.6 | 0.370 |
+| 10 | 4 | 0.117 | 0.123 | 0.123 | 0.012 | +0.7 | 0.123 |
+| 10 | 5 | 0.040 | 0.041 | 0.041 | 0.004 | +0.1 | 0.041 |
+| 20 | 1 | 1.000 | 1.000 | 1.000 | 0.333 | +0.0 | 6.667 |
+| 20 | 2 | 0.905 | 1.000 | 1.000 | 0.111 | +9.5 | 2.222 |
+| 20 | 3 | 0.530 | 0.741 | 0.741 | 0.037 | +21.1 | 0.741 |
+| 20 | 4 | 0.220 | 0.247 | 0.247 | 0.012 | +2.7 | 0.247 |
+| 20 | 5 | 0.079 | 0.082 | 0.082 | 0.004 | +0.3 | 0.082 |
+
+Rule B (winners and ties survive): P(at least one member survives k rounds) vs uniform random host
+| team n | k | independent random | coordinated even split | optimal (DP over all splits) | herding (all same hand) | gain even-indep (pp) | expected survivors (any strategy) |
+| 3 | 1 | 0.963 | 1.000 | 1.000 | 0.667 | +3.7 | 2.000 |
+| 3 | 2 | 0.829 | 1.000 | 1.000 | 0.444 | +17.1 | 1.333 |
+| 3 | 3 | 0.652 | 0.778 | 0.778 | 0.296 | +12.6 | 0.889 |
+| 3 | 4 | 0.483 | 0.556 | 0.556 | 0.198 | +7.2 | 0.593 |
+| 3 | 5 | 0.345 | 0.383 | 0.383 | 0.132 | +3.7 | 0.395 |
+| 5 | 1 | 0.996 | 1.000 | 1.000 | 0.667 | +0.4 | 3.333 |
+| 5 | 2 | 0.947 | 1.000 | 1.000 | 0.444 | +5.3 | 2.222 |
+| 5 | 3 | 0.827 | 1.000 | 1.000 | 0.296 | +17.3 | 1.481 |
+| 5 | 4 | 0.667 | 0.827 | 0.827 | 0.198 | +16.0 | 0.988 |
+| 5 | 5 | 0.506 | 0.605 | 0.605 | 0.132 | +9.9 | 0.658 |
+| 10 | 1 | 1.000 | 1.000 | 1.000 | 0.667 | +0.0 | 6.667 |
+| 10 | 2 | 0.997 | 1.000 | 1.000 | 0.444 | +0.3 | 4.444 |
+| 10 | 3 | 0.970 | 1.000 | 1.000 | 0.296 | +3.0 | 2.963 |
+| 10 | 4 | 0.889 | 1.000 | 1.000 | 0.198 | +11.1 | 1.975 |
+| 10 | 5 | 0.756 | 0.959 | 0.959 | 0.132 | +20.2 | 1.317 |
+| 20 | 1 | 1.000 | 1.000 | 1.000 | 0.667 | +0.0 | 13.333 |
+| 20 | 2 | 1.000 | 1.000 | 1.000 | 0.444 | +0.0 | 8.889 |
+| 20 | 3 | 0.999 | 1.000 | 1.000 | 0.296 | +0.1 | 5.926 |
+| 20 | 4 | 0.988 | 1.000 | 1.000 | 0.198 | +1.2 | 3.951 |
+| 20 | 5 | 0.941 | 1.000 | 1.000 | 0.132 | +5.9 | 2.634 |
+
+(even split == DP optimum in every cell: asserted)
+
+Biased host (Yoshizawa R/P/S 35.0/33.3/31.7), rule A:
+  n=5, k=2: even split 0.5722 vs best split 0.5722 (uniform host even split 0.5556)
+  n=10, k=2: even split 1.0000 vs best split 1.0000 (uniform host even split 1.0000)
+  n=10, k=3: even split 0.3716 vs best split 0.3910 (uniform host even split 0.3704)
+  n=20, k=3: even split 0.7553 vs best split 0.7626 (uniform host even split 0.7407)
+
+Biased host (Yoshizawa R/P/S 35.0/33.3/31.7), rule B:
+  n=5, k=2: even split 1.0000 vs best split 1.0000 (uniform host even split 1.0000)
+  n=10, k=2: even split 1.0000 vs best split 1.0000 (uniform host even split 1.0000)
+  n=10, k=3: even split 1.0000 vs best split 1.0000 (uniform host even split 1.0000)
+  n=20, k=3: even split 1.0000 vs best split 1.0000 (uniform host even split 1.0000)
+##### s5b_biased_host.py
+Rule A: n=3,k=2: even 0.3505 / best 0.3561; n=5,k=2: even 0.5778 / best 0.5781; n=5,k=3: even 0.2025 / best 0.2046; n=10,k=3: even 0.3914 / best 0.3988; n=20,k=3: even 0.7591 / best 0.7628; n=10,k=5: even 0.0481 / best 0.0495
+Rule B: n=3,k=2: even 1.0000 / best 1.0000; n=5,k=2: even 1.0000 / best 1.0000; n=5,k=3: even 1.0000 / best 1.0000; n=10,k=3: even 1.0000 / best 1.0000; n=20,k=3: even 1.0000 / best 1.0000; n=10,k=5: even 0.9653 / best 0.9653
+##### s6_exploit.py
+A. Fully informed opponent (knows rule, best-responds every throw): per-throw edge = -p exactly after throw 1
+| p | stationary edge/throw vs informed | P(win first-to-1) | P(win Bo3) | P(win Bo5) |
+| 0.00 | +0.0 | 0.500 | 0.500 | 0.500 |
+| 0.10 | -10.0 | 0.476 | 0.417 | 0.385 |
+| 0.20 | -20.0 | 0.455 | 0.343 | 0.286 |
+| 0.30 | -30.0 | 0.435 | 0.277 | 0.204 |
+| 0.50 | -50.0 | 0.400 | 0.168 | 0.089 |
+| 0.75 | -75.0 | 0.364 | 0.068 | 0.018 |
+| 1.00 | -100.0 | 0.333 | 0.000 | 0.000 |
+
+  Rule with a random tie-state (R8): informed opponent
+   p=0.5: stationary edge -40.0pp/throw, Bo3 0.250, first-to-1 0.500
+   p=1.0: stationary edge -100.0pp/throw, Bo3 0.000, first-to-1 0.500
+
+B. Gain vs NON-adapting populations at mixing level p (stationary edge pp/throw; Bo3 P(win))
+  R8 example 'beat the previous winning hand' (X+/rand/X-)
+    p=0.25: West mean +1.35 (Bo3 0.510) | ZJ mean +1.47 (Bo3 0.511) | worst table -0.46 (AU pairs (Moerel)) | informed opp -25 (Bo3 0.375)
+    p=0.50: West mean +2.71 (Bo3 0.520) | ZJ mean +2.85 (Bo3 0.523) | worst table -0.94 (AU pairs (Moerel)) | informed opp -50 (Bo3 0.250)
+    p=1.00: West mean +5.46 (Bo3 0.540) | ZJ mean +5.39 (Bo3 0.545) | worst table -1.93 (AU pairs (Moerel)) | informed opp -100 (Bo3 0.000)
+  R4 maximin 'beat previous winner; after tie play what tied hand beats' (X+/X-/X-)
+    p=0.25: West mean +2.05 (Bo3 0.518) | ZJ mean +0.75 (Bo3 0.503) | worst table -0.07 (US dyads r1-20) | informed opp -25 (Bo3 0.309)
+    p=0.50: West mean +4.15 (Bo3 0.536) | ZJ mean +1.54 (Bo3 0.506) | worst table -0.14 (US dyads r1-20) | informed opp -50 (Bo3 0.168)
+    p=1.00: West mean +8.50 (Bo3 0.572) | ZJ mean +3.20 (Bo3 0.515) | worst table -0.28 (US dyads r1-20) | informed opp -100 (Bo3 0.000)
+  R6 MF1 cycle 'play what your own last hand beats' (X+/X-/X)
+    p=0.25: West mean +1.01 (Bo3 0.510) | ZJ mean +1.63 (Bo3 0.509) | worst table -0.54 (US dyads r1-20) | informed opp -25 (Bo3 0.309)
+    p=0.50: West mean +1.99 (Bo3 0.520) | ZJ mean +3.28 (Bo3 0.519) | worst table -1.08 (US dyads r1-20) | informed opp -50 (Bo3 0.168)
+    p=1.00: West mean +3.83 (Bo3 0.538) | ZJ mean +6.59 (Bo3 0.541) | worst table -2.18 (US dyads r1-20) | informed opp -100 (Bo3 0.000)
+  R1 ZJ-BR (X+/X+/X)
+    p=0.25: West mean -0.12 (Bo3 0.497) | ZJ mean +3.51 (Bo3 0.531) | worst table -1.69 (AU pairs r1-20) | informed opp -25 (Bo3 0.309)
+    p=0.50: West mean -0.23 (Bo3 0.495) | ZJ mean +6.85 (Bo3 0.562) | worst table -3.40 (AU pairs r1-20) | informed opp -50 (Bo3 0.168)
+    p=1.00: West mean -0.44 (Bo3 0.490) | ZJ mean +13.05 (Bo3 0.621) | worst table -6.94 (AU pairs r1-20) | informed opp -100 (Bo3 0.000)
+
+C. Empirical adaptation calibration (humans vs 90%-pattern bots, 300 rounds; sequential:D4 / MF1)
+| bot rule | class | human W/L % | bot net pp/round | alpha = realised / theoretical(0.90) |
+| prev_move_positive (bot plays what beats its own last) | simple self-transition | 66.5/16.6 | -49.9 | 0.55 |
+| opponent_prev_move_nil (bot copies human's last) | simple opp-transition | 65.0/17.7 | -47.3 | 0.53 |
+| prev_move_negative (bot plays what its own last beats = MF1 cycle) | simple self-transition | 62.2/17.6 | -44.6 | 0.50 |
+| opponent_prev_move_positive (bot beats human's last) | simple opp-transition | 58.5/12.7 | -45.8 | 0.51 |
+| win_nil_lose_positive (stay/upgrade/downgrade after W/L/T) | outcome-conditioned | 41.3/24.8 | -16.5 | 0.18 |
+| win_positive_lose_negative | outcome-conditioned | 39.7/26.7 | -13.0 | 0.14 |
+| outcome_transition_dual_dependency | outcome x transition | 34.1/32.0 | -2.1 | 0.02 |
+
+D. Break-even share phi* of opponents who exploit the rule (per-throw, linear in p): phi* = G/(G+alpha)
+  G=2.0pp: alpha=1.00 -> phi*=2.0%, alpha=0.50 -> phi*=3.8%, alpha=0.14 -> phi*=12.5%
+  G=5.0pp: alpha=1.00 -> phi*=4.8%, alpha=0.50 -> phi*=9.1%, alpha=0.14 -> phi*=26.3%
+  G=8.5pp: alpha=1.00 -> phi*=7.8%, alpha=0.50 -> phi*=14.5%, alpha=0.14 -> phi*=37.8%
+  G=17.0pp: alpha=1.00 -> phi*=14.5%, alpha=0.50 -> phi*=25.4%, alpha=0.14 -> phi*=54.8%
+
+E. Detectability: expected throws for an ideal observer who already suspects THIS rule to reach 20:1 evidence
+| p | P(rule hand) | KL per throw (nats) | throws to 20:1 | throws to 5:1 |
+| 0.10 | 0.400 | 0.0097 | 308.4 | 165.7 |
+| 0.20 | 0.467 | 0.0380 | 78.8 | 42.3 |
+| 0.30 | 0.533 | 0.0842 | 35.6 | 19.1 |
+| 0.40 | 0.600 | 0.1483 | 20.2 | 10.8 |
+| 0.50 | 0.667 | 0.2310 | 13.0 | 7.0 |
+| 0.75 | 0.833 | 0.5325 | 5.6 | 3.0 |
+| 0.90 | 0.933 | 0.8075 | 3.7 | 2.0 |
+| 1.00 | 1.000 | 1.0986 | 2.7 | 1.5 |
+  max p still below 20:1 expected evidence after 3.7 observed throws: 0.90
+  max p still below 20:1 expected evidence after 7.5 observed throws: 0.65
+  max p still below 20:1 expected evidence after 18.5 observed throws: 0.42
+  max p still below 20:1 expected evidence after 37 observed throws: 0.29
+##### s7_team_simul.py
+Rule I, 2v2 vs independent-random team: BEAT 0.5000, LOSE 0.5000, SPLITR 0.5000, HERD 0.5000, IND 0.5000
+Rule I, 3v3 vs independent-random team: BEAT 0.6875 (11/16), LOSE 0.3125, SPLITR 0.5000, HERD 0.5000, IND 0.5000
+Rule I, 4v4 vs independent-random team: BEAT 0.8594, LOSE 0.1875, SPLITR 0.5000, HERD 0.5000, IND 0.5000
+Rule I, 3v3 BEAT vs HERD team: 0.5000
+Rule II, 2v2 vs independent-random team: BEAT 0.5833, LOSE 0.5833, SPLITR 0.5833, HERD 0.3333, IND 0.5000
+Rule II, 3v3 vs independent-random team: BEAT 0.6836 (175/256), LOSE 0.4688, SPLITR 0.5762, HERD 0.2500, IND 0.5000
+Rule II, 4v4 vs independent-random team: BEAT 0.7793, LOSE 0.3875, SPLITR 0.5411, HERD 0.2000, IND 0.5000
+Rule II, 3v3 BEAT vs HERD team: 0.8750

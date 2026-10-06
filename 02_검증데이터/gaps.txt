@@ -1,0 +1,442 @@
+
+#### GAP: Is the 'repeat-prone' Zhejiang pattern an East Asian trait, and do sequential edges already appear in the first ~10 throws? The verified set had no non-Chinese East Asian sequential data and no short-horizon replication.
+WHY: The verified set's main fork is whether opponents are repeat-prone or repeat-averse. In the Zhejiang samples, stay rates were 0.41-0.44 and win-stay 0.47-0.53, so the best reply after a win or tie is X+. In UK, Canadian, US and Australian samples, stay is about 0.28, so the best reply is X-. Every 'react to their last hand' rule flips sign between these two groups. Korean opponents are East Asian, no Korean dataset was accessible, and MF2 suggested the first 1-20 throws are close to random. A large public Japanese dataset that also records the opponent's moves can settle much of this.
+
+  [G1-F1] conf=medium
+  STATEMENT: Japanese players (n=500) were repeat-averse, unlike the Zhejiang samples. Data: Komai et al.'s public dataset, 50 keyboard games per player against a GA/GP program.
+
+Repeat rate:
+- Overall 28.2% (per-player 95% CI 26.9-29.6%).
+- 349 of 500 players were below 1/3.
+- Throws 2-10: 26.5%.
+
+Next throw after each outcome (repeat / upgrade / downgrade):
+- After a WIN (n=8,187): 30.5% / 35.2% / 34.2%. Upgrade means won with Rock -> Paper; downgrade means Rock -> Scissors.
+- After a TIE (n=7,790): 27.7% / 36.1% / 36.2%.
+- After a LOSS (n=8,522): 26.5% / 33.6% / 39.9%.
+
+Next throw after a loss, by losing hand:
+- Lost with Rock (n=2,634): Scissors 43.8%, Rock 28.9%, Paper 27.3%.
+- Lost with Scissors (n=3,305): Paper 42.0%, Rock 34.9%, Scissors 23.1%.
+- Lost with Paper (n=2,583): Scissors 38.3%, Rock 33.4%, Paper 28.3%.
+
+There was no win-stay, and downgrading after a loss was the most common response. This matches the Western fixed-pair pattern and Yoshizawa's 22.8% Japanese field repeat rate, not the Zhejiang lab.
+  DESIGN: Japan, Tokyo University of Technology open days, 2017-2019. 500 visitors; age and sex not reported. 50 consecutive keyboard RPS games against an adaptive GA/GP program. Subjects knew the purpose and aimed to win; no incentive reported.
+
+Tier: public raw data from a peer-reviewed paper. The condition
+  EFFECT: Relative to 1/3:
+- Overall repeat: -5.1 pp (throws 2-10: -6.8 pp).
+- Win-stay: -2.8 pp. Tie-stay: -5.6 pp. Lose-stay: -6.8 pp.
+- Downgrade after a loss: +6.6 pp.
+- Lost with Rock -> Scissors: +10.5 pp.
+  IMPLICATION: In a fixed bout, assume East Asian opponents (and so, plausibly, Korean ones) are repeat-averse.
+
+Best replies in this sample after the opponent LOSES:
+- They lost with Rock: throw Rock (+0.165 per throw). It beats their likely Scissors and loses only to Paper (27.3%).
+- They lost with Paper: throw Rock (+0.100).
+- They lost with Scissors: throw Paper (+0.118).
+
+Do not throw the hand that beats th
+  CAVEATS: - The opponent was a computer program, its play may have shaped the transitions, and subjects knew it was a program.
+- No stakes. Visitor demographics are unknown (likely many high-school students).
+- Keyboard input, not hand gestures.
+- Japanese, not Korean.
+- The repository does not label the digi
+
+  [G1-F2] conf=medium
+  STATEMENT: Rule tested: X-, 'throw the hand the opponent's last hand beats'. Their Rock -> your Scissors; Paper -> Rock; Scissors -> Paper. In the Japanese data it was positive after every opponent outcome and from the second throw on. The opposite rule X+, 'beat their last hand', was negative everywhere.
+
+Per-player means, all throws (SE):
+- After their WIN: X- +0.061 (0.015); X+ -0.047 (0.015).
+- After a TIE: X- +0.089 (0.013); X+ -0.099 (0.014).
+- After their LOSS: X- +0.084 (0.013); X+ -0.139 (0.014).
+
+Throws 2-10 only (SE about 0.025):
+- X-: +0.082 / +0.126 / +0.106 after win / tie / loss.
+- X+: -0.096 / -0.107 / -0.153.
+
+Unconditional 'always X-': +0.067 (SE 0.011) overall and +0.098 (0.017) in throws 2-10.
+
+Same rule in throws 2-10 of other datasets:
+- US dyads: +0.059 (SE 0.032; repeat 29.8%).
+- Australian pairs: +0.095 (SE 0.043; repeat 26.8%).
+
+Cournot check: players threw the hand that beats the program's previous hand 35.6% of the time (+2.3 pp). The counter, 'throw what your own last hand beats', netted only +0.036 (SE 0.008).
+  DESIGN: Secondary analysis of three public raw datasets:
+- Japan: 500 visitors vs a program, 50 games, no pay.
+- USA: UCSD students in stable online human dyads, 300 rounds, course credit.
+- Australia: Western Sydney adults in stable human pairs, 480 games, flat AUD 60.
+  EFFECT: - X-: +6 to +13 pp per throw (random play earns 0).
+- X+: -5 to -15 pp.
+- Upper bound if the edge held on every decisive throw (my arithmetic, ties about 32%): decisive-throw win share 55-57%, best-of-3 win about 57-61%.
+  IMPLICATION: From the second throw of a bout, lean toward (do not commit to) X- as the default reply to the opponent's last hand: their Rock -> your Scissors, Paper -> Rock, Scissors -> Paper. It is the only reactive rule that was positive from the start in the Japanese, US and Australian data.
+
+It is negative against Zhejiang-like repeaters (verified C2: -0.161 and -0.110). Switch to X+ only against an oppone
+  CAVEATS: - The counterfactuals assume the opponent does not react to your rule. Humans read a 90% fixed habit within about 7-10 throws (Gap 3), so use X- as a lean, not a fixed rule.
+- The Japanese players faced a program.
+- The early-round US estimate is borderline (z about 1.8).
+
+  [G1-F3] conf=medium
+  STATEMENT: After a tie, Japanese players mostly switched away from the tied hand.
+
+Next throw after a tie:
+- Tie on Rock (n=2,774): Scissors 41.3%, Paper 31.4%, Rock 27.3%.
+- Tie on Paper (n=2,449): Scissors 39.5%, Paper 30.8%, Rock 29.7%.
+- Tie on Scissors (n=2,567): Rock 38.0%, Paper 36.8%, Scissors 25.2%.
+
+'Throw the hand the tied hand beats' (Rock-Rock -> Scissors, Paper-Paper -> Rock, Scissors-Scissors -> Paper):
+- Net +0.041 / +0.087 / +0.128 by tied hand.
+- +0.084 pooled; +0.114 in throws 2-10.
+
+The Zhejiang a=2 rule, 'beat the tied hand' (Rock-Rock -> Paper, Paper-Paper -> Scissors, Scissors-Scissors -> Rock):
+- Net -0.140 / +0.011 / -0.116.
+
+Exception, two consecutive ties on the same hand (n=1,037): players repeated that hand a third time 39.7% (upgrade 31.2%, downgrade 29.0%). After such a double tie, 'beat the tied hand' was the better reply (+0.107 vs -0.085).
+  DESIGN: Same Japanese dataset as G1-F1: 500 players against a program, 50 games each.
+  EFFECT: - After a single tie: +4 to +13 pp for 'hand the tied hand beats'; -14 to +1 pp for 'beat the tied hand'.
+- After a same-hand double tie: third repeat is +6.4 pp over 1/3.
+  IMPLICATION: For immediate tie replays in a knockout:
+- After the first tie, throw the hand the tied hand beats: Rock-Rock -> Scissors, Paper-Paper -> Rock, Scissors-Scissors -> Paper.
+- If the same hand ties twice in a row, the opponent is showing a repeat habit, so beat that hand (e.g., Paper after two Rock-Rock ties).
+
+This independently supports the fixed-pair Western evidence (MF01/MF7) over the Zhejiang 
+  CAVEATS: - These ties were against a program.
+- The double-tie cell pools players and selects people who had just repeated (a repeat-prone subset). It reflects that selection, not a reaction to ties as such, so its confidence is lower.
+
+  [G1-F4] conf=medium
+  STATEMENT: Japanese players kept cycling.
+- After an upgrade (Rock -> Paper), the next move was another upgrade (Paper -> Scissors) 47.9% of the time (n=8,386).
+- After a downgrade (Rock -> Scissors), the next was another downgrade (Scissors -> Paper) 48.1% (n=8,828).
+- After a repeat (X, X), a third X followed 35.8% (n=6,785).
+
+Ganzfried's nonparametric test on the same 500 sequences found frequency bias rare and serial dependence common:
+- At alpha=0.05, the chi-square test rejected uniform hand frequencies for 36 players (7.2%).
+- The runs test rejected serial independence for 210 players (42%).
+- With Bonferroni at alpha=0.025, 195 players (39%) were inconsistent with independent uniform play.
+  DESIGN: Same Japanese dataset. Ganzfried is a preprint applying a combined chi-square and runs test to each player.
+  EFFECT: - Continued cycling: +14.6 / +14.8 pp over 33.3% (Western samples: +10 to +13 pp).
+- Third repeat: +2.5 pp.
+- Detectable serial dependence in 42% of players vs detectable frequency bias in 7.2%.
+  IMPLICATION: Watch sequences, not hand counts.
+- After an opponent goes Rock -> Paper, expect Scissors and throw Rock.
+- After Rock -> Scissors, expect Paper and throw Scissors.
+- Never treat a hand thrown twice as eliminated.
+  CAVEATS: - Pooled over players, so part of the effect reflects stable individual preferences for one direction.
+- Sessions were only 50 throws.
+- The opponent was a computer.
+- Ganzfried's runs test does not by itself say whether players had too many or too few runs. My repeat rate (28.2%) points to over-alt
+
+  [G1-F5] conf=low
+  STATEMENT: I found only one Korean adult RPS study: Baek et al. 2013 (KAIST/Keimyung), with 50 healthy adults and 48 patients with schizophrenia. Its abstract says the tendency 'to choose the best response against the opponent's previous choice' (beat their last hand) in the two-person game was a patient bias, 'distinct from those of the healthy subjects'. No percentages for the healthy subjects were accessible.
+  DESIGN: Korea. 50 healthy adults and 48 patients. One-person (random generation) and two-person RPS; the abstract does not state the opponent type. Peer-reviewed: Psychiatry Research 207(3):158-163.
+  EFFECT: Not available (abstract only).
+  IMPLICATION: There is no Korean evidence that ordinary adults habitually 'beat the opponent's last hand'. That fits X+ being weak elsewhere, but the study gives no Korean base rates. The Japanese data (G1-F1 to G1-F4) remain the closest proxy.
+  CAVEATS: Abstract only; the comparison is clinical; no numbers for healthy subjects.
+  SOURCES: [('J1', 'Komai, T., Kurokawa, H., & Kim, S.-J. (2022). Human Randomness in the Rock-Paper-Scissors Game. Applied Sciences 12(23):', 'peer-reviewed journal', True), ('J2', 'Kurokawa Lab, Tokyo University of Technology. RPSdata repository: Human_and_computer_hand_series_data (500 human and 500', 'organization/website', True), ('J3', 'Ganzfried, S. (2023; rev. 2024). Nonparametric Strategy Test. arXiv:2312.10695v2.', 'preprint', True), ('J4', 'Brockbank, E., & Vul, E. (2020). Recursive adversarial reasoning in the rock, paper, scissors game. CogSci 2020. Public ', 'organization/website', True), ('J5', 'Moerel, D., et al. (2025). Neural decoding of competitive decision-making in Rock-Paper-Scissors. Social Cognitive and A', 'organization/website', True), ('J6', 'Baek, K., Kim, Y.-T., Kim, M., Choi, Y., Lee, M., Lee, K., Hahn, S., & Jeong, J. (2013). Response randomization of one- ', 'peer-reviewed journal', False)]
+
+#### GAP: Opening throw and overall hand shares: do they differ by population (East Asian vs US), by setting (live hands vs screen) and by gender? The verified opener advice conflicts, 'always Paper' rests on screen data, and gender claims rest on self-report.
+WHY: In best-of-3 bouts with replayed ties, the first throw is a large share of all throws and has no history to react to. The verified set gives conflicting openers:
+- Paper first: Yoshizawa, C06.
+- Scissors against experienced players: Batzilis.
+- MF04: openers are 'unstable'.
+
+It also proposes a +3 pp 'always Paper' default that rests mostly on screen-based labs, and has only self-report evidence on gender.
+
+  [G2-F1] conf=medium
+  STATEMENT: In the 500 Japanese sessions, Paper was rarely thrown first.
+- First throw: Rock 40.4% (202), Scissors 39.2% (196), Paper 20.4% (102; bootstrap 95% CI 16.8-24.2%). Chi-square(2)=37.7, p<0.001.
+- Shares converged after the opener. Throw 2: Rock 31.2%, Paper 32.4%, Scissors 36.4%. Throws 3-5: each hand between 29% and 37%.
+
+Net value of each opener against this mix:
+- Rock: +18.8 pp (beats Scissors 39.2%, loses only to Paper 20.4%).
+- Paper: +1.2 pp.
+- Scissors: -20.0 pp.
+
+This closely matches the independent Japanese online self-report (verified C14: first throw Scissors 42.0%, Rock 37.4%, Paper 20.6%; n=1,000).
+  DESIGN: Japan. First game of 500 keyboard sessions against a program, before any information about the opponent. Compared with an online self-report survey of 1,000 Japanese adults (Angle B).
+  EFFECT: At the opener, relative to 1/3: Paper -12.9 pp, Rock +7.1 pp, Scissors +5.9 pp.
+  IMPLICATION: Against Japanese-like openers, Rock is the strong first throw (+19 pp). Whether Korean openers look like this is unknown (see G2-F2).
+  CAVEATS: - Keyboard play against a program; possible interface or key-layout effects are not reported.
+- Japanese chant conventions may shape openers in Japan but not in Korea.
+- The first throw of a 50-game session may differ from a one-off live opener.
+
+  [G2-F2] conf=medium
+  STATEMENT: US students' openers were the mirror image: Paper most, Rock least.
+
+Pooled first throws across Brockbank & Vul's three public datasets (n=586): Paper 42.7%, Scissors 30.2%, Rock 27.1% (chi-square(2)=23.8, p<0.001). Paper led in each dataset separately:
+- Human dyads: 44.2% (n=120).
+- Fixed-pattern bots: 40.9% (n=252).
+- Adaptive bots: 43.9% (n=214).
+
+Against this mix, opening Scissors nets +15.6 pp and Rock -12.5 pp. That is the reverse of the Japanese sample (Rock +18.8, Scissors -20.0).
+
+Other opener evidence:
+- Moerel's Australian first games favoured Scissors (46.9%; verified MF04).
+- Batzilis's 5.0 million Facebook openers were near-uniform (Paper 34.8%).
+- A Korean wiki says, without a source and hedged ('~고 한다'), that Koreans mostly open with Paper: '가위/바위는 손 모양이 복잡하기에 대체로 처음에는 보를 많이 낸다고 한다.'
+  DESIGN: - USA: UCSD undergraduates, course credit, online; first round of 300-round sessions against a human or a bot.
+- Australia: as in MF04.
+- Korea: community wiki claim with no data.
+  EFFECT: US openers relative to 1/3: Paper +9.4 pp, Rock -6.2 pp. The best opener (Scissors) gains +15.6 pp.
+  IMPLICATION: The best opener flips sign between populations: Scissors against US-like openers, Rock against Japanese-like ones. With no Korean data, do not commit to a fixed opener.
+- Randomize it with a device.
+- Have teammates tally opponents' first throws in early bouts.
+- If openers look Paper-heavy (as the Korean wiki claims), lean Scissors. If they look Paper-poor (the Japanese pattern), lean Rock.
+  CAVEATS: - These are first throws of long computerised sessions, not live one-shot openers.
+- US participants in v2/v3 may have known the opponent was a bot.
+- The Korean claim is hearsay.
+
+  [G2-F3] conf=medium
+  STATEMENT: Neither live hand play nor the Japanese screen sample showed a Rock excess.
+
+Live, refereed, face-to-face Japanese RPS (Ito 2017: 42 Aichi students, 14 triads, 9 matches x 20 rounds per triad):
+- Rock 33.1%, Paper 33.3%, Scissors 33.6% overall.
+- No significant difference: ANOVA F(2,26)=0.09 with one player blindfolded, 0.01 with both.
+
+Japanese screen data (Komai; 24,999 throws): Rock 32.2%, Scissors 35.1%, Paper 32.7%. So 'always Paper' would lose 2.9 pp per throw and 'always Rock' would gain 2.4 pp.
+
+The other two live samples agree: Cook (UK, 32.4/33.3/34.4) and Aczel (Hungary, Scissors 36.7%). None of the three live samples has the Rock excess that the Paper default relies on.
+  DESIGN: - Ito: Japan, live face-to-face triads with a referee and a blindfold manipulation; cash per match won.
+- Komai: Japan, screen play against a program.
+  EFFECT: - Live Japanese shares: all within 0.3 pp of 1/3.
+- Japanese screen: Scissors +1.8 pp, Rock -1.2 pp.
+  IMPLICATION: Do not use 'always Paper' as a default in live Korean play. A fixed lean toward one hand is worth a few pp at most, and its direction depends on the population.
+  CAVEATS: - Ito's blindfolds may have changed choices.
+- The unit of analysis is the triad (n=14); hand shares are averages of triad percentages.
+
+  [G2-F4] conf=low
+  STATEMENT: Observed gender differences were small, using Moerel's raw data (Australia; 38 women and 22 men, 480 games each).
+
+Overall hand shares:
+- Rock: 35.7% for women, 35.0% for men. Men minus women: -0.7 pp (bootstrap 95% CI -2.6 to +1.2).
+- Paper: +1.3 pp (CI -0.3 to +2.9).
+- Scissors: -0.6 pp (CI -2.5 to +1.3).
+
+First valid throw:
+- Women: Scissors 20 of 38 (53%), Paper 11, Rock 7.
+- Men: Rock 9 of 22 (41%), Scissors 7, Paper 6.
+- Women's Scissors vs men's: Fisher exact p=0.18.
+
+The direction matches the Japanese self-report (women Scissors 46.9%, men Rock 42.4%) and the WRPS claim 'males lead with Rock', but it is not significant.
+  DESIGN: Australia, Western Sydney University. 62 adults in 31 fixed human pairs, recorded with EEG. 480 computerised games each, flat AUD 60. The 2 non-binary players were excluded from the comparisons.
+  EFFECT: - Overall shares: gender gaps under 1.5 pp; every CI includes 0.
+- Opener: women Scissors +20 pp over 1/3; men Rock +8 pp (small n).
+  IMPLICATION: Gender is not a usable signal for overall play. At most it is a weak hint for openers (women: Scissors, so answer Rock; men: Rock, so answer Paper), and not strong enough to override randomizing.
+  CAVEATS: - The opener samples are tiny.
+- Western sample.
+- For some players the first valid throw came in game 2 because they did not respond in game 1.
+  SOURCES: [('O1', 'Komai, T., Kurokawa, H., & Kim, S.-J. (2022). Applied Sciences 12:12192, and its public data (kuro-lab/RPSdata).', 'organization/website', True), ('O2', 'Brockbank, E., & Vul, E. Public raw data: rps_v1_data.csv (CogSci 2020 dyads), rps_v2_data.csv.zip (Cognitive Psychology', 'organization/website', True), ('O3', "Ito, H. (2017). Stimulus-response compatibility effect: An attempt to replicate Cook's 'automatic imitation in a strateg", 'peer-reviewed journal', True), ('O4', 'Moerel, D., et al. (2025). SCAN. Raw data: OpenNeuro ds006761 (participants.tsv and sub-*_task-RPS_events.tsv).', 'organization/website', True), ('O5', "Namu Wiki. '가위바위보', section 4.1 통계 (accessed 2026-10-06).", 'anecdote/other', True), ('O6', 'Toint (2023). じゃんけん survey, n=1,000 Japanese adults (PR TIMES, 26 Sep 2023).', 'organization/website', False)]
+
+#### GAP: How quickly do human opponents detect and punish a fixed throwing habit, and how quickly can a tracker exploit human habits? The verified set did not analyse adaptation over the first few throws.
+WHY: A team event mixes very short bouts with repeated exposure to the same people.
+- A best-of-3 with replayed ties lasts about 3-6 throws.
+- Exposure repeats through relay rematches, the opponents' teammates watching, or the Korean association's 3 sets x 3 games x best-of-3 format.
+
+Whether a deliberate lean such as X- is safe depends on how many throws an opponent needs to read it. The verified D3, D4 and MF1 report only 300-round averages.
+
+  [G3-F1] conf=medium
+  STATEMENT: Humans needed about 7-10 throws to start beating a habit followed 90% of the time. Data: Brockbank & Vul 2024, Exp 1, raw data (220 complete 300-round games).
+
+Against the two self-transition bots (n=63 games):
+- 'Always throw the hand your own last hand beats': Rock -> Scissors -> Paper -> Rock.
+- 'Always upgrade': Rock -> Paper -> Scissors.
+
+Human net per throw (95% CI):
+- Throws 1-3: +0.016 (-0.082 to +0.113).
+- Throws 4-6: +0.090 (-0.036 to +0.216).
+- Throws 7-10: +0.274 (+0.160 to +0.388).
+- Throws 21-30: +0.346. Throws 31-50: +0.367.
+
+Pooled over all four simple-transition bots (adding 'beat the human's last hand' and 'copy the human's last hand'; n=127 games):
+- +0.052 (n.s.), +0.121 (CI +0.030 to +0.212) and +0.199 (CI +0.117 to +0.281) in throws 1-3, 4-6 and 7-10.
+- +0.312 by throws 21-30.
+
+The 'copy the human's last hand' bot was exploited only from throws 21-30 (+0.253).
+  DESIGN: USA: UCSD undergraduates, course credit, online. 300 rounds against one bot that follows a pattern 90% of the time; points +3 / 0 / -1. Measure: net per throw ((wins - losses) / throws) per game, averaged over games.
+  EFFECT: - Throws 1-3: +1.6 pp (n.s.).
+- Throws 7-10: +27.4 pp.
+- Throws 21-50: +35 to +37 pp per throw (random play earns 0).
+  IMPLICATION: A fixed habit of choosing your next hand from your last one is essentially safe for the first ~3-6 throws against a given opponent, but gets read by about throw 7-10.
+- Inside a single short bout, rule-based leans (e.g., G1's X-) are low-risk.
+- Randomize with a device when you meet the same opponent again, in long formats (3 sets x 3 games x best-of-3), or after the opposing team has watched seve
+  CAVEATS: - The bots were 90% deterministic. A human lean of 50-60% would be detected more slowly.
+- US students playing on a screen.
+- The early bins are small (63-127 games x 3-4 throws).
+- Detection by watching rather than playing was not tested.
+
+  [G3-F2] conf=medium
+  STATEMENT: Habits that depend on the previous outcome were read slowly and poorly. Two bots followed such a habit 90% of the time (n=61 games):
+- 'Stay after a win, upgrade after a loss, downgrade after a tie'.
+- 'Upgrade after a win, downgrade after a loss, stay after a tie'.
+
+Human net per throw:
+- Throws 1-3: +0.049 (n.s.).
+- Throws 4-6: +0.148.
+- Throws 7-10: +0.037 (n.s.).
+- Throws 11-30: about +0.12.
+- Throws 31-50: +0.037 (n.s.).
+- Throws 201-300: only about +0.21.
+  DESIGN: Same as G3-F1.
+  EFFECT: +4 to +15 pp per throw and inconsistent, against +27 to +37 pp for simple transition habits by the same stage.
+  IMPLICATION: If you vary your next hand according to the previous outcome (verified C2-style responses), opponents are unlikely to read it within a bout. The habits to avoid are plain 'after X I throw Y' sequences.
+  CAVEATS: Same as G3-F1. The early +0.148 bin may be chance (its CI lower bound is +0.02).
+
+  [G3-F3] conf=low
+  STATEMENT: Adaptive bots that counted human patterns exploited humans almost immediately; bots that tracked only base-rate transitions never did. Data: Brockbank & Vul 2021 raw data, 196 complete games. Each bot always throws the counter to the human's most likely next hand.
+
+The three bots conditioning on the last two moves, or on outcome x previous transition, were ahead from the first 10 throws (n=72 games). Human net per throw:
+- Throws 1-10: -0.112 (95% CI -0.187 to -0.038).
+- Throws 11-20: -0.056 (n.s.).
+- Throws 21-30: -0.086.
+- Throws 31-50: -0.118.
+- After that: -0.10 to -0.13.
+
+Bots tracking only the human's transition base rates (n=49 games):
+- Never significantly ahead (throws 1-10: -0.029, CI -0.097 to +0.040).
+- Counter-exploited from about throw 51 (+0.078), reaching +0.148 in throws 101-300.
+  DESIGN: USA: UCSD undergraduates, course credit, online. 300 rounds against one of 8 adaptive bots; points +3 / 0 / -1; 10-s limit per round.
+  EFFECT: Against the best trackers, humans lost a net 11 pp per throw in throws 1-10 and about 10-13 pp thereafter.
+  IMPLICATION: A teammate who tallies an opponent's (last hand, outcome) -> next hand pairs could, in principle, gain within a handful of throws; unaided players cannot (G3-F1, G3-F2). This supports giving one team member the job of scorer.
+  CAVEATS: - The early bins are small and include round 1 (pure chance) and bot start-up behaviour.
+- The bots compute exact counts, which humans cannot.
+- Long sessions.
+  SOURCES: [('L1', 'Brockbank, E., & Vul, E. (2024). Cognitive Psychology 151:101654, Experiment 1. Public raw data: rps_v2_data.csv.zip.', 'organization/website', True), ('L2', 'Brockbank, E., & Vul, E. (2021). Humans fail to outwit adaptive rock, paper, scissors opponents. CogSci 43. Public raw d', 'organization/website', True), ('L3', 'Cross, L., Brockbank, E., Gerstenberg, T., Fan, J. E., Yamins, D. L. K., & Haber, N. (2025). Understanding Human Limits ', 'preprint', False)]
+
+#### GAP: Korean format variants (가위바위보 하나빼기, i.e. 'rock-paper-scissors minus one', and 묵찌빠): how should they be played? The verified set covers standard RPS only.
+WHY: Korean team events may use 하나빼기 (shown in Squid Game season 2; Namu Wiki: '오징어 게임(시즌 2)에서 하나빼기 버전이 등장한다'). 묵찌빠 is a common Korean decider. In both, the equilibrium differs from 1/3-1/3-1/3:
+- In 하나빼기, the pair you show first can make you a +1/3 favourite or underdog.
+- In 묵찌빠, winning the opening throw makes you a 2/3 favourite.
+
+Applying standard-RPS advice to these games would be wrong.
+
+  [G4-F1] conf=high
+  STATEMENT: 하나빼기 (show two hands, then withdraw one) has an exact solution.
+
+Stage 1, choosing a pair:
+- Show two different hands. Showing the same hand twice is weakly dominated.
+- The three pairs form their own RPS cycle, each beating the next by +1/3: {Rock+Paper} beats {Rock+Scissors}, which beats {Paper+Scissors}, which beats {Rock+Paper}.
+- So choose the pair uniformly at random.
+
+Stage 2, keeping a hand:
+- Same pair on both sides: keep the hand that wins inside the pair (Rock+Paper -> Paper; Rock+Scissors -> Rock; Paper+Scissors -> Scissors). The result is a tie.
+- Different pairs (they always share exactly one hand): each player keeps the shared hand with probability 2/3 and the other hand with 1/3.
+- The favourite is the player whose extra hand beats the shared hand. The favourite wins 4/9, ties 4/9 and loses 1/9 (+1/3 per game).
+
+Example: you show Paper+Scissors and the opponent shows Paper+Rock, so Paper is shared and your Scissors beats it. You are favoured. You keep Paper 2/3 and Scissors 1/3; they should keep Paper 2/3 and Rock 1/3.
+  DESIGN: Game-theoretic analysis from math blog and organisation pages, plus my exact computation. No human data.
+  EFFECT: In stage 2 the favoured pair wins 44.4%, ties 44.4% and loses 11.1% (+33.3 pp net). The game value is 0 when stage 1 is randomized.
+  IMPLICATION: - Pick your pair with a device: uniform over the three pairs.
+- After seeing both pairs: if they are the same, keep the hand that wins inside the pair. If they differ, keep the shared hand 2/3 of the time (e.g., with a die: 1-4 keep the shared hand, 5-6 keep the other).
+- A human bias toward the 'safe' shared hand, or toward 'my extra hand', can be exploited.
+  CAVEATS: - Assumes zero-sum scoring with ties replayed.
+- The POST (Pe-Aguirre) argues that mutual 'loss aversion' in Squid Game's lethal setting means perfect play 'always results in a draw'. That framing does not apply to a tournament.
+- I found no study of how humans actually play 하나빼기.
+
+  [G4-F2] conf=high
+  STATEMENT: 묵찌빠: an ordinary RPS throw decides the first attacker. Then 'The defender loses if they play the same move as the attacker' and 'If not, the one who wins become the attacker and repeat it until they produce the same move.'
+
+If both players throw uniformly at random in each exchange, the attacker's win probability V satisfies V = 1/3 + V/3 + (1-V)/3, so V = 2/3. Uniform play is an equilibrium: the attacker's payoff matrix for an exchange is circulant, so every pure choice earns 2/3 against a uniform opponent.
+
+Winning the opening throw is therefore worth a 2/3 chance of winning the game.
+  DESIGN: Rules from an encyclopedia; the equilibrium is my own derivation. I found no human data and no published analysis.
+  EFFECT: The winner of the opening throw has a 66.7% chance of winning the game (vs 33.3% for the loser); before the opening throw it is 50%.
+  IMPLICATION: In 묵찌빠:
+- Put every evidence-based lean (openers, Gap 2) into the opening RPS throw.
+- Then randomize uniformly in the exchanges.
+- As defender, any habit of avoiding or matching the attacker's previous hand can be punished.
+  CAVEATS: - Assumes the defender loses only by matching the attacker, and that calls and throws are simultaneous. House rules on call-before-throw timing could allow late reactions.
+- The derivation is mine, not published, though it is checked by exact computation.
+  SOURCES: [('V1', 'Wizard of Odds (2026). Rock Paper Scissors Minus One. Newsletter page, last updated 3 Aug 2026.', 'organization/website', True), ('V2', "Talwalkar, P. (2025, January 6). How To Win Squid Game's Rock, Paper, Scissors, Minus One. Mind Your Decisions.", 'organization/website', True), ('V3', "Pe-Aguirre, J. J. (c. 2025). Deadly game: Breaking down the mathematics behind Squid Game 2's 'rock-paper-scissors minus", 'news/media', True), ('V4', 'Wikipedia. Muk-jji-ppa (accessed 2026-10-06).', 'organization/website', True), ('V5', "Namu Wiki. '가위바위보', pop-culture section on Squid Game season 2 (accessed 2026-10-06).", 'anecdote/other', True)]
+
+#### CONTRADICTIONS
+
+- **After a tie (the most consequential conflict).**
+- Zhejiang a=2 data (A1/C08): opponents repeat the tied hand 43% of the time, so beat it (Rock-Rock -> Paper, +0.20).
+- Fixed-opponent data with no tie reward point the other way: throw the hand the tied hand beats. Western pairs (MF01/MF7) give +0.05 to +0.13. The new 500-player Japanese data give +0.084 overall and +0.114 in throws 2-10, while 'beat the tied hand' scores -0.14 to +0.01. Ogawa's classroom null (C13) was confounded by its comparison.
+- Reconcile: the Zhejiang tie response tracks the tie payoff. Repeat rates fall from 0.80 when a tie pays like a win to 0.34 when ties pay 0 (MF02), alongside random re-matching and long 40-s sessions.
+- In a knockout replay the tie is worth nothing and the opponent is fixed, so default to Rock-Rock -> Scissors, Paper-Paper -> Rock, Scissors-Scissors -> Paper. Only after a second identical tie does the evidence favour beating the tied hand (39.7% third repeat in Japan).
+
+- **Win-stay and relay champions.**
+- One side: Angle C (C15) and Angle E (C15) imply 'a winner repeats, so throw what beats their winning hand'. Support: Zhejiang 0.528, Zhejiang vs AI 0.469, Dyson computer labs 0.36-0.44, relay computer avatars 38.2%.
+- Other side: human fixed pairs (US 0.322, Australia 0.262) and the Japanese sample (0.305) show no win-stay. There, 'beat the winner's hand' loses (Australia -0.110, Japan -0.047).
+- Reconcile by setting: win-stay appears with computer avatars and in reward-heavy or re-matched labs, and grows late in long sessions (MF2). Against people in a fixed bout, the safer reply after an opponent's win is the hand their winning hand beats (Japan +0.061, Australia +0.103).
+
+- **Over-switching vs over-repeating.**
+- Angle C C09/C10 (tennis serves, random-generation tasks): humans switch too often.
+- Angle C MF2 and Angle A A1 (Zhejiang): repeats exceed each type of switch.
+- The new data side with over-switching in fixed-opponent play across four countries including Japan: repeat 28.2% overall; 0.265-0.298 in throws 2-10 for Japan, Australia and the US. Japanese field data show 22.8%.
+- Reconcile: the repeat-prone samples are the Zhejiang lab protocols plus Eyler's single cell, which is known only second-hand. They do not show that East Asians in general repeat.
+
+- **Opening throw.** The candidates conflict:
+- 'Paper first': Yoshizawa; Angle C C06, +2.8 pp against Facebook openers.
+- 'Scissors against experienced players': Batzilis.
+- US students open Paper-heavy (42.7%), so Scissors gains +15.6 pp.
+- Japanese players open Paper-poor (20.4% observed, 20.6% self-reported), so Rock gains +18.8 pp.
+- Moerel's first games are Scissors-heavy (46.9%).
+- Ogawa found no first-throw effect, and a Korean wiki claims Koreans open with Paper.
+
+Reconcile: openers depend on population and context, and the best opener even flips sign across samples. Without Korean data, randomize the opener and scout opponents' first throws.
+
+- **Rock excess and 'always Paper'.**
+- Rock excess: screen labs (Zhejiang 35.7%, Moerel 35.3%, Dyson 35.6%) and Japanese field tallies (35.0%).
+- No Rock excess in live refereed play: UK 32.4%, Japan 33.1%; Hungary shows Scissors 36.7%.
+- Scissors excess in some screen samples: US dyads 34.6%; Japanese Komai 35.1%, where 'always Paper' scores -2.9 pp.
+
+Reconcile by interface (Zhejiang's Rock button was left-most), live fist-pumping, and population. Any fixed hand default is worth about 3 pp at most and has the wrong sign in several samples.
+
+- **Short horizon.**
+- MF2 (Angle A) concluded the first 1-20 throws are close to random.
+- Pooled over outcomes, repeat-aversion is present from the second throw. 'Always X-' in throws 2-10: Japan +0.098 (SE 0.017, n=500), Australia +0.095, US +0.059.
+
+Reconcile: MF2's outcome-split early cells were small (about 360-750 transitions). What builds late in a session is the Zhejiang-vs-AI win-stay, not repeat-aversion.
+
+- **Imitation.**
+- Cook 2012: +3.0 pp more draws, one-tailed p about 0.055.
+- Null replications: Aczel 2012 (Hungary, -1.2 pp); Ito 2017 (Japan, +1.7 pp, n.s.). Pooled g=0.15 with a CI that includes 0.
+- In the two-gesture game, the effect is tiny and appears only early (Belot 2013).
+
+Reconcile: small samples and differing procedures. Treat imitation as having no reliable effect.
+
+- **Stakes and win-stay.**
+- Wang & Xu: win-stay falls as the win/tie payoff ratio rises (rho = -0.29).
+- Forder & Dyson: win-stay rises from 35.9% to 48.4% when wins are worth +2.
+
+Reconcile: the manipulations differ (relative tie value vs win magnitude), as do the designs (between vs within subjects) and the opponents (humans vs computer). Do not predict opponents' win-stay from tournament stakes.
+
+- **Direction after a loss.** Popular media (NPR, MIT Technology Review 2014) said losers move Rock -> Paper. The data mostly show the reverse: players who lose downgrade (Rock -> Scissors) more often than they upgrade.
+- Zhejiang: 0.365 vs 0.276.
+- Dyson 2016: 0.405 vs 0.372.
+- Australia: 0.374 vs 0.340.
+- Japan: 0.399 vs 0.336.
+- Near-equal in the US (0.386 vs 0.377) and Forder & Dyson (39.41% vs 39.13%).
+
+Reconcile: the media misread 'clockwise'. Downgrading is the most common post-loss switch.
+
+- **Fixed rules vs exploitability.**
+- Angle A C2 recommends outcome-specific rules, and MF1 warns that 'throw what your own last hand beats' is easily exploited (humans won 62% against such a bot over 300 rounds).
+- The new time course shows humans need about 7-10 throws to read even a 90% habit (throws 1-3: +0.016, n.s.).
+
+Reconcile by horizon: rule-based leans are low-risk inside one short bout but risky across rematches or when opponents are watching.
+
+- **Team deliberation.**
+- Angle E C11: teams are more game-theoretic.
+- MF5: that advantage is confined to dominance-solvable games.
+- Okano: teams are closer to minimax in zero-sum games, but the advantage fades over time.
+
+Reconcile: in RPS, team discussion helps balance and randomize play, not find edges.
+
+- **Pausing after a loss.**
+- Correlations: Dyson 2021, r=0.202 (reported p=.036; about .089 two-tailed when recomputed); Dyson 2018, r about .58-.65.
+- The only causal test, a forced pause, cut lose-shift by 7.7 pp but produced the lowest win rate (33.5%).
+
+Reconcile: slowing down marks good modelling of the opponent; it does not cause winning.
+
+- **Doubled hands.** The WRPS 'Double Run' rule says that after X, X you can eliminate X. The data disagree: a third identical throw followed 28.5% (Australia), 30.5% (Dyson), 34.0% (US) and 35.8% (Japan) of the time, and 39.7% after two same-hand ties in Japan.
+
+Reconcile: never eliminate a doubled hand; players who have already repeated are prone to repeat.
+
+- **Gender.**
+- Claims: WRPS 'males lead with Rock' and the Japanese self-report (women Scissors 46.9%, men Rock 42.4%).
+- Observed Australian play: no overall gender difference (Rock 35.0% for men vs 35.7% for women). Opener directions match the claims but are not significant (women Scissors 53%, men Rock 41%; p=0.18).
+
+Reconcile: gender is at most a weak hint about openers.

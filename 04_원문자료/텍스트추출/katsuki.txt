@@ -1,0 +1,137 @@
+          High-speed Human / Robot Hand Interaction System
+                       Rock-Paper-Scissors Robot System with 100% Winning Rate
+                          Yugo Katsuki                                        Yuji Yamakawa                                Masatoshi Ishikawa
+                   Graduate School of                                     Graduate School of                                 Graduate School of
+                Information Science, The                               Information Science, The                           Information Science, The
+                    University of Tokyo                                    University of Tokyo                                University of Tokyo
+                       Hongo 7-3-1                                            Hongo 7-3-1                                        Hongo 7-3-1
+               Bunkyo-ku, Tokyo 113-8656,                             Bunkyo-ku, Tokyo 113-8656,                         Bunkyo-ku, Tokyo 113-8656,
+                          Japan                                                  Japan                                              Japan
+                 yugo_katsuki@ipc.i.u-                               yuji_yamakawa@ipc.i.u-                         masatoshi_ishikawa@ipc.i.u-
+                      tokyo.ac.jp                                           tokyo.ac.jp                                   tokyo.ac.jp
+
+ABSTRACT                                                                                                                   Recognition result
+                                                                                                            Real time
+                                                                                                                                                Image processing PC
+   We propose an entirely new human hand / robot hand                                                       controller
+interaction system designed with a focus on high speed. The
+speed of this system, from input via a high-speed vision sys-                                                               Visual feedback               Image
+                                                                                                         Control
+tem to output by a high-speed multifingered robot hand,                                                  input
+exceeds the visual recognition speed of humans. Therefore,
+the motion of the interaction system cannot be recognized                                                                                                      High-speed
+by the human eye. As an application, we created a sys-                                                                                                         vision
+                                                                                                    High-speed
+tem called “Rock-Paper-Scissors robot system with 100%                                              robot hand
+winning rate”, based on this interaction system. This sys-
+tem always beats human players in the Rock-Paper-Scissors
+game due to the high speed of our interaction system.We
+also discuss the future possibilities of this system.
+
+Keywords                                                                                                                                          Human hand
+High-speed vision; high-speed multifingered robot hand
+                                                                                                         Figure 1:         Overview of robot system.
+1. INTRODUCTION
+      Recently, the demand for high-speed interaction sys-
+tems between humans and robots has been increasing. Such
+interaction systems have a possibility of enhancing efficiency                                    a human / robot hand interaction system that operates at
+in various fields, such as industrial factories, by cooperating                                   extremely high speed to the extent that humans cannot rec-
+with humans on tasks swiftly.                                                                     ognize the latency. As an application of this interaction
+    There have been some studies on human / robot hand                                            system, we built a system called “Rock-Paper-Scissors robot
+interaction systems. However, to the best of our knowledge,                                       system with 100% winning rate”, which is described in detail
+there are no studies that place as much emphasis on high                                          in Section 3.
+speed as we did. For example, Hoshino et al.[1] developed
+a robot hand that can imitate the hand motions of humans,                                         2. THE DESIGN OF THE PROPOSED SYS-
+but when a movie of the robot was checked, the system was                                            TEM
+found to have some latency, from the input of a hand motion
+to the corresponding output by the robot, which humans can                                        2.1   High-speed multifingered robot hand [3]
+notice [2].
+   The goal of the work described in this paper is to achieve                                           A small harmonic drive gear R and a high-power mini
+                                                                                                  actuator are used in each finger link. The motors are brush-
+                                                                                                  less and have high responsiveness because the gears have no
+                                                                                                  backlash. This actuator is designed based on the new con-
+Permission to make digital or hard copies of part or all of this work for personal or             cept that the maximum power output should be improved.
+classroom use is granted without fee provided that copies are not made or distributed             Thus, the hand can close its joints at 180 deg per 0.1 s.
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for third-party components of this work must be honored.            2.2   High-speed vision system
+For all other uses, contact the Owner/Author. Copyright is held by the owner/author(s).
+                                                                                                        In order to perform visual feedback control, we used a
+HRI’15 Extended Abstracts, Mar 02-05 2015, Portland, OR, USA
+ACM 978-1-4503-3318-4/15/03.
+                                                                                                  single high-speed camera (Eosens, MC1362, Mikrotron). Its
+http://dx.doi.org/10.1145/2701973.2701984.                                                        resolution was 1280 × 1024 pixels. Real-time processing was
+
+
+
+                                                                                            117
+                             scanning line                                Human
+
+                                                                                    Total Time of Shaping: About 60ms
+                                                                            Start                                         Finish   time
+           human                        Tip position
+           hand                         of finger                                                                  Range where human
+                                                                                                                   cannot recognize
+                                                                                                                   =About 30 ∼ 60ms
+
+
+                                                                                                  About
+                                                                                            Start 20ms    Finish
+Figure 2: Image Processing for Rock-Paper-Scissors
+robot system with 100% winning rate.                                     Figure 3: Time Sequence of Rock-Paper-Scissors
+                                                                         Robot System.
+
+performed from sensing an image to processing the image.
+The control PC was a Dell Precision T3400(OS: Windows                    The robot hand started moving about 30 ms after the human
+XP Professional, CPU: Core2Duo 3.16 GHz, Memory: 2.0                     player started changing their hand shape and completed its
+GB). Circular infrared LEDs were installed around the cam-               motion within 30 ms. In this experiment, the time required
+era, and a visible light cutting filter was used in order to cut         to complete changing of the human’s hand shape was almost
+noise coming from external light.                                        the same as that for the robot hand. It is also possible for
+                                                                         the robot hand to finish its hand motion faster than the
+3. ROCK-PAPER-SCISSORS ROBOT INTER-                                      human hand, depending on the timing of recognition using
+                                                                         the high-speed vision system. A movie of our system can be
+   ACTION SYSTEM AND EXPERIMENT                                          seen at our website [5].
+      As an application of this interaction system, we devel-
+oped a “Rock-Paper-Scissors robot system with 100% win-                  4. CONCLUSION
+ning rate”. Rock-Paper-Scissors is a game used when people                    In this paper we suggested an entirely new human hand
+want to decide a winner and a loser. This game is often                  / robot hand interaction system that focuses on high speed.
+played by two people. Our “Rock-Paper-Scissors robot sys-                The speed of this system, from input via the high-speed vi-
+tem with 100% winning rate” always beats humans at this                  sion system to output by the high-speed multifingered robot
+game. The reason is that the high-speed vision system is                 hand, exceeds the visual recognition speed of humans. We
+used to recognizes whether the hand shape is rock, paper or              created an application system called “Rock-Paper-Scissors
+scissors based on the shape of the human hand. Then, the                 robot system with 100% winning rate” based on this interac-
+high-speed robot hand plays either rock, paper or scissors               tion system, and confirmed that the speed of the interaction
+so as to beat the human player within 30 ms. It is said that             system exceeded the visual recognition speed of humans. If
+humans’ visual recognition speed is about 30 fps [4], and                this kind of high-speed human / robot interaction system is
+therefore, they cannot recognize this delay.                             introduced into industrial factories in the future, it would
+                                                                         enhance efficiency in production processes by cooperating
+3.1    Implementation                                                    with humans on tasks swiftly.
+      The implementation of the “Rock-Paper-Scissors robot
+system with 100% winning rate” is explained in this subsec-              5. ACKNOWLEDGEMENT
+tion. The shape of the human hand is recognized every 2 ms                   Part of this research was conducted based on approval
+by the high-speed vision system. After binarizing the input              from the Subcommittee for Enforcement of Ethics at the
+image, our algorithm detects the number of fingers in the                University of Tokyo (No.UT-IST-RE-131205-1)
+image, and identify the kind of shape.
+   The algorithm is explained in Fig.2 First, the input image            6. REFERENCES
+is binarized. Then, the position of the fingertip is detected.            [1] K. Hoshino , and E. Tamaki : “Copycat hand -robot
+A line shifted to the left by a few pixels from the tip position              hand generating imitative behavior-”
+is scanned and the number of value changes of binary im-                  [2] The movie of copycat:
+age (from white to black or from black to white) is counted.                  https://www.youtube.com/watch?v=xvGZKR6KICI
+We judge the kind of hand shape from this number. Then,
+                                                                          [3] A. Namiki, Y. Imai, M. Ishikawa, and M. Kaneko,:
+the multifingered robot hand is controlled according to the
+                                                                              “Development of a High-speed Multifingered Hand
+result of image processing to beat human players, based on
+                                                                              System and Its Application to Catching, ” Proc.
+PD control aimed at a given joint angle.
+                                                                              IEEE/RSJ Int. Conf. INtelligent Robots and Systems,
+3.2    Experimental Results                                                   pp. 2666-2671,2003.
+      We confirmed the time sequence of the “Rock-Paper-                  [4] K. Grill-Spector, and N. Kanwisher, Visual
+Scissors robot system with 100% winning rate”, as shown                       Recognition, As Soon as You Know It Is There, You
+in Fig.3, by capturing the process using a Phantom v640                       Know What It Is, American Psychological Society,
+camera system, operating at 3000 fps. It took about 60 ms                     2005 , Volume 16 - Number 2
+for the human player to finish changing their hand shape.                 [5] http://www.k2.t.u-tokyo.ac.jp/fusion/Janken/
+
+
+
+                                                                   118
+

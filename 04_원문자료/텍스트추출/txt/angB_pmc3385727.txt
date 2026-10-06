@@ -1,0 +1,192 @@
+
+ Is there evidence for automatic imitation in a strategic context? - PMC
+ Skip to main content
+ An official website of the United States government
+ Here's how you know 
+ Here's how you know 
+ Official websites use .gov 
+ A
+ .gov website belongs to an official
+ government organization in the United States.
+ Secure .gov websites use HTTPS 
+ A lock (
+ Lock 
+ Locked padlock icon
+ ) or https:// means you've safely
+ connected to the .gov website. Share sensitive
+ information only on official, secure websites.
+ Search
+ Log in 
+ Dashboard
+ Publications
+ Account settings
+ Log out
+ Search…
+ Search NCBI
+ Primary site navigation
+ Search
+ Logged in as:
+ Dashboard
+ Publications
+ Account settings
+ Log in
+ Search PMC Full-Text Archive 
+ Search in PMC 
+ Journal List
+ User Guide
+PERMALINK 
+ Copy 
+ As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+ the contents by NLM or the National Institutes of Health. 
+ Learn more:
+ PMC Disclaimer 
+ |
+ PMC Copyright Notice
+ Proc Biol Sci . 2012 May 2;279(1741):3231–3233. doi: 10.1098/rspb.2012.0500 
+ Search in PMC 
+ Search in PubMed 
+ View in NLM Catalog 
+ Add to search 
+Is there evidence for automatic imitation in a strategic context? 
+ Balazs Aczel 
+ Balazs Aczel 
+ 1 Department of Affective Psychology, Eotvos Lorand University, Budapest, Hungary 
+Find articles by Balazs Aczel 
+ 1, * , Bence Bago 
+ Bence Bago 
+ 1 Department of Affective Psychology, Eotvos Lorand University, Budapest, Hungary 
+Find articles by Bence Bago 
+ 1 , Andrei Foldes 
+ Andrei Foldes 
+ 1 Department of Affective Psychology, Eotvos Lorand University, Budapest, Hungary 
+Find articles by Andrei Foldes 
+ 1 
+ Author information 
+ Article notes 
+ Copyright and License information 
+ 1 Department of Affective Psychology, Eotvos Lorand University, Budapest, Hungary 
+ * 
+Author for correspondence ( aczel.balazs@ppk.elte.hu ). 
+Received 2012 Mar 4; Accepted 2012 Apr 13; Issue date 2012 Aug 22. 
+This journal is © 2012 The Royal Society 
+ PMC Copyright notice 
+PMCID: PMC3385727  PMID: 22553091 
+Abstract 
+Over the past decade, a compelling number of studies reported that observing an action makes the imitation of that action more likely. The automatic character of human imitative behaviour was often claimed, but rarely tested. The demonstration of the absence of conscious control has been attempted in a recent report claiming that imitation can occur in the rock–paper–scissors (RPS) game, where strategic players should avoid imitating their opponents. This surprising result could serve as strong evidence that humans imitate each other unconsciously. We find, however, that this conclusion is problematic. In addition to reviewing the original methods, in this work, we also replicated the experiment with double the sample size. Thorough examination of the original analyses and the results of the present replication do not support the original conclusion. In our view, testing the theory of automatic imitation in RPS games is a potentially promising avenue of exploration, yet the interpretation of the data requires further understanding of the subsidiary effects controlling the behaviour of the players. 
+ Keywords: automatic imitation, rock–paper–scissors, mirror neuron system 
+1. Introduction 
+Since the discovery of the human mirror neuron system [ 1 ], the study of automatic imitation became a focus of interest. This interest originates from the finding that the same neurons fire when an animal executes an action as when it observes the same action being performed by another. These motor neurons were suggested to play a central role in a range of human behaviours, including language acquisition, social learning and understanding others. This neural mechanism has also been suggested to play a critical role in imitation, the effect in which one duplicates another's action after observing it. This definition suggests that the imitative behaviours do not require conscious control. Although automatic imitation and imitation learning were speculated to be the ‘driving force behind “the great leap forward” in human evolution’ [ 2 ], there is only limited behavioural research investigating the automaticity of human imitative behaviours. One recent attempt was conducted by Cook et al. [ 3 ], who described imitation in the rock–paper–scissors (RPS) game, where strategic players should avoid imitating their opponents. This surprising result could serve as strong evidence that humans imitate each other unconsciously. Thorough examination of the methods and results, however, raises considerable doubts about the original conclusion. 
+The authors rewarded winners in an RPS game where either one or both of the players were blindfolded. It was argued that if sighted players were found to mimic the gestures of the blindfolded opponents, then it would imply that they did it spontaneously, contrary to their interest. The proportion of draws between sighted and blindfolded (blind) players was contrasted to chance level and to the proportion of draws in the blind–blind condition. The data were interpreted by the authors as showing that sighted players imitated their blindfolded opponents, because draws were more frequent among these players than in the blind–blind condition or than pure chance would indicate. In our view, both of the conclusions are problematic, and alternative interpretations are possible. 
+Firstly, we argue that there can be several reasons why the proportion of draws in an RPS game could be higher than 33⅓ per cent and automatic imitation is only one of them. Sequence and priming effects are well-described phenomena in studies with repeated choices. Whether these effects are present in RPS games is unexplored, but studying the procedure of Cook et al. 's [ 3 ] experiment, many possible effects are conceivable. In this experiment, after each round of RPS, the umpire stated aloud the gestures made. In the case of two different gestures stated, both players could be easily primed to show the third gesture in the next round, resulting in a draw. Small the effect might be, it could still result in above 33⅓ per cent draws, providing no other systematic and competing strategies were followed. Another cause of a distorted proportion of draws may arise if players have a preference for one of the gestures over the others. The authors analysed the frequencies of the three gestures in a one-way ANOVA finding no significant effect. Using one-way ANOVA on within-subject design raises concerns, and it is also important to note that non-significant deviation from equal means can still result in differing levels of chance. Furthermore, our replication showed the same pattern of frequencies as the original study, with more scissor gestures than either rock or paper, regardless of condition. These concerns suggest that the proportion of draws of the blind–blind condition is a more reliable baseline measure than the probabilistic chance level. 
+A comparison of the frequency of draws in the two conditions was also published by the authors. Firstly, it was argued that such a comparison must be one-tailed as the proportion of draws can be only higher than chance. The reasoning behind this contention was that sighted participants have no time to make goal-directed decisions before they have to deliver their gestures. Cook et al. [ 3 ] video-recorded four pairs of participants playing RPS and found that the blind players initiated their gestures more than 200 ms earlier in 17.2 per cent of the rounds. Asynchronies in the order of 200–600 ms were frequently observed. The authors argue that this little time is necessary for automatic imitation, but insufficient to strategically gesture on the basis of the opponent's gesture. It is known, however, from relevant human motor control literature that hand movements are under continuous control with a visuo-motor delay of about 110 ms [ 4 ]. This motor control might not be completely conscious, but it is widely accepted that intentional control is not necessary for all adaptive behaviours, e.g. walking [ 5 ]. We argue, therefore, that both higher and lower proportions of draws are intelligible expectations for the sighted–blind condition. Comparing the two conditions in a paired-sample t -test, Cook et al . [ 3 ] received ‘ t 13 = 1.72; p = 0.05 (one-tailed)’ (p. 4). Standard Student's t- distribution table shows that at α = 5 per cent t α (13) = 1.771 for one-tailed tests and t α (13) = 2.160 for two-tailed tests. In other words, neither for one-tailed nor for two-tailed tests does this crucial comparison show significant difference between the two conditions. 
+To further investigate the possibility of automatic imitation, we replicated the original experiment and performed additional analyses. Because, for the sake of independent observations, the data were analysed in triads, it necessarily lead to decreased degrees of freedom. Therefore, to increase the power of our analysis we more than doubled the sample size. 
+2. Methods 
+One hundred and fourteen participants (61 female; M = 22.46 years, s.d. = 8.19 years), all native speakers of Hungarian, were recruited for participation. All participants had normal or corrected-to-normal vision. Participants were not informed of the purpose of the experiment until after its conclusion. All claimed to be familiar with the rules of RPS. The data of four triads of participants had to be discarded from the analysis because of failure to follow the task instructions or owing to being extreme outliers. 
+At the start of the experiment, the participants were assigned to triads and were informed about the procedure of the experiment. The participants in each triad were arbitrarily designated A, B and C. After a short exercise where the experimenter ensured that the participants were familiar with RPS game and they understood the rules of the experiment, the first RPS match began. The experiment consisted of three blocks and in each block, the participants played three matches of 20 rounds. The first block was played between players A and B, the second between A and C and the last one between B and C. In each block, the third member of the triad, the umpire, recorded the gestures, and the outcomes on a form provided. In the first two matches in each block, one then the other player were blindfolded, the other player was sighted. In the third match of each block, both players were blindfolded. 
+During the game, the players were sitting, facing each other. At the start of each match, they were holding a clenched fist in front of their chest. Following a count of three given by the umpire, they were required to expose their gestures simultaneously. Before showing the gesture, they were to move their fists downwards then back to their chest on each count. 1 The gestures were identical to the custom of the game: for rock, they kept their fists clenched; for paper, they opened their hands with the palm in a vertical orientation, fingers together and pointing towards the opponent; for scissors, two fingers were extended and separated. After each round, the umpire informed the players aloud about the gestures and the outcome of the round. Before each block, the umpires ensured that the blindfolded players were unable to see the opponent during the game. The experimenter was always present in the testing room to supervise the participants. 
+The experiment was conducted in several sessions with one to four triads running in each session. The participants received a chocolate bar for participating in the experiment, and an additional payment was bound to performance. Before the experiment, the participants were informed that in each block of the game the winner can earn 300 HUF (approx. £1.00). To encourage winning strategies, neither of the players received a bonus in the event of a tie. 
+3. Results 
+As the performance of the participants can be affected by their opponents, the data were analysed in triads to ascertain independent units of observations. 
+As argued in §1, there can be many non-imitative behavioural patterns in the RPS game which can result in proportions of draws lower or higher than 33⅓ per cent. One of these is the unequal overall proportion of gestures. If the participants are biased towards choosing, one gesture more often than the other ones that alone can lead to different chance level for draws. The null-hypothesis of a repeated-measured ANOVA, that the proportion of the gestures is equal, had to be rejected in the blind–sighted, F 1.92, 63.49 = 7.47, p = 0.001, η 2 p = 0.19; and in the blind–blind condition as well, F 1.92, 63.44 = 14.16, p < 0.001, η 2 p = 0.30. It appears that scissors gesture was the most frequently used in the blind–sighted, ( M = 36.76%, s.d. = 5.05), as well as in the blind–blind condition ( M = 36.64%, s.d. = 3.99). Apart from other previously mentioned concerns, this result supports our consideration that a comparison of the two conditions, rather than using a theoretical chance level, is a more appropriate way to evaluate the proportion of draws in the blind–sighted condition. 
+A paired-sample t -test comparing two conditions indicated no significant difference between the mean proportion of draws, t 33 = −1.02, p = 0.32 (two-tailed). In fact, the mean proportion was numerically higher in the blind–blind condition ( M = 37.77, s.d. = 6.37) than in the blind–sighted condition ( M = 36.54, s.d. = 4.24). This result does not support the conclusion that the sighted players imitated the gestures of the blind participants. 
+4. Discussion 
+The discovery of mirror neurons has sparked widespread speculation about their role in action understanding, learning and motor control. While it is tempting to attribute such a wide range of behaviours to a class of cells, thorough analysis of the theory and data often provides a picture less simple to grasp [ 6 ]. In this replication study, we examined the empirical results of Cook et al . [ 3 ] that purportedly demonstrated automatic imitation in a strategic context for the first time. Our interpretation of the data of both studies disagrees with the original conclusion. 
+Automaticity is a concept often used in descriptions of animal or human behaviour, though rarely according to its precise definition. Behaviour is commonly regarded as automatic if it is unavoidable, it happens without conscious effort or monitoring [ 7 ], and it does not rely on attentional capacity [ 8 ]. Evidence for such a strong form of automaticity has been difficult to obtain [ 9 ]. In their study, Cook et al . suggested that imitation and conscious control can be pitted against each other in RPS games, given that in the customary version of the game imitation does not serve the goal of a player with a conscious goal to win. Although strategic context appears to be ideal for investigating automatic imitation, we find two critical points to consider when interpreting data of Cook et al . [ 3 ]. 
+Firstly, the authors argue that automatic imitation would be detectable in the proportion of draws when RPS is played between a sighted and a blindfolded player. If this proportion is higher than expected, then the participant's behaviour was in opposition to their strategy, and so this imitation was of an automatic nature. The expected proportion of the draws, however, is not that straightforward to define. Intuitively, 33⅓ per cent appears to be the level of chance in this case, but as discussed in §1 there can be a number of possible sequential or priming effects involved, which may cause the base rate of draws to deviate from this value. In our data, we found that scissors were gestured more often in both conditions, by both blindfolded and sighted participants. Surprisingly, as the result may be, it is difficult to exclude the possibility of general gesture preferences and any inequality of the played gestures modifies the chance level. On the basis of these concerns, we argued that regarding the proportion of draws, it is more appropriate to contrast the sighted–blind condition to the blind–blind condition rather than relying on any speculated levels of chance. 
+Secondly, we argued that comparison of the two conditions does not suggest that the players imitate each other in this game. The proportion of draws was not higher in the sighted–blind condition than in the blind–blind condition. Statistical support was not found in the original study after closer examination of the results. The high level of draws in the blind–blind condition was unexpected in our study. Further investigations might reveal the causes of such a pattern, though it is not relevant to our present interest. 
+Automatic imitation received widespread public interest following the report of Cook et al . [ 3 ] claiming that RPS players duplicate each other's the gestures. Such a result could truly become a turning point in the field; however, we find this conclusion premature. Thorough examination of the methods and the data did not support the original claims, but rather suggested alternative interpretations. In our view, testing the theory of automatic imitation in RPS games is a potentially promising avenue of exploration, yet the interpretation of the data requires further understanding of the subsidiary effects controlling the behaviour of the players. 
+Endnote 
+ 1 
+Although the ‘bobbing’ hand movements of the participants were left ambiguous in the procedure described by Cook et al. [ 3 ], personal communication with the authors established that the RPS game was played with participants bobbing their fists in time with the count (1–2–3), and as such we conducted our study employing the same technique. 
+References 
+ 1. Iacoboni M., Woods R. P., Brass M., Bekkering H., Mazziotta J. C., Rizzolatti G.
+1999. 
+Cortical mechanisms of human imitation. Science
+286, 2526–2528 10.1126/science.286.5449.2526 ( doi:10.1126/science.286.5449.2526 ) [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 2. Ramachandran V. S.
+2011. 
+Mirror neurons and imitation learning as the driving force behind ‘the great leap forward’ in human evolution. See http://williamlspencer.com/mirrorneurons.pdf (retrieved 10 November 2011). [ Google Scholar ] 
+ 3. Cook R., Bird G., Lünser G., Huck S., Heyes C.
+2011. 
+Automatic imitation in a strategic context: players of rock–paper–scissors imitate opponents’ gestures. Proc. R. Soc. B
+279, 780–786 10.1098/rspb.2011.1024 ( doi:10.1098/rspb.2011.1024 ) [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 4. Brenner E., Smeets J. B., de Lussanet M. H.
+1998. 
+Hitting moving targets continuous control of the acceleration of the hand on the basis of the target's velocity . 
+Exp. Brain Res.
+122, 467–474 10.1007/s002210050535 ( doi:10.1007/s002210050535 ) [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 5. Malone L. A., Bastian A. J.
+2010. 
+Thinking about walking: effects of conscious correction versus distraction on locomotor adaptation. J. Neurophysiol.
+103, 1954–1962 10.1152/jn.00832.2009 ( doi:10.1152/jn.00832.2009 ) [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 6. Hickok G.
+2009. 
+Eight problems for the mirror neuron theory of action understanding in monkeys and humans. J. Cogn. Neurosci.
+21, 1229–1243 10.1162/jocn.2009.21189 ( doi:10.1162/jocn.2009.21189 ) [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 7. Perlman A., Tzelgov J.
+2006. 
+Interactions between encoding and retrieval in the domain of sequence-learning. J. Exp. Psychol. Learn. Mem. Cogn.
+32, 118–130 10.1037/0278-7393.32.1.118 ( doi:10.1037/0278-7393.32.1.118 ) [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 8. Kahneman D., Treisman A.
+1984. 
+Changing views of attention and automaticity. In Varieties of attention (eds Davies D. R., Parasuraman R.), pp. 29–61
+New York, NY: Academic Press [ Google Scholar ] 
+ 9. Moors A., De Houwer J.
+2006. 
+Automaticity: a theoretical and conceptual analysis. Psychol. Bull.
+132, 297–326 10.1037/0033-2909.132.2.297 ( doi:10.1037/0033-2909.132.2.297 ) [ DOI ] [ PubMed ] [ Google Scholar ] 
+Articles from Proceedings of the Royal Society B: Biological Sciences are provided here courtesy of The Royal Society 
+ACTIONS 
+ View on publisher site 
+ PDF (368.4 KB) 
+ Cite 
+ Collections 
+ Permalink 
+PERMALINK 
+ Copy 
+RESOURCES 
+ Similar articles
+ Cited by other articles
+ Links to NCBI Databases
+Cite 
+ Copy 
+ Download .nbib 
+ .nbib 
+ Format: 
+ AMA
+ APA
+ MLA
+ NLM
+Add to Collections 
+ Create a new collection 
+ Add to an existing collection 
+ Name your collection
+ * 
+ Choose a collection
+ Unable to load your collection due to an error 
+ Please try again 
+ Add
+ Cancel
+ Follow NCBI
+ NCBI on X (formerly known as Twitter) 
+ NCBI on Facebook 
+ NCBI on LinkedIn 
+ NCBI on GitHub 
+ NCBI RSS feed 
+ Connect with NLM
+ NLM on X (formerly known as Twitter) 
+ NLM on Facebook 
+ NLM on YouTube 
+ National Library of Medicine
+ 8600 Rockville Pike Bethesda, MD 20894 
+ Web Policies
+ FOIA
+ HHS Vulnerability Disclosure
+ Help
+ Accessibility
+ Careers
+ NLM
+ NIH
+ HHS
+ USA.gov
+ Back to Top 

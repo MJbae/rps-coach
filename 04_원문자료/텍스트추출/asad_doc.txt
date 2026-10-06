@@ -1,0 +1,124 @@
+
+Running head: Win-calmness and lose-restlessness
+
+Testing a micro-genesis account of longer-form reinforcement learning 
+(win-calmness and lose-restlessness)
+
+Ahad Asad 1
+Benjamin James Dyson 1,2,3
+
+1 University of Alberta, Canada
+2 University of Sussex, UK
+3 Ryerson University, Canada
+
+Address :	Department Of Psychology
+P-217 Biological Sciences Building
+University of Alberta
+Edmonton
+AB
+T6G 2E9 
+Canada
+E-mail :	 HYPERLINK "mailto:bjdyson@ualberta.ca" bjdyson@ualberta.ca
+
+
+
+Abstract
+	Fundamental reinforcement learning principles such as win-stay and lose-shift represent outcome-action associations between consecutive trials (trial n-1 and n). Longer-form expressions of the tendency to continually repeat previous actions following positive outcomes, and the tendency to continually change previous actions following negative outcomes, have been identified as win-calmness and lose-restlessness, respectively. Across 10 experiments, we tested a micro-genesis account of these phenomena by examining sequential contingencies across trial n-2, n-1 and n using simple game spaces. At a group level, we found no evidence of win-calmness and lose-restlessness when wins could not be maximized (unexploitable opponent). Similarly, we found no evidence of win-calmness and lose-restlessness when the threat of win minimization was presented (exploiting opponent). In contrast, we found evidence of win-calmness (but not lose-restlessness) when win maximization was made possible (exploitable opponent). At a participant level, we confirm that individual win rates determined the degree of win-calmness and lose-restlessness only in contexts were win rates could be maximized. The data identify the mechanisms that allow for the development of longer-form reinforcement learning principles and demonstrate the relative flexibility in decision-space afforded by positive outcomes, and the relative inflexibility in decision-space following negative outcomes. 
+
+
+
+Behaviour is dynamically shaped via the reinforcement learning (operant conditioning) principles of win-stay and lose-shift (Thorndike, 1911). The tendency to repeat actions that produced positive feedback, and, to change actions that produced negative feedback are fundamentally important associations for a number of reasons. First, these close (i.e., trial n-1 on trial n) outcome-action bonds have a stronger effect on performance than any other higher-order bonds (e.g., trial n-2 on trial n; see Kubanek, Snyder & Abrams, 2015; Hillstrom, 2000; Nevo & Erev, 2012). Second, relatively simple win-stay / lose-shift models can outperform more complex reinforcement learning models in accounting for human performance (Lejarraga & Hertwig, 2017; Hassall, 2019). Third, the ability to explicitly represent outcome-action associations close in time and space is commensurate with models of human performance must acknowledge the limitations of our cognitive system (Griessinger & Coricelli, 2015; West & Lebiere, 2001; West et al, 2006). Therefore, focusing on the immediate association between current outcome and future action is both robust and plausible, from a human information-processing perspective.
+Nevertheless, longer-form reinforcement learning principles have been identified that extend the associative chain between multiple outcomes and actions. Specifically, Yechiam, Zahavi & Arditi (2015, p. 1102) identified gain-calmness as the “decreased choice switching following prior tasks producing gains” and loss-restlessness as the “increased tendency to switch choices following prior tasks with losses.” Described in this way, gain-calmness and loss-restlessness represent carry-over effects between tasks whereby the degree of historic success or failure produces shockwaves that determine future performance, with win-stay and lose-shift mechanisms remaining at the heart of these effects. However, in order for gain-calmness and loss-restlessness to manifest between tasks they must first have their genesis within any given task. 
+Across ten experiments using simple competitive game spaces, we test a micro-genesis account of these longer-form reinforcement learning principles at both a group and individual level. Specifically, we operationalize calmness as two stay responses (once between trial n-2 and n-1, and, then again between trial n-1 and n) and restlessness as two shift responses (once between trial n-2 and n-1, and, then again between trial n-1 and n) within a block of trials. Thus, evidence for gain-calmness may be observed at a micro-level if the proportion of calmness (stay-stay) is highest when the outcome of trial n-2 is a win. Similarly, evidence for lose-restlessness may be observed at a micro-level if the proportion of restlessness (switch-switch) is highest when the outcome of trial n-2 is a loss. 
+To begin, we identify game spaces where a computerized opponent operates in accordance with variant of mixed-strategy, thereby guaranteeing unexploitability. This context further guarantees that average win rates should centre around the baseline value determined by the game (i.e., Rock, Paper, Scissors = 33.3%). Consequently, if overall win rates that are greater-than (‘gains’) or less-than (‘losses’) to baseline performance are critical to determining continued behavioural repetition and change (Yechiam et al., 2015) then we should not see any evidence of longer-form stay or shift behaviour being determined by the initial outcome at trial n-2 against unexploitable opponents. 
+
+Experiments 1 - 4
+	Data from 152 participants were reanalyzed from Forder & Dyson (2016), Dyson, Steward, Meneghetti & Forder (2020, Experiment 1), Dyson (2021, Experiment 1), and, Dahal, MacLellan, Vavrek & Dyson (in revision, Experiment 1; (see Table 1 for demographic information and block x trial structure). In all cases, participants played Rock, Paper, Scissors against an unexploitable opponent where wins, losses and draws were assigned the numeric value +1, -1 and 0, respectively. Unexploitability was operationalized by distributing Rock, Paper, Scissors responses equally across the block size (33.3%) but in random order. Most importantly, participants never encountered any other form of opponent in these studies. This serves as a direct test as to the degree to which calmness and / or restlessness is influenced from prior outcome when win rates cannot be maximized. 
+Results
+Participants were rejected from analysis if they failed to exhibit all combinations of trial n-2 outcome (win, lose, draw) x trial n-1 behaviour (stay, shift; since such missing data prevented the use of a within-participants analysis). Of the initial sample of 152, 149 data sets (98.03%) were retained. In accordance with the unexploitable nature of the opponent, the observed win rate across the sample of 32.97% was not significantly different from the expected win rate of 33.33% (t[148] = -1.16, p = .249). With respect to the proportion of trials representing calmness (here, x stay – stay) where x represents wins, losses and draws, a main effect was shown: F(2,296) = 7.13, MSE = .024, p < .001, ƞp2 = .046. Tukey’s HSD (p < .05) revealed that calmness was significantly less likely following wins (26.62%) relative to both losses (33.20%) and draws (31.27%; see Figure 1a). With respect to the proportion of 
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1	Proportion of calmness (stay – stay) and restlessness (shift – shift) behaviour between trial n-2 to n-1, and, trial n-1 to n as a function of outcome at trial n-2 (win, lose, draw), and the nature of opponency. Error bars represent standard error.trials representing restlessness (here, x shift-shift) where x represents wins, losses and draws, a main effect was again shown: F(2,296) = 27.13, MSE = .002, p < .001, ƞp2 = .155. Tukey’s HSD (p < .05) revealed that restlessness was significantly less likely following losses (34.27%) relative to both wins (38.09%) and draws (36.58%). Therefore, neither win-calmness nor lose-restlessness were apparent under conditions against an unexploitable opponent where win rates could not be maximized.
+Experiments 5 – 10
+	Six new experiments from our lab were analysed as further tests of the micro-genesis account of win-calmness nor lose-restlessness. Experiment 5 – 10 consisted of participants completing 2 blocks against an unexploitable opponent (defined as per Experiments 1-4) and either 2 blocks against an exploiting opponent, or, 2 blocks against an exploitable opponent, in a counterbalanced order. In both exploiting blocks, the computer would generate a response matrix inverse to the participant’s response selections every 3 trials (after Dyson, 2021). For example, if the participants played Rock on the first 3 trials, the computer would play Paper on the next 3 trials and so on. In both exploitable blocks, the computer expressed the same bias for one of the items (66.67%), with the specific item bias also counterbalanced across participants (see also Dyson et al., 2018). Addition manipulations involving display information present within Experiments 5 – 10 were collapsed for the purposes of this analysis. As before, wins, losses and draws were assigned the numeric value +1, -1 and 0, respectively.
+	In Experiments 1 – 4, participants were only exposed to unexploitable opponents. In contrast in Experiment 5 – 10, participants were exposed to unexploitable opponents and either exploiting or exploitable opponents. This allowed us to answer two further questions. First, we attempt to replicate the absence of win-calmness and lose-restlessness as a result of unexploitable opponency, but within the larger context of other opponent types. Whether the nature of opponency bled into unexploitable contexts was deemed a critical consideration, given the putative cross-task expression of win-stay and lose-shift mechanics (Dyson et al., 2020; Yechiam et al., 2015). Second, we assessed the degree of win-calmness and lose-restlessness where win rates could decrease or increase from baseline via engagement with exploiting and exploitable opponency, respectively. If any form of win rate deviation from baseline was a sufficient condition for the expression of calmness or restlessness, then we should see such behaviour in evidence irrespective of whether the opponent is exploiting or exploitable. However if only elevated win rate determined win-calmness and lose-restlessness, then such behaviour should only be observed in the case of exploitable opponents. 
+Results
+A total of 208 participants were initially available for analysis from exploiting (n = 100) and exploitable (n = 108) experiments. From this initial sample, 84.13% (n = 175) were retained for calmness and restless analysis for unexploitable opponents, in accordance with the criteria specified for Experiments 1-4. Observed win rates against unexploitable opponents were not significantly difference between the two contexts (33.08% vs. 32.99%): t[206] = 0.83, p = .835. Once again, in accordance with unexploitable opponency, neither was significantly different from 33.33% (t[99] = -0.70, p = .488, and, t[107] = -1.03, p = .307). 
+
+
+Unexploitable opponency in the context of other opponents
+Calmness (here, x stay – stay) was once again assessed using the within-participant factor of outcome (x: win, lose and draw) and the between-participant factor of context (exploiting, exploitable) using a mixed ANOVA. A significant main effect of context: F(1,173) = 12.94, MSE = .084, p < .001, ƞp2 = .070 revealed increased calmness against unexploitable opponent during exploitable (40.26%) relative to exploiting (31.14%) contexts. The significant main effect of outcome: F(2,346) = 5.71, MSE = .017, p = .004, ƞp2 = .032, replicated the observation that calmness was significantly less likely following wins (33.35%) relative to both losses (37.69%) and draws (36.91%). There was no significant interaction: F(2,346) = 1.80, MSE = .017, p = .167, ƞp2 = .010 (see Figure 1b). 
+Restlessness (here, x shift - shift) was analysed in a similar way, revealing only a main effect of outcome: F (2,348) = 35.67, MSE = .002, p < .001, ƞp2 = .170. Again, restlessness was significantly less likely following losses (32.71%) relative to both wins (36.76%) and draws (35.96%; Tukey’s HSD, p < .05).  Neither the main effect of context: F(1,174) = 2.64, MSE = .010, p = .106, ƞp2 = .015, nor the interaction: F(2,348) = 1.24, MSE = .002, p = .291, ƞp2 = .007, was significant (see Figure 1b). 
+Collectively, these data replicate the observations from Experiment 1-4, in that under conditions where win rate minimization was threatened, neither win-calmness nor lose-restlessness were apparent.
+Exploitable versus exploiting opponents
+	75.48% (n = 157) of data were retained for subsequent analysis. Win rates were significantly different between exploiting (34.18%) and exploitable (43.78%) opponents: t[155] = 10.98, p < .001. Exploiting (t[83] = 2.06, p = .042) and exploitable (t[72] = 11.65, p < .001) opponent win rates were different from the expected baseline value of 33.33%. Calmness (stay – stay) behaviour was examined as a function of the within-participants factor outcome (win, lose, draw), and, the between-participants factor opponent (exploiting, exploitable) using a mixed ANOVA. The main effect of opponency was significant: F(1,155) = 60.26, MSE = .090, p < .001, ƞp2 = .280, the main effect of outcome was not significant: F (2,310) = 0.94, MSE = .018, p = .391, ƞp2 = .006, and, there was a significant interaction between opponency x outcome: F(2,310) = 11.86, MSE = .018, p < .001, ƞp2 = .071. Calmness was significantly higher against exploitable (50.71%) versus exploiting (29.16%) opponents. The interaction was caused by calmness being numerically less likely following wins (25.88%) relative to losses (31.67%) and draws (29.94%) against exploiting opponents (Tukey’s HSD p > .05), but significantly more likely following wins (56.05%) relative to both losses (48.30%) and draws (47.78%) against exploitable opponents (Tukey’s HSD p < .05; see Figure 1c). 
+A similar analysis using restlessness (shift - shift) showed a significant main effect of opponent: F(1,155) = 9.07, MSE = .009, p = .003, ƞp2 = .055, a significant main effect of outcome: F(2,310) = 58.67, MSE = .002, p < .001, ƞp2 = .275, but no interaction: F(2,310) = 2.42, MSE = .002, p = .091, ƞp2 = .015. Here, restlessness was greater during exploiting opponents (35.62%) relative to exploitable opponents (33.00%). As in all other analyses, restlessness was significantly less likely following losses (31.44%) relative to both wins (37.32%) and draws (34.43%).
+Discussion 
+	According to Yechiam et al. (2015), longer-form reinforcement learning associations may arise where tendencies to maintain responding are facilitated by previous exposure to success (win-calmness), whereas tendencies to change responding are facilitated by previous exposure to failure (lose-restlessness). We tested a micro-genesis account of these longer-form associations by analysing the contingencies between trial triplets (n-2, n-1, n) within blocks and as a function of opponency. 
+	We reliably saw that when observed win rates could not be maximized, neither win-calmness nor lose-restlessness were in evidence. In fact, the data generated by exclusively unexploitable contexts is best characterised as lose-calmness and win-restlessness (Experiment 1-4; see Figure 1a). When unexploitable opponents were encountered in the context of other exploiting opponents, the latter did not impact on behaviour against the former (Experiments 5-10; see Figure 1b, solid line). However, when unexploitable opponents were played in the context of other exploitable opponents, the degree of calmness rose (Experiments 5-10; see Figure 1b, dotted line). This shows that the promise of win maximization – rather than the threat of win minimization – allows for cognitive transactions across blocks. Fundamental differences between human cognition as a function of win maximization (rather than win minimization) was further manifest in the direct comparison between exploiting and exploitable opponents. Here, exploiting opponents yielded data equivalent to that generated by unexploitable opponents: lose-calmness and win-restlessness (Experiments 5-10; see Figure 1c, solid line). In stark contrast, when the promise of win maximization was available via exposure to exploitable opponents, win-calmness was clearly in evidence at the micro-level (Experiments 5-10; see Figure 1c, dotted line). 
+
+Figure 2	Scatterplots of win-calmness (stay – stay) and lose-restlessness (shift – shift) behaviour as a function of individual win rate, and the nature of opponency
+To further support that win maximization is the mechanism by which longer-form reinforcement learning expressions were manifest, we examined performance across all 10 experiments (n = 357) at an individual level. Here, the degree of win-calmness and loss-restlessness was correlated with win rate across the five categories of opponency discussed (unexploitable, unexploitable in the context of exploiting, unexploitable in the context of exploitable, exploiting, exploitable; see Figures 2a-e). Only against exploitable opponents do we observe a positive correlation between win-calmness and win rate (r = .631, p < .001), and, a negative correlation between lose-restlessness and win rate (r =-.339, p = .003). Moreover, the difference between these correlations was also significantly different (z = 6.48, p < .001).
+In sum, the expression of longer-form behavioural calmness and restlessness is the result of micro-transactions between trials in accordance with classic reinforcement learning principles of win-stay and lose-shift.  That calmness and restlessness are also differentially expressed at both group and individual levels is consistent with the multiple anatomical (Thapa & Gruber, 2018), evolutionary (Bolles, 1970; West & Lebiere, 2001) and behavioural (Kubanek et al., 2015) observations that punishment and reinforcement are distinct. Specifically, periods of behavioural inertia as a result of success (win-calmness) are much more apparent (and more closely tied to individual win rate experience) than periods of behavioural reconfiguration following failure (lose-restlessness). That it should be so. The organism may enjoy the repetition of their opponent’s exploitation, but must engage in explorative behaviour when the mental model of opponent exploitation is elusive (Dyson et al., 2018) or they themselves run the risk of exploitation.  That inflexible restlessness behaviour should be most likely following negative rather than positive behaviour outcomes places a pin for future research, as does the pursuit of more aggressive styles of exploiting opponency. References
+Bolles, R.C. (1970). Species-specific defence reactions and avoidance learning. Psychological Review, 77, 32-48.
+Dahal, R., MacLellan, K., Vavrek, D. & Dyson, B. J. (in revision). Behavioural profiles as a function of competitive outcome: Draws are simultaneously positive and negative, rather than neutral. Journal of Experimental Psychology: General. 
+Dyson, B. J., Steward, B. A., Meneghetti, T. & Forder, L. (2020). Behavioural and neural limits in competitive decision making: The roles of outcome, opponency and observation. Biological Psychology, 149: 107778.
+Dyson, B. J. (2021). Variability in competitive decision-making speed and quality against exploiting and exploitative opponents. Scientific Reports. 
+Dyson, B. J., Sundvall, J., Forder, L. & Douglas, S. (2018). Failure generates impulsivity only when outcomes cannot be controlled. Journal of Experimental Psychology: Human Perception and Performance, 44, 1483-1487.
+Forder, L. & Dyson, B. J. (2016). Behavioural and neural modulation of win-stay but not lose-shift strategies as a function of outcome value in Rock, Paper, Scissors. Scientific Reports, 6: 33809.
+Griessinger, T. & Coricelli, G. (2015). The neuroeconomics of strategic interaction. Current Opinion in Behavioural Sciences, 3, 73-79.
+Hassall, C. (2019). The neural correlates of exploration. Unpublished doctoral thesis: University of Victoria.
+Hillstrom, A. (2000). Repetition effects in visual search. Perception & Psychophysics, 62, 800-817.
+Kubanek, J., Snyder, L. H. & Abrams, R. A. (2015). Reward and punishment act as distinct factors in guiding behavior. Cognition, 139, 154-167.
+Lejarraga, T. & Hertwig, R. (2017). How the threat of losses makes people explore more than the promise of gains. Psychonomic Bulletin and Review, 24, 708-720.
+Nevo, I. & Erev, I. (2012). On surprise, change, and the effects of recent outcomes. Frontiers in Psychology, 3: 24. 
+Thapa, R. & Gruber, A. J. (2018). Lesions of ventrolateral striatum eliminate lose-shift but not win-stay behaviour in rats. Neurobiology of Learning and Memory, 155, 446-451. 
+Thorndike, E.L. (1911). Animal Intelligence. New York, Macmillan.
+Yechiam, E., Zahavi, G. & Arditi, E. (2015). Loss restlessness and gain calmness: Durable effects of losses and gains on choice switching. Psychonomic Bulletin and Review, 22, 1096-1103.
+West, R.L. & Lebiere, C. (2001). Simple games as dynamic, coupled systems: randomness and other emergent properties. Journal of Cognitive Systems Research, 1, 221–239.
+West, R.L., Lebiere, C. & Bothell, D. J. (2006). Cognitive architectures, game playing and human evolution. In R. Sun (Ed.) Cognition and multi-agent interaction: From cognitive modeling to social simulation (pp. 102-123). Cambridge University Press: Cambridge.
+Table 1		
+Summary statistics from those individuals who volunteered demographic information 
+____________________________________________________________________________________________
+							n 	Female		Age			Blocks x Trials
+Experiments 1 - 4
+Dahal et al. (in revision, Experiment 1)	40	xx		xx.xx (x.xx)		1 x 120
+Dyson (2021, Experiment 1) 		40	28		19.03 (1.10)		3 x 120 		
+Dyson et al. (2020; Experiment 1)		36	29		21.31 (3.51)		1 x 225 
+Forder & Dyson (2016)			36	30		21.22 (3.96)		3 x 150
+Experiments 5 - 10
+Experiment 5					36	xx		xx.xx (x.xx)		4 x 90
+Experiment 6					36	xx		xx.xx (x.xx)		4 x 90		
+Experiment 7					36	xx		xx.xx (x.xx)		4 x 90
+Experiment 8					36	xx		xx.xx (x.xx)		4 x 90
+Experiment 9					36	xx		xx.xx (x.xx)		4 x 90
+Experiment 10					36	xx		xx.xx (x.xx)		4 x 90 _______________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+Win-calmness and lose-restlessness				
+
+
+ PAGE   \* MERGEFORMAT 18
+
+
+
+

@@ -1,0 +1,410 @@
+
+ Neural decoding of competitive decision-making in Rock–Paper–Scissors - PMC
+ Skip to main content
+ An official website of the United States government
+ Here's how you know 
+ Here's how you know 
+ Official websites use .gov 
+ A
+ .gov website belongs to an official
+ government organization in the United States.
+ Secure .gov websites use HTTPS 
+ A lock (
+ Lock 
+ Locked padlock icon
+ ) or https:// means you've safely
+ connected to the .gov website. Share sensitive
+ information only on official, secure websites.
+ Search
+ Log in 
+ Dashboard
+ Publications
+ Account settings
+ Log out
+ Search…
+ Search NCBI
+ Primary site navigation
+ Search
+ Logged in as:
+ Dashboard
+ Publications
+ Account settings
+ Log in
+ Search PMC Full-Text Archive 
+ Search in PMC 
+ Journal List
+ User Guide
+PERMALINK 
+ Copy 
+ As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+ the contents by NLM or the National Institutes of Health. 
+ Learn more:
+ PMC Disclaimer 
+ |
+ PMC Copyright Notice
+ Soc Cogn Affect Neurosci . 2025 Sep 30;20(1):nsaf101. doi: 10.1093/scan/nsaf101 
+ Search in PMC 
+ Search in PubMed 
+ View in NLM Catalog 
+ Add to search 
+Neural decoding of competitive decision-making in Rock–Paper–Scissors 
+ Denise Moerel 
+ Denise Moerel 
+ 1 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+Conceptualization, Formal analysis, Methodology, Writing - original draft, Writing - review & editing 
+Find articles by Denise Moerel 
+ 1, ✉ , Tijl Grootswagers 
+ Tijl Grootswagers 
+ 2 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 3 
+School of Computer, Data and Mathematical Sciences, Western Sydney University, Sydney, 2751, Australia 
+Conceptualization, Methodology, Writing - review & editing 
+Find articles by Tijl Grootswagers 
+ 2, 3 , Jessica L L Chin 
+ Jessica L L Chin 
+ 4 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+Investigation, Writing - review & editing 
+Find articles by Jessica L L Chin 
+ 4 , Francesca Ciardo 
+ Francesca Ciardo 
+ 5 
+Department of Psychology, University of Milan-Bicocca, Milan, 20126, Italy 
+Investigation, Writing - review & editing 
+Find articles by Francesca Ciardo 
+ 5 , Patti Nijhuis 
+ Patti Nijhuis 
+ 6 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 7 
+Department of Music, Arts and Culture Studies, Centre of Excellence in Music, Mind, Body and Brain, University of Jyväskylä, Jyväskylä, 40014, Finland 
+Investigation, Writing - review & editing 
+Find articles by Patti Nijhuis 
+ 6, 7 , Genevieve L Quek 
+ Genevieve L Quek 
+ 8 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+Methodology, Writing - review & editing 
+Find articles by Genevieve L Quek 
+ 8 , Sophie Smit 
+ Sophie Smit 
+ 9 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+Methodology, Writing - review & editing 
+Find articles by Sophie Smit 
+ 9 , Manuel Varlet 
+ Manuel Varlet 
+ 10 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 11 
+School of Psychology, Western Sydney University, Sydney, 2751, Australia 
+Conceptualization, Methodology, Writing - review & editing 
+Find articles by Manuel Varlet 
+ 10, 11 
+ Author information 
+ Article notes 
+ Copyright and License information 
+ 1 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 2 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 3 
+School of Computer, Data and Mathematical Sciences, Western Sydney University, Sydney, 2751, Australia 
+ 4 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 5 
+Department of Psychology, University of Milan-Bicocca, Milan, 20126, Italy 
+ 6 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 7 
+Department of Music, Arts and Culture Studies, Centre of Excellence in Music, Mind, Body and Brain, University of Jyväskylä, Jyväskylä, 40014, Finland 
+ 8 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 9 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 10 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia 
+ 11 
+School of Psychology, Western Sydney University, Sydney, 2751, Australia 
+ ✉ 
+Corresponding author: The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Locked Bag 1797, Penrith, 2751, Australia. E-mail: d.moerel@westernsydney.edu.au 
+Roles 
+ Denise Moerel : Conceptualization, Formal analysis, Methodology, Writing - original draft, Writing - review & editing 
+ Tijl Grootswagers : Conceptualization, Methodology, Writing - review & editing 
+ Jessica L L Chin : Investigation, Writing - review & editing 
+ Francesca Ciardo : Investigation, Writing - review & editing 
+ Patti Nijhuis : Investigation, Writing - review & editing 
+ Genevieve L Quek : Methodology, Writing - review & editing 
+ Sophie Smit : Methodology, Writing - review & editing 
+ Manuel Varlet : Conceptualization, Methodology, Writing - review & editing 
+Received 2025 Apr 30; Revised 2025 Sep 11; Accepted 2025 Sep 23; Collection date 2025. 
+© The Author(s) 2025. Published by Oxford University Press. 
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License ( https://creativecommons.org/licenses/by/4.0/ ), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. 
+ PMC Copyright notice 
+PMCID: PMC12628313  PMID: 41026861 
+Abstract 
+Social interactions are fundamental to daily life, yet social neuroscience research has often studied individuals’ brains in isolation. Hyperscanning, the simultaneous recording of neural data from multiple participants, enables real-time investigation of social processes by examining multiple brains while they interact. Previous hyperscanning research has largely focused on cooperative tasks, with fewer studies examining competitive contexts. Here, we obtained electroencephalography (EEG) hyperscanning data from 62 participants (31 pairs) who played a computerised version of the Rock–Paper–Scissors game, a classic paradigm for studying competitive decision-making. Although the optimal strategy is to be unpredictable and thus act randomly, participants exhibited behavioural biases, deviating from this ideal. Using multivariate decoding methods to measure neural representations within the two players’ brains in interaction, we found information about decisions made by participants during gameplay, revealing certain strategies. Notably, losers uniquely represented information about prior trials, suggesting this may impair optimal performance. These results reveal how competitive decision-making is shaped by cognitive biases and previous outcomes, highlighting the difficulty of achieving randomness in strategic contexts. This work advances our understanding of decision-making and cognitive dynamics in competitive interactions. 
+ Keywords: EEG, hyperscanning, decision-making, decoding, competition 
+Introduction 
+Social interactions form a crucial part of our daily lives. Although studies in the field of social neuroscience have predominantly focused on individual participants during passive tasks, for example, observing facial expressions and interactive behaviours ( Krumhuber et al. 2023 , McMahon and Isik 2023 ), there has been a recent shift towards multi-brain or hyperscanning methods as they allow for the study of neural processes underlying real-time social interactions ( Redcay and Schilbach 2019 , Lehmann et al. 2023 ). In this approach, neural data are recorded simultaneously from two or more participants interacting in real-time, enabling investigations of how brains dynamically respond and coordinate with one another ( Dumas et al. 2010 , Czeszumski et al. 2020 , Zamm et al. 2024 ). Previous hyperscanning work has advanced our understanding of human cooperative activities in which brains constantly need to monitor and predict one’s own and others’ actions ( Tognoli et al. 2007 , Dumas et al. 2010 , Keller et al. 2014 , Varlet et al. 2020 , Cheng et al. 2024 , Moreau et al. 2024 , Zamm et al. 2024 ). However, less research has investigated competitive activities ( Babiloni et al. 2007 , Cui et al. 2012 , Sinha et al. 2016 , Balconi and Vanutelli 2017 , Nam et al. 2020 ). Importantly, whereas cooperation requires behavioural predictability to facilitate the anticipation of each other’s actions and intentions, competition often requires behavioural unpredictability to gain an advantage ( Vesper et al. 2011 , Glover and Dixon 2017 ). The current study investigates the neural processes underpinning decision performance in competitive activities. 
+Previous hyperscanning research has primarily focused on interbrain synchrony—the alignment of neural activity between interacting individuals—which has been shown to scale up with the level of cooperation ( Fallani et al. 2010 , Toppi et al. 2016 , Hu et al. 2018 ). A few studies that directly compared interbrain synchrony in cooperative and competitive contexts have suggested that competition might be at the very end of this continuum, with evidence for stronger interbrain synchrony during cooperation compared to competition found using electroencephalography (EEG; Sinha et al. 2016 , Chuang and Hsu 2023 ) and (functional) near-infrared spectroscopy (fNIRS; Cui et al. 2012 , Lu et al. 2019 ). For example, Sinha et al. (2016) used a computerised pong game to show increased interbrain synchrony when participants played as a team against the computer program, compared to when participants played against one another ( Sinha et al. 2016 ). The authors suggested that the difference in interbrain synchrony could in part be explained by participants having different strategies to defeat the opponent in the competition condition. Another study revealed interbrain coupling during cooperation and interbrain decoupling during competition when comparing true teams to shuffled team labels ( Chuang and Hsu 2023 ). Together, these results suggest that enhanced interbrain synchrony in cooperative compared to competitive settings could be driven by shared representations of one’s own and others’ actions, intentions, strategies, goals, etc. during cooperation, that are not present during competition. 
+However, these studies do not directly provide insight into what information about self and other is represented in the neural signal during competitive scenarios. Here we leverage multivariate analysis methods on EEG hyperscanning data to investigate how the human brain encodes self- and other-related information during the Rock–Paper–Scissors game to better understand the cognitive processes supporting decision performance during real-time interaction in a competitive context. Importantly, hyperscanning enabled the investigation of the processes behind winning or losing in the Rock–Paper–Scissors game, as it requires studying the cognitive and neural dynamics of the two players together in interaction. Moreover, the use of multivariate analyses on hyperscanning data allowed going beyond interbrain synchrony to more directly track neural representations related to self and other within interacting brains, consistent with the argument that understanding the neural bases of social interactions with hyperscanning requires analysis at multiple levels, between but also within brains ( Zamm et al. 2024 ). 
+The Rock–Paper–Scissors game is a widely used model for studying social interaction in a competitive context, where wins, losses, or draws have equal probability for each player. The optimal strategy for both players is to be as random, and therefore unpredictable, as possible ( West and Lebiere 2001 , Zhou 2016 ). However, humans rarely achieve randomness ( Neuringer 1986 , Treisman and Faulkner 1987 , Figurska et al. 2008 ) and instead, biases or strategies emerge during this game ( Dyson 2019 ). This includes over-selection of one option–typically Rock–adopting outcome-based strategies such as the ‘win-stay, lose-shift’ strategy, or employing cycle-based strategies, where players rotate through the options ( Dyson 2019 ). Humans are generally poor at being random, as evidenced by recurring patterns in the way we move, and decisions and errors we make ( Riley and Turvey 2002 , Figurska et al. 2008 , Torre et al. 2013 , Varlet and Richardson 2015 , Miyata et al. 2017 , Zhu et al. 2022 ), although this depends on the task and feedback ( Neuringer 1986 , Nickerson 2002 , Riley and Turvey 2002 , Varlet et al. 2012 , Guseva et al. 2023 ). By combining the Rock–Paper–Scissors game with decoding methods on EEG data, we can track the neural information about participant’s decisions, as well as the expected decisions of their opponent and information about the previous choices of self and other. Therefore, this game can serve as a useful model to investigate the neural processes underlying strategic decision-making in a competitive context that requires randomness. 
+Recent hyperscanning studies using fNIRS reported increased interbrain synchrony while participants played Rock–Paper–Scissors compared to rest, with effects observed in the right dorsolateral prefrontal cortex ( Kayhan et al. 2022 , Zhang et al. 2024 ), as well as the left dorsolateral prefrontal cortex and temporo-parietal junction ( Kayhan et al. 2022) . However, when using the more stringent comparison of playing the game alone, rather than rest, only the right temporo-parietal junction showed increased interbrain synchrony during the joint task ( Kayhan et al. 2022) . This suggests that observed effects in some areas could be driven largely by shared response-related processes ( Burgess 2013 , Holroyd 2022 , Varlet and Grootswagers 2024 ). In addition, interbrain synchrony levels did not increase when participants made explicit predictions about the outcome, aiming for either the same (cooperative condition) or a different (competitive condition) outcome as the other player, compared to when participants made implicit predictions (free play) ( Kayhan et al. 2022) . This suggests that interbrain synchrony was not sensitive to explicitly making predictions about the likely action of the other player and leaves open questions about the role of prediction in social decision-making contexts. As interbrain synchrony methods are activation-based, they cannot directly measure what information related to the decision or prediction is encoded in the brain. In this study, we leverage multivariate analysis methods as a powerful alternative ( Varlet and Grootswagers 2024 , Zada et al. 2024 , Moerel et al. 2025 ), combining these methods with the high temporal resolution of EEG hyperscanning to specifically capture self-other decision-related information within each player’s brain at different task stages during competitive social interactions. Specifically, for each participant, we assess the time-course of the presence of neural information about (i) the response decision of the participant, (ii) the prediction about the likely response of the opponent, and (iii) the knowledge about previous events, related to both self and other. Furthermore, these neural representations were compared between overall match winners and losers to understand how they might drive success. 
+We tested 31 pairs of participants playing a computerised version of the classic Rock–Paper–Scissors game. We recorded 64-channel EEG, while each pair played 480 games total. Behavioural results corroborated previous research, showing that participant’s responses were not fully random, even though randomness is the best strategy in this competitive game ( West and Lebiere 2001 , Zhou 2016 , Glover and Dixon 2017 ). Multivariate decoding methods on the EEG signals revealed the neural encoding of players’ own decisions in the current trial. Additionally, information about the participant’s own decision on the previous trial, as well as that of the opponent, was also encoded in the neural signal, but only for individuals who lost the overall match, suggesting that maintaining prior-trial information could have potentially hindered performance. These findings provide new insights into self-other neural processes supporting decision-making and the influence of cognitive biases and priors in competitive social settings. 
+Results 
+Behavioural strategies and biases 
+We continuously recorded 64-channel EEG data from 62 participants, grouped into 31 pairs, using the BioSemi Active-Two electrode system (BioSemi, Amsterdam, The Netherlands). Participants were seated at a computer in separate rooms and played 480 games of a computerised version of the Rock–Paper–Scissors game. In each game, both players choose between Rock, Paper, or Scissors. The outcome of the game was determined by three rules ( Fig. 1a ): Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. If both players choose the same response, the game is a tie. For each player, wins, losses, or draws therefore have equal probability. An overview of the experiment is shown in Fig. 1b . Each game consisted of three phases: Decision (2s), Response (2s) and Feedback (1s), which allowed a stage-wise analysis of information in the EEG responses time-locked to each stage without interference from future stages ( Moerel et al. 2024 ). During the Decision phase, the participants could decide which response to select. During the Response phase, participants selected their response (Rock, Paper, or Scissors), and during the Feedback phase, the outcome of the game was displayed. 
+Figure 1. 
+ Open in a new tab 
+Task overview and behavioural responses. (a) The rules of the game as shown to the participants. Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. The three options are displayed as a cartoon of the hand shapes associated with the game. Rock was displayed as a fist, Paper as an open hand, and Scissors as a fist with the index and middle fingers extended. Images were sourced online from www.dreamstime.com . (b) Each game consisted of three phases. In the Decision phase (left panel), participants saw a fixation cross with the prompt to “Make a decision” for 2 s. In the Response phase (middle panel), participants saw the three options with a prompt to “Select your response.” The order of the three options was randomized for each participant and block. Participants used the buttons on a button box to select their response. In the Feedback phase (right panel), participants received feedback about the response of player 1 on the left and player 2 on the right. Feedback about the outcome was displayed above as “Player 1 wins,” “Player 2 wins,” or “Draw.” The feedback was shown for 1 s. (c) The distribution of the three possible game outcomes over pairs: the overall match winner wins (left), the overall match winner loses (middle), and draw (right). The white line on the box plot shows the median, each dot shows one pair. Theoretical chance is 33.3%. (d) The raincloud plots show the distribution of how often the most, mid, and least chosen responses are played. The closer to 33.3%, the less bias there is. The dots show individual participants instead of pairs. The pie charts above show for each response frequency (most, mid, and least chosen) the proportion of Rock, Paper, and Scissors responses: 51.61% of participants had Rock as their most played response, followed by Paper (33.87%), and Scissors (14.52%). (e) The percentage of games where the response changes across two consecutive games, split by the outcome of the previous game: after a win (left), loss (middle), or draw (right). All plotting conventions are the same as in (c), but theoretical chance is 66.7%. (f) The accuracy of a Markov chain in predicting which response a player will make. This can be used as a measure of how predictable the responses of the participants are. The x-axis shows the different window sizes of the Markov chain. Thin lines show individual participants, the thick line shows the group average and the shaded area around the group average shows the 95% confidence interval. Theoretical chance is 33.3%. 
+The behavioural results revealed that selected responses were not completely random and that biases and strategies across players varied. Figure 1c shows the distribution of the three possible game outcomes for each pair: the overall match winner wins the game, the overall match winner loses the game, and the game is a tie. The overall match winner is defined as the person with the greatest number of wins out of the full 480 games. The distribution across pairs shows that although there was a clear winner for some pairs, the overall match winner and loser performed very similar in many pairs. Figure 1d shows the distribution of how often the most, mid, and least chosen responses are played. The closer to 33.3%, the less bias there was. The data illustrate that there was a spread in participants’ bias towards one option. The pie charts in Fig. 1d show separately for the most, mid, and least chosen responses the proportion of Rock, Paper, and Scissors responses. In line with previous work ( Xu et al. 2013 , Wang et al. 2014 , Dyson et al. 2016 , Forder and Dyson 2016 ), there was a bias towards Rock, 51.61% of participants had Rock as their most played response, followed by Paper (33.87%). Only 14.52% of participants had Scissors as their most played response. We also assessed the change between two consecutive responses, with a completely random player having a 33.3% chance of playing the same response twice in a row. Figure 1e shows the chance of a game-to-game response change, split by the outcome of the previous game. Many participants were biased towards changing their response, regardless of the outcome of the previous game. Finally, Fig. 1f shows the predictability of each player, as obtained via a Markov chain using various number of previous games. An accuracy of 33.3% means the responses of the player are completely unpredictable, which would be the best strategy. The data show that most participants were not completely unpredictable, as the Markov chain accuracy was above chance. These findings highlight a variation in participants’ strategies and responses, revealing individual biases. 
+Neural decoding of player and opponent decisions 
+We used linear discriminant analysis classifiers to investigate if there was information in the EEG signal about (i) the response made by the player, (ii) the response made by the other player, (iii) the player’s response in the prior trial, and (iv) the response of the other player in the prior trial. We did this separately for each 250 ms time bin and each participant using a 10-fold cross validation ( Grootswagers et al. 2017 ). We divided the data into 10 folds (i.e. subsets), trained the classifier using the data from all-but-one subset, and tested on the left-out subset. We repeated this 10 times, leaving out a different subset each time. We removed no-response trials and created 20 pseudo trials for each fold and response by averaging 4 trials belonging to the same fold and response type before decoding to enhance the signal to noise ratio ( Grootswagers et al. 2017 , Scrivener et al. 2023 ). For the channel searchlight, we repeated the same analysis for each individual channel and 4 to 5 neighbouring channels, to obtain topographies of the decoding accuracy. The results are shown in Fig. 2 and provide evidence that information about the player’s own response was encoded in the EEG signal during the Decision phase (max BF = 57) as well as the Response phase (max BF = 729,735) and the Feedback phase (max BF = 16,028), as indicated by the Bayes Factors. There was no information about the other player’s response during the Decision and Response phases, suggesting the players were not able to determine the likely response of their opponent above chance. However, the EEG signal contained information about the other player’s response during the Feedback phase (max BF = 87,847), likely reflecting the visually presented feedback about the response of their opponent. In addition, there was evidence that the player’s own previous response was encoded during the Decision phase (max BF = 8), and anecdotal evidence during the Response phase (max BF = 4), suggesting that information about the previous response could be used during the decision-making on the current trials. Finally, there was information about the other player’s previous response during the Decision phase (max BF = 16,659), suggesting this information was incorporated in the decision about which move to play. These results show the EEG data contain information about the player’s current and previous decisions, as well as information about the previous decisions of the other player. Moreover, the topographies show that the encoding of current and previous decisions during the Decision and Response phases is driven by distributed responses across the brain. This contrasts with the Feedback phase, where we see a strong contribution of posterior channels to the above chance decoding, in line with more visually driven responses, as participants receive visually presented feedback about their own, as well as their opponent’s response. These spatial distributions are in line with the decoding accuracies in the Decision and Response phases being driven by decision-related information. 
+Figure 2. 
+ Open in a new tab 
+EEG decoding accuracy of the player’s own responses and those of their opponent. The plotting conventions are the same for all four plots showing the classification accuracy over time for the three phases: Decision (0–2 s, orange), Response (2–4 s, red), and Feedback (4–5 s, purple). Decoding accuracies are obtained for 250 ms time bins. We used a linear classifier to determine whether there was information in the pattern across the EEG channels about (a) the response the player chose (b) the response played by the opponent, (c) the response the player chose on the previous trial, and (d) the response the opponent chose on the previous trial. Shaded areas around the plot lines show 95% confidence intervals. The Bayes Factors are shown below the plot on a logarithmic scale. Bayes Factors below 1 are plotted in blue colours and show evidence for chance decoding, and Bayes Factors above 1 are plotted in red colours and show evidence for above chance decoding, with the colour intensity reflecting the evidence for either hypothesis. The topographies, based on a channel searchlight, are shown below the Bayes Factors. We obtained a topography for each 250 ms time bin in the decoding and then collapsed across 1-s time bins. Lighter colours reflect higher decoding accuracies. 
+To assess whether the information that was present in the brain was modulated by whether the player won or lost over the entire experiment, we split the decoding accuracies for the overall match winners and losers ( Fig. 3 ). The player’s own response was encoded in the EEG signal during the Response and Feedback phases for both winners (max BF = 573) and losers (max BF = 3,337). Both groups showed neural information about the other player’s response during the Feedback phase only. Importantly, the results indicated that only losers showed neural encoding of their own previous response during the Response phase (max BF = 11), and of the other player’s previous response during the Decision phase (max BF = 2,382). Although inter-group Bayes Factors did not provide direct evidence of strong differences between winners and losers—indeed, most Bayes Factors showed evidence for no difference between these groups, which could be explained by the scores of the winners and losers often being very close—our results nevertheless suggest that losers encoded self and other information from previous trials, whereas winners did not. 
+Figure 3. 
+ Open in a new tab 
+EEG decoding accuracy of the player’s own responses and those of their opponent, split by overall match winners and losers. The plotting conventions are the same as in Fig. 2 . We split the decoding accuracies presented in Fig. 2 by overall match winners (blue) and losers (green). We determined whether there is information in the pattern across the EEG channels about (a) the response selected by the player, (b) the response made by the other player, (c) the player’s response in the previous trial, and (d) the other player’s response in the previous trial. 
+Discussion 
+In this study, we investigated how the brain encodes self-other decision-related information during the competitive Rock–Paper–Scissors game. In line with previous research our participants did not act fully random, even though unpredictability is the best strategy in this competitive game ( West and Lebiere 2001 , Zhou 2016 , Glover and Dixon 2017 ). There were variations between players, but Rock was generally over-selected and Scissors under-selected. This finding has been widely observed in previous work ( Xu et al. 2013 , Wang et al. 2014 , Dyson et al. 2016 , Forder and Dyson 2016 ). In addition, participants switched their response from trial-to-trial in a more or less predictable way, regardless of whether they won or lost on the previous trial. These behavioural biases have been observed previously in this game ( Dyson 2019 ), and are in line with other work that suggests people are not able to consciously generate random actions ( Neuringer 1986 , Treisman and Faulkner 1987 , Issartel et al. 2007 , Figurska et al. 2008 ). 
+EEG hyperscanning data revealed that there was neural information about the player’s own current response during all phases of the task, driven by the decision the participant had to make. This information was already present in the Decision phase, before the participant was asked to respond, suggesting we were able to track the decision-making of the participant as it unfolded in real-time. There was no above-chance decoding of the opponent’s decision during the Decision or Response phases. This suggests that at the level of the group, participants could not reliably predict the next move of their opponent. This finding fits with the previous hyperscanning literature, that found weaker interbrain synchrony during competition compared to cooperation ( Cui et al. 2012 , Sinha et al. 2016 , Lu et al. 2019 ), as well as evidence for interbrain coupling during cooperation and interbrain decoupling during competition when comparing true teams to shuffled team labels ( Chuang and Hsu 2023 ). This suggests that during cooperation, participants may form a shared representation of goals, intentions, or actions of self and other, facilitated by behavioural predictability. However, during competition, behavioural unpredictability is advantageous ( Vesper et al. 2011 , Glover and Dixon 2017 ), potentially driving a reduction in shared representations and therefore interbrain synchrony. Our results indeed showed that participants were too unpredictable for their opponents to reliably encode their next move. Finally, above chance decoding of the previous responses of self and other show that the brain actively encodes knowledge about previous trials during the Decision phase of the current trial. In determining their response on the current game, participants likely rely on what their opponent played, and to a lesser extent, what they themselves played in the previous game. This study adds to the findings from the hyperscanning literature by directly assessing the content of the neural representations about self and other, enabling us to distinguish between neural information about decisions, expectations about the opponent, and knowledge about previous interactions. 
+To gain insight into the neural representations that may underlie successful versus unsuccessful competitive behaviour, we tracked self- and other-related neural representations within the brains of winners compared to losers. While decoding results split by overall match winners and losers showed no differences in neural coding of decision-related information, we did find a different signature of decoding results between the two groups. Small differences in wins and losses in some pairs suggest that chance, not strategy, determined the winner, likely adding noise and obscuring potential group differences. Specifically, we found that whereas we could track the decision-making on the current trial for both the winners and losers, only the overall match losers encoded information about what they played themselves and what the other player chose on the previous trial. This suggests that losers likely incorporated information about the previous game, whereas this was not the case for the overall match winners. This reliance on previous responses, both of self and other, might hinder these participants, as the best strategy is to be as random, and therefore unpredictable, as possible ( West and Lebiere 2001 , Zhou 2016 , Glover and Dixon 2017 ). By comparing the individual neural representations of winners and losers, rather than focusing on interbrain synchrony, this study provides more direct insight into which self- and other-related representations are associated with a competitive advantage. 
+Previous work on the Rock–Paper–Scissors game has used fNIRS to investigate prediction-related processes ( Kayhan et al. 2022 , Zhang et al. 2024 ). Although the results showed increased interbrain synchrony during the interactive task compared to playing the game alone, this measure did not increase when making explicit predictions ( Kayhan et al. 2022) . Previous work has also found increased interbrain synchrony in various regions when playing the game compared to rest ( Kayhan et al. 2022 , Zhang et al. 2024 ), but these findings could be driven by shared response-related processes ( Burgess 2013 , Holroyd 2022 , Varlet and Grootswagers 2024 ). In a recent study, Varlet and Grootswagers (2024) showed that interbrain synchrony measures are not sensitive to the information contained in the neural data. To address this, they introduced Interbrain RSA, a multivariate analysis method designed to assess the alignment of information across participants’ neural signals. Building on this, we used decoding, a complementary multivariate approach ( Grootswagers et al. 2017 ), to show that we can track the decision-related information about the responses of the participant and their opponent at different stages in the task. While the limited response options in our design precluded the use of Interbrain RSA, we show that decoding methods are highly effective in capturing decision-related neural information, highlighting the potential of this method for hyperscanning research as an extension of Interbrain RSA ( Varlet and Grootswagers 2024 , Moerel et al. 2025 ). Unlike interbrain synchrony measures, which often rely on control conditions where participants are at rest or do not interact, the decoding method in this study leverages direct comparisons of neural activation associated with distinct response options. This makes decoding less susceptible to confounds such as shared visual or response-related information, offering a promising method to study neural processes underpinning real-time social interactions, in both cooperative and competitive settings, including in atypical populations ( Charman 2003 , Sebanz et al. 2006 , Coey et al. 2012 , Varlet et al. 2014 , Raffard et al. 2015 , MacRitchie et al. 2017 , Moreau et al. 2024 , Zhang et al. 2024 ). 
+In conclusion, multivariate pattern analyses of EEG hyperscanning data enabled us to reveal how the human brain encodes self-other decision-related information over time during a competitive Rock–Paper–Scissors game. Despite the optimal strategy being randomness, players displayed critical behavioural biases and predictable strategies. EEG data showed neural encoding of current decisions, with overall match losers uniquely relying on past trials, potentially hindering performance. These findings highlight the challenge of overcoming cognitive biases and reliance on prior outcomes for effective decision-making during competitive social interaction. 
+Methods 
+Participants 
+Sixty-eight participants, grouped into 34 pairs, took part in the EEG study at Western Sydney University. Three EEG datasets were excluded from the analysis: two datasets had an issue with CMS which resulted in no EEG data for one of the players, and another dataset did not contain triggers. The sample included in this dataset consisted of 31 pairs (62 participants). Participants in this sample were 38 females/22 males/2 non-binary, 55 right-handed/6 left-handed/1 ambidextrous, mean age 27.85 years, SD = 6.73 years, range 18–47 years. All participants reported normal or corrected-to-normal vision. The EEG session took approximately 2 hours in total to complete, and participants received a payment of $60 AUD. The study was approved by the Human Ethics Committee of the University of Western Sydney, and all participants provided written informed consent ( H13092 ). 
+Stimuli and experiment 
+During the experiment, the two participants in each pair played a computerised version of the competitive Rock–Paper–Scissors game. Participants were seated behind a computer screen in separate rooms. In each game, both players choose between Rock, Paper, or Scissors. The outcome of the game is determined by three rules ( Fig. 1b ): Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. If both players choose the same response, the game is a tie. For each player, wins, losses, or draws therefore have equal probability. 
+An overview of the experiment is shown in Fig. 1c . Each game consisted of three phases: Decision (2s), Response (2s) and Feedback (1s), allowing us to assess decision-related information in the EEG signal at each stage without interference from future stages ( Moerel et al. 2024 ). The Decision screen consisted of a central fixation cross and a prompt to “Make a decision.” During this phase, the participants could decide which response to select. During the Response phase, participants saw a prompt to “Select your response,” and the three options were displayed as a cartoon of the hand shapes associated with the game ( Fig. 1a ); Rock was displayed as a fist, Paper as an open hand, and Scissors as a fist with the index and middle fingers extended, forming a V. The order of the Rock, Paper, and Scissors images was chosen at random for each participant and each block but stayed the same for all games within a block. During this phase, participants used a 3-button box to select their response. The order of the three stimuli on the screen indicated the mapping between the buttons and responses, and the response mapping therefore changed between blocks. This means that taking together the data from the whole experiment, the EEG signal was minimally contaminated by motor preparation and/or execution signals. The Response screen automatically timed out after 2 s, even if no response was given by one or both of the participants. The Response phase was followed by the Feedback phase, where the outcome of the game was displayed for 1 s. Participants saw the response of player 1 on the left of the screen, and the response of player 2 on the right of the screen. If no response was given, “No Response” was displayed. The outcome was displayed above the response images, as “Player 1 wins,” “Player 2 wins,” or “Draw.” If one of the participants did not respond, the other participant won the game. 
+The experiment consisted of 480 games of Rock–Paper–Scissors, divided into 12 blocks of 40 games, and took approximately 45 minutes to complete. The experiment was displayed on a mid-grey background using a VIEWPixx monitor at 120 Hz, using custom C++ code. Participants were seated approximately 60 cm from the screen. The images were displayed at 324 by 324 pixels (approximate 8.20 by 8.20 degrees of visual angle) and the fixation cross was 54 by 54 pixels (approximate 1.37 by 1.37 degrees of visual angle). 
+EEG acquisition and pre-processing 
+We collected continuous EEG data from 64 channels, digitised at a sampling rate of 2048 Hz, using the BioSemi Active-Two electrode system (BioSemi, Amsterdam, The Netherlands). Electrode placement followed the international 10-20 system (Oostenveld and Praamstra 2001). We applied the following pre-processing steps, using the FieldTrip toolbox (version 20240110) in MATLAB (Oostenveld et al., 2011). First, we re-referenced the data to the common average, and epoched the data from 200 ms before the onset of the Decision screen to 5000 ms after the onset of the Decision screen. The onset of each trial, in seconds as well as samples, can be found in the events.tsv file. We did not apply filtering, as this has been shown to cause artefacts or temporally smear the signal ( Grootswagers et al. 2017 , van Driel et al. 2021 , Delorme 2023 ). We identified noisy channels through visual inspection, which can also be found in the participants.tsv file. We interpolated noisy channels based on neighbouring channels, using the ft_channelrepair function with a distance measure of 0.5  in normalised sensor space. We then down-sampled the data to 256 Hz. Finally, we made three separate epochs for each trial, locked to the onset of the Decision screen (−200 to 2000 ms), Response screen (−200 to 2000 ms), and Feedback screen (−200 to 1000 ms) respectively. We applied baseline corrections for each separate epoch, using the window from −200 m to 0 ms, locked to the screen onset. We then averaged the resulting data into 250 ms time bins, resulting in a total of 20 time bins for the 0 to 5000 ms time-course. 
+Behavioural analysis 
+To examine the behavioural responses recorded during the EEG session, we performed the following analyses. To assess the difference in performance between winners and losers, we obtained the distribution of game outcomes across pairs, categorising results as wins for the overall match winner, wins for the overall match loser, or ties. We examined the response bias by analysing how frequently the most, mid, and least chosen responses were played. To explore this further, we looked at the proportion of Rock, Paper, and Scissors responses separately for the most, mid, and least chosen responses. Additionally, we assessed the distribution of response changes between consecutive responses, split by the outcome of the previous game. Finally, we used a Markov chain model ( Norris 1998 ) with varying window sizes (5 to 100 previous games, in steps of 1) to predict each player’s most likely response. We then calculated the prediction accuracy as a measure of response predictability for each ( Oostenveld et al. 2011 ) participant. Together, these analyses provide insight into the strategies, response biases, and predictability of the participants. 
+Decoding analysis 
+We used a time-varying brain decoding analysis ( Grootswagers et al. 2017 ) implemented using the CoSMoMVPA toolbox (version 1.1.0) ( Oosterhof et al. 2016 ) to determine whether there was information about the response decisions made by the player and opponent, based on the raw activation values across the 64 EEG channels. Specifically, we used a regularised (λ = 0.01) linear discriminant analysis (LDA) classifier to determine if there was information about (i) the response made by the player, (ii) the response made by the other player, (iii) the player’s response in the prior trial, and (iv) the response of the other player in the prior trial. We opted for this classifier as it provides a good balance between performance and computational requirements ( Grootswagers et al. 2017 , Guggenmos et al. 2018 ). Before decoding, we removed no-response trials and made 20 pseudo trials for each fold and response (Rock, Paper, or Scissors) by averaging 4 trials of the same fold and response to enhance the signal to noise ratio ( Grootswagers et al. 2017 , Scrivener et al. 2023 ). We then trained a linear classifier to distinguish between the different classes of interest (e.g. the different responses made by the player) based on the pattern of activation across all 64 EEG channels. We used the EEG channel voltages, separate for each trial and time bin, as features for the decoding. We did this separately for each individual participant. We used a 10-fold cross validation, where we split the dataset into 10 parts (i.e. folds). We trained the linear classifier on the data from 9 of those folds and then tested the classifier performance on the left-out fold. We did this in an iterative fashion, where each fold was left out as a test fold once. We then calculated the classifier accuracy, separately for each individual participant and time bin, by determining the percentage of times the classifier predicted the correct class (e.g. response is Rock). We calculated the decoding accuracy separately for each of the 3 possible responses and then averaged these measures to obtain the decoding accuracy for each time bin. If the classification accuracy is higher than would be predicted by chance, we can say that there is information in the neural response about the condition that is decoded. To ensure that motor signals were not a reliable signal for the classifier, distinguishing between the different response options during the Response phase, we changed the response button mapping between blocks. A given response option (e.g. Rock) was therefore associated with all response buttons in the training data. In addition, the mapping between the responses and buttons differed between the participants in the dyad, which means any similarity in responses between individuals in the dyad would not translate into similarities in motor preparation or execution. Together, these measures eliminated the chance of motor contamination in the decoding. For the channel searchlight, we repeated the same analysis above for individual clusters of channels. Each cluster consisted of the main channel and 4 or 5 neighbouring channels. 
+Statistics 
+To determine whether there was evidence for above chance decoding of decision-related information, we used Bayesian statistics ( Kass and Raftery 1995 , Wagenmakers 2007 , Rouder et al. 2009 , Dienes 2011 , Morey et al. 2016 ), with the Bayes Factor R package ( Morey and Rouder 2018 ). To calculate the Bayes Factors, we applied Bayesian directional t -tests for each time bin. We used the method described by Teichmann et al. (2022) , using a null interval between d  = 0 and d  = 0.5 to exclude small effect sizes. To calculate Bayes Factors for the difference between the overall match winners and losers, we used a two-tailed t -test. 
+Contributor Information 
+Denise Moerel, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia. 
+Tijl Grootswagers, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia; 
+School of Computer, Data and Mathematical Sciences, Western Sydney University, Sydney, 2751, Australia. 
+Jessica L L Chin, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia. 
+Francesca Ciardo, 
+Department of Psychology, University of Milan-Bicocca, Milan, 20126, Italy. 
+Patti Nijhuis, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia; 
+Department of Music, Arts and Culture Studies, Centre of Excellence in Music, Mind, Body and Brain, University of Jyväskylä, Jyväskylä, 40014, Finland. 
+Genevieve L Quek, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia. 
+Sophie Smit, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia. 
+Manuel Varlet, 
+The MARCS Institute for Brain, Behaviour and Development, Western Sydney University, Sydney, 2751, Australia; 
+School of Psychology, Western Sydney University, Sydney, 2751, Australia. 
+Author contributions 
+Denise Moerel(Conceptualization [Equal], Formal analysis [Lead], Methodology [Equal], Writing—original draft [Lead], Writing—review & editing [Equal]), Tijl Grootswagers(Conceptualization [Equal], Methodology [Equal], Writing—review & editing [Equal]), Jessica L.L. Chin(Investigation [Equal], Writing—review & editing [Equal]), Francesca Ciardo(Investigation [Equal], Writing—review & editing [Equal]), Patti Nijhuis(Investigation [Equal], Writing—review & editing [Equal]), Genevieve Quek(Methodology [Equal], Writing—review & editing [Equal]), and Sophie Smit(Methodology [Equal], Writing—review & editing [Equal]), Manuel Varlet(Conceptualization [Equal], Methodology [Equal], Writing—review & editing [Equal]). 
+Conflict of interest: None declared. 
+Funding 
+This research was supported by an Australian Research Council Discovery Project DP220103047 (M.V.), an Australian Research Council Discovery Early Career Researcher Award DE230100380 (T.G.), and H2020 Marie Skłodowska-Curie grant (F.C.; agreement no. 893960). 
+Data availability 
+All analysis codes and figures are publicly available via the Open Science Framework, at https://doi.org/10.17605/OSF.IO/YJXKN . The data are named and organised according to the BIDS standard ( Gorgolewski et al. 2016 , Pernet et al. 2019 ). The raw data underlying this article are available via OpenNeuro, at https://doi.org/10.18112/openneuro.ds006761.v1.0.0 . . 
+References 
+Babiloni F, Astolfi L, Cincotti F, et al. Cortical activity and connectivity of human brain during the prisoner’s dilemma: An EEG hyperscanning study. In: 2007 29th Annual International Conference of the IEEE Engineering in Medicine and Biology Society , 2007, 4953–4956. 10.1109/IEMBS.2007.4353452 [ DOI ] [ PubMed ] 
+Balconi M, Vanutelli ME.  Cooperation and competition with hyperscanning methods: Review and future application to emotion domain. Front Comput Neurosci  2017;11:86.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Burgess AP.  On the interpretation of synchronization in EEG hyperscanning studies: a cautionary note. Front Hum Neurosci  2013;7:881. 10.3389/fnhum.2013.00881
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Charman T.  Why is joint attention a pivotal skill in autism?  Philos Trans R Soc Lond B Biol Sci  2003;358:315–24. 10.1098/rstb.2002.1199
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Cheng S, Wang J, Luo R  et al.  Brain to brain musical interaction: a systematic review of neural synchrony in musical activities. Neurosci Biobehav Rev  2024;164:105812.
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Chuang C-H, Hsu H-C.  Pseudo-mutual gazing enhances interbrain synchrony during remote joint attention tasking. Brain Behav  2023;13:e3181. 10.1002/brb3.3181
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Coey CA, Varlet M, Richardson MJ.  Coordination dynamics in a socially situated nervous system. Front Hum Neurosci  2012;6:164.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Cui X, Bryant DM, Reiss AL.  NIRS-based hyperscanning reveals increased interpersonal coherence in superior frontal cortex during cooperation. Neuroimage  2012;59:2430–7. 10.1016/j.neuroimage.2011.09.003
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Czeszumski A, Eustergerling S, Lang A  et al.  Hyperscanning: a valid method to study neural inter-brain underpinnings of social interaction. Front Hum Neurosci  2020;14:39. 10.3389/fnhum.2020.00039
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Delorme A.  EEG is better left alone. Sci Rep  2023;13:2372. 10.1038/s41598-023-27528-0
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Dienes Z.  Bayesian versus orthodox statistics: Which side are you on? Perspect Psychol Sci  2011;6:274–90. 10.1177/1745691611406920
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Dumas G, Nadel J, Soussignan R  et al.  Inter-brain synchronization during social interaction. PLoS One  2010;5:e12166. [Database][ 10.1371/journal.pone.0012166]
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Dyson BJ.  Behavioural isomorphism, cognitive economy and recursive thought in Non-Transitive game strategy. Games (Basel)  2019;10:32. Article 3. 10.3390/g10030032 [ DOI ] [ Google Scholar ] 
+Dyson BJ, Wilbiks JMP, Sandhu R  et al.  Negative outcomes evoke cyclic irrational decisions in rock, paper, scissors. Sci Rep  2016;6:20479. 10.1038/srep20479
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Fallani FDV, Nicosia V, Sinatra R  et al.  Defecting or not defecting: How to “read” human behavior during cooperative games by EEG measurements. PLoS One  2010;5:e14187. 10.1371/journal.pone.0014187
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Figurska M, Stańczyk M, Kulesza K.  Humans cannot consciously generate random numbers sequences: Polemic study. Med Hypotheses  2008;70:182–5. 10.1016/j.mehy.2007.06.038
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Forder L, Dyson BJ.  Behavioural and neural modulation of win-stay but not lose-shift strategies as a function of outcome value in rock, paper, scissors. Sci Rep  2016;6:33809. 10.1038/srep33809
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Glover S, Dixon P.  The role of predictability in cooperative and competitive joint action. J Exp Psychol Hum Percept Perform  2017;43:644–50. 10.1037/xhp0000362
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Gorgolewski KJ, Auer T, Calhoun VD  et al.  The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. Sci Data  2016;3:160044. 10.1038/sdata.2016.44
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Grootswagers T, Wardle SG, Carlson TA.  Decoding dynamic brain patterns from evoked responses: a tutorial on multivariate pattern analysis applied to time series neuroimaging data. J Cogn Neurosci  2017;29:677–97. 10.1162/jocn_a_01068
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Guggenmos M, Sterzer P, Cichy RM.  Multivariate pattern analysis for MEG: a comparison of dissimilarity measures. Neuroimage  2018;173:434–47. 10.1016/j.neuroimage.2018.02.044
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Guseva M, Bogler C, Allefeld C  et al.  Instruction effects on randomness in sequence generation. Front Psychol  2023;14:1113654. 10.3389/fpsyg.2023.1113654
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Holroyd CB.  Interbrain synchrony: on wavy ground. Trends Neurosci  2022;45:346–57. 10.1016/j.tins.2022.02.002
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Hu Y, Pan Y, Shi X  et al.  Inter-brain synchrony and cooperation context in interactive decision making. Biol Psychol  2018;133:54–62. 10.1016/j.biopsycho.2017.12.005
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Issartel J, Marin L, Cadopi M.  Unintended interpersonal co-ordination:“can we march to the beat of our own drum?” Neurosci Lett  2007;411:174–9.
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Kass RE, Raftery AE.  Bayes factors. J Am Stat Assoc  1995;90:773–95. 10.1080/01621459.1995.10476572 [ DOI ] [ Google Scholar ] 
+Kayhan E, Nguyen T, Matthes D.  Interpersonal neural synchrony when predicting others’ actions during a game of rock-paper-scissors. Sci Reports  2022;12(1), 12967. 10.1038/s41598-022-16956-z [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Keller PE, Novembre G, Hove MJ.  Rhythm in joint action: psychological and neurophysiological mechanisms for real-time interpersonal coordination. Phil Trans R Soc B  2014;369:20130394. 10.1098/rstb.2013.0394
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Krumhuber EG, Skora LI, Hill HC  et al.  The role of facial movements in emotion recognition. Nat Rev Psychol  2023;2:283–96. [ Google Scholar ] 
+Lehmann K, Bolis D, Friston KJ  et al.  An active-inference approach to second-person neuroscience. Perspect Psychol Sci  2023;19:931–51. 10.1177/17456916231188000
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Lu K, Xue H, Nozawa T  et al.  Cooperation makes a group be more creative. Cereb Cortex  2019;29:3457–70. 10.1093/cercor/bhy215
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+MacRitchie J, Varlet M, Keller PE.  Embodied expression through entrainment and co-representation in musical ensemble performance. In: The Routledge Companion to Embodied Music Interaction. Routledge, New York, 2017, 150–159. https://www.taylorfrancis.com/chapters/edit/10.4324/9781315621364-17/embodied-expression-entrainment-co-representation-musical-ensemble-performance-jennifer-macritchie-manuel-varlet-peter-keller [ Google Scholar ] 
+McMahon E, Isik L.  Seeing social interactions. Trends Cogn Sci  2023;27:1165. https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(23)00248-6 
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Miyata K, Varlet M, Miura A  et al.  Modulation of individual auditory-motor coordination dynamics through interpersonal visual coupling. Sci Rep  2017;7:16220.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Moerel D, Grootswagers T, Quek GL  et al. Information alignment between interacting brains. bioRxiv, 2025.01.07.631802, 2025. 10.1101/2025.01.07.631802 [ DOI ] 
+Moerel D, Rich AN, Woolgar A.  Selective attention and decision-making have separable neural bases in space and time. J Neurosci  2024;44. 10.1523/JNEUROSCI.0224-24.2024 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Moreau Q, Brun F, Ayrolles A  et al.  Distinct social behavior and inter-brain connectivity in dyads with autistic individuals. Soc Neurosci  2024;19:124–36. 10.1080/17470919.2024.2379917
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Morey RD, Romeijn J-W, Rouder JN.  The philosophy of bayes factors and the quantification of statistical evidence. J Math Psychol  2016;72:6–18. 10.1016/j.jmp.2015.11.001 [ DOI ] [ Google Scholar ] 
+Morey RD, Rouder JN.   BayesFactor: Computation of Bayes Factors for Common Designs , 2018. https://CRAN.R-project.org/package=BayesFactor 
+Nam CS, Choo S, Huang J  et al.  Brain-to-brain neural synchrony during social interactions: a systematic review on hyperscanning studies. Appl Sci  2020;10:6669. 10.3390/app10196669 [ DOI ] [ Google Scholar ] 
+Neuringer A.  Can people behave “randomly?”: the role of feedback. Journal of Experimental Psychology: General  1986;115:62–75. 10.1037/0096-3445.115.1.62 [ DOI ] [ Google Scholar ] 
+Nickerson R.  The production and perception of randomness. Psychol Rev  2002;109:330–57. 10.1037/0033-295X.109.2.330
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Norris JR.  Markov Chains. Cambridge University Press, 1998. [ Google Scholar ] 
+Oostenveld R, Fries P, Maris Eet al.  FieldTrip: Open source software for advanced analysis of MEG, EEG, and invasive electrophysiological data. Computational Intelligence and Neuroscience  2011;2011:1–9. 10.1155/2011/156869
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Oostenveld R, Praamstra P.  The five percent electrode system for high-resolution EEG AND ERP measurements. Clinical Neurophysiology  2001;112:713–9. 10.1016/S1388-2457(00)00527-7
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Oosterhof NN, Connolly AC, Haxby JV.  CoSMoMVPA: Multi-Modal multivariate pattern analysis of neuroimaging data in matlab/GNU octave. Front Neuroinform  2016;10:27. 10.3389/fninf.2016.00027
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Pernet CR, Appelhoff S, Gorgolewski KJ  et al.  EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Sci Data  2019;6:103. 10.1038/s41597-019-0104-8
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Raffard S, Salesse RN, Marin L  et al.  Social priming enhances interpersonal synchronization and feeling of connectedness towards schizophrenia patients. Sci Rep  2015;5:8156.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Redcay E, Schilbach L.  Using second-person neuroscience to elucidate the mechanisms of social interaction. Nat Rev Neurosci  2019;20:495–505. 10.1038/s41583-019-0179-4
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Riley MA, Turvey MT.  Variability and determinism in motor behavior. J Mot Behav  2002;34:99–125. 10.1080/00222890209601934
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Rouder JN, Speckman PL, Sun D  et al.  Bayesian t tests for accepting and rejecting the null hypothesis. Psychon Bull Rev  2009;16:225–37. 10.3758/PBR.16.2.225
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Scrivener CL, Grootswagers T, Woolgar A. Optimising analysis choices for multivariate decoding: Creating pseudotrials using trial averaging and resampling. BioRXiv 2023;2023–10. [ DOI ] [ PMC free article ] [ PubMed ] 
+Sebanz N, Bekkering H, Knoblich G.  Joint action: Bodies and minds moving together. Trends Cogn Sci  2006;10:70–6.
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Sinha N, Maszczyk T, Wanxuan Z  et al. EEG hyperscanning study of inter-brain synchrony during cooperative and competitive interaction. In: 2016 IEEE International Conference on Systems, Man, and Cybernetics (SMC) 2016;004813–8. 10.1109/SMC.2016.7844990 [ DOI ] 
+Teichmann L, Moerel D, Baker CI  et al.  An empirically-driven guide on using bayes factors for M/EEG decoding. Apert Neuro  2022;1:1–10. 10.1101/2021.06.23.449663 [ DOI ] [ Google Scholar ] 
+Tognoli E, Lagarde J, DeGuzman GC  et al.  The phi complex as a neuromarker of human social coordination. Proc Natl Acad Sci U S A  2007;104:8190–5. 10.1073/pnas.0611453104
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Toppi J, Borghini G, Petti M  et al.  Investigating cooperative behavior in ecological settings: an EEG hyperscanning study. PLoS One  2016;11:e0154236. 10.1371/journal.pone.0154236
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Torre K, Varlet M, Marmelat V.  Predicting the biological variability of environmental rhythms: Weak or strong anticipation for sensorimotor synchronization?  Brain Cogn  2013;83:342–50.
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Treisman M, Faulkner A.  Generation of random sequences by human subjects: cognitive operations or psychological process?  J Exp Psychol Gen  1987;116:337–55. 10.1037/0096-3445.116.4.337 [ DOI ] [ Google Scholar ] 
+van Driel J, Olivers CNL, Fahrenfort JJ.  High-pass filtering artifacts in multivariate classification of neural time series data. J Neurosci Methods  2021;352:109080. 10.1016/j.jneumeth.2021.109080
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Varlet M, Grootswagers T.  Measuring information alignment in hyperscanning research with representational analyses: moving beyond interbrain synchrony. Front Hum Neurosci  2024;18:1385624. 10.3389/fnhum.2024.1385624
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Varlet M, Marin L, Capdevielle D  et al.  Difficulty leading interpersonal coordination: towards an embodied signature of social anxiety disorder. Front Behav Neurosci  2014;8:29.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Varlet M, Marin L, Issartel J  et al.  Continuity of visual and auditory rhythms influences sensorimotor coordination. PLoS One  2012;7:e44082. https://journals.plos.org/plosone/article? id=10.1371/journal.pone.0044082 
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Varlet M, Nozaradan S, Nijhuis P  et al.  Neural tracking and integration of ‘self’and ‘other’in improvised interpersonal coordination. Neuroimage  2020;206:116303.
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Varlet M, Richardson MJ.  What would be usain bolt’s 100-meter sprint world record without tyson gay? Unintentional interpersonal synchronization between the two sprinters. J Exp Psychol Hum Percept Perform  2015;41:36–41. 10.1037/a0038640
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Vesper C, van der Wel RPRD, Knoblich G  et al.  Making oneself predictable: Reduced temporal variability facilitates joint action coordination. Exp Brain Res  2011;211:517–30. 10.1007/s00221-011-2706-z
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Wagenmakers E-J.  A practical solution to the pervasive problems ofp values. Psychon Bull Rev  2007;14:779–804. 10.3758/BF03194105
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Wang Z, Xu B, Zhou H-J.  Social cycling and conditional responses in the Rock-Paper-Scissors game. Sci Rep  2014;4:5830. 10.1038/srep05830
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+West RL, Lebiere C.  Simple games as dynamic, coupled systems: randomness and other emergent properties. Cogn Syst Res  2001;1:221–39. 10.1016/S1389-0417(00)00014-0 [ DOI ] [ Google Scholar ] 
+Xu B, Zhou H-J, Wang Z.  Cycle frequency in standard rock–paper–scissors games: Evidence from experimental economics. Physica A  2013;392:4997–5005. 10.1016/j.physa.2013.06.039 [ DOI ] [ Google Scholar ] 
+Zada Z, Goldstein A, Michelmann S  et al.  A shared model-based linguistic space for transmitting our thoughts from brain to brain in natural conversations. Neuron  2024;112:3211–22.e5. 10.1016/j.neuron.2024.06.025
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Zamm A, Loehr JD, Vesper C  et al.  A practical guide to EEG hyperscanning in joint action research: from motivation to implementation. Soc Cogn Affect Neurosci  2024;19:nsae026.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Zhang Y, Ye W, Yin J  et al.  Exploring the role of mutual prediction in inter-brain synchronization during competitive interactions: an fNIRS hyperscanning investigation. Cereb Cortex  2024;34:bhad483. 10.1093/cercor/bhad483
+ [ DOI ] [ PubMed ] [ Google Scholar ] 
+Zhou H-J.  The rock–paper–scissors game. Contemp Phys  2016;57:151–63. 10.1080/00107514.2015.1026556 [ DOI ] [ Google Scholar ] 
+Zhu J-Q, León-Villagrá P, Chater N  et al.  Understanding the structure of cognitive noise. PLoS Comput Biol  2022;18:e1010312.
+ [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+Associated Data 
+ This section collects any data citations, data availability statements, or supplementary materials included in this article. 
+Data Availability Statement 
+All analysis codes and figures are publicly available via the Open Science Framework, at https://doi.org/10.17605/OSF.IO/YJXKN . The data are named and organised according to the BIDS standard ( Gorgolewski et al. 2016 , Pernet et al. 2019 ). The raw data underlying this article are available via OpenNeuro, at https://doi.org/10.18112/openneuro.ds006761.v1.0.0 . . 
+Articles from Social Cognitive and Affective Neuroscience are provided here courtesy of Oxford University Press 
+ACTIONS 
+ View on publisher site 
+ PDF (3.2 MB) 
+ Cite 
+ Collections 
+ Permalink 
+PERMALINK 
+ Copy 
+RESOURCES 
+ Similar articles
+ Cited by other articles
+ Links to NCBI Databases
+Cite 
+ Copy 
+ Download .nbib 
+ .nbib 
+ Format: 
+ AMA
+ APA
+ MLA
+ NLM
+Add to Collections 
+ Create a new collection 
+ Add to an existing collection 
+ Name your collection
+ * 
+ Choose a collection
+ Unable to load your collection due to an error 
+ Please try again 
+ Add
+ Cancel
+ Follow NCBI
+ NCBI on X (formerly known as Twitter) 
+ NCBI on Facebook 
+ NCBI on LinkedIn 
+ NCBI on GitHub 
+ NCBI RSS feed 
+ Connect with NLM
+ NLM on X (formerly known as Twitter) 
+ NLM on Facebook 
+ NLM on YouTube 
+ National Library of Medicine
+ 8600 Rockville Pike Bethesda, MD 20894 
+ Web Policies
+ FOIA
+ HHS Vulnerability Disclosure
+ Help
+ Accessibility
+ Careers
+ NLM
+ NIH
+ HHS
+ USA.gov
+ Back to Top 

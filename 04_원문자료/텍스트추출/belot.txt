@@ -1,0 +1,449 @@
+Players of Matching Pennies automatically imitate
+opponents’ gestures against strong incentives
+Michèle Belota, Vincent P. Crawfordb,c,d,1, and Cecilia Heyesc,e
+a
+ School of Economics, University of Edinburgh, Edinburgh EH8 9JT, United Kingdom; bDepartment of Economics, cAll Souls College, University of Oxford,
+Oxford OX1 4AL, United Kingdom; dDepartment of Economics, University of California at San Diego, La Jolla, CA 92093-0508; and eDepartment of
+Experimental Psychology, University of Oxford, Oxford OX1 3UD, United Kingdom
+
+Edited by Jose A. Scheinkman, Princeton University, Princeton, NJ, and approved December 21, 2012 (received for review June 12, 2012)
+
+There is a large body of evidence of apparently spontaneous mim-             tended to lower a subject’s expected payoff. The frequency of
+icry in humans. This phenomenon has been described as “auto-                 draws in the blind-blind condition was as expected at chance, but
+matic imitation” and attributed to a mirror neuron system, but               in the blind-sighted condition it was signiﬁcantly higher, sug-
+there is little direct evidence that it is involuntary rather than in-       gesting that there was an imitation effect, and that it was auto-
+tentional. Cook et al. supplied the ﬁrst such evidence in a unique           matic rather than intentional.
+strategic game design that gave all subjects a pecuniary incentive              Automatic imitation would raise important issues concerning
+to avoid imitation [Cook R, Bird G, Lünser G, Huck S, Heyes C (2012)         how strategic interactions are modeled in game theory and social
+Proc Biol Sci 279(1729):780–786]. Subjects played Rock-Paper-                science. In theoretical analyses of strategic interactions, it is al-
+Scissors repeatedly in matches between ﬁxed pairs, sometimes                 most universally assumed that the timing of decisions is exoge-
+with one and sometimes with both subjects blindfolded. The fre-              nous; timing inﬂuences players’ decisions only via its effect on
+quency of draws in the blind-blind condition was at chance, but in           their information about previous decisions; and all decisions are
+the blind-sighted condition it was signiﬁcantly higher, suggesting           conscious. Timing can make a big difference if some decisions
+automatic imitation had occurred. Automatic imitation would raise            are unconscious when made sequentially under time pressure.
+novel issues concerning how strategic interactions are modeled in            Consider a one-stage Prisoner’s Dilemma game, but possibly
+game theory and social science; however, inferring automatic imi-            with asynchronous decisions to cooperate or defect. In a stan-
+tation requires signiﬁcant incentives to avoid it, and subjects’ incen-      dard analysis of the Prisoner’s Dilemma, both players respond to
+tives were less than 3 US cents per 60-game match. We replaced               their incentives by defecting, and the outcome is worse for both
+Cook et al.’s Rock-Paper-Scissors with a Matching Pennies game,              than if both cooperate; furthermore, because defecting is a
+which allows far stronger incentives to avoid imitation for some             dominant strategy (better for a player no matter what the other
+subjects, with equally strong incentives to imitate for others. Our          player decides), the conclusion would remain the same even with
+results are important in providing evidence of automatic imitation           asynchronous decisions. If, by contrast, decisions are asynchro-
+against signiﬁcant incentives. That some of our subjects had incen-          nous, and this creates sufﬁcient time pressure for the second
+tives to imitate also enables us clearly to distinguish intentional          mover that she or he unconsciously imitates the ﬁrst-mover’s
+responding from automatic imitation, and we ﬁnd evidence that                decision, then a ﬁrst-mover who understands the principles of
+both occur. Thus, our results strongly conﬁrm the occurrence of              the second-mover’s behavior in effect faces a choice between two
+automatic imitation, and illuminate the way that automatic and in-           imitative outcomes: “defect, defect,” the standard Nash equi-
+tentional processes interact in a strategic context.                         librium outcome; and “cooperate, cooperate,” an outcome that
+                                                                             becomes feasible when the second-mover’s unconscious decision
+zero-sum game   | face-to-face strategic interaction | neuroeconomics        overrides her or his incentive to defect, even though it is not an
+                                                                             equilibrium in the standard analysis. A rational ﬁrst-mover will of
+                                                                             course choose to cooperate, knowing that it will induce the sec-
+T   here is a large body of evidence suggesting that observing an
+    action increases the probability that the observer will im-
+mediately perform the same action, even when the observer has
+                                                                             ond-mover to cooperate, yielding an outcome that is better for
+                                                                             both players. The implications for the optimal design of rela-
+not been instructed to imitate and does not obtain any reward                tionship structures, or for predicting the consequences of existing
+from doing so (1–5). This phenomenon has been described as                   structures, may be very important.[Asynchronous timing can
+“automatic imitation” and attributed to the operation of mirror              foster coordination even without observability of earlier deci-
+neurons (6–8). Each of these neurons, ﬁrst discovered in the                 sions (17, 18). However, unlike the automatic imitation of earlier
+monkey premotor and parietal cortex, responds both to the sight              decisions studied here, such timing effects must be intentional.
+                                                                             The novelty of our analysis is that it implies: (i) choice might in
+and execution of a given action (9–11). Since the discovery of
+                                                                             some circumstances be involuntary, (ii) involuntary choices can
+mirror neurons in the monkey, considerable evidence has been
+                                                                             override the incentive constraints that in theory prevent good
+amassed suggesting that humans also have a mirror neuron sys-
+                                                                             outcomes in our Prisoner’s Dilemma and related examples, and
+tem (12, 13).                                                                (iii) involuntary and conscious choices might interact in novel
+   Until recently there was little direct evidence to support the
+                                                                             ways in settings with nontrivial time-sequencing. This implication
+view that automatic imitation is involuntary rather than strategic           enhances the value of experimentally separating intentional from
+or intentional. Even evidence of imitation in infants and non-               automatic imitation.]
+human animals has been construed as intentional (14), and ex-                   However, the evidence reported by Cook et al. (16) is not de-
+perimental techniques that could reliably distinguish automatic              cisive for two reasons. First, inferring automatic imitation requires
+from intentional imitation have been hard to ﬁnd (15). Cook
+et al. supplied the ﬁrst direct evidence in a unique strategic game
+                                                                                                                                                                   PSYCHOLOGICAL AND
+design that gave human subjects a pecuniary incentive to avoid               Author contributions: M.B., V.P.C., and C.H. designed research, performed research,
+imitation (16). Their subjects played Rock-Paper-Scissors (RPS)              analyzed data, and wrote the paper.
+games repeatedly in matches between ﬁxed pairs, sometimes                    The authors declare no conﬂict of interest.
+
+
+                                                                                                                                                                   COGNITIVE SCIENCES
+with one and sometimes with both subjects blindfolded. There                 This article is a PNAS Direct Submission.
+was a money reward for winning each 60-game match but not for                1
+                                                                              To whom correspondence should be addressed. E-mail: vincent.crawford@economics.ox.
+losing or drawing, so that imitation (which produced a draw)                  ac.uk.
+
+
+
+www.pnas.org/cgi/doi/10.1073/pnas.1209981110                                                    PNAS | February 19, 2013 | vol. 110 | no. 8 | 2763–2768
+signiﬁcant incentives to avoid it and, as explained below, close        response selection was not feasible, then a player who saw her or
+examination of Cook et al.’s methods reveals that their subjects        his opponent’s gestures in time could at best avoid imitation but
+were given only very weak incentives to avoid imitation: little         not otherwise select among gestures. In that case, a more plau-
+more than one British penny, less than 3 US cents per 60-game           sible alternative to imitation is not an “optimal outcome,” such
+match. Second, a subsequent study using a similar procedure             as rock against an observed scissors, but rather rock and paper
+failed to replicate the results of the Cook et al. experiment (19).     each with probability 1 in 2 against scissors, yielding expected
+   Testing more rigorously for automatic imitation in a strategic       payoff 0, the same as the payoff from imitation.
+context, we replaced RPS with a Matching Pennies game, which               Although this argument suggests that Cook et al.’s players had
+allows far stronger incentives to avoid imitation for some sub-         no incentive at all to avoid imitation, a subtle “tournament”
+jects, with equally strong incentives to imitate for others. We also    feature of their reward structure did in fact give players a small
+conducted a more ﬁne-grained analysis of players’ behavior, in-         incentive. Players did not receive their payoffs for each game or
+vestigating the effects of experience on automatic imitation. Our       a random subset of games, as is standard in game experiments.
+results are important in providing evidence of automatic imita-         Instead, the players were paid an additional £2.50 for each 60-
+tion against signiﬁcant incentives, greatly strengthening Cook          game match won, with no payment for matches lost or drawn.
+et al.’s inference. That some of our subjects had incentives to         (The players were also paid a £5 show-up fee that did not depend
+imitate also enables us clearly to distinguish intentional respond-     on performance. The experiments were run between September
+ing from automatic imitation, and we ﬁnd evidence that both             2007 and November 2008, with £1 ranging from $1.54 to $2.02.)
+occur. Thus, our results strongly conﬁrm the occurrence of au-          Assuming, for simplicity, that players’ expected numbers of wins
+tomatic imitation, and illuminate the way that automatic and            and losses in a game or a match were equal, the fact that they
+intentional processes interact in a strategic context.                  were paid nothing for drawn matches made their expected ad-
+   To explain and motivate our modiﬁcations of the procedure            ditional winnings per match £1.25 times the probability that the
+used by Cook et al., we need ﬁrst to examine their design more          match was not drawn. Under standard assumptions, the proba-
+closely. Cook et al.’s subjects repeatedly played an RPS game,          bility of drawing a match decreases with the probability of a draw
+which Cook et al. described as follows (16): “In RPS, two players       in any given game in the match. Thus, even though imitation
+each present one of three alternative hand gestures. Each player        does not reduce the expected payoff in a given game of a subject
+must make either ‘rock’ (a closed ﬁst), ‘paper’ (an open hand), or      who can avoid imitation but not otherwise select among gestures,
+                                                                        Cook et al.’s payment scheme creates an incentive to avoid im-
+‘scissors’ (index and middle ﬁnger parted) gestures, typically fol-
+                                                                        itation. However, with 60 games per match, the probability of
+lowing a count of three. A paper gesture beats a rock gesture;
+                                                                        a drawn match is very low, and the incentive to avoid imitation is
+scissors beats paper; and rock beats scissors. If both players make
+                                                                        correspondingly very weak. Cook et al. estimated from a sub-
+the same gesture, the round is drawn (Table 1). In this zero-sum
+                                                                        sidiary, ﬁlmed treatment that a sighted subject could observe her
+game, where one player’s victory (+1) results in the other play-
+                                                                        or his opponent’s gesture in time to respond automatically in
+er’s defeat (−1), the only Nash equilibrium (where each player          17.2% of games. For their payment scheme, for any realistic
+behaves optimally given what all others do) is in mixed strategies.     observation rate (say, less than 40%), the difference between the
+Regardless of which action one player chooses, there would al-          expected payoffs of responding optimally to all observed gestures
+ways be one speciﬁc action for the other player that ensures            and responding randomly is only about £0.0125 per match, less
+a win, and vice versa. This ‘best-response structure’ inherent in       than 3 US cents.
+RPS ensures that players can only achieve optimal outcomes if              To learn whether Cook et al.’s inference that imitation is au-
+they avoid imitating each other.” (Emphasis in original.)               tomatic holds up under more substantial incentives, we modify
+   Cook et al.’s subjects were randomly grouped into triads, with       their design, replacing their RPS game with a Matching Pennies
+two of the three playing the game at any given time and the third       game and rewarding players’ performance game by game
+acting as umpire. In the main condition, one player was blind-          (avoiding subtle tournament incentives).
+folded and the other was sighted. Although the umpire “re-                 Our subjects, like Cook et al.’s, were randomly grouped into
+quired” players to present their gestures simultaneously, there         triads, with two of the three playing the game at any given
+was a naturally occurring asynchrony between the onsets of the          time and the third acting as umpire. In our implementation of
+two players’ gestures, with one sometimes presenting slightly           Matching Pennies, each player starts with one hand in a neutral
+earlier than the other. If it was the blindfolded player who pre-       position, START in Fig. 1. Players are then asked to show either
+sented earlier, the sighted player might have been able to ob-          an OPEN-HAND or a CLOSED-HAND gesture as in Fig. 1,
+serve the blindfolded player’s gesture in time to respond to it.        immediately following a count of three by the umpire. The
+However, Cook et al. argued (16) that “response asynchronies            subject designated as Player 1 in Table 2 wins if her or his and
+long enough to allow intentional response selection would have          the other subject’s gestures are the same, and Player 2 wins if the
+been detected and disqualiﬁed by the umpire.” Even so, when             gestures differ (in either way).
+evaluating the strength of incentives to avoid imitation in their          Matching Pennies is a zero-sum game, where (as in RPS) one
+design, Cook et al. appeared to assume that players who saw             player’s win (yielding payoff 1) results in the other’s loss (payoff
+their opponents’ gestures in time to respond could “achieve             −1), but (unlike in RPS) draws are impossible. The game has no
+optimal outcomes,” (e.g., by playing rock against an observed           Nash equilibria (combinations of strategies in which each player
+scissors, yielding a payoff of 1) (Table 1). However, if intentional    behaves optimally given what the other does) in pure (unran-
+                                                                        domized) strategies: If one player chose a pure strategy (i.e.,
+                                                                        chose one of the two gestures with probability 1), the second
+Table 1. RPS game, where (0,0) denotes a drawn round, (1,−1)            player would have a winning choice and that choice would then
+denotes a win for player 1, and (−1,1) denotes a win for player 2       make the ﬁrst player’s choice suboptimal. There is a unique Nash
+                                                  Player 2              equilibrium in mixed strategies, with each player playing each of
+                                                                        her or his gestures with probability 1 in 2, so that playing each
+                                   Rock           Paper      Scissors   gesture with probability 1 in 2 is also an optimal response for her
+                                                                        or his opponent.
+Player 1          Rock              0,0           −1,1        1,−1
+                                                                           The uniqueness of winning gestures and the fact that there are
+                  Paper            1,−1            0,0        −1,1
+                                                                        only two gestures in Matching Pennies allows us to give some
+                  Scissors         −1,1           1,−1         0,0
+                                                                        players strong incentives to avoid imitation within the game (as
+
+2764 | www.pnas.org/cgi/doi/10.1073/pnas.1209981110                                                                               Belot et al.
+                              Fig. 1. The START (A) position and the OPEN HAND (B) and CLOSED HAND (C) gestures.
+
+
+
+opposed to the match), even if it is possible only for a subject to     expected payoffs of responding optimally in all such games and
+resist imitating, rather than to select among nonimitative ges-         responding randomly is £1.38 per match, more than 100 times
+tures. This factor allows a far stronger test of the hypothesis that    larger than in Cook et al.’s design. Over a subject’s eight matches
+imitation is automatic. Matching Pennies also allows us to give         in our hour-long experiment, the difference is £11.01, or ap-
+other players comparable incentives to imitate, and thereby, in         proximately $17 at the $1.55 exchange rate in December 2011,
+contrast with Cook et al.’s design, the opportunity to ﬁnd out          when we ran our experiments.
+whether incentives can enhance imitation (i.e., to detect intentional
+imitation as well as automatic imitation in a strategic context).       Methods
+   Thus, our experimental procedure was designed to mimic               Our subjects were recruited using Online Recruitment System for Economic
+Cook et al.’s RPS implementation with three major exceptions.           Experiments (21) and included 54 healthy students (21 females), almost all of
+                                                                        whom started studying at Oxford University in 2010 or 2011. All had normal
+First, instead of asking subjects to make rock, paper, or scissors
+                                                                        or corrected-to-normal vision and were naive to the purpose of the exper-
+gestures, we required them to open or close their hand. Cook            iment, although some had presumably studied game theory. The study was
+et al. observed (16) “variability in the salience and distinctiveness   approved by the Nufﬁeld Centre for Experimental Social Sciences Ethics
+of the [RPS] gestures relative to the clenched ﬁst starting posi-       committee and performed in accordance with the ethical standards set out
+tion,” which may have led to their ﬁnding that the imitation ef-        in the 1964 Declaration of Helsinki. Subjects gave informed consent. The
+fect was strongest for the scissors gesture, weaker for rock, and       experiment took place at the Centre for Experimental Social Sciences at
+absent for the paper gesture. In contrast, a number of previous         Nufﬁeld College, Oxford, in a well-lit room. Data were collected over ﬁve
+studies, in which there were no incentives to avoid imitation,          sessions, each lasting ∼60 min.
+                                                                           Detailed instructions were presented to subjects in written handouts at the
+have reported substantial automatic imitation effects for hand
+                                                                        start of the session. The instructions were then read aloud, giving subjects the
+opening and closing (4, 5). Second, the critical comparison in the      opportunity for questions. Using the images in Fig. 1, players were also
+study by Cook et al. was between games in which one player was          shown before the start of the experiment what was required in terms of
+sighted (and therefore subject to automatic imitation) and in           gesture delivery.
+which both players were blindfolded (and therefore immune to               Recall that our subjects, like Cook et al.’s, were randomly grouped into
+automatic imitation). In contrast, although our subjects were also      triads, with two of the three playing the game at any given time and the
+blindfolded in half of their games, the critical comparison was         third acting as umpire. There were a total of 18 triads. Within each triad,
+between the frequency of matching gestures (or of wins) pro-            subjects were randomly assigned labels X, Y, or Z. The members of each triad
+                                                                        were required to play a total of 12 rounds of games, each consisting of 20
+duced by sighted players and chance level. Blindfolded subjects
+                                                                        games of Matching Pennies. In the ﬁrst series of four rounds, series 1 in
+merely presented the gestures that may or may not have been             Table 3, the players were X and Y; in series 2 the players were X and Z; and
+imitated. The frequency of matching responses (and of wins) in          in series 3 the players were Y and Z. In each round one player was “sighted”
+blindfolded subjects was necessarily the complement of the fre-         and the other blindfolded, with these roles alternating as indicated in
+quency of matching responses (and of wins) in their sighted             Table 3. Each series was preceded by three unpaid practice trials, during
+opponents. Third, to ﬁnd out whether subjects can learn to resist       which both players were sighted. In each series the triad member who was
+automatic imitation, our analysis compared players’ behavior in         not a player served as the umpire, recording each game’s gestures and
+earlier and later games. Psychological research suggests that,          outcomes on a paper scoring sheet and announcing them so that the
+                                                                        blindfolded player had the same information as the sighted player. Umpires
+through learning, incentives to match and to mismatch could
+                                                                        were asked to ensure that blindfolded players were unable to see their
+change the way in which players perceive and react to their             opponent and that players were facing each other throughout each round,
+opponents’ gestures, or even provide a “teaching signal” that           to prevent deliberately delayed gesture execution, to note any violations of
+transforms the core mechanisms of automatic imitation (15, 20).         the rules, and to require players to replay any games in which violations
+   As in Cook et al.’s experiment, each of our subjects received        were noted. (The umpire ordered a replay in 6.24% of the games.)
+£5 for participating, independent of performance. Unlike in
+Cook et al.’s experiment, each player received an additional 10p        Results
+per game won, but no further payment for matches won, drawn,            Overall, players executed the OPEN-HAND gesture in 50.01%
+or lost. Thus, a subject who won half of the 160 games she or he        of the rounds and the CLOSED-HAND gesture in 49.99%.
+played would earn an additional £8. If a sighted subject could          Pairwise t tests conﬁrm that players executed the gestures with
+observe her or his opponent’s gesture in time to respond 17.2%          comparable frequencies in each of the four conditions: blind-
+of the time, as Cook et al. estimated, the difference between the       folded vs. sighted, (P = 0.895) and incentive to match vs. to
+                                                                        mismatch (P = 0.339). Note, however, that for the purpose of
+                                                                        signiﬁcance testing, neither the data from individual participants
+Table 2. Matching Pennies game, where (1,−1) denotes a win              nor player pairings can be treated as independent. A player’s
+for player 1 (who wins by matching the other player’s gesture)          matches (or mismatches) in Matching Pennies are perfectly cor-
+and (−1,1) denotes a win for player 2 (who wins by mismatching)         related with her or his opponent’s matches (or mismatches), and
+                                                                                                                                                           PSYCHOLOGICAL AND
+                                                 Player 2               a given subject’s idiosyncrasies could inﬂuence the outcomes of
+                                                                        the two of the three pairings within her or his triad in which she or
+                                     Open hand           Closed hand    he played. In the remaining comparisons, we therefore treat the
+
+                                                                                                                                                           COGNITIVE SCIENCES
+                                                                        data from each triad as a single independent observation.
+Player 1        Open hand               1,−1                −1,1
+                                                                           Table 4 summarizes the matching and win frequencies for
+                Closed hand             −1,1                1,−1
+                                                                        sighted players. Automatic imitation should increase matching
+
+Belot et al.                                                                                  PNAS | February 19, 2013 | vol. 110 | no. 8 | 2765
+                      Table 3. Sequence of 12 rounds played by each triad
+                      Series                                                                              Triad
+
+                      Series 1: player X vs. player Y; X wins if gestures do             Player X blindfolded, player Y sighted
+                        not match; Y wins if gestures match                              Player X sighted, player Y blindfolded
+                                                                                         Player X blindfolded, player Y sighted
+                                                                                         Player X sighted, player Y blindfolded
+                      Series 2: player X vs. player Z; X wins if gestures                Player X blindfolded, player Z sighted
+                        match; Z wins if gestures do not match                           Player X sighted, player Z blindfolded
+                                                                                         Player X blindfolded, player Z sighted
+                                                                                         Player X sighted, player Z blindfolded
+                      Series 3: player Y vs. player Z; Y wins if gestures do             Player Y blindfolded, player Z sighted
+                        not match; Z wins if gestures match                              Player Y sighted, player Z blindfolded
+                                                                                         Player Y blindfolded, player Z sighted
+                                                                                         Player Y sighted, player Z blindfolded
+
+
+
+frequencies above chance for the sighted player independently of               sighted subjects with incentives to mismatch should match their
+the matching incentives. The appropriate test is therefore a one-              opponents’ gestures with frequency p × 0 + q × 1 + (1 − p − q) ×
+tailed t test of the null-hypothesis of frequencies equal chance               0.5 = 0.50 − p/2 + q/2. The difference between these two fre-
+against the alternative hypothesis of frequencies above chance                 quencies is an estimate of p. (Win frequencies contain the same
+(>50%). Sighted players match their opponents’ gestures more                   information and could also be used to estimate p.) Given an
+frequently than random whether they have an incentive to match                 estimate of p, either observed matching frequency yields an es-
+or an incentive to mismatch (one-tailed t test P = 0.032). Sighted             timate of q.
+players therefore win more often over their blindfolded oppo-                     Based on Table 4’s matching frequencies, p = 52.13–50.69% =
+nents when they have an incentive to match, and are at a slight                1.44% and q = 2(52.13–50.00%) – p = 2.82%. This result sug-
+disadvantage when they have an incentive to mismatch. How-                     gests that intentional responses (imitation and counter-imita-
+ever, the frequency of matches is only signiﬁcantly higher than                tion) occurred at a nonnegligible rate, but were only half as
+chance for sighted players with an incentive to match (one-tailed              frequent as automatic ones. The prevalence of automatic over
+t test P = 0.048). It is not signiﬁcant for sighted players with an            intentional imitation explains why sighted players are at a slight
+incentive to mismatch (one-tailed t test P = 0.29).                            disadvantage when they have an incentive to mismatch.
+   Although Table 4’s aggregate matching frequencies may make                     Note that our calibrated estimate of p + q = 4.26% is only
+it seem that there is no signiﬁcant evidence of automatic imita-               a quarter of Cook et al.’s estimate of p + q = q = 17.2%, which
+tion, in our design the correct inference is more subtle and                   was based on videotape observation of response asynchronies.
+depends on the distinction between automatic and intentional                   (Because Cook et al. did not separate intentional from automatic
+responses. Intentional and automatic responses work in the same                imitation, their estimate of q is directly comparable to our esti-
+direction when the sighted player has an incentive to match, but               mate of p + q.) This result suggests that with two response
+they work in opposite directions, partly offsetting each other,                options (open or closed), rather than three (rock, paper, scis-
+when the sighted player has an incentive to mismatch. The rel-                 sors), and therefore less variation in decision time, our subjects
+ative frequencies of intentional and automatic imitation can be                responded simultaneously in a higher proportion of trials. De-
+estimated from the matching frequencies in Table 4 by com-                     spite this increase in response synchrony, we are able to detect
+paring them under different incentive conditions. Although these               both automatic and intentional imitation.
+estimates ignore the issue of statistical signiﬁcance, to which we                We can obtain direct estimates of p and q by performing probit
+return below, they suggest that there is a substantial frequency of            regressions on the likelihood that the sighted player would
+automatic imitation, and probably some intentional imitation                   choose a closed gesture (1) or an open gesture (0), conditioning
+as well.                                                                       on the gesture of the opponent (closed or open), as well as an
+   Formally, let p be the frequency that in a given game, the                  interaction between the gesture of the opponent and the players’
+blindfolded subject presents sufﬁciently earlier to enable the                 incentives to match or mismatch. The coefﬁcient corresponding
+sighted subject to respond (imitate or counter-imitate) in-                    to the opponent’s gesture captures the automatic imitation effect
+tentionally; let q be the frequency that the blindfolded subject               (q in our calibration above). The coefﬁcient corresponding to the
+presents sufﬁciently earlier to enable the sighted subject to re-              interaction of the opponent’s gesture and the incentives captures
+spond, but only automatically; and let 1 – p – q be the frequency              the intentional effect (p). We use data at the individual game
+with which the sighted subject cannot imitate or counter-imitate               level, which allows us to control for player ﬁxed-effects and look
+either intentionally or automatically. Suppose that intentional                for effects of timing and experience. All SEs are clustered at the
+responses follow incentives, automatic responses imitate the                   pair level. To look for effects of timing and experience, we ran
+opponent’s gesture without regard to incentives, and subjects                  such regressions not only for the full sample, but also splitting
+otherwise choose gestures randomly. Then sighted subjects with                 the sample into games played early (games 1–10) in a pairing and
+incentives to match should match their opponents’ gestures with                late (games 11–20), and then further splitting the sample into
+frequency p × 1 + q × 1 + (1 − p − q) × 0.5 = 0.5 + p/2 + q/2 and              games played early in a pairing and late, interacted with whether
+
+
+                     Table 4. Matching and winning frequencies
+                                                                  Matching frequency (P value)          Win frequency (P value)
+
+                     Sighted with incentive to match                        52.13% (0.048)                   52.13% (0.05)
+                     Sighted with incentive to mismatch                     50.69% (0.29)                    49.31% (0.29)
+
+                        The P values correspond to a one-tailed t test (H0: frequency = 50%, HA: frequency > 50%).
+
+
+2766 | www.pnas.org/cgi/doi/10.1073/pnas.1209981110                                                                                     Belot et al.
+the pairing was in an early (rounds 1, 2) or late (rounds 3, 4)     Cook et al.’s result is likely to be because of two factors. First, in
+round in the experiment. The null hypothesis here is p = 0 and      the Cook et al. study subjects produced the three gestures with
+q = 0, tested against the alternative hypotheses p > 0 and q > 0,   equal frequency, but in the Aczel et al. (19) study the scissors
+respectively. The appropriate tests are again one-tailed t tests.   gesture was produced signiﬁcantly more often than either paper
+   The results of the probit regressions are reported in Table 5    or scissors. Second, in contrast with Cook et al., Aczel et al.
+and Fig. 2. As indicated in the central panel of Fig. 2, these      required their subjects to “bob”; before gesture delivery in each
+results provide compelling evidence of automatic imitation in       game, the subject had to move her or his ﬁst down and then back
+games 1–10 (i.e., the ﬁrst 10 games played against each oppo-       up toward the chest in time to the umpire’s count of three. This
+nent), and of intentional behavior, responsive to incentives, in    bobbing requirement is likely to have reduced very substantially
+games 11–20 (i.e., in the last 10 games played against each op-     the number of games in which one player presented her or his
+ponent). More speculatively, the right-hand side of Fig. 2 sug-     gesture earlier than the other, and therefore the opportunities
+gests that the ascendency of intentional responding over            for automatic imitation. By showing that automatic imitation
+automatic imitation between earlier (games 1–10) and later          occurs against strong ﬁnancial incentives—the costs of automatic
+(games 11–20) games occurs initially in rounds 1 and 2, when        imitation were more than 100-times larger in our study than in
+each player has their ﬁrst experience of the matching and non-      the experiment by Cook et al.—the results of the present study
+matching incentives. Automatic imitation appears to be restored     provide truly compelling evidence that automatic imitation
+to some extent in the earlier games of rounds 3 and 4, and then     occurs in strategic contexts.
+to be replaced almost entirely by intentional responding in the        Our results are also unique in showing that experience with
+later games of rounds 3 and 4. Overall, the split-sample regres-    matching and nonmatching incentives can enable players to re-
+sions show that Fig. 2’s full-sample effects are driven mainly by   sist the “irrational” tendency toward automatic imitation. Recall
+games played early in a pairing.                                    that in earlier games players showed automatic imitation, and in
+                                                                    later games their behavior was responsive to incentives. This
+Discussion                                                          result suggests that learning occurred in the earlier games. For
+In games such as Matching Pennies and RPS, players are for-         example, players could have learned to focus on their opponent’s
+mally required to present their gestures simultaneously, but ab-    gesture when they had an incentive to match, and to avoid
+solute simultaneity in every game is not possible in practice.      looking at their opponent’s gesture when they had an incentive
+Following Cook et al. (16), who made direct recordings of ges-      to mismatch. This variation in attention to the opponent’s ges-
+ture asynchronies, we inferred through the above calibration of     ture would enable automatic imitation to boost performance in
+p and q that one of the players frequently presented her or his     the matching condition, and prevent automatic imitation from
+gesture slightly earlier than the other. When it was the blind-     interfering with performance in the nonmatching condition. Al-
+folded player who presented earlier, automatic imitation, or even   ternatively, experience with the matching and nonmatching
+in some cases an intentional response may have been feasible for    incentives could have had a more profound effect on the psy-
+the sighted player. Our results indicate that sighted players of    chological and neural mechanisms that control automatic imi-
+Matching Pennies exhibit a signiﬁcant tendency toward auto-         tation. A substantial body of evidence suggests that mirror
+matic imitation of their opponent’s gestures, even when such        neurons are motor neurons (cells that were originally involved
+imitation goes against strong incentives; but they also exhibit     only in the production of actions) that are linked in an excitatory
+a smaller but still signiﬁcant tendency toward intentional          way to visual neurons that encode the same body movement
+responses, either imitation or counter-imitation depending on       (cells that were originally involved only in perception of the body
+incentives. Furthermore, our results indicate that whereas au-      movement), and that the visual and motor neurons become
+tomatic imitation dominates in earlier games, this tendency is      linked, and thereby produce a mirror neuron, through experi-
+largely superseded by intentional responding in games played        ence in which the same action is simultaneously observed and
+later in the series.                                                executed (20). If this theory is correct, it raises the possibility that
+   Our ﬁndings are in accord with those of Cook et al. (16), and    experience with nonmatching incentives “rewires” a part of the
+are inconsistent with a recent study challenging the view that      mirror neuron system. For example, when players are rewarded
+automatic imitation occurs in strategic contexts (19). The latter   by winning the game after responding to an OPEN-HAND
+study, by Aczel, Bago and Foldes, used a RPS procedure similar      gesture with a CLOSED-HAND gesture, this may strengthen
+to that of Cook et al., but failed to ﬁnd a higher frequency of     a new, excitatory link between a visual neuron coding hand
+draws when one player was sighted than when both players were       opening and a motor neuron coding hand closing. As a result,
+blindfolded. Our study suggests that this failure to replicate      the motor neuron would become responsive in some strategic
+
+
+
+
+                                                                                                                                                    PSYCHOLOGICAL AND
+                                                                                           Fig. 2. Estimated intentional and automatic
+                                                                                           responses, for early vs. late games. Probit regression
+
+                                                                                                                                                    COGNITIVE SCIENCES
+                                                                                           coefﬁcients ± 1 SE corresponding to probit regres-
+                                                                                           sions with player ﬁxed-effects and SEs clustered at
+                                                                                           the pair level.
+
+
+Belot et al.                                                                            PNAS | February 19, 2013 | vol. 110 | no. 8 | 2767
+Table 5. Probit regressions determining probability that sighted player chooses CLOSED HAND
+                                                    1                2                  3                  4                      5                      6                      7
+
+                                                                                                    Early games             Late games             Early games            Late games
+                                                                   Early              Late          (1–10); early          (11–20); early          (1–11); late          (11–20); late
+                                                  All             games              games             rounds                 rounds                 rounds                 rounds
+                                                sample            (1–10)            (11–20)           (1 and 2)              (1 and 2)              (3 and 4)              (3 and 4)
+
+Blind-folded player executes                     0.023            0.053             −0.008              0.088                  −0.023                  0.012                 0.014
+   CLOSED HAND                                  (0.021)         (0.028)**           (0.032)          (0.033)***                (0.041)                (0.039)               (0.044)
+Sighted player Incentives to                     0.015           −0.019              0.048             −0.022                   0.027                 −0.018                0.066*
+   match and blindfolded player                 (0.022)          (0.030)           (0.029)**           (0.040)                 (0.036)                (0.043)               (0.044)
+   executes CLOSED HAND
+Sighted player ﬁxed-effects                       Yes              Yes                Yes                 Yes                    Yes                    Yes                   Yes
+No. observed                                     4,320            2,160              2,160               1,080                  1,080                  1,080                 1,080
+
+   Probit regression coefﬁcients, with SEs in parentheses, clustered at the pair level. *, **, and *** indicates P values below 10%, 5% and 1%, respectively
+(one-tailed t test).
+
+
+
+contexts to observation of one action and performance of a dif-                                such as the Prisoners’ Dilemma. In other possibilities, trading on
+ferent action; in these contexts it would have “counter-mirror”                                a ﬂoor with open outcry and imitable buy and sell gestures might
+rather than “mirror” properties, and contribute to automatic                                   be more conducive to herding than an analogous electronic
+counter-imitation (22). Evidence that this kind of “rewiring” can                              market, thereby increasing volatility. At the broadest level, it is
+occur after a brief period of learning, comparable to that of the                              noteworthy that this study not only used research in psychology
+present study, comes from studies detecting counter-mirror ac-                                 and neuroscience to cast light on the kinds of strategic inter-
+tivity in classic “mirror areas” of the brain using functional im-                             actions that are of particular interest to economists, but also used
+aging (23) and transcranial magnetic stimulation (24).                                         analytic techniques from economics to gain empirical traction on
+   Previous studies have indicated that automatic imitation, like
+                                                                                               a distinction—between automatic and intentional imitation—
+synchronous activity (25), can increase the probability that
+players will cooperate in subsequent games (26, 27). Our results,                              that plays a key role in psychological theorizing. It therefore
+like Cook et al.’s, raise the possibility that under some circum-                              underlines the mutual beneﬁt of combining methods and con-
+stances choice can be involuntary, so that automatic imitation                                 cepts from neighboring social and natural sciences.
+can inﬂuence behavior in strategic contexts via an additional
+                                                                                               ACKNOWLEDGMENTS. We thank Richard Cook for helpful advice. This
+route, by changing the structure of the game itself. If this theory                            research was supported by the University of Oxford, All Souls College, and
+is correct, automatic imitation might override the incentive                                   the Centre for Experimental Social Sciences, Nufﬁeld College, University
+constraints that in theory prevent cooperative outcomes in games                               of Oxford.
+
+
+ 1. Chartrand TL, Bargh JA (1999) The chameleon effect: The perception-behavior link           14. Meltzoff AN, Moore MK (1997) Explaining facial imitation: A theoretical model. Early
+    and social interaction. J Pers Soc Psychol 76(6):893–910.                                      Dev Parent 6(34):179–192.
+ 2. Fadiga L, Fogassi L, Pavesi G, Rizzolatti G (1995) Motor facilitation during action        15. Heyes C (2011) Automatic imitation. Psychol Bull 137(3):463–483.
+    observation: A magnetic stimulation study. J Neurophysiol 73(6):2608–2611.                 16. Cook R, Bird G, Lünser G, Huck S, Heyes C (2012) Automatic imitation in a strategic
+ 3. Strafella AP, Paus T (2000) Modulation of cortical excitability during action observa-         context: Players of rock–paper–scissors imitate opponents’ gestures. Proc Biol Sci
+    tion: A transcranial magnetic stimulation study. Neuroreport 11(10):2289–2292.                 279(1729):780–786.
+ 4. Heyes C, Bird G, Johnson H, Haggard P (2005) Experience modulates automatic imi-           17. Colman AM, Stirk JA (1998) Stackelberg reasoning in mixed-motive games: An ex-
+    tation. Brain Res Cogn Brain Res 22(2):233–240.                                                perimental investigation. J Econ Psychol 19(2):279–293.
+ 5. Stürmer B, Aschersleben G, Prinz W (2000) Correspondence effects with manual               18. Weber RA, Camerer CF, Knez M (2004) Timing and virtual observability in ultimatum
+    gestures and postures: A study of imitation. J Exp Psychol Hum Percept Perform 26(6):          bargaining and “weak link” coordination games. Exp Econ 7(1):25–48.
+    1746–1759.                                                                                 19. Aczel B, Bago B, Foldes A (2012) Is there evidence for automatic imitation in a stra-
+ 6. Catmur C, Walsh V, Heyes C (2009) Associative sequence learning: The role of expe-             tegic context? Proc Biol Sci 279(1741):3231–3233.
+    rience in the development of imitation and the mirror system. Philos Trans R Soc Lond      20. Heyes C (2010) Where do mirror neurons come from? Neurosci Biobehav Rev 34(4):
+    B Biol Sci 364(1528):2369–2380.                                                                575–583.
+ 7. Iacoboni M (2009) Imitation, empathy, and mirror neurons. Annu Rev Psychol 60:             21. Greiner B (2004) An online recruitment system for economic experiments. Forschung
+    653–670.                                                                                       und wissenschaftliches Rechnen 2003. GWDG Bericht 63:79–93.
+ 8. Kilner JM, Paulignan Y, Blakemore SJ (2003) An interference effect of observed bi-         22. Cook R, Dickinson A, Heyes C (2012) Contextual modulation of mirror and counter-
+    ological movement on action. Curr Biol 13(6):522–525.                                          mirror sensorimotor associations. J Exp Psychol Gen 141(4):774–787.
+ 9. di Pellegrino G, Fadiga L, Fogassi L, Gallese V, Rizzolatti G (1992) Understanding         23. Catmur C, et al. (2008) Through the looking glass: Counter-mirror activation following
+    motor events: A neurophysiological study. Exp Brain Res 91(1):176–180.                         incompatible sensorimotor learning. Eur J Neurosci 28(6):1208–1215.
+10. Gallese V, Fadiga L, Fogassi L, Rizzolatti G (1996) Action recognition in the premotor     24. Catmur C, Mars RB, Rushworth MF, Heyes C (2011) Making mirrors: Premotor cortex
+    cortex. Brain 119(Pt 2):593–609.                                                               stimulation enhances mirror and counter-mirror motor facilitation. J Cogn Neurosci
+11. Rizzolatti G, Fadiga L, Gallese V, Fogassi L (1996) Premotor cortex and the recognition        23(9):2352–2362.
+    of motor actions. Brain Res Cogn Brain Res 3(2):131–141.                                   25. Wiltermuth SS, Heath C (2009) Synchrony and cooperation. Psychol Sci 20(1):1–5.
+12. Iacoboni M, et al. (1999) Cortical mechanisms of human imitation. Science 286(5449):       26. van Baaren RB, Holland RW, Kawakami K, van Knippenberg A (2004) Mimicry and
+    2526–2528.                                                                                     prosocial behavior. Psychol Sci 15(1):71–74.
+13. Gazzola V, Rizzolatti G, Wicker B, Keysers C (2007) The anthropomorphic brain: The         27. Maddux WW, Mullen E, Galinsky AD (2008) Chameleons bake bigger pies and take
+    mirror neuron system responds to human and robotic actions. Neuroimage 35(4):                  bigger pieces: Strategic behavioral mimicry facilitates negotiation outcomes. J Exp
+    1674–1684.                                                                                     Soc Psychol 44(2):461–468.
+
+
+
+
+2768 | www.pnas.org/cgi/doi/10.1073/pnas.1209981110                                                                                                                         Belot et al.
+

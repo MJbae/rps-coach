@@ -1,0 +1,1274 @@
+                                                          Social cycling and conditional responses in the Rock-Paper-Scissors game∗
+                                                                                       Zhijian Wang1 , Bin Xu2,1 , and Hai-Jun Zhou3
+                                                                      1
+                                                                       Experimental Social Science Laboratory, Zhejiang University, Hangzhou 310058, China
+                                                                  2
+                                                                      Public Administration College, Zhejiang Gongshang University, Hangzhou 310018, China
+                                                                          3
+                                                                            State Key Laboratory of Theoretical Physics, Institute of Theoretical Physics,
+                                                                                      Chinese Academy of Sciences, Beijing 100190, China
+
+                                                                  How humans make decisions in non-cooperative strategic interactions is a challenging question.
+                                                               For the fundamental model system of Rock-Paper-Scissors (RPS) game, classic game theory of
+                                                               infinite rationality predicts the Nash equilibrium (NE) state with every player randomizing her
+
+
+
+
+arXiv:1404.5199v1 [physics.soc-ph] 21 Apr 2014
+                                                               choices to avoid being exploited, while evolutionary game theory of bounded rationality in general
+                                                               predicts persistent cyclic motions, especially for finite populations. However, as empirical studies
+                                                               on human subjects have been relatively sparse, it is still a controversial issue as to which theoretical
+                                                               framework is more appropriate to describe decision making of human subjects. Here we observe
+                                                               population-level cyclic motions in a laboratory experiment of the discrete-time iterated RPS game
+                                                               under the traditional random pairwise-matching protocol. The cycling direction and frequency are
+                                                               not sensitive to the payoff parameter a. This collective behavior contradicts with the NE theory but
+                                                               it is quantitatively explained by a microscopic model of win-lose-tie conditional response without
+                                                               any adjustable parameter. Our theoretical calculations reveal that this new strategy may offer
+                                                               higher payoffs to individual players in comparison with the NE mixed strategy, suggesting that
+                                                               high social efficiency is achievable through optimized conditional response.
+
+                                                               Key words: decision making; evolutionary dynamics; game theory; behavioral economics;
+                                                               social efficiency
+
+
+                                                    The Rock-Paper-Scissors (RPS) game is a fundamental              ory drops the infinite rationality assumption and looks at
+                                                 non-cooperative game. It has been widely used to study              the RPS game from the angle of evolution and adaption
+                                                 competition phenomena in society and biology, such as               [13–16]. Evolutionary models based on various micro-
+                                                 species diversity of ecosystems [1–6] and price dispersion          scopic learning rules (such as the replicator dynamics
+                                                 of markets [7, 8]. This game has three candidate actions            [12], the best response dynamics [17, 18] and the logit
+                                                 R (rock), P (paper) and S (scissors). In the simplest               dynamics [19, 20]) generally predict cyclic evolution pat-
+                                                 settings the payoff matrix is characterized by a single             terns for the action marginal distribution (mixed strat-
+                                                 parameter, the payoff a of the winning action (a > 1,               egy) of each player, especially for finite populations.
+                                                 see Fig. 1A) [9]. There are the following non-transitive
+                                                                                                                        Empirical verification of non-equilibrial persistent cy-
+                                                 dominance relations among the actions: R wins over S,
+                                                                                                                     cling in the human-subject RPS game (and other non-
+                                                 P wins over R, yet S wins over P (Fig. 1B). Therefore
+                                                                                                                     cooperative games) has been rather nontrivial, as the
+                                                 no action is absolutely better than the others.
+                                                                                                                     recorded evolutionary trajectories are usually highly
+                                                    The RPS game is also a basic model system for study-             stochastic and not long enough to draw convincing con-
+                                                 ing decision making of human subjects in competition en-            clusions. Two of the present authors partially overcame
+                                                 vironments. Assuming ideal rationality for players who              these difficulties by using social state velocity vectors [21]
+                                                 repeatedly playing the RPS game within a population,                and forward and backword transition vectors [22] to vi-
+                                                 classical game theory predicts that individual players will         sualize violation of detailed balance in game evolution
+                                                 completely randomize their action choices so that their             trajectories. The cycling frequency of directional flows in
+                                                 behaviors will be unpredictable and not be exploited by             the neutral RPS game (a = 2) was later quantitatively
+                                                 the other players [10, 11]. This is referred to as the              measured in [23] using a coarse-grained counting tech-
+                                                 mixed-strategy Nash equilibrium (NE), in which every                nique. Using a cycle rotation index as the order parame-
+                                                 player chooses the three actions with equal probability             ter, Cason and co-workers [24] also obtained evidence of
+                                                 1/3 at each game round. When the payoff parameter                   persistent cycling in some evolutionarily stable RPS-like
+                                                 a < 2 this NE is evolutionarily unstable with respect to            games, if players were allowed to update actions asyn-
+                                                 small perturbations but it becomes evolutionarily stable            chronously in continuous time and were informed about
+                                                 at a > 2 [12]. On the other hand, evolutionary game the-            the social states of the whole population by some sophis-
+                                                                                                                     ticated ‘heat maps’.
+                                                                                                                        In this work we investigate whether cycling is a general
+                                                                                                                     aspect of the simplest RPS game. We adopt an improved
+                                                 ∗ ZW  and BX contributed equally to this work. ZW, BX de-           cycle counting method on the basis of our earlier expe-
+                                                 signed and performed experiment; HJZ, BX constructed theoreti-
+                                                 cal model; HJZ developed analytical and numerical methods; BX,      riences [23] and study directional flows in evolutionarily
+                                                 ZW, HJZ analyzed and interpreted data; HJZ, BX wrote the paper.     stable (a > 2) and unstable (a < 2) discrete-time RPS
+                                                 Correspondence should be addressed to HJZ (zhouhj@itp.ac.cn).       games. We show strong evidence that the RPS game is an
+                                                                                                                                                2
+
+                                                                                                                  nS
+intrinsic non-equilibrium system, which cannot be fully
+                                                                   A                      C
+described by the NE concept even in the evolutionarily                   R P S
+stable region but rather exhibits persistent population-
+                                                                       R 1 0 a
+level cyclic motions. We then bridge the collective cycling                               6
+                                                                       P a 1 0
+behavior and the highly stochastic decision-making of                                     5
+individuals through a simple conditional response (CR)                 S 0 a 1            4
+mechanism. Our empirical data confirm the plausibility                                    3
+                                                                                          2
+                                                                                                                  *
+of this microscopic model of bounded rationality. We also          B
+                                                                           S              1
+find that if the transition parameters of the CR strategy
+are chosen in an optimized way, this strategy will outper-                           nR       1                                        1   nP
+                                                                                                  2                                2
+form the NE mixed strategy in terms of the accumulated                 R       P                      3                        3
+                                                                                                          4                4
+payoffs of individual players, yet the action marginal dis-                                                   5        5
+                                                                                                                  6
+tribution of individual players is indistinguishable from
+that of the NE mixed strategy. We hope this work will         FIG. 1: The Rock-Paper-Scissors game. (A) Each matrix en-
+stimulate further experimental and theoretical studies        try specifies the row action’s payoff. (B) Non-transitive dom-
+on the microscopic mechanisms of decision making and          inance relations (R beats S, P beats R, S beats P ) among
+learning in basic game systems and the associated non-        the three actions. (C) The social state plane for a popula-
+equilibrium behaviors [25, 26].                               tion of size N = 6. Each filled circle denotes a social state
+                                                              (nR , nP , nS ); the star marks the centroid c0 ; the arrows indi-
+                                                              cate three social state transitions at game rounds t = 1, 2, 3.
+                         Results
+
+                 Experimental system
+                                                              game round are, respectively, 0.36 ± 0.08, 0.33 ± 0.07 and
+   We recruited a total number of 360 students from dif-      0.32 ± 0.06 (mean ± s.d.). We obtain very similar results
+ferent disciplines of Zhejiang University to form 60 dis-     for each set of populations of the same a value (see Ta-
+joint populations of size N = 6. Each population then         ble S1). These results are consistent with NE and suggest
+carries out one experimental session by playing the RPS       the NE mixed strategy is a good description of a player’s
+game 300 rounds (taking 90–150 minutes) with a fixed          marginal distribution of actions. However, a player’s ac-
+value of a. In real-world situations, individuals often       tions at two consecutive times are not independent but
+have to make decisions based only on partial input in-        correlated (Fig. S1). At each time the players are more
+formation. We mimic such situations in our laboratory         likely to repeat their last action than to shift action ei-
+experiment by adopting the traditional random pairwise-       ther counter-clockwise (i.e., R → P , P → S, S → R,
+matching protocol [11]: At each game round (time) t the       see Fig. 1B) or clockwise (R → S, S → P , P → R).
+players are randomly paired within the population and         This inertial effect is especially strong at a = 1.1 and it
+compete with their pair opponent once; after that each        diminishes as a increases.
+player gets feedback information about her own payoff
+as well as her and her opponent’s action. As the whole
+experimental session finishes, the players are paid in real        Collective behaviors of the whole population
+cash proportional to their accumulated payoffs (see Ma-
+terials and Methods). Our experimental setting differs           The social state of the population at   any time t is
+from those of two other recent experiments, in which ev-      denoted as s(t) ≡ nR (t), nP (t), nS (t) with nq being
+ery player competes against the whole population [9, 24]      the number of players adopting action q ∈ {R, P, S}.
+and may change actions in continuous time [24]. We set        Since nR + nP + nS ≡ N there are (N + 1)(N + 2)/2
+a = 1.1, 2, 4, 9 and 100, respectively, in one-fifth of the   such social states, all lying on a three-dimensional plane
+populations so as to compare the dynamical behaviors          bounded by an equilateral triangle (Fig. 1C). Each popu-
+in the evolutionarily unstable, neutral, stable and deeply    lation leaves a trajectory on this plane as the RPS game
+stable regions.                                               proceeds. To detect rotational flows, we assign for ev-
+                                                              ery social state transition s(t) → s(t + 1) a rotation an-
+                                                              gle θ(t), which measures the angle this transition rotates
+ Action marginal distribution of individual players           with respect to the centroid c0 ≡ (N/3, N/3, N/3) of
+                                                              the social state plane [23]. Positive and negative θ values
+   We observe that the individual players shift their ac-     signify counter-clockwise and clockwise rotations, respec-
+tions frequently in all the populations except one with       tively, while θ = 0 means the transition is not a rotation
+a = 1.1 (this exceptional population is discarded from        around c0 . For example, we have θ(1) = π/3, θ(2) = 0,
+further analysis, see Supporting Information). Averaged       and θ(3) = −2π/3 for the exemplar transitions shown in
+among the 354 players of these 59 populations, the prob-      Fig. 1C.
+abilities that a player adopts action R, P , S at one            The net number of cycles around c0 during the time
+                                                                                                                             3
+
+interval [t0 , t1 ] is computed by                                         a = 1.1       2      4      9   100
+                                                                             f1,300 f1,300 f1,300 f1,300 f1,300
+                                  tX
+                                   1 −1
+                                          θ(t)                               0.039 0.019 0.033 0.007 0.047
+                     Ct0 ,t1 ≡                 .          (1)
+                                  t=t0
+                                           2π                                0.023 0.023 0.005 −0.002 0.004
+                                                                             0.005 0.054 0.029 0.053 0.024
+As shown in Fig. 2 (A-E), C1,t has an increasing trend in                    0.029 0.034 0.041 0.027 0.051
+most of the 59 populations, indicating persistent counter-                   0.015 −0.010 0.008 0.068 0.027
+clockwise cycling. The cycling frequency of each trajec-                     0.052 0.052 0.042 −0.017 0.031
+tory in [t0 , t1 ] is evaluated by                                           0.028 0.084 0.069 0.032 0.017
+                                   Ct0 ,t1                                   0.034 0.041 −0.022 0.049 −0.017
+                      ft0 ,t1 ≡            .              (2)                0.073 −0.013 0.069 0.020 −0.012
+                                  t1 − t0
+                                                                             0.023 0.017 0.035 −0.022 0.053
+The values of f1,300 for all the 59 populations are listed                   0.018 −0.005 0.048 0.018 −0.010
+in Table 1, from which we obtain the mean frequency to                              0.028 0.018 0.032 −0.005
+be 0.031 ± 0.006 (a = 1.1, mean ± SEM), 0.027 ± 0.008                     µ 0.031 0.027 0.031 0.022 0.018
+(a = 2), 0.031 ± 0.008 (a = 4), 0.022 ± 0.008 (a = 9)
+                                                                          σ 0.019 0.029 0.026 0.027 0.025
+and 0.018 ± 0.007 (a = 100). These mean frequencies are
+all positive irrespective to the particular value of a, indi-             δ 0.006 0.008 0.008 0.008 0.007
+cating that behind the seemingly highly irregular social         µ: the mean cycling frequency, σ: the standard deviation
+state evolution process, there is a deterministic pattern        (s.d.) of cycling frequencies, δ: the standard error (SEM) of
+                                                                                                       √
+of social state cycling from slightly rich in action R, to       the mean cycling frequency (δ = σ/ ns , with sample
+slightly rich in P , then to slightly rich in S, and then back   number ns = 11 for a = 1.1 and ns = 12 for a = 2, 4, 9 and
+to slightly rich in R again. Statistical analysis confirms       100).
+that f1,300 > 0 is significant for all the five sets of popu-
+lations (Wilcoxon signed-rank test, p < 0.05). The corre-
+lation between the mean cycling frequency f1,300 and the
+payoff parameter a is not statistically significant (Spear-
+man’s correlation test: r = −0.82, p = 0.19, for n = 5
+mean frequencies; and r = −0.16, p = 0.24, for n = 59
+frequencies). We also notice that the mean cycling fre-          at the previous time (see Supporting Information). Us-
+quency in the second half of the game (f151,300 ) is slightly    ing the empirically determined action shift probabilities
+higher than that in the first half (f1,150 ) for all the five    of Fig. S1 as inputs, we find that this independent de-
+sets of populations (Table S2), suggesting that cycling          cision model predicts the cycling frequency to be 0.0050
+does not die out with time.                                      (for a = 1.1), −0.0005 (a = 2.0), −0.0024 (a = 4.0),
+   A recent experimental work [27] also observed cycling         −0.0075 (a = 9.0) and −0.0081 (a = 100.0), which are
+behaviors in a RPS-like game with more than three ac-            all very close to zero and significantly different from the
+tions. Evidences of persistent cycling in some complete-         empirical values.
+information and continuous-time RPS-like games were
+reported in another experimental study [24]. However, no
+(or only very weak) evidence of population-level cycling            The action choices of different players must be mutu-
+was detected in [24] if action updating was performed in         ally influenced. Our empirical data shown in Fig. 2 (F–J)
+discrete time. Here and in Ref. [23] we find that even           confirm the existence of such mutual influences. Let us
+discrete-time updating of actions will lead to collective        denote by O the performance (output) of a player at a
+cyclic motions in the RPS game, and such a population-           given game round, with O ∈ {W (win), T (tie), L (lose)}.
+level behavior is not affected by the particular value of        Conditional on the output O, the probability that this
+a.                                                               player will decide to shift action clockwise or counter-
+                                                                 clockwise or keep the same action in the next play is
+                                                                 denoted as O− , O+ and O0 (≡ 1 − O− − O+ ), respec-
+       Empirical conditional response patterns                   tively. Most interestingly, we see from Fig. 2 (F–J) that
+                                                                 if a player wins over her opponent in one play, her proba-
+   Under the assumption of mixed-strategy NE, the so-            bility (W0 ) of repeating the same action in the next play
+cial state transitions should obey the detailed balance          is considerably higher than her probabilities (W− and
+condition. Therefore the observed persistent cycling be-         W+ ) of shifting actions. Furthermore, for payoff param-
+havior cannot be understood within the NE framework.             eter a ≥ 2, if a player loses to her opponent in one play,
+Persistent cycling can also not be explained by the inde-        she is more likely to shift action clockwise (probability
+pendent decision model which assumes the action choice           L− ) than either to keep the old action (L0 ) or to shift
+of a player at one time is influenced only by her action         action counter-clockwise (L+ ).
+                                                                                                                                                                                                                4
+
+        A                                        B                                       C                                       D                                          E
+        20
+
+
+        10
+ C1,t
+
+        0
+
+
+                      100          200     300                100          200     300                100          200     300                100          200        300                100          200     300
+      F                      t                   G                   t                   H                   t                   I                   t                      J                   t
+    0.6
+
+    0.4
+
+    0.2
+
+
+             W- W0 W+ T- T0 T+ L- L0 L+              W- W0 W+ T- T0 T+ L- L0 L+              W- W0 W+ T- T0 T+ L- L0 L+              W- W0 W+ T- T0 T+ L- L0 L+                 W- W0 W+ T- T0 T+ L- L0 L+
+        K                                        L                                       M                                       N                                          O
+
+  0.06
+
+
+  0.03
+
+
+         0
+
+
+                  0         0.03    0.06                  0         0.03    0.06                  0         0.03    0.06                  0         0.03    0.06                     0         0.03    0.06
+
+FIG. 2: Social cycling explained by conditional response. The payoff parameter is a = 1.1, 2, 4, 9 and 100 from left-most
+column to right-most column. (A-E) Accumulated cycle numbers C1,t of 59 populations. (F-J) Empirically determined CR
+parameters, with the mean (vertical bin) and the SEM (error bar) of each CR parameter obtained by considering all the
+populations of the same a value. (K-O) Comparison between the empirical cycling frequency (vertical axis) of each population
+and the theoretical frequency (horizontal axis) obtained by using the empirical CR parameters of this population as inputs.
+
+
+
+
+                       The conditional response model                                                            where (N − 1)!! ≡ 1 × 3 × . . . × (N − 3) × (N − 1) and
+                                                                                                                  n                                n
+                                                                                                                 δm   is the Kronecker symbol (δm    = 1 if m = n and = 0 if
+    Inspired by these empirical observations, we develop                                                         otherwise). With the help of this expression, we can then
+ a simplest nontrival model by assuming the following                                                            obtain an explicit formula for the social state transition
+ conditional response strategy: at each game round,                                                              probability Mcr [s′ |s] from s to any another social state
+ every player review her previous performance O ∈                                                                s′ . We then compute numerically the steady-state social
+                                                                                                                                       ∗
+ {W, T, L} and makes an action choice according to                                                               state distribution Pcr  (s) of this Markov matrix [28] and
+ the corresponding three conditional probabilities (O− ,                                                         other average quantities of interest. For example, the
+ O0 , O+ ). This model is characterized by a set Γ ≡                                                             mean steady-state cycling frequency fcr of this model is
+ {W− , W+ ; T− , T+ ; L− , L+ } of six CR parameters. Notice                                                     computed by
+ this CR model differs qualitatively from the discrete-time                                                                        X
+                                                                                                                                          ∗
+                                                                                                                                                X
+ logit dynamics model [19, 20] used in Ref. [23], which as-                                                                  fcr =      Pcr (s)    Mcr [s′ |s]θs→s′ ,    (4)
+                                                                                                                                              s                  s′
+ sumes each player has global information about the pop-
+ ulation’s social state.                                                                                         where θs→s′ is the rotation angle associated with the so-
+    We can solve this win-lose-tie CR model analytically                                                         cial state transition s → s′ , see Eq. [7].
+ and numerically. Let us denote by nrr , npp , nss , nrp , nps                                                      Using the empirically determined response parameters
+ and nsr , respectively, as the number of pairs in which                                                         as inputs, the CR model predicts the mean cycling fre-
+ the competition being R–R, P –P , S–S, R–P , P –S, and                                                          quencies for the five sets of populations to be fcr = 0.035
+ S–R, in one game round t. Given the social state s =                                                            (a = 1.1), 0.026 (a = 2), 0.030 (a = 4), 0.018 (a = 9) and
+ (nR , nP , nS ) at time t, the conditional joint probability                                                    0.017 (a = 100), agreeing well with the empirical mea-
+ distribution of these six integers is expressed as                                                              surements. Such good agreements between model and
+                                                                                                               experiment are achieved also for the 59 individual popu-
+Ps nrr , npp , nss , nrp , nps , nsr =
+               nR
+                                                                                                                 lations (Fig. 2 K–O).
+  nR !nP !nS !δ2n            δ nP           δ nS
+                 rr +nsr +nrp 2npp +nrp +nps 2nss +nps +nsr                                                         Because of the rotational symmetry of the conditional
+                                                                                                ,(3)
+         (N − 1)!!2nrr nrr !2npp npp !2nss nss !nrp !nps !nsr !                                                  response parameters, the CR model predicts that each
+                                                                                                                                          5
+
+player’s action marginal distribution is uniform (see Sup-
+porting Information), identical to the NE mixed strategy.
+                                                                                                6
+On the other hand, according to this model, the expected
+payoff gcr per game round of each player is
+
+
+
+
+                                                                          Probability (x 10 )
+                                                                          -3
+            gcr = g0 + (a − 2) × (1/6 − τcr /2) ,              (5)                              4
+
+where g0 ≡ (1 + a)/3 is the expected payoff of the NE
+mixed strategy, and τcr is the average fraction of ties                          2
+among the N/2 pairs at each game round, with the ex-
+pression
+                       P
+                                (nrr + npp + nss )Ps (nrr , . . . , nsr )
+       X
+             ∗     nrr ,...,nrs                                                  -0.04 -0.03 -0.02 -0.01        0    0.01 0.02 0.03
+τcr =      Pcr (s)                                                        .                                 gcr-g0
+        s
+                                          N/2
+                                                                    (6)     FIG. 3: Probability distribution of payoff difference gcr − g0
+The value of gcr depends on the CR parameters. By                           at population size N = 6. We assume a > 2 and set the unit
+uniformly sampling 2.4 × 109 instances of Γ from the                        of the horizontal axis to be (a − 2). The solid line is obtained
+three-dimensional probability simplex, we find that for                     by  sampling 2.4 × 109 CR strategies uniformly at random;
+a > 2, gcr has high chance of being lower than g0 (Fig. 3),                 the filled circle denotes the maximal value of gcr among these
+with the mean value of (gcr − g0 ) being −0.0085(a − 2).                    samples.
+(Qualitatively the same conclusion is obtained for larger
+N values, e.g., see Fig. S2 for N = 12.) This is consistent
+with the mixed-strategy NE being evolutionarily stable
+[12]. On the other hand, the five gcr values determined
+                                                                            actual strategies[11, 16]. In reality, however, decision-
+by the empirical CR parameters and the corresponding
+                                                                            making and learning are very complicated neural pro-
+five mean payoffs of the empirical data sets all weakly
+                                                                            cesses [33–36]. The action marginal distributions are only
+exceed g0 , indicating that individual players are adjust-
+                                                                            a consequence of such complex dynamical processes, their
+ing their responses to achieve higher accumulated payoffs
+                                                                            coarse-grained nature makes them unsuitable to describe
+(see Supporting Information). The positive gap between
+                                                                            dynamical properties. Our work on the finite-population
+gcr and g0 may further enlarge if the individual players
+                                                                            RPS game clearly demonstrates this point. This game
+were given more learning time to optimize their response
+                                                                            exhibits collective cyclic motions which cannot be under-
+parameters (e.g., through increasing the repeats of the
+                                                                            stood by the NE concept but are successfully explained
+game).
+                                                                            by the empirical data-inspired CR mechanism. As far
+   As shown in Fig. 3 and Fig. S2, the CR parameters                        as the action marginal distributions of individual play-
+have to be highly optimized to achieve a large value                        ers are concerned, the CR strategy is indistinguishable
+of gcr . For population size N = 6 we give three ex-                        from the NE mixed strategy, yet it is capable of bring-
+amples of the sampled best CR strategies for a > 2:                         ing higher payoffs to the players if its parameters are
+Γ1 = {0.002, 0.000; 0.067, 0.110; 0.003, 0.003}, with cy-                   optimized. This simple conditional response strategy,
+cling frequency fcr = 0.003 and gcr = g0 + 0.035(a −                        with the win-stay lose-shift strategy being a special case,
+2); Γ2 = {0.995, 0.001; 0.800, 0.058; 0.988, 0.012}, with                   appears to be psychologically plausible for human sub-
+fcr = −0.190 and gcr = g0 + 0.034(a − 2); Γ3 =                              jects with bounded rationality [37, 38]. For more compli-
+{0.001, 0.004; 0.063, 0.791; 0.989, 0.001}, with fcr = 0.189                cated game payoff matrices, we can generalize the condi-
+and gcr = g0 + 0.033(a − 2). For large a these CR strate-                   tional response model accordingly by introducing a larger
+gies outperform the NE mixed strategy in payoff by about                    set of CR parameters. It should be very interesting to
+10%. Set Γ1 indicates that population-level cycling is not                  re-analyze many existing laboratory experimental data
+a necessary condition for achieving high payoff values.                     [9, 24, 27, 39–42] using this extended model.
+On the other hand, set Γ3 implies W0 ≈ 1, L0 ≈ 0, there-
+                                                                               The CR model as a simple model of decision-making
+fore this CR strategy can be regarded as an extension
+                                                                            under uncertainty deserves to be fully explored. We find
+of the win-stay lose-shift (also called Pavlov) strategy,
+                                                                            the cycling frequency is not sensitive to population size
+which has been shown by computer simulations to facili-
+                                                                            N at given CR parameters (see Fig. S3); and the cy-
+tate cooperation in the prisoner’s dilemma game [29–32].
+                                                                            cling frequency is nonzero even for symmetric CR pa-
+                                                                            rameters (i.e., W+ /W− = T+ /T− = L+ /L− = 1), as
+                                                                            long as W0 6= L0 (see Fig. S4). The optimization issue
+                             Discussion                                     of CR parameters is left out in this work. We will in-
+                                                                            vestigate whether an optimal CR strategy is achievable
+   In game-theory literature it is common to equate in-                     through simple stochastic learning rules [34, 35]. The ef-
+dividual players’ action marginal distributions with their                  fects of memory length [43] and population size to the
+                                                                                                                              6
+
+optimal CR strategies also need to be thoroughly stud-            with the centroid c0 of the social state plane, or the three
+ied. On the more biological side, whether CR is a basic           points s, s̃ and c0 lie on a straight line, then the transi-
+decision-making mechanism of the human brain or just a            tion s → s̃ is not regarded as a rotation around c0 , and
+consequence of more fundamental neural mechanisms is              the rotation angle θ = 0. In all the other cases, the tran-
+a challenging question for future studies.                        sition s → s̃ is regarded as a rotation around c0 , and the
+                                                                  rotation angle is computed through
+
+                 Materials and Methods
+                                                                θ = sgns→s̃ ×
+                                                                                  3(nR ñR + nP ñP + nS ñS ) − N 2           
+   Experiment. The experiment was performed at Zhe-              acos p                                                           ,
+                                                                               2     2      2           2       2     2
+                                                                          [3(nR + nP + nS ) − N 2 ][3(ñR + ñP + ñS ) − N 2 ]
+jiang University in the period of December 2010 to March
+2014. A total number of 360 students of Zhejiang Uni-                                                                           (7)
+versity volunteered to serve as the human subjects of this
+experiment. Informed consent was obtained from all the            where acos(x) ∈ [0, π) is the inverse cosine function, and
+participants. These human subjects were distributed to            sgns→s̃ = 1 if [3(nR ñP −nP ñR )+N (nP −nR +ñR −ñP )] >
+60 populations of equal size N = 6. The subjects of each          0 (counter-clockwise rotation around c0 ) and sgns→s̃ =
+population played within themselves the RPS game for              −1 if otherwise (clockwise rotation around c0 ).
+300 rounds under the random pairwise-matching protocol
+                                                                     Statistical Analysis. Statistical analyses, including
+(see Supporting Information for additional details), with
+                                                                  Wilcoxon signed-rank test and Spearman’s rank corre-
+the payoff parameter a fixed to one of five different values.
+                                                                  lation test, were performed by using stata 12.0 (Stata,
+After the RPS game each human subject was rewarded
+                                                                  College Station, TX).
+by cash (RMB) privately. Suppose the accumulated pay-
+                                                                                       Acknowledgments
+off of a human subject is x in the game, then the reward
+y in RMB is y = r × x + 5, where the exchange rate r
+depends on a. According to the Nash equilibrium theory,              ZW and BX were supported by the Fundamental Re-
+the expected payoff of each player in one game round is           search Funds for the Central Universities (SSEYI2014Z),
+(1 + a)/3. Therefore we set r = 0.45/(1 + a), so that the         the State Key Laboratory for Theoretical Physics
+expected reward in RMB to each human subject will be              (Y3KF261CJ1), and the Philosophy and Social Sciences
+the same (= 50 RMB) for all the 60 populations. The               Planning Project of Zhejiang Province (13NDJC095YB);
+numerical value of r and the reward formula were both             HJZ was supported by the National Basic Research Pro-
+informed to the human subjects before the RPS game.               gram of China (2013CB932804),the Knowledge Innova-
+   Rotation angle computation. Consider a transi-                 tion Program of Chinese Academy of Sciences (KJCX2-
+tion from one social state s = (nR , nP , nS ) at game round      EW-J02), and the National Science Foundation of China
+t to another social state s̃ = (ñR , ñP , ñS ) at game round   (11121403, 11225526). We thank Erik Aurell and Angelo
+(t + 1), if at least one of the two social states coincides       Valleriani for helpful comments on the manuscript.
+
+
+
+
+ [1] Sinervo B, Lively C (1996) The rock-paper-scissors game       [8] Cason TN, Friedman D (2003) Buyer search and price
+     and the evolution of alternative male strategies. Nature          dispersion: a laboratory study. J. Econ. Theory 112:232–
+     380:240–243.                                                      260.
+ [2] Kerr B, Riley MA, Feldman MW, Bohannan BJM (2002)             [9] Hoffman M, Suetens S, Nowak MA, Gneezy U (2012) An
+     Local dispersal promotes biodiversity in a real-life game         experimental test of Nash equilibrium versus evolution-
+     of rock-paper-scissors. Nature 418:171–174.                       ary stability. Proc. Fourth World Congress of the Game
+ [3] Semmann D, Krambeck HJ, Milinski M (2003) Volun-                  Theory Society (Istanbul, Turkey), session 145, paper 1.
+     teering leads to rock-paper-scissors dynamics in a public    [10] Nash JF (1950) Equilibrium points in n-person games.
+     goods game. Nature 425:390–393.                                   Proc. Natl. Acad. Sci. USA 36:48–49.
+ [4] Lee D, McGreevy BP, Barraclough DJ (2005) Learning           [11] Osborne MJ, Rubinstein A (1994) A Course in Game
+     and decision making in monkeys during a rock-paper-               Theory. (MIT Press, New York).
+     scissors game. Cognitive Brain Research 25:416–430.          [12] Taylor PD, Jonker LB (1978) Evolutionarily stable
+ [5] Reichenbach T, Mobilia M, Frey E (2007) Mobility pro-             strategies and game dynamics. Mathematical Biosciences
+     motes and jeopardizes biodiversity in rock-paper-scissors         40:145–156.
+     games. Nature 448:1046–1049.                                 [13] Maynard Smith J, Price GR (1973) The logic of animal
+ [6] Allesina S, Levine JM (2011) A competitive network the-           conflict. Nature 246:15–18.
+     ory of species diversity. Proc. Natl. Acad. Sci. USA         [14] Maynard Smith J (1982) Evolution and the Theory of
+     108:5638–5642.                                                    Games. (Cambridge University Press, Cambridge).
+ [7] Maskin E, Tirole J (1988) A theory of dynamic oligopoly,     [15] Nowak MA, Sigmund K (2004) Evolutionary dynamics
+     ii: Price competition, kinked demand curves, and edge-            of biological games. Science 303:793–799.
+     worth cycles. Econometrica 56:571–599.                       [16] Sandholm WM (2010) Population Games and Evolution-
+                                                                                                                             7
+
+     ary Dynamics. (MIT Press, New York).                         [40] Traulsen A, Semmann D, Sommerfeld RD, Krambeck HJ,
+[17] Matsui A (1992) Best response dynamics and socially               Milinski M (2010) Human strategy updating in evolution-
+     stable strategies. J. Econ. Theory 57:343–362.                    ary games. Proc. Natl. Acad. Sci. USA 107:2962–2966.
+[18] Hopkins E (1999) A note on best response dynamics.           [41] Gracia-Lázaro C et al. (2012) Heterogeneous networks do
+     Games Econ. Behavior 29:138–150.                                  not promote cooperation when humans play a prisoner’s
+[19] Blume LE (1993) The statistical mechanics of strategic            dilemma. Proc. Natl. Acad. Sci. USA 109:12922–12926.
+     interation. Games Econ. Behavior 5:387–424.                  [42] Chmura T, Goerg SJ, Selten R (2014) Generalized im-
+[20] Hommes CH, Ochea MI (2012) Multiple equilibria and                pulse balance: An experimental test for a class of 3 × 3
+     limit cycles in evolutionary games with logit dynamics.           games. Review of Behavioral Economics 1:27–53.
+     Games and Economic Behavior 74:434–441.                      [43] Press WH, Dyson FJ (2012) Iterated prisoner’s dilemma
+[21] Xu B, Wang Z (2011) Evolutionary dynamical patterns               contains strategies that dominate any evolutionary op-
+     of ‘coyness and philandering’: Evidence from experimen-           ponent. Proc. Natl. Acad. Sci. USA 109:10409–10413.
+     tal economics. Proc. eighth International Conference on
+     Complex Systems (Boston, MA, USA), pp. 1313–1326.
+[22] Xu B, Wang Z (2012) Test maxent in social strategy tran-
+     sitions with experimental two-person constant sum 2 × 2
+     games. Results in Phys. 2:127–134.
+[23] Xu B, Zhou HJ, Wang Z (2013) Cycle frequency in stan-
+     dard rock-paper-scissors games: Evidence from experi-
+     mental economics. Physica A 392:4997–5005.
+[24] Cason TN, Friedman D, Hopkins E (2014) Cycles and
+     instability in a rock-paper-scissors population game: A
+     continuous time experiment. Review of Economic Studies
+     81:112–136.
+[25] Castellano C, Fortunato S, Loreto V (2009) Statistical
+     physics of social dynamics. Rev. Mod. Phys. 81:591–646.
+[26] Huang JP (2013) Econophysics. (Higher Education Press,
+     Beijing).
+[27] Frey S, Goldstone RL (2013) Cyclic game dynamics
+     driven by iterated reasoning. PLoS ONE 8:e56416.
+[28] Kemeny JG, Snell JL (1983) Finite Markov Chains; with
+     a New Appendix ”Generalization of a Fundamental Ma-
+     trix”. (Springer-Verlag, New York).
+[29] Kraines D, Kraines V (1993) Learning to cooperate with
+     pavlov: an adaptive strategy for the iterated prisoner’s
+     dilemma with noise. Theory and Decision 35:107–150.
+[30] Nowak M, Sigmund K (1993) A strategy of win-stay,
+     lose-shift that outperforms tit-for-tat in the prisoner’s
+     dilemma game. Nature 364:56–58.
+[31] Wedekind C, Milinski M (1996) Human cooperation in
+     the simultaneous and the alternating prisoner’s dilemma:
+     Pavlov versus generous tit-for-tat. Proc. Natl. Acad. Sci.
+     USA 93:2686–2689.
+[32] Posch M (1999) Win-stay, lose-shift strategies for re-
+     peated games–memory length, aspiration levels and
+     noise. J. Theor. Biol. 198:183–195.
+[33] Glimcher PW, Camerer CF, Fehr E, Poldrack RA, eds.
+     (2009) Neuroeconomics: Decision Making and the Brain
+     (Academic Press, London).
+[34] Börgers T, Sarin R (1997) Learning through reinforce-
+     ment and replicator dynamics. J. Econ. Theory 77:1–14.
+[35] Posch M (1997) Cycling in a stochastic learning algo-
+     rithm for normal form games. J. Evol. Econ. 7:193–207.
+[36] Galla T (2009) Intrinsic noise in game dynamical learn-
+     ing. Phys. Rev. Lett. 103:198702.
+[37] Camerer C (1999) Behavioral economics: Reunifying psy-
+     chology and economics. Proc. Natl. Acad. Sci. USA
+     96:10575–10577.
+[38] Camerer C (2003) Behavioral game theory: Experiments
+     in strategic interaction. (Princeton University Press,
+     Princeton, NJ).
+[39] Berninghaus SK, Ehrhart KM, Keser C (1999)
+     Continuous-time strategy selection in linear population
+     games. Experimental Economics 2:41–57.
+                                                                                                                 8
+
+                                            Supplementary Table 1
+
+                     Table S1. Statistics on individual players’ action marginal probabilities.
+
+                                       a    m action    µ       σ   Min    Max
+                                     1.1    66  R    0.37    0.08   0.19   0.68
+                                                P    0.34    0.07   0.18   0.52
+                                                S    0.30    0.06   0.09   0.41
+                                       2    72  R    0.36    0.07   0.14   0.60
+                                                P    0.32    0.07   0.15   0.58
+                                                S    0.32    0.06   0.13   0.46
+                                       4    72  R    0.35    0.08   0.11   0.60
+                                                P    0.33    0.07   0.14   0.54
+                                                S    0.32    0.07   0.11   0.50
+                                       9    72  R    0.35    0.08   0.21   0.63
+                                                P    0.33    0.07   0.13   0.55
+                                                S    0.32    0.06   0.16   0.53
+                                    100     72  R    0.35    0.07   0.22   0.60
+                                                P    0.33    0.05   0.16   0.51
+                                                S    0.32    0.06   0.14   0.47
+                                           354  R    0.36    0.08   0.11   0.68
+                                                P    0.33    0.07   0.13   0.58
+                                                S    0.32    0.06   0.09   0.53
+
+m is the total number of players; µ, σ, Max and Min are, respectively, the mean, the standard deviation (s.d.), the
+maximum and minimum of the action marginal probability in question among all the m players. The last three rows
+are statistics performed on all the 354 players.
+                                                                                                                   9
+
+                                            Supplementary Table 2
+
+                  Table S2. Empirical cycling frequencies f1,150 and f151,300 for 59 populations.
+
+                                1.1               2               4               9            100
+                    f1,150 f151,300 f1,150 f151,300 f1,150 f151,300 f1,150 f151,300 f1,150 f151,300
+                    0.032 0.047 0.020 0.017 0.016 0.050 −0.007 0.022 0.040 0.052
+                    0.008 0.039 0.028 0.017 −0.002 0.014 −0.005 0.001 −0.003 0.009
+                    0.025 −0.014 0.021 0.087 0.023 0.035 0.044 0.062 0.009 0.038
+                    0.015 0.045 0.023 0.043 0.024 0.059 0.034 0.020 0.045 0.060
+                    0.011 0.019 −0.027 0.006 0.019 −0.004 0.045 0.088 0.017 0.038
+                    0.036 0.068 0.024 0.081 0.018 0.068 −0.022 −0.014 0.055 0.006
+                    0.010 0.045 0.083 0.086 0.079 0.059 0.032 0.030 0.008 0.026
+                    0.036 0.033 0.034 0.046 −0.013 −0.031 0.047 0.050 −0.019 −0.015
+                    0.076 0.070 −0.032 0.004 0.077 0.061 0.010 0.027 −0.034 0.010
+                    0.029 0.016 0.034 −0.002 0.018 0.051 −0.003 −0.041 0.055 0.052
+                    0.009 0.025 −0.004 −0.006 0.061 0.038 0.005 0.029 −0.012 −0.007
+                                    0.022 0.031 0.017 0.019 0.011 0.055 −0.017 0.007
+                  µ 0.026 0.036 0.019 0.034 0.028 0.035 0.016 0.027 0.012 0.023
+                  σ 0.020 0.024 0.030 0.035 0.029 0.030 0.024 0.035 0.031 0.025
+                  δ 0.006 0.007 0.009 0.010 0.008 0.009 0.007 0.010 0.009 0.007
+
+The first row shows the value of the payoff parameter a. For each experimental session (population), f1,150 and
+f151,300 are respectively the cycling frequency in the first and the second 150 time steps. µ is the mean cycling
+                                                                               √
+frequency, σ is the standard deviation (s.d.) of the cycling frequency, δ = σ/ ns is the standard error (SEM) of the
+mean cycling frequency. The number of populations is ns = 11 for a = 1.1 and ns = 12 for a = 2, 4, 9 and 100.
+                                                                                                                  10
+
+                                            Supplementary Figure 1
+
+
+                                          0.6
+                                          0.4
+                                          0.2
+
+                                          0.6
+                                          0.4
+                                          0.2
+
+                                          0.6
+                                          0.4
+                                          0.2
+
+                                          0.6
+                                          0.4
+                                          0.2
+
+                                          0.6
+                                          0.4
+                                          0.2
+
+                                                R− R0 R+   P− P0 P+   S− S0 S+
+
+
+
+Figure S1. Action shift probability conditional on a player’s current action. If a player adopts the action R at one
+game round, this player’s conditional probability of repeating the same action at the next game round is denoted as
+R0 , while the conditional probability of performing a counter-clockwise or clockwise action shift is denoted,
+respectively, as R+ and R− . The conditional probabilities P0 , P+ , P− and S0 , S+ , S− are defined similarly. The
+mean value (vertical bin) and the SEM (standard error of the mean, error bar) of each conditional probability is
+obtained by averaging over the different populations of the same value of a = 1.1, 2, 4, 9, and 100 (from top row to
+bottom row).
+                                                                                                                 11
+
+                                                        Supplementary Figure 2
+
+
+                                                8
+
+
+
+                                                6
+
+
+
+
+                         Probability (x 10-3)
+                                                4
+
+
+
+                                                2
+
+
+
+
+                                                -0.02     -0.01             0    0.01
+                                                                   gcr-g0
+
+
+Figure S2. Probability distribution of payoff difference gcr − g0 at population size N = 12. As in Fig. 3, we assume
+a > 2 and set the unit of the horizontal axis to be (a − 2). The solid line is obtained by sampling 2.4 × 109 CR
+strategies uniformly at random; the filled circle denotes the maximal value of gcr among these samples.
+                                                                                                                12
+
+                                           Supplementary Figure 3
+
+
+
+
+                           0.036
+
+
+                           0.034
+
+
+                           0.032
+                     fcr
+                           0.030
+
+
+                           0.028
+
+
+                           0.026
+
+                                   0      10        20       30        40        50        60
+                                                              N
+
+Figure S3. The cycling frequency fcr of the conditional response model as a function of population size N . For the
+purpose of illustration, the CR parameters shown in Fig. 2G are used in the numerical computations.
+                                                                                                                                                  13
+
+                                                                      Supplementary Figure 4
+
+
+                 A                                    B                                              C
+                            6                                       0.2                                    1
+                                                                                                                                          0.08
+
+
+
+
+     Probability (x 10-3)
+                                                   Mean frequency
+                                                                    0.1                                   0.8
+                            4                                                                                                             0.04
+                                                                                                          0.6
+                                                                      0                              W0                                   0.00
+                                                                                                          0.4
+                            2
+                                                                    -0.1                                                                  -0.04
+                                                                                                          0.2
+                                                                                                                                          -0.08
+                            0                                       -0.2                                   0
+                                -0.2    0    0.2                           0   0.2 0.4 0.6 0.8   1              0   0.2 0.4 0.6 0.8   1
+                                       fcr                                       CR parameter                              L0
+
+
+Figure S4. Theoretical predictions of the conditional response model with population size N = 6. (A) Probability
+distribution of the cycling frequency fcr obtained by sampling 2.4 × 109 CR strategies uniformly at random. (B)
+The mean value of fcr as a function of one fixed CR parameter while the remaining CR parameters are sampled
+uniformly at random. The fixed CR parametr is T+ (red dashed line), W0 or L+ (brown dot-dashed line), W+ or T0
+or L− (black solid line), W− or L0 (purple dot-dashed line), and T− (blue dashed line). (C) Cycling frequency fcr as
+a function of CR parameters W0 and L0 for the symmetric CR model (W+ /W− = T+ /T− = L+ /L− = 1) with
+T0 = 0.333.
+                                                                                                                       14
+
+            Supporting Information                                  urge these players to do so). After a choice has
+                                                                    been made it can not be changed.
+                                                               Before the start of the actual experimental session, the
+           S1.   EXPERIMENTAL SETUP
+                                                               player were asked to answer four questions to ensure that
+                                                               they understand completely the rules of the experimen-
+   We carried out five sets of experimental sessions at dif-   tal session. These four questions are: (1) If you choose
+ferent days during the period of December 2010 to March        “Rock” and your opponent chooses “Scissors”, how many
+2014, with each set consisting of 12 individual experi-        virtual points will you earn? (2) If you choose “Rock” and
+mental sessions. The payoff parameter value was fixed to       your opponent chooses also “Rock”, how many virtual
+a = 1.1, 2, 4, 9 and 100, respectively, in these five sets     points will you earn? (3) If you choose “Scissors” and
+of experimental sessions. Each experimental session in-        your opponent chooses “Rock”, how many virtual points
+volved N = 6 human subjects (players) and it was carried       will you earn? (4) Do you know that at each game round
+out at Zhejiang University within a single day.                you will play with a randomly chosen opponent from your
+   We recruited a total number of 72×5 = 360 undergrad-        group (yes/no)?
+uate and graduate students from different disciplines of          During the experimental session, the computer screen
+Zhejiang University. These students served as the players      of each player will show an information window and a
+of our experimental sessions, each of which participating      decision window. The window on the left of the computer
+in only one experimental session. Female students were         screen is the information window. The upper panel of
+more enthusiastic than male students in registering as         this information window shows the current game round,
+candidate human subjects of our experiments. As we             the time limit (40 seconds) of making a choice, and the
+sampled students uniformly at random from the candi-           time left to make a choice. The color of this upper panel
+date list, therefore more female students were recruited       turns to green at the start of each game round. The
+than male students (among the 360 students, the female         color will change to yellow if the player does not make a
+versus male ratio is 217 : 143). For each set of experi-       choice within 20 seconds. The color will change to red
+mental sessions, the recruited 72 players were distributed     if the decision time runs out (and then the experimental
+into 12 groups (populations) of size N = 6 uniformly at        instructor will loudly urge the players to make a choice
+random by a computer program.                                  immediately). The color will change to blue if a choice
+   The players then sited separately in a classroom, each      has been made by the player.
+of which facing a computer screen. They were not al-              After all the players of the group have made their de-
+lowed to communicate with each other during the whole          cisions, the lower panel of the information window will
+experimental session. Written instructions were handed         show the player’s own choice, the opponent’s choice, and
+out to each player and the rules of the experiment were        the player’s own payoff in this game round. The player’s
+also orally explained by an experimental instructor. The       own accumulated payoff is also shown. The players are
+rules of the experimental session are as follows:              asked to record their choices of each round on the record
+                                                               sheet (Rock as R, Paper as P , and Scissors as S).
+  (i) Each player plays the Rock-Paper-Scissors (RPS)             The window on the right of the computer screen is the
+      game repeatedly with the same other five players         decision window. It is activated only after all the players
+      for a total number of 300 rounds.                        of the group have made their choices. The upper panel of
+ (ii) Each player earns virtual points during the ex-          this decision window lists the current game round, while
+      perimental session according to the payoff matrix        the lower panel lists the three candidate actions “Rock”,
+      shown in the written instruction. These virtual          “Scissors”, “Paper” horizontally from left to right. The
+      points are then exchanged into RMB as a reward to        player can make a choice by clicking on the correspond-
+      the player, plus an additional 5 RMB as show-up          ing action names. After a choice has been made by the
+      fee. (The exchange rate between virtual point and        player, the decision window becomes inactive until the
+      RMB is the same for all the 72 players of these 12       next game round starts.
+      experimental sessions. Its actual value is informed         The reward in RMB for each player is determined by
+      to the players.)                                         the following formula. Suppose a player i earns xi virtual
+                                                               points in the whole experimental session, the total reward
+ (iii) In each game round, the six players of each group       yi in RMB for this player is then given by yi = xi × r +
+       are randomly matched by a computer program to           5, where r is the exchange rate between virtual point
+       form three pairs, and each player plays the RPS         and RMB. In this work we set r = 0.45/(1 + a). Then
+       game only with the assigned pair opponent.              the expected total earning in RMB for a player will be
+                                                               the same (= 50 RMB) in the five sets of experimental
+ (iv) Each player has at most 40 seconds in one game           sessions under the assumption of mixed-strategy Nash
+      round to make a choice among the three candidate         equilibrium, which predicts the expected payoff of each
+      actions “Rock”, “Paper” and “Scissors”. If this          player in one game round to be (1 + a)/3. The actual
+      time runs out, the player has to make a choice im-       numerical value of r and the above-mentioned reward
+      mediately (the experimental instructor will loudly       formula were listed in the written instruction and also
+                                                                                                                                             15
+
+orally mentioned by the experimental instructor at the                     ρSi = 1/3 (for i = 1, 2, . . . , N ) is the only Nash equilib-
+instruction phase of the experiment.                                       rium of our RPS game in the whole parameter region of
+                                                                           a > 1 (except for very few isolated values of a, maybe).
+                                                                           Unfortunately we are unable to offer a rigorous proof of
+        S2.     THE MIXED-STRATEGY NASH                                    this conjecture for a generic value of population size N .
+                    EQUILIBRIUM                                            But this conjecture is supported by our empirical obser-
+                                                                           vations, see Table S1.
+   The RPS game has a mixed-strategy Nash equilibrium
+(NE), in which every player of the population adopts the                       Among the 60 experimental sessions performed at dif-
+three actions (R, P , and S) with the same probability                     ferent values of a, we observed that all the players in
+1/3 in each round of the game. Here we give a proof of                     59 experimental sessions change their actions frequently.
+this statement. We also demonstrate that, the empiri-                      The mean values of the individual action probabilities
+cally observed action marginal probabilities of individual                 ρR     P    S
+                                                                             i , ρi , ρi are all close to 1/3. (The slightly higher
+players are consistent with the NE mixed strategy.                         mean probability of choosing action R in the empirical
+   Consider a population of N individuals playing re-                      data of Table S1 might be linked to the fact that “Rock”
+peatedly the RPS game under the random pairwise-                           is the left-most candidate choice in each player’s decision
+matching protocol. Let us define ρR                                    P   window.)
+                                                  i (respectively, ρi
+         S
+and ρi ) as the probability that a player i of the popu-                      We did notice considerable deviation from the NE
+lation (i ∈ {1, 2, . . . , N }) will choose action R (respec-              mixed strategy in one experimental session of a = 1.1,
+tively, P and S) in one game round. If a player j                          though. After the RPS game has proceeded for 72
+chooses action R, what is her expected payoff in one                       rounds, the six players of this exceptional session all stick
+play? Since this player has equal chance 1/(N − 1) of                      to the same action R and do not shift to the other two
+pairing with any another              player i, the expected pay-          actions. This population obviously has reached a highly
+                                       R        S
+off is simply gjR ≡
+                            P
+                               i6=j i + aρi )/(N − 1). By the
+                                    (ρ                                     cooperative state after 72 game rounds with ρR    i = 1 for
+same argument we see that if player j chooses action                       all the six players. As we have pointed out, such a cooper-
+P and S the expected payoff gjP and gjS in one play                        ative state is not a pure-strategy NE. We do not consider
+                                              P
+are, respectively, gjP ≡                             R
+                                   P
+                                      i6=j (ρi + aρi )/(N − 1) and         this exceptional experimental session in the data analysis
+gjS ≡ i6=j (ρSi + aρP                                                      and model building phase of this work.
+        P
+                          i )/(N − 1).
+   If every player of the population chooses the three ac-
+tions with equal probability, namely that ρR              i = ρi =
+                                                                    P
+
+ρSi = 1/3 for i = 1, 2, . . . , N , then the expected payoff for
+a player is the same no matter which action she chooses
+in one round of the game, i.e., giR = giP = giS = (1 + a)/3
+for i = 1, 2, . . . , N . Then the expected payoff of a player
+i in one game round is (1 + a)/3, which will not increase                     S3.    EVOLUTIONARY STABILITY OF THE
+if the probabilities ρR           P     S                                                NASH EQUILIBRIUM
+                            i , ρi , ρi deviate from 1/3. There-
+         R        P      S
+fore ρi = ρi = ρi = 1/3 (for all i = 1, 2, . . . , N ) is a
+mixed-strategy NE of the game.
+   Let us also discuss a little bit about the uniqueness of                  We now demonstrate that the mixed-strategy NE with
+this mixed-strategy NE. If the payoff parameter a ≤ 1,                     ρR     P     S
+                                                                            i = ρi = ρi = 1/3 (i = 1, 2, . . . , N ) is an evolutionarily
+this mixed-strategy NE is not unique. We can easily                        stable strategy only when the payoff parameter a > 2.
+check that ρR              P       S
+                  i = 1, ρi = ρi = 0 (for all i = 1, 2, . . . , N ) is        To check for the evolutionary stability of this mixed-
+a pure-strategy NE. Similarly, ρP                    S      R
+                                             i = 1, ρi = ρi = 0 (i =       strategy NE, let us assume a mutation occurs to the pop-
+                        S           R         P
+1, 2, . . . , N ) and ρi = 1, ρi = ρi = 0 (i = 1, 2, . . . , N )           ulation such that n ≥ 1 players now adopt a mutated
+are two other pure-strategy NEs. In such a pure-strategy                   strategy, while the remaining (N − n) players still adopt
+NE the payoff of a player is 1 in one game round. This                     the NE mixed strategy. We denote by ρ̃R (and respec-
+value is considerably higher than the average payoff of                    tively, ρ̃P and ρ̃S ) as the probability that in one round of
+(1 + a)/3 a player will gain if the population is in the                   the game, action R (respectively, P and S) will be chosen
+above mentioned mixed-strategy NE.                                         by a player who adopts the mutated strategy. Obviously
+   On the other hand, if the payoff parameter a > 1, then                  ρ̃R + ρ̃P + ρ̃S ≡ 1.
+there is no pure-strategy NE for the RPS game. This is
+simple to prove. Suppose the population is initially in a                     For a player who adopts the NE mixed strategy, her
+pure-strategy NE with ρR          i = 1 for i = 1, 2, . . . , N . If one   expected payoff in one game round is simply g0 = (1 +
+player now shifts to action S, her payoff will increase from               a)/3. On the other hand, the expected payoff g̃ in one
+1 to a. Therefore this player will keep the new action S in                game round for a player who adopts the mutated strategy
+later rounds of the game, and the original pure-strategy                   is expressed as g̃ = ρ̃R g̃ R + ρ̃P g̃ P + ρ̃S g̃ S , where g̃ R (and
+NE is then destroyed.                                                      respectively, g̃ P and g̃ S ) is the expected payoff of one
+   We believe that the mixed-strategy NE of ρR                      P
+                                                             i = ρi =      play for a player in the mutated sub-population if she
+                                                                                                                                  16
+
+chooses action R (respectively, P and S):                         they cannot be explained by the independent decision
+                                                                  model either.
+             N −n 1+a   n−1
+      g̃ R =                 × ρ̃R + aρ̃S , (8)
+                                         
+                  ×   +
+             N −1   3   N −1
+             N −n 1+a   n−1                                       A.    Assuming the mixed-strategy Nash equilibrium
+      g̃ P =                 × ρ̃P + aρ̃R , (9)
+                                         
+                  ×   +
+             N −1   3   N −1
+         S   N −n 1+a   n−1                                         If the population is in the mixed-strategy NE, each
+                             × ρ̃S + aρ̃P . (10)
+                                         
+      g̃ =        ×   +                                           player will pick an action uniformly at random at each
+             N −1   3   N −1
+                                                                  time t. Suppose the social state at time t is s =
+Inserting these three expressions into the expression of g̃,      (nR , nP , nS ), then the probability M0 [s′ |s] of the social
+we obtain that                                                    state being s′ = (n′R , n′P , n′S ) at time (t + 1) is simply
+       N −n 1+a             n−1                                   expressed as
+g̃ =          ×        +           ×
+       N −1        3       N −1                                                                      N!               1 N
+                                                                           M0 [s′ |s] =                      ,      (12)
+        1 + (a − 2) ρ̃R ρ̃P + (ρ̃R + ρ̃P )(1 − ρ̃R − ρ̃P )                                   (n′R )!(n′P )!(n′S )!
+                   
+                                                                                                          3
+                                                                  which is independent of s. Because of this history inde-
+           (a − 2)(n − 1)                                         pendence, the social state probability distribution P0∗ (s)
+  = g0 −                   ×
+               N −1                                               for any s = (nR , nP , nS ) is
+                                 2            2 
+       (ρ̃R − 1/3) + (ρ̃P /2 − 1/6) + 3 ρ̃P − 1/3 /4 .
+                                       
+                                                                                                   N!       1 N
+                                                                                   P0∗ (s) =                      .             (13)
+                                                           (11)                                nR !nP !nS ! 3
+
+   If the payoff parameter a > 2, we see from Eq. [11]               The social state transition obeys the detailed balance
+that the expected payoff g̃ of the mutated strategy never         condition that P0∗ (s)M0 [s′ |s] = P0∗ (s′ )M0 [s|s′ ]. There-
+exceeds that of the NE mixed strategy. Therefore the              fore no persist cycling can exist in the mixed-strategy
+NE mixed strategy is an evolutionarily stable strategy.           NE. Starting from any initial social state s, the mean
+Notice that the difference (g̃ − g0 ) is proportional to (a −     of
+                                                                  P the social          states at the next time step is d(s) =
+                                                                               ′      ′
+2), therefore the larger the value of a, the higher is the           s′ M 0 [s   |s]s   = c0 , i.e., identical to the centroid of the
+cost of deviating from the NE mixed strategy.                     social state plane.
+   On the other hand, in the case of a < 2, the value of
+g̃ − g0 will be positive if two or more players adopt the
+mutated strategy. Therefore the NE mixed strategy is an                B.   Assuming the independent decision model
+evolutionarily unstable strategy.
+   The mixed-strategy NE for the game with payoff pa-                In the independent decision model, every player of the
+rameter a = 2 is referred to as evolutionarily neutral            population decides on her next action q ′ ∈ {R, P, S}
+since it is neither evolutionarily stable nor evolutionarily      in a probabilistic manner based on her current action
+unstable.                                                         q ∈ {R, P, S} only. For example, if the current action of
+                                                                  a player i is R, then in the next game round this player
+                                                                  has probability R0 to repeat action R, probability R− to
+S4.    CYCLING FREQUENCIES PREDICTED BY                           shift action clockwise to S, and probability R+ to shift
+            TWO SIMPLE MODELS                                     action counter-clockwise to P . The transition probabil-
+                                                                  ities P− , P0 , P+ and S− , S0 , S+ are defined in the same
+   We now demonstrate that the empirically observed               way. These nine transition probabilities of cause have to
+persistent cycling behaviors could not have been observed         satisfy the normalization conditions: R− + R0 + R+ = 1,
+if the population were in the mixed-strategy NE, and              P− + P0 + P+ = 1, and S− + S0 + S+ = 1.
+
+
+
+
+  Given the social state s = (nR , nP , nS ) at time t, the probability Mid [s′ |s] of the population’s social state being
+                                                                                                                                   17
+
+s′ = (n′R , n′P , n′S ) at time (t + 1) is
+                                  X X X                     nR !              nR→S nR→R nR→P nR
+              Mid [s′ |s] =                                                R−       R0      R+      δnR→R +nR→P +nR→S
+                                 nR→R nR→P nR→S
+                                                   n R→R !n R→P   !n R→S !
+                                    X X X                      nP !
+                                 ×                                             P−nP →R P0nP →P P+nP →S δnnPP →R +nP →P +nP →S
+                                                      n     !n
+                                   nP →R nP →P nP →S P →R P →P P →S
+                                                                     !n      !
+                                    X X X                     nS !             nS→P nS→S nS→R nS
+                                 ×                                           S−      S0      S+     δnS→R +nS→P +nS→S
+                                   n     n     n
+                                                     n S→R !n S→P   !n S→S !
+                                    S→R    S→P   S→S
+
+                                   n′R                n′P                n′S
+                                 ×δnR→R +nP →R +nS→R δnR→P +nP →P +nS→P δnR→S +nP →S +nS→S ,                                     (14)
+                                                                                n
+where nq→q′ denotes the total number of action transitions from q to q ′ , and δm is the Kronecker symbol such that
+ n                   n
+δm = 1 if m = n and δm = 0 if m 6= n.
+
+
+  For this independent decision model, the steady-state                  a set Γ ≡ {W− , W+ ; T− , T+ ; L− , L+ } of six transition
+               ∗
+distribution Pid  (s) of the social states is determined by              probabilities to denote a conditional response strategy.
+solving                                                                     The parameters W+ and W− are, respectively, the con-
+                         X                                               ditional probability that a player (say i) will perform a
+                 ∗
+              Pid  (s) =     Mid [s|s′ ]Pid
+                                          ∗ ′
+                                            (s ) .     (15)              counter-clockwise or clockwise action shift in the next
+                            s′                                           game round, given that she wins over the opponent (say
+                                                                         j) in the current game round. Similarly the parame-
+When the population has reached this steady-state distri-                ters T+ and T− are the two action shift probabilities
+bution, the mean cycling frequency fid is then computed                  conditional on the current play being a tie, while L+
+as                                                                       and L− are the action shift probabilities conditional on
+                 X
+                      ∗
+                            X                                            the current play outcome being ‘lose’. The parameters
+           fid =   Pid  (s)   Mid [s′ |s]θs→s′ ,    (16)                 W0 , T0 , L0 are the probabilities of a player repeating the
+                                    s′
+                     s
+                                                                         same action in the next play given the current play out-
+where θs→s′ is the rotation angle associated with the                    come being ‘win’, ‘tie’ and ‘lose’, respectively. For exam-
+transition s → s′ , see Eq. [7].                                         ple, if the current action of i is R and that of j is S, the
+   Using the empirically determined action transition                    joint probability of i choosing action P and j choosing
+probabilities of Fig. S1 as inputs, the independent de-                  action S in the next play is W+ L0 ; while if both play-
+cision model predicts the cycling frequency to be 0.0050                 ers choose R in the current play, the joint probability of
+(for a = 1.1), −0.0005 (a = 2), −0.0024 (a = 4), −0.0075                 player i choosing P and player j choosing S in the next
+(a = 9) and −0.0081 (a = 100), which are all very close to               play is then T+ T− .
+zero and significantly different from the empirical values.                 We denote by s ≡ (nR , nP , nS ) a social state of the
+Therefore the assumption of players making decisions                     population, where nR , nP , and nS are the number of
+independently of each other cannot explain population-                   players who adopt action R, P and S in one round
+level cyclic motions.                                                    of play, respectively. Since nR + nP + nS ≡ N there
+                                                                         are (N + 1)(N + 2)/2 such social states, all lying on a
+                                                                         three-dimensional plane bounded by an equilateral trian-
+      S5.    DETAILS OF THE CONDITIONAL                                  gle (Fig. 1C).
+                RESPONSE MODEL                                              Furthermore we denote by nrr , npp , nss , nrp , nps and
+                                                                         nsr , respectively, the number of pairs in which the com-
+            A.    Social state transition matrix                         petition being R–R, P –P , S–S, R–P , P –S, and S–R,
+                                                                         in this round of play. These nine integer values are not
+                                                                         independent but are related by the following equations:
+  In the most general case, our win-lose-tie conditional
+response (CR) model has nine transition parameters,                                        nR = 2nrr + nsr + nrp ,
+namely W− , W0 , W+ , T− , T0 , T+ , L− , L0 , L+ . These
+                                                                                           nP = 2npp + nrp + nps ,
+parameters are all non-negative and are constrained by
+three normalization conditions:                                                            nS = 2nss + nps + nsr .
+                                                                                                                                 (18)
+W− +W0 +W+ = 1 , T− +T0 +T+ = 1 , L− +L0 +L+ = 1 ,
+                                                       (17)                 Knowing the values of nR , nP , nS is not suffi-
+therefore the three vectors (W− , W0 , W+ ), (T− , T0 , T+ )             cient to uniquely fix the values of nrr , npp , . . . , nsr .
+and (L− , L0 , L+ ) represent three points of the three-                 the conditional joint probability distribution of
+dimensional simplex. Because of Eq. [17], we can use                     nrr , npp , nss , nrp , nps , nsr is expressed as Eq. [3].
+                                                                                                                             18
+
+To understand this expression, let us first notice that the         pair, therefore the two involved players will determine
+total number of pairing patterns of N players is equal to           their actions of the next game round according to the
+                                                                    CR parameters (L− , L0 , L+ ) and (W− , W0 , W+ ), respec-
+                           N!                                       tively. At time (t+1) there are six possible outcomes: (rr)
+                                   = (N − 1)!! ,
+                       (N/2)! 2N/2                                  both players take action R, with probability L0 W− ; (pp)
+                                                                    both players take action P , with probability L+ W0 ; (ss)
+which is independent of the specific values of nR , nP , nS ;       both players take action S, with probability L− W+ ; (rp)
+and second, the number of pairing patterns with nrr R–              one player takes action R while the other takes action P ,
+R pairs, npp P –P pairs, . . ., and nsr S–R pairs is equal          with probability (L0 W0 + L+ W− ); (ps) one player takes
+to                                                                  action P while the other takes action S, with probability
+                              nR ! nP ! nS !                        (L+ W+ + L− W0 ); (sr) one player takes action S and the
+                                                                .   other takes action R, with probability (L− W− + L0 W+ ).
+         2nrr n   rr   ! 2npp n     n
+                              pp ! 2 ss nss ! nrp ! nps ! nsr !
+                                                                    Among the nrp R–P pairs of time t, let us assume that
+  Given the values of nrr , npp , . . . , nsr which describe the    after the play, nrr                                    pp
+                                                                                     rp of these pairs will outcome (rr), nrp of
+                                                                                                 ss
+current pairing pattern, the conditional probability of the         them will outcome (pp), nrp of them will outcome (ss),
+social state in the next round of play can be determined.           nrp                                ps
+                                                                      rp of them will outcome (rp), nps of them will outcome
+                                                                                 sr
+We just need to carefully analyze the conditional prob-             (ps), and nsr of them will outcome (sr). Similarly we
+ability for each player of the population. For example,             can define a set of non-negative integers to describe the
+consider a R–P pair at game round t. This is a lose–win             outcome pattern for each of the other five types of pairs.
+
+
+
+
+  Under the random pairwise-matching game protocol, our conditional response model gives the following expression
+for the transition probability Mcr [s′ |s] from the social state s ≡ (nR , nP , nS ) at time t to the social state s′ ≡
+                                                                                                                                                                    19
+
+(n′R , n′P , n′S ) at time (t + 1):
+
+            Mcr [s′ |s] =
+                                                              nR              nP              nS
+                         X                    nR ! nP ! nS ! δ2nrr +nsr +nrp
+                                                                             δ2npp +nrp +nps
+                                                                                             δ2nss +nps +nsr
+
+
+                     nrr ,npp ,...,nsr
+                                                   (N − 1)!! 2nrr nrr ! 2npp npp ! 2nss nss ! nrp ! nps ! nsr !
+                                                        2nrr      2npp        2nss                      rp                   ps              sr
+                           X        nrr ! T0 rr T+ rr T− rr (2T+ T0 )nrr (2T+ T− )nrr (2T0 T− )nrr nrr
+                     ×                                      pp          rp    ps                  δnrr       sr
+                                                                                                    rr +...+nrr
+                       nrr ,...,nsr
+                                                     nrr          ss                sr
+                                                      rr ! nrr ! nrr ! nrr ! nrr ! nrr !
+                         rr         rr
+
+                                                         2nrr        2npp     2nss                      rp                   ps              sr
+                           X       npp ! T− pp T0 pp T+ pp (2T0 T− )npp (2T+ T0 )npp (2T+ T− )npp npp
+                    ×                                      pp          rp    ps                  δnrr       sr
+                                                                                                   pp +...+npp
+                      nrr ,...,nsr
+                                                   nrr           ss                sr
+                                                     pp ! npp ! npp ! npp ! npp ! npp !
+                         pp         pp
+
+                                                        2nrr      2npp        2nss                      rp                   ps              sr
+                           X       nss ! T+ ss T− ss T0 ss (2T+ T− )nss (2T0 T− )nss (2T+ T0 )nss nss
+                    ×                                      pp          rp    ps                  δnrr       sr
+                                                                                                   ss +...+nss
+                      nrr ,...,nsr
+                                                    nrr          ss                sr
+                                                     ss ! nss ! nss ! nss ! nss ! nss !
+                         ss         ss
+                                                                 n
+                                                                rp
+                           X                            nrp ! δnrr       sr
+                                                                rp +...+nrp                                       rr              pp               ss
+                    ×                                                                           (W− L0 )nrp (W0 L+ )nrp (W+ L− )nrp
+                                    nrr ! npp
+                        nrr ,...,nsr rp
+                                                 ss    rp    ps    sr
+                                           rp ! nrp ! nrp ! nrp ! nrp !
+                         rp         rp
+                                                                                     rp                                      ps                          sr
+                                     × (W0 L0 + W− L+ )nrp (W+ L+ + W0 L− )nrp (W+ L0 + W− L− )nrp
+                                                  nps
+                         X                nps ! δnrr        sr
+                                                   ps +...+nps              rr          pp          ss
+                    ×               rr ! n ! nss ! n ! nps ! nsr !
+                                          pp           rp          (W+ L− )nps (W− L0 )nps (W0 L+ )nps
+                                  n
+                      nrr ,...,nsr ps     ps     ps    ps   ps ps
+                         ps         ps
+                                                                                      rp                                     ps                          sr
+                                     × (W+ L0 + W− L− )nps (W0 L0 + W− L+ )nps (W+ L+ + W0 L− )nps
+                                                  nps
+                         X                nsr ! δnrr        sr
+                                                   sr +...+nsr
+                                                                                rr          pp          ss
+                    ×               rr ! npp ! nss ! nrp ! nps ! nsr !
+                                                                       (W0 L+ )nsr (W+ L− )nsr (W− L0 )nsr
+                                  n
+                      nrr ,...,nsr sr     sr     sr    sr   sr    sr
+                         sr         sr
+                                                                                      rp                                     ps                          sr
+                                                  × (W+ L+ + W0 L− )nsr (W+ L0 + W− L− )nsr (W0 L0 + W− L+ )nsr
+                          n′
+                    × δ2(n
+                        R
+                          rr +nrr +nrr +nrr +nrr +nrr )+(nsr +nsr +nsr +nsr +nsr +nsr )+(nrp +nrp +nrp +nrp +nrp +nrp )
+                                                                                          rr   pp   ss   rp   ps   sr
+                               rr        pp        ss     rp      ps     sr      rr         pp     ss        rp        ps   sr
+
+                       n′P
+                    × δ2(n pp   pp   pp   pp   pp   pp     rp   rp   rp   rp   rp   rp     ps   ps   ps   ps   ps   ps
+                           rr +npp +nss +nrp +nps +nsr )+(nrr +npp +nss +nrp +nps +nsr )+(nrr +npp +nss +nrp +nps +nsr )
+
+                          n′
+                    × δ2(n
+                        S
+                          ss +nss +nss +nss +nss +nss )+(nps +nps +nps +nps +nps +nps )+(nsr +nsr +nsr +nsr +nsr +nsr ) .
+                                                          rr   pp   ss   rp   ps   sr
+                               rr        pp        ss     rp      ps     sr                                                        rr   pp    ss    rp   ps   sr
+
+                                                                                                                                                                   (19)
+
+
+                                                                            Steady-state properties
+
+  It is not easy to further simplify the transition probabilities Mcr [s′ |s], but their values can be determined numerically.
+                                          ∗
+Then the steady-state distribution Pcr      (s) of the social states is determined by numerically solving the following
+equation:
+                                                          X
+                                                  ∗
+                                                Pcr (s) =    Mcr [s|s′ ]Pcr
+                                                                          ∗
+                                                                            (s′ ) .                                      (20)
+                                                                                           s′
+
+Except for extremely rare cases of the conditional response parameters (e.g., W0 = T0 = L0 = 1), the Markov
+transition matrix defined by Eq. [19] is ergodic, meaning that it is possible to reach from any social state s1 to any
+another social state s2 within a finite number of time steps. This ergodic property guarantees that Eq. [20] has a
+unique steady-state solution P ∗ (s). In the steady-state, the mean cycling frequency fcr of this conditional response
+model is then computed through Eq. [4] of the main text. And the mean payoff gcr of each player in one game round
+is obtained by
+                     1 X ∗                              X                                                                                       
+           gcr =         P (s)                                         Probs (nrr , npp , . . . , nsr ) 2(nrr + npp + nss ) + a(nrp + nps + nsr )
+                     N s cr n
+                                                  rr ,npp ,...,nrs
+
+                          (a − 2) X                 ∗
+                                                                       X
+                = 1+                               Pcr (s)                           Probs (nrr , npp , . . . , nsr )[nrp + nps + nsr ] .                          (21)
+                               N              s                 nrr ,npp ,...,nrs
+                                                                                                                             20
+
+The expression [21] is identical to Eq. [5] of the main text.
+
+
+   Using the five sets of CR parameters of Fig. 2, we              way we obtain the joint probability distribution of fcr
+obtain the values of gcr for the five data sets to be              and gcr and also the marginal probability distributons of
+gcr = g0 + 0.005 (for a = 1.1), gcr = g0 (a = 2),                  fcr and gcr , see Fig. 3, Fig. S2 and Fig. S4 A. The mean
+gcr = g0 + 0.001 (a = 4), gcr = g0 + 0.004 (a = 9),                values of |fcr | and gcr are then computed from this joint
+and gcr = g0 + 0.08 (a = 100). When a 6= 2 the predicted           probability distribution. We find that the mean value of
+values of gcr are all slightly higher than g0 = (1 + a)/3,         fcr is equal to zero, while the mean value of |fcr | ≈ 0.061.
+which is the expected payoff per game round for a player              The mean value of gcr for randomly sampled CR strate-
+adopting the NE mixed strategy. On the empirical side,             gies is determined to be g0 − 0.0085(a − 2) for N = 6.
+we compute the mean payoff gi per game round for each              When a > 2 this mean value is less than g0 , indicating
+player i in all populations of the same value of a. The            that if the CR parameters are randomly chosen, the CR
+mean value of gi among these players, denoted as g, is             strategy has high probability of being inferior to the NE
+also found to be slightly higher than g0 for all the four          mixed strategy.
+sets of populations of a 6= 2. To be more specific, we ob-            However, we also notice that gcr can considerably ex-
+serve that g−g0 equals to 0.009±0.004 (for a = 1.1, mean           ceed g0 for some optimized sets of conditional response
+± SEM), 0.000 ± 0.006 (a = 2), 0.004 ± 0.012 (a = 4),              parameters (see Fig. 3 for the case of N = 6 and Fig. S2
+0.01 ± 0.02 (a = 9) and 0.05 ± 0.37 (a = 100). These               for the case of N = 12). To give some concrete exam-
+theoretical and empirical results indicate that the con-           ples, here we list for population size N = 6 the five sets
+ditional response strategy has the potential of bringing           of CR parameters of the highest values of gcr among the
+higher payoffs to individual players as compared with the          sampled 2.4 × 109 sets of parameters:
+NE mixed strategy.
+                                                                      1. {W− = 0.002, W0 = 0.998, W+ = 0.000, T− =
+                                                                         0.067, T0 = 0.823, T+ = 0.110, L− = 0.003, L0 =
+                 B.   The symmetric case                                 0.994, L+ = 0.003}. For this set, the cycling fre-
+                                                                         quency is fcr = 0.003, and the expected payoff of
+   Very surprisingly, we find that asymmetry in the CR                   one game round is gcr = g0 + 0.035(a − 2).
+parameters is not essential for cycle persistence and direc-
+tion. We find that if the CR parameters are symmetric                 2. {W− = 0.001, W0 = 0.993, W+ = 0.006, T− =
+with respect to clockwise and counter-clockwise action                   0.154, T0 = 0.798, T+ = 0.048, L− = 0.003, L0 =
+shifts (namely, W+ /W− = T+ /T− = L+ /L− = 1), the                       0.994, L+ = 0.003}. For this set, fcr = 0.007 and
+cycling frequency fcr is still nonzero as long as W0 6= L0 .             gcr = g0 + 0.034(a − 2).
+The magnitude of fcr increases with |W0 − L0 | and de-
+creases with T0 , and the cycling is counter-clockwise                3. {W− = 0.995, W0 = 0.004, W+ = 0.001, T− =
+(fcr > 0) if W0 > L0 and clockwise (fcr < 0) if L0 > W0 ,                0.800, T0 = 0.142, T+ = 0.058, L− = 0.988, L0 =
+see Fig. S4 C. In other words, in this symmetric CR                      0.000, L+ = 0.012}. For this set, fcr = −0.190 and
+model, if losers are more (less) likely to shift actions than            gcr = g0 + 0.034(a − 2).
+winners, the social state cycling will be counter-clockwise
+                                                                      4. {W− = 0.001, W0 = 0.994, W+ = 0.004, T− =
+(clockwise).
+                                                                         0.063, T0 = 0.146, T+ = 0.791, L− = 0.989, L0 =
+   To give some concrete examples, we symmetrize the
+                                                                         0.010, L+ = 0.001}. For this set, fcr = 0.189 and
+transition parameters of Fig. 2 (F–J) while keeping the
+                                                                         gcr = g0 + 0.033(a − 2).
+empirical values of W0 , T0 , L0 unchanged. The resulting
+cycling frequencies are, respectively, fcr = 0.024 (a =
+                                                                      5. {W− = 0.001, W0 = 0.992, W+ = 0.006, T− =
+1.1), 0.017 (a = 2.0), 0.017 (a = 4.0), 0.015 (a = 9.0) and
+                                                                         0.167, T0 = 0.080, T+ = 0.753, L− = 0.998, L0 =
+0.017 (a = 100.0), which are all significantly beyond zero.
+                                                                         0.000, L+ = 0.002}. For this set, fcr = 0.179 and
+Our model is indeed dramatically different from the best
+                                                                         gcr = g0 + 0.033(a − 2).
+response model, for which asymmetry in decision-making
+is a basic assumption.                                                To determine the influence of each of the nine condi-
+                                                                   tional response parameters to the cycling frequency fcr ,
+                                                                   we fix each of these nine conditional response parameters
+ C.   Sampling the conditional response parameters                 and sample all the others uniformly at random under the
+                                                                   constraints of Eq. [17]. The mean value hfcr i of fcr as
+  For the population size N = 6, we uniformly sam-                 a function of this fixed conditional response parameter
+ple 2.4 × 109 sets of conditional response parameters              is then obtained by repeating this process many times,
+W− , W0 , . . . , L0 , L+ under the constraints of Eq. [17], and   see Fig. S4 B. As expected, we find that when the fixed
+for each of them we determine the theoretical frequency            conditional response parameter is equal to 1/3, the mean
+fcr and the theoretical payoff gcr numerically. By this            cycling frequency hfcr i = 0. Furthermore we find that
+                                                                                                                                   21
+
+   1. If W0 , T+ or L+ is the fixed parameter, then hfcr i              other words, the CR strategy can not be distinguished
+      increases (almost linearly) with fixed parameter, in-             from the NE mixed strategy through measure the action
+      dicating that a larger value of W0 , T+ or L+ pro-                marginal distributions of individual players.
+      motes counter-clockwise cycling at the population
+      level.
+                                                                                       E.    Computer simulations
+   2. If W− , T− or L0 is the fixed parameter, then hfcr i
+      decreases (almost linearly) with this fixed parame-
+      ter, indicating that a larger value of W− , T− or L0                 All of the theoretical predictions of the CR model have
+      promotes clockwise cycling at the population level.               been confirmed by extensive computer simulations. In
+                                                                        each of our computer simulation processes, a popula-
+   3. If W+ , T0 or L− is the fixed parameter, then hfcr i              tion of N players repeatedly play the RPS game under
+      does not change with this fixed parameter (i.e.,                  the random pairwise-matching protocol. At each game
+      hfcr i = 0), indicating that these three conditional              round, each player of this population makes a choice on
+      response parameters are neutral as the cycling di-                her action following exactly the CR strategy. The pa-
+      rection is concerned.                                             rameters {W− , W0 , . . . , L+ } of this strategy is specified
+                                                                        at the start of the simulation and they do not change
+                                                                        during the simulation process.
+ D.    Action marginal distribution of a single player
+
+  The social state transition matrix Eq. [19] has the fol-                  S6.   THE GENERALIZED CONDITIONAL
+lowing rotation symmetry:                                                              RESPONSE MODEL
+
+                Mcr [(n′R , n′P , n′S )|(nR , nP , nS )]                  If the payoff matrix of the RPS model is more complex
+                 = Mcr [(n′S , n′R , n′P )|(nS , nR , nP )]             than the one shown in Fig. 1A, the conditional response
+                 = Mcr [(n′P , n′S , n′R )|(nP , nS , nR )] .    (22)   model may still be applicable after some appropriate ex-
+                                                                        tensions. In the most general case, we can assume that a
+Because of this rotation symmetry, the steady-state dis-                player’s decision is influenced by the player’s own action
+           ∗
+tribution Pcr (s) has also the rotation symmetry that                   and the opponent’s action in the previous game round.
+                                                                          Let us denote by qs ∈ {R, P, S} a player’s action at
+   ∗                    ∗                       ∗
+ Pcr (nR , nP , nS ) = Pcr (nS , nR , nP ) = Pcr  (nP , nS , nR ) .     time t, and by qo ∈ {R, P, S} the action of this player’s
+                                                              (23)      opponent at time t. Then at time (t + 1), the probability
+  After the social states of the population has reached                 that this player adopts action q ∈ {R, P, S} is denoted
+the steady-state distribution Pcr     ∗
+                                        (s), the probability ρR   cr    as Qq(qs ,qo ) , with the normalization condition that
+that a randomly chosen player adopts action R in one
+game round is expressed as
+                                                                                    QR            P            S
+                                                                                     (qs ,qo ) + Q(qs ,qo ) + Q(qs ,qo ) ≡ 1 .   (25)
+           X                  nR               1 X
+   ρR
+    cr =
+                  ∗
+                 Pcr (s)              =                  ∗
+                                                        Pcr (s)nR ,        This generalized conditional response model has 27
+                         nR + nP + nS   N
+            s                                       s                   transition parameters, which are constrained by 9 nor-
+                                                      (24)              malization conditions (see Eq. [25]). The social state
+where the summation is over all the possible social states              transition matrix of this generalized model is slightly
+s = (nR , nP , nS ). The probabilities ρP        S
+                                         cr and ρcr that a              more complicated than Eq. [19].
+randomly chosen player adopts action P and S in one                        The win-lose-tie conditional response model is a lim-
+play can be computed similarly. Because of the rotation                 iting case of this more general model. It can be de-
+symmetry Eq. [23] of Pcr ∗
+                           (s), we obtain that ρR     P
+                                                cr = ρcr =              rived from this general model by assuming Qq(R,R) =
+ S
+ρcr = 1/3.
+  Therefore, if the players of the population all play the              Qq(P,P ) = Qq(S,S) , Qq(R,P ) = Qq(P,S) = Qq(S,R) , and
+same CR strategy, then after the population reaches the                 Qq(R,S) = Qq(P,R) = Qq(S,P ) . These additional assump-
+the steady-state, the action marginal distribution of each              tions are reasonable only for the simplest payoff matrix
+player will be identical to the NE mixed strategy. In                   shown in Fig. 1A.
+

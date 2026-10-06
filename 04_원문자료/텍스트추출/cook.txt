@@ -1,0 +1,529 @@
+                          Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+
+
+Automatic imitation in a strategic context: players of rock−
+paper−scissors imitate opponents' gestures
+Richard Cook, Geoffrey Bird, Gabriele Lünser, Steffen Huck and Cecilia Heyes
+Proc. R. Soc. B published online 20 July 2011
+doi: 10.1098/rspb.2011.1024
+
+
+References                         This article cites 37 articles, 10 of which can be accessed free
+                                   http://rspb.royalsocietypublishing.org/content/early/2011/07/12/rspb.2011.1024.full.ht
+                                   ml#ref-list-1
+
+P<P                                Published online 20 July 2011 in advance of the print journal.
+
+Subject collections                Articles on similar topics can be found in the following collections
+
+                                      behaviour (713 articles)
+                                      cognition (147 articles)
+                                      neuroscience (135 articles)
+
+Email alerting service             Receive free email alerts when new articles cite this article - sign up in the box at the top
+                                   right-hand corner of the article or click here
+
+
+
+
+Advance online articles have been peer reviewed and accepted for publication but have not yet appeared in
+the paper journal (edited, typeset versions may be posted when available prior to final publication). Advance
+online articles are citable and establish publication priority; they are indexed by PubMed from initial publication.
+Citations to Advance online articles must include the digital object identifier (DOIs) and date of initial
+publication.
+
+
+
+To subscribe to Proc. R. Soc. B go to: http://rspb.royalsocietypublishing.org/subscriptions
+
+
+
+                                         This journal is © 2011 The Royal Society
+                               Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+
+
+                                                                                                                        Proc. R. Soc. B
+                                                                                                           doi:10.1098/rspb.2011.1024
+                                                                                                                        Published online
+
+
+          Automatic imitation in a strategic context:
+           players of rock –paper– scissors imitate
+                    opponents’ gestures†
+        Richard Cook1,*, Geoffrey Bird2, Gabriele Lünser3,4, Steffen Huck3,4
+                               and Cecilia Heyes1,4,5
+                   1
+                   Cognitive, Perceptual and Brain Sciences Research Department, University College London,
+                                                    London W1H 0AP, UK
+           2
+             School of Psychology, Birkbeck College, University of London, Malet Street, London WC1E 7HX, UK
+            3
+              Department of Economics, and 4ESRC Centre for Economic Learning and Social Evolution (ELSE),
+                                      University College London, London WC1E 6BT, UK
+         5
+          All Souls College and Department of Experimental Psychology, University of Oxford, Oxford OX1 4AL, UK
+        A compelling body of evidence indicates that observing a task-irrelevant action makes the execution of
+        that action more likely. However, it remains unclear whether this ‘automatic imitation’ effect is indeed
+        automatic or whether the imitative action is voluntary. The present study tested the automaticity of auto-
+        matic imitation by asking whether it occurs in a strategic context where it reduces payoffs. Participants
+        were required to play rock – paper – scissors, with the aim of achieving as many wins as possible, while
+        either one or both players were blindfolded. While the frequency of draws in the blind – blind condition
+        was precisely that expected at chance, the frequency of draws in the blind –sighted condition was signifi-
+        cantly elevated. Specifically, the execution of either a rock or scissors gesture by the blind player was
+        predictive of an imitative response by the sighted player. That automatic imitation emerges in a context
+        where imitation reduces payoffs accords with its ‘automatic’ description, and implies that these effects are
+        more akin to involuntary than to voluntary actions. These data represent the first evidence of automatic
+        imitation in a strategic context, and challenge the abstraction from physical aspects of social interaction
+        typical in economic and game theory.
+                   Keywords: rock – paper – scissors; zero-sum game; automatic imitation; game theory;
+                                                   mirror neuron system
+
+
+
+1. INTRODUCTION                                                             sight and execution of a given action [2 –4]. Since the
+Reports of apparently unconscious, spontaneous mimicry                      discovery of these ‘mirror neurons’ in the macaque,
+date back several centuries. Recently, these effects have                   considerable evidence has amassed suggesting that
+been described as ‘automatic imitation’ and attributed                      humans also have an MNS [5,6]. The human MNS has
+to a human mirror neuron system (MNS) [1]. While                            been implicated in a range of social functions, including
+this description implies that such imitation is somehow                     action understanding, empathy and theory of mind
+involuntary or stimulus-driven, there is surprisingly little                [7,8]. However, one of the most plausible functions of
+direct evidence supporting this characterization. For                       the human MNS is the mediation of a range of imitative
+example, no previous studies have explicitly asked partici-                 or mirror effects that may be broadly described as
+pants not to imitate or penalize imitative behaviours. The                  automatic imitation.
+present study adopts the novel approach of using a stra-                        In the most straightforward cases, automatic imitation
+tegic context to assess the automaticity of the tendency                    is overt—the sight of an action elicits visible execution of
+to imitate. Specifically, we sought to determine whether                    the same movement. Experimental demonstrations of
+players of ‘rock– paper – scissors’ (RPS) imitate the ges-                  such overt imitation date back to Eidelberg [9] and Hull
+tures of their opponents in a game where the only way                       [10]. Early researchers were hampered by methodological
+to win is to avoid imitating your opponent.                                 problems, but more recent research has confirmed that
+   Neurons have been discovered in the macaque pre-                         humans often spontaneously and overtly imitate the topo-
+motor and parietal cortices that respond both to the                        graphy of each other’s behaviour [11 –13]. For example,
+                                                                            participants are more likely to engage in foot-tapping
+                                                                            than face-touching behaviours in the presence of a foot-
+* Author for correspondence (r.cook@ucl.ac.uk).                             tapping confederate, while the opposite pattern is
+†
+  Cook conducted experimental sessions; contributed to the data
+analysis and interpretation; wrote the first draft of the paper. Bird       observed in the presence of a confederate prone to
+contributed to the design of the experiment; conducted                      touch their face [11].
+experimental sessions. Lünser contributed to the design, data                  In addition to reports of overt automatic imitation,
+analysis and second draft of the paper. Huck provided the idea for          further imitative effects may be too subtle to be detected
+the study; contributed to the design, data analysis, interpretation
+and second draft of the paper. Heyes contributed to the design,             by the naked eye. Insight into such covert mimicry has
+data analysis and interpretation; wrote the final draft of the paper.       been provided through the use of electromyography
+
+Received 15 May 2011
+Accepted 29 June 2011                                                   1                         This journal is q 2011 The Royal Society
+                                Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+2 R. Cook et al. Imitation in a strategic context
+
+(EMG), a technique that allows researchers to measure             Table 1. The rock–paper –scissors game, where (0,0)
+subtle muscle movements [14 – 16]. This paradigm has              denotes a drawn round, (1,21) denotes a win for player 1
+been used to demonstrate imitative effects following              and (21,1) denotes a win for player 2.
+extremely brief (30 ms) stimulus exposures [17]. EMG
+has also been used in conjunction with transcranial mag-                              player 2
+netic stimulation (TMS) to record motor-evoked
+                                                                  player 1            rock             paper         scissors
+potentials (MEPs). When TMS is applied to observers’
+primary motor cortex during action observation, selec-            rock                0,0              21,1          1,21
+tively enhanced MEPs are elicited from muscles                    paper               1,21             0,0           21,1
+recruited by the observed action [18,19].                         scissors            21,1             1,21          0,0
+    A covert tendency to imitate has also been detected using
+reaction time (RT) measures [20–22]. For example, Heyes
+et al. [21] found that participants were faster to make hand      naturalistic, strategic context. To find out how difficult
+opening responses to the onset of hand opening stimuli            it is to inhibit imitative responding, we observed partici-
+than to the onset of hand closing, and confirmed that this        pants while they played RPS—a game in which imitative
+effect is truly imitative; it depends on the topography of        responding is suboptimal. While it has been observed
+observed action—on how body parts move relative to one            that competitors may emulate the strategies of rivals
+another—not merely on the position of the action relative         [32 –34], automatic imitation, whereby individuals copy
+to an external frame of reference (spatial compatibility).        the topography of rivals’ body movements, has never
+That participants make faster imitative responses than            been demonstrated in a strategic context.
+non-imitative responses is an extremely robust effect,                In RPS, two players each present one of three alterna-
+having been found across several effector systems [23,24],        tive hand gestures. Each player must make either ‘rock’ (a
+for both transitive [25] and intransitive actions [26,27].        closed fist), ‘paper’ (an open hand) or ‘scissors’ (index
+    The imitative effects described above represent compel-       and middle finger parted) gestures, typically following a
+ling evidence that the sight of an action facilitates the motor   count of three. A paper gesture beats a rock gesture, scis-
+execution of that action. However, it remains unclear just        sors beats paper and rock beats scissors. If both players
+how automatic these ‘automatic’ imitation effects really          make the same gesture, the round is drawn (table 1). In
+are [1]. Two criteria that have been applied to assess            this zero-sum game, where one player’s victory (þ1)
+the automaticity of a psychological process are awareness         results in the other player’s defeat (21), the only ‘Nash
+and intentionality [28]. Previous studies confirm that            equilibrium’ (where each player behaves optimally given
+overt imitation often manifests without the conscious             what all others do) is in mixed strategies. Regardless of
+knowledge of the actor. For example, participants imitate         which action one player chooses, there would always be
+face-touching and foot-shaking behaviours, despite failing        one specific action for the other player that ensures a
+to notice the mannerisms modelled by the confederate              win, and vice versa. This ‘best-response structure’
+[11]. Similarly, while the magnitude of imitative effects         inherent in RPS ensures that players can only achieve
+on RT is subject to attentional modulation [29,30], these         optimal outcomes if they avoid imitating each other.
+effects are present even when action stimuli are not the              The present study sought to determine whether per-
+focus of attention [24].                                          formance in RPS is influenced by automatic imitation.
+    It is more uncertain whether ‘automatic imitation’ is         To address this question, players’ performance was com-
+automatic in the sense of being involuntary. Actions              pared under two conditions. In the first condition, one of
+may be thought of as forming a continuum, with volun-             the players was blindfolded and the other sighted. In the
+tary actions at one extreme and automatic reflexes at             second condition, both players were blindfolded. Blind-
+the other [31]. Reflexes, such as the classic knee-jerk           folded players cannot see and therefore cannot imitate
+response, are immediate reactions automatically triggered         their opponent. Consequently, if there is an effect of imi-
+by an external event. Such actions are involuntary; that is,      tation, one would expect the proportion of draws to
+they cannot be inhibited. In contrast, voluntary actions          exceed a third in the blind –sighted condition, but not
+are only very indirectly elicited by an external stimulus         in the blind – blind condition.
+and can, by definition, be inhibited. We do not yet
+know how difficult it is to inhibit automatic imitation.
+This is because, in previous studies, participants had            2. EXPERIMENTAL DESIGN AND PROCEDURES
+little or no incentive to inhibit imitative responses. In         Forty-five healthy adults (23 females) with a mean age of
+studies conducted in naturalistic settings, there were no         24.9 years served as participants in the experiment. All
+costs associated with imitative behaviour [11], and in            had normal or corrected-to-normal vision, were familiar
+more tightly controlled experiments, imitative tendencies         with the game, and were naive to the purpose of the
+interfered with participants’ capacity to obey task instruc-      experiment. None had studied economics at undergradu-
+tions, but did not incur any further penalties [20]. For          ate level or higher.
+example, in experiments where participants were                      The experiment took place at the ELSE Laboratory,
+instructed to respond as quickly as possible, they reacted        University College London, in a large, well-lit room.
+more slowly when their response did not match the action          Data were collected over three sessions, each lasting
+stimulus. However, they received the same honorarium at           approximately 70 min. Written instructions were pre-
+the end of the experiment, regardless of their response           sented at the start of the session, including a
+speed.                                                            recapitulation of the rules of RPS. The participants,
+    In the present experiment, we adopted the entirely            recruited with ORSEE [35], were assigned to triads at
+novel approach of studying automatic imitation in a               random. Six of the triads comprised two males and a
+
+Proc. R. Soc. B
+                           Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+                                                                           Imitation in a strategic context R. Cook et al.     3
+
+Table 2. The sequence of the nine matches played by               Table 3. Distribution of the three gestures for the blind –
+each triad.                                                       sighted games, the blind– blind games and collapsed across
+                                                                  all manipulations.
+player A versus player B            player A blindfolded
+                                    player B blindfolded                             rock (%)      paper (%)      scissors (%)
+                                    both players blindfolded
+player A versus player C            player C blindfolded          bind –sighted      32.1          33.1           34.8
+                                    player A blindfolded          blind –blind       32.8          33.5           33.7
+                                    both players blindfolded      overall            32.4          33.3           34.4
+player B versus player C            player B blindfolded
+                                    player C blindfolded
+                                    both players blindfolded      Table 4. Summary of the outcomes observed across the
+                                                                  14 triads.
+
+female, four comprised two females and a male and two                                                mean                    s.d.
+comprised three males and three comprised three
+                                                                  blind –sighted
+females. Within each triad, participants were arbitrarily
+                                                                     blind wins (%)                  32.4                    4.1
+designated A, B and C. Triads were required to play                  sighted wins (%)                31.3                    2.9
+nine matches of RPS, each comprising 20 individual                   draws (%)                       36.3                    4.6
+rounds. The first three matches were between players
+                                                                  blind –blind
+A and B, the second set of three matches were between                wins (%)                        66.7                    5.0
+A and C and the final three between B and C. Matches                 draws (%)                       33.3                    5.0
+were played under two conditions; either with one
+player sighted and one blindfolded, or with both players
+blindfolded. The sequence of matches is summarized in             correctly—blindfolded players were not informed of
+table 2. The third member of the triad, not involved in           their opponents’ gestures. The analyses reported were
+the match-pairing, recorded the gestures and outcomes             conducted on the data from the remaining 14 triads. A
+using a computerized scoring sheet, and acted as umpire.          further two data points were lost from the blind –sighted
+    Prior to the delivery of each gesture, players sat facing     condition owing to participant error. For the purpose of
+each other, presenting a clenched fist in front of their          significance testing, neither the data from individual par-
+body. Following a count of three made by the umpire,              ticipants nor player pairings can be regarded as
+players were required to deliver their gestures simulta-          independent. As with all zero-sum games, a player’s out-
+neously. Consequently, any effect of automatic imitation          comes on RPS are perfectly (negatively) correlated with
+was due to naturally occurring asynchronies between the           their opponent’s. Moreover, each player was a member
+onsets of the two players’ gestures. Umpires were asked to        of two of the three pairings within each triad. Thus, any
+ensure that blindfolded players were unable to see their          tendency of a given individual could influence two pair-
+opponent; to ensure that players were facing each other           ings. The analyses reported, therefore, reflect the
+throughout each round; to inform blind players of gestures        conservative approach of treating the data from each
+made; and to state aloud the outcome of each round.               triad as a single observation.
+The presence of an umpire also prevented cheating in the              Across the whole experiment, the rock gesture was exe-
+form of deliberately delayed gesture execution. Players           cuted on 32.4 per cent of rounds, the paper gesture on
+were shown what was expected in terms of gesture delivery         33.3 per cent of rounds and the scissors gesture on
+prior to the experiment.                                          34.4 per cent of rounds (table 3). One-way ANOVA with
+    Each participant received a small honorarium for par-         gesture as a within-triad factor confirmed that the 14 triads
+ticipating (£5), which was supplemented by an additional          executed the three gestures with comparable frequency in
+payment based on their performance in the experiment.             both the blind–sighted (F2,26 ¼ 1.24; p . 0.30) and
+Participants were informed at the start that the player           blind–blind conditions (F2,26 ¼ 0.117; p . 0.80).
+who achieved the greater number of wins within each                   The outcomes obtained by the 14 triads across the two
+60-round match would receive an additional £2.50 win              conditions are summarized in table 4. One-tailed tests
+bonus. However, if a match was tied, neither player               were used to assess the prediction that the proportion of
+would receive any bonus. Players could therefore finish           draws in the blind – sighted condition would be greater
+the experiment with total bonuses of £0, £2.50 or                 than chance and greater than the proportion of draws in
+£5.00. Because a tied match was a suboptimal outcome              the blind – blind condition. Given the task requirements,
+for both players, this payment structure ensured that the         the alternative result—e.g. fewer drawers than expected
+Nash Equilibrium was in mixed strategies. While players           by chance in the blind – sighted conditioning—would
+may have preferred to draw a round than to lose, the opti-        not be intelligible. It would imply a tendency to deliber-
+mal outcome could only be achieved by avoiding draws.             ately counterimitate one’s blindfolded opponent, but
+In order to establish or extend a lead in the match, or           response asynchronies long enough to allow this kind of
+reduce one’s arrears, it was necessary to win rounds.             intentional response selection would have been detected
+                                                                  and disqualified by the umpire [36,37]. Thus, the task
+                                                                  permitted response asynchronies long enough for auto-
+3. RESULTS                                                        matic imitation (see below), but too short for deliberate
+Data from one of the triads were excluded because par-            counter imitation. Indeed, blind players actually won
+ticipants did not follow the experimental procedure               slightly more of the blind –sighted rounds (32.4%) than
+
+Proc. R. Soc. B
+                               Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+4 R. Cook et al. Imitation in a strategic context
+
+Table 5. Logistic regressions conducted on the tendency of                                             0.45
+
+
+
+
+                                                                   p (sighted gesture/blind gesture)
+the sighted player to imitate the blindfolded player.
+                                                                                                       0.40
+                                                 p-value                                               0.35
+                    b               s.e.         (one-tailed)
+                                                                                                       0.30
+sighted player chooses rock
+   blindfolded player executes rock                                                                    0.25
+      rock             0.245         0.134       0.034
+                                                                                                       0.20
+      constant       20.874          0.069       0
+sighted player chooses paper                                                                           0.15
+                                                                                                              blind player: rock   blind player: paper blind player: scissors
+   blindfolded player executes paper
+      paper            0.086         0.162       0.298           Figure 1. The mean probabilities that each gesture was exe-
+      constant       20.677          0.061       0               cuted by the sighted player given the gesture executed by
+sighted player chooses scissors                                  the blindfolded opponent across the 14 triads. Error-bars
+   blindfolded player executes scissors                          represent standard error of the mean. Dark grey bars, sighted
+      scissors         0.266         0.105       0.006           player: rock; light grey bars, sighted player: paper; open bars,
+      constant       20.737          0.066       0               sighted player: scissors.
+
+                                                                 rate at which sighted players replicated the gestures
+the sighted players (31.3%), with only five of the 14 triads     observed in the previous round (27.2%) (t13 ¼ 2.11,
+producing a greater number of sighted wins than blind            p . 0.05 (two-tailed)) or from two rounds earlier
+wins.                                                            (34.3%) (t13 ¼ 0.78, p . 0.40 (two-tailed)) did not
+    Of principal interest, there was clear evidence of a ten-    depart from chance levels.
+dency for the sighted player to imitate the blindfolded             Unlike most economic games, RPS is commonly
+player (i.e. to choose the same gesture). As predicted           played in everyday life. To ensure that our results were
+by the imitation hypothesis, there was a greater number          representative of these naturalistic conditions, we did
+of draws in the blind –sighted (36.3%) than in the               not film the players in the main experiment or record
+blind – blind (33.3%) conditions across the 14 triads.           their RTs using an EMG. However, to estimate the mag-
+One-sample t-tests revealed that the proportion of draws         nitude and distribution of their response asynchronies, we
+was significantly above that expected at chance in the           conducted an ancillary experiment in which a further four
+blind – sighted condition (t13 ¼ 2.49; p , 0.025 (one-           pairs of participants (mean age ¼ 21.8 years) were filmed
+tailed)) but not in the blind –blind condition (t13 ¼            while playing 80 rounds of RPS in the blind –sighted con-
+0.07; p . 0.90 (one-tailed)). In the latter case, the            dition. Two of the pairs comprised female players and two
+frequency of draws was almost exactly that expected by           comprised mixed-sex pairings. Each pair played rounds
+chance. Moreover, a paired-samples t-test revealed that          1– 20 and 41 –60 with player A blindfolded; and rounds
+the frequency of draws was significantly higher in the           21 –40 and 61 – 80 with player B blindfolded. As in the
+blind – sighted than in the blind – blind condition (t13 ¼       main experiment, a win bonus of £2.50 was available
+1.72; p ¼ 0.05 (one-tailed)).                                    for winning the overall match. Participants were filmed
+    In order to better understand the elevated frequency of      from the side at 60 frames-per-second using a Point
+draws in the blind – sighted condition, we performed             Grey Grasshopper digital camera. Response onset was
+logistic regressions on sighted players’ likelihood to imi-      taken as the earliest frame when the player’s gesture
+tate. We ran three such regressions, shown in table 5.           could be identified. The proportion of draws observed
+Each regression estimated the likelihood that the sighted        in three of the four pairs again exceeded a third, with
+player would imitate depending on whether or not the             35.0 per cent of trials drawn overall. The blindfolded
+blindfolded player chose one of the three actions (with          player initiated his or her gesture before the sighted player
+robust standard errors and clustering by triad). The             in 44.7 per cent of rounds, and this positive asynchrony
+regressions revealed that the execution of a scissors            exceeded 200 ms—the minimum required for automatic
+gesture by the blindfolded player significantly increased        imitation—in 17.2 per cent of rounds (figure 2). That the
+the probability that the sighted player would also choose        positive tail of each pair’s distribution exceeded 200 ms
+scissors (b ¼ 0.266; p , 0.01 (one-tailed)). A similar           provides further support for the view that the draws effect
+effect was observed when the blindfolded player                  observed in the principal experiment was due to automatic
+chose rock (b ¼ 0.245; p , 0.05 (one-tailed)), but not           imitation.
+when the blindfolded player chose paper (b ¼ 0.086;
+p . 0.25 (one-tailed)). The contingencies between the
+gestures of the blind and sighted players are represented        4. DISCUSSION
+in figure 1.                                                     The results of this study indicate that players of RPS tend
+    The proportion of draws did not differ from chance           to imitate their opponents, in spite of the costs associated
+when both players were blindfolded, implying that the            with imitation in this game. Consistent with this hypoth-
+elevated proportion of draws in the blind – sighted con-         esis, we found a higher frequency of draws when one
+dition was not owing to players adopting correlated              player could see the other than when both players were
+gesture-selection strategies. Nevertheless, as a further         blindfolded (a ‘draws effect’), and that the execution of
+check for response strategies, we calculated how often           the scissors and rock gestures by the blind players pre-
+sighted players replicated the gestures presented by the         dicted the execution of matching gestures by their
+blind player on the nth-1 and nth-2 trials. However, the         sighted opponents.
+
+Proc. R. Soc. B
+                                      Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+                                                                                       Imitation in a strategic context R. Cook et al.   5
+
+                                     20                     mean: 0.875 ms    40                     mean: 28.4 ms
+                                                               s.d.: 220 ms                            s.d.: 148 ms
+
+                                     15                                       30
+
+
+
+                         frequency
+                                     10                                       20
+
+
+                                      5                                       10
+
+
+                                      0                                        0
+
+
+                                     30                      mean: 10.1 ms    20                    mean: –41.4 ms
+                                                               s.d.: 137 ms                            s.d.: 249 ms
+                                     25
+                                                                              15
+
+
+                      frequency
+                                     20
+
+                                     15                                       10
+
+                                     10
+                                                                               5
+                                      5
+
+                                      0                                        0
+                                             –500          0       500                –500         0       500
+                                                    asynchrony (ms)                          asynchrony (ms)
+Figure 2. Distributions of asynchronies observed for the four pairs subject to analysis. Positive asynchronies denote rounds
+where the blind player delivered their gesture ahead of the sighted player; negative asynchronies denote rounds where the
+sighted player delivered first.
+
+
+
+   Although players of RPS are formally required to pre-                      [17]. Similarly, participants execute imitative gestures
+sent their gestures simultaneously, we found that one of                      faster than comparable non-imitative responses even
+the players frequently presents slightly earlier than the                     when mean RTs are 200 –400 ms [20 – 22]. Moreover,
+other. Our results suggest that, on those rounds where                        automatic responses that are ‘triggered’ by an external
+the blind player delivered their gesture first, observation                   event, such as an observed action, are executed faster
+of this gesture activated in their opponent a motor rep-                      than voluntary actions [37]. That asynchronies in the
+resentation of the same action. This motor activation                         order of 200– 600 ms were frequently observed in the
+made the opponent more likely to select the imitative                         ancillary experiment therefore ensures that automatic
+response relative to the two alternative actions. Thus, it                    imitation is a plausible account of the draws effect.
+appears that the psychological mechanisms responsible                             Our analyses suggest that the imitation effect was
+for the higher frequency of draws in our blind –sighted                       strongest for the scissors gesture, weaker for the rock ges-
+condition are comparable with those that generate                             ture and absent for the paper gesture. This may have been
+automatic imitation [11 – 13,17,20 – 22].                                     owing to variability in the salience and distinctiveness of
+   An account of the draws effect based on automatic imi-                     the gestures relative to the clenched fist starting position.
+tation is consistent with evidence from neuroimaging                          The scissors gesture, from which there are two protruding
+paradigms. Specifically, it appears that playing RPS                          fingers, is very different from a clenched fist, and the
+recruits areas of the human MNS, including the ventral                        execution of the rock gesture typically involves an
+premotor cortex and intraparietal sulcus [38]. Given                          abrupt thrusting movement of the hand towards the
+that the MNS is thought to mediate automatic imitation                        player’s opponent.
+[1,6,39], these results provide a further indication that                         The tendency to imitate need not be overwhelming. It
+players of RPS may be subject to an imitative bias.                           is hard to generate behaviour randomly under conditions
+   To produce the draws effect in games of RPS, automatic                     that promote prepotent responses. Even apparently
+imitation must occur very rapidly. That is, perception of                     simple tasks, such as the generation of random sequences
+the opponent’s action and activation of a corresponding                       of numbers or letters, can prove surprisingly demanding
+motor representation must occur in less than a second.                        when individuals must inhibit prepotent sequences such
+Carefully controlled studies of automatic imitation con-                      as ‘1-2-3’ or ‘A-B-C’ [40]. The execution of truly
+firm that this is possible. EMG recording from facial                         random responses during RPS may require the inhibition
+muscles while participants view backward-masked facial                        of prepotent imitative responses. Factors such as time
+expressions have revealed expression-specific muscle                          pressure, boredom and fatigue may hinder players’ ability
+activation following a stimulus exposure of only 30 ms                        to inhibit imitative responding. On those trials where
+
+Proc. R. Soc. B
+                                Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+6 R. Cook et al. Imitation in a strategic context
+
+players are undecided as to which gesture to execute,             13 Lakin, J. L., Chartrand, T. L. & Arkin, R. M. 2008 I am
+these factors may cause the prepotent imitative response             too just like you: nonconscious mimicry as an automatic
+to manifest as overt imitation.                                      behavioral response to social exclusion. Psychol. Sci. 19,
+   The draws effect observed in this experiment provides             816 –822. (doi:10.1111/j.1467-9280.2008.02162.x)
+evidence that automatic imitation is ‘automatic’ in the           14 Berger, S. M. & Hadley, S. W. 1975 Some effects of a
+                                                                     model’s performance on an observer’s electromyographic
+sense of being very difficult to inhibit. Only by avoiding imi-
+                                                                     activity. Am. J. Psychol. 88, 263 –276. (doi:10.2307/
+tation could pairs maximize their chances of achieving the           1421596)
+win bonus. Thus, players imitated their opponents’ actions        15 Blairy, S., Herrera, P. & Hess, U. 1999 Mimicry and the
+despite having a financial incentive to avoid imitation.             judgment of emotional facial expressions. J. Nonverbal
+More broadly, our results challenge the tendency in                  Behav. 23, 5–41. (doi:10.1023/A:1021370825283)
+economic and game theory to ignore, or abstract away,             16 Dimberg, U. 1982 Facial reactions to facial expressions.
+the physical aspects of social interaction. The draws effect         Psychophysiology 19, 643 –647. (doi:10.1111/j.1469-
+shows that physical factors are not only important in                8986.1982.tb02516.x)
+complicated strategic interactions, where strong emotional        17 Dimberg, U., Thunberg, M. & Elmehed, K. 2000 Uncon-
+drivers such as fairness, trust and reputation play a role.          scious facial reactions to emotional facial expressions.
+                                                                     Psychol. Sci. 11, 86–89. (doi:10.1111/1467-9280.00221)
+Rather, the embodied aspects of cognition play a significant
+                                                                  18 Fadiga, L., Fogassi, L., Pavesi, G. & Rizzolatti, G. 1995
+role even at the simplest level of game playing, and when            Motor facilitation during action observation: a magnetic
+they work against players’ interests.                                stimulation study. J. Neurophysiol. 73, 2608–2611.
+The study was approved by the University College London           19 Strafella, A. P. & Paus, T. 2000 Modulation of cortical
+ethics committee and performed in accordance with the                excitability during action observation: a transcranial mag-
+ethical standards set out in the 1964 Declaration of Helsinki.       netic stimulation study. Neuroreport 11, 2289–2292.
+                                                                     (doi:10.1097/00001756-200007140-00044)
+This research was supported by the Economic and Social            20 Brass, M., Bekkering, H. & Prinz, W. 2001 Movement
+Research Council (ESRC) research centre for Economic                 observation affects movement execution in a simple
+Learning and Social Evolution (ELSE).                                response task. Acta Psychol. 106, 3– 22. (doi:10.1016/
+                                                                     S0001-6918(00)00024-X)
+                                                                  21 Heyes, C., Bird, G., Johnson, H. & Haggard, P. 2005 Experi-
+                                                                     ence modulates automatic imitation. Cogn. Brain Res. 22,
+REFERENCES                                                           233–240. (doi:10.1016/j.cogbrainres.2004.09.009)
+ 1 Heyes, C. 2011 Automatic imitation. Psychol. Bull. 137,        22 Sturmer, B., Aschersleben, G. & Prinz, W. 2000 Corre-
+   463– 483. (doi:10.1037/a0022288)                                  spondence effects with manual gestures and postures: a
+ 2 di Pellegrino, G., Fadiga, L., Fogassi, L., Gallese, V. &         study of imitation. J. Exp. Psychol. Hum. Percept. Perform.
+   Rizzolatti, G. 1992 Understanding motor events: a neu-            26, 1746 –1759. (doi:10.1037/0096-1523.26.6.1746)
+   rophysiological study. Exp. Brain Res. 91, 176 –180.           23 Gillmeister, H., Catmur, C., Liepelt, R., Brass, M. &
+ 3 Gallese, V., Fadiga, L., Fogassi, L. & Rizzolatti, G. 1996        Heyes, C. 2008 Experience-based priming of body
+   Action recognition in the premotor cortex. Brain 119,             parts: a study of action imitation. Brain Res. 1217,
+   593– 609. (doi:10.1093/brain/119.2.593)                           157 –170. (doi:10.1016/j.brainres.2007.12.076)
+ 4 Rizzolatti, G., Fadiga, L., Gallese, V. & Fogassi, L. 1996     24 Leighton, J. & Heyes, C. 2010 Hand to mouth: auto-
+   Premotor cortex and the recognition of motor actions.             matic imitation across effector systems. J. Exp. Psychol.
+   Cogn. Brain Res. 3, 131–141. (doi:10.1016/0926-                   Hum. Percept. Perform. 36, 1174–1183. (doi:10.1037/
+   6410(95)00038-0)                                                  a0019953)
+ 5 Gazzola, V., Rizzolatti, G., Wicker, B. & Keysers, C.          25 Craighero, L., Bello, A., Fadiga, L. & Rizzolatti, G. 2002
+   2007 The anthropomorphic brain: the mirror neuron                 Hand action preparation influences the responses to hand
+   system responds to human and robotic actions. Neuro-              pictures. Neuropsychologia 40, 492 –502. (doi:10.1016/
+   image 35, 1674–1684. (doi:10.1016/j.neuroimage.2007.              S0028-3932(01)00134-8)
+   02.003)                                                        26 Bertenthal, B. I., Longo, M. R. & Kosobud, A. 2006
+ 6 Iacoboni, M., Woods, R. P., Brass, M., Bekkering, H.,             Imitative response tendencies following observation of
+   Mazziotta, J. C. & Rizzolatti, G. 1999 Cortical mechan-           intransitive actions. J. Exp. Psychol. Hum. Percept.
+   isms of human imitation. Science 286, 2526–2528.                  Perform. 32, 210–225. (doi:10.1037/0096-1523.32.2.210)
+   (doi:10.1126/science.286.5449.2526)                            27 Press, C., Bird, G., Walsh, E. & Heyes, C. 2008 Auto-
+ 7 Gallese, V. & Goldman, A. 1998 Mirror neurons and the             matic imitation of intransitive actions. Brain Cogn. 67,
+   simulation theory of mind-reading. Trends Cogn. Sci. 2,           44–50. (doi:10.1016/j.bandc.2007.11.001)
+   493– 501. (doi:10.1016/S1364-6613(98)01262-5)                  28 Neumann, O. 1984 Automatic processing: a review of
+ 8 Rizzolatti, G. & Craighero, L. 2004 The mirror-neuron             recent findings and a plea for an old theory. In Cognition
+   system. Annu. Rev. Neurosci. 27, 169– 192. (doi:10.               and motor processes (eds W. Prinz & A. F. Sanders),
+   1146/annurev.neuro.27.070203.144230)                              pp. 255 –293. Berlin, Germany: Springer.
+ 9 Eidelberg, L. 1929 Experimenteller beitrag zum mechan-         29 Bach, P., Peatfield, N. A. & Tipper, S. P. 2007 Focusing
+   ismus der imitationsbewegung. Jahresbucher Psychiatr.             on body sites: the role of spatial attention in action per-
+   Neurol. 45, 170– 173.                                             ception. Exp. Brain Res. 178, 509– 517. (doi:10.1007/
+10 Hull, C. 1933 Hypnosis and suggestibility. New York, NY:          s00221-006-0756-4)
+   Appleton-Century.                                              30 Chong, T. T., Cunnington, R., Williams, M. A. &
+11 Chartrand, T. L. & Bargh, J. A. 1999 The chameleon                Mattingley, J. B. 2009 The role of selective attention in
+   effect: the perception –behavior link and social inter-           matching observed and executed actions. Neuropsychologia
+   action. J. Pers. Soc. Psychol. 76, 893–910. (doi:10.1037/         47, 786–795. (doi:10.1016/j.neuropsychologia.2008.12.
+   0022-3514.76.6.893)                                               008)
+12 Lakin, J. L. & Chartrand, T. L. 2003 Using nonconscious        31 Haggard, P. 2008 Human volition: towards a neuro-
+   behavioral mimicry to create affiliation and rapport.             science of will. Nat. Rev. Neurosci. 9, 934– 946. (doi:10.
+   Psychol. Sci. 14, 334–339. (doi:10.1111/1467-9280.14481)          1038/nrn2497)
+
+Proc. R. Soc. B
+                            Downloaded from rspb.royalsocietypublishing.org on December 16, 2011
+
+
+                                                                            Imitation in a strategic context R. Cook et al.   7
+
+32 Apesteguia, J., Huck, S. & Oechssler, J. 2007 Imitation-        37 Welchman, A. E., Stanley, J., Schomers, M. R., Miall,
+   theory and experimental evidence. J. Econ. Theory 136,             R. C. & Bulthoff, H. H. 2010 The quick and the dead:
+   217 –235. (doi:10.1016/j.jet.2006.07.006)                          when reaction beats intention. Proc. R. Soc. B 277,
+33 Huck, S., Normann, H. T. & Oechssler, J. 1999 Learning             1667– 1674. (doi:10.1098/rspb.2009.2123)
+   in Cournot oligopoly—an experiment. Econ. J. 109,               38 Dinstein, I., Hasson, U., Rubin, N. & Heeger, D. J. 2007
+   C80– C95. (doi:10.1111/1468-0297.00418)                            Brain areas selective for both observed and executed
+34 Offerman, T., Potters, J. & Sonnemans, J. 2002 Imitation           movements. J. Neurophysiol. 98, 1415– 1427. (doi:10.
+   and belief learning in an oligopoly experiment. Rev. Econ.         1152/jn.00238.2007)
+   Stud. 69, 973 –997. (doi:10.1111/1467-937X.00233)               39 Catmur, C., Walsh, V. & Heyes, C. 2009 Associative
+35 Greiner, B. 2004 The online recruitment system ORSEE               sequence learning: the role of experience in the develop-
+   2.0—a guide for the organization of experiments in economics,      ment of imitation and the mirror system. Phil.
+   Working Paper Series in Economics 10. Cologne, Germany:            Trans. R. Soc. B 364, 2369–2380. (doi:10.1098/rstb.
+   University of Cologne.                                             2009.0048)
+36 Kornblum, S., Hasbroucq, T. & Osman, A. 1990 Dimen-             40 Jahanshahi, M., Saleem, T., Ho, A. K., Dirnberger, G. &
+   sional overlap: cognitive basis for stimulus–response              Fuller, R. 2006 Random number generation as an index
+   compatibility—a model and taxonomy. Psychol. Rev. 97,              of controlled processing. Neuropsychology 20, 391 –399.
+   253 –270. (doi:10.1037/0033-295X.97.2.253)                         (doi:10.1037/0894-4105.20.4.391)
+
+
+
+
+Proc. R. Soc. B
+

@@ -1,0 +1,70 @@
+
+[MF1] conf=medium src=['S25', 'S26', 'S19', 'S1', 'S6', 'S7', 'S9', 'S17', 'S18', 'MS2']
+STATEMENT: C2's two 'robust' rules are one fixed cycle. After you WIN, throw the loser's last hand; after you LOSE, throw the hand that beats the winner's hand. In both cases this is 'throw the hand your own last hand beats' (your last was Rock -> Scissors; Scissors -> Paper; Paper -> Rock), which is also the exact counter to the win-stay/lose-downgrade/draw-upgrade (Cournot) pattern. Its realised edge is small: +0.022 (US dyads), -0.007 (Australian dyads) and +0.029 (Zhejiang students vs AI) per throw in raw data, and +0.03 to +0.09 in six lab tables. Because it is a simple self-transition, it is the kind of pattern humans exploit best: against a 90%-deterministic bot of this type, humans won 62.2% and lost 17.6% of 300 rounds.
+DESIGN: Secondary computation on public raw data: 58 US dyads (300 rounds), 31 Australian dyads (480 games), 52 Zhejiang students vs adaptive AI (300 rounds); 220 complete games of humans vs fixed 90%-pattern bots (Brockbank & Vul 2024, Exp 1, course-credit undergraduates, +3/0/-1 points).
+EFFECT: About -0.01 to +0.03 per throw against human-dyad populations (vs 0 for random play); +0.03 to +0.09 against lab tables; a fixed rule followed 90% of the time loses about 44.6 pp per round to an adapting human over 300 rounds.
+IMPLICATION: Treat 'play what your last hand beats' at most as a mild lean mixed with randomness. Never use it as a fixed rule in repeated bouts against the same opponent or when the next opponent can watch you. In a relay where your previous bouts are visible, rotating Rock -> Scissors -> Paper is the easiest pattern for an observant opponent to read.
+CAVEATS: Derived, not published. Counterfactual edges assume opponents do not react to your rule. A 90%-deterministic bot is far more predictable than a human using the rule occasionally, and the 62% figure comes from 300-round sessions.
+
+[MF2] conf=medium src=['S19', 'S25', 'S26']
+STATEMENT: Outcome-conditioned tendencies are much weaker in the first rounds of a session than in the 300-480-round averages used throughout the sweep. In rounds 1-20, stay rates after W/T/L were 0.375/0.329/0.336 for Zhejiang students vs AI (vs 0.469/0.394/0.402 in rounds 51-300), 0.279/0.331/0.296 in US dyads (vs 0.324/0.286/0.223), and 0.261/0.285/0.275 in Australian dyads (vs 0.261/0.282/0.280). The strong Zhejiang win-stay and the US lose-stay deficit therefore build up later in long sessions.
+DESIGN: Secondary analysis of public raw data: 116 US players (stable dyads, course credit), 62 Australian players (stable dyads, flat AUD 60), 52 Zhejiang students vs adaptive AI (cash).
+EFFECT: Early-round deviations from 1/3 are mostly within about 2 SE (SE about 0.018-0.027 per cell). The largest are US and AU win-stay at -5 and -7 pp. Late-session Zhejiang win-stay is +14 pp.
+IMPLICATION: In a short knockout bout (1-5 throws), opponents' first transitions are close to random. Do not expect the large edges in A1/C2 (e.g., +0.28). The most stable early regularity is mild repeat-avoidance after wins in Western dyads.
+CAVEATS: Small early-round cells, counts pooled over players, and only three datasets. The Zhejiang data are against an adaptive AI, which may itself shape later behaviour.
+
+[MF3] conf=high src=['MS1', 'S21']
+STATEMENT: The face-to-face imitation effect (extra draws when one player can see the other) failed to replicate. Aczel, Bago & Foldes (2012; 114 Hungarian adults, 34 triads analysed) found 36.54% draws blind-sighted vs 37.77% blind-blind (t33 = -1.02, p = .32). In that live-hand sample Scissors, not Rock, was the most frequent gesture (36.76% and 36.64%), and in Cook et al.'s own UK live play the gestures were Rock 32.4%, Paper 33.3%, Scissors 34.4%.
+DESIGN: Aczel et al.: 114 adults in triads, 3 blocks x 3 matches x 20 live rounds, umpire, chocolate bar plus 300 HUF per block won. Cook et al.: 45 adults, 14 triads analysed, nine 20-round matches, GBP 5 plus GBP 2.50 per match won.
+EFFECT: Replication difference -1.2 pp (n.s.) vs the original +3.0 pp (one-tailed p = .05).
+IMPLICATION: Do not count on opponents unconsciously copying your Rock or Scissors in live play. Do not assume the Rock excess from screen-based studies carries over to live hand play; both live samples show Scissors slightly over-played.
+CAVEATS: Hungarian and UK university samples; triad-level analysis; the gesture frequencies concern Angle B but come from the same live-play studies.
+
+[MF4] conf=medium src=['S3', 'S1', 'S7']
+STATEMENT: Whether a higher value for winning raises or lowers opponents' win-stay is unresolved, so stakes should not be used to predict win-stay. Wang & Xu (2014) found win-stay falls as the win/tie payoff ratio a rises (Spearman rho = -0.29; W0 0.528 at a=2 vs 0.504 at a=4). Forder & Dyson (2016) found that raising the win value to +2 (loss -1, draw 0; equivalent to a = 3) raised win-stay from 35.92% to 48.44% (Tukey p < .05), with lose-shift unchanged.
+DESIGN: S1/S3: between-group, 6-person random-matching groups, 300 rounds, human opponents, cash (Zhejiang). S7: within-subject point-value blocks, 36 Sussex students vs random computer, points not paid out.
+EFFECT: S3 rho = -0.29 across 7 levels; S1 a=2 -> 4: -2.4 pp (n.s.). S7: +12.5 pp.
+IMPLICATION: Team pressure or bonus structures in a tournament give no reliable basis for predicting more (or less) win-stay from opponents.
+CAVEATS: Different manipulations (relative tie value vs win magnitude), populations, opponents and incentive schemes.
+
+[MF5] conf=high src=['S9']
+STATEMENT: Dyson (2021) Table 2 gives outcome x direction tables for three further Alberta samples (n=36 each, vs computer), which the sweep did not use. Averaged over credit conditions: after a loss stay 0.233/0.198/0.261, up 0.381/0.381/0.343, down 0.387/0.421/0.396 (Exps 1/2/3); after a win stay 0.372/0.301/0.439; after a draw stay 0.297/0.263/0.339, up 0.366/0.357/0.351, down 0.338/0.380/0.309. Derived edges: repeating your winning hand -0.153/-0.222/-0.134; throwing the loser's last hand +0.006/+0.039/+0.053; after the opponent loses with X, throwing X- +0.147/+0.183/+0.082.
+DESIGN: Three experiments x 36 University of Alberta students, course credit, 270 trials (3 x 90) vs computer: Exp 1 balanced random; Exp 2 counter-exploiting the participant's item frequencies every 6 trials; Exp 3 item-biased (51.11%).
+EFFECT: Lose-stay 7-14 pp below 1/3. Repeat-winner edge -0.13 to -0.22 per throw; loser's-hand edge +0.01 to +0.05.
+IMPLICATION: This independently supports C2 rule (i): after you win, do not repeat the winning hand, and use the loser's last hand as a low-risk default. Against repeat-averse opponents who just lost with X, X- (e.g., they lost with Rock -> you throw Scissors) is the strongest single reply.
+CAVEATS: Same lab family as B1-B4; computer opponents (two non-random); no performance pay; Table 2 win-stay averages differ slightly from the text values (e.g., 0.372 vs 36.67% in Exp 1).
+
+[MF6] conf=low src=['MS3', 'MS4']
+STATEMENT: Japanese face-to-face janken data (Prof. Yoshizawa Mitsuo, Obirin University; 725 students, 11,567 throws) reportedly showed Rock 35.0%, Paper 33.3%, Scissors 31.7%, and the same hand twice in a row in only 22.8% of 10,833 consecutive pairs (chance 33.3%). This is a repeat-averse East Asian sample, unlike the repeat-prone Zhejiang computer-lab samples.
+DESIGN: Reported in Japanese newspapers; 725 university students; presumably live hand play; collection about 1999; no peer-reviewed publication or methods located.
+EFFECT: Repeat rate 22.8% vs 33.3% (-10.5 pp); Rock +1.7 pp.
+IMPLICATION: For East Asian live play, assuming repeat-aversion (opponents rarely throw the same hand twice) is at least as plausible as the Zhejiang 'repeat-prone' pattern. The Zhejiang pattern also grows only late in long computer sessions (MF2).
+CAVEATS: Secondary newspaper reports only; methods, conditioning on outcome and independence of observations unknown; Japanese rather than Korean sample.
+
+[MF7] conf=medium src=['S6', 'S7', 'S9', 'S25', 'S26', 'S1', 'S19', 'MS3']
+STATEMENT: After a tie on X, throwing X- (the hand the tied hand beats: Rock-Rock -> Scissors, Scissors-Scissors -> Paper, Paper-Paper -> Rock) had a positive derived edge in all seven Western samples: +0.126 (Dyson 2016), +0.080 (Forder & Dyson), +0.069/+0.094/+0.012 (Dyson 2021 Exps 1-3), +0.058 (US dyads), +0.056 (AU dyads). It is also the post-tie rule popularised from Yoshizawa's Japanese data. It was negative in both Zhejiang samples (-0.098, -0.091), and in rounds 1-20 it was close to 0 (US -0.003, AU +0.027, Zhejiang vs AI +0.036).
+DESIGN: Table-derived from nine datasets (computer-opponent labs; stable human dyads; Zhejiang human and AI-opponent labs) plus a popular Japanese report.
+EFFECT: +0.01 to +0.13 per post-tie throw in repeat-averse samples; -0.09 to -0.10 in Zhejiang samples; about 0 to +0.04 early in a session.
+IMPLICATION: Ties are replayed immediately in knockouts. Against opponents who avoid repeating, lean slightly toward the hand the tied hand beats, but mix it, because the edge is small early and reverses against repeat-prone players.
+CAVEATS: Derived; assumes non-adapting population-average opponents; population type of Korean opponents unknown.
+
+DEAD ENDS: [
+"Lead 1 (Wang, Xu & Zhou 2014): metadata confirmed (Sci Rep 4:5830; 360 students; 300 rounds; random pairwise re-matching in groups of 6; cash incentive). However, (a) the conditional-response values are not printed in the text, tables or SI text; they exist only as Fig. 3F-J bars. I recovered them from the arXiv vector EPS and cross-checked them against S3 and the published figure. (b) The paper does NOT compute a payoff advantage for a player who exploits others' tendencies. It only computes payoffs if all players adopt the same optimised CR strategy (+0.035(a-2), which is zero at a=2).",
+"Lead 2: Bi & Zhou (2014) PLoS ONE 9(10):e111278 exists but is purely theoretical (cooperation-trap strategies between rational players, non-zero-sum a>2) with no human data. Zhou's review is Contemporary Physics 57(2):151-163 (published online 26 Mar 2015). For Xu, Zhou & Wang (2013) Physica A 392:4997-5005 only the arXiv abstract (1301.3238) was read.",
+"Lead 3 (Dyson et al. 2016): confirmed (31 participants, 225 trials vs computer). The outcome-conditional percentages are not stated numerically in the text (Fig. 1c only); I derived them from the supplementary .xls. Response times are not reported in this paper; outcome-specific RTs come from Forder & Dyson (2016) and Dyson (2021).",
+"Lead 5 (Srihaput et al. 2020): confirmed, but the paper reports only binary win-stay/lose-shift rates, with no upgrade/downgrade direction. mdpi.com returned HTTP 403 to both curl and WebFetch; the PDF was obtained from mdpi-res.com.",
+"Lead 6: Brockbank & Vul (2021, Games 12(3):70) is a framework and re-analysis paper with no new experiment; its data are the CogSci 2020 dyads. Brockbank & Vul (2024, Cognitive Psychology 151:101654) is closed access; only the abstract was read, and its numbers were taken from the Cross et al. (2025) preprint.",
+"Lead 8 (Batzilis et al. 2019): all analyses concern the first throw of each match. No within-match win-stay/lose-shift or outcome-conditioned rates are reported; footnote 14 only says 'We also find serial correlation both across throws within a match and across matches'. The source is 2,636,417 matches, not 'a million' throws.",
+"Lead 9 (Wang L. et al. 2020): confirmed (Sci Rep 10:13873). The paper does not say which human patterns were exploited beyond 'AI 2-6 perform better than AI 1 or higher-order' models.",
+"West & Lebiere (2001), Cognitive Systems Research 1(4):221-239: existence confirmed via bibliographic records, but full text not accessible. Only second-hand descriptions (in Zhang et al. 2021 and Brockbank & Vul 2021) were seen, so it was not used.",
+"Eyler, Shalla, Doumaux & McDevitt (2009), College Mathematics Journal 40(2):125-128: full text not accessible (the NASA PUMAS link returned HTML). A search-engine summary claiming a repeat probability 'well above one-third' could not be verified, so it was not used.",
+"Lee, McGreevy & Barraclough (2005), Cogn Brain Res 25:416-430: abstract only (monkeys' choices were biased by 
+
+OPEN Q: [
+"Which population pattern applies to Korean adults in an in-person team contest? The evidence splits into a 'repeat-prone' pattern (Zhejiang samples: overall stay 0.41-0.44, win-stay 0.47-0.53, lose-stay 0.36-0.38) and a 'repeat-averse' pattern (UK/Canada/US/Australia: overall stay about 0.28-0.31, lose-stay 0.20-0.29). The best counter-move after a tie, and the value of 'beat their last hand', flip sign between these groups. No Korean data were found.",
+"How do conditional tendencies behave over the first 1-5 throws of a short knockout bout, as opposed to 100-480-round lab sessions? Nearly all estimates pool hundreds of rounds, and players adapt over long sessions (D3).",
+"Ties: in knockouts a tie is replayed immediately. Post-tie behaviour is the least consistent finding across studies (upgrade-dominant in Dyson-lab and Zhejiang data, downgrade-dominant in the Australian dyads).",
+"Relay or 'winner stays on' formats: does a champion facing successive new challengers win-stay more or less than the 38% observed with computer avatars (Srihaput et al.)? Do challengers who watched earlier bouts best-respond to the champion's last or most-frequent hand (Batzilis-style k1 behaviour)?",
+"Do monetary or social stakes (team pressure) amplify the loss-driven predictability (faster, more reflexive post-loss choices) reported by the Dyson lab?",
+"Does the imitation effect in face-to-face play (Cook et al. 2012) survive simultaneous 'rock-paper-scissors-shoot' timing, and does it hold up given the Aczel et al. (2012) reply?"
+]

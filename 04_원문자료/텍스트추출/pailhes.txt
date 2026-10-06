@@ -1,0 +1,813 @@
+Classification: Social Sciences, Psychological and Cognitive Sciences.
+
+
+    Influencing choices with conversational primes: How a magic trick
+                  unconsciously influences card choices.
+
+                                  Alice Pailhès & Gustav Kuhn
+
+                 Psychology Department, Goldsmiths, University of London, UK
+
+
+
+
+Address for correspondence:
+
+Department of Psychology
+
+Goldsmiths University of London
+
+New Cross, London SE14 6NW
+
+United Kingdom
+
+apail001@gold.ac.uk
+
+
+
+*
+
+
+
+
+Declaration of interest: None.
+                                                Abstract
+
+
+
+       Past research demonstrates that unconscious primes can affect people’s decisions.
+
+However, these free choice priming paradigms present participants with very few alternatives.
+
+Magicians’ forcing techniques provide a powerful tool to investigate how natural implicit
+
+primes can unconsciously influence decisions with multiple alternatives. We used video and
+
+live performances of the Mental Priming Force. This technique uses subtle non-verbal and
+
+verbal conversational primes to influence spectators to choose the three of Diamonds. Our
+
+results show that a large number of participants chose the target card while reporting feeling
+
+free and in control of their choice. Even when they were influenced by the primes, participants
+
+typically failed to give the reason for their choice. These results show that naturally embedding
+
+primes within a person’s speech and gestures effectively influenced people’s decision making.
+
+This raises the possibility that this form of mind control could be used to effectively manipulate
+
+other mental processes.
+
+
+
+Keywords: priming, magic trick, influence, decision-making.
+
+
+
+Significance Statement:
+
+       This paper shows that naturally embedding primes within a person’s speech and gestures
+
+effectively influences people’s decision making. Likewise, our results dovetail findings from
+
+choice blindness literature, illustrating that people often do not know the real reason for their
+
+choice. Magicians’ forcing techniques may provide a powerful and reliable way of studying
+
+these mental processes and our paper illustrates how this can be done. Moreover, our results
+
+raise the possibility that this form of mind control could be used to effectively manipulate other
+
+mental processes.
+       The question of how unconscious processes influence our thoughts and behaviours
+
+remains amongst the most controversial topics in psychology (1–4). Various studies have
+
+shown how visual primes can facilitate the processing of related targets (5–8). Vicary’s
+
+fabricated subliminal advertising study caused much controversy and skepticism, but more
+
+recent research suggests that unconsciously presented primes can influence the choices people
+
+make (6, 9, 10). However, to this day, these free choice paradigms present participants with
+
+very few alternatives (typically only two or three), and we do not know their impact on decisions
+
+with a large number of options. Moreover, most reliable unconscious priming paradigms rely
+
+on tightly controlled stimulus presentation parameters, which restricts this type of research to
+
+highly controlled laboratory environments (11). The extent to which these results generalize to
+
+more ecologically valid contexts is unclear.
+
+       Magic tricks provide a valuable tool to investigate psychological processes within a
+
+highly natural environment (12). Most magic principles rely on tightly structured action and
+
+language scripts, which allows researchers to investigate psychological processes (e.g. priming,
+
+attention, perception) under controlled, yet realistic conditions (13). Forcing refers to conjuring
+
+techniques that allow magicians to covertly influence a spectator’s choice (14), and they provide
+
+unique tools to investigate how primes unconsciously influence people’s decisions when there
+
+is a broad range of alternatives (i.e. 52 playing cards). Many of these forces are commonly
+
+used within a magic performance context, but only a few have been empirically investigated
+
+(15–17). In this paper, we examine a forcing technique that relies on subtle conversational non-
+
+verbal and verbal primes: the Mental Priming Force. This force was created by British
+
+illusionist Derren Brown (18) and uses subtle verbal and non-verbal primes to influence the
+
+spectator to think about the three of Diamonds (see Figure 1).
+         Fig.1. Examples of gestures priming the Diamond suit (a) and the number three (b). For the diamond,
+
+the magician performs the gesture displayed in (a) while asking the participant to imagine a screen in their mind.
+
+Then, the performer does the pointing gesture shown in (b) while asking the spectator to imagine the symbols in
+
+the centre of the card.
+
+
+
+
+         The magician asks a spectator to think of a card that the magician will ‘transmit’ to him
+
+or her, whilst using gestures and keywords to bias the card that comes to mind (see SI Appendix,
+
+Mental Priming force script). This technique, contrary to typical free choice paradigms, does
+
+not mask the primes to people’s conscious awareness but subtly integrates them in the
+
+performance.
+
+         Anecdotal evidence suggests that this form of priming is effective, but it has never been
+
+studied scientifically before – nor do we know to what extent observers are consciously aware
+of the primes. The Mental Priming Force could shed light on how subtle conversational primes
+
+can influence people’s choices amongst a broad range of alternatives. More specifically, this
+
+technique allows us to investigate whether relatively abstract primes can unconsciously
+
+influence people’s mental processes.
+
+       Firstly, we aimed to investigate whether abstract gestures can unconsciously influence
+
+a person’s decision when they are provided with a wide range of alternatives. We predicted
+
+people should be more likely to choose the three of Diamonds (target card) and that most
+
+participants would not be aware of the influence of the primes. Secondly, we examined whether
+
+the force relied on the nature of the interaction. Most conjuring forces rely on real social
+
+interactions and are thought to work better when some sort of ‘rapport’/relationship is
+
+established between the magician and the spectator (18, 19). Indeed, previous empirical forcing
+
+studies have found smaller success rates with computer-presented tricks (15, 16) than when
+
+they are performed live. We therefore presented the force in two ways: video and live. We
+
+predicted that the force would be more effective in a live performance than on video.
+
+       We recruited 90 participants (62 women) who were randomly allocated to the video or
+
+live performance groups. After watching the performance, participants were asked to write
+
+down the card they chose, and rate on a scale from 0 to 100 how free and in control they felt
+
+about this choice. Two reasons guided these measures. Firstly, participants’ feeling of freedom
+
+is one of the key elements of a successful forcing technique (15, 17, 20). If the magician
+
+manages to force a card but this person feels constraint and not free for their choice, the trick
+
+does no longer work. Secondly, we used these measures as an indirect way to assess
+
+participants’ awareness of how they were manipulated. We expected that if participants
+
+understood that the experimenter tried to influence their choice, we would see these feelings of
+
+freedom and control drop. Indeed, previous papers investigating forcing techniques (15, 16)
+
+used measures of the feeling of freedom to investigate participants’ ability to identify whether
+their choices were made freely or forced by external parameters (here, the primes). The Mental
+
+Priming Force primes two separate features – number (three) and suit (Diamonds). For the
+
+purpose of our hypothesis, we considered the main target card to be the three of Diamonds. In
+
+the second instance, we focused on the number (three) and suit features (Diamonds). After
+
+completing the questions, participants were asked whether they knew why they chose that card
+
+and if so, they were asked to explain. The last question asked if they noticed any of the
+
+performer’s gestures and if yes, to write them down. These measures followed a funneling
+
+procedure, which provided an indirect way of assessing participants’ ability to identify whether
+
+their choice was forced by external parameters (i.e. the primes).
+
+
+
+Results
+
+       Figure 2 shows the percentages of participants who chose each of the cards. Overall,
+
+17.8% of the participants chose the three of Diamonds, 38.9% chose a three (all suits combined)
+
+and 33.3% chose a Diamond (all numbers combined). The three of Diamonds was the most
+
+commonly chosen card, closely followed by the three of Hearts. To carry out statistical
+
+analyses, we compared these results to a condition in which participants were asked to choose
+
+a card after watching a video of the same performer and script without using any specific prime
+
+(0 out of 23 named the three of Diamonds, see SI Appendix) as well as to a random distribution
+
+(i.e. 52 different playing cards). Our participants chose the three of Diamonds significantly
+
+more often than the video without prime (X2 (1, N=113) 4.76, p=.029, φ =.201) and a random
+
+distribution (X2 (1, N=142) 7.861, p=.005, φ =.229). In the same way, participants chose a three
+
+significantly more often than the video without prime (X2 (1, N=113) 1.58, p=.006, φ =.251)
+
+and a random distribution (X2 (1, N=142) 16.1, p<.001, φ =.319). Moreover, norming data by
+
+Olson et al. (21) shows that the three of Diamonds is not commonly named. However, the
+
+Diamond alone did not have any significant effect compared to the video without prime (X2 (1,
+    N=113) 0.44, p=.506, φ =.062) as well as to a random distribution (X2 (1, N=142) 1.08, p=.298,
+
+    φ =.087). *
+
+1
+
+
+
+
+2
+
+
+3             Fig.2. (A) shows participants’ choice of cards across both general conditions. (B) shows the results
+
+4   regarding the target card and features according to the experimental conditions. (C) displays participants’ reports
+
+5   on whether they knew the reason for their choice and noticed the experimenter’s gestures according to the
+
+6   experimental conditions.
+
+
+
+
+              *
+                  Our participants chose a card of red colour significantly more often than the random distribution (X2 (1, N=142)
+
+    7.07, p=.008, φ =.218) but not than the video without prime (X2 (1, N=113) 1.12, p=.289, φ =.099). Moreover, in addition to
+
+    the main analyses and as the script of the force asked participants to imagine the “numbers” on the card, we ran analyses
+
+    comparing our results to a distribution of 40 cards, excluding all the picture cards. When considering the correct distribution to
+
+    be 40 cards and treating participants who chose a picture card as N/A (not following the instructions), the same results regarding
+
+    the three of Diamonds, three, Diamond suit and colour red are found.
+ 7
+
+
+ 8            Next, we examined whether the force relied on real social interaction (Figure 2).
+
+ 9   Contrary to our prediction, participants did not choose the target cards significantly more often
+
+10   during the live performance compared to the video one (X2 (1, N=90) 0.30, p=.581, φ =.058 for
+
+11   the three of Diamonds, X2 (1, N=90) 0.05, p=.829, φ =.023 for the three).
+
+
+
+
+12
+
+13            Fig. 3. Feelings of freedom and control over the choice of card as a function of participants’ choice.
+
+14   Errors bars indicate standard deviations of the means.
+
+
+15
+
+
+16            Looking at participants’ conscious awareness of the force, the nature of the performance
+
+17   did not affect participants’ feelings of freedom (MVideo=83.1 vs MLive= 79.7, W= 1019,
+
+18   p=.963, rpb=.006) or control over their choice (MVideo= 73.9 vs MLive=76.4 W=1141, p=.291,
+
+19   rpb=.126). More importantly, whether participants chose a three of Diamonds (M=83.5) or not
+
+20   (M=80) had no significant impact on their feelings of freedom (W= 599, p=.943, rpb=.012). In
+
+21   the same way, whether participants chose a three of Diamonds (M=.77.1) or not (M=73.9) had
+
+22   no impact on their feelings of control over their thought of card (W=630, p=.6845, rpb=.064).
+
+23   The results remained the same looking at whether participants chose a three or another card
+
+24   (see Figure 3).
+25
+
+
+26           Fig. 4. Percentages of participants who declared knowing the reason for their choice and
+
+27   noticing some gestures of the experimenter as a function of their choice of card.
+
+
+28
+
+
+29           Finally, out of the 16 participants (18%) who chose the three of Diamonds, only 3 (19%)
+
+30   stated that they knew the reason for their choice. This was not significantly different from the
+
+31   participants who chose any other card (X2(1, N=90) 0.02, p=.89, φ =.015). Likewise, out of the
+
+32   35 participants (19%) who chose a three, only 7 (20%) claimed they knew the reason for their
+
+33   choice, and this result was not significantly different from the participants who chose any other
+
+34   card (X2 (1, N=90) 0.000, p=1.00, φ =.000 see Figure 4).
+
+35           Looking closer at the qualitative data, out of the 7 participants who chose a three and
+
+36   stated they knew why, only 3 provided explanations that were related to the performer’s
+
+37   gestures. The 4 remaining participants came up with confabulations (e.g. “I always seem to
+
+38   count in 3s, and diamond because I hate jewellery”), or said they chose it “randomly”.
+
+39   Participants who chose other cards and said they knew why, gave various explanations (e.g.
+
+40   favourite number).
+
+41           Overall 72.2% of the participants stated they detected at least some of the performer’s
+
+42   gestures, but gesture detection was independent of whether they chose the three of Diamonds
+
+43   or another card (X2 (1, N=90) 0.79, p=.374, φ =.093). The same was true for those naming the
+44   number three (X2 (1, N=90) 0.02, p=.893, φ =.014). Among all the participants declaring they
+
+45   saw gestures, none of them recollected all the priming gestures, and they typically provided
+
+46   rather vague answers (e.g. saying they saw pointing to the locations of the card’s features).
+
+47   Nineteen out of 65 participants talked about a rectangle/screen/diamond shape the experimenter
+
+48   gesticulated with both hands. Participants did not declare knowing the reason of their choice
+
+49   more often in one of the two conditions (X2 (1, N=90) 0.278, p=.598 φ =.055, see Figure 2).
+
+50   However, they declared noticing gestures significantly more often for the video performance
+
+51   rather than for the live one (X2 (1, N=90) 4.49, p=.034, φ =.218, see Figure 2).
+
+52
+
+
+53   Discussion
+
+54          Our results illustrate that the Mental Priming Force significantly influenced
+
+55   participants’ choice among a large number of alternatives, and it works just as effectively when
+
+56   presented on video compared to when it is performed by a real person. Eighteen percent of our
+
+57   participants chose the target card, and most were oblivious to the force itself. Indeed, even
+
+58   though the force resulted in a nine-fold increase chance of participants choosing the three of
+
+59   Diamonds, participants reported that their choice was free and that they were in control of it.
+
+60   Investigating the way implicit cues unconsciously influence people’s thoughts provides
+
+61   important insights into the nature of human cognition. However, in the last decade, many
+
+62   priming studies have been at the centre of the replication crisis (22–24), and the difficulty to
+
+63   replicate a number of well-known effects has raised much skepticism about priming more
+
+64   generally. At this point, we would like to note that we have investigated the Mental Priming
+
+65   Force several times and with large sample sizes, and always found it to be effective (see SI
+
+66   Appendix). For example, another unrelated study involving 240 participants showed that 15.4%
+67   of participants chose the three of Diamonds (most frequently chosen card) and 33.8% chose a
+
+68   card with the number three.
+
+69          Naturally embedding primes within a person’s speech and gestures effectively
+
+70   influenced people’s decision making. Despite the primes being fully visible (and audible)
+
+71   participants were unaware that the primes may have influenced their decisions. Our results
+
+72   dovetail findings from choice blindness literature, which illustrates that people often do not
+
+73   know the real reason for their choice (25–28).
+
+
+74          We believe that most forcing principles can be applied to decision-making processes
+
+75   that are not restricted to playing cards. For example, research from our lab shows that some
+
+76   psychological principles applied to card forces generalize to contexts where people have
+
+77   stronger preferences (e.g. holiday destinations, (29)), or the outcome of a computer game. With
+
+78   regards to the Mental Priming Force, others have shown that misinformation from gestures can
+
+79   also influence eyewitnesses’ memory reports (30, 31) and that gestures could prime words (32).
+
+80   Despite their implicit nature, these nonverbal cues can influence both memory and decision-
+
+81   making processes in contexts outside the magic performance.
+
+
+82          Our study shares some of the characteristics of previous research on social
+
+83   psychological priming and embodied effects, which have been heavily criticized and found hard
+
+84   to replicate (33–36): our primes were naturally embedded within the context of the experiment.
+
+85   However, the cognitive mechanisms that are being activated seem to differ. As Newell and
+
+86   Shanks (1) point out, standard priming effects such as lexical and repetition priming rely on
+
+87   well-established cognitive mechanisms, but it is often difficult to explain embodied priming
+
+88   effects on theoretical grounds. We appreciate that further research is required to help understand
+
+89   the cognitive mechanism that underpins the Mental Priming Force, but we believe that it relies
+
+90   on semantic priming.     Several studies have shown that people process specific gestures
+ 91   semantically (37–39) and it is likely that they evoke similar semantic activation that is found
+
+ 92   for words or pictures (40). We therefore suggest that the Mental Priming Force relies on
+
+ 93   gestures and speech segments evoking simple semantic activation that make the number 3 and
+
+ 94   diamond shape more accessible.
+
+
+ 95           The Mental Priming force is less reliable than most other forcing principles (15–17, 41,
+
+ 96   42), and it is rarely used by magicians. Nevertheless, it was surprisingly effective. Although
+
+ 97   magicians often rely on more powerful tricks, they always have a ‘way out’ for tricks relying
+
+ 98   on small probabilities of success rate like this one. Most conjuring techniques are very reliable,
+
+ 99   and we have investigated a wide range of forcing techniques (17, 29, 41, 42) that are far more
+
+100   reliable than the Mental Priming Force. However, as we mentioned, previous findings have for
+
+101   example shown that gestural misinformation (i.e. subtle hand gestures) can influence an
+
+102   eyewitness testimony and implant false memories about objects that are associated with the
+
+103   gesture (i.e. a specific jewellery such as a bracelet or ring) (43), and that words (e.g. bird) could
+
+104   be primed through iconic gestures (e.g., a pair of hands flapping)(32). Our results, using the
+
+105   force, add to these findings and confirm that forcing techniques provide a reliable way of
+
+106   studying diverse mental processes (44). Moreover, our results, linked to these findings, raise
+
+107   the possibility that this form of mind control could be used to effectively manipulate other
+
+108   mental processes such as memory and word retrieval.
+
+109
+
+
+110           Acknowledgments:
+
+111           We acknowledge Vivian Kwok, Sara Lang and Megan Knox for their research
+
+112   assistance.
+
+113
+114
+
+
+115   REFERENCES
+
+116   1.   B. R. Newell, D. R. Shanks, Unconscious influences on decision making: A critical
+
+117        review. Behav. Brain Sci. 37, 1–19 (2014).
+
+118   2.   J. DeCoster, H. M. Claypool, A Meta-Analysis of Priming Effects on Impression
+
+119        Formation Supporting a General Model of Informational Biases. Personal. Soc.
+
+120        Psychol. Rev. (2004), , doi:10.1207/S15327957PSPR0801_1.
+
+121   3.   M. Lucas, Semantic priming without association: A meta-analytic review. Psychon.
+
+122        Bull. Rev. (2000), doi:10.3758/BF03212999.
+
+123   4.   E. Van den Bussche, W. Van den Noortgate, B. Reynvoet, Mechanisms of Masked
+
+124        Priming: A Meta-Analysis. Psychol. Bull. (2009), doi:10.1037/a0015329.
+
+125   5.   S. Dehaene, L. Naccache, G. Le Clec’H, E. Koechlin, M. Mueller, G. Dehaene-
+
+126        Lambertz, P. F. Van De Moortele, D. Le Bihan, Imaging unconscious semantic
+
+127        priming. Nature (1998), doi:10.1038/26967.
+
+128   6.   B. Ocampo, Unconscious manipulation of free choice by novel primes. Conscious.
+
+129        Cogn. 34, 4–9 (2015).
+
+130   7.   R. W. Kentridge, C. A. Heywood, L. Weiskrantz, Attention without awareness in
+
+131        blindsight. Proc. R. Soc. B Biol. Sci. (1999), doi:10.1098/rspb.1999.0850.
+
+132   8.   E. Rusconi, K. Priftis, M. L. Rusconi, C. Umiltà, Arithmetic priming from neglected
+
+133        numbers. Cogn. Neuropsychol. (2006), doi:10.1080/13594320500166381.
+
+134   9.   U. Mattler, S. Palmer, Time course of free-choice priming effects explained by a
+
+135        simple accumulator model. Cognition. 123, 347–360 (2012).
+136   10.   J. Parkinson, P. Haggard, Subliminal priming of intentional inhibition. Cognition. 130,
+
+137         255–265 (2014).
+
+138   11.   R. Cetnarski, A. Betella, H. Prins, S. Kouider, P. F. M. J. Verschure, Subliminal
+
+139         response priming in mixed reality: The ecological validity of a classic paradigm of
+
+140         perception. Presence Teleoperators Virtual Environ. (2014),
+
+141         doi:10.1162/PRES_a_00171.
+
+142   12.   G. Kuhn, A. A. Amlani, R. A. Rensink, Towards a science of magic. Trends Cogn. Sci.
+
+143         12, 349–354 (2008).
+
+144   13.   G. Kuhn, R. Teszka, in The Handbook of Attention (2016).
+
+145   14.   G. Kuhn, A. A. Amlani, R. A. Rensink, Towards a science of magic. Trends Cogn. Sci.
+
+146         (2008), , doi:10.1016/j.tics.2008.05.008.
+
+147   15.   J. A. Olson, A. A. Amlani, A. Raz, R. A. Rensink, Influencing choice without
+
+148         awareness. Conscious. Cogn. 37, 225–236 (2015).
+
+149   16.   D. E. Shalom, M. G. de Sousa Serro, M. Giaconia, L. M. Martinez, A. Rieznik, M.
+
+150         Sigman, Choosing in Freedom or Forced to Choose? Introspective Blindness to
+
+151         Psychological Forcing in Stage-Magic. PLoS One. 8 (2013),
+
+152         doi:10.1371/journal.pone.0058254.
+
+153   17.   G. Kuhn, A. Pailhès, Y. Lan, Forcing you to experience wonder: Unconsciously
+
+154         biasing people’s choice through strategic physical positioning. Conscious. Cogn.
+
+155         102902 (2020).
+
+156   18.   D. Brown, Pure effect (H & R Magic Book, 2002).
+
+157   19.   P. Turner, Psychological Playing Card Forces (2015).
+158   20.   L. Jones, Encyclopedia of Impromptu Card Forces (H&R Magic Books, 1994).
+
+159   21.   J. A. Olson, A. A. Amlani, R. A. Rensink, Perceptual and cognitive characteristics of
+
+160         common playing cards. Perception. 41, 268–286 (2012).
+
+161   22.   H. Pashler, E.-J. Wangenmakers, Introduction to the Special Section on Replicability.
+
+162         Perspect. Psychol. Sci. (2012), doi:10.1177/1745691612465253.
+
+163   23.   C. R. Harris, N. Coburn, D. Rohrer, H. Pashler, Two Failures to Replicate High-
+
+164         Performance-Goal Priming Effects. PLoS One (2013),
+
+165         doi:10.1371/journal.pone.0072467.
+
+166   24.   D. R. Shanks, B. R. Newell, E. H. Lee, D. Balakrishnan, L. Ekelund, Z. Cenac, F.
+
+167         Kavvadia, C. Moore, Priming Intelligent Behavior: An Elusive Phenomenon. PLoS
+
+168         One (2013), doi:10.1371/journal.pone.0056515.
+
+169   25.   P. Johansson, L. Hall, S. Sikström, From change blindness to choice blindness.
+
+170         Psychologia (2008), doi:10.2117/psysoc.2008.142.
+
+171   26.   L. Hall, P. Johansson, B. Tärning, S. Sikström, T. Deutgen, Magic at the marketplace:
+
+172         Choice blindness for the taste of jam and the smell of tea. Cognition (2010),
+
+173         doi:10.1016/j.cognition.2010.06.010.
+
+174   27.   P. Johansson, L. Hall, S. Sikström, B. Tärning, A. Lind, How something can be said
+
+175         about telling more than we can know: On choice blindness and introspection.
+
+176         Conscious. Cogn. 15, 673–692 (2006).
+
+177   28.   Nisbett & Wilson, Telling more than we can know: Verbal reports on mental processes.
+
+178         Psychol. Rev. 84, 231 (1977).
+
+179   29.   A. Pailhès, G. Kuhn, The Magician’s Choice: Providing illusory choice and sense of
+
+180         agency with the Equivoque forcing technique.
+181   30.   D. J. Gurney, K. J. Pine, R. Wiseman, The gestural misinformation effect: Skewing
+
+182         eyewitness testimony through gesture. Am. J. Psychol. (2013),
+
+183         doi:10.5406/amerjpsyc.126.3.0301.
+
+184   31.   D. J. Gurney, L. R. Ellis, E. Vardon-Hynard, The saliency of gestural misinformation
+
+185         in the perception of a violent crime. Psychol. Crime Law (2016),
+
+186         doi:10.1080/1068316X.2016.1174860.
+
+187   32.   D. F. Yap, W. C. So, J. M. Melvin Yap, Y. Q. Tan, R. L. S. Teoh, Iconic gestures
+
+188         prime words. Cogn. Sci. 35, 171–183 (2011).
+
+189   33.   D. Lynott, K. S. Corker, J. Wortman, L. Connell, M. B. Donnellan, R. E. Lucas, K.
+
+190         O’Brien, Replication of “experiencing physical warmth promotes interpersonal
+
+191         warmth” by Williams and Bargh (2008). Soc. Psychol. (Gott). (2014),
+
+192         doi:10.1027/1864-9335/a000187.
+
+193   34.   C. F. Chabris, P. R. Heck, J. Mandart, D. J. Benjamin, D. J. Simons, No Evidence That
+
+194         Experiencing Physical Warmth Promotes Interpersonal Warmth: Two Failures to
+
+195         Replicate. Soc. Psychol. (Gott). (2019), doi:10.1027/1864-9335/a000361.
+
+196   35.   F. H. Durgin, J. A. Baird, M. Greenburg, R. Russell, K. Shaughnessy, S. Waymouth,
+
+197         Who is being deceived? The experimental demands of wearing a backpack. Psychon.
+
+198         Bull. Rev. (2009), doi:10.3758/PBR.16.5.964.
+
+199   36.   J. J. Hutchison, J. M. Loomis, in Spanish Journal of Psychology (2006).
+
+200   37.   K. Chui, C. Y. Lee, K. Yeh, P. C. Chao, Semantic processing of self-adaptors,
+
+201         emblems, and iconic gestures: An ERP study. J. Neurolinguistics (2018),
+
+202         doi:10.1016/j.jneuroling.2018.04.004.
+
+203   38.   V. K. Lim, A. J. Wilson, J. P. Hamm, N. Phillips, S. J. Iwabuchi, M. C. Corballis, F.
+204         Arzarello, M. O. J. Thomas, Semantic processing of mathematical gestures. Brain
+
+205         Cogn. (2009), doi:10.1016/j.bandc.2009.07.004.
+
+206   39.   A. Özyürek, Hearing and seeing meaning in speech and gesture: Insights from brain
+
+207         and behaviour. Philos. Trans. R. Soc. B Biol. Sci. (2014), , doi:10.1098/rstb.2013.0296.
+
+208   40.   Y. C. Wu, S. Coulson, Are depictive gestures like pictures? Commonalities and
+
+209         differences in semantic processing. Brain Lang. (2011),
+
+210         doi:10.1016/j.bandl.2011.07.002.
+
+211   41.   A. Pailhès, G. Kuhn, The Apparent Action Causation: Using a magician forcing
+
+212         technique to investigate our illusory sense of agency over the outcome of our choices.
+
+213   42.   A. Pailhès, G. Kuhn, Subtly encouraging more deliberate decisions: Using a forcing
+
+214         technique and population stereotype to investigate free will.
+
+215   43.   D. J. Gurney, K. J. Pine, R. Wiseman, The gestural misinformation effect: Skewing
+
+216         eyewitness testimony through gesture. Am. J. Psychol. 126, 301–314 (2013).
+
+217   44.   R. A. Rensink, G. Kuhn, A framework for using magic to study the mind. Front.
+
+218         Psychol. 6, 1–14 (2015).
+
+219
+
+
+220
+
+
+221   Author Contributions:
+
+222   Alice Pailhès conducted the experiment, statistical analyses and co-written the paper. Gustav
+
+223   Kuhn supervised the whole research and co-written the paper.
+
+224
+225   Supplementary Information is available for this paper. Correspondence and requests for
+
+226   materials should be addressed to Alice Pailhès at apail001@gold.ac.uk.
+
+
+227   Methods
+
+228   Participants
+
+229          90 participants (62 women) between 18 and 60 years old (M=22.7, SD=7.38) recruited
+
+230   on Goldsmiths University campus took part in the experiment. Goldsmiths Psychology
+
+231   Department provided ethical approval for the experiments.
+
+232
+
+233   Procedure
+
+234          The experimenter/magician sat at one of Goldsmiths’ cafeteria table. Participants were
+
+235   randomly attributed to one of the two experimental conditions – video or live performance.
+
+236   They sat facing the experimenter and signed the consent form presenting the experiment as a
+
+237   study on magic tricks and decision-making. Then, they were asked to read the instructions on
+
+238   the paper form stating that the experimenter was going to ask them to follow instructions and
+
+239   visualize and imagine some things (see SI Appendix, Mental Priming force script). Depending
+
+240   on what condition they were in, they then either watched the video performance on the laptop
+
+241   with headphones (Sony ZX310), or the live performance of the experimenter. At the end of the
+
+242   performance, they had to fill in the paper questionnaire. Participants had to write which card
+
+243   they chose, and how free and in control they felt for their choice on a scale from 0 to 100. Then,
+
+244   they were asked whether they knew the reason for their choice and explain it if they answered
+
+245   yes. The last question asked if they noticed any gestures the experimenter did during the
+
+246   performance. This time again, they had to write down which gestures they saw if they answered
+
+247   yes.
+
+248
+
+249   The Mental Priming Force
+250   The mental force was carried out according to the Brown’s method (2000). Firstly, to influence
+
+251   the spectator to think about a red card, the magician asks the participant to imagine that she’s
+
+252   trying to mentally transmits the identity of a playing card, and asks to first “make the colour
+
+253   bright and vivid”. This is intended to implicitly prime the observer to think of a red, rather than
+
+254   a black card. Then for the suits, the observer is asked to imagine a screen while miming a
+
+255   diamond shape with two hands (see Figure 1), which is intended to prime the observer to think
+
+256   of a diamond.
+
+257          To prime the number three, the spectator is asked to imagine the “little numbers low
+
+258   down in the corner of the card and in the top” while the performer quickly draws little 3s in the
+
+259   air on the imaginary card with the index finger. The magician then finishes the force while
+
+260   asking the spectator to imagine the “things in the middle of the card, the boom-boom-boom, the
+
+261   suits”, while pointing at three imaginary symbols (Figure 1). The force is performed relatively
+
+262   quickly and only lasts around 15 seconds, and if successful should prime the observer to think
+
+263   of the 3 of Diamonds. We realised a video of the force for the video performance condition,
+
+264   which is available in the Supplementary Appendix.
+
+265          All data and videos of the Mental Priming force performances with and without primes
+
+266   can be found at https://osf.io/2z6rw/?view_only=e3650ed496dd47b3a8b71ef1fb631202.
+
+267
+

@@ -1,0 +1,504 @@
+Psychologia, 2017, 60, 57–67
+
+
+
+
+              STIMULUS-RESPONSE COMPATIBILITY EFFECT:
+                  AN ATTEMPT TO REPLICATE COOK’S
+            ‘AUTOMATIC IMITATION IN A STRATEGIC CONTEXT’
+
+                                               Hiroshi ITO
+
+                                          Aichi University, Japan
+
+
+            The effect of automatic imitation in a strategic context was examined within an East
+            Asian culture (Japan) through a study using the game of rock-paper-scissors. The
+            task of strategic players is to avoid imitating their opponents. Study participants
+            (N = 42) were instructed to play the game and to win as many rounds as possible,
+            while either or both players were blindfolded. The results revealed that sighted
+            participants did not unconsciously imitate the gestures of blindfolded participants.
+            Previous findings from Western populations on the effect of automatic imitation in a
+            strategic context were thus not replicated within the present East Asian sample.
+
+            KKey words: automatic imitation, mirror neuron system, rock-paper-scissors, social
+                        cognition
+
+
+                                            Introduction
+
+      Previous neuroimaging studies have reported that certain neurons, known as “mirror
+neurons,” in the F5 area of the premotor cortex of the macaque discharge when an action is
+either executed or observed (di Pellegrino, Fadiga, Fogassi, Gallese, & Rizzolatti, 1992;
+Gallese, Fadiga, Fogassi, & Rizzolatti, 1996; Rizzolatti, Fadiga, Gallese, & Fogassi, 1996).
+Subsequent studies have confirmed that homologous human brain areas are activated both
+when a person observes somebody else executing an action and when the person executes
+the same action. Neuroimaging studies have reported such mirror activations in the ventral
+and dorsal premotor cortices, inferior parietal lobule, and primary motor cortex (Iacoboni,
+2009; Iacoboni et al., 1999; Ito et al., 2014; Rizzolatti, Fogassi, & Gallese, 2001; Rizzolatti
+& Craighero, 2004; Rizzolatti & Sinigaglia, 2010). This brain network is known as the
+human mirror neuron system (MNS). The human MNS has been suggested to play a
+crucial role in many social functions, including language acquisition, action understanding,
+imitation, and empathy (Cook, Bird, Catmur, Press, & Heyes, 2014; Rizzolatti & Craighero,
+2004; Rizzolatti & Sinigaglia, 2010).
+      The discovery of the human MNS has also stimulated considerable interest in the
+phenomenon of automatic imitation, in which observing an action facilitates executing that
+   This work was supported by a Grant-in-Aid for Scientific Research from the Japan Society for the
+Promotion of Science Grant Number JP16K16078. The funders had no role in the study design, data collection
+and analysis, decision to publish, or preparation of the manuscript.
+   The author declares that there is no conflict of interest.
+   Correspondence concerning this article should be addressed to Hiroshi Ito, Department of Psychology,
+Faculty of Letters, Aichi University, 1-1 Machihata, Toyohashi, Aichi 441-8522, Japan (e-mail: hito@vega.
+aichi-u.ac.jp).
+
+                                                    57
+58                                            ITO
+
+action (Brass & Heyes, 2005; Heyes, 2011). Heyes (2011) defined automatic imitation as
+“a type of stimulus-response compatibility effect in which the topographical features of
+task-irrelevant action stimuli facilitate similar, and interfere with dissimilar, responses” (p.
+463). Automatic imitation occurs when a person performs an action that is congruent with
+an observed action. Using reaction time and error measures, two early studies developed
+automatic imitation paradigms to provide a useful measure of how easily people map their
+own bodies and actions to the bodies and actions of others (Brass, Bekkering, Wohlschläger,
+& Prinz, 2000; Stürmer, Aschersleben, & Prinz, 2000). For example, Stürmer et al. (2000)
+examined hand opening and hand closing in a well-controlled experimental situation. In
+their study, participants were asked to perform a specified action (either hand opening or
+hand closing) as quickly as possible while they saw a hand action on a screen. The results
+revealed that responses were faster when the specified response was congruent with the
+observed stimulus than when it was incongruent (Stürmer et al., 2000). We can also
+observe this type of imitative behavior in common, everyday situations. For example,
+Chartrand and Bargh (1999) reported that participants were more likely to tap their feet
+than to touch their faces when they observed a confederate tapping his or her foot, while
+the opposite was observed when the participants observed a confederate touching his or her
+face. These automatic imitation effects have been attributed to the activity of the human
+MNS (Heyes, 2011).
+       Although there is no doubt that human imitative behavior has an automatic aspect
+(Blakemore & Frith, 2005; Brass et al., 2000; Catmur, 2016; Pan & Hamilton, 2015;
+Stürmer et al., 2000), or that the automatic imitation is mediated by the human MNS
+(Heyes, 2011), we do not always imitate the observed actions of others in everyday life.
+There has been only limited behavioral study investigating the automaticity of human
+imitative behavior in naturalistic situations. Therefore, the difficulty of inhibiting imitative
+behaviors in naturalistic situations is still unclear. Cook, Bird, Lünser, Huck, and Heyes
+(2012) first tackled this issue by asking participants to play the game of rock-paper-scissors,
+in which strategic players aim to avoid imitating their opponents in order to win the game
+(i.e., a strategic context). Their study participants’ task was to play rock-paper-scissors
+with the aim to win as many rounds as possible. In this task, either or both players were
+asked to wear blindfolds during the game. The participants were randomly assigned to
+experimental triads consisting of two players and a third participant acting as a referee.
+Within each triad, matches were played under either of two conditions: (a) with only one
+participant blindfolded (i.e., “blind-sighted”), or (b) with both participants blindfolded
+(i.e., “blind-blind”). The blindfolded players could not imitate their opponents because
+they could not see their opponents. Therefore, if there were an automatic imitation effect
+in a naturalistic, strategic context, the proportion of draws under the blind-sighted condition
+should be higher than that under the blind-blind condition. Cook et al. (2012) demonstrated
+that the proportion of draws under the blind-sighted condition was indeed higher. Their
+result suggested that the sighted participants were unconsciously imitating the gestures
+displayed by their blindfolded opponents despite the fact that they needed to inhibit such
+imitative behavior to win the game.
+       This surprising result could provide strong evidence for the automaticity of human
+                        AUTOMATIC IMITATION IN A STRATEGIC CONTEXT                                        59
+
+imitative behaviors in a naturalistic situation in which participants had incentive to inhibit
+imitative responses. It remains controversial, however, whether automatic imitation can
+occur in a strategic context (Aczel, Bago, & Foldes, 2012). Aczel et al. (2012) replicated
+the Cook et al. (2012) study with the same procedure and double the sample size, but
+previous findings of Cook et al. (2012) on the effect of automatic imitation in a strategic
+context were not replicated in their study.
+      Recently, psychologists have been faced with threats to replicability (e.g., Lindsay,
+2015; Open Science Collaboration, 2015; Ritchie, Wiseman, & French, 2012). For
+example, Nosek and 269 contributing authors reported direct replication studies of 100
+experiments published in three major psychology journals in 2008 (Open Science
+Collaboration, 2015). They revealed that fewer than half of the replicated studies produced
+a statistically significant effect. Specifically, only 39 studies out of the 100 successfully
+replicated the original result. The psychology community is starting to emerge from this
+crisis by using pre-registered replication, and by reforming the standards of statistical and
+data analysis in many academic journals. For example, Lindsay (2015) suggested that
+researchers should conduct a replication experiment preregistered on an open system such
+as the Open Science Framework when in doubt about the replicability of an interesting
+effect in a published paper. Preregistration requires specifying the experimental method
+and data analysis techniques in advance.
+      With respect to the standards of statistical and data analysis in the psychological
+literatures, some researchers have pointed out that psychologists have relied heavily on
+null-hypothesis significance testing (e.g., Cumming et al., 2007; Okubo, 2016). The low
+reproducibility of findings in psychology could be attributed to overrepresentation of
+p-values in null-hypothesis significance testing (Okubo, 2016). To avoid such problems
+with null-hypothesis significance testing and provide the most complete interpretation of
+results, we need to report elements such as effect sizes and confidence intervals and to
+apply meta-analysis and other approaches (Lindsay, 2015).
+      Following this line of thinking, the aim of the present study was to investigate whether
+the automatic imitation effect found by Cook et al. (2012) in a strategic context would be
+observed for a different sample. In addition, we conducted a mini-meta-analysis on the
+automatic imitation effect to establish more precise estimates of the effect size and
+confidence interval, because both Cook et al. (2012) and Aczel et al. (2012) only used null-
+hypothesis significance testing.
+
+
+                                                Method
+
+Participants
+       Forty-two undergraduate students (13 male, 29 female, Mage = 20.7, age range: 19 to 23 years) taking a
+cognitive psychology course at Aichi University in Japan participated in the experiment for pay. Written
+informed consent was obtained from all participants. The participants were randomly assigned to experimental
+triads comprising two players and one referee. All participants were unaware of the purpose of the study and
+had normal or corrected-to-normal vision. They were all familiar with the game of rock-paper-scissors. The
+study was approved by the local ethics committee of the Department of Psychology at Aichi University, and it
+was conducted according to the principles and guidelines of the Declaration of Helsinki.
+60                                                    ITO
+
+
+
+
+         Fig. 1.   Experimental setting: (A) blind-sighted condition, and (B) blind-blind condition.
+
+
+Design
+       The study was based on a within-subject design used by Cook et al. (2012). We compared the
+participants’ performance under the following two conditions. In the first condition, only one participant was
+asked to wear a blindfold during the game of rock-paper-scissors (i.e., the blind-sighted condition, Fig. 1(A)).
+In the second condition, both participants were asked to wear a blindfold during the game (i.e., the blind-blind
+condition, Fig. 1(B)). Because blindfolded participants could not see, they could not imitate their opponents.
+
+Apparatus
+       To assess the participants’ response asynchronies, we used a high-speed camera (FDR-AX100, Sony,
+Japan). The participants’ movements were recorded from the side at a sampling rate of 120 fps (frames per
+second). We determined the response onset as the earliest frame in which we could discriminate a participant’s
+gesture. This response onset was calculated offline with MATLAB (Mathworks, USA). To assess the
+reliability of determining the response onset, it was evaluated by two independent evaluators, yielding 94%
+agreement. The inter-evaluator reliability for the response onset was thus high (Cohen’s kappa coefficient = .85).
+
+Procedure
+       We used the same experimental procedure as that of Cook et al. (2012). The participants’ task was to
+play the game of rock-paper-scissors with the aim to win as many rounds as possible. In this task, either or
+both players were asked to wear blindfolds. During the game, the two participants sat face-to-face, with each
+presenting a clenched hand in front of his or her chest. Following a count of three given by the referee, the
+participants simultaneously displayed their gestures. Therefore, any effect of automatic imitation could be
+attributed to naturally occurring asynchronies between the onsets of the two participants’ gestures (Cook et al.,
+2012). After each round, the referee informed the players of the gestures and outcome.
+       The participants within each triad were arbitrarily designated as A, B, or C. For each triad, the
+experiment consisted of three blocks. In each block, the participants played three matches comprising 20
+individual rounds per match. The first block of matches was between participants A and B; the second block,
+between A and C; and the third block, between B and C. In each block, the third member of the triad (i.e., the
+referee, who was not involved in playing the matches) recorded the gestures and outcomes on a scoring sheet
+provided. Matches were played under one of two conditions (i.e., blind-sighted or blind-blind). The first two
+matches of each block were played under the blind-sighted condition, with the players alternately blindfolded
+in each match. The third match of each block was then played under the blind-blind condition. Before each
+block, the referee was asked to ensure that the blindfolded players could not see their opponents. The
+experimenter provided supervision in the testing room. Before participating in the experimental matches, each
+participant completed two practice rounds. The experimental session for each triad lasted approximately 45
+minutes.
+       Each participant received a payment (1000 JPY) for participating in the experiment and an additional
+payment based on performance. To encourage the participants to win matches, they were informed that the
+winner of each match would receive a bonus of 500 JPY. If a match was tied, however, neither of the players
+would receive the additional payment.
+                           AUTOMATIC IMITATION IN A STRATEGIC CONTEXT                                   61
+
+                                                   Results
+
+      The data collected from all 14 triads was analyzed in the present study. Rock-paper-
+scissors is a type of zero-sum game. As the participants’ outcomes in rock-paper-scissors
+could be affected by their opponents, we chose the conservative method of regarding the
+data from each triad as a single observation (Aczel et al., 2012; Cook et al., 2012).
+      If the participants were biased in choosing, one gesture more often than the others
+would have led to a different probability of draws (Aczel et al., 2012). Table 1 lists the
+percentage distributions of the three gestures displayed across all 14 triads under both
+conditions. To examine the selection bias, a one-way repeated-measures analysis of
+variance (ANOVA) of the proportion of gestures was performed for each condition. No
+significant main effect of the gesture was found for either the blind-sighted condition,
+F(2, 26) = .09, p = .91, hp2 = .0007, or the blind-blind condition, F(2, 26) = .01, p = .98,
+hp2 = .0011. These results demonstrate that the participants in the 14 triads performed the
+three gestures with comparable frequencies under both the blind-sighted condition and the
+blind-blind condition.
+      Table 2 lists the average proportions of wins and draws under each condition. A
+paired-sample t-test of the proportion of draws was performed to determine the effect of
+automatic imitation. There was no significant difference between the average proportion
+of draws under each condition, t(13) = .78, p = .45 (two-tailed). This means, statistically
+speaking, that that the proportion of draws under the blind-sighted condition (34.2%) was
+
+
+Table 1. Percentage distribution of the three gestures under the blind-sighted condition, under the blind-
+          blind condition, and overall.
+
+                                        Rock                      Paper                     Scissors
+
+      Blind-sighted                   33.0 (3.9)                33.2 (3.7)                 33.7 (3.2)
+      Blind-blind                     33.2 (4.2)                33.5 (5.2)                 33.5 (3.4)
+      Overall                         33.1 (3.8)                33.3 (4.1)                 33.6 (2.7)
+
+Standard deviations in parentheses.
+
+
+                Table 2.    Percentage distribution of outcomes observed across the 14 triads.
+
+        Condition                     Outcome                     Mean                           SD
+
+      Blind-sighted                blind wins                     34.0                           3.5
+                                   sighted wins                   31.8                           3.5
+                                   draws                          34.2                           3.8
+
+      Blind-blind                  wins                           67.5                           6.9
+                                   draws                          32.5                           6.8
+62                                                   ITO
+
+Table 3.    Percentage of draws under the blind-sighted and blind-blind conditions in three different studies.
+
+           Study                   N              Blind-sighted          Blind-blind            p-value
+
+  Cook et al. (2012)               42                  36.3                 33.3                   .05
+                                                       (4.6)                (5.0)
+
+  Aczel et al. (2012)             102                  36.5                 37.8                   .32
+                                                       (4.2)                (6.4)
+
+  Present study                    42                  34.2                 32.5                   .45
+                                                       (3.8)                (6.8)
+
+Standard deviations in parentheses.
+
+
+
+
+not significantly higher than that under the blind-blind condition (32.5%). This suggests
+that the sighted participants were not unconsciously imitating the gestures displayed by
+their blindfolded opponents.
+      To better understand the frequency of draws under each condition, we performed a
+mini-meta-analysis on the proportion of draws. Through direct comparison across studies,
+the effect size should provide a more informative index of the relations between particular
+studies. Table 3 lists the proportions of draws under the blind-sighted and blind-blind
+conditions in three different studies: Cook et al. (2012), Aczel et al. (2012), and the present
+study.
+      To estimate the effect size, we calculated the standardized mean difference between
+the two experimental conditions (i.e., blind-sighted and blind-blind) and divided it by the
+pooled standard deviation for both conditions, as defined by Hedges (1981):
+
+      Hedges’ g = (M1 – M2)/Sp,
+
+      where M1 and M2 are the means under the two conditions, and Sp is the pooled standard
+deviation. We used the metafor package (Viechtbauer, 2010), which provides functions
+for conducting meta-analysis in R, and applied a random effects (RE) model to run a meta-
+analysis of the three studies. In the metafor package, the standardized mean difference is
+automatically corrected within the function for its slight positive bias (Hedges, 1981;
+Viechtbauer, 2010):
+
+      Hedges’ gadj = (1 – 3/(4 (n1 + n2) – 9)) g,
+
+      where n1 and n2 are the sample sizes under the two conditions. Fig. 2 shows the meta-
+analysis results on the effect sizes of the three studies. The results revealed small estimated
+effect sizes for both the study by Aczel et al. (2012) and the present study as compared with
+that of Cook et al. (2012). The meta-analysis gave a combined effect size of 0.15, 95% CI
+[–0.36, 0.67], p = .56. This result does not support the conclusion that the sighted
+                         AUTOMATIC IMITATION IN A STRATEGIC CONTEXT                                           63
+
+
+
+
+Fig. 2.   Forest plot of the effect sizes between studies.
+          Each row represents a study, starting with the original study by Cook et al. (2012), then that of Aczel
+          et al. (2012), and the present study. The location of each square on the horizontal axis represents the
+          effect size: the difference between the mean proportions of draws under the blind-sighted and blind-
+          blind conditions. Here, positive values indicate a higher mean proportion of draws under the blind-
+          sighted condition. The error bar extending to either side of a square represents a 95% confidence
+          interval (CI). The area of each square represents the sample size and weighting that the experiment
+          was given in the meta-analysis. Finally, the black diamond represents the meta-analysis result, with
+          the center of the diamond indicating the combined effect size, and the spread of the diamond
+          representing the 95% CI.
+
+
+participants in the blind-sighted condition imitated the gestures of the blindfolded
+participants.
+      Finally, to assess the participants’ response asynchronies in draws under the blind-
+sighted condition, we analyzed the response onsets at which we could discriminate the
+participants’ gestures. Fig. 3 shows the distribution of asynchronies observed for the 14
+triads. Positive asynchrony means a round in which the blindfolded player displayed his or
+her gesture before the sighted player, whereas a negative asynchrony means a round in
+which the sighted player displayed the gesture first. The blindfolded participant started the
+gesture before the sighted participant in 44.2% of rounds, and this positive asynchrony
+exceeded 200 ms (the minimum required for automatic imitation; Cook et al., 2012) in
+1.4% of rounds. The small positive tail of the distribution exceeding 200 ms does not
+support the view that the draws observed in this study could be attributed to automatic
+imitation.
+
+
+                                                Discussion
+
+      The purpose of the present study was two-fold: to investigate whether the automatic
+imitation effect observed in a strategic context by Cook et al. (2012) would be observed for
+a different sample, and to establish a precise estimate of the effect size and confidence
+interval. To address these issues, we used the same experimental paradigm as that of Cook
+et al. (2012)—the game of rock-paper-scissors—and we conducted a mini-meta-analysis.
+Participants were asked to play rock-paper-scissors with the aim to win as many rounds as
+64                                               ITO
+
+
+
+
+                    Fig. 3.   Distribution of asynchronies observed for 14 triads.
+
+
+
+possible, while either or both players were blindfolded. These conditions were referred to
+as “blind-sighted” (one player blindfolded) or “blind-blind” (both blindfolded). If there
+were an automatic imitation effect in a strategic context, we would expect the proportion of
+draws under the blind-sighted condition to be higher than that under the blind-blind
+condition. Instead, the proportion of draws under the blind-sighted condition was no
+higher. This suggests that sighted participants did not unconsciously imitate the gestures
+of blindfolded participants. Therefore, the previous findings of Cook et al. (2012) on the
+effect of automatic imitation in a strategic context were not replicated in the present study.
+Although the strategic context seems an interesting approach to investigate the automatic
+aspect of human imitative behavior, we should focus on three important points in
+interpreting the data of Cook et al. (2012).
+       First, Cook et al. (2012) argued that when the blindfolded player displays the gesture
+first, the appearance of the gesture activates the opponent’s motor representation of the
+same gesture. Then, this activation of motor representation led the opponent to select the
+imitative behavior, relative to the other two gestures. Their account of the automatic
+imitation effect in rock-paper-scissors was consistent with evidence from the human MNS.
+That is, playing rock-paper-scissors apparently activates certain brain areas of the human
+MNS. Recent studies in neuroimaging, however, indicate that certain brain regions
+involved in the inhibitory mechanism are engaged to control automatic MNS activity
+(Brass, Ruby, & Spengler, 2009; Cross & Iacoboni, 2014; Cross, Torrisi, Losin, & Iacoboni,
+2013; Ito et al., 2014).
+       For example, Cross et al. (2013) investigated whether the cognitive control that
+inhibits undesirable behavior affected the activity of the human MNS by using an “imitation-
+inhibition task.” In this task, participants were asked to move their index or middle finger
+                     AUTOMATIC IMITATION IN A STRATEGIC CONTEXT                             65
+
+in response to a visually presented congruent (i.e., the same) or incongruent (i.e., different)
+finger movement. In the incongruent condition, the stimulus and response were different.
+This conflict generated more activation in the prefrontal neural network, specifically in the
+anterior insula involved in the cognitive control system. Cross et al. (2013) suggested that
+the automatic activity of the MNS was suppressed by the anterior insula when a participant
+observed an incongruent action. This type of inhibitory mechanism might prevent draws
+under the blind-sighted condition in rock-paper-scissors. That would explain why we did
+not observe the automatic character of human imitative behavior in a strategic context. If
+interactions between the brain regions related to the cognitive control mechanism and the
+brain regions related to the human MNS affect automatic imitation in a strategic context,
+then further study will be needed to investigate the interactions between these brain regions,
+and the time courses of those interactions.
+      As a second point to consider, Aczel et al. (2012) pointed out a statistical error in the
+results of Cook et al. (2012). Comparing the proportions of draws under the two conditions
+in a paired-sample t-test, Cook et al. (2012) state that “a paired-samples t-test revealed that
+the frequency of draws was significantly higher in the blind-sighted than in the blind-blind
+condition (t13 = 1.72; p = 0.05 (one-tailed))” (p. 783). The standard Student’s t-distribution
+table indicates that at a = 5%, ta(13) = 1.771 for a one-tailed test and ta(13) = 2.160 for a
+two-tailed test (Aczel et al., 2012). Thus, Cook et al. (2012) revealed a marginally
+significant difference between the two conditions (.10 < p < .05). This is why we conducted
+not only a paired-sample t-test (two-tailed) but also a mini-meta-analysis of the three
+studies. As noted previously, the meta-analysis demonstrated a low combined effect size
+of 0.15, 95% CI [–0.36, 0.67], p = .56. The 95% CI included zero as a plausible value,
+providing evidence against the idea that the sighted players were unconsciously imitating
+the gestures given by their blindfolded opponents in rock-paper-scissors.
+      Finally, rock-paper-scissors is very popular and commonly played in everyday life.
+To ensure direct replication of Cook et al.’s experiment (Cook et al., 2012) and a naturalistic
+situation, we did not record eye movements with an eye tracker. The participants in our
+study, however, occasionally appeared to avert their eyes from their opponents’ gestures.
+If the effect of automatic imitation in the strategic context was contaminated by measurement
+artifacts, such as participants not looking at their opponents, then further study will be
+needed to assess the effect of automatic imitation, after carefully examining whether
+sighted players pay attention to their opponents’ gestures.
+      There is at least one possible improvement for examining the automatic imitation
+effect in the game of rock-paper-scissors. This improvement consists of introducing a
+temporal delay by presenting the sound of a count of three (1-2-3) through a stereophonic
+headphone, in order to guarantee that sighted participants see their opponents’ gestures.
+For example, sighted participants could play the game under two conditions, in which the
+count for displaying their gestures is delayed by either 200 ms (delay condition) or 0 ms
+(control condition). Sighted participants would certainly have enough time to see their
+opponents’ gestures in the delay condition, as compared with the control condition.
+Therefore, one would expect that the automatic imitation effect in the delay condition
+would be induced by the observation of the opponents’ gesture as a consequence of the
+66                                                   ITO
+
+activation of the sighted participant’s motor representation of the same gesture. Moreover,
+we could control the temporal delay for blindfolded opponents by replacing them with
+virtual characters depicted with computer graphics.
+      In fact, instead of using the game of rock-paper-scissors, Pan and Hamilton (2015)
+recently proposed a new method of using interactive, life-size virtual characters to access
+the effect of automatic imitation in a rich social context with sequential hand-arm actions.
+In their task, participants were asked to observe drumming actions, in which a virtual
+character tapped three drums in turn, and to imitate or not imitate the drumming actions.
+The results suggested that such action sequences can drive the automatic imitation effect in
+the same way as simple actions (e.g., finger lifting or hand opening). This type of approach
+would be plausible for investigating automatic imitation with a more ecologically valid
+social interaction.
+      In conclusion, the previous findings of Cook et al. (2012) on the effect of automatic
+imitation in a strategic context were not replicated in this study. Indeed, our interpretation
+of the data obtained here disagrees with the original conclusion. Automatic imitation in a
+strategic context has stimulated considerable interest in action observation and execution.
+Although it seems premature to conclude that rock-paper-scissors players duplicate each
+other’s gestures, examining the automatic imitation effect in a strategic context is still
+potentially promising.
+
+
+                                               REFERENCES
+
+Aczel, B., Bago, B., & Foldes, A. 2012. Is there evidence for automatic imitation in a strategic context?
+       Proceedings of the Royal Society B, 279, 3231–3233. doi: 10.1098/rspb.2012.0500
+Blakemore, S. J., & Frith, C. 2005. The role of motor contagion in the prediction of action. Neuropsychologia,
+       43, 260–267. doi: 10.1016/j.neuropsychologia.2004.11.012
+Brass, M., Bekkering, H., Wohlschläger, A., & Prinz, W. 2000. Compatibility between observed and executed
+       finger movements: Comparing symbolic, spatial, and imitative cues. Brain and Cognition, 44, 124–
+       143. doi: 10.1006/brcg.2000.1225
+Brass, M., & Heyes, C. 2005. Imitation: Is cognitive neuroscience solving the correspondence problem?
+       Trends in Cognitive Sciences, 9, 489–495. doi: 10.1016/j.tics.2005.08.007
+Brass, M., Ruby, P., & Spengler, S. 2009. Inhibition of imitative behaviour and social cognition. Philosophical
+       Transactions of The Royal Society B: Biological Sciences, 364, 2359–2367. doi: 10.1098/rstb.2009.0066
+Catmur, C. 2016. Automatic imitation? Imitative compatibility affects responses at high perceptual load.
+       Journal of Experimental Psychology: Human Perception and Performance, 42, 530–539. doi: 10.1037/
+       xhp0000166
+Chartrand, T. L., & Bargh, J. A. 1999. The chameleon effect: The perception-behavior link and social
+       interaction. Journal of Personality and Social Psychology, 76, 893–910.
+Cook, R., Bird, G., Catmur, C., Press, C., & Heyes, C. 2014. Mirror neurons: From origin to function.
+       Behavioral and Brain Sciences, 37, 177–192. doi: 10.1017/S0140525X13000903
+Cook, R., Bird, G., Lünser, G., Huck, S., & Heyes, C. 2012. Automatic imitation in a strategic context: Players
+       of rock-paper-scissors imitate opponents’ gestures. Proceedings of the Royal Society B: Biological
+       Sciences, 279, 780–786. doi: 10.1098/rspb.2011.1024
+Cross, K. A., & Iacoboni, M. 2014. To imitate or not: Avoiding imitation involves preparatory inhibition of
+       motor resonance. NeuroImage, 91, 228–236. doi: 10.1016/j.neuroimage.2014.01.027
+Cross, K. A., Torrisi, S., Losin, E. A. R., & Iacoboni, M. 2013. Controlling automatic imitative tendencies:
+       Interactions between mirror neuron and cognitive control systems. NeuroImage, 83, 493–504. doi:
+       10.1016/j.neuroimage.2013.06.060
+                         AUTOMATIC IMITATION IN A STRATEGIC CONTEXT                                           67
+
+Cumming, G., Fidler, F., Leonard, M., Kalinowski, P., Christiansen, A., Kleinig, A., ... Wilson, S. 2007.
+       Statistical reform in psychology: Is anything changing? Psychological Science, 18, 230–232. doi:
+       10.1111/j.1467-9280.2007.01881.x
+di Pellegrino, G., Fadiga, L., Fogassi, L., Gallese, V., & Rizzolatti, G. 1992. Understanding motor events:
+       A neurophysiological study. Experimental Brain Research, 91, 176 –180.
+Gallese, V., Fadiga, L., Fogassi, L., & Rizzolatti, G. 1996. Action recognition in the premotor cortex. Brain,
+       119, 593–609.
+Hedges, L. V. 1981. Distribution theory for Glass’s estimator of effect size and related estimators. Journal of
+       Educational Statistics, 6, 107–128. doi: 10.2307/1164588
+Heyes, C. 2011. Automatic imitation. Psychological Bulletin, 137, 463–483. doi: 10.1037/a0022288
+Iacoboni, M. 2009. Imitation, empathy, and mirror neurons. Annual Review of Psychology, 60, 653–670. doi:
+       10.1146/annurev.psych.60.110707.163604
+Iacoboni, M., Woods, R. P., Brass, M., Bekkering, H., Mazziotta, J. C., & Rizzolatti, G. 1999. Cortical
+       mechanisms of human imitation. Science, 286, 2526–2528. doi: 10.1126/science.286.5449.2526
+Ito, H., Saito, H., Oi, M., Shiraisihi, T., Meng, S., & Palacios, V. A. 2014. Visual perception of incomplete
+       human-like body postures: A near-infrared spectroscopy study. Journal of Behavioral and Brain
+       Science, 4, 544–558. doi: 10.4236/jbbs.2014.412053
+Lindsay, D. S. 2015. Replication in Psychological Science. Psychological Science, 26, 1827–1832. doi:
+       10.1177/0956797615616374
+Okubo, M. 2016. Kimu kasetsu kentei to saigen kanousei [Null hypothesis significance testing and
+       reproducibility]. Japanese Psychological Review, 59(1), 57–67.
+Open Science Collaboration. 2015. Estimating the reproducibility of psychological science. Science, 349,
+       aac4716. doi: 10.1126/science.aac4716
+Pan, X., & Hamilton, A. F. 2015. Automatic imitation in a rich social context with virtual characters. Frontiers
+       in Psychology, 6, 790. doi: 10.3389/fpsyg.2015.00790
+Ritchie, S. J., Wiseman, R., & French, C. C. 2012. Failing the future: Three unsuccessful attempts to replicate
+       Bem’s ‘retroactive facilitation of recall’ effect. PLOS ONE, 7, e33423. doi: 10.1371/journal.
+       pone.0033423
+Rizzolatti, G., & Craighero, L. 2004. The mirror-neuron system. Annual Review of Neuroscience, 27, 169–
+       192. doi: 10.1146/annurev.neuro.27.070203.144230
+Rizzolatti, G., Fadiga, L., Gallese, V., & Fogassi, L. 1996. Premotor cortex and the recognition of motor
+       actions. Cognitive Brain Research, 3, 131–141.
+Rizzolatti, G., Fogassi, L., & Gallese, V. 2001. Neurophysiological mechanisms underlying the understanding
+       and imitation of action. Nature Reviews Neuroscience, 2(9), 661–670. doi: 10.1038/35090060
+Rizzolatti, G., & Sinigaglia, C. 2010. The functional role of the parieto-frontal mirror circuit: Interpretations
+       and misinterpretations. Nature Reviews Neuroscience, 11(4), 264–274. doi: 10.1038/nrn2805
+Stürmer, B., Aschersleben, G., & Prinz, W. 2000. Correspondence effects with manual gestures and postures:
+       A study of imitation. Journal of Experimental Psychology: Human Perception and Performance, 26,
+       1746–1759. doi: 10.1037/0096-1523.26.6.1746
+Viechtbauer, W. 2010. Conducting meta-analyses in R with the metafor package. Journal of Statistical
+       Software, 36(3), 1–48. doi: 10.18637/jss.v036.i03
+
+                                   (Manuscript received 14 April, 2017; Revision accepted 11 October, 2017)
+

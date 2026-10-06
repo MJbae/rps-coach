@@ -1,0 +1,295 @@
+     36（242）                                                                     高次脳機能研究              25 巻 3 号
+
+
+   ■原著
+
+
+               後出し負けじゃんけん時の補足運動野の役割
+                                       ,
+                  福    永     篤     志 * ***   大    平     貴    之*     加     藤    元一郎 **
+                               鹿     島       晴   雄 ** 河       瀬         斌*
+
+      要旨：後出し負けじゃんけんの「負けよう」とする認知的葛藤の脳基盤はいまだ明確ではない。今
+      回われわれは，右利き健常人 9 名に対し，後出しじゃんけん（負けまたはあいこ）負荷時に 3 テス
+      ラ fMRI を撮像し，安静時と比べて有意に検出された BOLD シグナルの分布について検討した。結
+      果は，負け・あいこじゃんけんともに，前頭葉，後頭側頭野，感覚運動野，小脳半球，補足運動野
+     （SMA）等に有意な BOLD シグナルが検出された（corrected p ＜ 0.05）。また，左手負けじゃんけん
+      では左 SMA が，左手あいこじゃんけんでは右 SMA がそれぞれ強く賦活され，右手負けじゃんけん
+      でも左 SMA の反応が強かった。以上の結果から，左 SMA がステレオタイプな動作を抑制する機能
+      や葛藤条件の監視に関与していることが示唆された。（高次脳機能研究 25（3）： 242 〜 250，2005）
+
+      Key Words ：補足運動野，機能的 MRI，じゃんけん，葛藤課題
+               supplementary motor area，functional MRI，paper ─ rock ─ scissors，conflict task
+
+
+
+                                                          的に「負けよう」とするのは難しいものであると
+                はじめに
+                                                          考察している。このように，後出し負けじゃんけ
+   今回われわれは，手指構成課題の中でとくにス                                  んは認知的葛藤を含んだ課題となるため，この遂
+ テレオタイプの抑制障害の検出に優れている後出                                   行には左前頭葉が重要であるという見解があり
+ しじゃんけん課題（川原ら 1990）を施行し，課題                               （Omori ら 1999），実際，両側前頭葉損傷患者で成
+ 負荷中の Blood Oxygenation Level ─ Dependent                 績が低下することも知られている（川原ら 1990）                  。
+（BOLD）シグナル分布を 3 テスラ functional MRI                        一方，じゃんけんに類似した手の運動負荷検査で
+（fMRI）によって調査した。                                           ある Luria（1966）の fist ─ edge ─ palm test も前頭葉
+   じゃんけんは，わが国では老若男女に親しみの                                  病巣による力動性失行検査として知られているが，
+ ある勝敗を決めるために行われる簡便な勝負事の                                   前頭葉病変がない症例でも遂行困難を呈すること
+ 1 つであり，通常，利き手でお互い同時に出し合                                  があるとも言われている（早川ら 1999）                。
+ うものである。今回われわれが行った方法は「同                                    後出しじゃんけんに関する過去の fMRI の研究
+ 時」ではなく「後出し」であり，相手が出した手                                   報告に，勝ちか負けを直前に指示する後出しじゃ
+ の形を見て，それと同じものか，あるいは負ける                                   んけんでは，左中前頭回（area 46）や両側下前頭
+ ものを出すか，直前の指示に従い瞬時に判断する                                   回 （ area 44） に 活 動 が 見 ら れ た と す る も の
+ ことが要求される。Omori ら（1999）は，絵を見                             （Omori ら 1999）や，後出しじゃんけんで「勝ち」
+ てじゃんけん運動を開始するまでの反応時間は，                                   を選択する場合，内側前頭回（area 10）               ，左腹外側
+ あいこじゃんけん（158.6 ± 36.2 ms）   ，勝ちじゃん                       前頭回（area 11/47）と左淡蒼球の活動が有意に大
+ け ん （ 224.7 ± 39.3 ms）， 負 け じ ゃ ん け ん                    きかったとするもの（Paulus ら 2004）があるが，
+（323.0 ± 73.7 ms）の順に長くなると報告し，意識                           後出し負けじゃんけんだけに着目した報告はなく，
+   * 慶應義塾大学医学部 脳神経外科 〒 160 ─ 8582 東京都新宿区信濃町 35                                                 受稿日 2004 年 4 月 28 日
+  ** 慶應義塾大学医学部 精神神経科                                                                           受理日 2005 年 7 月 6 日
+ *** 濱野生命科学研究財団小川脳機能研究所
+     2005 年 9 月 30 日                                                                      （243）37
+
+
+「負けよう」とする認知的葛藤の脳基盤はいまだ明                                      の左手の絵（グー，チョキ，パーのいずれかの形
+ 確ではない。                                                      で，1 提示につき 3 秒間ずつ，順番はランダムで 5
+  そこで，本研究では後出し負けじゃんけん運動                                      回連続に提示する）を見てじゃんけんを行わせた。
+ 中の脳活動領域をあいこじゃんけん運動時と比較                                      じゃんけん運動中は，予測をしないこと，あせら
+ して，認知的葛藤における脳活動について検討し                                      ないことを説明した。全部で「負け」じゃんけん，
+ た。さらに，左手（非利き手）による後出しじゃ                                     「あいこ」じゃんけんともにそれぞれ 3 セットずつ
+ んけんについても検討し，補足運動野（SMA）の                                     施行し，具体的には，右手によるじゃんけんでは，
+ 反応に注目し，興味深い結果を得たので報告する。                                    「あいこ」     「負け」「あいこ」           「負け」  「負け」「あい
+                                                             こ」の順に，左手によるじゃんけんでは，                   「あいこ」
+                   Ⅰ．対象と方法
+                                                            「負け」   「負け」    「あいこ」      「負け」    「あいこ」の順に
+    1．対象                                                     指示を出し，合計約 6 分間の run となった。右手
+    対象は，文書によって同意が得られた，健常人                                    と左手で「あいこ」と「負け」の順序を変えたの
+ 9 名である。全例右利き（laterality quotient 平均                         は，被験者が「次はあいこなのか負けなのか」を
+ 93.3，標準偏差 12.6）       （Oldfield 1971）で，男性 6 名，              無意識のうちに予測しないように配慮したもので
+ 女性 3 名，年齢 19 〜 32 歳（平均 25 歳）であった。                           ある。全体的に見て手の運動が同じになるように，
+ 本研究の趣旨を理解してもらい，全面的な協力を                                     「負け」と「あいこ」のじゃんけんの回数は，それ
+ 得ることができた。                                                   ぞれ 15 回で等しく，かつ，順不同だが両者ともグ
+    2．MRI                                                    ー，チョキ，パーの回数がそれぞれ 5 回ずつにな
+    使用した MRI 機は，濱野生命科学研究財団小川                                 るように考慮した。タスクは右手と左手でそれぞ
+ 脳機能研究所（東京都新宿区）内 3 テスラ MRI                                   れ別の run で行い，右手，左手の順で施行した。
+（Siemens Allegra）である。まず magnetization pre-                   被験者の手の動きはビデオモニターに記録した。
+ pared rapid gradient echo による解剖画像（1 ×                          4．解析
+ 1 × 1 mm3）を撮像し，続いて負荷中に single shot                             解析は，Windows 2000（Microsoft 社）で正常に
+ gradient ─ echo planar imaging（echo time ＝ 20 ms,           作動するソフトウエア Brain VoyagerTM ver.4.9.1
+ repetition time ＝ 1s, flip angle ＝ 90 °, 64 × 64 matrix,   （Brain Innovation, Frankfurt, Germany）を使用した。
+ field of view ＝ 220 mm, 21 axial slices, 5 mm thick-        まず，2 次元の機能画像データを 3 次元の解剖図
+ ness with a 0.8 mm gap）により全脳撮像を行った。                         データと合わせた。その際，3D motion correction
+    3．パラダイム                                                  を行い，頭部の動きの影響を最小限に抑えた。3
+    MRI 機に入る前に後出しじゃんけんの練習を充                                  次元の解剖図データは Talairach 標準脳（Talairach
+ 分行い，MRI 機に入って仰向けになった状態でも，                                   ら 1988）へ投影した。統計学的解析は，安静時を
+ 肘を曲げずに手だけでグー，チョキ，パーの形を                                      ベースラインとし，general linear model（GLM）
+ 作るように教示，練習した。タスクには液晶プロ                                     （single study）を用いた。また，protocol に hemo-
+ ジェクター（EPSON ELP，東京）を使用した。パ                                  dynamic response function を適用したモデル時間経
+ ラダイムは，安静（30 秒）→指示（6 秒）→じゃ                                   過を巻き込み，有意水準は corrected p ＜ 0.05, F 値
+ んけんの準備（6 秒）→じゃんけん（15 秒）を 1                                  5.2（多重比較 Bonferroni 法）とした。グループ解
+ セットとし，合計 6 セット施行した。安静時は何                                    析は，すべての個人データを Talairach 領域で平均
+ も考えないように指示し，黒単色の背景に中央や                                      化して行った。
+ や下方に白線で描かれた十字の中心を注視点とし                                         さらに，左手による負けじゃんけん時とあいこ
+ て見つめさせた（注視画面）                    。負荷として，         「負け        じゃんけん時の脳活動を直接比較するために，ソ
+ てください」と「同じものを出してください」の                                      フトウエア上の Overlay General Linear Model
+ どちらか一方の指示を予告せずに提示し，再び 6                                     を選択して解析し，それぞれの条件における脳活
+ 秒間注視画面（じゃんけんの準備）の後，画面上                                      動の違いを検討した。すなわち，安静時をベース
+     38（244）                                               高次脳機能研究      25 巻 3 号
+
+ ラインとして，負け時あるいはあいこ時に，どの                      ん時に強く賦活された（図 3a）。重相関係数 R
+ 程度脳が活動しているか，それぞれの条件下の                      （寄与率 R 2）は，それぞれ 0.694（0.482），0.673
+ relative contribution（相対的寄与率）を描出した。        （0.453）であった。Regions of interest を設定して，
+ 寄与率とは，決定係数ともいい，重相関係数（R）                     その領域における経時的な％ BOLD シグナル値の
+ の二乗で求められる。これは，説明変数の従属変                      変化をみると，左 SMA では負けじゃんけんの方
+ 数に対する重回帰分析の当てはまりのよさを示す                      があいこじゃんけんよりもシグナル値が大きく
+ 統計量である。具体的には，            「負け」あるいは「あ        （図 3b），右 SMA ではあいこじゃんけんの方が負
+ いこ」という predictor 下で実際に活動が見られた               けじゃんけんよりもシグナル値が大きかった（図
+ それぞれのボクセルの時系列における複合説明変                      3c）。
+ 数（X）と，同条件下で理想的な hemodynamic
+                                                         Ⅲ．考      察
+ response function を適用したモデル時間経過を巻
+ き込んだ GLM における BOLD シグナル値変数（Y）                1．3 テスラ MRI について
+ とを直接比較して GLM を overlay し，X が Y               近年，わが国にも 3 テスラの高磁場 MRI 機が導
+ をどの程度説明できるのか検討した。今回は，            「＋」        入されるようになった。これは，S/N（シグナル/
+（青色側）の領域が「負け」時，             「−」
+                              （黄色側）の         ノイズ比）が 1.5 テスラ機よりも高く，磁化率効
+ 領域が「あいこ」時に，それぞれ脳活動が強いこ                      果が大きいため，fMRI 研究にとって好都合である
+ とを意味する。                                     と言われている（Nakada ら 1998）
+                                                                  。また，今回使
+                                             用した MRI 機は頭部専用であり，手が機械から外
+               Ⅱ．結      果
+                                             に出るため障害物がなく，手を使った課題を容易
+  全例，画面の指示に従い完全に課題を遂行でき                      に行うことができるという利点もある。
+ たことを各課題終了時に口頭で確認し，ビデオ記                       2．解析方法について
+ 録でも手の運動を確認した。表 1 におもな賦活領                     本研究は，手の絵を見てからじゃんけん運動す
+ 野のまとめを示す。                                   るまでの間の「負けよう」とする意識の処理活動
+  1．負けじゃんけん負荷時                               を調べることを目的としたため，安静時をベース
+  前頭葉，SMA，対側感覚運動野，両側後頭側頭                     ラインとして BOLD シグナル分布を調査した。よ
+ 野，小脳半球などに有意な BOLD シグナルが検出                   って，その認知過程にかかわるすべての脳活動が
+ さ れ た （ 図 1 ）。 右 手 じ ゃ ん け ん で は 両 S M A    描出されることになるが，その際，false positives
+（voxel 数比＝左/右＝ 5852/2615 ＝ 2.24）が賦活さ        （偽陽性）が問題となるので，Bonferroni 補正を行
+ れたが，左手じゃんけんでは左 SMA により大き                    い，できるだけ偽陽性領域を除去するようにした
+ な賦活反応（voxel 数比＝左/右＝ 2318/889 ＝ 2.61）       （Friston 2002）
+                                                         。
+ が見られた（図 1h 矢印）     。                         3．脳賦活領域について
+  2．あいこじゃんけん負荷時                               本研究の結果では，後出し負けじゃんけん時に，
+  前頭葉，SMA，対側感覚運動野，両側後頭側頭                     左前頭葉，SMA，対側感覚運動野，両側後頭側頭
+ 野，小脳半球などに有意な BOLD シグナルが検出                   野，小脳半球などに有意な活動が見られた。左下
+ さ れ た （ 図 2 ）。 右 手 じ ゃ ん け ん で は 両 S M A    前頭回（弁蓋野）に賦活反応が見られたのは，他
+（voxel 数比＝左/右＝ 6597/3614 ＝ 1.83）が賦活さ         の報告結果と一致しており（Omori ら 1999），こ
+ れたが，左手じゃんけんでは右 SMA により大き                    の部位が行為の制御に強い関連を持っていること
+ な賦活反応（voxel 数比＝左/右＝ 769/2719 ＝ 0.28）        が想定される。そして，後頭側頭野に活動が見ら
+ が見られた（図 2h 矢印）     。                        れたのは，今回の実験ではパラダイムに液晶プロ
+  3．「負け」と「あいこ」の直接比較                          ジェクターによる視覚課題を用いているので，視
+  左手によるじゃんけんの場合，左 SMA は負け                    覚入力された情報が，1 次後頭野，2 次後頭野を介
+ じゃんけん時に強く，右 SMA はあいこじゃんけ                    して，後頭側頭連合野へと到達したためと考えら
+2005 年 9 月 30 日   （245）39
+40（246）   高次脳機能研究   25 巻 3 号
+   2005 年 9 月 30 日                                                 （247）41
+
+
+
+
+ れる。これらの領域は，対象物の認知同定に重要                     応するという報告（Shibasaki ら 1993，Kawashima
+ な働きをしている。                                  ら 1998）とも一致している。
+   以上の賦活部位の中で，SMA の活動に関しては                    次に，左手で負けじゃんけんを行った場合に，
+ 注目すべき結果が得られた。SMA は，運動の順序                   左半球に強い SMA の反応が見られた。この場合，
+ 制御に欠かせない領野であり（Roland ら 1980，丹              左手の複雑な運動が要求されるため，対側の
+ 治 1998），対側の手の複雑な運動に関与している                  右 SMA に反応が強く見られるはずである
+ と言われている（Shibasaki ら 1993，Kawashima ら      （Kawashima ら 1998）。しかし，本研究では，左
+ 1998）。SMA の血流変化量や機能は，左優位とす                 SMA に強かった。また，「負け」じゃんけん時と
+ る報告が多いが（Kawashima ら 1993，Sadato ら         「あいこ」じゃんけん時を直接比較したところ，明
+ 1997，Babiloni ら 2003），その機能の左右差の詳細          らかな有意差はなかった（GLM における 2 predic-
+ は明らかではない。                                  tors 間 contrast 法による）が，左 SMA における
+   4．負けじゃんけん時の SMA の反応                      BOLD シグナル値（時系列）は，      「負け」時の方が
+   右手で負けじゃんけんを行った場合には，左側                   「あいこ」時よりも大きく，右 SMA とは反対のパ
+ に強い両側の SMA に反応が見られた。これは，                   ターンを示した（図 3b, c）。ピーク F 値も，右
+ Omori ら（1999）の結果と同じであり，Umetsu ら            SMA は 7.20 なのに対し，左 SMA は 9.63 と高かっ
+（2002）も，fist ─ edge ─ palm test を右手（利き手）    た（表 1）   。これは，左手あいこじゃんけん時に右
+ で行った時の脳活動を fMRI で調べたところ，両                  SMA に強い反応が見られたことと対照的である
+ 側 SMA に反応が見られたことを示している。右                  （ピーク F 値は右 SMA 8.90，左 SMA 6.92）。あい
+ 手の複雑な運動を行うと対側の左 SMA が強く反                   こじゃんけんと負けじゃんけんとの違いは，手の
+    42（248）                                                      高次脳機能研究            25 巻 3 号
+
+ 運動そのものに関しては本研究では同じとなるよ                   SMA の関与を考えたうえでも説明ができない新し
+ うに調節したので，同じものを出すという比較的                   い知見であると言えよう。その理由として，ステ
+ 抑制の少ない動作と，それに対して「負け」よう                   レオタイプの動作の抑制や，葛藤条件の処理ない
+ とする認知的抑制の強い葛藤条件の処理と監視と                   しは監視などが考えられる。なぜ，左 SMA が左
+ いう認知プロセスの違いであると考えられる。                    手の負けに強くかかわり，右手の負けとあいこと
+    さらに，右手による負けじゃんけんとあいこ                  であまり差がでなかったのかは明らかではないが，
+ じゃんけん時の SMA の反応を比較しても，SMA                今後のさらなる研究が必要だろう。
+ における voxel 数左右比は「負け」2.24，        「あいこ」
+                                                               結            語
+ 1.83 と，
+       「負け」の方が大きく，さらに，ピーク F
+ 値の左右比も「負け」1.15，「あいこ」1.02 と，               左半球 SMA の役割として，ステレオタイプの
+「負け」の方が大きかった。つまり，右手，左手に                   動作を抑制する機能や葛藤条件の処理ないしは監
+ かかわらず，「負け」ようとする時には，左 SMA                 視などが関与している可能性が示唆された。
+ の方が右 SMA よりも活動が強いということにな                  本論文の要旨は，第 27 回日本高次脳機能障害学会
+ る。                                       総会（2003 年，東京）において発表した。
+    5．あいこじゃんけん時の SMA の反応
+    右手あいこじゃんけん時には，両側 SMA に賦                謝辞： MRI 撮像およびデータ解析について，ご協
+ 活反応が見られた。これも，Omori ら（1999）の              力，ご助言賜りました濱野生命科学研究財団小川脳
+ 結果と同様である。一方，左手あいこじゃんけん                   機能研究所 小川誠二所長，ならびに同研究所研究員
+ 時には，右 SMA に強い反応が見られた。この結                 神波雅之先生に深く御礼申し上げます。
+ 果は，鏡像模倣運動で右 SMA に強い反応が見ら
+ れたとする Koski ら（2003）の報告と類似してい
+ る。つまり，あいこじゃんけんは模倣運動の一種                                          文          献
+
+ であり，このタイプの行為に関しては右 SMA の                 1 ）Babiloni, C., Carducci, F., Gratta, C.D., et al.：
+ 関与が想定されることになる。                              Hemispherical asymmetry in human SMA during
+    すなわち，右手あいこじゃんけんは，右手の複                    voluntary simple unilateral movements. An fMRI
+ 雑な運動なので対側の左 SMA が強く関与し                      study. Cortex, 39 ： 293 ─ 305, 2003.
+（Shibasaki ら 1993，Kawashima ら 1998）
+                                  ，しかも，
+                                          2 ）Friston, K.J.： Statistics 1 ： Experimental design
+ 手の形を見て真似をする「あいこ」じゃんけんな
+                                             and statistical parametric mapping. In ： Brain
+ ので，右 SMA もかかわり（Koski ら 2003）       ，結果
+                                             mapping ： the methods（eds Toga, A.W. &
+ として両側 SMA が賦活されたものと考えられる。
+                                             Mazziotta, J.C.）. 2nd Ed., Academic press, Cali-
+ また，左手あいこじゃんけん時には，やはり左手
+ の複雑な運動なので対側の右 SMA が関与し                      fornia, 2002, pp. 614 ─ 615.
+
+（Shibasaki ら 1993，Kawashima ら 1998）
+                                  ，さらに，   3 ）早川裕子，藤井俊勝，山鳥                       重，ほか： Luria の
+ これに模倣運動による右側 SMA の賦活が重畳し，                   fist ─ edge ─ palm test の再検討. 脳神経, 51 ： 137 ─
+ 結果として右 SMA に強い賦活反応が見られたの                    142, 1999.
+ だろうと考えられる。                               4 ）川原真理，鳥居方策，榎戸秀昭，ほか：両側前
+
+               ま   と   め                     頭葉損傷の一例．北陸神経精神医学誌，4 ： 84 ─
+                                             96, 1990.
+ 以上より，今回の結果は，「左半球 SMA の活動                 5 ）Kawashima, R., Yamada, K., Kinomura, S., et al.：
+が左手の負けじゃんけんに強くかかわっている」
+                                             Regional cerebral blood flow changes of cortical
+ということが，対側優位性（SMA が対側の手の複
+                                             motor areas and prefrontal areas in humans
+雑な運動にかかわっている）と模倣運動時の右
+    2005 年 9 月 30 日                                                                                  （249）43
+
+    related to ipsilateral and contralateral hand                Trend detection via temporal difference model
+    movement. Brain Res., 623 ： 33 ─ 40, 1993.                   predicts inferior prefrontal cortex activation during
+6 ）Kawashima, R., Matsumura, M., Sadato, N., et                  acquisition of advantageous action selection.
+    al.： Regional cerebral blood flow changes in                 Neuroimage, 21 ： 733 ─ 743, 2004.
+    human brain related to ipsilateral and contralateral     13）Roland, P.E., Larsen, B., Lassen, N.A., et al.：
+    complex hand movements ― a PET study. Eur. J.                Supplementary motor area and other cortical areas
+    Neurosci., 10 ： 2254 ─ 2260, 1998.                           in organization of voluntary movements in man. J.
+7 ）Koski, L., Iacoboni, M., Dubeau, M.C., et al.：                Neurophysiol., 43 ： 118 ─ 136, 1980.
+    Modulation of cortical activity during different         14）Sadato, N., Yonekura, Y., Waki, A., et al.： Role of
+    imitative behaviors. J. Neurophysiol., 89 ： 460 ─            the supplementary motor area and the right
+    471, 2003.                                                   premotor cortex in the coordination of bimanual
+8 ）Luria, A.R.： Higher cortical functions in man.                finger movements. J. Neurosci., 17 ： 9667 ─ 9674,
+    Basic Books, New York, 1966.                                 1997.
+9 ）Nakada, T., Fujii, Y., Suzuki, K., et al.： High ─ field   15）Shibasaki, H., Sadato, N., Lyshkow, H., et al.：
+   （ 3.0 T） functional MRI sequential epoch                      Both primary motor cortex and supplementary
+    analysis ： An example for motion control analysis.           motor area play an important role in complex
+    Neurosci. Res., 32 ： 355 ─ 362, 1998.                        finger movement. Brain, 116 ： 1387 ─ 1398, 1993.
+10）Oldfield, R.C. : The assessment and analysis of           16）Talairach, J. & Tournoux, P.： Co ─ planar stereo-
+    handedness : The Edinburgh Inventory. Neuropsy-              taxic atlas of the human brain ： 3 ─ dimensional
+    chologia, 9 : 97 ─ 114, 1971.                                proportional system ： An approach to cerebral
+11）Omori, M., Yamada, H., Murata, T., et al.：                    imaging. Thieme, Stuttgart, 1988.
+    Neuronal substrates participating in attentional set     17）丹治       順：補足運動野と手の運動の順序制御.神
+    ─ shifting of rules for visually guided motor                経進歩, 42 ： 29 ─ 38, 1998.
+    selection ： A functional magnetic resonance              18）Umetsu, A., Okuda, J., Fujii, T., et al.： Brain acti-
+    imaging investigation. Neurosci. Res., 33 ： 317 ─            vation during the fist ─ edge ─ palm test ： A func-
+    323, 1999.                                                   tional MRI study. Neuroimage, 17 ： 385 ─ 392,
+12）Paulus, M.P., Feinstein, J.S., Tapert, S.F., et al.：          2002.
+     44（250）                                                                                   高次脳機能研究             25 巻 3 号
+
+
+
+  ■ Abstract
+
+
+
+                 Role of supplementar y motor area during per formance of
+                       loss ─ resulting pursuant paper ─ rock ─ scissors
+
+                   Atsushi Fukunaga*,*** Takayuki Ohira* Motoichiro Kato**
+                              Haruo Kashima** Takeshi Kawase*
+
+   The performance of pursuant loss ─ resulting paper ─ rock ─ scissors with the hands is known to require control
+and integration of frontal lobe function. However, what area of the brain is actually activated during pursuant
+paper ─ rock ─ scissors remains unclear. Here,we evaluated how the brain functions during loss ─ resulting or tie ─
+resulting pursuant paper ─ rock ─ scissors with the dominant or non ─ dominant hands, using a 3 ─ tesla functional
+MRI in normal right ─ handed subjects. Data analysis was carried out using Brain VoyagerTM software（version
+4.9.1）, and the differences between the resting and movement conditions were statistically evaluated using a
+general linear model（single study）, convolved with the synthetic canonical hemodynamic response function as
+supplied by Brain Voyager. Significance was reported at a corrected p ＜ 0.05 level（F values, 5.2）by the multi-
+ple comparison method（Bonferroni’s correction）. For group data analysis, all the individual data sets were
+averaged in Talairach space. The results showed that activated blood oxygenation level ─ dependent signals were
+observed in the frontal lobe, supplementary motor area（SMA）, sensorimotor area, and cerebellar hemisphere
+when a pursuant paper ─ rock ─ scissors task was performed. Interestingly, the right SMA was activated more
+strongly during tie ─ resulting pursuant paper ─ rock ─ scissors with the left hand, while the left SMA was activated
+more strongly during loss ─ resulting pursuant paper ─ rock ─ scissors with the left hand. In conclusion, these find-
+ings suggest that the left SMA might be associated with inhibition of stereotypical performance and monitoring
+of conflict in the subject’s mind. Further investigation is required to clarify more detailed functions of the left
+SMA.
+
+
+
+
+  * Department of Neurosurgery, Keio University School of Medicine. 35 Shinanomachi, Shinjuku ─ ku, Tokyo 160 ─ 8582, Japan
+ ** Department of Neuropsychiatry, Keio University School of Medicine
+*** Ogawa Laboratories For Brain Function Research, Hamano Life Science Research Foundation
+

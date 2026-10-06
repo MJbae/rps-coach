@@ -1,0 +1,1256 @@
+        University of Innsbruck
+
+
+
+
+       Working Papers
+             in
+   Economics and Statistics
+
+
+
+Individual behavior and group membership:
+                 Comment
+
+             Matthias Sutter
+
+                2008-23
+   Individual behavior and group membership: Comment
+
+                                       By Matthias Sutter*
+
+
+                                                 Abstract
+
+Charness et al. (2007b) have shown that group membership has a strong effect on individual
+
+decisions in strategic games when group membership is salient through payoff commonality.
+
+In this comment I show that their findings also apply to non-strategic decisions, even when no
+
+outgroup exists, and I relate the effects of group membership on individual decisions to joint
+
+decision making in teams. I find in an investment experiment that individual decisions with
+
+salient group membership are largely the same as team decisions. This finding bridges the
+
+literature on team decision making and on group membership effects. (JEL C91, C92, D71)
+
+
+
+
+                                   This version: 22 September 2008
+
+
+
+
+   *
+     Department of Public Finance, University of Innsbruck, and Department of Economics, University of
+Gothenburg. Address: Universitaetsstrasse 15, A-6020 Innsbruck, Austria (email: matthias.sutter@uibk.ac.at). I
+thank Gary Charness and two anonymous referees for very helpful comments and Cornelia Horn and Felix Oettl
+for valuable research assistance. Financial support from the Max Planck Society, the Austrian Science
+Foundation (FWF-Project P16617), the Tyrolean Science Foundation (TWF), and the Center of Experimental
+Economics at the University of Innsbruck (sponsored by Raiffeisen Landesbank Tirol) is gratefully
+acknowledged.
+       The influence of group membership on individual behavior has attracted attention
+
+recently, because it questions economic theories that regard individual behavior as solely
+
+determined at the individual level. Largely inspired by George A. Akerlof’s and Rachel E.
+
+Kranton’s (2000) model on the effects of identity on economic outcomes, experimental
+
+economists have become increasingly interested in examining the effects of group identity on
+
+individual behavior. Gary Charness, Luca Rigotti and Aldo Rustichini (2007b) have found
+
+that salient group membership makes subjects more aggressive in coordination and prisoner’s
+
+dilemma games. Saliency has been induced by letting other group members observe
+
+individual behavior or by using payoff commonality. The latter means that an individual’s
+
+decision has consequences for the payoffs of other group members, even though the other
+
+members can not influence the individual’s decision. Charness et al. (2007b) argue that salient
+
+group membership lets individuals shift their decisions towards those that are more favorable
+
+for the group as a whole, meaning that individuals take into account the payoffs of other
+
+group members. Charness et al. (2007b) conclude as their paper’s first, and foremost, lesson
+
+that “groups profoundly affect individual behavior in social situations” (p. 1350).1
+
+       The main goal of this comment is to relate the effects of group membership on individual
+
+behavior to team decision making. I find in an investment experiment that individual
+
+decisions with salient group membership are indistinguishable in the aggregate from those
+
+made by unitary teams. This result bridges the gap between the emerging literature on group
+
+membership effects (e.g., Goette et al., 2006; Charness et al., 2007b; Charness and Matthew
+
+O. Jackson, forthcoming; Chen and Li, forthcoming) and the literature on team decision
+
+
+   1
+       Their statement is supported by several other recent studies that typically examine individual behavior
+towards members of an ingroup or an outgroup. Lorenz Goette, David Huffman and Stephan Meier (2006), for
+instance, report that officers of the Swiss army are more cooperative in a prisoner’s dilemma game towards
+members of their own platoon than those of other platoons. Yan Chen and Xin Li (forthcoming) – who provide
+an excellent survey of the literature on group identity – show that the degree of other-regarding social
+preferences in an allocation task is stronger towards members of an ingroup than towards outgroup members.
+Ernst Fehr, Helen Bernhard and Bettina Rockenbach (2008) study the behavior of 3- to 8-year old children in a
+simple allocation task and find that the differences in behavior towards ingroup or outgroup members develop in
+this life-span.
+
+                                                                                                             1
+making (e.g., David J. Cooper and John H. Kagel, 2005; Charness, Edi Karni and Dan Levin,
+
+2007a) and provides further insights into the determinants of team decision making. A
+
+secondary aim of this paper is to show that the findings of Charness et al. (2007b) also apply
+
+to non-strategic decisions (as has already been documented by Chen and Li, forthcoming),
+
+even in situations where there is no outgroup at all. Whereas all former studies on group
+
+membership effects have considered a setting where an outgroup exists, this is the first study
+
+showing that it is the mere fact of being in a group that changes individual behavior,
+
+regardless of whether an outgroup exists or not. This finding makes the hitherto documented
+
+effects of group membership on individual behavior even more widely relevant, since they
+
+obviously do not depend on the existence of an outgroup.2
+
+       In contrast to individual decision making under group membership, team decision making
+
+requires several subjects to reach a joint decision, where there is typically no internal conflict
+
+in terms of payoffs among team members.3 The literature on team decision making has
+
+captured a lot of interest in recent years, because many economic decisions are made by
+
+teams, such as families, company boards, management teams, committees, or central bank
+
+boards. Cooper and Kagel (2005) provide a thorough survey of the relevant literature,
+
+documenting that team decisions are typically closer to standard game theoretic predictions
+
+than individual decisions are. For example, teams send and accept smaller transfers in the
+
+ultimatum game (Gary Bornstein and Ilan Yaniv, 1998), send or return smaller amounts in the
+
+trust game (James C. Cox, 2002; Tamar Kugler et al., 2007), and are more selfish in dictator
+
+
+   2
+      One implication of my finding is that it potentially challenges some well-known and widely accepted
+theories in social psychology that rely on a distinction between ingroup and outgroup to explain individual
+behavior in groups (see, for example, the optimal distinctiveness model of Marilynn B. Brewer, 1991, or the
+social identity theory of Henri Tajfel and John Turner, 1979). Exploring this implication in more detail is beyond
+the scope of this comment, though.
+    3
+      Team decision making is often referred to as “group decision making” in the literature. However, in order to
+separate more clearly between group membership in the spirit of Charness et al. (2007b) and team decisions, I
+will use the term “team” for situations in which several subjects have to agree on a joint decision, and the term
+“group membership” for situations in which individuals make decisions independently of others, but are
+somehow related to others, for example by being observed by others or by the prevalence of payoff
+commonality.
+
+                                                                                                                2
+games (Wolfgang J. Luhan, Martin G. Kocher and Matthias Sutter, forthcoming).4 Teams exit
+
+the centipede game at earlier stages (Bornstein, Kugler and Anthony Ziegelmeyer, 2004), and
+
+they outperform individuals in beauty-contest games because they converge more quickly to
+
+the equilibrium (Kocher and Sutter, 2005). Concerning non-strategic tasks, teams take more
+
+rational decisions in intellective tasks, such as the Wason selection task (Boris Maciejovsky
+
+and David V. Budescu, 2007), they are more forward-looking in a non-interactive common-
+
+pool-resource game (Joris Gillet, Arthur Schram and Joep Sonnemans, 2007), and they
+
+achieve a higher payoff/risk ratio in a portfolio selection task (Rockenbach, Abdolkarim
+
+Sadrieh and Barbara Mathauschek, 2007). Charness et al. (2007a) also show that teams
+
+violate the principles of Bayesian updating less often than individuals do. Summarizing the
+
+evidence, teams can be considered more “rational players” (Bornstein and Yaniv, 1998) in a
+
+broad variety of strategic- and non-strategic tasks.
+
+       Of course, an important question is why differences between team decisions and
+
+individual decisions occur. Opening the “black box” of team decision making, Cooper and
+
+Kagel (2005) have analyzed the content of team members’ dialogues. In their experiment,
+
+teams play a limit pricing game against another team. In this signaling game a market
+
+incumbent can signal his cost type to a potential entrant by choosing a particular output level.
+
+Teams are found to act more strategically than individuals by choosing higher output levels in
+
+order to signal that market entry is not profitable. The team dialogues reveal that one
+
+particular reason for this behavior is that teams often put themselves into the shoes of their
+
+competitors, meaning that they view the game from the competitor’s perspective before
+
+making own decisions. This perspective-taking lets teams act more strategically and more
+
+competitively. Studying team behavior in experimental tournaments, Sutter and Christina
+
+Strassmair (forthcoming) find in their analysis of team members’ dialogues that members
+
+   4
+      Team behavior in the dictator game has long been considered as more generous than individual behavior,
+since the seminal paper by Timothy N. Cason and Vai-Lam Mui (1997) seemed to suggest this pattern. However,
+their data do not show any significant difference between individual and team transfers in the dictator game.
+
+                                                                                                           3
+often refer to the payoffs of their colleagues to support a more competitive strategy. Members
+
+frequently raise the goal of beating the competitors in order to get more money for each team
+
+member. Sutter and Strassmair (2008) can show that team members increase their efforts in
+
+the tournament significantly if such a concern for the other members’ payoffs is raised within
+
+a team. In sum, the evidence from team decision making experiments suggests that team
+
+decisions are strongly influenced by the intention to increase not only one’s own payoff, but
+
+also the payoffs of the other team members.
+
+       This latter aspect of team decision making is remarkably similar to the findings of
+
+Charness et al. (2007b) who have shown that salient group membership changes individual
+
+behavior in a direction that yields more favorable outcomes for the other group members.
+
+Given this similarity, it seems straightforward to ask whether salient group membership
+
+influences individuals in such a way that individual decisions become similar to – and
+
+possibly indistinguishable from – decisions taken by teams. Neither Charness et al. (2007b)
+
+nor the existing literature on team decision making has examined this question, even though
+
+answering it will provide a link between these two hitherto unrelated strands of literature.
+
+       I will examine the relation between team decision making and individual decisions under
+
+salient group membership by running a simple investment experiment. The experiment is
+
+based on one treatment of a paper by Uri Gneezy and Jan Potters (1997) in which they have
+
+investigated the effects of myopic loss aversion. My paper is not about myopic loss aversion,
+
+though.5 Nevertheless, the design of Gneezy and Potters (1997) provides a very suitable
+
+framework to study the effects of group membership on individual decisions and compare
+
+them in a straightforward way to the outcome of team decisions. Since the experiment is non-
+   5
+     In a nutshell, myopic loss aversion assumes that people are myopic in evaluating outcomes over time, and
+are more sensitive to losses than to gains. In the context of financial decision making, myopic loss aversion
+implies that subjects invest less in risky assets the more frequently their returns are evaluated and the more often
+subjects can change their investment decision (see Gneezy, Arie Kapteyn and Potters, 2003, or Michael S. Haigh
+and John A. List, 2005, for more details and for evidence that myopic loss aversion affects also professional
+traders and experimental markets). In Sutter (2007) I have shown that team decision making is also prone to
+myopic loss aversion. The two experimental treatments presented in subsection A of section II use data from the
+SHORT-condition in Sutter (2007). All other treatments presented in this paper are novel.
+
+                                                                                                                  4
+strategic, using this design has also the advantage that comparing individual decisions under
+
+group membership with team decisions can not be confounded by any possible interaction
+
+effect of strategic interaction with individual or team decisions. Using a non-strategic game
+
+also provides a robustness check of the results of Charness et al. (2007b) for a completely
+
+different decision task. The investment task used here does not even require the existence of
+
+an outgroup, which distinguishes this paper also from Chen and Li (forthcoming).
+
+    My experimental results yield an affirmative answer to the question posed above.
+
+Individual decisions under salient group membership and decisions made by teams are largely
+
+similar. One implication of this finding is that team decision making and individual decision
+
+making under salient group membership can be considered substitutes. This insight promotes
+
+a better understanding of the characteristics and determinants of team decision making, as it
+
+documents that decision making in teams changes individual behavior in the same way as
+
+individual decisions are influenced when payoff commonality applies. Although previous
+
+analyses of team dialogues in Cooper and Kagel (2005) or Sutter and Strassmair
+
+(forthcoming) have shown that team behavior is influenced by team members referring to
+
+joint payoffs, it has remained an open question whether payoff commonality itself – when
+
+subjects do not become members of a team – changes individual behavior or whether the
+
+mere fact of being member of a team adds some “extra” to the differences in individual and
+
+team behavior. My results suggest that payoff commonality itself yields the difference.
+
+Finally, since I also find a profound effect of salient group membership on individual
+
+decisions in a non-strategic task without any outgroup, the results of Charness et al. (2007b)
+
+are obviously applicable beyond the domain of strategic games or tasks where an outgroup is
+
+involved.
+
+    The rest of the paper is organized as follows. Section I describes the basic experimental
+
+design. Section II presents the experimental treatments and results and is divided into three
+
+
+
+                                                                                            5
+subsections. Subsection A examines whether individuals and teams make different decisions
+
+in the experimental task. Subsection B tests the effects of salient group membership on
+
+individual decisions and compares them to those of team decision making. Subsection C then
+
+addresses the question whether also team membership (i.e., not only group membership) has
+
+an impact on individual decisions. Section III concludes the paper by summarizing the main
+
+findings and discussing their implications.
+
+
+
+
+                          I. Basic Experimental Design
+
+    All treatments reported below rely on the basic design of Gneezy and Potters (1997).
+
+Subjects receive an endowment of 100 Euro-cents (i.e. 1€) in each out of 9 rounds. Then they
+
+have to choose in each round how much to invest in a lottery with the following properties:
+
+With a probability of 1/3 the lottery returns two and a half times the invested amount X in
+
+addition to the initial endowment, yielding a round payoff of 100 + 2.5X Euro-cents. With a
+
+probability of 2/3 the invested amount is lost, yielding 100 – X Euro-cents as payoff. Such a
+
+lottery yields the highest expected value (of 116.67 Euro-cents) in case of a maximum
+
+investment of X = 100 Euro-cents. Subjects are informed at the end of each round about the
+
+lottery’s outcome, the resulting payoff in this round and the accumulated payoffs up to the
+
+present round. Note that the maximum investment in each round is 100. That means that an
+
+endowment not invested in previous rounds can not be carried over to be invested in later
+
+rounds.
+
+    All experimental sessions were programmed with z-Tree (Urs Fischbacher, 2007) and
+
+conducted at the Max Planck Institute of Economics in Jena. Sessions lasted on average 40
+
+minutes. A total of 358 students from the University of Jena participated in the experiment
+
+(using the software ORSEE by Ben Greiner, 2004, for recruitment). No subject was allowed
+
+to participate in more than one session and all subjects were randomly assigned to any of the
+
+                                                                                           6
+treatments described in the following section. Participants earned on average 12.2 €
+
+(including a show-up fee of 2 €).
+
+
+
+
+                     II. Experimental Treatments and Results
+
+                             A. Individual Versus Team Decisions
+
+       Treatments.⎯The treatment variable considered first is the type of decision maker being
+
+either an individual (treatment INDIVIDUALS; N = 64 subjects) or a team of three subjects
+
+who can communicate and discuss their decisions (treatment TEAMS; N = 84 subjects,
+
+yielding 28 teams). Teams are randomly assigned at the beginning of the experiment. Each
+
+team is seated in a room of its own and stays together for the whole experiment. The
+
+experimental instructions are identical in both treatments, with two exceptions.6 First, teams
+
+have to agree on a joint decision that is binding for all team members. Second, each of the
+
+three team members gets paid the full amount earned by the team over the 9 rounds. The latter
+
+procedure holds the per capita payoffs and marginal incentives constant across both
+
+treatments.
+
+
+
+       Results.⎯Figure 1 shows the average investments in single rounds. Starting from the
+
+very first period, there is a clear difference between both treatments. Overall average
+
+investments are 39.4 in INDIVIDUALS, and 55.7 in TEAMS (p < 0.05; N = 92; Mann-
+
+Whitney U-test7). Average earnings are 12.0€ in INDIVIDUALS, respectively 12.6€ in
+
+TEAMS.8 I summarize as a first finding
+
+
+
+   6
+     All experimental instructions are available as additional material on the journal’s homepage.
+   7
+     All tests reported in this paper are two-sided. When teams are considered, the team decision of three
+subjects is treated as one independent observation.
+   8
+     Note that the relative ranking of earnings corresponds to the relative levels of investment here, but that
+earnings are not significantly different. The latter is due to a high variance in earnings because they depend
+
+                                                                                                             7
+Result 1: Teams invest significantly higher amounts than individuals do.
+
+
+
+                    Figure 1. Investments in INDIVIDUALS and TEAMS
+
+                   80
+
+                   70
+
+                   60
+
+                   50
+
+                   40
+
+                   30
+
+                   20
+                         1       2      3      4       5      6      7      8       9
+
+                                             INDIVIDUALS       TEAMS
+
+
+
+
+     Result 1 can be further qualified by checking whether the higher investments of teams are
+
+due to fewer individuals investing anything (meaning that it could be caused by a larger
+
+fraction of individuals shying away from positive investments) or whether also those
+
+individuals with positive amounts invest less than teams. It turns out that both explanations
+
+are valid. About 17.5 percent of individual choices are zero investments (X = 0), compared to
+
+4.4 percent of team choices (p < 0.05; χ²-test). However, those individuals who invest
+
+positive amounts invest also less than teams. If we consider only the positive investments, we
+
+find individuals investing 47.8, but teams 58.2 on average (p < 0.1; Mann-Whitney U-test).
+
+
+
+    B. Individual Behavior and Group Membership: Payoff Commonality and
+
+                                        Exchange of Messages
+
+     This subsection introduces two treatments that investigate individual behavior under
+
+group membership. Both treatments share the characteristic that decisions are taken by
+
+
+heavily on the outcomes of the lottery in each round and on whether high investments coincide with positive
+lottery outcomes.
+
+                                                                                                         8
+individuals, but that individuals are members of groups. Saliency of group membership is
+
+induced in two steps. First, I use payoff commonality.9 This means that individual decisions
+
+have payoff consequences for the other group members, even though any individual is free to
+
+choose according to own preferences. Second, I add the opportunity of sending non-binding
+
+messages to other group members. Both factors – payoff commonality and the exchange of
+
+messages – are of obvious importance in team decision making, where team members
+
+typically have the same payoffs from a given decision and where team members can
+
+communicate with each other by exchanging messages. If both factors influenced individual
+
+decisions under group membership such that they were no longer different from team
+
+decisions, this would establish a firm link between team decision making and individual
+
+behavior under group membership, and it would support the notion that both types of decision
+
+making can be considered substitutes.
+
+
+
+       Treatments.⎯In treatment PAY-COMM (N = 54 subjects) groups of three subjects each
+
+are formed. Subjects get labels as member 1, member 2, or member 3. Decisions are made
+
+subsequently and independently, with each member being responsible for three rounds.10 I.e.,
+
+member 1 decides in rounds 1-3. The other two members are informed about the decisions
+
+and the outcome of the lottery after each round, and they earn the same amount as member 1.
+
+Member 2 decides for rounds 4-6, and member 3 for rounds 7-9, with the same information
+
+and payoff conditions as in rounds 1-3. Other than the payoff commonality, there is no
+
+interaction between the linked members, and members remain anonymous. The whole
+
+procedure is common knowledge to all members before member 1 starts making decisions.
+
+
+   9
+       Charness et al. (2007b) show that payoff commonality makes group membership salient. They also report
+that observation and feedback can make group membership salient. For the purpose of this paper – comparing
+individual behavior under group membership to team decisions – payoff commonality is most appropriate to
+induce saliency.
+    10
+        The feature of members making decisions for three rounds only is motivated by letting each member be
+responsible for one third of the decisions that real teams of three subjects make in TEAMS.
+
+                                                                                                          9
+    Treatment MESSAGE (N = 72 subjects) is identical to PAY-COMM, but adds the
+
+opportunity of sending non-binding messages. Members can write down on a sheet of paper
+
+suggestions for investments or any other message to their predecessors (i.e., members
+
+deciding earlier) or their successors (i.e. members deciding later). Thus, member 1 receives
+
+two separate sheets of paper with messages from member 2, respectively member 3, before
+
+member 1 can make decisions for rounds 1-3. After round 3, members 1 and 3 can send
+
+messages to member 2 who can then decide for rounds 4-6. Finally, member 3 gets messages
+
+from members 1 and 2 before making decisions in rounds 7-9. Information conditions
+
+concerning the lottery’s outcome are as in PAY-COMM, i.e. all linked members get to know
+
+the outcome as soon as a given round is over. Note that anonymity is preserved in treatment
+
+MESSAGE by forbidding subjects to send messages that might reveal their identity. In case a
+
+subject had violated this rule, he or she would not have received any payment. Yet, all
+
+subjects adhered to preserving anonymity.
+
+
+
+    Results.⎯Figure 2 shows the average investments in PAY-COMM and MESSAGE,
+
+where individuals make decisions as members of groups. Figure 2 also includes the
+
+investments in INDIVIDUALS as a benchmark, where individuals are isolated decision-
+
+makers. It turns out that salient group membership through payoff commonality (PAY-
+
+COMM) induces higher investments than in INDIVIDUALS, though the difference needs
+
+three rounds to evolve clearly (overall investments are 50.3 in PAY-COMM vs. 39.4 in
+
+INDIVIDUALS; p < 0.05; N = 82; Mann-Whitney U-test). Adding the opportunity of sending
+
+messages increases investment levels even further (with 61.4 in MESSAGE vs. 50.3 in PAY-
+
+COMM; p < 0.1; N = 42). Earnings are 12.4€ in PAY-COMM, respectively 12.3€ in
+
+MESSAGE. It is important to stress that investment levels both in PAY-COMM and in
+
+MESSAGE are not significantly different from those in TEAMS (with 55.7 on average; p >
+
+
+
+                                                                                         10
+0.3 in any comparison). Hence, salient group membership and team decision making can be
+
+considered substitutes in their influence on individual behavior. This leads to
+
+Result 2: Individual behavior is strongly affected by salient group membership also in a non-
+
+strategic task (without any outgroup). If group membership entails two factors that are
+
+important in team decision making – payoff commonality and the exchange of messages –
+
+individual decisions are, in the aggregate, no longer different from team decisions.
+
+
+
+         Figure 2. Investments in INDIVIDUALS, PAY-COMM and MESSAGE
+
+                 90
+                 80
+                 70
+                 60
+                 50
+                 40
+                 30
+                 20
+                       1      2       3         4    5    6    7     8      9
+
+                                  INDIVIDUALS       PAY-COMM   MESSAGE
+
+
+
+
+    Treatment MESSAGE offers an opportunity to classify the type of messages sent back
+
+and forth and how they affect investment levels. The coding has been done independently by
+
+two research assistants who later on jointly clarified diverging assessments. The three most
+
+frequently occurring messages are the following. Message M1 proposes to make high
+
+investments, because the expected payoff for all group members is maximized with the
+
+maximum investment of 100. This message can be found on 30 percent of the sheets used for
+
+sending messages. Receivers of message M1 seem to respond to it, since the average
+
+investment level of a receiver is significantly positively correlated with message M1 (r =
+
+0.23; p < 0.05, Pearson correlation). Message M2 suggests investing little, because the
+
+probability of losing in a single round is double the one of winning in the lottery. This
+
+                                                                                          11
+message is included on 18 percent of sheets, but it is not significantly correlated with actual
+
+investment levels chosen by the recipients of these messages (r = –0.08; p = 0.50). Message
+
+M3 recommends high investments, because the group can reasonably expect to win on
+
+average in 3 out of 9 rounds. It is used on 15 percent of sheets, but has no significant
+
+correlation with investment levels either (r = 0.09; p = 0.47). All other types of messages are
+
+rare. Some sheets also contain only a suggested investment level, without providing any
+
+reasoning for it. In sum, the most frequently used messages try to give information on what to
+
+do and to influence the recipient in the sender’s favorite direction, and appeal to joint payoffs
+
+in the group.11
+
+
+
+          C. The Influence of Team Decision Making on Individual Decisions
+
+        The previous subsection has shown that group membership has an effect on individual
+
+decisions. Now I investigate whether the experience of team decision making (contrary to
+
+mere group membership where decisions are still taken independently from other subjects)
+
+can also affect individual behavior. If this is to be found and the effects are similar to those
+
+reported in the previous subsection, this would corroborate the finding that both group
+
+membership – where individual decisions are taken independently from other subjects – and
+
+team decision making – which requires a joint decision of several team members – have
+
+largely similar effects on individual behavior.
+
+
+
+        Treatment.⎯The treatment MIXED (N = 84 subjects) intends to examine how the
+
+experience of team decision making affects individual decision making. In rounds 1-3, each
+
+   11
+      Of course, it would be very interesting to compare the messages used in MESSAGE with the content of
+communication in treatment TEAMS. Unfortunately, the communication in TEAMS has not been recorded
+(since teams sat in separate rooms). It seems clear, though, that messages M1 and M3 target the issue of how to
+maximize expected earnings from the experiment. This is also what has been found in an analysis of the video-
+protocols of team communication in a signaling game (Sutter, forthcoming), providing indirect support for the
+conjecture that in the experiment reported here the messages used in MESSAGE were probably similar to the
+arguments exchanged in TEAMS.
+
+                                                                                                            12
+subject decides independently of all other members. Payoff commonality does not apply in
+
+these rounds, and group members are not informed about the decisions of the other members.
+
+For rounds 4-6, however, three subjects are linked together to form a team. They are then
+
+connected via an electronic chat in which they can exchange any messages (that do not reveal
+
+their identity) in order to reach a team decision. Team decisions are only valid if all team
+
+members enter the same decision on their computer. Naturally, this means that in rounds 4-6
+
+all group members earn the same amount of money since they make a team decision.
+
+Participants are not informed at the beginning of the experiment about the need to make team
+
+decisions in rounds 4-6, but this is revealed only after round 3.12 After round 6 it is announced
+
+that a final phase of individual decision making in rounds 7-9 (identical to rounds 1-3)
+
+completes the session. This final phase is important to examine the effects of team decision
+
+making on subsequent individual decisions.
+
+
+
+        Results.⎯Figure 3 compares the investments in MIXED to the benchmark of
+
+INDIVIDUALS. The dotted lines in MIXED indicate the transitions from individual to team
+
+decision making (after round 3) and from team to individual decision making (after round 6).
+
+As one would have expected from the results in subsection A, investments increase from
+
+rounds 1-3 to rounds 4-6 (45.3 vs. 53.9 on average; p = 0.08; N = 28; Wilcoxon signed-ranks
+
+test)13. Individual investments in rounds 7-9 are not significantly lower than the investments
+
+of teams in rounds 4-6, though (p > 0.6; N = 28; Wilcoxon signed-ranks test), but they are
+
+higher than the individual investments in rounds 1-3 (50.7 vs. 45.3 on average; p = 0.08; N =
+
+
+   12
+        This approach was taken to avoid that individual decisions in rounds 1-3 might be influenced by the
+prospect of deciding in a team later on. Note that participants in MIXED are informed in the initial instructions
+(before round 1 starts) that the way in which decisions have to be made might change in the course of the
+experiment. Hence, there is no deception of subjects involved here.
+    13
+       I use a conservative measure for testing here, because I match the investments of a team in rounds 4-6 with
+the average investments of the three members in rounds 1-3. Hence, each team of three members constitutes one
+independent unit of observation. Using a random effects panel regression (with clustering on the individual
+decision-maker) as a less conservative test of team effects yields an estimated coefficient of 6.45 (p < 0.05) for
+the dummy of team decision making in rounds 4-6.
+
+                                                                                                              13
+84; overall average earnings are 11.9€). The development of investment levels suggests that
+
+the experience of team decision making has an impact on individual behavior as well. It also
+
+seems noteworthy that the average investments in rounds 7-9 in MIXED are remarkably close
+
+to the overall average investments in PAY-COMM (50.3), which indicates that the effects of
+
+group membership and those of experiencing team decision making are very similar. These
+
+findings are summarized in
+
+Result 3: Subjects increase their investments when they switch from individual to team
+
+decision making, but they do not decrease investments significantly when switching back.
+
+Hence, the experience of team decision making also affects individual behavior.
+
+
+
+                  Figure 3. Investments in INDIVIDUALS and MIXED
+
+                 80
+
+                 70
+
+                 60
+
+                 50
+
+                 40
+
+                 30
+
+                 20
+                       1     2      3     4      5     6           7   8   9
+
+                                         INDIVIDUALS       MIXED
+
+
+
+
+    Examining the content of communication between team members in rounds 4-6 reveals
+
+that the same messages that have been used most frequently in MESSAGE have been
+
+exchanged in MIXED. In 32 percent of teams, message M1 is exchanged which proposes high
+
+investments in order to maximize the expected payoff. It is strongly correlated with the
+
+average investment (r = 0.62; p < 0.01, Pearson correlation). Message M2 – proposing small
+
+investments due to the high probability of losing – is voiced in 21 percent of teams, but has no
+
+
+
+                                                                                             14
+significant effect on the investment levels. Neither has message M3, which advocates positive
+
+investments due to an expected number of 3 wins and which is found in 11 percent of teams.
+
+
+
+
+                                    III. Conclusion
+
+    In this comment I have used a non-strategic investment task to explore further the effects
+
+of salient group membership on individual behavior. Charness et al. (2007b) have shown that
+
+group membership changes individual behavior, making it more competitive in coordination
+
+games and prisoner’s dilemma games. This paper adds to their findings in three important
+
+ways.
+
+    The first lesson from this paper is that the effects of salient group membership on
+
+individual behavior prevail also in a non-strategic task that has no outgroup. Consequently,
+
+for the effects of group membership to show up requires neither strategic interaction between
+
+different groups nor the existence of an outgroup. Group membership in itself is important,
+
+regardless of whether other groups exist or not. This lesson implies that the findings of
+
+Charness et al. (2007b) or Chen and Li (forthcoming) are robust to variations in the type of
+
+tasks and the institutional structure. A recent paper by Charness et al. (2008) provides further
+
+evidence for the effects of group membership on individual behavior, also in a context
+
+without an outgroup. They have found that subjects make fewer errors in probability
+
+judgments, i.e., they are less prone to the conjunction fallacy when they can consult with
+
+others before making a decision.
+
+    The second, and most important, lesson from this paper is that team decision making has
+
+the same effects as salient group membership on individual decisions. This result is by no
+
+means trivial, because team decision making requires deliberation, compromise and
+
+consensus among team members, whereas salient group membership leaves the decision
+
+making power unconditionally with a single individual. Individual behavior under group
+
+                                                                                             15
+membership does not require compromise or any other form of coordination with other group
+
+members. Hence, although both forms of decision making – in teams as well as individually
+
+with group membership – have distinctly different institutional structures, they yield decisions
+
+that are largely the same in the aggregate. An important qualification to this statement is to
+
+acknowledge the – in my view most interesting – finding of Charness et al. (2007b) that group
+
+membership has to be salient to affect individual behavior. Payoff commonality obviously
+
+satisfies this condition. In the strategic games of Charness et al. (2007b) and in my non-
+
+strategic task payoff commonality has shifted individual decisions in a direction that is more
+
+favorable for the group as a whole, meaning that individuals wish to take actions that are
+
+expected to be good not only for themselves, but also for the other group members.14,15 The
+
+same goal of achieving higher payoffs is also often invoked in the dialogues of team members
+
+(see Cooper and Kagel, 2005, or Sutter, 2008, for evidence from signaling games, for
+
+instance). Hence, payoff commonality seems to be one driving force for individual behavior
+
+in groups, but also for team decision making. The second lesson therefore links two hitherto
+
+unrelated strands of literature, i.e. on group membership effects and on team decision making.
+
+        A third lesson from this paper is that the experience of team decision making also affects
+
+individual behavior. After having made decisions in a team, individual decisions are much
+
+closer to the previously taken team decisions than to the decisions that the same individuals
+
+have taken as individuals. This finding can be considered a robustness check for the second
+   14
+       If this wish determined individual behavior under salient group membership, then investing the full amount
+in order to maximize the expected payoff not only for oneself, but also for the linked members, should be more
+frequent in PAY-COMM and MESSAGE than in INDIVIDUALS. In fact, this is what I find, since the relative
+frequency of investing the full endowment (X = 100) is significantly higher both in PAY-COMM (18.5 percent)
+and in MESSAGE (36.6 percent) than in INDIVIDUALS (12.5 percent; p < 0.05 in both comparisons; χ²-tests).
+    15
+        Maximizing expected payoffs requires higher investments – and thus more exposure to risk – in my
+experiment. Charness and Jackson (forthcoming) find in a Stag Hunt game (which is a two-player coordination
+game) that individuals make less risky decisions when payoff commonality applies. Though this might seem
+conflicting evidence at first sight, both findings are compatible when considering the expected payoffs in the
+Stag Hunt game under the assumption that the opponent player chooses randomly. Taking the safe option “Hare”
+yields a sure payoff of 8 in the experiment of Charness and Jackson (forthcoming), irrespective of the other’s
+choice. However, the risky option “Stag” has an expected payoff of 5 only (getting either 9 if the other player
+chooses also “Stag”, or 1 if “Hare” is chosen by the other player). Thus, the results of Charness and Jackson
+(forthcoming) can be interpreted as subjects maximizing the expected payoff in the face of strategic uncertainty
+about the other player’s behavior.
+
+                                                                                                             16
+lesson. Therefore, the bottom line of this paper is that both salient group membership – where
+
+individual decisions are taken independently from other subjects – and team decision making
+
+– which requires a joint decision of several subjects – have largely the same effects on
+
+individual behavior.
+
+
+
+
+                                                                                           17
+References
+
+Akerlof, George A., and Rachel E. Kranton. 2000. “Economics and Identity.” Quarterly
+
+    Journal of Economics, 115(3): 715–53.
+
+Bornstein, Gary, Tamar Kugler, and Anthony Ziegelmeyer. 2004. “Individual and Group
+
+    Decisions in the Centipede Game: Are Groups More ‘Rational’ Players?” Journal of
+
+    Experimental Social Psychology, 40(5): 599–605.
+
+Bornstein, Gary, and Ilan Yaniv. 1998. “Individual and Group Behavior in the Ultimatum
+
+    Game: Are Groups More ‘Rational’ Players?” Experimental Economics, 1(1): 101–8.
+
+Brewer, Marilynn B. 1991. “The Social Self: On Being the Same and Different at the Same
+
+    Time.” Personality and Social Psychology Bulletin, 17(5): 475–82.
+
+Cason, Timothy N., and Vai-Lam Mui. 1997. “A Laboratory Study of Group Polarization in
+
+    the Team Dictator Game.” Economic Journal, 107(445): 1465–83.
+
+Charness, Gary, and Matthew O. Jackson. Forthcoming. “The Role of Responsibility in
+
+   Strategic Risk-Taking.” Journal of Economic Behavior and Organization.
+
+Charness, Gary, Edi Karni, and Dan Levin. 2007a. “Individual and Group Decision
+
+   Making Under Risk: An Experimental Study of Bayesian Updating and Violations of
+
+   First-Order Stochastic Dominance.” Journal of Risk and Uncertainty, 35(2): 129–48.
+
+Charness, Gary, Edi Karni, and Dan Levin. 2008. “On the Conjunction Fallacy in
+
+   Probability Judgment: New Experimental Evidence.” SSRN Working Paper.
+
+Charness, Gary, Luca Rigotti, and Aldo Rustichini. 2007b. “Individual Behavior and
+
+   Group Membership.” American Economic Review, 97(4): 1340–52.
+
+Chen, Yan, and Xin Li. Forthcoming. “Group Identity and Social Preferences.” American
+
+    Economic Review.
+
+
+
+
+                                                                                        18
+Cooper, David J., and John H. Kagel. 2005. “Are Two Heads Better Than One? Team
+
+    Versus Individual Play in Signaling Games.” American Economic Review, 95(2): 477–
+
+    509.
+
+Cox, James C. 2002. “Trust, Reciprocity, and Other-Regarding Preferences: Groups vs.
+
+    Individuals and Males vs. Females.” In Advances in Experimental Business Research,
+
+    ed. Rami Zwick and Amnon Rapoport, 331–350. Dordrecht: Kluwer Academic
+
+    Publishers.
+
+Fehr, Ernst, Helen Bernhard, and Bettina Rockenbach. 2008. “Egalitarianism in Young
+
+    Children.” Nature, 454(28 August): 1079–84.
+
+Fischbacher, Urs. 2007. “z-Tree: Zurich Toolbox for Readymade Economic Experiments.”
+
+    Experimental Economics, 10(2): 171–8.
+
+Gillet, Joris, Arthur Schram, and Joep Sonnemans. 2007. “The Tragedy of the Commons
+
+    Revisited: The Importance of Group Decision-Making.” University of Amsterdam
+
+    Working Paper.
+
+Gneezy, Uri, and Jan Potters. 1997. “An Experiment on Risk Taking and Evaluation
+
+   Periods.” Quarterly Journal of Economics, 102(2): 631–45.
+
+Gneezy, Uri, Arie Kapteyn, and Jan Potters. 2003. “Evaluation Periods and Asset Prices in
+
+   a Market Experiment.” Journal of Finance, 58(2): 821–37.
+
+Goette, Lorenz, David Huffman, and Stephan Meier. 2006. “The Impact of Group
+
+   Membership on Cooperation and Norm Enforcement: Evidence Using Random
+
+   Assignment to Real Social Groups.” American Economic Review, 96(2): 212–6.
+
+Greiner, Ben. 2004. “An Online Recruitment System for Economic Experiments” In
+
+   Forschung und wissenschaftliches Rechnen 2003, ed. Kurt Kremer and Volker Macho,
+
+   79–93. GWDG Bericht 63. Gesellschaft für Wissenschaftliche Datenverarbeitung,
+
+   Göttingen.
+
+
+
+                                                                                      19
+Haigh, Michael S., and John A. List. 2005. “Do Professional Traders Exhibit Myopic Loss
+
+   Aversion? An Experimental Analysis.” Journal of Finance, 60(1): 523–34.
+
+Kocher, Martin G., and Matthias Sutter. 2005. “The Decision Maker Matters: Individual
+
+    Versus Group Behavior in Experimental Beauty-Contest Games.” Economic Journal,
+
+    115(500): 200–23.
+
+Kugler, Tamar, Gary Bornstein, Martin G. Kocher, and Matthias Sutter. 2007. “Trust
+
+    Between Individuals and Groups: Groups are Less Trusting Than Individuals But Just as
+
+    Trustworthy.” Journal of Economic Psychology, 28(6): 646–57.
+
+Luhan, Wolfgang J., Martin G. Kocher, and Matthias Sutter. Forthcoming. “Group
+
+    Polarization in the Team Dictator Game Reconsidered.” Experimental Economics.
+
+Maciejovsky, Boris, and David V. Budescu. 2007. “Collective Induction Without
+
+    Cooperation? Learning and Knowledge Transfer in Cooperative Groups and Competitive
+
+    Auctions.” Journal of Personality and Social Psychology, 92(5): 854–70.
+
+Rockenbach, Bettina, Abdolkarim Sadrieh, and Barbara Mathauschek. 2007. “Teams
+
+    Take the Better Risks.” Journal of Economic Behavior and Organization, 63(3): 412–22.
+
+Sutter, Matthias. 2007. “Are Teams Prone to Myopic Loss Aversion? An Experimental
+
+    Study on Individual Versus Team Investment Behavior.” Economics Letters, 97(2): 128–
+
+    32.
+
+Sutter, Matthias. Forthcoming. “Deception Through Telling the Truth?! Experimental
+
+    Evidence from Individuals and Teams.” Economic Journal.
+
+Sutter, Matthias, and Christina Strassmair. Forthcoming. “Communication, Cooperation
+
+    and Collusion in Team Tournaments – An Experimental Study.” Games and Economic
+
+    Behavior.
+
+
+
+
+                                                                                      20
+Tajfel, Henri, and John Turner. 1979. “An Integrative Theory of Intergroup Conflict.” In
+
+    The Social Psychology of Intergroup Relations, ed. William Austin and Stephen
+
+    Worchel, 33–47. Monterey, CA: Brooks/Cole.
+
+
+
+
+                                                                                     21
+University of Innsbruck – Working Papers in Economics and Statistics
+Recent papers
+
+2008-23    Matthias Sutter: Individual behavior and group membership: Comment.
+           Revised Version forthcoming in American Economic Review.
+2008-22    Francesco Feri, Bernd Irlenbusch and Matthias Sutter: Efficiency Gains
+           from Team-Based Coordination – Large-Scale Experimental Evidence.
+2008-21    Francesco Feri, Miguel A. Meléndez-Jiménez, Giovanni Ponti and
+           Fernando Vega Redondo: Error Cascades in Observational Learning: An
+           Experiment on the Chinos Game.
+2008-20    Matthias Sutter, Jürgen Huber and Michael Kirchler: Bubbles and
+           information: An experiment.
+2008-19    Michael Kirchler: Curse of Mediocrity - On the Value of Asymmetric
+           Fundamental Information in Asset Markets.
+2008-18    Jürgen Huber and Michael Kirchler: Corporate Campaign Contributions as a
+           Predictor for Abnormal Stock Returns after Presidential Elections.
+2008-17    Wolfgang Brunauer, Stefan Lang, Peter Wechselberger and Sven
+           Bienert: Additive Hedonic Regression Models with Spatial Scaling Factors: An
+           Application for Rents in Vienna.
+2008-16    Harald Oberhofer, Tassilo Philippovich: Distance Matters! Evidence from
+           Professional Team Sports.
+2008-15    Maria Fernanda Rivas and Matthias Sutter: Wage dispersion and workers’
+           effort.
+2008-14    Stefan Borsky and Paul A. Raschky: Estimating the Option Value of
+           Exercising Risk-taking Behavior with the Hedonic Market Approach.
+2008-13    Sergio Currarini and Francesco Feri: Information Sharing Networks in
+           Oligopoly.
+2008-12    Andrea M. Leiter: Age effects in monetary valuation of mortality risks - The
+           relevance of individual risk exposure.
+2008-11    Andrea M. Leiter and Gerald J. Pruckner: Dying in an Avalanche: Current
+           Risks and their Valuation.
+2008-10    Harald Oberhofer and Michael Pfaffermayr: Firm Growth in Multinational
+           Corporate Groups.
+2008-09    Michael Pfaffermayr, Matthias Stöckl and Hannes Winner: Capital
+           Structure, Corporate Taxation and Firm Age.
+2008-08    Jesus Crespo Cuaresma and Andreas Breitenfellner: Crude Oil Prices and
+           the Euro-Dollar Exchange Rate: A Forecasting Exercise.
+2008-07    Matthias Sutter, Stefan Haigner and Martin Kocher: Choosing the carrot or
+           the stick? – Endogenous institutional choice in social dilemma situations.
+2008-06    Paul A. Raschky and Manijeh Schwindt: Aid, Catastrophes and the
+           Samaritan's Dilemma.
+2008-05    Marcela Ibanez, Simon Czermak and Matthias Sutter: Searching for a
+           better deal – On the influence of group decision making, time pressure and
+           gender in a search experiment.
+2008-04    Martin G. Kocher, Ganna Pogrebna and Matthias Sutter: The Determinants
+           of Managerial Decisions Under Risk.
+2008-03    Jesus Crespo Cuaresma and Tomas Slacik: On the determinants of
+           currency crises: The role of model uncertainty.
+2008-02    Francesco Feri: Information, Social Mobility and the Demand for
+           Redistribution.
+2008-01    Gerlinde Fellner and Matthias Sutter: Causes, consequences, and cures of
+           myopic loss aversion - An experimental investigation. Revised version
+           forthcoming in Economic Journal.
+2007-31   Andreas Exenberger and Simon Hartmann: The Dark Side of Globalization.
+          The Vicious Cycle of Exploitation from World Market Integration: Lesson from
+          the Congo.
+2007-30   Andrea M. Leiter and Gerald J. Pruckner: Proportionality of willingness to
+          pay to small changes in risk - The impact of attitudinal factors in scope tests.
+          Revised version forthcoming in Environmental and Resource Economics.
+2007-29   Paul Raschky and Hannelore Weck-Hannemann: Who is going to save us
+          now? Bureaucrats, Politicians and Risky Tasks.
+2007-28   Harald Oberhofer and Michael Pfaffermayr: FDI versus Exports. Substitutes
+          or Complements? A Three Nation Model and Empirical Evidence.
+2007-27   Peter Wechselberger, Stefan Lang and Winfried J. Steiner: Additive
+          models with random scaling factors: applications to modeling price response
+          functions.
+2007-26   Matthias Sutter: Deception through telling the truth?! Experimental evidence
+          from individuals and teams. Revised version accepted for publication in The
+          Economic Journal.
+2007-25   Andrea M. Leiter, Harald Oberhofer and Paul A. Raschky: Productive
+          disasters? Evidence from European firm level data.
+2007-24   Jesus Crespo Cuaresma: Forecasting euro exchange rates: How much does
+          model averaging help?
+2007-23   Matthias Sutter, Martin Kocher and Sabine Strauß: Individuals and teams
+          in UMTS-license auctions. Revised version with new title "Individuals and
+          teams in auctions" forthcoming in Oxford Economic Papers.
+2007-22   Jesus Crespo Cuaresma, Adusei Jumah and Sohbet Karbuz: Modelling
+          and Forecasting Oil Prices: The Role of Asymmetric Cycles.
+2007-21   Uwe Dulleck and Rudolf Kerschbamer: Experts vs. discounters: Consumer
+          free riding and experts withholding advice in markets for credence goods.
+          Revised version forthcoming in "International Journal of Industrial
+          Organization".
+2007-20   Christiane Schwieren and Matthias Sutter: Trust in cooperation or ability?
+          An experimental study on gender differences. Revised version published in
+          Economics Letters 99 (2008): 494-497.
+2007-19   Matthias Sutter and Christina Strassmair: Communication, cooperation and
+          collusion in team tournaments – An experimental study. Revised version
+          forthcoming in: Games and Economic Behavior.
+2007-18   Michael Hanke, Jürgen Huber, Michael Kirchler and Matthias Sutter: The
+          economic consequences of a Tobin-tax – An experimental analysis.
+2007-17   Michael Pfaffermayr: Conditional beta- and sigma-convergence in space: A
+          maximum likelihood approach. Revised version forthcoming in Regional
+          Science and Urban Economics.
+2007-16   Anita Gantner: Bargaining, search, and outside options. Published in: Games
+          and Economic Behavior, Vol. 62 (2008), pp. 417-435.
+2007-15   Sergio Currarini and Francesco Feri: Bilateral information sharing in
+          oligopoly.
+2007-14   Francesco Feri: Network formation with endogenous decay.
+2007-13   James B. Davies, Martin Kocher and Matthias Sutter: Economics research
+          in Canada: A long-run assessment of journal publications. Revised version
+          published in: Canadian Journal of Economics, Vol. 41 (2008), 22-45.
+2007-12   Wolfgang Luhan, Martin Kocher and Matthias Sutter: Group polarization in
+          the team dictator game reconsidered. Revised version forthcoming in:
+          Experimental Economics.
+2007-11   Onno Hoffmeister and Reimund Schwarze: The winding road to industrial
+          safety. Evidence on the effects of environmental liability on accident
+          prevention in Germany.
+2007-10   Jesus Crespo Cuaresma and Tomas Slacik: An “almost-too-late” warning
+          mechanism for currency crises.
+2007-09   Jesus Crespo Cuaresma, Neil Foster and Johann Scharler: Barriers to
+          technology adoption, international R&D spillovers and growth.
+2007-08   Andreas Brezger and Stefan Lang: Simultaneous probability statements for
+          Bayesian P-splines.
+2007-07   Georg Meran and Reimund Schwarze: Can minimum prices assure the
+          quality of professional services?.
+2007-06   Michal Brzoza-Brzezina and Jesus Crespo Cuaresma: Mr. Wicksell and the
+          global economy: What drives real interest rates?.
+2007-05   Paul Raschky: Estimating the effects of risk transfer mechanisms against
+          floods in Europe and U.S.A.: A dynamic panel approach.
+2007-04   Paul Raschky and Hannelore Weck-Hannemann: Charity hazard - A real
+          hazard to natural disaster insurance. Revised version forthcoming in:
+          Environmental Hazards.
+2007-03   Paul Raschky: The overprotective parent - Bureaucratic agencies and natural
+          hazard management.
+2007-02   Martin Kocher, Todd Cherry, Stephan Kroll, Robert J. Netzer and
+          Matthias Sutter: Conditional cooperation on three continents. Revised version
+          forthcoming in: Economics Letters.
+2007-01   Martin Kocher, Matthias Sutter and Florian Wakolbinger: The impact of
+          naïve advice and observational learning in beauty-contest games.
+University of Innsbruck
+
+Working Papers in Economics and Statistics
+
+
+2008-23
+
+Matthias Sutter
+
+Individual behavior and group membership: Comment
+
+Abstract
+Charness et al. (2007b) have shown that group membership has a strong effect on
+individual decisions in strategic games when group membership is salient through
+payoff commonality. In this comment I show that their findings also apply to non-
+strategic decisions, even when no outgroup exists, and I relate the effects of group
+membership on individual decisions to joint decision making in teams. I find in an
+investment experiment that individual decisions with salient group membership are
+largely the same as team decisions. This finding bridges the literature on team
+decision making and on group membership effects.
+
+
+
+
+ISSN 1993-4378 (Print)
+ISSN 1993-6885 (Online)
+

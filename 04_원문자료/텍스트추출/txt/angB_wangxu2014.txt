@@ -1,0 +1,955 @@
+                                                                                                                                                                    1
+
+
+                                                Incentive and stability in the Rock-Paper-Scissors game: an
+                                                experimental investigation1
+                                                Zhijian Wang1 , Bin Xu2,1,3,∗
+                                                1 Experimental Social Science Laboratory, Zhejiang University, Hangzhou 310058, China
+                                                2 Public Administration College, Zhejiang Gongshang University, Hangzhou 310018,
+                                                China
+                                                3 State Key Laboratory of Theoretical Physics, Institute of Theoretical Physics, Chinese
+                                                Academy of Sciences, Beijing 100190, China
+
+
+
+
+arXiv:1407.1170v1 [physics.soc-ph] 4 Jul 2014
+                                                ∗ E-mail: xubin211@zju.edu.cn
+
+
+                                                Abstract
+                                                In a two-person Rock-Paper-Scissors (RPS) game, if we set a loss worth nothing and a tie worth 1, and
+                                                the payoff of winning (the incentive a) as a variable, this game is called as generalized RPS game. The
+                                                generalized RPS game is a representative mathematical model to illustrate the game dynamics, appearing
+                                                widely in textbook. However, how actual motions in these games depend on the incentive has never been
+                                                report quantitatively. Using the data from 7 games with different incentives, including 84 groups of 6
+                                                subjects playing the game in 300-round, with random-pair tournaments and local information recorded,
+                                                we find that, both on social and individual level, the actual motions are changing continuously with the
+                                                incentive. More expressively, some representative findings are, (1) in social collective strategy transit
+                                                views, the forward transition vector field is more and more centripetal as the stability of the system
+                                                increasing; (2) In the individual behavior of strategy transit view, there exists a phase transformation as
+                                                the stability of the systems increasing, and the phase transformation point being near the standard RPS;
+                                                (3) Conditional response behaviors are structurally changing accompanied by the controlled incentive. As
+                                                a whole, the best response behavior increases and the win-stay lose-shift (WSLS) behavior declines with
+                                                the incentive. Further, the outcome of win, tie, and lose influence the best response behavior and WSLS
+                                                behavior. Both as the best response behavior, the win-stay behavior declines with the incentive while the
+                                                lose-left-shift behavior increase with the incentive. And both as the WSLS behavior, the lose-left-shift
+                                                behavior increase with the incentive, but the lose-right-shift behaviors declines with the incentive. We
+                                                hope to learn which one in tens of learning models can interpret the empirical observation above.
+
+
+                                                Introduction
+                                                Recently, collective cycle phenomenon has been found in Rock-Paper-Scissors (RPS) games no matter it
+                                                is unstable, neutral or stable [1]. According to the classical game theory [2], the players who have the
+                                                complete rationality will choose each strategy in the probability of a third choice. If it is the truth, the
+                                                outcome of a play in long run will satisfy the detailed balance condition, i.e., each elementary process
+                                                should be equilibrated by its reverse process [3–5]. The existence of cyclic motion seems to indicate that
+                                                the human behaviour deviates systematically fully rational behaviour and has a hidden pattern in it.
+                                                Wang et al [1] further confirmed the relationship between macro cycle phenomena and micro behaviour
+                                                pattern by a phenomenological model. The result shows that the frequency of cycle of each population
+                                                can be explained quite well by the average individuals’ conditional response behaviors in that population,
+                                                no matter the RPS game is unstable, neutral or stable.
+                                                    A straightforward question addressed here is, what is the difference between different RPS games?
+                                                The evolutionary game theory, for example, the replicator dynamics [6], not only predicts the cyclicly
+                                                collective evolution in the state space, but also predicts the difference among different RPS games. The
+                                                  1 This version is for the presentations in 2014 Economic Science Association (ESA) European meeting in Prague, Czech
+
+                                                Republic and North American meeting, Fort Lauderdale, US. Suggestions and comments are strongly welcome.
+                                                                                                                 2
+
+
+generalized Rock-Paper-Scissors (RPS) game is the prototypic model to study the stability of a game
+process [7–11]. From the evolutionary game theory point of view, it is a single-population symmetric
+game. If the payoff for losing is 0 and tie is 1, then the payoff for win can be denoted by a. According to
+the replicator dynamics [6], the stability is dependant on the incentive a despite of the common unique
+mixed-strategy Nash Equilibrium (NE) ( 13 , 13 , 31 ) [10,12]. A RPS game will be unstable if a < 2, neutral if
+a = 2 or stable if a > 2. Persistent cycling motions are predicted to occur in unstable and neutral games,
+but will not in stable games [8], where the mixed-strategy Nash equilibrium is equivalent to a stable fixed
+point [10, 12–18]. On the other hand, stability is one of the central concepts in game theory [2, 7, 19],
+which has wide application in economics and also in biology [20–23]. Both evolutionary dynamics and
+experimental economics methods have been employed to quantitatively describe the stability of a game
+process [8, 13, 24–27].
+   However, how actual motions in these games depend on the incentive of winning a has never been
+report quantitatively. In the present investigation, we aim at answering this question. We manipulate
+the incentive parameter a from 1, 1.1, 2, 4, 9, 100, to ∞ to yield, in the sense of the replicator dynamics,
+unstable, neutral, stable and extremely stable RPS game, respectively to study how the actual motions
+change with the incentive a.
+
+
+1       Experiment
+The experiment is almost the same with the experiment in Ref. [1], except two special Rock Paper
+Scissors games which are very important for the analyzing of difference among different types of RPS
+games. Specifically, the payoff matrices employed in this investigate are as Fig. 1. The first one and the
+last one are the two special RPS games added here, and the remain five payoff matrices are the same with
+those of in Ref. [1]. And the experimental setting is same. So for more details of experimental setting,
+see Ref. [1]. As an incentive, the students subjects were paid in local currency (RMB) in proportion to
+the number points of their victories. The mean earnings a subject got is about 50 yuan RMB, including
+5 RMB show-up fee. A total of 504 undergraduate and graduate students from different disciplines at
+Zhejiang University were recruited in the experiment with each student participate into the experiment
+only once.
+
+
+    1   0   1      1   0   1.1      1   0   2       1   0   4       1   0   9       1   0 100        0   0   1
+    1   1   0      1.1 1   0        2   1   0       4   1   0       9   1   0      100 1    0        1   0   0
+    0   1   1      0   1.1 1        0   2   1       0   4   1       0   9   1       0 100 1          0   1   0
+
+
+
+
+Figure 1. Experimental design. First row, the seven payoff matrices employed in the experiment.
+Second row, the replicator dynamics pattern corresponding to each payoff matrix.
+
+    All payoff matrices used here have a common property that they all have mixed strategy Nash equi-
+librium (MSNE) ( 13 , 13 , 13 ), though the first one has extra three pure Nash equilibria, (0, 0, 1), (0, 1, 0),
+and (1, 0, 0). The payoff of winning is equal to the payoff of drawing in this special RPS game. We use
+this special game as the extremely unstable case. On contrary, the payoff matrices in the right side is
+                                                                                                               3
+
+
+extremely stable, where the payoff of tie is set to be 0 and the payoff of winning is set to be 1. This means
+the relative payoff of winning comparing with tie is ∞, while the tie can be 1, for convenience, we call
+the last one as a = ∞. From the evolutionary dynamics of view, for example, the replicator dynamics [6],
+the RPS game is unstable if a < 2, neutral if a = 2, and stable if a > 2, see Fig. 1, second row.
+
+
+2       Results
+2.1     Spire social jump out pattern
+First of all, let’s have a overview on the three type of the laboratory Rock Paper Scissors games.
+    From the perspective of overview, the outcome of a game can be described as population’s state which
+is the combination of strategies all the players used, and a social state is a coarse-grained description of
+the population’s state [9]. In one population RPS game, the state can be represented by (r, p, s), where
+r (p, s) is the proportion of strategy R(P, S) in the population, and r + p + s = 1. The total number
+of different social states for a population of size N is (N +1)(N
+                                                                2
+                                                                  +2)
+                                                                      . In the studied case of N = 6 this
+number is 28, and all of them fall into the state space, 4RP S, see Figure 2. The Nash equilibrium point
+is identical to the social state ( 13 , 13 , 13 ).
+
+
+                    S                                   S                                   S
+
+
+
+
+    R                              P   R                               P   R                               P
+
+
+
+Figure 2. Spire pattern of social jump out in unstable, neutral, and stable RPS games.
+From left to right, a = 1.1, 2, 9, respectively. For all of the patterns, see Figure 14 in appendix)
+
+     In the repeated RPS game, the individuals may change their strategies, meanwhile the population mix
+may jump from one social state to another. The social state at round t is denoted as xt := (rt , pt , st ); and
+in the next round is denoted as xt+1 :=(rt+1 , pt+1 , st+1 ). During an experimental session of 300 rounds,
+a state might be passed many times. For a given state x, there is a jump out vector which is called as a
+social forward transition vector indicating the transition from xt to xt+1 [28], the average terminal state
+is x̄t+1 , and the average jump out vector is T̄x . We calculated all of the jump out vectors of each state x
+for each game, and graph them in Figure 2 and Figure 14 (see appendix).
+     Obviously, as a whole, the jump out vector form a counter-clockwise spire pattern in all of the three
+types of RPS games. In addition, these patterns look different among different games. The average
+terminal states at unstable RPS game is far way from the Mixed Strategy Nash Equilibrium (MSNE)
+while the average terminal states at stable RPS game is near the MSNE, and the neutral RPS game is
+in the middle.
+                                                                                                                4
+
+
+                                         Table 1. Nearness Centrality
+
+                             a    obs.      Mean     Std.Err.     [95%Conf.    Interval]
+                             1     12       3.371       0.422          2.533       4.210
+                            1.1    12       6.043       0.635          4.779       7.307
+                             2     12       9.865       0.536          8.800     10.931
+                             4     12      10.098       0.433          9.244     10.952
+                             9     12      10.788       0.562          9.670     11.905
+                            100    12      11.286       0.322         10.644     11.927
+                            ∞      12      11.350       0.520         10.316     12.384
+
+
+
+
+2.2    Ascending social nearness centrality
+We use the distance from centre to each terminal state of average jump out vector to quantitatively
+compare the nearness centrality over different parameter a.
+   First, similar to Ref. [8, 27], for a given terminal state (x̄t+1 ), we define the distance refer to Nash
+equilibrium ( 31 , 13 , 13 ) as
+                                      r
+                                                1             1              1
+                                Disx = [r̄t+1 − ]2 + [p̄t+1 − ]2 + [s̄t+1 − ]2 .                         (1)
+                                                3             3              3
+The interval of Disx , from the center of state space ( 31 , 13 , 31 ) to the vertex of the state space (0, 0, 1),
+                              q
+(0, 1, 0) or (1, 0, 0), is [0, 23 ].
+    For convenience, we introduce a single Global Distance Index (GDI):
+                                                         28
+                                                         X
+                                              Dis4 =            Disx px ,                                     (2)
+                                                         x=1
+
+where px is the proportion of frequency of jump out vector of the state x. And now we introduce nearness
+centrality index (NCI) as a single index to describe the nearness centrality.
+                                                              1
+                                                    N CI =                                                    (3)
+                                                             Dis4
+Table 1 exhibits the results of closeness centrality of each parameter, and Fig. 3 provides a graph.
+The nearness centrality tends to increasing with the increasing of incentive parameter a. (Spearman’s
+rho = 0.7600, Prob > |t| =0.0000, n=84) (Spearman’s rho = 1.0000, Prob > |t| =0.0000, n=7) As if the
+population in larger incentive a get larger centripetal force.
+   In addition, the nearness centrality is related to the instability. Comparing with neutral RPS game, the
+nearness centrality in unstable RPS game is significant smaller (Two-sample Wilcoxon rank-sum (Mann-
+Whitney) test, n1 =n2 =12, Ho: N CIa=1 = N CIa=2 , z=-4.157, p=0.0000, Ho: N CIa=1.1 = N CIa=2 ,
+z =-3.695, p=0.0002). On contrary, comparing with neutral RPS game, the nearness centrality in the
+stable RPS game is larger, but only the deeply stable RPS games are significantly larger. (Two-sample
+Wilcoxon rank-sum (Mann-Whitney) test, n1 =n2 =12, Ho: N CIa=4 = N CIa=2 , z=0.520, p=0.6033,
+Ho: N CIa=9 = N CIa=2 , z=1.328, p=0.6033, Ho: N CIa=100 = N CIa=2 , z=2.598, p=0.0094, Ho:
+N CIa=100 = N CIa=2 , z=2.309, p=0.0209).
+
+2.3    Enhanced individual activity
+After a round of game, a player can remain her/his the current strategy, called as “stay”, or change to
+another strategy. The ratio of change is high the activity is high. So we use the ratio of change as the
+                                                                                                                       5
+
+
+
+                          14
+                                  nearness centrality
+                          12      high/low
+
+                          10
+
+                           8
+
+                           6
+
+                           4
+
+                           2
+
+                           0
+                                    1      1.1      2           4       9    100    ∞
+
+
+Figure 3. Nearness centrality from unstable to deeply stable RPS game. The numerics at the
+horizontal axis is the winning payoff a, the numerics at the vertical axis is the number of NCI.
+
+                                  Table 2. The three types of transit
+
+       a    Obs   TRSP     s.e.   stay       s.e.       TRP S        s.e.   TRSP -stay     p     TRP S -stay     p
+       1    72    0.128   0.013   0.708     0.025       0.164       0.013     -0.580     0.000     -0.544      0.000
+      1.1   72    0.222   0.014   0.531     0.025       0.247       0.015     -0.309     0.000     -0.285      0.000
+       2    72    0.282   0.011   0.440     0.020       0.279       0.013     -0.158     0.000     -0.161      0.000
+       4    72    0.301   0.011   0.411     0.019       0.288       0.011     -0.110     0.000     -0.122      0.000
+       9    72    0.333   0.016   0.370     0.020       0.297       0.014     -0.037     0.131     -0.074      0.010
+      100   72    0.327   0.012   0.386     0.018       0.286       0.010     -0.059     0.022     -0.100      0.000
+      ∞     72    0.334   0.009   0.376     0.016       0.290       0.010     -0.043     0.036     -0.087      0.001
+
+
+
+
+indicator of activity. Table 2 (column 5th ) exhibits the average proportion stay as well as the shift with
+the direction of R → S → P (TRSP ) (column 7th ) and the shift with the direction of R → P → S (TRP S )
+(column 7th ) and Figure 4 illustrates them.
+    In all of the treatments, the most frequently used strategy is “stay” strategy, and “stay” ratio is
+significant larger than RSP shift ratio except treatment a = 9, and is significant larger than RPS shift
+in all treatments, see Table 2 (column 9th , 11th ). More important, the individuals are more likely to
+change their strategies when a goes up, the proportion of “stay” tends to decline as a goes up (see Fig. 4)
+(Spearman’s rho = -0.422, obs =504, p = 0.000). The activity is enhanced as a goes up. This tendency
+seems to be a suitable explain to that result of nearness centrality (see Fig. 3), i.e., the more active
+the individual is the more near center the population jumps towards to. Using group level centrality as
+dependent variable and group level shift ratio as independent variable, linear regression result shows these
+two variables are correlative (Coef.= 18.410, p = 0.000, two-tailed, s.e.=1.416, obs=84, R2 = 0.674).
+
+2.4     Phase change of individual shift direction
+Since the social spire pattern is in the direction of counter-clockwise, i.e., R → P → S direction. So we
+are especially interested in the net “RPS” shift, which is amount number of “RPS” shift after deducting
+the “RSP” shift. Let nRP S be the number of ‘RPS” shift, nRSP be the ‘RSP” shift, and nstay be the
+                                                                                                       6
+
+
+
+                        0.8
+                                                                       RSP change
+                        0.7                                            stay
+                                                                       RPS change
+                        0.6                                            High/Low
+
+                        0.5
+
+                        0.4
+
+                        0.3
+
+                        0.2
+
+                        0.1
+
+                          0
+                                 1     1.1    2      4     9     100      ∞
+
+
+Figure 4. Three type of transit. From left to right, a = 1, 1.1, 2, 4, 9, 100, ∞, respectively. For each
+subgraph, the left stick is the proportion of “RSP” shift, TRSP , the right stick is the proportion of
+“RPS” shift, TRP S , and the middle is the proportion of “stay”. (The err bar represents the 95%
+confidence interval, obs=72.)
+
+
+                                                                                             S −nRSP
+number of “stay”. Then the net RPS shift proportion denoted as “nTRP S ” is equal to nRPnSRP
+                                                                                           +nRSP +nstay .
+Fig. 5 illustrates the proportion of net “RPS” shift.
+
+                       0.06
+                                                                 net RPS change
+                       0.04                                      high/low
+
+                       0.02
+
+                          0
+
+                      −0.02
+
+                      −0.04
+
+                      −0.06
+
+                      −0.08
+
+                       −0.1
+                                 1     1.1    2      4     9     100      ∞
+
+
+       Figure 5. Net RPS change. From left to right, a = 1, 1.1, 2, 4, 9, 100, ∞, respectively.
+
+    It’s amazing that the net RPS shift behavior declines as a goes up (Spearman’s rho =-0.2959, P rob >
+|t| = 0.0000, obs=504) (Spearman’s rho = −0.5133, P rob > |t| = 0.0000, obs=84). The proportion of
+net RPS shift changes from positive (za=1 = 3.595, p = 0.0001, za=1.1 = 1.939, p = 0.0525, Wilcoxon
+signed-rank test, two-tailed, n=72) to negative (za=4 = −1.827, p = 0.0667, za=9 = −1.695, p = 0.0901,
+za=100 = −2.949, p = 0.0032, za=∞ = −4.226, p = 0.0000, Wilcoxon signed-rank test, two-tailed, n=72).
+The transformation point is corresponding to neutral RPS game (za=2 = −1.501, p = 0.1333, Wilcoxon
+signed-rank test, two-tailed, n=72).
+                                                                                                        7
+
+
+   Intuitively, someone may expect that the individuals in unstable RPS game are more likely to move
+counter-clockwise, “RPS” shift, and in stable RPS game are more likely to move clockwise, namely,
+“RSP” shift, and this will induce population “RPS” spire in the unstable game and “RSP” spire in the
+stable game. However, as we have shown in above, the population jump out vectors in all of the games
+form counter-clockwise spire patterns.
+   Therefore, we haven’t explained why jump out patterns in all of the games are counter-clockwise.
+Besides, why people are more likely to move counter-clockwise in unstable game and move clockwise in
+stable game?
+
+2.5    Conditional response behaviors
+As Ref. [1], we are also interested in the conditional response behaviors. However, here we are especially
+interested in the change of conditional response behavior with winning payoff a.
+    Lose condition
+    First, we report the outcome in the condition of lose. Fig. 6 illustrate the three individual shift
+when people lose. We find that, when people lose, they tend to increase L− behavior with the winning
+payoff a (Spearman’s rho=0.355, Prob > |t| = 0.000), while decrease L0 (Spearman’s rho=-0.115, Prob
+> |t| = 0.010)) and L+ (Spearman’s rho=-0.225, Prob > |t| = 0.000) behaviors with winning payoff a.
+
+
+                          1
+
+
+                         0.8
+
+
+                         0.6
+
+
+                         0.4
+
+
+                         0.2
+
+
+                          0                                             ∞
+                                  1    1.1     2     4      9    100
+
+
+
+Figure 6. Lose Condition. For each group of three, the first stick isL− , the second is L0 , and the
+third is L+ .
+
+   Tie condition
+   Second, we report the outcome in the condition of tie. Fig. 7 illustrate the three individual shift
+when people tie. We find that, when people tie, they tend to decrease T0 behavior with the winning
+payoff a (Spearman’s rho=-0.531 Prob > |t| = 0.000), while increase T− (Spearman’s rho=0.507, Prob
+> |t| = 0.000)) and T+ (Spearman’s rho=0.432, Prob > |t| = 0.000) behaviors with winning payoff a.
+   Win condition
+   Third, we report the outcome in the condition of win. Fig. 8 illustrate the three individual shift
+when people win. We find that, when people win, they tend to decrease W0 behavior with the winning
+payoff a (Spearman’s rho=-0.292 Prob > |t| = 0.000), while increase W− (Spearman’s rho=0.213, Prob
+> |t| = 0.000)) and W+ (Spearman’s rho=0.297, Prob > |t| = 0.000) behaviors with winning payoff a.
+                                                                                                          8
+
+
+
+                          1
+
+
+                         0.8
+
+
+                         0.6
+
+
+                         0.4
+
+
+                         0.2
+
+
+                          0
+                                  1    1.1     2     4      9    100    ∞
+
+
+Figure 7. Tie Condition. For each of the group of three, the first stick is T− , the second is T0 , and
+the third is T+ .
+
+
+                          1
+
+
+                         0.8
+
+
+                         0.6
+
+
+                         0.4
+
+
+                         0.2
+
+
+                          0
+                                  1    1.1     2     4      9    100    ∞
+
+
+Figure 8. Win Condition. For each of the group of three, the first stick is W− , the second is W0 ,
+and the third is W+ .
+
+
+3     An explanation
+3.1    Different payoffs corresponding to probability of win of state
+In the studied case, there 28 social states in state space. Since the proportions of three strategies are
+different, the probabilities of win, tie or lose are different. And therefore, as parameter a changes, the
+payoff in different state will change.
+    Given a state x(r,p,s) , the probabilities of winning, tie and losing are:
+                                                                                                                       9
+
+
+
+                                                       X        n(k w )
+                                   pW |x(r,p,s) =                       p(j)|x(r,p,s)
+                                                                N −1
+                                                    j∈{R,P,S}
+                                                    X        n(k t ) − 1
+                                pT |x(r,p,s) =                           p(j)|x(r,p,s)                               (4)
+                                                              N −1
+                                                 j∈{R,P,S}
+                                                      X         n(k l )
+                                   pL |x(r,p,s) =                       p(j)|x(r,p,s) ,
+                                                                N −1
+                                                    j∈{R,P,S}
+
+where k w 6= j is the dominant strategy against j, n(k w ) is the number of this strategy in the state, k t = j
+is the same strategy as j, and n(k t ) is the number of this strategy in the state, k l 6= j is the dominated
+strategy against j, n(k l ) is the number of this strategy in the state, p(j) is the proportion of strategy j,
+and N is the total number of people in a population. And the three probabilities satisfy:
+
+                                     pW |x(r,p,s) + pT |x(p,s) + pL |x(r,p,s) = 1.                                   (5)
+
+For a given state, one win always means the other lose. So, we have,
+
+                                              pW |x(r,p,s) = pL |x(r,p,s) .                                          (6)
+
+    Figure 9 illustrate the probabilities of win or lose (Figure 9, left) and tie (Figure 9, right) at each state
+by Eq. 4. The probability for wining or losing in the center is larger than that of in the periphery, on
+contrary, the probability of tie in the center is smaller than in the periphery of the state space. The lowest
+probability of tie is 0.2 which appears at the center point ( 13 , 13 , 13 ), while the probability of win or lose
+is 0.4. There are six grades of amplitudes, from center to periphery, corresponding to these amplitudes,
+pT |x(p,s) is 15 , 15
+                   4 2 7 2
+                      , 5 , 15 , 3 , 1 from small to large successively, and the probability pW |x(p,s) (pL |x(p,s) ), on
+                                                   11 3      4 1
+contrary, from center to periphery is 25 , 30        , 10 , 15 , 6 , 0, from large to small successively.
+    Theoretically, if a=2, the game is a constant sum game in which each two person get the constant
+sum of payoffs 2 no matter tie or win-loss. Therefore, every state yields same sum of payoffs in neutral
+RPS game. On contrary, the sum is nonconstant in both unstable RPS game and stable RPS games. The
+sum of payoffs is 2 for both tying and the sum of payoffs for one win and one loss is a. Therefore, the
+average payoff of one win and one lose is larger than the payoff of one tie if a > 2, the average payoff of
+one win and one lose is smaller than the payoff of one tie if a < 2, and the average payoff of one win one
+lose is equal to the payoff of one tie if a = 2. So, the total payoffs of a state depends on the probabilities
+of win/lose and tie. If a state has more opportunity to tie, the state will yield larger sum of payoffs in
+unstable game, and on contrary, the state in stable game will yield smaller sum of payoffs. In unstable
+RPS game, the states near the margin yield larger sum of payoffs, on contrary, in stable RPS game, the
+states near the center yield larger sum of payoffs. The larger the winning payoff is, the higher the relative
+payoff in the center is.
+
+3.2     Decentralized individual responses and collective phenomenon
+So far, we seem to explain why the population more likely to run towards the center when a goes up.
+This is because that the payoffs in the center of the state space are relative higher in stable RPS games.
+However, how can a population know what state they arrived and then decide to jump out to a state
+together? Actually, every player in the experiment only gets the information about her/his and her/his
+opponent’s strategies, nobody know what social state the population arrived. Further, every round, the
+pairs of players are randomly generated, and no information about the opponent’s historical choice would
+be provided. It is impossible to command the population stay or shift. The spire jump out pattern come
+out to be the result of “invisible hand”.
+                                                                                                                                               10
+
+
+
+
+                                        S                                                                   S
+                                        0                                                                   1
+                                   1         1                                                         2        2
+                                   6         6                                                         3        3
+                               4         3         4                                               7        2         7
+                              15        10        15                                              15        5        15
+                          3        11        11        3                                      2        4        4         2
+                         10        30        30        10                                     5        15       15        5
+                     4        11        2         11         4                            7        4        1         4        7
+                    15        30        5         30        15                           15       15        5        15       15
+                1        3         11        11        3         1                   2        2        4        4         2        2
+                6        10        30        30        10        6                   3        5        15       15        5        3
+                    1          4         3         4        1                            2         7        2         7       2
+            0                                                        0           1                                                     1
+       R            6         15        10        15        6            P   R           3        15        5        15       3            P
+
+
+Figure 9. Proportion of win, tie and lose in the studied case, population of six. Left, proportion of win
+or lose for each state, right, proportion of tie for each state.
+
+
+    After one round of play, an individual will face three possible outcomes, i.e., win (W), tie (T) and
+lose (L), and has three choices stay (0), turn to the dominated strategy beaten by the current strategy,
+we call left-shift (−), or turn to the dominate strategy beating the current strategy, we call it right-shift
+(+). Therefore, there are total 9 conditional probabilities, L− , L0 , L+ , T− , T0 , T+ , W− , W0 , W+ [1].
+    Suppose the conditional probabilities are constant and common among a population under a param-
+eter. Then we apply these empirical conditional probabilities to every social state to get the theoretical
+jump out vector.
+    Given a state (r, p, s), the average next round state (r2 , p2 , s2 ) is
+
+
+           r2 = pL       L       L       T       T       T       W       W       W
+                 R L0 + pP L− + pS L+ + pR T0 + pP T− + pS T+ + pR W0 + pP W− + pS W+ ,
+           p2 = pL       L       L       T       T       T       W       W       W
+                 R L+ + pP L0 + pS L− + pR T+ + pP T0 + pS T− + pR W+ + pP W0 + pS W− ,                                                        (7)
+           s2 = pL       L       L       T       T       T       W       W       W
+                 R L− + pP L+ + pS L0 + pR T− + pP T+ + pS T0 + pR W− + pP W+ + pS W0 ,
+                  pN           sN             rN            rN −1         pN −1         sN −1            sN
+where, pL              L              L              T              T             T              W
+         R = r N −1 , pP = p N −1 , pS = s N −1 , pR = r N −1 , pP = p N −1 , pS = s N −1 , pR = r N −1 ,
+ W       rN     W      pN
+pP = p N −1 , pS = s N −1 .
+    Using the empirical conditional responses parameters L− , L0 , L+ , T− , T0 , T+ , W− , W0 , W+ from
+experiments, we calculate the theoretical jump out vector for each state in each game according to Eq. 7
+and graph them in Figure 10 and Figure 14, see Appendix.
+    Figure 10 looks very like Figure 2, the real results from real experimental data. This indicator that the
+collective spire jump out pattern can be explained by the decentralized individuals’ conditional response
+behaviors. That means, without centralized command, only given the local limit information about the
+previous both parties’ strategies, the aggregated individuals’ behaviors form a clear collective pattern.
+
+3.3    The elemental driving force of revolve
+So far, we have explained the collective revolving jump out pattern will form even if there is no centralized
+command and information. However, what kind of individual behavior drives the jump out vector revolve?
+                                                                                                                11
+
+
+
+                    S                                   S                                   S
+
+
+
+
+    R                              P    R                              P    R                               P
+
+
+
+Figure 10. Decentralized conditional responses form collective spire patterns. Left, a = 1.1,
+middle, a = 2, right, a = 9.
+
+
+   As mentioned above, there are total 9 conditional probabilities, L− , L0 , L+ , T− , T0 , T+ , W− , W0 ,
+W+ [1]. Among them, three kind of individual behaviors contribution nothing to move, i.e., L0 , T0 ,
+W0 . The remain six individual behaviors move either counter-clockwise or clockwise. So we decompose
+behaviors into six elements, L− , L+ , T− , T+ , W− , W+ to analyze the driving force of revolve.
+   Fig. 11 graph the six type of evolve patterns according to Eq. 7, given six combinational conditions
+(CC).
+    • CC1 : L− = T0 = W0 = 1, L0 = L+ = T− = T+ = W− = W+ = 0,
+    • CC2 : L0 = T− = W0 = 1, L− = L+ = T0 = T+ = W− = W+ = 0,
+    • CC3 : L0 = T0 = W− = 1, L− = L+ = T− = T+ = W0 = W+ = 0,
+    • CC4 : L+ = T0 = W0 = 1, L− = L0 = T− = T+ = W− = W+ = 0,
+    • CC5 : L0 = T+ = W0 = 1, L− = L+ = T− = T0 = W− = W+ = 0,
+    • CC6 : L0 = T0 = W+ = 1, L− = L+ = T− = T+ = W− = W0 = 0.
+The outcomes show that half of six motions cause counter-clockwise revolve, i.e., lose-left-shift, L− ,
+lose-right-shift, L+ , and tie-right-shift, T+ . On contrary, the remanent three motions cause clockwise
+revolve, i.e., tie-left-shift, T− , win-left-shift, W− , and win-right-shift, W+ . We notice that the lose-shift
+behaviors cause counter-clockwise collective revolve, no matter the individual shift direction is counter-
+clockwise or clockwise. On contrary, the win-shift behaviors cause clockwise collective revolve, no matter
+the individual shift direction is counter-clockwise or clockwise. And if people tie, the individual behavior
+cause same direction collective revolve, i.e., if people tie-right-shift, then the population revolve in the
+direction of counter-clockwise, and if people tie-left-shift, then the population revolve in the direction of
+clockwise.
+
+
+4       Discussion
+4.1     Best response behavior
+There are many kind of behaviors, among them, there are two famous kinds of behaviors. One is the best
+response (BR) behaviors [29–40] and the other is win-stay lose-shift (WSLS) behavior [41–45]. First, we
+discuss the best response behaviors in different RPS games.
+                                                                                                                                         12
+
+
+         S                S                        S                            S                        S                      S
+
+             L−                   L+                   T+                           T−                         W−                   W+
+
+
+
+
+ R                P   R                P   R                      P   R                  P       R                      P   R            P
+
+
+
+
+Figure 11. Theoretical spire patterns in extreme cases. From left to right, L− = T0 = W0 = 1,
+L+ = T0 = W0 = 1, L0 = T+ = W0 = 1, L0 = T− = W0 = 1, L0 = T0 = W− = 1, L0 = T0 = W+ = 1.
+
+
+    In the studied case of RPS game here, there are three kind of best response behaviors, i.e., L− ,
+T+ , and W0 . If people use pure best response strategy, then L− = T+ = W0 = 1, and the others all
+equal 0. Fig. 12 left graphically represents the collective outcome of the individual pure best response
+behavior. It’s clear that all jump out vectors form counter-clockwise revolve. So we can understand that
+the counter-clockwise population jump out vectors can be formed if people use best response strategy.
+
+
+                              S
+                                                            0.8
+                                                                                                                L−
+                                                            0.7                                                 T+
+                                                            0.6                                                 W0
+                                                                                                                High/Low
+                                                            0.5
+
+                                                            0.4
+
+                                                            0.3
+
+                                                            0.2
+
+                                                            0.1
+
+             R                                 P             0
+                                                                          1   1.1   2        4       9   100        ∞
+
+
+
+Figure 12. Best response. Left, global pattern of pure best response behavior. Right, empirical best
+response proportion.
+
+    On the other side, the pure best response behavior hasn’t provided the information about the rela-
+tionship between behavior and different winning payoff a. So we turn back to the experimental data to
+investigate how best response behavior change with winning payoff a changing. Fig. 12 (right) illustrates
+the three best response behaviors’ changing along the increasing of winning payoff a. As the winning
+payoff a goes up, one of the best response behavior decline, i.e., win-stay (Spearman’s rho =-0.2917,
+Prob > |t| = 0.0000, obs=504), while the two other best response behavior ascend (for lose-left-shift,
+Spearman’s rho = 0.3547, Prob > |t| = 0.0000, for tie-right-shift, Spearman’s rho =0.4317, Prob > |t|
+= 0.0000, obs=504). As a whole, the best response behavior increasing as a goes up (Spearman’s rho
+=0.1010, Prob > |t| = 0.0233, obs=504). This result indicate that different outcome of play, i.e., win or
+lose or tie, may influence people’s choice in different directions.
+
+4.2    Win-stay lose-shift behavior
+In the studied case of RPS game here, there are three kind of WSLS behaviors, i.e., L− , L+ , and W0 .
+If people use pure WSLS strategy, then L− + L+ = W0 = 1, and the others all equal 0. Fig. 13 left
+graphically represents the collective outcome of the individual pure WSLS behavior. It’s clear that
+                                                                                                            13
+
+
+all jump out vectors form counter-clockwise revolve. So we can understand that the counter-clockwise
+population jump out vectors also can be formed if people use WSLS strategy.
+    Fig. 13 right graph the empirical three kind of win-stay lose-shift behaviors, i.e., L− , L+ , and W0 . The
+win-stay behavior is decline when a goes up (Spearman’s rho =-0.2917, Prob > |t| =0.0000, obs=504).
+The lose-left-shift behavior is increasing as a goes up (Spearman’s rho =0.3547, Prob > |t| =0.0000,
+obs=504). But the lose-right-shift behaviors decline as a goes up(Spearman’s rho =-0.2249, Prob > |t|
+=0.0000, obs=504). As a whole, the WSLS behavior decline as a goes up (Spearman’s rho =-0.2183, rob
+> |t| =0.0000, obs=504).
+
+
+                             S
+                                                   0.8
+                                                                                         L−
+                                                   0.7                                   L+
+                                                   0.6                                   W0
+                                                                                         High/Low
+                                                   0.5
+
+                                                   0.4
+
+                                                   0.3
+
+                                                   0.2
+
+                                                   0.1
+
+            R                               P       0
+                                                          1    1.1   2    4    9   100   ∞
+
+
+
+Figure 13. Win-stay lose-shift. Left, global pattern of pure win-stay lose-shift behavior. Right,
+empirical win-stay lose-shift proportion.
+
+
+
+Final remark
+The generalized RPS game is a representative model to show the dynamical strategy behavior appearing
+wildly in textbook of evolutionary game theory [7] and behavior economics [49]. In this paper, firstly
+and systematically, we provide the empirical evidences on how actual motions in these generalized RPS
+games depending on the controlled incentive a (the winning payoff), both in individual and social levels.
+We hope that, these results can be a helpful message to promote the understanding our human social
+behaviors.
+
+
+Acknowledgments
+We thanks Charles Plott for helful comments. We thank Hai-Jun Zhou for a recent collaboration on
+the finite-population Rock-Paper-Scissors game [arXiv:1404.5199], especially the work [arXiv:1406.3668],
+which promote the present manuscript greatly. We thank Zunfeng Wang and Anping Sun for excellent
+assistant. This work was supported by the Fundamental Research Funds for the Central Universities
+(SSEYI2014Z), the State Key Laboratory for Theoretical Physics (Y3KF261CJ1), and the Philosophy
+and Social Sciences Planning Project of Zhejiang Province (13NDJC095YB).
+
+
+References
+   1. Zhijian Wang, Bin Xu, Haijun Zhou (2014) Social cycling and conditional responses in the Rock-
+      Paper-Scissors game. arXiv:1404.5199.
+                                                                                                    14
+
+
+ 2. Von Neumann J, Morgenstern O (1944) Theory of Games and Economic Behavior. Princeton
+    university press.
+ 3. Boltzmann, L. (1964) Lectures on gas theory. Berkeley, CA, USA: U. of California Press.
+ 4. (Young, H,(2008) Stochastic Adaptive Dynamics. New Palgrave Dictionary of Economics, revised
+    edition.
+
+ 5. L. Blume and Durlauf.eds. Zanella, G. (2007) Discrete Choice with Social Interactions and En-
+    dogenous Membership Journal of the European Economic Association, 5,122-153.
+ 6. Taylor P, Jonker L (1978) Evolutionary stable strategies and game dynamics. Mathematical Bio-
+    sciences 40: 145-156.
+ 7. Smith J (1982) Evolution and the Theory of Games. Cambridge university press.
+
+ 8. Hoffman M, Suetens S, Nowak M, Gneezy U (2012) An experimental test of nash equilibrium versus
+    evolutionary stability (2012). Nature Comm, submit .
+ 9. Sandholm W (2011) Population games and evolutionary dynamics. The MIT Press.
+
+10. Hofbauer J, Sandholm WH (2009) Stable games and their dynamics. Journal of Economic Theory
+    144: 1665–1693.
+11. Hofbauer J, Sigmund K (1998) Evolutionary games and population dynamics .
+12. Hahn M (2012) An evolutionary analysis of varians model of sales. Dynamic Games and Applica-
+    tions 2: 71–96.
+
+13. Tang FF (2001) Anticipatory learning in two-person games: some experimental results. Journal of
+    economic behavior & organization 44: 221–232.
+14. Norman TW (2010) Cycles versus equilibrium in evolutionary games. Theory and decision 69:
+    167–182.
+
+15. Shapley L (1964) Some topics in two-person games. Advances in game theory 52: 1C29.
+16. Crawford VP (1974) Learning the optimal strategy in a zero-sum game. Econometrica: Journal of
+    the Econometric Society : 885–891.
+17. Crawford VP (1989) Learning and mixed-strategy equilibria in evolutionary games. Journal of
+    Theoretical Biology 140: 537–550.
+18. Echenique F, Edlin A (2004) Mixed equilibria in games of strategic complements are unstable.
+    Journal of Economic Theory 118: 61–79.
+19. Harsanyi JC, Selten R (1988) A general theory of equilibrium selection in games. MIT Press Books
+    1.
+
+20. Nowak MA (2006) Evolutionary dynamics: exploring the equations of life. Harvard University
+    Press.
+21. Bowles S (2004) Microeconomics: behavior, institutions, and evolution. Princeton University Press.
+22. Anderson C, Plott C, Shimomura K, Granat S (2004) Global instability in experimental general
+    equilibrium: the scarf example. Journal of Economic Theory 115: 209–249.
+                                                                                                   15
+
+
+23. Friedman D (1998) Evolutionary economics goes mainstream: a review of the theory of learning in
+    games. Journal of Evolutionary Economics 8: 423-432.
+24. Cason TN, Friedman D, Hopkins E (2010) Testing the tasp: An experimental investigation of
+    learning in games with unstable equilibria. Journal of Economic Theory 145: 2309–2331.
+25. Xu B, Zhou HJ, Wang Z (2013) Cycle frequency in standard Rock-Paper-Scissors games: Evidence
+    from experimental economics. Physica A: Statistical Mechanics and its Applications 392: 4997 -
+    5005.
+26. Van Huyck J, Rankin F, Battalio R (1999) What does it take to eliminate the use of a strategy
+    strictly dominated by a mixture? Experimental economics 2: 129-150.
+27. Cason TN, Friedman D, Hopkins E (2014) Cycles and instability in a rock-paper-scissors population
+    game: a continuous time experiment. Review of Economic Studies 81: forthcoming.
+28. Xu B, Wang Z (2012) Test maxent in social strategy transitions with experimental two-person
+    constant sum 2 × 2 games. Results in Physics 2: 127-134.
+29. Ho TH, Camerer C, Weigelt K (1998) Iterated dominance and iterated best response in experi-
+    mental ”p-beauty contests”. AMERICAN ECONOMIC REVIEW 88: 947-969.
+30. Blume L E (1995) The statistical mechanics of best-response strategy revision. Games and Eco-
+    nomic Behavior 11(2): 111-145.
+31. Costa-Gomes M, Crawford VP, Broseta B (2001) Cognition and behavior in normal-form games:
+    An experimental study. Econometrica 69: 1193-1235.
+32. Juliusson G, Celsing F, Turesson I, et al (2000) Frequent good partial remissions from thalidomide
+    including best response ever in patients with advanced refractory and relapsed myeloma. Journal
+    of the Peripheral Nervous System 5(4): 248-248.
+33. Matsui A. (1992) Best response dynamics and socially stable strategies. Journal of Economic Theory
+    57(2): 343-362.
+34. Conitzer V, Sandholm T (2007) AWESOME: A general multiagent learning algorithm that con-
+    verges in self-play and learns a best response against stationary opponents. Machine Learning
+    67(1-2): 23-43.
+35. Ben-Porath E(1990) The complexity of computing a best response automaton in repeated games
+    with mixed strategies. Games and Economic Behavior 2(1): 1-12.
+36. Hopkins E (1999) A note on best response dynamics. Games and Economic Behavior, 29(1):
+    138-150.
+37. Morris S, Ui T (2004) Best response equivalence. Games and Economic Behavior 49(2): 260-287.
+38. Littman M L, Stone P (2001) Leading best-response strategies in repeated games. In Seventeenth
+    Annual International Joint Conference on Artificial Intelligence Workshop on Economic Agents,
+    Models, and Mechanisms. 2001.
+39. Kukushkin N S(2004) Best response dynamics in finite games with additive aggregation[J]. Games
+    and Economic Behavior, 2004, 48(1): 94-110.
+40. Rey-Biel P(2009) Equilibrium play and best response to (stated) beliefs in normal form games[J].
+    Games and Economic Behavior 65(2): 572-585.
+                                                                                                   16
+
+
+41. Nowak M, Sigmund K (1993) A strategy of win-stay, lose-shift that outperforms tit-for-tat in the
+    Prisoner’s Dilemma game. Nature 364, 56 - 58.
+42. Posch M(1999) Win-Stay, Lose-Shift Strategies for Repeated Games-Memory Length, Aspiration
+    Levels and Noise. Journal of theoretical biology 198(2): 183-195.
+43. Nowak M A (2006) Five rules for the evolution of cooperation. science 314(5805): 1560-1563.
+44. Imhof L A, Fudenberg D, Nowak M A (2007) Tit-for-tat or win-stay, lose-shift?. Journal of theo-
+    retical biology 247(3): 574-580.
+45. Worthy D A, Cooper J A, Byrne K A, et al (2014) State-based versus reward-based motivation in
+    younger and older adults. Cognitive, Affective, & Behavioral Neuroscience, 2014: 1-13.
+46. Samuelson L (2002) Evolution and game theory. The Journal of Economic Perspectives 16: 47-66.
+47. Hayek F (1945) The use of knowledge in society. The American Economic Review 35: 519-530.
+48. Sinervo B, Lively C (1996) The rock-paper-scissors game and the evolution of alternative male
+    strategies. Nature 380: 240-243.
+49. Camerer C, Foundation RS (2003) Behavioral game theory: Experiments in strategic interaction,
+    volume 9. Princeton University Press Princeton, NJ.
+50. Cheung Y, Friedman D (1998) A comparison of learning and replicator dynamics using experimental
+    data. Journal of economic behavior and organization 35: 263-280.
+51. Kahneman D, Tversky A (1979) Prospect theory: An analysis of decision under risk. Econometrica:
+    Journal of the Econometric Society: 263-291.
+52. ben Avraham D, Dorosz S, Pleimling M (2011) Entropy production in nonequilibrium steady states:
+    A different approach and an exactly solvable canonical model. Physical Review E 84: 011115.
+53. Friedman D (1996) Equilibrium in evolutionary games: Some experimental results. The Economic
+    Journal 106: 1-25.
+54. Van Huyck J (2008) Emergent conventions in evolutionary games. Handbook of Experimental
+    Economics Results 1: 520-530.
+55. Selten R, Chmura T (2008) Stationary concepts for experimental 2x2-games. The American Eco-
+    nomic Review 98: 938-966.
+56. Binmore K, Swierzbinski J, Proulx C (2001) Does minimax work? an experimental study. The
+    Economic Journal 111: 445-464.
+57. Sivak D, Crooks G (2012) Near-equilibrium measurements of nonequilibrium free energy. Physical
+    Review Letters 108: 150601.
+58. Evans D, Cohen E, Morriss G (1993) Probability of second law violations in shearing steady states.
+    Physical Review Letters 71: 2401–2404.
+59. Wang G, Sevick E, Mittag E, Searles D, Evans D (2002) Experimental demonstration of violations
+    of the second law of thermodynamics for small systems and short time scales. Physical Review
+    Letters 89: 50601.
+60. Kahneman D, Tversky A (1074) Subjective probability: A judgment of representativeness. The
+    Concept of Probability in Psychological Experiments. Springer Netherlands: 25-48.
+                                                                                                  17
+
+
+61. Blume LE (1993) The statistical mechanics of strategic interaction. Games and Economic Behavior
+    5: 387-424.
+62. Galla T (2009) Intrinsic noise in game dynamical learning. Physical review letters 103: 198702.
+63. SANDERS JB, GALLA T, SHAPIRO JL (2012) Effects of noise on convergent game-learning
+    dynamics. Journal of physics A, Mathematical and theoretical 45.
+
+64. Xu B, Wang Z (2011) Evolutionary Dynamical Pattern of ”Coyness and Philandering”: Evidence
+    from Experimental Economics, volume VIII. p1313-1326, NECSI Knowledge Press, ISBN 978-0-
+    9656328-4-3., 1313-1326 pp.
+65. Franchetti F, Sandholm WH (2012) An introduction to dynamo: Diagrams for evolutionary game
+    dynamics. Biological Theory : 1–12.
+
+66. Benaı̄m M, Hofbauer J, Hopkins E (2009) Learning in games with unstable equilibria. Journal of
+    Economic Theory 144: 1694–1709.
+67. Baron J (2008) Thinking and deciding. Cambrige University Press 4th 2008.
+           18
+
+
+Appendix
+                                                                                                       19
+
+
+                                                                               S                 S
+
+    1   0    1
+    1   1    0
+    0   1    1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    1   0   1.1
+   1.1 1     0
+    0   1.1 1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    1   0    2
+    2   1    0
+    0   2    1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    1   0    4
+    4   1    0
+    0   4    1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    1   0    9
+    9   1    0
+    0   9    1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    1   0 100
+   100 1     0
+    0 100 1
+                                                                       R              P   R             P
+
+
+
+                                                                               S                 S
+
+    0   0    1
+    1   0    0
+    0   1    0
+                                                                       R              P   R             P
+
+
+
+
+Figure 14. Experimental setting, theoretical prediction and experimental result. The 1st
+column is the payoff matrix designed. The 2nd column comes from replicate dynamics, the 3rd column
+comes from logit dynamics, the 4th column comes from best response dynamics with continuous
+approximation in evolutionary game theory. The 5th column is the empirical results of the forward
+transition vector field. The 6th column is the forward transition vector field reconstruct by the equation
+7 with the individual empirical WLT parameter shown in Fig. 6 7 8. In the case of payoff parameter
+(incentive) a > 2, a = 2 and a < 2, according to the continuous replicator dynamics [9], the real part of
+the eigenvalue surrounding NE is negative, zero and positive, respectively, then the systems being
+expected to converge to, null and diverge from NE.
+

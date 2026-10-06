@@ -1,0 +1,925 @@
+Failure-impulsivity during uncontrolled conditions
+
+
+Running head: Failure-impulsivity during uncontrolled conditions
+
+
+
+        Failure generates impulsivity only when outcomes cannot be controlled
+
+
+
+
+                                Benjamin James Dyson 1,2
+
+                                       Jukka Sundvall 1
+
+                                        Lewis Forder 1
+
+                                       Sophia Douglas 1
+
+
+
+                                1
+                                    University of Sussex, UK
+                            2
+                                Ryerson University, Canada
+
+
+
+
+Address :      School of Psychology
+
+               University of Sussex
+
+               Falmer
+
+               BN1 9QH
+
+               UK
+
+Telephone :    +44 (0)1273 876661
+
+Fax :          +44 (0)1273 678058
+
+E-mail :       b.j.dyson@sussex.ac.uk
+
+
+
+
+                                              1
+Failure-impulsivity during uncontrolled conditions
+
+
+                                        Abstract
+
+Verbruggen, Chambers, Lawrence & McLaren (2017) recently challenged the view
+
+that individuals act with greater caution following the experience of a negative
+
+outcome by showing that a gambled loss resulted in faster reaction time on the next
+
+trial. Over three experiments, we replicate and establish the boundary conditions of
+
+this effect in the context of a simple game (Rock, Paper, Scissors). Choice responding
+
+against unexploitable opponents replicated the link between failure and faster
+
+responding. However, individuals with high win-rates against exploitable opponents
+
+initiated slower rather than faster responding following loss. The data suggest that the
+
+link between failure and impulsivity is limited to contexts where participants cannot
+
+exert control over outcomes.
+
+
+
+
+Keywords
+
+Sequential effects
+
+Impulsive action
+
+Competitive exploitation
+
+Gambling
+
+Rock, Paper, Scissors
+
+
+
+
+                                           2
+Failure-impulsivity during uncontrolled conditions
+
+
+Public Significance Statement
+
+This study challenges the view that a gambled loss will always lead to subsequently
+
+impulsive behaviour. We show that individual success within these context
+
+determines whether future performance will be faster or slower following failure. In
+
+particular, impulsive behaviour following failure is more likely when an individual
+
+cannot control the outcome of their environment either as a result of interacting with
+
+an unexploitable opponent, or, interacting with an exploitable opponent whom they
+
+fail to exploit. When individuals demonstrate domination against an exploitable
+
+opponent, loss trials led to less impulsive rather than more impulsive reactions.
+
+
+
+
+                                           3
+Failure-impulsivity during uncontrolled conditions
+
+
+According to the traditional view of post-error slowing (e.g., Notebaert, Houtman,
+
+Van Opstal, Gevers, Fias & Verguts, 2009) and conflict adaptation (e.g., Botvinick,
+
+Braver, Barch, Carter & Cohen, 2001), people are more likely to proceed with caution
+
+following failure. In contrast, Verbruggen, Chambers, Lawrence & McLaren (2017)
+
+recently reported a series of experiments in which the experience of negative
+
+outcomes in a gambling context led to more impulsive (i.e., faster) reaction times
+
+(RT) relative to the experience of positive outcomes. Understanding individual
+
+impulses when engaging with purely-randomized gambling environments is clearly
+
+critical for addressing societal problems currently associated with fixed-odds betting
+
+terminal (FOBT) interactions.
+
+       Verbruggen et al. (2017) described their data in terms of the acceleration of
+
+‘approach behavior’ since the central metric of interest was the speed with which
+
+participants initiated the next trial. This was distinct from a second, self-paced choice
+
+RT where participants decided whether or not to gamble again. Thus, the speeding
+
+associated with trial initiation might be quite different from the impulsivity associated
+
+with eventual choice RT. Indeed, their analysis of choice RT (Verbruggen et al., 2017,
+
+p. 157) was less clear in that responses following a gambled win were slower than a
+
+non-gamble baseline, despite the trial being initiated faster. In other words,
+
+participants might have been more impulsive in their approach behaviour but then
+
+were more cautious in deciding to gamble. To avoid the possibility that trial initiation
+
+and choice RT might conflict with one another, we focused on a simple Rock, Paper,
+
+Scissors (RPS) paradigm in which only one response was required per trial. Previous
+
+research using this paradigm (Forder & Dyson, 2016) also observed the finding of
+
+Verbruggen et al. (2017) in that choice RTs following negative outcomes (losses and
+
+
+
+                                            4
+Failure-impulsivity during uncontrolled conditions
+
+
+draws) were faster than those following positive outcomes (wins), thereby supporting
+
+a more direct relationship between negative outcome and impulsivity.
+
+       One explanation for the observation of speeding following failure in gambling
+
+tasks but slowing following failure in cognitive tasks is the difference in responsibility
+
+one ultimately has in determining the outcome. Logically, if we operate in a purely
+
+random context then we are not culpable for our wins and losses. However, there are a
+
+number of gambling environments where outcomes are not only variable but also
+
+partly or wholly determined by skill (compare the continuum of roulette, blackjack,
+
+chess; Mauboussin, 2012). Over three experiments, we establish a replicable boundary
+
+condition that challenges the conclusion that “losses have a general effect on action”
+
+and that “in the context of potential rewards [losses] are emotional events that
+
+increase impulsivity” (Verbruggen et al., 2017, p. 147). To foreshadow our results, we
+
+found that a) negative outcomes do generate faster (i.e., more impulsive) subsequent
+
+decisions when outcomes were the result of chance play against unexploitable
+
+opponents but that b) negative outcomes did not lead to impulsivity when participants
+
+exhibited high win-rates against exploitable opponents. The data suggest that the
+
+degree of control one is able to exert over a variable outcome environment determines
+
+whether one becomes more or less impulsive after experiencing failure.
+
+                                     Experiment 1
+
+       In Experiment 1, we attempted to replicate the findings of Forder & Dyson
+
+(2016) that negative outcomes yield faster decision-making than positive outcomes
+
+during RPS. For one condition, participants competed with a computerized opponent
+
+who behaved according to the mixed-equilibrium strategy (MES; Baek et al., 2013),
+
+with the randomized, equal (33%) selection of the three responses largely ensuring the
+
+
+
+                                            5
+Failure-impulsivity during uncontrolled conditions
+
+
+lack of opponent exploitation 1. This was contrasted with a second condition, where
+
+the computerized opponent was predictable on the majority of trials, and hence
+
+exploitable. We hypothesized that if impulsivity following loss was tied to a perceived
+
+inability to control outcomes, then this failure-faster link should be attenuated in the
+
+non-random (exploitable) condition relative to the random (unexploitable) condition.
+
+                                         Method
+
+       50 individuals (33 female) from the University of Sussex community
+
+participated in the study; mean age was 22.72 years (SD = 5.71) and 42 were right-
+
+handed 2. Studies were approved for testing by the Life Sciences and Psychology
+
+Research Ethics Committee (C-REC) at the University of Sussex (ER/SEDD20/1),
+
+and participants were entered into a prize draw to win £25. Static pictures of a white-
+
+gloved hand on the right (representing the participant) and a blue-gloved hand on the
+
+left (representing the opponent) depicting Rock, Paper and Scissors poses were
+
+displayed center screen at approximately 6º × 6º, with participants sat approximately
+
+57 cm away from a 22" Diamond Plus CRT monitor (Mitsubishi, Tokyo, Japan).
+
+Stimulus presentation was controlled by Presentation 18.1 (build 03.31.15).
+
+       Participants completed 3 conditions consisting of 120 trials, in a semi-
+
+counterbalanced order. In the middle (unexploitable) condition, the computer
+
+opponent behaved according to MES (i.e., 40 Rock, 40 Paper, 40 Scissors responses
+
+in random order). Participants were explicitly informed that their opponent would
+
+play randomly in this condition. The unexploitable condition was always flanked by a
+
+first and third condition (exploitable; the order of these two conditions was
+
+counterbalanced across participants), in which the computer behaved in accordance
+
+with a strategy for 72 (60%) trials where it would select the response that would have
+
+
+
+                                            6
+Failure-impulsivity during uncontrolled conditions
+
+
+beaten the player’s previous response (e.g., player trial n = rock, computer trial n+1 =
+
+paper), and MES for the remaining 48 (40%) trials. As a result of the behavioural
+
+isomorphism between differentially described strategies in Rock, Paper, Scissors
+
+(Dyson, in preparation), there was an additional language manipulation in the
+
+instructions between first and third conditions. For the first condition, participants
+
+were told “for most of the trials in the block, the computer’s strategy will be based on
+
+your previous selection.” For the third condition, participants were told “for most of
+
+the trials in the block, the computer’s strategy will be based on its last selection and
+
+outcome.” As a result of the equivalence in median RT (612 ms vs. 557 ms; t[39] =
+
+0.62, p = .533) and win-rate (44.21% vs. 44.58%; t[39] = 0.17, p = .863) between first
+
+and third conditions of the final sample (see Results), data was collapsed across these
+
+two conditions.
+
+         At the bottom of the screen, the cumulative scores for both computer and
+
+player were displayed, in addition to the trial count within that block. At each trial, the
+
+participant pressed one of three buttons corresponding to Rock, Paper or Scissors,
+
+prompted by the presentation of a fixation cross. Following response, the participant’s
+
+selection was presented for 1000 ms. After the clearing of the picture (500 ms),
+
+feedback was provided for a further 1000 ms center screen as to whether the
+
+participant won, lost or drew the trial. Scores were then updated during a 500 ms
+
+period (+1 for win, -1 for lose, 0 for draw) and the next trial began with a fixation
+
+cross.
+
+                                         Results
+
+         12 participants were rejected as a result of their average median RT being at
+
+least twice as large as the group average median RT (after Forder & Dyson, 2016)
+
+
+
+                                            7
+Failure-impulsivity during uncontrolled conditions
+
+
+within any ANOVA cell, resulting in a final sample of 38 (see Supplementary Table
+
+A for all descriptive statistics without outlier removal). A two-way repeated-measures
+
+ANOVA on trial n+1 median RTs using opponent (unexploitable, exploitable) and
+
+outcome at trial n (win, lose, draw; see Table 1) revealed a significant main effect of
+
+opponent [F(1,37) = 22.43, MSE = 49996, p < .001, ƞp2 = .377], a significant main
+
+effect of outcome [F(2,74) = 11.17, MSE = 14370, p < .001, ƞp2 = .232], and a non-
+
+significant interaction [F(2,74) = 0.68, MSE = 12168, p = .508, ƞp2 = .018]. Tukey’s
+
+HSD test (p < .05) revealed RTs against the unexploitable opponent to be faster than
+
+those against the exploitable opponent (370 ms vs. 510 ms). Independently of the
+
+nature of the opponent, both losses (435 ms) and draws (397 ms) yielded subsequently
+
+faster RTs than wins (488 ms).
+
+                                       Discussion
+
+       Experiment 1 replicated the central result of Verbruggen et al. (2017) and
+
+Forder & Dyson (2016) that negative outcomes yielded more impulsive decision-
+
+making than positive outcomes (Supplementary Materials and Table 1 confirm the RT
+
+effect is carried by negative rather than positive outcomes by comparing game
+
+performance to a baseline where the participants merely observed the game). Negative
+
+outcomes yielded faster responding both when participants fruitlessly engaged with a
+
+random opponent (unexploitable), and also when they played against an opponent
+
+whose predominant strategy could be beaten (exploitable). While participants were
+
+more impulsive against an unexploitable relative to an exploitable opponent, the
+
+magnitude of the failure-faster effect was similar for both opponent types. One
+
+potential reason for this lack of distinction was that participants failed to successfully
+
+
+
+
+                                             8
+Failure-impulsivity during uncontrolled conditions
+
+
+learn the correct strategy in the exploitable case, and so failed to control outcome to a
+
+meaningful degree. Indeed, this possibility may have been compounded by the use of
+
+two differentially described strategies that led participants to think that there were
+
+different rules to exploit. To increase the likelihood of strategy acquisition in
+
+Experiment 2, the frequency with which the opponent used their strategy was
+
+increased and the nature of the strategy was changed.
+
+                                      Experiment 2
+
+                                         Method
+
+       40 individuals (31 female) from the University of Sussex community
+
+participated in the study; mean age was 21.13 years (SD = 4.37) and 39 were right-
+
+handed. The protocol for Experiment 2 was approved under ER/JS753/1, and
+
+participants received course credit or £10 for their participation. Experiment 2
+
+involved a within-participants manipulation of both value (low, high) and opponency
+
+(unexploitable, exploitable) across four counterbalanced conditions (90 trials each).
+
+Value varied in terms of the points allocated for wins and losses (+1 / -1 in the low
+
+value condition, +3 / -3 in the high value condition, respectively) but was collapsed in
+
+the current analysis. In unexploitable conditions, the three responses of RPS were
+
+deployed randomly across 30 trials each (as per Experiment 1). In exploitable
+
+conditions, opponents used a strategy for 63 trials (now 70% rather than 60%) where
+
+it would select the response that would have been beaten by its own previous response
+
+(e.g., computer trial n = rock, computer trial n+1 = scissors), and played MES for the
+
+remaining 27 (30%) trials. The reduction in random (MES) trials increased the
+
+predictability of the opponent and increased the chance of exploitation. On any given
+
+
+
+
+                                            9
+Failure-impulsivity during uncontrolled conditions
+
+
+block, participants were not explicitly informed about the exploitable or unexploitable
+
+nature of their opponents.
+
+                                        Results
+
+       5 participants were rejected as per Experiment 1, yielding a final sample of 35.
+
+Data revealed a non-significant main effect of opponent [F(1,34) = 0.67, MSE =
+
+158720, p = .420, ƞp2 = .019], a significant main effect of outcome [F(2,68) = 4.97,
+
+MSE = 77705, p =.010, ƞp2 = .128] and a significant two-way interaction [F(2,68) =
+
+6.26, MSE = 59400, p = .003, ƞp2 = .156]. Tukey’s HSD test (p < .05) revealed no
+
+significant differences in RT against an unexploitable opponent, although the pattern
+
+of data was similar to Experiment 1, with lose and draw trials yielding faster
+
+subsequent responses than win trials. Against an exploitable opponent however, lose
+
+trials (739 ms) were now statistically slower than draw trials (508 ms) and statistically
+
+equivalent but numerically slower than win trials (582 ms). Loss trials against
+
+exploitable opponents were also significantly slower than loss trials against
+
+unexploitable opponent (535 ms).
+
+                                      Discussion
+
+       Experiment 2 provides a unique case (contra Verbruggen et al., 2017, and,
+
+Forder & Dyson, 2016) where choice RTs following negative outcomes (specifically,
+
+loss) against an exploitable opponent were no longer faster than positive outcomes. In
+
+Experiment 3, we investigated the robustness of this interaction by using a different
+
+expression of strategy.
+
+                                     Experiment 3
+
+                                        Method
+
+
+
+
+                                           10
+Failure-impulsivity during uncontrolled conditions
+
+
+       40 individuals (28 female) from the University of Sussex community
+
+participated in the study; mean age was 22.95 years (SD = 5.53) and 36 were right-
+
+handed. The protocol was approved under ER/JS753/5. Experiment 3 again involved a
+
+within-participants manipulation of both value (low, high) and opponency
+
+(unexploitable, exploitable) across four counterbalanced conditions (90 trials each).
+
+This time, the low value conditions were associated with points only (+1 / -1),
+
+whereas the high value conditions were associated with points and converted to
+
+money at the end of the experiment at the rate of 10p per point (e.g., Losecaat Vermer
+
+& Sanfey, 2015). As such, participants received no less than £10 for the study but as
+
+in Experiment 2, performance was collapsed across value for the current analysis.
+
+Unexploitable and exploitable opponents were identical to Experiment 2, apart from
+
+in the exploitable condition the opponent now selected the response that would have
+
+beaten by its own previous response (e.g., computer trial n = rock, computer trial n+1
+
+= paper) for 70% of trials.
+
+                                        Results
+
+       10 participants were rejected as per previous experiments, yielding a final
+
+sample of 30. Data revealed a significant main effect of opponent [F(1,29) = 5.59,
+
+MSE = 71493, p = .025, ƞp2 = .162], a non-significant main effect of outcome [F(2,58)
+
+= 2.40, MSE = 80532, p =.099, ƞp2 = .076] and a significant two-way interaction
+
+[F(2,58) = 5.11, MSE = 43722, p = .009, ƞp2 = .150]. Tukey’s HSD test (p < .05)
+
+revealed draw trials (513 ms) to be significantly faster than win trials (682 ms) during
+
+the unexploitable condition. No significant differences between outcomes were
+
+revealed during the exploitable condition, and loss trials against exploitable opponents
+
+(777 ms) were significantly slower than loss trials against unexploitable opponent
+
+
+
+                                           11
+Failure-impulsivity during uncontrolled conditions
+
+
+(572 ms). This replicated the slowing of choice RT following negative outcome in
+
+Experiment 2 when the opponent was exploitable rather than unexploitable.
+
+       A three-way mixed-model ANOVA including Experiment (2, 3) as a between-
+
+participant factor, and, opponency (unexploitable, exploitable) and outcome (win,
+
+lose, draw) as within-participant factors failed to yield a significant main effect of
+
+Experiment [F(1,63) = 0.90, MSE = 257298, p = .347, ƞp2 = .014], nor, interactions
+
+with Experiment x opponency [F(1,63) = 0.50, MSE = 118568, p = .482, ƞp2 = .482],
+
+Experiment x outcome [F(2,126) = 0.13, MSE = 79007, p = .882, ƞp2 = .002],
+
+Experiment x opponency x outcome [F(2,126) = 0.41, MSE = 52183, p = .662, ƞp2 =
+
+.006]. The main effect of outcome [F(2,126) = 7.03, MSE = 79907, p = .001, ƞp2 =
+
+.100], and interaction between opponency x outcome [F(2,126) = 10.77, MSE =
+
+52183, p < .001, ƞp2 = .146] confirmed three central significant findings (Tukey’s
+
+HSD, p < .05). First, against unexploitable opponents, RTs following wins (672 ms)
+
+were slower than those following losses (552 ms) or draws (504 ms). Second, against
+
+exploitable opponents, RTs following losses (756 ms) were slower than those
+
+following wins (611 ms) or draws (564 ms). Third, RTs following losses in
+
+unexploitable contexts (552 ms) were faster than RTs following losses in exploitable
+
+contexts (756 ms).
+
+                                       Discussion
+
+       Experiment 3 replicated the findings of Experiment 2 where the experience of
+
+loss did not lead to more impulsive action on the subsequent trial when outcomes
+
+could be controlled as a result of playing against an exploitable opponent. One reason
+
+why this effect was not present at the group level in Experiment 1 was that the degree
+
+of exploitation was lower than in Experiments 2 and 3 (60% strategy and 40%
+
+
+
+                                            12
+Failure-impulsivity during uncontrolled conditions
+
+
+random, compared to 70% strategy and 30% random). To test the idea that the degree
+
+to which participants were able to take control of the game outcome determined
+
+whether failure initiated impulsivity, individual win–lose rates were plotted against
+
+RT differences between lose and win trials during exploitation conditions in
+
+Experiment 1 (r = .647, p < .001), Experiment 2 (r = .577, p < .001) and Experiment 3
+
+(r = .575, p = .001; see Figure 1). It was apparent that for those individuals who
+
+established high win-loss ratios, a losing trial tended to slow rather than speed
+
+subsequent responding. Although the data are correlational rather than causal in
+
+nature, the suggestion here is that when participants develop a successful counter
+
+strategy against their opponent - allowing for a high degree of exploitation (wins) -
+
+loss trials slowed down rather than sped up subsequent decision-making.
+
+                                  General Discussion
+
+       Across three experiments using the game space of RPS, we established an
+
+important boundary condition under which the experience of a negative outcome leads
+
+to subsequent impulsive behaviour (Verbruggen et al., 2017). Impulsive behaviour
+
+following failure is more likely when an individual cannot control the outcome of
+
+their environment either due to a) interacting with an unexploitable opponent, or, b)
+
+interacting with an exploitable opponent whom they fail to exploit. Across all three
+
+experiments, we saw that when participants were able to enact a high degree of
+
+opponent exploitation, loss trials led to less impulsive rather than more impulsive
+
+reactions.
+
+       The failure-faster link in random environments (e.g., unexploitable conditions)
+
+remains critical in understanding the emotional, cognitive and financial investments
+
+afforded by automated and random gambling systems such as FOBTs (Clarke, 2004).
+
+
+
+                                           13
+Failure-impulsivity during uncontrolled conditions
+
+
+Nevertheless, gambling environments with variable outcome can also have a large
+
+skill-based component. The observation that participants can still act impulsively
+
+following negative outcomes as a result of low win-rate in exploitable conditions
+
+underscores how the quality of own our meta-cognition regarding performance, and
+
+the perceived degree of control we have over outcomes (e.g., Langer & Roth, 1975),
+
+might perpetuate the magnitude and frequency of loss (e.g., tilting, Laakasuo et al.,
+
+2015; chasing behaviour, Mitzenmacher & Upfal, 2005).
+
+       Most strikingly, the observation that participants act less impulsively
+
+following loss during successful exploitation represents an important constraint in the
+
+relationship between loss and impulsivity. One possibility is that this observation
+
+reflects expectancy violation. This would appear to be true in the case where a
+
+participant selects the putatively correct response on the basis of their opponent’s
+
+common strategy, but their opponent happens to select from their (random) MES
+
+distribution on that trial. However, losses need not necessarily represent expectancy
+
+violation, such as cases where the player does not yet have a reliable understanding of
+
+their opponent’s dominant strategy. The current data would also seem to suggest that
+
+it is only unambiguously negative outcomes (losses) rather than ambiguously negative
+
+outcomes (draws) that puncture the failure-faster link (see Gu, Feng, Broster, Yuan,
+
+Xu & Luo, 2017, for further discussion). Future research incorporating individual
+
+differences in empathy, locus of control, personal understanding of luck – skill
+
+balance, accuracy of meta-cognition regarding one’s own performance, and the use of
+
+early neural responses to predict eventual behavioural outcomes will serve to further
+
+identify the conditions under which one becomes more or less impulsive as a function
+
+of outcome.
+
+
+
+                                           14
+Failure-impulsivity during uncontrolled conditions
+
+
+Acknowledgements
+
+The work was partly supported by a Research Development Fund from the University
+
+of Sussex under grant SA016-01 awarded to BJD. Correspondence should be
+
+addressed to: Ben Dyson, School of Psychology, Pevensey Building, University of
+
+Sussex, Falmer, BN1 9QH, UK. E-mail: b.j.dyson@sussex.ac.uk.
+
+
+
+
+                                         15
+Failure-impulsivity during uncontrolled conditions
+
+
+Footnotes
+
+1      As one reviewer pointed out, this particular implementation of the MES raises
+
+the possibility of exploitation if a high degree of item bias is exhibited in the earlier
+
+stages of the block (e.g., opponent overplay of Rock in the first half of the block
+
+dictates underplay of Rock in the second half of the block). It is possible to estimate
+
+the degree of exploitation under such circumstances by examining participant win-rate
+
+in the second half of the block, as a function of the absolute deviation from the
+
+rectangular 33.33% distribution for Rock, Paper, Scissors responses expressed by the
+
+opponent in the first half of the block: if the player is sensitive to their opponent’s
+
+item bias, a larger deviation expressed by the opponent in the first half of the block
+
+should yield higher win-rate for the player in the second half of the block. We
+
+examined data from our Supplementary Experiment in which participants played 3
+
+blocks of 75 trials against an MES opponent. Average absolute deviation from
+
+33.33% for all three responses across the first 36 trials (range 1.86% - 7.41%) and
+
+participant win-rate across the last 36 trials (range 22.22% - 43.52%) was calculated
+
+within each block, and then averaged across block for each of the 36 participants. The
+
+non-significant, negative correlation between opponent random deviation and player
+
+win-rate (r = -.128, p = .458) did not support the idea that participants were using item
+
+bias to increase their success in the ‘unexploitable’ condition.
+
+2      To estimate the effect size and, hence, minimal sample size required for the
+
+comparison of RT as a function of outcome in Rock, Paper, Scissors, data from Forder
+
+& Dyson (2016) was utilized, collapsing across an original manipulation of value.
+
+With win RT = 708 (sd = 312), lose RT = 555 (sd = 207) and r = 0.707, Cohen’s d
+
+was estimated at 0.77. A sample size of at least 24 was estimated to observe this effect
+
+
+
+                                            16
+Failure-impulsivity during uncontrolled conditions
+
+
+size (two-tailed) with α = 0.01 and a power of 0.95. Sample sizes were also
+
+additionally determined by the application of the same outlier removal procedure
+
+applied across all experiments, and, the studies being derived from an on-going
+
+stream of research into competitive decision making that included other
+
+considerations such as individual difference measures and electrophysiological
+
+recording.
+
+
+
+
+                                         17
+Failure-impulsivity during uncontrolled conditions
+
+
+References
+
+Baek, K. et al. (2013). Response randomization of one- and two-person Rock-Paper-
+
+    Scissors games in individuals with schizophrenia. Psychiatry Research, 207, 158-
+
+    163.
+
+Botvinick, M. M., Braver, T. S., Barch, D. M., Carter, C. S. & Cohen J. D. (2001).
+
+    Conflict monitoring and cognitive control. Psychological Review, 108, 624–652.
+
+Clarke, D. (2004). Impulsiveness, locus of control, motivation and problem gambling
+
+    Journal of Gambling Studies, 20, 319-345.
+
+Dyson, B. J. (in preparation). Behavioural isomorphism, cognitive economy and
+
+    recursive thought in non-transitive game strategy.
+
+Forder, L. & Dyson, B. J. (2016). Behavioural and neural modulation of win-stay but
+
+    not lose-shift strategies as a function of outcome value in Rock, Paper, Scissors.
+
+    Scientific Reports, 6: 33809.
+
+Gu, R., Feng, X., Broster, L. S., Yuan, L., Xu, P. & Luo, Y-J. (2017). Valence and
+
+    magnitude ambiguity in feedback processing. Brain and Behavior, 7: e00672.
+
+Laakasuo, M., Palomäki, J. & Salmela, J. M. (2015). Emotional and social factors
+
+    influence poker decision making accuracy. Journal of Gambling Studies, 31,
+
+    933–947.
+
+Langer, E. J. & Roth, J. (1975). Heads I win, tails it’s chance: The illusion of control
+
+    as a function of the sequence of outcomes in a purely chance task. Journal of
+
+    Personality and Social Psychology, 32, 951-955.
+
+Losecaat Vermeer, A. B. & Sanfey, A. G. (2015). The effect of positive and negative
+
+    feedback on risk-taking across different contexts. PLoS One, 10: e0139010.
+
+
+
+
+                                           18
+Failure-impulsivity during uncontrolled conditions
+
+
+Mauboussin, M. J. (2012). The success equation: Untangling skill and luck in
+
+    business, sports, and investing. Harvard Business Press.
+
+Mitzenmacher. M. & Upfal, E. (2005). Probability and computing: randomized
+
+    algorithms and probabilistic analysis. Cambridge: Cambridge University Press.
+
+Notebaert, W. Houtman, F., Van Opstal, F., Gevers, W., Fias, W. & Verguts, T.
+
+    (2009). Post-error slowing: An orienting account. Cognition, 111, 275-279.
+
+Verbruggen, F., Chambers, C. D. , Lawrence, N. S. & McLaren, I. P. L. (2017).
+
+    Winning and losing: Effects on impulsive action. Journal of Experimental
+
+    Psychology: Human Perception and Performance, 43, 147-168.
+
+
+
+
+                                         19
+Failure-impulsivity during uncontrolled conditions
+
+
+
+
+Table 1. Descriptive statistics for Experiments 1 – 3 and Supplemental Experiment, with outlier removal
+
+___________________________________________________________________________________________________________
+
+                                               Unexploitable Opponent                           Exploitable Opponent
+
+                              n         After Win    After Lose    After Draw           After Win         After Lose   After Draw
+
+Experiment 1                  38        407 (28)     367 (25)      336 (16)             570 (50)          504 (39)     457 (29)
+
+Experiment 2                  35        664 (57)     535 (37)      496 (45)             582 (41)          739 (98)     508 (43)
+
+Experiment 3                  30        682 (55)     572 (46)      513 (34)             645 (53)          777 (83)     629 (58)
+
+
+
+                                        Unexploitable Opponent (Play)                   Unexploitable Opponent (Observe)
+
+                                        After Win    After Lose    After Draw           After Win         After Lose   After Draw
+
+Supplemental Experiment       31        564 (39)     484 (27)      493 (34)             539 (35)          534 (31)     527 (34)
+
+___________________________________________________________________________________________________________
+
+Note : Standard error in parenthesis.
+
+
+
+
+                                                                   20
+Failure-impulsivity during uncontrolled conditions
+
+
+
+
+Figure 1. Scatterplots comparing individual win – lose rates against RT difference between lose – win for across Experiments 1-3.
+
+
+
+
+                                                                   21
+

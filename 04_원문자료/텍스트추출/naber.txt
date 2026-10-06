@@ -1,0 +1,240 @@
+
+ Unintended imitation affects success in a competitive game - PMC
+ Skip to main content
+ An official website of the United States government
+ Here's how you know 
+ Here's how you know 
+ Official websites use .gov 
+ A
+ .gov website belongs to an official
+ government organization in the United States.
+ Secure .gov websites use HTTPS 
+ A lock (
+ Lock 
+ Locked padlock icon
+ ) or https:// means you've safely
+ connected to the .gov website. Share sensitive
+ information only on official, secure websites.
+ Search
+ Log in 
+ Dashboard
+ Publications
+ Account settings
+ Log out
+ Search…
+ Search NCBI
+ Primary site navigation
+ Search
+ Logged in as:
+ Dashboard
+ Publications
+ Account settings
+ Log in
+ Search PMC Full-Text Archive 
+ Search in PMC 
+ Journal List
+ User Guide
+PERMALINK 
+ Copy 
+ As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+ the contents by NLM or the National Institutes of Health.
+ Learn more:
+ PMC Disclaimer 
+ |
+ PMC Copyright Notice
+ Proc Natl Acad Sci U S A . 2013 Nov 25;110(50):20046–20050. doi: 10.1073/pnas.1305996110 
+ Search in PMC 
+ Search in PubMed 
+ View in NLM Catalog 
+ Add to search 
+Unintended imitation affects success in a competitive game 
+ Marnix Naber 
+ Marnix Naber 
+ a Vision Sciences Laboratory, Department of Psychology, Harvard University, Cambridge, MA 02138; and 
+ b Cognitive Psychology Unit, Leiden University, 2333AK, Leiden, The Netherlands 
+Find articles by Marnix Naber 
+ a, b, 1 , Maryam Vaziri Pashkam 
+ Maryam Vaziri Pashkam 
+ a Vision Sciences Laboratory, Department of Psychology, Harvard University, Cambridge, MA 02138; and 
+Find articles by Maryam Vaziri Pashkam 
+ a , Ken Nakayama 
+ Ken Nakayama 
+ a Vision Sciences Laboratory, Department of Psychology, Harvard University, Cambridge, MA 02138; and 
+Find articles by Ken Nakayama 
+ a 
+ Author information 
+ Article notes 
+ Copyright and License information 
+ a Vision Sciences Laboratory, Department of Psychology, Harvard University, Cambridge, MA 02138; and 
+ b Cognitive Psychology Unit, Leiden University, 2333AK, Leiden, The Netherlands 
+ 1 
+To whom correspondence should be addressed. E-mail: marnixnaber@gmail.com . 
+Edited by Scott A. Huettel, Duke University, Durham, NC, and accepted by the Editorial Board October 22, 2013 (received for review March 30, 2013) 
+Author contributions: M.N., M.V.P., and K.N. designed research; M.N. performed research; M.N. analyzed data; and M.N., M.V.P., and K.N. wrote the paper. 
+Issue date 2013 Dec 10. 
+Freely available online through the PNAS open access option. 
+ PMC Copyright notice 
+PMCID: PMC3864297  PMID: 24277821 
+Significance 
+People have a strong tendency to imitate each other in social interaction. Here, we show that imitation is also persistent in a competitive context. In our experiments, participants performed a two-player arcade game in which they could win money when they quickly hit targets on a touchscreen before their opponent. We demonstrate that reaction times and movements of players were highly synchronized and the financial rewards could not withhold players from imitating slow opponents. Imitation persisted, even when there was no need to follow the opponent’s actions. 
+ Keywords: mimicry, competition, motor response, readiness 
+Abstract 
+Imitation typically occurs in social contexts where people interact and have common goals. Here, we show that people are also highly susceptible to imitate each other in a competitive context. Pairs of players performed a competitive and fast-reaching task (a variant of the arcade whac-a-mole game) in which money could be earned if players hit brief-appearing visual targets on a large touchscreen before their opponents. In three separate experiments, we demonstrate that reaction times and movements were highly correlated within pairs of players. Players affected their success by imitating each other, and imitation depended on the visibility of the opponent’s behavior. Imitation persisted, despite the competitive and demanding nature of the game, even if this resulted in lower scores and payoffs and even when there was no need to counteract the opponent’s actions. 
+Imitation shapes the way we behave during social interactions ( 1 , 2 ). It can occur unwittingly and without any awareness ( 1 , 3 ). There are numerous studies that demonstrate how people are persistently prone to mimic complex behaviors such as emotions, facial expressions, and gestures during interpersonal communication (e.g., refs. 1 and 4 – 6 ). Although it appears frequently in everyday life, its true purpose and mechanisms remain a mystery. 
+Recent studies have tried to discover the underlying factors that determine the degree of imitation during personal interactions. Scientists have found a causal link between acts of mimicry and mutual attraction and social appreciation between the subjects ( 7 , 8 ). Similarly, subjects with affiliate goals tend to imitate each other more ( 9 ). It is therefore suggested that it serves to bind us together in groups ( 10 , 11 ). Contemporary literature thus implies that the degree of imitation during personal interaction is variable and depends on mutual, social goals set by the actors in a dyad. However, is imitation merely driven by feelings of affiliation? 
+Independent of the social aspects of mimicry, observing someone engage in an action is enough to trigger that same action in the perceiver ( 1 , 12 ). Such a perception and action account of imitation suggests that this behavior may still emerge in a nonsocial context. Several recent studies support this idea, reporting a persistency of imitation when people are competing with opposing goals (refs. 13 and 14 ; but see ref. 15 for contrary evidence). In these studies, the opponent’s actions had direct consequences for the player’s payoff in the game. However, in many competitive games, the action of each player is less directly linked to the actions of the other players. For example, in basketball, at the moment a player is making a distant shot, all that is relevant is the location of the basket and not the specific actions of other players. Would mimicry happen in such more general circumstances? Moreover, the studies cited above ( 13 , 14 ) represent mimicry of specific actions. However, the success in a competitive game also relies on other factors, such as motivation or propensity to act quickly and energetically. Would these factors also be imitated? To answer these questions, we designed a paradigm to study imitation in a fast “whac-a-mole” game in which players were required to quickly hit targets before their competitors. Players used a “rod” to reach for targets (green and yellow) that were briefly shown among distracters (red, magenta, blue, and purple) on a large touch screen ( Fig. 1 A and B ). From the players’ perspective, the game was very fast and demanding because they had to quickly hit the briefly appearing targets. They received a financial reward if they hit more targets than their opponent at the end of a game. 
+Fig. 1. 
+ Open in a new tab 
+Whac-a-mole apparatus. ( A ) Experimental setup. Briefly appearing targets were rear-projected on a table top. ( B ) Players scored points by hitting targets before their opponent using a rod. Immediate feedback presented at the target location indicated which player got the point (see rectangle). ( C ) A magnetic sensor attached to the tip of each rod recorded its 3D position (red is player 1; blue is player 2). Observers initiated a movement toward the target. ( D ) Hit densities of a representative pair of players (red and blue). Players tended to hit targets predominantly on their side of the table but the opponents’ territories also had substantial overlap (purple). 
+To anticipate our results, we found that the behavior of each player pair was highly synchronized. Some pairs of players had very short reaction times, whereas other pairs were much slower. Similarly, their reach distances were correlated. Each result suggested the presence of imitation. The second and third experiments confirmed this more directly by using a confederate. 
+Results 
+Experiment 1: Similarity of Opponents’ Behavior. 
+We designed a competitive game in which 25 pairs of opponents played 30 games of a variant of the whac-a-mole arcade game. There were always multiple targets and distracters on the screen, so players had multiple scoring opportunities. Players were instructed not to block their opponent with their rods. The competitive nature of the task and the continuous appearance of the new targets on the game demanded full attention from the players ( Movies S1 and S2 ). When players reached for the same target, the average difference in reaction time in these cases were 84 ms. These results indicate that the whac-a-mole game was a highly challenging and competitive task. 
+The players were naïve to the purpose of the study, and their only goal was to hit as many targets as possible. It was therefore remarkable to see that, despite the competitive nature of the game, pairs of players had similar average reaction times and move distances. With respect to reaction time, measured as the difference between the target onset and successful hits, the correlation between the players was unusually high [ r (23) = 0.85; P < 0.001]. This can be seen in the scatter plot in Fig. 2 A , Left , where each symbol represents a pair of subjects. The reaction components: initiation time from target onset to reach onset and movement time from reach onset to target hit were similarly correlated [ r (23) = 0.854 and r (23) = 0.707, respectively; P < 0.001]. Comparable correlations [ r (23) = 0.86; P < 0.001] were observed for move distance, calculated as the Euclidean distance between the position of the tip of the rod at movement initiation and the final hit position ( Fig. 1 C ). In addition, weaker correlations between pairs were seen in the number of errors ( Fig. S1 A ). These correlations are surprisingly high, especially in the case of reaction times and move distances. 
+Fig. 2. 
+ Open in a new tab 
+Imitation across players and effects on performance in experiment 1. ( A ) Median reaction time ( Left ) and mean move distance ( Right ) are plotted on the y and x axis for player 1 and 2, respectively ( n = 25). A linear regression line was fitted to the data (gray). ( B ) Correlations between the total number of hits of a pair and their average reaction times ( Left ) or move distances ( Right ). 
+The correlations were computed for the data for all games played. The same high correlations were seen for essentially all of the successive 30 individual games as well ( Fig. S2 A ). Although it is possible that some extraneous factor, such as time of day and temperature, could conceivably lead to very small correlations (to be considered below), the large and consistent correlations across games and within games point strongly to imitation or at least to some automatic interaction between the players. Of importance was the fact that during debriefing, the players indicated that they were not aware of this imitation. 
+The convergence of behavior could have affected the players’ game performance (i.e., their score). To test this, we calculated the correlation between average reaction times or move distances and the total number of hits per player pair ( Fig. 2 B ; for errors, see Fig. S1 B ). The correlations showed that pairs that were faster and reached for more distant targets were also likely to hit more targets. These results suggest that, faced with a slow opponent, a player could reap substantial benefits if he or she maintained a fast pace. However, the observed correlations reflect a reduced payoff for these subjects. 
+There are, however, some remotely possible explanations other than imitation for the convergence of behaviors. For example, uncontrollable circumstances (e.g., time of day or day of the year) may have led to fluctuations in behavior that affected both players equally. However, the analysis of the correlations in each game showed that the correlations build up over several games ( Fig. S2 A ) . This indicates that the correlations were established over time and argues against such extraneous factors. Although the results are very clear and the likelihood of imitation is very strong, the conclusions are based on correlations alone. To more convincingly show the importance of imitation, we designed a second experiment to determine whether a player’s behavior was modulated directly by their opponent. Here, a confederate acted as either a slow or fast player in successive blocks. If imitation were operative, we would expect players to slow down or speed up accordingly. 
+Experiment 2: Imitation of a Confederate. 
+In the second experiment, a male confederate played 4 blocks of 4 whac-a-mole games (4 × 4 = 16 games) against 20 separate players. The confederate was instructed to be slow in blocks 1 and 3 and fast in blocks 2 and 4 and to only hit correct (i.e., yellow or green) targets. We were interested in whether players would imitate and follow similar patterns of behavior as the confederate. Fig. 3 shows that the players (red) imitated the confederate (blue). Both reaction times and the movement distances of the players were significantly modulated across blocks [reaction time: t (19) = 9.41, P < 0.001; distance: t (19) = 5.17, P < 0.001; for details, see Methods ]. Depending on whether the confederate was slow or fast, the player was also slow or fast, respectively. The variations in the confederate’s behaviors also had significant effects on the average number of targets hit per game for the opponent ( Fig. S2 B ). Although players were motivated to hit as many targets as possible [they missed even fewer targets than the previous experiment; experiment 1: 12 ± 5%; experiment 2: 9 ± 4%; t (35) = 1.85; P = 0.04], they could not refrain from imitating their opponents. 
+Fig. 3. 
+ Open in a new tab 
+Imitation of a confederate in experiment 2. ( A and B ) Reaction times ( A ) and move distance ( B ) of the confederate (blue) and player (red) over successive slow and fast blocks. The shaded area delineates SE of mean. Reaction times and motor movement distances of the players were significantly different across blocks and this pattern was similar to the confederate behavior. 
+The reaction time and move distances are significant predictors of the player’s success in the game, as measured by the number of hits. A linear regression analysis ( Methods ) on the data collected from blocks 2 and 3 determined that the observed drop in reaction time and increase in move distance of the subjects between blocks 2 and 3 caused subjects to loose points (the loss in performance was 5.6 ± 3.4% for reaction time and 1.6 ± 1.6% for move distance, corresponding to ∼40 ± 12 cents in total). 
+The clear correspondence between the subject and confederate reaction times and move distance over short time intervals argues against possible extraneous factors responsible for the correlations seen in experiment 1. It supports the view that the results observed indeed stem from imitation. However, what is being imitated? Is it the propensity to act quickly and to reach further or are the subjects imitating something more general, such as motivation? Also, does it require the presence of a human partner or will a minimal substitute suffice? To address these questions, we reran the confederate experiment without the human partner. To do this, we recruited a new set of subjects and had them play against the computer. Thus, the game remained strongly competitive but without a human opponent. 
+Experiment 3: Imitation of an Invisible Confederate. 
+A third experiment was performed by a new group of 20 participants who played four blocks against the computer. The actions of the computer opponent were based on the confederate’s behavior of a selected experimental session in experiment 2. The player’s wins and losses were scored according to whether he or she hit the targets before the invisible confederate. The location and timing of successful hits of the players (for number of hits, see Fig. S2 B ) were apparent as before through visual feedback ( Fig. 1 B ). However, the exact movements of the opponent were invisible to the player. As in the previous experiments, we searched for traces of imitation in the reaction times and move distances between blocks. As before, the opponent (i.e., the confederate replayed by the computer) alternated slow and fast responses across blocks. This can be seen in Fig. 4 (blue). The results of the players are shown in red. There is a clear alteration of reaction times across blocks in synchrony with the invisible confederate’s behavior. However, there was little or no synchrony of move distance. Whereas the modulations of reaction times were similar across experiments 2 and 3, move distances were significantly less modulated in experiment 3 compared with experiment 2 [ Fig. 5 ; reaction time: t (38) = 0.56, P = 0.288; move distance: t (38) = 1.78, P = 0.042]. In other words, players were less likely to imitate a behavior that was not visible. 
+Fig. 4. 
+ Open in a new tab 
+Imitation of a virtual opponent in experiment 3. Reaction time and move distance as a function of game number for the virtual confederate (blue) and player (red). Players only mimicked reaction times and not the move distance. 
+Fig. 5. 
+ Open in a new tab 
+Comparison of modulation of player behavior attributable to imitation between experiments 2 and 3. ( Left and Right ) Average mimicry modulations in reaction time ( Left ) and move distance ( Right ) between blocks across players (* P < 0.05). Modulation of reaction times was the same for both experiments, but players were less likely to imitate their opponents’ move distances when they were rendered invisible. 
+Discussion 
+In three experiments, we investigated the role of imitation in a competitive game where players hit targets presented on a screen. We observed high correlations in reaction times, move distances, and error rates across opponent pairs in experiment 1. Acknowledging that the first experiment is correlational, experiments 2 and 3 manipulated the opponent’s behavior to more convincingly reveal the role of imitation. In experiment 2, a confederate was instructed to play either fast or slow against each player across blocks. We found that players altered their reaction times and move distances in synchrony with the confederate. In experiment 3, we used an unseen confederate and found that imitation was dependent on the visibility of the opponent’s behaviors. Taken together, these experiments showed that players do not refrain from imitating even if it affects their success in competition. 
+Although there are indications that mimicry and joint action plans can occur in competitive contexts, the observed robustness and persistency of imitation in a nonadaptive context, and their quantitative effects on success in competition, have not been reported before. On the contrary, studies describe a decrease in mimicry when persons are faced with a competitive task or unaffiliated actor. Previous studies have focused mainly on the role of affiliation in modulating imitation. It has been shown that the amount of mimicry of facial expressions reduces when subjects expect to have a competitive interaction ( 16 ). People’s social orientation can also suppress mimicry ( 17 ). The lack of affiliate goals further reduces mimicry ( 9 ), and if a person feels less affiliated with someone–because of stigmatization or not belonging to a group–there will be less mimicry ( 18 , 19 ). Similarly, actors are less inclined to alter their actions by an intimidating coactor’s actions ( 20 ). 
+In our experiments, there is no obvious common affiliation between the participants. The participants were strangers, and their only interaction was in the context of the competitive game. Recent studies however have shown mimicry of highly specific actions in the context of competitive games ( 13 , 14 , 21 ). Our results are similar to these studies in that they demonstrate a case of autonomous mimicry when players have no affiliate goal and mimicry is maladaptive. However, in the whac-a-mole game, as opposed to rock–paper–scissors and matching pennies, the goal of each player is to quickly and accurately hit targets on the screen and counter action of specific actions of the opponent is not necessary. Subjects do not need to adapt their reaction times and move distances to their opponents. Despite this, mimicry persists. 
+What is being imitated? Is it related to the well-timed specific actions or something more general? It is conceivable that a superior player, knowing his good chances, relaxes, either to avoid humiliating his opponent or simply to economize effort. Against this, the game was extremely fast, and there was no easy way for players to know of their ongoing performance. In addition, the dissociation of reaction time and move distance in the last experiment shows that a general factor like motivation is unlikely. 
+What about alertness or readiness to act? Recent studies have shown that subjects adjust their motor readiness essentially autonomously, according to the recent history of the task difficulty ( 22 , 23 ). The mimicry of the reaction times seen here could be a result of subjects influencing each other’s readiness in the course of the game. However, readiness cannot explain all the results. The lack of move distance modulation in the last experiment suggests a possibly more direct motor copying that requires visibility of the opponent’s action. 
+It is tempting to speculate about the implications of our study with respect to the neural mechanisms that underpin imitation. Some reviews claim that unintended behavioral imitation has its roots in the mirror neuron system (e.g., refs. 3 , 24 , and 25 ). Our data suggest that these neural networks and their dynamics are more difficult to suppress than expected. 
+In sum, we think that there are many possible forms of autonomous imitation, some directly related to copying precisely timed actions, some related to the magnitude of actions, and some related to the quickness to initiate action. All of these forms of imitation could be of importance in everyday life. Specifically, they should be considered in analyzing player’s behaviors in competitive sports. 
+Methods 
+Participants. 
+Twenty-five pairs of players (i.e., 50 players) participated in the first whac-a-mole experiment, and two separate groups of 20 players participated in the second and third experiments. The participants of the second and third experiments played against a confederate. The confederate was a trained whac-a-mole expert. All participants had normal or corrected-to-normal vision, were naïve to the purpose of the experiment, and gave informed written consent before the experiment. The experiments conformed to the ethical principles of the Declaration of Helsinki and were approved by the local ethics commission of Harvard University. 
+Stimuli. 
+Because participants had varying body heights and therefore varying view distances to the touch screen, we reported the size of the stimuli and other distance measurements in centimeters rather than visual degrees. There were six different target types in experiment 1 with varying luminances and colors [green: 22.3 cd/m 2 , 0.186/0.760 (International Committee on Illumination x / y color–space coordinates); yellow: 22.6 cd/m 2 , 0.340/0.545; red: 6.64 cd/m 2 , 0.621/0.322; magenta: 6.32 cd/m 2 , 0.314/0.131; blue: 5.49 cd/m 2 , 0.167/0.121; purple: 5.22 cd/m 2 , 0.213/0.135]. Depending on its color, a hit target resulted in different types of rewards or punishments ( Procedure ). Targets consisted of circles with a 1.8-cm diameter that were presented for a fixed time of 1,250 ms on a black screen (1.0 cd/m 2 ; 0.320/0.338). Targets appeared and disappeared gradually, “ramped” in and out on the screen with a linear increase and decrease of luminance in the first and second half (625 ms) of their presence, respectively. When a target was hit, it turned into a two-sided square that indicated which of the players had actually hit the target (there were many instances where both players reached for and hit the same target). The half side of the square facing the player that had their score altered received the color red, green, or white (29.7 cd/m 2 ; 0.265/0.329) corresponding to a reward, punishment, or neutral target. A maximum of eight targets could be presented on screen at once, and, on average, there were ∼five targets visible at any given moment. 
+Apparatus. 
+Stimuli were generated on a desktop computer, using Matlab (Mathworks) and the Psychophysics toolbox extension ( 26 ) and were rear-projected on a flat 46 × 35 cm surface ( Fig. 1 ). The surface screen contained 1,024 × 768 pixels with a 60-Hz refresh rate. Players used a wooden chopstick (20 cm in length) to hit the targets; 3D xyz rod-tip positions were recorded with an electromagnetic tracking system (Liberty, Polhemus) at a rate of ∼120 Hz. 
+Procedure. 
+Experiment 1. 
+In the first experiment, participants played 30 whac-a-mole games that each lasted 40 seconds. Players were shown targets on a large screen that could be touched (hit). Players accumulated points by hitting the correct targets before their opponents. Greater number of hits for a game constituted a “win.” Players could win a game by achieving a higher score than their opponent at the end of each game. Players received a reward of 80 cents when they had won a game, 40 cents for a draw, and no extra reward if lost. The players had earned an average of 12 dollars after the experiment. To study effects of reward and punishment, targets could either positively or negatively affect the score of the hitting player or their opponent. When green or yellow targets were hit, players gained a point or their opponent lost a point, respectively. Target properties were counterbalanced across pairs of players, that is, green would have the same property for one pair as yellow had for the other pair, and vice versa. Red and magenta targets were the opposites of green and yellow targets, that is, hitting them would remove a point from the player’s score or add a point to the opponent’s score. Blue and purple targets were neutral and either added or removed a point from both the opponent’s scores. In sum, players had to only hit green and yellow targets to increase winning chances. Players were informed about target properties before the experiment but were not explicitly told to hit only the green and yellow targets. Nonetheless, the correct targets (i.e., green and yellow) were hit 95 ± 6% of all targets, indicating that players understood the task. Yellow and green targets appeared 77 ± 1 times in total per game. Players were instructed to hold the chopstick like a pen and not to talk during the games. They were instructed neither to block their opponent nor to place the stick on the table and slide from target to target without lifting the stick. Participants made repetitive sequences of brief reach and subtract movements and there was minimal physical contact between opponents. Feedback was given after each game (i.e., score, game won/draw/lost, financial reward, and total earnings), and players could take breaks between games. 
+Experiment 2. 
+The second experiment was similar to experiment 1 in all aspects, except for the number of games, financial rewards, and type of opponents. In contrast to experiment 1, we did not dissociate between reward and punishment of opponents, and players could only affect their own score when hitting a target. Green and yellow targets added a point to the player’s score, red and magenta removed points, and blue and purple were neutral. Furthermore, we motivated players to fight for each point by rewarding each hit (1 cent per target instead of 80 cent per game; average amount won per experiment: 6 ± 1 dollars for target hits plus 5 dollars for participation). The percentage hit of rewarding targets (i.e., green and yellow) compared with other target types was 99 ± 1%, indicating that players understood the task. To dissociate between slow and fast opponents, players played against a confederate that was instructed to adjust its behavior across blocks. The confederate was instructed to act as a slow player in block 1 (games 1–4) and block 3 (games 9–12) and act as a fast player in block 2 (games 5–8) and block 4 (games 13–16). The difference between slow and fast acts consisted of the adjustment of reaction times and movement distances. Note that the confederate started to act as a slow player in the first block and became a fast player in a subsequent block to give players the impression that the confederate was learning rather than explicitly manipulating his or her own behavior. This prevented the players to become suspicious about the confederate’s changing performance and it was also the reason why we did not choose to reverse the ABAB conditions into BABA conditions as a control. 
+Experiment 3. 
+This experiment was similar to experiment 2 in all respects except that the confederate’s movements were not visible to the players. The confederate’s exact movements were recorded in 16 consecutive games against a player in experiment 2 and served as behavioral material for the player’s virtual opponent in experiment 3. We specifically chose data of only one experimental run for which the confederate had strong modulation in reaction time and move distance across blocks ( Fig. 4 ). Note that players could still infer when and where their virtual opponent hit a target because of the presented color cues after each hit ( Stimuli ). Players won an average amount of 7 ± 1 dollar for target hits plus 5 dollars for participation. 
+Analysis. 
+We restricted our analysis to only correct target hits (yellow and green targets) because subjects rarely hit the targets that did not yield an increase in their relative reward ( Procedure ). We further did not analyze the late target hits in which the player reached the same target after their opponent. Incorporating these late target hits in the analysis did not alter the results qualitatively. In the analyses, we dissociated four separate measures: target hit reaction times, the physical distance moved during reaching for a target (move distance), and the amount of target (correct) and distracter (mistake) hits. Reaction time was based on the time between stimulus onset and target hit. This was further divided into initiation time from target onset to reach onset and movement time from reach onset to target hit. Move distance was based on the distance traveled in space from reach onset till target hit. The reach onset was calculated by setting a movement speed threshold of 35 cm/s. A player with a high average in move distances had a large “hit territory” and was more likely to hit targets that were located far away from the initial chop-stick position. 
+To assess the cost of mimicry in the second experiment, a linear regression analysis was used to determine the effects of mimicry on hit rate. We estimated the dependency of hit rate on actions in a linear regression equation (reaction times: ; move distance: ; where x is the loss or gain in milliseconds or centimeters attributable to mimicry, and y is the number of target hits). Next, we calculated the difference in reaction time or move distance between block 2 and 3 (reaction time: 40.8 ± 23.2 ms; distance: 0.38 ± 0.38 cm) to measure the effects of mimicry. This difference was used as the x input variable in the equations of the linear regressions described above. The absolute drop in performance attributable to mimicry was then the y output of the equation. The output was divided by average reaction time or move distance to end up with a percentage loss/gain attributable to mimicry. This analysis was performed per player, and we reported the average and SD of the decreased percentage in performance attributable to mimicry across players in the results. Note that the reported percentages are conservative because we did not control for learning effects between block 2 and 3. In other words, the drop in performance attributable to mimicry between blocks 2 and 3 would have been worse when no learning occurred. 
+To see whether players slowed down and sped up depending on the slow and fast confederate blocks in experiment 2, we looked for significant differences between each block with two-tailed paired t tests (see asterisks in Figs. 3 and 4 and Fig. S2 B ). One-tailed t tests were conducted for experiment 3 because we had clear predictions for the direction of the effects after experiment 2. For experiment 1, the significance of reported correlations between reaction times, move distances, and number of target hits were two-tailed ( Fig. 2 and Fig. S1 ). For experiments 2 and 3, the amount of modulation in reaction time and move distance across blocks was an indication of the degree of mimicry ( Figs. 3 and 4 ). The amount of modulation was determined through the calculation of the mean absolute difference in reaction time or move distance across each consecutive block per player ( Fig. 5 ). 
+Supplementary Material 
+ Supporting Information 
+ supp_110_50_20046__index.html (7.2KB, html) 
+Acknowledgments 
+We thank Sasen Cain for her fruitful suggestions and Daniel Kim for his acting performance as a confederate. This work was supported by the Dutch NWO Rubicon grant, cofunded by the Marie Curie Cofund Action. 
+Footnotes 
+The authors declare no conflict of interest. 
+This article is a PNAS Direct Submission. S.A.H. is a guest editor invited by the Editorial Board. 
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.1073/pnas.1305996110/-/DCSupplemental . 
+References 
+ 1. Chartrand TL, Bargh JA. The chameleon effect: The perception-behavior link and social interaction. J Pers Soc Psychol. 1999;76(6):893–910. doi: 10.1037//0022-3514.76.6.893. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 2. van Baaren RB, Janssen L, Chartrand TL, Dijksterhuis A. Where is the love? The social aspects of mimicry. Philos Trans R Soc Lond B Biol Sci. 2009;364(1528):2381–2389. doi: 10.1098/rstb.2009.0057. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 3. Heyes C. Automatic imitation. Psychol Bull. 2011;137(3):463–483. doi: 10.1037/a0022288. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 4. Dimberg U. Facial reactions to facial expressions. Psychophysiology. 1982;19(6):643–647. doi: 10.1111/j.1469-8986.1982.tb02516.x. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 5. O’Toole R, Dubin R. Baby feeding and body sway: An experiment in George Herbert Mead’s “taking the role of the other”. J Pers Soc Psychol. 1968;10(1):59–65. doi: 10.1037/h0026387. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 6. Vaughan KB, Lanzetta JT. Vicarious instigation and conditioning of facial expressive and autonomic responses to a model’s expressive display of pain. J Pers Soc Psychol. 1980;38(6):909–923. doi: 10.1037//0022-3514.38.6.909. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 7. Likowski KU, Muhlberger A, Seibt B, Pauli P, Weyers P. Modulation of facial mimicry by attitudes. J Exp Soc Psychol. 2008;44(4):1065–1072. [ Google Scholar ] 
+ 8. McIntosh DN. Spontaneous facial mimicry, liking and emotional contagion. Pol Psychol Bull. 2006;37(1):31–42. [ Google Scholar ] 
+ 9. Lakin JL, Chartrand TL. Using nonconscious behavioral mimicry to create affiliation and rapport. Psychol Sci. 2003;14(4):334–339. doi: 10.1111/1467-9280.14481. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 10. Lakin JL, Jefferis VE, Cheng CM, Chartrand TL. The Chameleon effect as social glue: Evidence for the evolutionary significance of nonconscious mimicry. J Nonverbal Behav. 2003;27(3):145–162. [ Google Scholar ] 
+ 11. van Baaren RB, Holland RW, Kawakami K, van Knippenberg A. Mimicry and prosocial behavior. Psychol Sci. 2004;15(1):71–74. doi: 10.1111/j.0963-7214.2004.01501012.x. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 12. Dijksterhuis A, Bargh JA. The perception-behavior expressway: Automatic effects of social perception on social behavior. Adv Exp Soc Psychol. 2001;33(1):1–40. [ Google Scholar ] 
+ 13. Cook R, Bird G, Lünser G, Huck S, Heyes C. Automatic imitation in a strategic context: Players of rock-paper-scissors imitate opponents’ gestures. Proc Biol Sci. 2012;279(1729):780–786. doi: 10.1098/rspb.2011.1024. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 14. Belot M, Crawford VP, Heyes C. Players of Matching Pennies automatically imitate opponents’ gestures against strong incentives. Proc Natl Acad Sci USA. 2013;110(8):2763–2768. doi: 10.1073/pnas.1209981110. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 15. Aczel B, Bago B, Foldes A. Is there evidence for automatic imitation in a strategic context? Proc Biol Sci. 2012;279(1741):3231–3233. doi: 10.1098/rspb.2012.0500. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ 16. Lanzetta JT, Englis BG. Expectations of cooperation and competition and their effects on observers’ vicarious emotional responses. J Pers Soc Psychol. 1989;56(4):543–554. [ Google Scholar ] 
+ 17. Stel M, Rispens S, Leliveld M, Lokhorst AM. The consequences of mimicry for prosocials and proselfs: Effects of social value orientation on the mimicry–liking link. Eur J Soc Psychol. 2011;41(3):269–274. [ Google Scholar ] 
+ 18. Johnston L. Behavioral mimicry and stigmatization. Soc Cogn. 2002;20(1):18–35. [ Google Scholar ] 
+ 19. Yabar Y, Johnston J, Miles L, Peace V. Implicit behavioral mimicry: Investigating the impact of group membership. J Nonverbal Behav. 2006;30(3):97–113. [ Google Scholar ] 
+ 20. Hommel B, Colzato LS, van den Wildenberg WP. How social are task representations? Psychol Sci. 2009;20(7):794–798. doi: 10.1111/j.1467-9280.2009.02367.x. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 21. Ruys KI, Aarts H. When competition merges people’s behavior: Interdependency activates shared actions representations. J Exp Soc Psychol. 2010;46(6):1130–1133. [ Google Scholar ] 
+ 22. Song JH, Nakayama K. Automatic adjustment of visuomotor readiness. J Vis. 2007;7(5):2.1–2.9. doi: 10.1167/7.5.2. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 23. Lupker SJ, Kinoshita S, Coltheart M, Taylor TE. Mixing costs and mixing benefits in naming words, pictures, and sums. J Mem Lang. 2003;49(4):556–575. [ Google Scholar ] 
+ 24. Knoblich G, Butterfill S, Sebanz N. The Psychology of Learning and Motivation. 2011. Psychological research on joint action: Theory and data. ed Ross B (Academic, Waltham, MA) Vol 54, pp 59–101. [ Google Scholar ] 
+ 25. Molenberghs P, Cunnington R, Mattingley JB. Is the mirror neuron system involved in imitation? A short review and meta-analysis. Neurosci Biobehav Rev. 2009;33(7):975–980. doi: 10.1016/j.neubiorev.2009.03.010. [ DOI ] [ PubMed ] [ Google Scholar ] 
+ 26. Brainard DH. The psychophysics toolbox. Spat Vis. 1997;10(4):433–436. [ PubMed ] [ Google Scholar ] 
+Associated Data 
+ This section collects any data citations, data availability statements, or supplementary materials included in this article. 
+Supplementary Materials 
+ Supporting Information 
+ supp_110_50_20046__index.html (7.2KB, html) 
+ 1305996110_pnas.201305996SI.pdf (167.3KB, pdf) 
+ Download video file (16.6MB, wmv) 
+ Download video file (5.4MB, wmv) 
+Articles from Proceedings of the National Academy of Sciences of the United States of America are provided here courtesy of National Academy of Sciences 
+ACTIONS 
+ View on publisher site 
+ PDF (698.1 KB) 
+ Cite 
+ Collections 
+ Permalink 
+PERMALINK 
+ Copy 
+RESOURCES 
+ Similar articles
+ Cited by other articles
+ Links to NCBI Databases
+Cite 
+ Copy 
+ Download .nbib 
+ .nbib 
+ Format: 
+ AMA
+ APA
+ MLA
+ NLM
+Add to Collections 
+ Create a new collection 
+ Add to an existing collection 
+ Name your collection
+ * 
+ Choose a collection
+ Unable to load your collection due to an error
+ Please try again 
+ Add
+ Cancel
+ Follow NCBI
+ NCBI on X (formerly known as Twitter) 
+ NCBI on Facebook 
+ NCBI on LinkedIn 
+ NCBI on GitHub 
+ NCBI RSS feed 
+ Connect with NLM
+ NLM on X (formerly known as Twitter) 
+ NLM on Facebook 
+ NLM on YouTube 
+ National Library of Medicine
+ 8600 Rockville Pike
+ Bethesda, MD 20894 
+ Web Policies
+ FOIA
+ HHS Vulnerability Disclosure
+ Help
+ Accessibility
+ Careers
+ NLM
+ NIH
+ HHS
+ USA.gov
+ Back to Top 

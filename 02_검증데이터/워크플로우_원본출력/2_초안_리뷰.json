@@ -1,0 +1,315 @@
+{
+  "summary": "Adversarially review the Korean RPS strategy draft against the verified research data (numbers, directions, overclaims)",
+  "agentCount": 2,
+  "logs": [],
+  "result": {
+    "numbers": {
+      "issues": [
+        {
+          "severity": "major",
+          "draft_quote": "같은 상대와 붙은 사람 대 사람 데이터(미국·호주·일본)에서는 이긴 사람도 반복을 피했습니다(26~32%).",
+          "problem": "일본 500명 데이터(Komai)를 사람 대 사람 대결로 잘못 설명했습니다. 이 데이터는 GA/GP 컴퓨터 프로그램을 상대로 키보드로 50판씩 둔 기록입니다. 바로 앞 줄의 '컴퓨터를 상대로 한 실험 → 이긴 사람이 반복'이라는 구분과도 어긋납니다. 일본 데이터는 컴퓨터가 상대인데도 승리 후 반복률이 30.5%로, 반복 경향이 없었습니다.",
+          "evidence": "gaps.txt G1-F1의 DESIGN 항목: '50 consecutive keyboard RPS games against an adaptive GA/GP program'. 같은 항목의 CAVEATS: 'The opponent was a computer program'. 승리 후 반복률은 30.5%입니다(rules_check.py의 JP W 행: stay .305).",
+          "suggested_fix": "- 컴퓨터를 상대로 한 캐나다·영국 실험과 중국 실험에서는 이긴 사람이 같은 손을 다시 내는 경향이 있었습니다(36~53%).\n  - 반면 같은 상대와 계속 붙은 데이터(미국·호주의 사람 대 사람 대결, 컴퓨터 프로그램을 상대한 일본 500명)에서는 이긴 사람도 반복을 피했습니다(26~32%)."
+        },
+        {
+          "severity": "major",
+          "draft_quote": "\"연승자가 직전에 이긴 손을 이기는 손\"을 내는 전략은 데이터에 따라 +7%p에서 −11%p까지 갈립니다.",
+          "problem": "범위의 위쪽 끝을 잘못 적었습니다. +7.3%p는 서구 컴퓨터 실험에서 새 상대를 만났을 때의 승리 후 반복률 38.2%로 계산한 값일 뿐입니다. 중국 데이터에서는 같은 계산이 +28.1%p입니다. 데이터 전체 범위는 −11%p(호주)부터 +28%p(중국)까지입니다.",
+          "evidence": "model_report.md의 K13과 4c 절: 서구 +7.3, 저장대 a=2 +28.1, 호주 −11.0. rules_check.py의 'I LOST: beat the winner's hand' 행: ZJ +0.281, Dyson +0.021, Forder +0.142, US +0.002, AU −0.110, JP −0.037.",
+          "suggested_fix": "- \"연승자가 직전에 이긴 손을 이기는 손\"을 내는 전략은 데이터에 따라 결과가 크게 갈립니다.\n  - 중국 실험에서는 +28%p, 컴퓨터를 상대로 한 서구 실험에서는 약 +7%p였습니다.\n  - 미국은 0%p, 일본은 −4%p, 호주는 −11%p였습니다.\n  - 그 사람이 실제로 같은 손을 반복하는 것을 봤을 때만 쓰세요."
+        },
+        {
+          "severity": "major",
+          "draft_quote": "진 손을 그대로 다시 내면 오히려 상대의 예상을 깰 수 있습니다.",
+          "problem": "방향이 데이터와 맞지 않고, 같은 문서의 다른 조언과도 충돌합니다. 진 손을 그대로 다시 내면, 이긴 사람이 같은 손을 반복하는 상대에게 다시 집니다. 중국과 컴퓨터 실험에서는 판당 5~30%p 손해였고, 이득이 난 것은 미국·호주·일본 데이터뿐입니다. 1절은 '진 뒤에는 무작위가 안전'하다고 하는데, 이 문장은 사실상 고정 규칙을 권하는 셈입니다.",
+          "evidence": "rules_check.py의 'I LOST: repeat my losing hand' 행: ZJ −0.302, Dyson −0.050, Forder −0.131, US +0.036, AU +0.103, JP +0.047.",
+          "suggested_fix": "- 진 직후에는 미리 뽑아 둔 무작위 수열을 그대로 따르세요.\n- 진 손을 일부러 다시 내는 것도 답이 아닙니다. 이긴 사람이 같은 손을 반복하는 상대에게는 판당 5~30%p 손해였습니다(중국·컴퓨터 실험)."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "원 논문(Wang 2014) 데이터는 반대입니다. 바위로 진 사람이 다음에 가위를 낸 비율은 36.5%, 보는 27.6%로 가장 낮았습니다",
+          "problem": "36.5%와 27.6%는 진 손이 무엇이었든 합산한 비율입니다. 각각 '진 손이 이기는 손'과 '진 손을 이기는 손'으로 바꾼 비율이며, 바위로 진 경우만 따로 센 수치가 아닙니다. 데이터에는 Wang 2014의 손별 분해가 없습니다.",
+          "evidence": "gaps.txt의 CONTRADICTIONS 절 'Direction after a loss': 'Zhejiang: 0.365 vs 0.276' (손 구분 없이 합산). rules_check.py의 ZJ L 행: stay .360, up .276, down .365.",
+          "suggested_fix": "원 논문(Wang 2014) 데이터는 반대입니다. 진 사람이 '진 손이 이기는 손'(예: 바위→가위)으로 바꾼 비율은 36.5%였고, '진 손을 이기는 손'(바위→보)은 27.6%로 가장 낮았습니다(세 손 합산)."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "진 사람은 진 손을 20~30%만 다시 내고",
+          "problem": "6개 데이터 중 중국 실험에서는 진 사람이 진 손을 36% 다시 냈습니다. 그래서 '20~30%'는 6개 데이터 전체에 맞지 않습니다.",
+          "evidence": "rules_check.py T의 L 행 stay 값: ZJ .360, Dyson .223, Forder .2146, US .237, AU .285, JP .265.",
+          "suggested_fix": "진 사람은 진 손을 21~29%만 다시 내고(중국 실험만 36%)"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "형식에 따라 팀원에게 손을 나눠 맡기는 것만으로 승률이나 생존 확률이 50%대에서 69~100%까지 올라갑니다.",
+          "problem": "출발점을 잘못 적었습니다. 사회자전 생존 확률은 각자 낼 때 이미 69%와 76%이고, 50%에서 출발하는 것은 팀 동시 대결뿐입니다. '50%대에서'로 묶으면 사회자전의 기준값이 틀립니다.",
+          "evidence": "formats.py: 규칙 A(팀 10명, 2라운드)는 0.692에서 1.000으로, 규칙 B(팀 10명, 5라운드)는 0.756에서 0.959로 오릅니다. simultaneous.py: 팀 동시 대결은 0.5에서 0.6875(3인), 0.859(4인)로 오릅니다.",
+          "suggested_fix": "형식에 따라 팀원에게 손을 나눠 맡기는 것만으로 팀 동시 대결 승률은 50%에서 69~86%로, 사회자전 생존 확률은 69~76%에서 96~100%로 올라갑니다."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "**반복형 상대 모드**: 상대가 같은 손을 자주 반복하면 규칙을 뒤집어 **상대가 방금 낸 손을 이기는 손**을 냅니다.",
+          "problem": "반복형의 유일한 근거인 중국 데이터에서도, 내가 이긴 직후에 이 규칙을 쓰면 −0.5%p로 이득이 없습니다. 그때 진 사람은 반복하지 않기 때문입니다(반복 36%, 진 손이 이기는 손 36.5%). 이 규칙이 통하는 것은 비긴 뒤(+19.8%p)와 내가 진 뒤(+28.1%p)입니다.",
+          "evidence": "rules_check.py ZJ 열: 'I WON: repeat my winning hand'(=X+) −0.005, 'TIE: beat the tied hand' +0.198, 'I LOST: beat the winner's hand' +0.281. model_report.md 2a 절: 저장대 데이터의 최적 대응은 X+/X+/X.",
+          "suggested_fix": "**반복형 상대 모드**: 상대가 같은 손을 자주 반복하면, 비겼을 때와 내가 졌을 때 **상대가 방금 낸 손을 이기는 손**을 냅니다. 내가 이긴 직후에는 진 상대가 반복하지 않으므로 무작위로 냅니다."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "**상황별 근거** (6개 데이터셋: 미국·호주의 사람 대 사람 고정 대결, 일본 500명, 캐나다·영국 실험, 중국 저장대 실험)",
+          "problem": "이 설명만으로는 어떤 데이터셋이 컴퓨터를 상대로 했는지 알 수 없습니다. 일본 500명은 컴퓨터 프로그램을, 캐나다·영국 실험은 컴퓨터를 상대했습니다. 중국 저장대 실험은 사람끼리 매 판 상대를 바꿨습니다. 이 구분은 '진 뒤' 해석에 필요합니다.",
+          "evidence": "rules_check.py의 데이터셋 이름: 'Dyson16 (CA, vs computer)', 'Forder&Dyson16 (UK, vs comp)', 'ZJ a=2 (Wang14, re-matched lab)'. gaps.txt G1-F1: 일본 데이터는 'against a GA/GP program'.",
+          "suggested_fix": "**상황별 근거** (6개 데이터셋: 미국·호주의 사람 대 사람 고정 대결, 컴퓨터 프로그램을 상대한 일본 500명, 컴퓨터를 상대한 캐나다·영국 실험, 사람끼리 매 판 상대를 바꾼 중국 저장대 실험)"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "| \"바위 35.4%·보 35.0%·가위 29.6%\" | 출처와 표본이 불분명한 수치입니다(세계RPS협회 웹페이지) |",
+          "problem": "이 세 수치가 협회 웹페이지에 있는 것처럼 읽힙니다. 실제로는 대중 기사들이 협회를 출처로 인용한 수치이고, 협회의 2009년 페이지에는 '가위 29.6%'만 표본·방법 없이 있습니다. 35.4%는 그 페이지에 없습니다.",
+          "evidence": "wf_result.json의 baserates:C03: 'attributed in popular articles to the World RPS Society, not to any study. The archived WRPS strategy page (2009) contains only 'scissors ... 29.6%' ... no '35.4''.",
+          "suggested_fix": "| \"바위 35.4%·보 35.0%·가위 29.6%\" | 대중 기사들이 세계RPS협회를 출처로 인용하는 수치입니다. 협회 웹페이지에는 '가위 29.6%'만 표본·방법 없이 적혀 있고, 이를 뒷받침하는 연구는 없습니다 |"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "한국가위바위보협회 규칙은 경기 중 관중이나 코치가 신호를 보내면 실격입니다.",
+          "problem": "원문보다 단정적입니다. 규칙 원문은 신호를 보내면 실격될 수 있다는 것이지, 자동으로 실격된다는 뜻이 아닙니다.",
+          "evidence": "angleE.txt 130행: 'Calls or any kind of signal from trainers or spectators can lead to disqualification'.",
+          "suggested_fix": "한국가위바위보협회 규칙에서는 경기 중 관중이나 코치가 신호를 보내면 실격될 수 있습니다."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "388명 실험에서 지시문만 바꿔도 무작위성이 크게 높아졌고, '자유 선택' 지시가 가장 덜 무작위했습니다.",
+          "problem": "이 실험은 가위바위보가 아닙니다. 상대 없이 두 가지 중 하나를 1,000번 고르는 과제였습니다. 이 점을 밝히지 않으면 가위바위보 실험 결과로 오해할 수 있습니다.",
+          "evidence": "wf_result.json의 foundations:C13: 'Guseva et al. (2023): preregistered online study, n=388 Prolific participants, 1,000 binary choices each'. 조건별 조건부 엔트로피: 불규칙 0.94, 동전 0.92, 자유 선택 0.75.",
+          "suggested_fix": "388명에게 상대 없이 두 가지 중 하나를 1,000번 고르게 한 실험에서, 지시문만 바꿔도 무작위성이 크게 높아졌고 '자유 선택' 지시가 가장 덜 무작위했습니다."
+        }
+      ],
+      "verified_ok_summary": "Re-ran xcheck/rules_check.py, simultaneous.py, bo3_rules.py and formats.py, and checked the draft against model_report.md, gaps.txt, the angle files and wf_result.json.\n\nHand directions checked and correct:\n- After a tie, throw X− (the hand the tied hand beats): Rock tie → Scissors. 5 of 6 datasets are positive (+5.6 to +12.6, so \"+5~13%p\"); the Chinese lab is −9.8. US +5.8 [2.4, 9.1] with 116 players and 11,656 ties, AU +5.4 [1.2, 9.7] with 62 players, JP +8.4.\n- After my win, throw the hand that beats my winning hand, which equals X− of their hand (my Paper beat their Rock → Scissors). 5 datasets give +5.5 to +17.7 and the Chinese lab −8.4. Repeating the winning hand is negative in all 6 (−0.5 to −18.2).\n- Losers most often switch to the hand their losing hand beats, in all 6 datasets.\n- Win-stay is 36–53% in the computer-opponent labs and the Chinese lab, and 26–32% in the US, AU and JP data.\n- Team throw \"2 on X + 1 on the hand X beats\" (바위·바위·가위, 보·보·바위, 가위·가위·보): 0.6875 / 0.684. Reverse orientation 0.3125 / 0.469, herding 0.5 / 0.25, 4-person team 0.859 / 0.779.\n- 하나빼기 (keep the shared hand 2/3 of the time; keep the winning hand inside a matching pair) and 묵찌빠 (the opening-throw winner wins 2/3) match the derivations.\n\nNumbers checked and correct:\n- Best-of-3 with the basic mode (R9) is 0.559 / 0.537 / 0.553 (US/AU/JP), so 54–56%. With biases halved it is 52–53%, and against the Zhejiang table 0.447 (about 45%).\n- Format amplification: q=0.55 gives 57.5% for best-of-3 and 63.8% for the 5-member points format.\n- Host game: 69 → 100% vs 11% (rule A, n=10, k=2) and 76 → 96% (rule B, n=10, k=5). Last survivor with 10 of 40 players rises from 25% to about 30%.\n- Other figures:\n  - 2,636,417 matches and the +1.49 pp realised edge\n  - repeat rate 27.5–28.2%\n  - lose-shift 70–80%\n  - 39.7% third repeat after two same-hand ties\n  - win-stay 44 → 38% with a new opponent, lose-shift 79%\n  - 46.6% Paper against a ≥42% Rock history\n  - 10–12 pp net loss to a pattern detector and 7 of 99 beating it\n  - +1.6 / +27.4 pp at throws 1–3 / 7–10\n  - 15 of 24 bots improved\n  - 33.5% win rate with a forced pause\n  - 28–36% third repeat\n  - gender gaps under 1.5 pp\n  - 60 ms / 225 ms\n  - Paper 43% (US) vs 20% (JP) openers\n  - Rock excess of 2–3 pp mainly on screens\n  - the Korean custom that a late thrower loses (Encykorea)"
+    },
+    "overclaim": {
+      "issues": [
+        {
+          "severity": "major",
+          "draft_quote": "내가 이겼을 때 | 상대가 방금 낸 손에 **지는** 손 (= 내가 이긴 손을 이기는 손) | 내 보가 상대 바위를 이김 → 가위",
+          "problem": "'내가 이긴 손'은 한국어로 '내가 이긴 상대의 손'(바위)으로도 읽힙니다. 그렇게 읽으면 '바위를 이기는 손'=보, 즉 이길 때 낸 손을 그대로 반복하게 되는데, 이것이 데이터상 가장 나쁜 선택입니다. 같은 표현이 '내가 이긴 손을 그대로 다시 내면'과 3(b)의 '연승자가 직전에 이긴 손을 이기는 손'에도 나옵니다.",
+          "evidence": "xcheck/rules_check.py 'I WON: repeat my winning hand': −0.005/−0.182/−0.179/−0.149/−0.089/−0.134(ZJ/Dyson16/Forder/US/AU/JP). 의도한 규칙 'hand that beats my winning hand'=X−는 +0.149~+0.177(서구), +0.071(JP).",
+          "suggested_fix": "표: '상대가 방금 낸 손에 **지는** 손 (= 방금 이길 때 내가 낸 손을 이기는 손)'. 1장 본문: '내가 이길 때 낸 손을 그대로 다시 내면 6개 데이터 모두에서 손해였습니다'. 3(b): \"연승자가 직전에 이길 때 낸 손을 이기는 손\"."
+        },
+        {
+          "severity": "major",
+          "draft_quote": "같은 상대와 붙은 사람 대 사람 데이터(미국·호주·일본)에서는 이긴 사람도 반복을 피했습니다(26~32%).",
+          "problem": "사실 오류입니다. 일본 500명 데이터는 사람끼리 대결한 것이 아니라 오픈캠퍼스 방문객이 키보드로 적응형 컴퓨터 프로그램(GA/GP)과 50판을 둔 기록입니다. 1장 '상황별 근거' 머리말과 결론 4에도 이 조건이 빠져 있어, 핵심 근거가 실제보다 현장 대결에 가까워 보입니다.",
+          "evidence": "gaps G1-F1 DESIGN: '50 consecutive keyboard RPS games against an adaptive GA/GP program'; CAVEATS: 'The opponent was a computer program... No stakes... Keyboard input'. Canada/UK(B1,B2)도 컴퓨터 상대.",
+          "suggested_fix": "'사람끼리 고정 대결한 미국·호주 데이터와, 컴퓨터 프로그램을 상대한 일본 500명 데이터에서는 이긴 사람도 반복을 피했습니다(26~32%).' 머리말: '(6개 데이터셋: 미국·호주 사람 대 사람 고정 대결, 일본 500명(키보드로 컴퓨터와 50판), 캐나다·영국(컴퓨터 상대), 중국 저장대(사람끼리, 매 판 상대 교체))'. 결론 4: '가장 가까운 자료는 일본인 500명이 컴퓨터와 둔 데이터이고…'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "형식에 따라 팀원에게 손을 나눠 맡기는 것만으로 승률이나 생존 확률이 50%대에서 69~100%까지 올라갑니다.",
+          "problem": "이 효과는 팀원이 동시에 내는 형식(사회자전, 팀 동시 대결)에서 사전 조율이 허용될 때만 생깁니다. 대표전·연전·합산전에는 이런 구조적 이점이 없습니다. 또 '50%대→69~100%'는 서로 다른 두 결과를 섞은 표현입니다. 사회자전의 출발점은 50%대가 아니라 69%이고, 동시 대결은 50%에서 69%로 오릅니다.",
+          "evidence": "team:C7(사회자전 0.692→1.000), MF1(3v3 0.50→0.6875/0.684), C10(연전·합산은 정보 없으면 순서 무관), C6/MF1 CAVEATS '규칙이 비밀 조율을 허용해야 함', C9 '실제 개인 우위는 작음'.",
+          "suggested_fix": "'**단체전에서 팀원이 동시에 내는 형식이고 사전 조율이 허용된다면, 개인의 \"읽기\"보다 손을 나눠 맡기는 쪽이 효과가 훨씬 큽니다.** 3인 팀 동시 대결 승률은 50%→69%, 사회자전 생존 확률(10명, 2라운드)은 69%→100%가 됩니다. 대표전·연전·합산전에는 이런 이점이 없습니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "진 손을 그대로 다시 내면 오히려 상대의 예상을 깰 수 있습니다.",
+          "problem": "1장 표의 '내가 졌을 때: 무작위'와 모순됩니다. 이긴 사람이 같은 손을 반복하는 집단에서는 진 손을 일부러 다시 내면 크게 손해입니다. 1장도 이 상황의 근거가 '정반대로 갈린다'고 설명합니다.",
+          "evidence": "rules_check.py 'I LOST: repeat my losing hand': ZJ −0.302, Forder −0.131, Dyson16 −0.050 vs US +0.036, AU +0.103, JP +0.047.",
+          "suggested_fix": "'그래서 진 직후에는 미리 뽑아 둔 무작위 수열을 따르세요. 수열에 진 손이 나오면 피하지 말고 그대로 냅니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "기준은 팀원 기록에서 반복률이 40% 이상이거나, 같은 손으로 두 번 연속 비긴 경우입니다.",
+          "problem": "(1) 몇 판만 보고 반복률을 판정하면 잡음이 큽니다. 전환 10번을 관찰하면, 반복을 피하는 보통 상대(28%)도 약 30% 확률로 40%를 넘습니다. (2) 보통 상대를 반복형으로 잘못 보고 이 모드를 쓰면 3판 2선승 승률이 41~44%로 떨어집니다. 반복형 상대에게 전환하지 않았을 때(45%)보다 손해가 큰데, 이 비용이 빠져 있습니다. (3) 일본의 '두 번 연속 비김 → 세 번째 반복 39.7%'는 바로 다음 한 판에만 해당하는 결과입니다. 원래 반복 성향이 있는 사람이 선택된 효과일 수 있어 신뢰도가 낮고, 모드 전체를 바꿀 근거는 되지 않습니다.",
+          "evidence": "이항 계산: n=10, ≥4회 반복: r=.28이면 0.298, r=1/3이면 0.441. n=20, ≥8회: 0.171. 항상 X+의 3판 2선승(bo3_rules 함수): US 0.439, AU 0.410, JP 0.423 vs R9의 ZJ 0.447. gaps G1-F3 CAVEATS: 'double-tie cell... selects people who had just repeated... confidence is lower'. foundations C10: 전환 9번이면 SE≈0.16.",
+          "suggested_fix": "'기준은 팀원 기록에서 최소 20번 이상 본 손 중 직전 손 반복이 40% 이상인 경우입니다. 관찰이 10번 안팎이면 보통 상대도 우연히 40%를 넘기 쉬우니 판단하지 마세요. 보통 상대에게 이 모드를 잘못 쓰면 승률이 41~44%로 떨어집니다. 같은 손으로 두 번 연속 비겼다면 바로 다음 한 판만 그 손을 이기는 손을 냅니다(일본 데이터 하나, 신뢰도 낮음).'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "예외는 중국 저장대 실험(−10%p)입니다. 이 실험은 매 판 상대가 바뀌고 비기면 점수를 줬기 때문에 실제 대결 조건과 다릅니다.",
+          "problem": "예외를 조건 차이로 단정했지만 근거가 부족합니다. a=2(승 2·무 1·패 0)는 표준 제로섬 가위바위보와 같은 게임입니다. 비김에 점수를 전혀 주지 않은 조건(a=∞)에서도 '비긴 손을 이기는 손'이 가장 유리했습니다. 같은 AI와 계속 붙은 저장대 실험에서도 결과는 같았습니다(−9%p). 한국인이 서구형인지 저장대형인지가 이 연구의 핵심 미해결 질문인데, 초안은 이를 이미 해결된 것처럼 씁니다.",
+          "evidence": "sequential:A1 'a=2... zero-sum-equivalent'. 모델 §3: a=∞에서 X+ +5.5 > X− +3.9. Zhejiang vs AI(고정 상대) 비김 후 X− −9.1. model_report Assumption 9 / angleA OPEN Q: 'No Korean data... key unknown'.",
+          "suggested_fix": "'예외는 중국 저장대 실험 두 개(−9~−10%p)입니다. 매 판 상대가 바뀌는 등 조건이 달랐지만, 같은 AI와 계속 붙은 저장대 실험에서도 결과가 같아 집단 차이일 가능성을 배제할 수 없습니다. 한국인이 어느 쪽에 가까운지는 데이터가 없습니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "같은 상대와 계속 붙으면 직전에 낸 손을 잘 반복하지 않습니다. 반복률은 약 27~28%로, 무작위라면 33%여야 합니다.",
+          "problem": "일부 데이터의 결과를 사람 전체의 성질처럼 일반화했습니다. 저장대 표본은 반복률이 41~44%로 반대였습니다. 그중 Wang L. 2020 실험은 같은 AI 상대와 계속 붙은 조건인데도 반복이 많았습니다.",
+          "evidence": "baserates C09 / angleA OPEN Q: Zhejiang stay 0.41-0.44, win-stay 0.47-0.53. angleA MF2: Zhejiang vs AI 51~300판 stay 0.469/0.394/0.402.",
+          "suggested_fix": "'미국·호주·일본 데이터에서는 직전에 낸 손을 잘 반복하지 않았습니다(반복률 약 27~28%, 무작위라면 33%). 다만 중국 저장대 실험에서는 반대로 41~44%를 반복했습니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "**현실적인 기대치** (3판 2선승 기준, 정확 계산)",
+          "problem": "1장의 %p 수치와 54~56% 승률은 논문에 실린 값이 아닙니다. 공개 원자료와 논문 그림·표로 직접 계산한 2차 분석이며, 상대가 집단 평균대로 움직이고 내 규칙에 적응하지 않는다고 가정한 상한입니다. '정확 계산'이라는 표현은 실측처럼 읽힙니다. 300~480판 세션의 평균이라는 점, 경기 초반에는 효과가 더 약할 수 있다는 점도 빠져 있습니다.",
+          "evidence": "sequential:C1 CAVEATS 'Conditional tables are my analyses of public data, not statistics printed in the papers'; C2 'my derivations, not published results... assume a non-adapting opponent'. model_report Assumption 1 'All exploitation edges are upper bounds'; 모델 §2b: US 1~20판 R9 +1.8.",
+          "suggested_fix": "'**현실적인 기대치** (3판 2선승 기준. 연구 데이터의 조건부 확률표로 계산한 값이며, 상대가 내 규칙에 적응하지 않는다고 가정한 상한입니다)'. '상황별 근거' 머리말 끝에 추가: '아래 %p는 논문에 실린 값이 아니라 공개 원자료·논문 표로 계산한 값입니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "같은 상대와 다시 붙거나 상대 팀이 내 경기를 지켜본 뒤라면, 절반은 규칙대로 내고 절반은 무작위로 냅니다.",
+          "problem": "규칙을 절반만 섞는 것은 들킬 때까지의 시간을 늦출 뿐, 규칙을 이미 파악한 상대에게는 보호가 되지 않습니다. 규칙을 따르는 비율이 p이면 손실은 정확히 −p입니다. 3(b)는 같은 상황에서 '무작위 수열을 쓰세요'라고 해 서로 맞지 않습니다.",
+          "evidence": "model_report §6a: p=0.5에서 판당 −50, 3판 2선승 0.168. §6e/Trade-off: 'Mixing does not change that ratio... buys slower detection'(p=0.5에서 20:1 증거까지 약 13판).",
+          "suggested_fix": "'같은 상대와 다시 붙거나 상대 팀이 내 경기를 여러 번 지켜봤다면 규칙을 내려놓고 무작위 수열만 쓰세요. 절반만 섞어도 규칙을 파악한 상대에게는 3판 2선승 승률이 약 17%까지 떨어집니다(계산값).'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "그래서 3판 2선승 한 경기 안에서는 규칙을 그대로 써도 비교적 안전합니다.",
+          "problem": "두 가지 단서가 빠졌습니다. (1) 단순한 습관 봇 4종을 합친 자료에서는 4~6판째에 이미 유의한 이득(+12%p)이 나타났습니다. 비김이 섞이면 3판 2선승은 4~6판까지 갑니다. (2) 한국가위바위보협회 표준 경기는 '3세트×3게임×3판 2선승'이라 같은 상대와 수십 판을 합니다. 이런 형식에서는 '한 경기 안에서 안전'이 성립하지 않습니다.",
+          "evidence": "gaps G3-F1: 4개 봇 합산 4~6판 +0.121(CI +0.030~+0.212); WHY: 'Korean association's 3 sets x 3 games x best-of-3'; IMPLICATION: 'Randomize... in long formats'. team MF2 협회 규칙.",
+          "suggested_fix": "'그래서 3판 2선승 한 경기(비김 포함 보통 3~6판) 안에서는 규칙을 써도 비교적 안전합니다. 다만 단순한 습관은 4~6판째부터 읽히기 시작했다는 결과(+12%p)도 있습니다. 협회식 \"3세트×3게임×3판 2선승\"처럼 같은 상대와 수십 판을 한다면 여기에 해당하지 않습니다.'"
+        },
+        {
+          "severity": "major",
+          "draft_quote": "그냥 지켜보게만 하는 것은 효과가 작았습니다.",
+          "problem": "근거를 잘못 옮겼습니다. 인용된 Dyson 등(2020)의 'observe' 조건은 컴퓨터가 참가자 대신 손을 고른 시행이었고, 팀원 경기를 지켜보는 스카우팅과는 관계가 없습니다. 지켜보기와 기록의 효과를 비교한 연구는 없습니다.",
+          "evidence": "team:C14 STATEMENT \"'observe' trials were trials where the computer chose the participant's response; this is not scouting\"; CAVEATS 'does not test whether watching a human opponent's earlier games improves prediction; that remains untested'.",
+          "suggested_fix": "'몇 판 안 되는 관찰은 인상에 휘둘리기 쉬우니 반드시 적어서 넘기세요(관찰 방식에 따른 효과 차이를 직접 검증한 연구는 없습니다).'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "사람은 스스로 무작위를 만들지 못합니다. 패턴을 찾는 프로그램과 대결한 실험에서 사람은 판당 10~12%p씩 순손실을 봤고, 99명 중 7명만 프로그램을 이겼습니다.",
+          "problem": "같은 연구(Wong 등 2021)에서 게임 중 사람 수열의 무작위성 지표(Lempel–Ziv)는 평균적으로 컴퓨터 난수와 구별되지 않았습니다. 따라서 '만들지 못한다'는 지나친 단정입니다. 200판 세션, 0.5초 응답 제한이라는 조건도 빠졌습니다.",
+          "evidence": "foundations:C11: 'In-game Lempel–Ziv complexity was... statistically indistinguishable from Python's PRNG'; 200 trials, 500-ms deadline; 3/51, 4/48.",
+          "suggested_fix": "'머릿속 무작위에는 패턴이 남습니다. 패턴을 찾는 프로그램과 200판을 겨룬 실험(0.5초 제한)에서 사람의 수열은 겉보기 무작위성 지표로는 컴퓨터 난수와 비슷했는데도 판당 10~12%p씩 순손실을 봤고, 99명 중 7명만 프로그램을 이겼습니다.'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "388명 실험에서 지시문만 바꿔도 무작위성이 크게 높아졌고, '자유 선택' 지시가 가장 덜 무작위했습니다.",
+          "problem": "이 실험은 가위바위보가 아니었습니다. 상대 없이 두 가지 중 하나를 1,000번 고르는 온라인 과제였는데, 이 조건이 빠져 실전 결과처럼 읽힙니다.",
+          "evidence": "foundations:C13 CAVEATS 'Binary, non-competitive and online. Not tested in RPS or in face-to-face play.'",
+          "suggested_fix": "'388명 실험(가위바위보가 아닌 두 가지 중 고르기 과제, 상대 없음)에서 지시문만 바꿔도 무작위성이 크게 높아졌고, \"자유 선택\" 지시가 가장 덜 무작위했습니다.'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "3인 팀이라면 **\"2명은 X, 1명은 X가 이기는 손\"**을 냅니다(바위·바위·가위 / 보·보·바위 / 가위·가위·보).",
+          "problem": "'X가 이기는 손'은 'X를 이기는 손'으로 잘못 읽기 쉽습니다. 그렇게 읽으면 승률 31%/47%인 반대 방향 조합이 됩니다. 표의 '2명 X + 1명 X가 이기는 손 (권장)'과 4인 팀 문장에도 같은 표현이 있습니다.",
+          "evidence": "team MF1: 2 on X + 1 on X− 0.6875/0.684 vs reverse 0.3125/0.469.",
+          "suggested_fix": "'**\"2명은 X, 1명은 X에게 지는 손\"**(X가 바위면 가위)'. 표: '2명 X + 1명 X에게 지는 손 (권장)'. 4인: '3명은 X, 1명은 X에게 지는 손'."
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "손을 바꿀 때는 대부분의 데이터에서 '진 손이 이기는 손'(바위로 졌으면 가위)으로 가장 많이 바꿉니다.",
+          "problem": "'진 손이 이기는 손'은 '진 손을 이기는 손'(보)과 헷갈리기 쉽습니다.",
+          "evidence": "gaps CONTRADICTIONS 'Direction after a loss': downgrade(Rock→Scissors) > upgrade.",
+          "suggested_fix": "\"손을 바꿀 때는 대부분의 데이터에서 '진 손에게 지는 손'(바위로 졌으면 가위)으로 가장 많이 바꿉니다.\""
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "일본의 자기보고 설문에만 근거합니다. 실제 플레이를 관찰한 호주 데이터에서는 차이가 1.5%p 미만이었습니다",
+          "problem": "속설은 '첫 손'에 관한 것인데, 반박 근거는 '전체 손 비율'입니다. 같은 호주 데이터에서 첫 손은 속설과 같은 방향이었습니다(유의하지 않음). 근거도 설문만이 아니라 세계RPS협회 주장도 있습니다.",
+          "evidence": "gaps G2-F4: 전체 비율 차이 <1.5pp; 첫 손 여자 가위 53%, 남자 바위 41%, Fisher p=0.18 (n=60).",
+          "suggested_fix": "'근거는 일본 자기보고 설문과 세계RPS협회 주장뿐입니다. 실제 플레이를 기록한 호주 데이터(60명)에서는 전체 손 비율의 남녀 차이가 1.5%p 미만이었고, 첫 손은 같은 방향(여자 가위 53%, 남자 바위 41%)이었지만 표본이 작아 유의하지 않았습니다'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "출처와 표본이 불분명한 수치입니다(세계RPS협회 웹페이지)",
+          "problem": "출처 표기가 틀렸습니다. 이 수치는 대중 기사(Linux Journal 2017 등)가 세계RPS협회를 출처로 든 것입니다. 협회 보관 페이지에서는 '가위 29.6%'만 확인됩니다.",
+          "evidence": "baserates C03; citation_errors baserates S20: 'Neither archived WRPS page examined... contains 35.4 or 35.0.'",
+          "suggested_fix": "'연구 결과가 아니라 대중 기사들이 세계RPS협회를 출처로 인용한 수치입니다. 협회 보관 페이지에서는 \"가위 29.6%\"만 확인되고 표본도 밝혀져 있지 않습니다'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "한국가위바위보협회 규칙은 경기 중 관중이나 코치가 신호를 보내면 실격입니다.",
+          "problem": "원문은 '실격될 수 있음'입니다. 이 규칙은 2008년 웹 보관본의 개인전 규칙이고 단체전 규칙은 없습니다. 미국 PBR 대회처럼 손 신호를 허용한 곳도 있어 대회마다 다릅니다.",
+          "evidence": "team MF2 'can lead to disqualification'; CAVEATS '2008 archive... individual rules only, with no team rules'; MF3 PBR 'hand signals are permitted'.",
+          "suggested_fix": "'한국가위바위보협회 규칙(2008년 보관본, 개인전 기준)에서는 경기 중 관중이나 코치가 신호를 보내면 실격될 수 있습니다. 단체전 규칙은 공개된 것이 없으니 주최 측에 확인하세요.'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "상대의 이력에 바위가 42% 이상이면 사람들은 보를 46.6% 냈습니다.",
+          "problem": "이 결과는 온라인 게임에서 화면에 상대의 첫 손 기록표가 표시된 조건입니다. 현장에서는 기억에 의존해야 하므로 효과가 더 작을 수 있다는 단서가 빠졌습니다.",
+          "evidence": "foundations:C18 CAVEATS 'In the app, history was shown on screen. Live opponents must remember it, which weakens the effect. First throws only.'",
+          "suggested_fix": "'페이스북 게임에서 화면에 상대의 첫 손 기록이 표시될 때, 그 기록에 바위가 42% 이상이면 사람들은 보를 46.6% 냈습니다(현장에서는 효과가 더 작을 수 있음).'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "출전 순서는 상대의 순서를 알고, 특정 선수에 대한 정보가 있을 때만 의미가 있습니다. 그 외에는 수학적으로 결과에 영향이 없습니다.",
+          "problem": "검증 단계에서 '때만'을 '주로'로 고쳤습니다. 상대별 상성이 여러 개 있으면 상대 순서를 몰라도 최대 약 1.7%p 차이가 납니다. 대표전에서 실제로 쓸 수 있는 수단은 순서가 아니라 누가 나가느냐입니다.",
+          "evidence": "team:C10 (corrected) 'order matters mainly, not only, when the opposing order is known... up to about 1.7 points'; C3 'levers are who plays and which matchups you can scout'.",
+          "suggested_fix": "'출전 순서는 주로 상대 순서를 알고 특정 선수에 대한 정보가 있을 때 의미가 있습니다. 정보가 없으면 영향이 거의 없고, 대표전에서는 순서보다 누구를 내보낼지가 중요합니다.'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "**(c) 사회자 vs 전원 (지거나 비기면 탈락)**",
+          "problem": "제목은 '비겨도 탈락'인데, 바로 아래 표 둘째 줄은 '진 사람만 탈락' 규칙이라 서로 맞지 않습니다. '균등 배분 최적'이 사회자가 무작위로 낸다는 가정의 결과라는 점도 빠졌습니다.",
+          "evidence": "team:C7 rule A/B; CAVEATS 'Assumes the host's hand is independent of the team's plan'.",
+          "suggested_fix": "'**(c) 사회자 1명 vs 참가자 전원**' 그리고 '…수학적으로 최대가 됩니다(사회자가 무작위로 낸다는 가정).'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "- 4인 팀이라면 3명은 X, 1명은 X가 이기는 손을 냅니다. 승률은 86% / 78%입니다.",
+          "problem": "복식 편 가르기처럼 흔한 2인 팀의 경우가 빠졌습니다. 2인 팀은 규칙에 따라 결론이 정반대입니다.",
+          "evidence": "team:C6/MF1; xcheck/simultaneous.py: 2v2 규칙 I 모든 조합 0.500, 규칙 II 서로 다른 손 0.583, 같은 손 0.333.",
+          "suggested_fix": "'- 4인 팀이라면 3명은 X, 1명은 X에게 지는 손을 냅니다. 승률은 86% / 78%입니다. 2인 팀은 \"승자가 많은 팀\" 규칙에서는 무엇을 내도 50%이고, \"한 팀에서만\" 규칙에서는 서로 다른 손을 내면 58%(같은 손이면 33%)입니다.'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "강제로 멈추게 한 조건의 승률이 가장 낮았습니다(33.5%).",
+          "problem": "컴퓨터 상대 키보드 실험에서 약 0.4초 추가 입력을 강제한 조건입니다. 멈춤 없는 조건과의 차이는 약 2%p로 작습니다. 이 맥락이 빠져 강한 반증처럼 읽힙니다.",
+          "evidence": "nonverbal MF1: 33.5% vs 35.1%(no pause) vs 37.3%(voluntary); 유의한 것은 variable vs fixed 비교; computer opponents.",
+          "suggested_fix": "'컴퓨터 상대 실험에서 강제로 멈추게 한 조건의 승률이 가장 낮았습니다(33.5%, 멈춤 없음 35.1%).'"
+        },
+        {
+          "severity": "minor",
+          "draft_quote": "- [A] Brockbank & Vul (2021) *Games* 12(3):70 · (2024) *Cognitive Psychology* 151:101654 (공개 원자료 재분석 포함)",
+          "problem": "본문의 '미국 116명' 고정 대결 원자료는 Brockbank & Vul (2020) CogSci 42 실험인데 목록에 없습니다(Games 2021은 이를 재분석한 논문). 본문 근거 중 60ms/225ms(Katsuki 등 2015; Omori 1999, Fukunaga 2005 재인용), '늦게 낸 사람 패배'(한국민족문화대백과사전), 협회 규칙(2008 보관본)의 출처도 목록에 없습니다. 조대현(2010)은 팀 게임이 아니라 승부결정 모의실험 논문입니다.",
+          "evidence": "sources S14 'Brockbank E, Vul E (2020)... Proceedings of the Annual Meeting of the Cognitive Science Society 42'; M03 rps_v1_data = 2020/2021 dyads; nonverbal S6, N1/S9; team S18, MS1; team S2 제목.",
+          "suggested_fix": "추가: '- [A] Brockbank & Vul (2020) *Proc. CogSci* 42 (미국 116명 원자료)' / '- [B] Katsuki, Yamakawa & Ishikawa (2015) HRI Extended Abstracts · Omori et al. (1999) *Neurosci Res* 33:317 (Fukunaga 2005 재인용)' / '- [C] 한국민족문화대백과사전 \"가위바위보\" · 한국가위바위보협회 경기 규칙(2008년 웹 보관본)'. 조대현 항목: '가위바위보 승부결정·팀 게임 연구'."
+        }
+      ],
+      "verified_ok_summary": "I checked the draft against angleA–E, gaps, model_report and wf_result sources, and re-ran xcheck/bo3_rules.py, rules_check.py, formats.py and simultaneous.py. These checked out: Bo3 for the base rule (R9) is 0.559 US, 0.537 AU and 0.553 JP, and halving the opponent's biases gives 0.518–0.529. Against Zhejiang the same rule gives 0.447, which matches the ~45% claim. After-tie edges: US +5.8 [2.4, 9.1], AU +5.4 [1.2, 9.7], JP +8.4, Zhejiang about −10. Repeating your winning hand ranges −0.5 to −18 in 6 tables. The X− reply after the opponent's loss ranges +5 to +18, and −8 in Zhejiang. The opponent's win-stay is 36–53% (Zhejiang and computer labs) versus 26–32% (US/AU/JP). Format amplification: q=0.55 gives Bo3 57.5% and the 5-member points format 63.8%. Relay equals best-of-(2n−1). Host game: 69→100→11% and 76→96%; last-one-standing 25→~30%. Simultaneous 3v3: 68.75/68.4, 31/47, 50/25; 4v4: 86/78. Also correct: 하나빼기 (2/3 keep the shared hand), 묵찌빠 V=2/3, Batzilis 2.63M matches and +1.49pp, Srihaput 44→38% and 79%, G3-F1 +1.6/+27pp, McCracken & Bowling 15 of 24 bots, Wong 7 of 99 (3/51 + 4/48), timing 60/225 ms, Wang 2014 post-loss 36.5% vs 27.6%, the third-repeat range 28–36%, and the Cook/Aczel/Ito null replications. Reference metadata (journals, years, volumes, article numbers) matches wf_result sources for Wang/Xu/Zhou, Batzilis, Dyson 2016/2021, Forder & Dyson, Srihaput, Brockbank & Vul 2021/2024, Moerel 2025, Komai 2022, Wang L 2020, Wong 2021, Guseva 2023, Cook 2012, Aczel 2012, Ito 2017, Cho 2010/2019/2020 (23(6)/32(2)/33(5)), Billings 1999 and McCracken & Bowling 2004. No wrong year, volume or article number was found. All hand-direction examples in the draft (Rock-Rock tie → Scissors, Paper beats Rock → Scissors, R-R-S / P-P-R / S-S-P, lost with Rock → Scissors) are directionally correct; the problems are wording ambiguities only."
+    }
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Review"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "review:numbers-directions",
+      "phaseIndex": 1,
+      "phaseTitle": "Review",
+      "agentId": "a495f7ee9bb624382",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791256699831,
+      "queuedAt": 1791256699821,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Re-ran xcheck/rules_check.py, simultaneous.py, bo3_rules.py…",
+      "promptPreview": "Files (all local; read them with Read/Bash; no web access needed):\n- /private/tmp/claude-501/-Users-baemanjin-orca-projects-----/9282a235-4fc4-4c50-add0-37a1d5aaa853/scratchpad/draft_ko.md : the Korean draft under review (Korean hand names: 바위=Rock, 보=Paper, 가위=Scissors; Rock beats Scissors, Scissors beats Paper, Paper beats Rock).\n- /private/tmp/claude-501/-Users-baemanjin-orca-projects-----/9282…",
+      "promptFramed": true,
+      "lastProgressAt": 1791256928799,
+      "tokens": 144248,
+      "toolCalls": 15,
+      "durationMs": 228967,
+      "resultPreview": "{\"issues\":[{\"severity\":\"major\",\"draft_quote\":\"같은 상대와 붙은 사람 대 사람 데이터(미국·호주·일본)에서는 이긴 사람도 반복을 피했습니다(26~32%).\",\"problem\":\"일본 500명 데이터(Komai)를 사람 대 사람 대결로 잘못 설명했습니다. 이 데이터는 GA/GP 컴퓨터 프로그램을 상대로 키보드로 50판씩 둔 기록입니다. 바로 앞 줄의 '컴퓨터를 상대로 한 실험 → 이긴 사람이 반복'이라는 구분과도 어긋납니다. 일본 데이터는 컴퓨터가 상대인데도 승리 후 반복률이 30.5%로, 반복 경향이 없었습니다.\",\"evidence\":\"gaps.txt G1-F1의 DESIGN 항목: '50 consecutive keyboard RPS games against an adap…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "review:overclaim-clarity",
+      "phaseIndex": 1,
+      "phaseTitle": "Review",
+      "agentId": "ab1ef55b1b55b7de2",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1791256699831,
+      "queuedAt": 1791256699821,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "I checked the draft against angleA–E, gaps, model_report an…",
+      "promptPreview": "Files (all local; read them with Read/Bash; no web access needed):\n- /private/tmp/claude-501/-Users-baemanjin-orca-projects-----/9282a235-4fc4-4c50-add0-37a1d5aaa853/scratchpad/draft_ko.md : the Korean draft under review (Korean hand names: 바위=Rock, 보=Paper, 가위=Scissors; Rock beats Scissors, Scissors beats Paper, Paper beats Rock).\n- /private/tmp/claude-501/-Users-baemanjin-orca-projects-----/9282…",
+      "promptFramed": true,
+      "lastProgressAt": 1791257207796,
+      "tokens": 218481,
+      "toolCalls": 31,
+      "durationMs": 506920,
+      "resultPreview": "{\"issues\":[{\"severity\":\"major\",\"draft_quote\":\"내가 이겼을 때 | 상대가 방금 낸 손에 **지는** 손 (= 내가 이긴 손을 이기는 손) | 내 보가 상대 바위를 이김 → 가위\",\"problem\":\"'내가 이긴 손'은 한국어로 '내가 이긴 상대의 손'(바위)으로도 읽힙니다. 그렇게 읽으면 '바위를 이기는 손'=보, 즉 이길 때 낸 손을 그대로 반복하게 되는데, 이것이 데이터상 가장 나쁜 선택입니다. 같은 표현이 '내가 이긴 손을 그대로 다시 내면'과 3(b)의 '연승자가 직전에 이긴 손을 이기는 손'에도 나옵니다.\",\"evidence\":\"xcheck/rules_check.py 'I WON: repeat my winning hand': −0.005/−0.182/−0.179/…"
+    }
+  ],
+  "totalTokens": 362729,
+  "totalToolCalls": 46
+}

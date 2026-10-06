@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f6fa">
+<meta name="description" content="이번 판에 낼 손을 확인하고, 상대가 낸 손을 입력해 다음 추천을 받아보세요.">
+<title>가위바위보 코치</title>
+<style>
+  :root { color-scheme: light; --bg:#f5f6fa; --card:#fff; --text:#20263a; --muted:#657087; --line:#e7eaf2; --accent:#5146d9; --soft:#efedff; --hero:#f3f1ff; --shadow:0 8px 32px #28315506; }
+  @media (prefers-color-scheme:dark) {
+    :root { color-scheme:dark; --bg:#141620; --card:#1e2230; --text:#f0f1f8; --muted:#a4aec3; --line:#33394b; --accent:#b0a6ff; --soft:#353050; --hero:#29263e; --shadow:none; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; font-size:15px; line-height:1.6; }
+  button { font:inherit; cursor:pointer; -webkit-tap-highlight-color:transparent; }
+  button:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+  button:disabled { cursor:default; opacity:.4; }
+  main { max-width:640px; margin:auto; padding:36px 32px calc(24px + env(safe-area-inset-bottom)); }
+  .topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:24px; }
+  .brand { display:flex; align-items:center; gap:12px; }
+  .brand-icon { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--accent); color:var(--card); font-size:24px; }
+  h1 { margin:0; font-size:19px; letter-spacing:-.7px; }
+  .brand p { margin:0; font-size:12px; color:var(--muted); }
+  .secondary { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:42px; padding:9px 14px; border:1px solid var(--line); border-radius:12px; color:var(--muted); background:var(--card); font-size:13px; font-weight:600; }
+  .refresh { flex-shrink:0; width:52px; height:52px; padding:10px; border:1px solid var(--line); border-radius:16px; background:var(--card); color:var(--accent); display:grid; place-items:center; }
+  .refresh svg { width:30px; height:30px; }
+  .refresh:hover { background:var(--soft); border-color:var(--accent); }
+  .refresh:active { transform:scale(.95); }
+  .secondary:hover:not(:disabled) { color:var(--accent); border-color:var(--accent); }
+  h2 { margin:6px 0; font-size:30px; letter-spacing:-1.3px; line-height:1.35; }
+  .workspace { display:grid; gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); }
+  .rec { padding:28px; background:linear-gradient(145deg,var(--hero),var(--card)); border:2px solid var(--accent); display:flex; flex-direction:column; box-shadow:0 12px 36px #5146d90c; }
+  .rec-heading { margin:0; color:var(--accent); font-size:26px; font-weight:800; text-align:center; letter-spacing:-1px; }
+  .recommendation { text-align:center; padding:20px 0 21px; }
+  .hand { display:grid; place-items:center; margin:auto; width:160px; height:160px; font-size:108px; line-height:1; border:1px solid var(--line); background:var(--card); border-radius:50%; box-shadow:0 8px 24px #5146d908; }
+  .name { color:var(--accent); font-size:52px; line-height:1.25; letter-spacing:-1.5px; font-weight:800; margin:15px 0 3px; }
+  .recommendation p { margin:0; color:var(--text); font-size:15px; font-weight:600; }
+  .reason { margin-top:auto; display:flex; align-items:flex-start; gap:10px; border-top:1px solid var(--line); padding-top:17px; }
+  .reason-icon { color:var(--accent); flex-shrink:0; }
+  .reason strong { font-size:12px; font-weight:700; }
+  .why { margin:4px 0 0; color:var(--muted); font-size:13px; word-break:keep-all; overflow-wrap:anywhere; }
+  .play { padding:22px; display:flex; flex-direction:column; }
+  h3 { margin:0 0 4px; font-size:18px; letter-spacing:-.7px; line-height:1.4; }
+  .play-description { margin:0; color:var(--muted); font-size:13px; word-break:keep-all; }
+  .opp { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:18px 0 0; }
+  .opp button { position:relative; min-height:100px; border:1px solid var(--line); border-radius:18px; color:var(--text); background:var(--bg); font-size:15px; font-weight:700; transition:transform .15s,background .15s,border-color .15s; }
+  .opp button:hover { transform:translateY(-3px); background:var(--soft); border-color:var(--accent); }
+  .opp button:active { transform:scale(.96); }
+  .opp .emoji { display:block; font-size:42px; line-height:1.4; margin-bottom:4px; }
+  .key { display:inline-block; color:var(--muted); font-size:10px; font-weight:500; margin-left:5px; }
+  .input-footer { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:16px; }
+  .shortcut { font-size:11px; color:var(--muted); }
+  .input-footer .secondary { min-height:36px; padding:6px 10px; font-size:12px; }
+  .help { margin-top:20px; color:var(--muted); font-size:14px; background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; }
+  .help summary { cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 20px; color:var(--text); font-weight:700; list-style:none; }
+  .help summary::-webkit-details-marker { display:none; }
+  .help summary::after { content:"＋"; color:var(--accent); font-size:20px; font-weight:400; }
+  .help[open] summary::after { content:"−"; }
+  .help summary:focus-visible { outline-offset:-4px; }
+  .help-body { border-top:1px solid var(--line); padding:20px; word-break:keep-all; overflow-wrap:anywhere; }
+  .help h3 { margin:0 0 12px; color:var(--text); font-size:15px; }
+  .help h3:not(:first-child) { margin-top:24px; }
+  .help-steps { list-style:none; margin:0; padding:0; counter-reset:step; display:grid; gap:12px; }
+  .help-steps li { counter-increment:step; display:flex; align-items:flex-start; gap:10px; }
+  .help-steps li::before { content:counter(step); display:grid; place-items:center; flex:0 0 24px; height:24px; border-radius:50%; color:var(--accent); background:var(--soft); font-size:12px; font-weight:700; }
+  .help strong { color:var(--text); font-weight:600; }
+  .help-tools { margin:16px 0 0; padding:12px 14px; background:var(--bg); border-radius:12px; font-size:13px; }
+  .help-tools p { margin:0; }
+  .help-tools p + p { margin-top:8px; }
+  .help-rules { margin:0; display:grid; gap:12px; }
+  .help-rules dt { color:var(--text); font-size:13px; font-weight:700; }
+  .help-rules dd { margin:3px 0 0; font-size:13px; }
+  .help-note { margin:16px 0 0; padding-top:14px; border-top:1px solid var(--line); font-size:12px; line-height:1.8; }
+  dialog { width:calc(100% - 40px); max-width:380px; padding:26px; color:var(--text); background:var(--card); border:1px solid var(--line); border-radius:22px; box-shadow:0 24px 80px #0003; }
+  dialog::backdrop { background:#11182766; backdrop-filter:blur(3px); }
+  dialog h2 { font-size:21px; margin:0 0 10px; }
+  dialog p { font-size:14px; color:var(--muted); margin:0 0 24px; word-break:keep-all; }
+  .dialog-actions { display:flex; justify-content:flex-end; gap:8px; }
+  .primary { padding:10px 16px; min-height:42px; border:0; border-radius:12px; background:var(--accent); color:var(--card); font-weight:700; font-size:13px; }
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  @media (max-width:700px) {
+    main { max-width:480px; padding:20px 18px calc(20px + env(safe-area-inset-bottom)); }
+    .topbar { margin-bottom:24px; } .brand-icon { width:38px; height:38px; font-size:21px; border-radius:12px; }
+    h1 { font-size:17px; } .brand p { font-size:11px; } .topbar .secondary { padding:8px 10px; font-size:12px; }
+    .workspace { grid-template-columns:1fr; gap:14px; } .card { border-radius:20px; }
+    .rec { padding:20px; } .rec-heading { font-size:24px; } .recommendation { padding:14px 0 16px; } .hand { width:120px; height:120px; font-size:80px; }
+    .name { font-size:44px; margin:10px 0 2px; } .reason { padding-top:12px; } .play { padding:20px; }
+    h3 { font-size:17px; } .opp { margin:16px 0 0; } .opp button { min-height:100px; border-radius:15px; } .opp .emoji { font-size:36px; }
+    .shortcut,.key { display:none; } .input-footer { justify-content:flex-end; margin-top:12px; }
+  }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition:none !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">✌</span><div><h1>가위바위보 코치</h1><p>다음 한 수를 함께 생각해요</p></div></div>
+    <button class="refresh" id="reset" type="button" aria-label="처음부터 다시 시작" title="처음부터 다시 시작"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.65 6.35A7.95 7.95 0 0 0 12 4a8 8 0 1 0 7.93 9h-2.02A6 6 0 1 1 12 6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"/></svg></button>
+  </header>
+  <div class="workspace">
+    <section class="rec card" aria-labelledby="recommendation-heading">
+      <h2 class="rec-heading" id="recommendation-heading">이번 판 추천</h2>
+      <div class="recommendation"><div class="hand" id="recHand" aria-hidden="true">✊</div><div class="name" id="recName">바위</div><p>이 손을 내보세요</p></div>
+      <div class="reason"><span class="reason-icon" aria-hidden="true">✦</span><div><strong>이렇게 추천했어요</strong><p class="why" id="recWhy"></p></div></div>
+    </section>
+    <section class="play card" aria-labelledby="input-heading">
+      <h3 id="input-heading">상대가 낸 손을 선택하세요</h3><p class="play-description">누르면 다음 판에 낼 손을 바로 추천해 드려요.</p>
+      <div class="opp" id="opp"></div>
+      <div class="input-footer"><span class="shortcut">키보드 1 · 2 · 3으로도 입력할 수 있어요</span><button class="secondary" id="undo" type="button" disabled><span aria-hidden="true">↶</span> 한 판 되돌리기</button></div>
+    </section>
+  </div>
+  <details class="help">
+    <summary>코치 사용법과 추천 기준</summary>
+    <div class="help-body">
+      <h3>이렇게 사용하세요</h3>
+      <ol class="help-steps">
+        <li><span><strong>추천 손 확인하기</strong><br>‘이번 판 추천’에 표시된 손을 내세요.</span></li>
+        <li><span><strong>상대 손 선택하기</strong><br>한 판이 끝나면 상대가 낸 손을 누르세요.</span></li>
+        <li><span><strong>다음 추천으로 이어가기</strong><br>새로 추천한 손으로 다음 판을 진행하세요.</span></li>
+      </ol>
+      <div class="help-tools">
+        <p><strong>잘못 눌렀나요?</strong> ‘한 판 되돌리기’를 누르고 상대 손을 다시 선택하세요.</p>
+        <p><strong>상대가 바뀌었나요?</strong> 오른쪽 위의 리프레시 아이콘을 눌러 처음부터 추천받으세요.</p>
+      </div>
+      <h3>어떻게 추천하나요?</h3>
+      <dl class="help-rules">
+        <div><dt>첫 판이거나 예측하기 어려울 때</dt><dd>바위·보·가위 중 하나를 무작위로 골라요.</dd></div>
+        <div><dt>대결을 이어갈 때</dt><dd>직전 판에서 낸 손과 결과를 참고해 상대의 다음 손을 예상해요.</dd></div>
+        <div><dt>같은 손으로 두 번 연속 비겼을 때</dt><dd>그 손을 이기는 손을 다음 한 판에 추천해요.</dd></div>
+        <div><dt>상대가 같은 손을 자주 반복할 때</dt><dd>입력이 충분히 쌓이면 반복 습관에 맞춰 추천을 바꿔요.</dd></div>
+      </dl>
+      <p class="help-note">추천은 상대의 습관을 바탕으로 한 예상이에요. 항상 맞지는 않아요.<br>추천에 필요한 손 정보는 이 브라우저에 자동으로 저장돼요.</p>
+    </div>
+  </details>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+</main>
+<dialog id="resetDialog" aria-labelledby="reset-heading" aria-describedby="reset-description"><h2 id="reset-heading">처음부터 다시 시작할까요?</h2><p id="reset-description">지금까지 입력한 손 정보가 초기화돼요. 첫 손부터 다시 추천해 드릴게요.</p><div class="dialog-actions"><button type="button" class="secondary" id="cancelReset" autofocus>계속 대결하기</button><button type="button" class="primary" id="confirmReset">새로 시작하기</button></div></dialog>
+<script>
+  // 0 바위, 1 보, 2 가위. 기존 추천 규칙을 유지합니다.
+  const HANDS = [{ name:"바위", icon:"✊", object:"바위를", subject:"바위가" }, { name:"보", icon:"✋", object:"보를", subject:"보가" }, { name:"가위", icon:"✌️", object:"가위를", subject:"가위가" }];
+  const BEATS = [2, 0, 1];
+  const BEATEN_BY = [1, 2, 0];
+  const STORE_KEY = "rps-coach-v2";
+  const $ = id => document.getElementById(id);
+  let history = [];
+  let current = null;
+
+  function randomHand() {
+    const buf = new Uint8Array(1);
+    do { crypto.getRandomValues(buf); } while (buf[0] >= 255);
+    return buf[0] % 3;
+  }
+  function outcome(me, opp) { return me === opp ? "T" : BEATS[me] === opp ? "W" : "L"; }
+  function isRepeater(h) {
+    let repeated = 0;
+    for (let i = 1; i < h.length; i++) if (h[i].opp === h[i - 1].opp) repeated++;
+    return h.length - 1 >= 20 && repeated / (h.length - 1) >= .4;
+  }
+  function strategy(h) {
+    if (!h.length) return { hand:null, why:"아직 상대의 습관을 모르니, 첫 손은 무작위로 골랐어요." };
+    const last = h[h.length - 1], prev = h[h.length - 2];
+    const res = outcome(last.me, last.opp), opp = last.opp, name = HANDS[opp];
+    if (res === "T" && prev && prev.opp === opp && outcome(prev.me, prev.opp) === "T")
+      return { hand:BEATEN_BY[opp], why:`${name.name}로 두 번 연속 비겼어요. 이번에는 ${name.object} 이기는 손을 추천해요.` };
+    if (isRepeater(h)) {
+      if (res === "W") return { hand:opp, why:`상대가 같은 손을 자주 반복해요. 방금 상대가 낸 ${name.object} 내보세요.` };
+      return { hand:BEATEN_BY[opp], why:`상대가 같은 손을 자주 반복해요. 다시 ${name.subject} 나올 때 이기는 손을 추천해요.` };
+    }
+    if (res === "L") return { hand:null, why:"이번에는 상대의 다음 손을 예측하기 어려워요. 무작위로 골라 다시 시작해 볼게요." };
+    return { hand:BEATS[opp], why:`상대가 방금 낸 ${name.object} 바꿀 것으로 보고 골랐어요. 같은 손을 다시 내면 지게 돼요.` };
+  }
+  function recommend(h) { const s = strategy(h); return { hand:s.hand ?? randomHand(), why:s.why }; }
+  function save() { try { localStorage.setItem(STORE_KEY, JSON.stringify({ history, current })); } catch (_) {} }
+  function load() {
+    try {
+      const s = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+      if (!s || !Array.isArray(s.history) || !s.history.every(r => r && [0,1,2].includes(r.me) && [0,1,2].includes(r.opp))) return;
+      history = s.history;
+      if (s.current && [0,1,2].includes(s.current.hand)) current = { hand:s.current.hand, why:strategy(history).why };
+    } catch (_) {}
+  }
+  function next() { current = recommend(history); save(); render(); }
+  function render() {
+    $("recHand").textContent = HANDS[current.hand].icon;
+    $("recName").textContent = HANDS[current.hand].name;
+    $("recWhy").textContent = current.why;
+    $("undo").disabled = !history.length;
+  }
+  function recordHand(i) {
+    if ($("resetDialog").open) return;
+    history.push({ me:current.hand, opp:i });
+    if (navigator.vibrate) navigator.vibrate(15);
+    next();
+    $("announcement").textContent = `다음 판 추천은 ${HANDS[current.hand].name}입니다. ${current.why}`;
+  }
+  HANDS.forEach((h,i) => {
+    const button = document.createElement("button"); button.type = "button";
+    button.innerHTML = `<span class="emoji" aria-hidden="true">${h.icon}</span>${h.name}<span class="key" aria-hidden="true">${i + 1}</span>`;
+    button.setAttribute("aria-label", `상대가 ${h.object} 냈어요`);
+    button.addEventListener("click", () => recordHand(i)); $("opp").appendChild(button);
+  });
+  $("undo").addEventListener("click", () => {
+    if (!history.length) return;
+    const last = history.pop();
+    current = { hand:last.me, why:"방금 입력을 취소했어요. 상대가 낸 손을 다시 선택해 주세요." };
+    save(); render();
+    $("announcement").textContent = `입력을 취소했어요. 추천 손은 ${HANDS[current.hand].name}입니다. 상대가 낸 손을 다시 선택해 주세요.`;
+  });
+  function reset() {
+    history = []; next();
+    $("announcement").textContent = `처음부터 다시 시작해요. 첫 판 추천은 ${HANDS[current.hand].name}입니다.`;
+  }
+  $("reset").addEventListener("click", () => { if (history.length) $("resetDialog").showModal(); else reset(); });
+  $("cancelReset").addEventListener("click", () => $("resetDialog").close());
+  $("confirmReset").addEventListener("click", () => { $("resetDialog").close(); reset(); });
+  document.addEventListener("keydown", e => {
+    if (e.repeat || e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || $("resetDialog").open || e.target.closest("input,textarea,select,[contenteditable]")) return;
+    if (["1","2","3"].includes(e.key)) { e.preventDefault(); recordHand(Number(e.key) - 1); }
+  });
+  load(); if (current) { save(); render(); } else next();
+</script>
+</body>
+</html>

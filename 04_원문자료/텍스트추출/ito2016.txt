@@ -1,0 +1,484 @@
+2016 IEEE International Conference on Automation Science and Engineering (CASE)
+Fort Worth, TX, USA, August 21-24, 2016
+
+
+
+
+      Tracking and Recognition of a Human Hand in Dynamic Motion
+                  for Janken (rock–paper–scissors) Robot
+                   Koichiro Ito† , Tomohiro Sueishi†, Yuji Yamakawa†, and Masatoshi Ishikawa†
+
+
+   Abstract— In this paper, we focus on a human hand recog-               detectable human motion. If we consider using a wide-angle
+nition system for human–robot interaction. The motion of                  lens, there is a trade-off relation between the recognition area
+the human hand is so dynamic that the hand needs to be                    and the image resolution. Therefore, it is difficult to maintain
+tracked at high speed, and non-blurred images are required
+to achieve stable and correct recognition. Moreover, a wide               sufficient resolution to recognize a hand with fixed cameras.
+recognition area is necessary for natural interaction. To achieve            Second, latency, which humans perceive, results in poor
+these aims, we constructed a new active sensing system that               operability. In general, humans can recognize latency of
+can actively track and recognize the human hand by using a                about 6 ms in continuous interaction [7] and 30 ms in impul-
+high-speed vision system. An application that clearly requires            sive events [8]. Latency does not matter in applications where
+high-speed recognition and actuation is the rock–paper–scissors
+game between a human and a robot, and we focused on this                  humans simply click on a button. However, latency is critical
+task to demonstrate the proposed system. In this situation, we            in dynamic environments, for example, in tele-manipulation
+track a human hand at high speed and detect its sign (rock,               requiring immersion or video games requiring continuous
+paper, or scissors) correctly in every frame. Our experiments             input with gestures. In addition, current vision systems can
+showed that the robot hand formed its sign to beat the human              only recognize a hand at a video frame rate of 30 fps, and
+opponent in natural interaction thanks to its high speed and
+wide recognition area.                                                    are thus affected by blurring of the image. Therefore, an
+                                                                          interaction system that recognizes hand gestures and operates
+                      I. I NTRODUCTION                                    an actuator in dynamic interactions requires a vision system
+   In recent years, many studies have been conducted in                   having a high frame rate because stable input is required
+the field of human–computer interaction (HCI) and human–                  for system control, and latency should not be perceptible to
+robot Interaction (HRI). In these fields, robot systems recog-            humans.
+nize human motion in order to estimate human intentions                      We constructed a new active sensing system based on a
+and emotions, and the robot systems react appropriately                   high-speed tracking system [9], a specially designed tracking
+according to the recognition result. Gestures are now widely              technique [10], and high-speed image processing for hand
+adopted as inputs for many systems. In particular, the hand               recognition in dynamic motion. Active sensing means that
+can convey a lot of meaning, and recognition of hand shapes               the system actively tracks and recognizes the target at the
+and gestures has been widely studied [1], [2].                            same time. Our system can always capture the hand at the
+   Hand gestures are generally recognized by using a glove-               center of the image, even when the human user swings his or
+based method or by a vision-based method. In the glove-                   her arm violently. We also introduce a fast sign (hand shape)
+based method [3], the human user wears a glove on which                   detection algorithm for recognizing a hand in motion. As a
+many sensors are attached to measures the joint angles,                   result, we achieved
+movement, rotation etc. On the other hand, the vision-based                  1) high-speed active hand tracking,
+method does not use any wearable devices and instead                         2) fast sign recognition,
+recognizes a bare hand using a camera. These days, many                      3) and a combination of 1) and 2) in dynamic situations.
+studies are being conducted utilizing Kinect sensors to detect            Moreover, to evaluate the performance our active sensing
+hand gestures [4], [5], [6].                                              system, we applied to a Janken (rock-paper-scissors) robot
+   In this paper, we focus on two problems that are important             [11] and controlled the robot’s hand according to human hand
+in achieving natural interaction: the recognition area and                signs. The existing Janken robot system can only recognize
+latency.                                                                  a human hand when it appears directly in front of the vision
+   First, regarding the problem of the recognition area, when             system, which restricts the motion of the human, thereby
+we consider vision-based hand recognition, it is necessary to             impairing the range of recognizable hand gestures. In our
+note that the human hand and fingers have highly dynamic                  demonstration, we achieved a wide recognition area and
+characteristics. The hand movement area is so large that                  high-speed response (recognition and motion) between the
+vision systems cannot completely capture the motion within                human and the robot, which allowed more natural interaction.
+a limited angle of view. Cameras are usually fixed, which
+                                                                                             II. P ROPOSED S YSTEM
+results in a small recognition area and restricts the range of
+                                                                            Fig.1 shows a schematic diagram of the proposed system.
+  † K. Ito, T. Sueishi, Y. Yamakawa, and M. Ishikawa are                  Our system consists of a recognition system for tracking
+with Graduate School of Information Science and Tech-
+nology, The University of Tokyo, Bunkyo, Tokyo, Japan                     and recognition of a hand and an actuation system. The
+koichiro ito@ipc.i.u-tokyo.ac.jp.                                         recognition system comprises a high-speed gaze direction
+
+978-1-5090-2409-4/16/$31.00 ©2016 IEEE                              891
+                                Visual feedback
+                                for hand control                                                                                       1
+                                    Real time
+                                    controller
+                                                                                                                                      0.8
+
+
+
+
+                                                                                                                   Joint angle deg.
+Captured image             High-speed              High-speed
+                           vision                  robot hand                                                                         0.6
+
+
+                                                                                                                                      0.4
+        Projector
+
+                                                                Human hand                                                                                      Reference
+                                                                                                                                      0.2                       Joint Angle
+                           Half mirror
+                                                                                                                                                                Convergence region
+
+  Visual feedback                                                   Retroreflective background                                         0
+  for mirror control   Galvanometer mirrors                                                                                                 0   0.01    0.02         0.03        0.04
+                          1ms Auto Pan-Tilt                                                                                                            Time s
+
+                                                                                                       Fig. 2. Robot hand response: The blue plot is the reference joint angle.
+                          Fig. 1.        The proposed system
+                                                                                                       The red plot is the actual joint angle. The black plot is the convergence
+                                                                                                       region, ±10 percent around the reference.
+
+controller (1 ms Auto Pan-Tilt) [9], a projector, and a retrore-
+flective background. The actuation system comprises a high-                                            reflection setup can provide a larger recognizable distance
+speed, multi-fingered hand [12] and a real-time controller for                                         than simple illumination.
+controlling the robot hand motion.
+   The 1ms Auto Pan-Tilt tracks a human hand at high speed                                             B. Actuation System
+and captures non-blurred images of the hand to enable sign                                                The robot hand needs to complete its movement before the
+recognition. The robot hand is then controlled to display a                                            hand forms a sign, requiring a high-speed actuation system.
+sign that beats the human at such high speed that the human                                            In our research, we use a high-speed multi-fingered robot
+cannot recognize its motion. Our goal was to construct a                                               hand [12] with three fingers and a wrist which has two
+system that can be actuated at high speed in response to                                               degrees of freedom (DOF). Each finger is divided into a
+a highly dynamic human gesture. We demonstrated stable                                                 root link and a top link, and each joint consists of a small
+tracking in hand recognition and the high-speed performance                                            harmonic drive gear R and a high-power mini-actuator. The
+of the system through a rock–paper–scissors game between                                               motors are brushless and are highly responsive because the
+a human and a robot.                                                                                   gears have no backlash. Consequently, the hand can close its
+                                                                                                       joints at a rate of 180◦ /0.1 s. This high responsiveness was
+A. Recognition System                                                                                  also confirmed in our previous system [11], and 30 ms was
+   The dynamic behavior of a human hand in the rock–paper–                                             needed to finish forming the signs (rock, paper, or scissors)
+scissors game is very fast, and a vision system needs to                                               after recognizing the human’s hand sign. In this research,
+recognize its shape in motion without blurs. To achieve this,                                          the actuation performance of the system is better owing to
+high-speed vision and active sensing are required.                                                     parameter tuning, and a sign-forming time of only 20 ms
+   We introduced a high-speed optical axis controller called                                           was needed, as shown in Fig.2.
+1 ms Auto Pan-Tilt [9] to achieve this. This system consists
+of a vision system with a high frame rate (500 fps), two                                                        III. H AND T RACKING AND R ECOGNITION
+small galvanometer mirrors, and pupil shift lenses. The
+                                                                                                          In this section, we introduce our overall strategy for
+galvanometer mirrors change the gaze direction by 60◦ , and
+40◦ change in angle can be completed in 3.5 ms. The pupil                                              achieving the rock–paper–scissors game between a human
+shift lenses enable a wide viewing angle even with the                                                 and a robot. First, the human hand is tracked at high speed
+                                                                                                       and with high accuracy by the 1 ms Auto Pan-Tilt system.
+small mirrors and very quick changes in the gaze direction,
+resulting in a system that is suitable for human hand tracking                                         A high-speed algorithm is used to classify the hand sign as
+                                                                                                       rock, paper, or scissors based on the premise that the vision
+and acquisition of non-blurry images in a wide recognition
+                                                                                                       system can consistently capture the human hand with high-
+area.
+                                                                                                       speed robust tracking. Finally, we control the robot’s motion
+   When we apply the system to the tracking of an object,
+                                                                                                       in relation to the human’s motion. The robot is controlled
+strong illumination is required to achieve high-speed stable
+                                                                                                       to form the sign that beats the human’s sign based on the
+tracking because of the short exposure time. However, such
+                                                                                                       recognition result.
+levels of illumination are not desirable for humans because
+they cause stress on the eyes. Moreover, the distance over
+                                                                                                       A. Preprocessing
+which light can sufficiently illuminate an object is limited.
+We therefore introduce a robust high-speed tracking tech-                                                The algorithm processes mainly binarized images for fast
+nique [10] using a projector and a retroreflective background.                                         recognition. The image moment is used to derive the center
+The optical axis of the vision system is set to that of the                                            position of the human hand and to classify the hand sign.
+projector, which then illuminates the object at low lightning                                          A captured image is shown in Fig. 1, at the upper left, in
+levels. The consequent reflection from the retroreflective                                             which the shadow produced by the hand is represented by
+background allows the system to track a human hand. The                                                the black part, and the rest, shown as the white part, results
+
+                                                                                                 892
+from retroreflective illumination. We first binarize the image
+as follows:
+                         
+                           0 if src(i, j) ≥ k
+             f (i, j) =                          ,         (1)
+                           1 otherwise
+                                                                                 (a) Sign 1 (Rock)        (b) Sign 2 (Paper)     (c) Sign 3 (Scissors)
+where src(i, j) and f (i, j) are input and binarized images,
+respectively, and (i, j) are the coordinates of the image. This                               Fig. 3.     Signs in the Japanese style.
+results in an image in which the human hand is white. The
+retroreflective illumination saturates the background, and a
+sufficiently bright background provides high contrast. As a
+result, the noise level is small even with simple binarization.
+In general, a (p + q)-order moment of the binarized image
+f (i, j)(= 0 or 1) is calculated by
+                           XX
+                   mpq =           ip j q f (i, j),         (2)
+                                                                                                        (a)                           (b)
+                          i   j
+                                                                        Fig. 4. Sign classification: (a) the range of the fingertip and its length; (b)
+In this case, m00 is an object’s area. The center position of           the determination circle for classifying the sign.
+the object is derived as:
+           ug = m10 /m00 , vg = m01 /m00                   (3)          C. Sign-classifying algorithm
+                                                                    Next, we need to develop a sign-classifying algorithm
+The principal axis of inertia can be obtained by:                utilizing the captured images. Although the hand is always
+                       1              2µ11                       captured at the center of the image, the orientation changes
+                  θ = arctan(                ),           (4) frame-by-frame in response to arm motion. Thus, the algo-
+                       2          µ20 − µ02
+                                                                 rithm needs to be robust against changing orientation. The
+where µpq is a (p + q)-order moment around the center of Japanese rock–paper–scissors signs used in this research are
+gravity and is defined by the following equation:                shown in Fig. 3. We label “rock” as sign 1, “paper” as sign 2,
+                                                          (5) and “scissors” as sign 3. In the Japanese rock–paper–scissors
+                  XX
+                                    p         q
+           µpq =           (i − ug ) (j − vg ) f (i, j)
+                    i   j
+                                                                 game, signs 2 and 3 can be classified by counting the number
+                                                                 of extended fingers. Sign 1 is detected when the hand remains
+B. High-Speed Hand Tracking                                      closed.
+   We need to track the highly dynamic motion of the human          We count the fingers on a circle whose radius changes
+hand. When forming a gesture, the human hand can change          according   to the human’s fingertip position. This algorithm is
+its shape in the course of the motion, and its center depends    robust  against  changing hand orientation because the fingers
+on the shape. Sueishi et al. [10] achieved a robust tracking     are  counted   from  angle θ. Here, we present the proposed
+technique that can be applied to a hand, although it is a        algorithm:
+deformable target. We briefly describe the method here.             1) Detect the fingertip and measure the length Ltip be-
+   We need to capture the palm as a target at the center and            tween the center and the tip.
+to exclude the wrist. We set an adaptive window around the          2) Judge whether the hand is open or not on the basis of
+center of the image whose radius changes with Sprev , which             the lengths Ltip and Lmin .
+is the size of an object in the window in the previous frame.       3) Count the fingers on the circle when the hand is open.
+The window is defined as follows:                                We assume that the center of the hand is captured at the
+               0 (f (u, v) > α, (u − ug )2 + (v − vg )2 > Rwin
+                                                            2
+            
+                                                               ) center of the image in the high-speed tracking. First, the
+B(u, v) =
+               1 (otherwise)                                     hand contours are detected. Since the contours include the
+                                                          (6) wrist near the elbow, the point farthest from the center cannot
+Rwin denotes the radius of the adaptive window and is simply be treated as a fingertip. We make use of the angle
+expressed with a certain margin Rmargin given by:                of the principal axis of inertia, θ, because it inclines toward
+                          r                                      the wrist, and the fingertip is located opposite the wrist. As
+                              Sprev
+                  Rwin =             + Rmargin            (7) shown in Fig. 4, the fingertip is usually at θ + π − α <
+                                π                                φ < θ + π + α, and the farthest contour in the range can be
+The center of gravity ug is calculated inside the window. regarded as the fingertip. The length from the center to the
+Defining the center of the image as uc , the two-axis small fingertip is defined as Ltip , and the minimum distance in the
+galvanometer mirrors are controlled to reduce the difference range is stored as Lmin .
+ug − uc = 0 by using high-speed visual feedback. Thus, the          When the equation Ltip > β×Lmin is satisfied, the hand is
+center of the hand is captured at the center of vision unless regarded as open, and the number of the fingers is counted
+the shape of the hand changes dramatically. The tracking with β as a threshold value. The circle with the radius of
+process is completed within 2 ms in every frame.                 Ljudge is shown in Fig. 4. Here, Ljudge = Ltip × γ, where
+
+                                                                  893
+                                                                       was used as illumination. The vision system and projector
+                                                                       were set in the 1ms Auto Pan-Tilt system so that the optical
+                                                                       axis of the vision system and that of the projector matched.
+                                                                       The controller PC of the tracking system was a DELL
+                                                                       PRECISION T7610 [Windows 7 64-bit, Intel Xeon CPU 2.60
+             Fig. 5.   Signs formed by the robot hand.
+                                                                       GHz (2 processors) with 32 GB RAM]. The retroreflective
+                                                                       background sheet was composed of Ref-lite 9301. The robot
+γ is a constant.                                                       hand was described in Section II-B. It included a real-time
+   The fingers are counted on the circle, starting from θ in           controller (dSPACE) whose sampling rate was 1 ms. The
+order to be robust against changing orientation. The number            robot hand could complete formation of a sign approximately
+of extended fingers is counted when the pixel value of the             20 ms after the controller received the reference joint angles.
+image on the circle changes from 0 to 1. The counting works
+                                                                          As shown in Fig. 1. The retroreflective background was
+only when the pixel value “1” is consecutive in order to
+                                                                       hung behind the viewing scene, and the robot hand was
+eliminate the effect of noise. Sign 2 is detected when the
+                                                                       located 2 m away from the 1 ms Auto Pan-Tilt system.
+number of fingers is two, and sign 3 is detected when the
+                                                                       A human participant also stood 2 m away from the vision
+number is 4 or more. The reason the threshold is set to four
+                                                                       system and swung his or her hand to allow the vision
+is to avoid classification failure when a thumb is not on the
+                                                                       system to recognize the shape of the palm. The subject
+circle.
+                                                                       then formed a sign in front of the robot. The angle θ
+D. Robot Hand Control                                                  and the human hand sign detected by the vision system
+   The real-time controller receives the classification result         were sent to the real-time controller. In the experiment, we
+and θ, and then controls the robot to form the sign necessary          evaluated only the recognition part; therefore, the robot hand
+to beat the human opponent. Each sign is shaped by control-            was removed. The robot hand was used in Section V. In
+ling motors in the joints. The step input of the reference             order to evaluate tracking and recognition performance, the
+joint angle is sent to each motor of the high-speed robot              retroreflective markers were attached to the human hand.
+hand to form the signs, and the joint angles are controlled by         We used data acquired online and in the captured video.
+proportional and derivative (PD) control. Joint angle control          The video was used to analyze the performance in offline
+is conducted every 1 ms. Since the robot hand in our system            processing.
+has only three fingers, we define each sign as shown in Fig.
+5.
+                                                                       B. Hand Tracking Performance
+   In Section V, we demonstrate that the robot forms its sign
+just when the human does. Due to the 1 ms Auto Pan-Tilt                   We initially evaluated the hand tracking performance. We
+system, the classification algorithm can detect a sign even            manually set k = 200, α = π/9, β = 0.7, γ = 2.0,
+before the arm of the human subject swing downwards. In                and Rmargin = 12. In the experiment, the participant’s
+order to synchronize the robot with the human’s motion, it             hand was swung upwards and downwards at high speed,
+is necessary to prevent the robot hand from forming its sign           maintaining the sign throughout the motion. The experiment
+before the human does. The angle of the principal axis of              was conducted for sign 2 (paper) which is the largest sign,
+inertia θ is the value that changes with the arm’s swinging            in order to confirm that the vision system can fully capture
+motion and can be assumed to reflect the angle of the arm              the hand in the image without the lack of displayed fingers.
+in a rock–paper–scissors gesture. We assume that the sign is
+                                                                          We evaluated the tracking performance in offline process-
+formed by the hand when the arm is swinging downwards,
+                                                                       ing using the video captured by high-speed vision during
+and we make use of the angle θ to detect the moment at
+                                                                       the experiment. A marker was attached, in advance, to the
+which the human hand forms its sign and the robot is allowed
+                                                                       back of the hand, as shown in Fig. 6(e). Fig. 6(b) shows the
+to form its sign. We define the angle θthresh as the threshold
+                                                                       difference between the center of the image and the marker in
+value for detecting the timing at which the human forms a
+                                                                       the video as time proceeds. (The marker is used only for the
+sign and allow the robot to produce its the sign only when
+                                                                       evaluation and not for tracking.) The location of the marker
+the angle θ satisfies the equation θ > θthresh .
+                                                                       in the image was varied depending on the wrist orientation
+            IV. E XPERIMENTAL E VALUATION                              and was not equal to the center of gravity in the image.
+   We conducted experiments to evaluate hand tracking per-             However, tracking was achieved while keeping the difference
+formance and the computational speed of the sign-classifying           below 22 pixels in each frame.
+algorithm.                                                                Fig. 6(c) shows the size of the margin as time proceeded,
+                                                                       which shows that the hand could be fully captured in the
+A. Experimental System                                                 image. The margins were defined as the minimum distance
+  For the high-speed vision system, we employed a Photron              from each side of the image to the hand, as in Fig. 6(h).
+IDP-Express R2000 high-speed camera which can capture                  Here, Mleft is the margin from the left end of the image
+a 512 × 512 pixel Bayer image at 500 fps. An EPSON                     to the hand. The vertical margin was affected by the arm
+EH-TW7200 (with a resolution of 1, 920 × 1, 080) projector             orientation in the image and was therefore defined using θ
+
+                                                                 894
+                        100                                                        30                                                            150                                                                                  20                           Pan Angle
+                                                                                                                                                                                                                                                                   Tilt Angle
+
+
+
+
+                                                                                                                               Margins [pixel]                                                                       Angle [degree]
+                                                                                                                                                                                                                                      10
+
+
+       Angle [degree]
+                         50
+
+
+
+                                                                   Erorr [pixel]
+                                                                                   20                                                            100
+                                                                                                                                                                                                                                       0
+                          0
+                                                                                                                                                                                                                                      -10
+                                                                                   10                                                             50
+                         -50
+                                                                                                                                                                                       Side Margin                                    -20
+                                                                                                                                                                                       Vertical Margin
+                        -100                                                       0                                                               0                                                                                  -30
+                               0   500     1000      1500   2000                        0   500     1000         1500   2000
+                                                                                                                                                       0   500     1000                          1500         2000                          0   500       1000   1500                                2000
+                                         Time [ms]                                                Time [ms]
+                                                                                                                                                                 Time [ms]                                                                            Time [ms]
+                                          (a)                                                        (b)                                                              (c)                                                                                 (d)
+
+
+
+
+                                                     (e) A retroreflective marker                          (f)                                                      (g)                                                                             (h)
+
+Fig. 6. Tracking evaluation: the sampling rate was 2 ms. The image resolution was 512 × 512 pixels. (a) shows θ as time proceeds. The domain is
+modified to avoid discontinuity. This figure indicates that the subject swung his/her arm upwards and downwards three times in 2 s. (b) is the difference
+between the center and markers in the image. (c) shows horizontal and vertical margins, respectively. (d) shows the angles of the two galvanometer mirrors.
+The captured images are also shown below. (e)-(g) in sequence are the captured images at 330 ms, 1358 ms, 272 ms, and 1792 ms in the video.
+
+                                                                                                                                                                                                                                                                   5
+as follows:
+
+
+
+                                                                                                                                                                                                                                                                        Number of makers (offline)
+                                                                                                                                                                      Classification (online)
+                                                                                                                                                                                                                                                                  4
+                                                                                                                                                                                                Sign 3
+                                                  Mtop             θ>0
+                        Mvertical =                                                                                      (8)                                                                                                                                       3
+                                                  Mbottom          (otherwise)                                                                                                                  Sign 2
+                                                                                                                                                                                                                                                                   2
+The minimum margin shown in Fig. 6(c) is 40 pixels and                                                                                                                                          Sign 1
+                                                                                                                                                                                                                                                                   1
+the maximum error in (b) is under 22 pixels. These results
+show that the tracking is successful enough for the hand to                                                                                                                                                                                                        0
+                                                                                                                                                                                                         0      200                    400    600         800    1000
+be detected correctly without a lack of displayed fingers in                                                                                                                                                                              Frame
+
+an image.
+                                                                                                                                                   Fig. 7. Evaluation of sign classification: The sampling rate was 2 ms. The
+    As shown in Fig. 6(d), our system could track the hand                                                                                         classified result (online) is shown in the blue plot, and the number of markers
+in highly dynamic motion. The galvanometer mirrors were                                                                                            is shown in the red plot (offline). The number of markers corresponded to
+actuated according to the motion, and the hand was captured                                                                                        the number of fingers in opening motion.
+at the center of the image. This contributed to successful
+hand tracking and image capturing in rapid motion. The
+                                                                                                                                                   shape observed when the fingers were all closed, sign 2 as
+tilt mirror could be actuated to a maximum angle of about
+                                                                                                                                                   the hand shape observed when two fingers were detected, and
+−30◦ . The 1 ms Auto Pan-Tilt system has been shown to
+                                                                                                                                                   sign 3 as the hand shape observed when four fingers were
+be capable of tracking an object through a 60◦ angle of
+                                                                                                                                                   detected, as described in Section. III-C. The figure shows that
+view [9], allowing the system to track more dynamic motion.
+                                                                                                                                                   classification (blue plot) worked successfully as the number
+The non-blurry images in Fig. 6 were captured owing to
+                                                                                                                                                   of extended fingers (red plot) changed. The classification
+the high-speed vision system, which also resulted in stable
+                                                                                                                                                   could detect the signs more quickly compared with just
+recognition.
+                                                                                                                                                   counting the fingernails.
+C. Validity and Computational Cost of Sign Classification                                                                                             Fig. 8 shows the computational cost of the algorithm for
+                                                                                                                                                   each sign. Signs 2 and 3 took slightly longer because the
+   In this experiment, the human user moved his/her hand
+                                                                                                                                                   hand was open and the fingers were counted. The algorithm
+at random, and changed its sign at random. During sign
+                                                                                                                                                   judged the signs while the hand was being opened; therefore,
+recognition processing, we converted the 512 × 512-pixel
+                                                                                                                                                   the radius changed in each frame, which explains the error
+Bayer images into 128 × 128 images in order to reduce the
+                                                                                                                                                   bar. However, the recognition time of less than 0.25 ms
+computational cost. Markers were attached to each fingernail
+                                                                                                                                                   shows that we achieved low-cost classification.
+in order to evaluate the classification. The number of markers
+detected was assumed to be equal to the number of fingers
+                                                                                                                                                                                                             V. D EMONSTRATION
+extended. We defined the fingers as being extended when
+the markers were detectable. The classification results and                                                                                          The movie [13] shows the human and the robot hand
+the number of markers were compared in offline processing                                                                                          playing the rock–paper–scissors game. It can be seen that
+using video captured during the experiment.                                                                                                        the robot formed its sign simultaneously with the human and
+   Fig. 7 shows the number of markers and the classification                                                                                       won the game in every trial, demonstrating that the system
+results as time proceeded. We defined sign 1 as the hand                                                                                           accurately tracked the human hand and detected its sign.
+
+                                                                                                                                 895
+                                       0.3
+                                                                                                      As an application that requires high-speed performance,
+
+
+               Calculation cost [ms]
+                                       0.2
+                                                                                                   we applied our active sensing system to a Janken (rock–
+                                                                                                   paper–scissors) robot system. In the demonstration, our sys-
+                                       0.1                                                         tem actively tracked and detected the human hand at the
+                                                                                                   same time, and the robot was able to form its sign to beat
+                                        0                                                          the opponent with low latency. Our system took 2 ms for
+                                        Sign 1 (Rock)      1 2 (Paper)
+                                                        Sign             Sign 3 (Scissors)
+                                                                                                   image processing. Taking the 20 ms for robot actuation into
+Fig. 8. The calculation cost of the classification: the average calculation
+                                                                                                   account, the response time was shorter than 30 ms [8], which
+cost of sign 1 was 0.16 ± 0.06 ms, that of sign 2 was 0.20 ± 0.06 ms, and                          is the minimum time resolution of the human eye. Therefore,
+that of sign 3 was 0.20 ± 0.06 ms.                                                                 the human user could not notice the latency, and the robot
+                                                                                                   was able to react according to the human’s sign, achieving
+                                                                                                   natural interaction.
+                                                                                                      In this paper, we proposed a classification algorithm
+                                                                                                   specially designed for the rock–paper–scissors game. Many
+                                                                                                   studies on hand recognition have been conducted [1], [2], and
+                                                                                                   in future work, we plan to combine these other studies with
+                                                                                                   our system. In addition, we will also apply active sensing to
+                                                                                                   tele-manipulation [14], which requires immersion and other
+                                                                                                   HRI interfaces.
+                                                                                                                                 R EFERENCES
+                                                                                                    [1] A.R. Sarkar, G. Sanyal, and S. Majumder. Hand gesture recognition
+                                                                                                        systems: A survey. International Journal of Computer Applications,
+                                                                                                        71(15):25–37, 2013.
+                                                                                                    [2] S.S. Rautaray and A. Agrawal. Vision based hand gesture recognition
+Fig. 9. Wide recognition area of the system: the left images were captured                              for human computer interaction: a survey. Artifical Intelligence
+by a video camera (30 fps), and the right images by the high-speed camera.                              Review, 43(1):1–54, 2015.
+(a) is the scene when the robot hand was waiting, and (b) shows scene when                          [3] Ng.Y.Y. Kevin, S. Ranganath, and D. Ghosh. Trajectory modeling
+the human hand was about to form a sign. The robot detected the sign and                                in gesture recognition using cybergloves and magnetic trackers. In
+formed one that beat the human’s sign in (c). The human pulled the hand                                 Proc. 2004 IEEE The Institute of Electrical and Electronics Engineers
+away for the next game in (d), and was about to form a sign at a different                              Region 10, pages 571–574, 2004.
+place in (e). However, the system tracked the human hand and formed the                             [4] M. Van den Bergh, D. Carton, R. De Nijs, N. Mitsou, K. Kuehnlenz
+sign to beat the human, as shown in (f).                                                                C. Landsiedel, D. Wollherr, L. Van Gool, and M. Buss. Real-time
+                                                                                                        3d hand gesture interaction with a robot for understanding directions
+                                                                                                        from humans. In RO-MAN, pages 357–362, 2011.
+   In the demonstration, the robot hand usually waited for the                                      [5] H. Wu, M. Su, S. Chen, Y. Guan, H. Zhang, and G. Liu. Kinect-based
+                                                                                                        robotic manipulation: From human hand to end-effector. In Proc. 2015
+control signals, forming its hand into the “rock” sign. The                                             IEEE Industrial Electronics and Applications, pages 806–811, 2015.
+real-time controller instructed the robot to form its sign when                                     [6] V. Frati and D. Prattichizzo. Using kinect for hand tracking and
+θ showed that the human began to form the sign. The movie                                               rendering in wearable haptics. In Proc. 2011 IEEE World Haptics
+                                                                                                        Conference, pages 317–321, 2011.
+also shows that the robot formed its sign when the human                                            [7] A. NG, J. Lepinski, D. Wigdor, S. Sanders, and P. Dietz. Designing
+swung his or her arm down and drew back the sign when the                                               for low-latency direct-touch input. In Proc. the 25th annual ACM
+human swung his or her arm up according to θ. The game                                                  symposium on User interface software and technology, pages 453–
+                                                                                                        464, 2012.
+was played dynamically, and low latency was demonstrated                                            [8] W.H. Marshall, S. A. Talbot, and H. W. Ades. Cortical response of
+in the last part of the movie.                                                                          the anaesthesized cat to gross photic and electrical afferent stimulation.
+   Fig. 9 shows the human forming signs in various orienta-                                             Nerophysiology, 6:1–15, 1943.
+                                                                                                    [9] K. Okumura, K. Yokoyama, H. Oku, and M. Ishikawa. 1 ms auto pan-
+tions and the robot correctly reacting to the signs. In this                                            tilt video shooting technology for objects in motion based on saccade
+demonstration, the robot was controlled to show its sign                                                mirror with background subtraction. Advanced Robotics, 29(7):457–
+when the human hand approached the robot. The system                                                    468, 2015.
+                                                                                                   [10] T. Sueishi, H. Oku, and M. Ishikawa. Robust high-speed tracking
+was able to track the dynamic human hand motion in every                                                against illumination changes for dynamic projection mapping. In Proc.
+frame.                                                                                                  IEEE Virtual Reality Conference, pages 97–104, 2015.
+                                                                                                   [11] Y. Katsuki, Y. Yamakawa, and M. Ishikawa. High-speed human /
+                                               VI. C ONCLUSIONS                                         robot hand interaction system. In Proc. 2015 ACM/IEEE Int. Conf.
+                                                                                                        on Human-Robot Interaction, pages 117–118, 2015.
+   In the work described in this paper, we achieved a system                                       [12] A. Namiki, Y. Imai, M. Ishikawa, and M. Kaneko. Development of a
+for natural interaction between a human and a robot with low                                            high-speed multifingered hand system and its application to catching.
+latency and a wide recognition area. Our contribution was to                                            In Proc. 2003 IEEE/RSJ Int. Conf. on Intelligent Robots and Systems,
+                                                                                                        pages 2666–2671, 2003.
+develop an active sensing system based on high-speed hand                                          [13] Ishikawa Watanabe Laboratory. Janken (rock-paper-scissors) robot
+tracking and classification. In the experiment, we showed                                               with 100 % winning rate: 3rd version. https://www.youtube.
+that the system was able to capture a hand at the center of                                             com/watch?v=Qb5UIPeFClM.
+                                                                                                   [14] Y. Katsuki, Y. Yamakawa, Y. Watanabe, M. Ishikawa, and M. Shimojo.
+the image even when the human user swung his or her hand                                                Super-low-latency telemanipulation using high-speed vision and high-
+violently. Fast classification was also confirmed through the                                           speed multifingered robot hand. In Proc. 2015 ACM/IEEE Int. Conf.
+experiment.                                                                                             on Human-Robot Interaction, pages 45–46, 2015.
+
+
+                                                                                             896
+

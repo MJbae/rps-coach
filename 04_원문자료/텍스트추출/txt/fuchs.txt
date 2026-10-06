@@ -1,0 +1,1471 @@
+                                           From coin-tossing to rock-paper-scissors and beyond:
+                                               A log-exp gap theorem for selecting a leader
+                                                       Michael FUCHS                                           Hsien-Kuei HWANG
+                                               Department of Applied Mathematics                          Institute of Statistical Science
+                                                National Chiao Tung University                                   Academia Sinica
+
+
+
+
+arXiv:1507.08145v2 [math.PR] 30 Jul 2015
+                                                         Hsinchu 300                                                 Taipei 115
+                                                            Taiwan                                                     Taiwan
+                                                                                    Yoshiaki ITOH
+                                                                         Institute of Statistical Mathematics
+                                                                            10-3 Midori-cho, Tachikawa
+                                                                                   Tokyo 190-8562
+                                                                                         Japan
+                                                                                      August 26, 2018
+
+
+                                                                                             Abstract
+                                                      A class of games for finding a leader among a group of candidates is studied in detail.
+                                                  This class covers games based on coin-tossing and rock-paper-scissors as special cases
+                                                  and its complexity exhibits similar stochastic behaviors: either of logarithmic mean and
+                                                  bounded variance or of exponential mean and exponential variance. Many applications are
+                                                  also discussed.
+
+
+                                           1 Introduction
+                                           Selecting a leader or a representative by fair random mechanisms without relying on a priori
+                                           information of the candidates has long been used in diverse contexts and civilizations. Typical
+                                           examples range from sortition (or allotment) in the West and rock-paper-scissors (or Janken) in
+                                           the East; see Wikipedia’s pages on sortition and rock-paper-scissors for more information. This
+                                           paper is concerned with the analysis of a class of leader selection algorithms (or leader election
+                                           algorithms) that are used to select a leader among a group of n candidates. These algorithms
+                                           have widespread applications in diverse areas; see Figure 1 for a summary and below for more
+                                           descriptions.
+                                            Key words: Leader selection, Janken game, recurrence relation, functional equation, Mellin transform, saddle-
+                                           point method, limit theorems, periodic function, gap theorem, ties.
+                                           2010 Mathematics Subject Classification: 05A16, 60F05, 68W40.
+
+
+                                                                                                 1
+                                           Leader Selection
+                             Program                                               Mating
+                              Unifi-         Algorithms                           Strategies
+              Order
+             Statistics       cation                                              of Lizards
+                                                                                               Evolution-
+                                                                                                  ary
+     Bulk                                                                                       Games
+    Buying
+                           Coin            Radio                            Rock-Paper-
+                          Tossing         Networks       Nonlinear           Scissors
+                                                                                                    Food
+   System                                                Integrable
+                                                                                                    Webs
+  Reliability                                             Systems
+
+                                        RFID
+             Aircraft                                                                    Bacteria
+              Wing                                                    Biodiver-
+                             Models                                     sity              Pro-
+             Failure         of Brain                                                    duction
+
+
+
+
+                          Figure 1: Leader selection procedures and applications.
+
+    One easy and efficient way to solve the leader selection problem is to use coin-tossing. A
+simple such procedure is described as follows. Assume that we have a (possibly biased) coin
+with two outcomes “head” and “tail”. Each of the n candidates tosses an independent coin
+and those who toss head go on to the next round. In case nobody tosses head, the round is
+repeated with the same candidates. The procedure ends when only one candidate is left who
+is then declared the leader. We refer to this simple scheme as CTLS (Coin-Tossing Leader
+Selection). It has been used in many applications, for instance, in the CTM Tree Protocol
+(after Capetanakis, Tsybakov and Mikhailov), which is used to determine the order in which n
+processors sharing a common communication channel send their messages; see [4] and [48].
+More recent applications are in ad-hoc radio networks (see Chapter 9 of [34]) and RFID systems
+(see, e.g., [18]).
+    Many variants of CTLS have been proposed and extensively studied. One such variant con-
+sists of waiting until everyone is eliminated and then declaring those who stayed the longest
+in the game as the leaders. This variant, referred to as MGLS (Maximum Geometric Leader
+Selection), amounts to finding the maximum of n i.i.d. geometric distributed random variables.
+The latter problem has a longer history than the study of CTLS, and the earliest publication
+we found dated back to the early 1950s. Closely connected applications include mathematical
+models of the brain [35], study of aircraft wing fatigue failure [30] and system reliability in
+general [49], order statistics of geometric random variables [32], skip-lists [6], bulk buying of
+possibly defective items [42, 26] and program unification techniques in concurrency enhance-
+ment methods [38, 39]; see also the more recent study [7] and the book on bioinformatics [8]
+for further applications.
+    The complexity of CTLS seemed to have been first analyzed by Bruss and O’Cinneide [3]
+in the early 1990s, where they attributed the problem of analyzing the number of rounds to
+
+                                                     2
+identify a leader to Bajaj and Mendieta [1]. In fact, in [3], the authors relied on the above
+connection to geometric random variables as an approximation to CTLS, and gave an analysis
+of MGLS as well. A more detailed analysis of CTLS was given independently by Prodinger
+[37]. In particular, he showed that the expected number of rounds, denoted by E(Xn ), used by
+CTLS to identify a leader among n candidates satisfies
+
+                          E(Xn ) = log2 n + 21 + P0 (log2 n) + O n−1 ,
+                                                                    
+                                                                                          (1)
+
+when all coins tossed are unbiased. Here P0 (u) is a bounded periodic function of period 1
+with amplitude less than 1.93 × 10−5 . Such a minute yet nonzero periodic oscillation is a
+characteristic feature for problems of a similar type, and tools for deriving the corresponding
+Fourier expansions have been the major focus of many papers. A similar periodic phenomena is
+also present in the variance V(Xn ), which is asymptotic to another periodic function and thus of
+constant order (again in the unbiased case). This together with the following limit distribution
+result
+                                                  2{log2 n}−ℓ             −1
+                                                                             
+                    P(Xn ⩽ ⌊log2 n⌋ + ℓ) =                          + O n      ,              (2)
+                                              exp(2{log2 n}−ℓ ) − 1
+where {x} denotes the fractional part of x, was derived in [10]. Moreover, extensions of the
+above results to biased coins were also considered; see [24].
+    The logarithmic order (1) shows that CTLS is not only simple but also very efficient in
+terms of cost complexity. We will establish a more general asymptotic pattern of this type and
+clarify when a leader selection procedure is more efficient than the others.
+    In addition to coin-tossing with binary outcomes, the natural idea of allowing m-ary out-
+comes (m ⩾ 3) with cyclic dominance has also proved fruitful in diverse applications including
+leader selection. The simplest such procedure is the “rock-paper-scissors game” (RPS), which
+is popular in many countries, notably in Japan, where it is called “Janken game”, meaning
+the play between two fists. Many annual tournaments and championships of such games on
+regional and international level are held, and have received widespread media attention. RPS
+originated in China and was imported to Japan about a thousand years ago (with different
+rules). Then it was modified to the current form of RPS about a century ago, and its use spread
+later across Asia and to the western and the whole world. See [29, 28, 36] for a detailed ac-
+count. The rules underlying RPS can be visualized by the following digraph, which indicates
+the dominance relations:
+
+                                             paper
+
+
+
+                                  rock                  scissors
+
+    Many variants of RPS exist. Examples include the rock-paper-scissors-well game (pop-
+ular in Germany), and the rock-paper-scissors-Spock-lizard game; see the figure below and
+Wikipedia’s page on RPS for more information.
+    The usefulness of the Janken game and its variants is not limited to select a winner or
+a loser, but also to broad applications in other areas. Examples are found in evolutionary
+game theory (see [17, 41]) and in biology (the field data on alternative male strategies of
+
+                                               3
+                                                                       R
+                 R                     W
+
+                                                         P                            L
+
+
+
+
+                 P                     S
+                                                             Sc                Sp
+                Rock, Paper, Scissors, Well                  Rock, Paper, Scissors,
+                       (Germany)                                Spock, Lizard
+
+
+
+side-blotched-lizards [40] being a well-known example). Other biological uses are found in
+food-webs, antibiotic production of bacteria, and biodiversity. In physical applications, Janken
+games were also encountered in interacting particle systems with cyclic dominance [20] which
+have a Lotka-Volterra system as a deterministic approximation. These systems can be extended
+to nonlinear integrable systems; see [2, 21, 22]. The introduction of the spatial structure as
+lattice Lotka-Volterra system drastically enriches the dynamics of interacting particles systems
+and yields interesting simulation results; see [14, 27, 46, 47].
+     When used to select a leader among n candidates, it turns out that RPS is very inefficient in
+that it requires an exponential number of rounds to resolve the overwhelming ties, in contrast
+to the logarithmic complexity (1) for CTLS. More precisely, the procedure follows along the
+natural way and if only two different hands are present, then the group whose hand dominates
+that of the other will go on to the next stage; otherwise, the game is in a tie and has to be
+repeated. The game ends when only one candidate is left who is then the leader. We will call
+this procedure RPSLS.
+     Maehara and Ueda [31] proved that when p1 = p2 = p3 = 31 , the number of rounds, say Yn ,
+used by RPSLS satisfies                                n
+                                        E(Yn ) ∼ 31 23 ,
+(cf. (1)) and, furthermore,
+                                           Yn   d
+                                       1
+                                              −→ Exp(1),
+                                            3 n
+                                       3   2
+        d
+where −→ denotes convergence in distribution and Exp(1) represents an exponential random
+variable with mean 1. While the expected exponential complexity of RPSLS under uniform
+distribution of the hands cannot compete with the expected logarithmic one of CTLS, for very
+small n, we have the following numerical values:
+
+               Scheme       n        2          3     4        5       6      7        8
+                CTLS      E(Xn )     4        4.83   5.52     6.09   6.58    6.99     7.35
+               RPSLS      E(Yn )    1.5       2.25   3.21     4.49   6.22    8.65     12.1
+
+and we see that in terms of expected number of rounds RPSLS is more efficient than CTLS
+when n ⩽ 6.
+
+                                                     4
+    Extensions of RPSLS to more hands than three were also studied in distributed computing
+contexts by Suzaki and Osaki in several papers (see [43, 44, 45]), where partial probabilistic
+analyses are provided; see also Section 3.
+    Our aim in this paper is to propose a general model containing all the schemes above as
+special cases. More precisely, we will define a wide class of generalized Janken games with
+m ⩾ 2 hands, and we will show that the different behaviors mentioned above for CTLS and
+RPSLS are prototypical and find their extensive form in a general setting. More precisely, we
+will show that the complexity of leader selection based on general Janken schemes exhibits a
+gap theorem: the average number of rounds needed to select a leader is either of logarithmic
+order or of exponential order. Moreover, we will establish stronger results including bounded
+variance and the oscillations of the asymptotic distribution in the log-case, and an exponential
+limit law in the exp-case.
+    This paper is structured as follows. In the next section, we define our generalized Janken
+games and provide general tools for analyzing the number of rounds until a leader is selected.
+In Section 3, we apply our results to some games. Finally, in Section 4, we discuss extensions
+and other gap theorems in our model. We conclude the paper with a remark on infinite-hand
+games.
+
+
+2 Dichotomous behavior of the complexity
+We define first the class of generalized Janken games we will analyze. Then we distinguish
+between two subclasses of games (log-games and exp-games) for which the cost complexity
+differs significantly from being logarithmic to being exponential. We will also derive more
+precise asymptotic approximations.
+    The analysis of log-games will be more subtle due to the inherent periodic fluctuations in
+the asymptotic approximations to the moments and the limit law, which will be clarified by
+generalizing our recent approach from [15]. The analysis of exp-games, on the other hand, is
+more straightforward and our results will follow by the method of moments.
+
+2.1 Generalized Janken games
+Let m ⩾ 2, and we are given m hands {H1 , . . . , Hm } with (positive) probabilities {p1 , . . . , pm }.
+A generalized Janken game is played as follows. Assume that the set of hands the n players
+may choose equals S = {Hi1 , . . . , Hiℓ }. Then there are two situations:
+   • S is a (clear-cut) win-or-defeat (abbreviated as WOD) set, i.e., S = W ∪ D with W ∩
+     D = ∅, where W = {Hj1 , . . . , Hjr }, 1 ≤ r < ℓ is a set of winning hands, meaning
+     that players having chosen these hands continue to play in the next round, and D =
+     {Hk1 , . . . , Hkℓ−r } is a set of losing hands, meaning that players having chosen these
+     hands are eliminated after the current round.
+   • The hands in S result in a tie, meaning that no one is eliminated and the round is non-
+     conclusive and has to be repeated.
+The generalized Janken game is played one round after another until a single player remains
+who is then the leader. This is always possible if there is at least one WOD set whose cardinality
+is two. We refer to these games as GJLS.
+
+                                                  5
+    For analysis purposes, we introduce more notations. First, given S = {Hi1 , . . . , Hiℓ },
+define                                                        
+                                     X             n
+                           (S)
+                          πn :=                                pji11 · · · pjiℓℓ .
+                                  j +···+j =n
+                                              j1 , . . . , jℓ
+                                        1         ℓ
+                                         j1 ,...,jℓ ⩾1
+
+Then, by the inclusion-exclusion principle,
+      πn(S) = (pi1 + · · · + piℓ )n
+                                                                          n
+              − (pi2 + · · · + piℓ )n − · · · − pi1 + · · · + piℓ−1
+                                                                                                    n
+              + (pi3 + · · · + piℓ )n + (pi2 + pi4 + · · · + piℓ )n + · · · + pi1 + · · · + piℓ−2
+              ±··· .
+From this, we see that, for large n,
+                                       πn(S) ∼ (pi1 + · · · + piℓ )n .                                   (3)
+Let WD denote the set of all WOD sets. Define now two game indices:
+                                ρ :=          max            {pi1 + · · · + piℓ },                       (4)
+                                       {Hi1 ,...,Hiℓ }∈WD
+
+and ν the number of WOD sets attaining the maximum value ρ. We distinguish between two
+cases:
+   • log-game: ρ = 1;
+   • exp-game: ρ < 1.
+Note that a log-game occurs if and only if {H1 , . . . , Hm} is itself a WOD set, and in this case
+ν = 1. Also log-games are more meaningful when the hands are generated by purely random
+mechanisms but not by intentional calculation.
+    We are interested in the number of rounds Xn used by n players to select a leader by GJLS,
+which is one of the most important cost measures of the game. This number satisfies, by con-
+sidering the size of the winning group after the first round of GJLS, the following distributional
+recurrence
+                                      d
+                                  Xn = XI n + 1          (n ⩾ 2),                              (5)
+where the Xn ’s and In ’s are independent, X1 = 0, and for 1 ⩽ j ⩽ n,
+                                  
+                                  1 X
+                                  
+                                     − ̟n ,               if j = n;
+                   P(In = j) =               n   (W ) (D)                                                (6)
+                                                πj πn−j , if 1 ⩽ j < n,
+                                  
+                                  
+                                   S∈WD     j
+                                         S=W ∪D
+
+where                                                    X
+                                              ̟n :=             πn(S)
+                                                         S∈WD
+
+stands for the probability of no tie occurring. From (3) and by the definitions of ρ and ν, we
+have
+                                                   ̟n ∼ νρn .                                            (7)
+
+                                                         6
+    Alternatively, instead of considering only one round, one may also wait for a random num-
+ber of times Tn until a WOD set is reached. This then yields the following alternative distribu-
+tional recurrence for Xn
+                                      d
+                                 Xn = XJn + Tn        (n ⩾ 2),                               (8)
+where the Xn ’s, Jn ’s, and Tn ’s are independent, Tn is a geometric distributed random variable
+with parameter ̟n , X1 = 0 and for 1 ⩽ j < n,
+                                                       
+                                            1 X          n (W ) (D)
+                            P(Jn = j) =                     π πn−j .                         (9)
+                                           ̟n            j j
+                                                 S∈WD
+                                                S=W ∪D
+
+   Both forms of the distributional recurrence will be useful for us; (5) will be used in the
+analysis of log-games, whereas (8) is advantageous in the analysis of exp-games.
+
+2.2 Log-games
+In this subsection, we consider log-games for which ρ = 1 and ν = 1. In this case the whole
+set of hands {H1 , . . . , Hm } is itself a WOD set, and we define
+                                                  X
+                                 α :=                            pj .
+                                   Hj is a winning hand in {H1 ,...,Hm }
+
+
+    Denote by Xn the number of rounds to select a leader by GJLS. Such games are marked
+by its complexity Xn satisfying logarithmic mean, bounded variance and periodic oscillations
+of the asymptotic distributions. This is the same pattern as for CTLS; see Section 1. For the
+proofs, we extend the analytic approach used in our previous paper [15].
+
+Mean value.    Let µn := E(Xn ). Then, by (5), we obtain that
+                         X X n (W ) (D)
+                  µn =                   πj πn−j µj + (1 − ̟n )µn + 1,
+                        1⩽j<n S∈WD
+                                      j
+                               S=W ∪D
+
+for n ⩾ 2, with the initial condition µ1 = 0.
+    To solve this recurrence, we consider first the Poisson generating function
+                                                            zn
+                                    f˜1 (z) := e−z
+                                                      X
+                                                          µn .
+                                                      n⩾1
+                                                            n!
+
+   In what follows, an “exponentially small term” is used to mean an entire function that is
+bounded above by e−cℜ(z) for some c > 0 as |z| → ∞ in the half-plane ℜ(z) > 0.
+
+Lemma 1. The Poisson generating function of µn satisfies the functional equation
+
+              f˜1 (z) = f˜1 (αz) + 1 +     λj e−βj z f˜1 (αj z) − (1 + z)e−z ,
+                                       X
+                                                                                           (10)
+                                          1⩽j⩽k
+
+
+with f˜1 (0) = 0, where λj ∈ {−1, 1} and 0 < αj , βj < 1 are constants.
+
+                                                  7
+Proof. Since ρ = 1, we see that 1−̟n consists only of exponentially small terms. This implies
+that we can arrange the terms and write
+                                                       zn
+                                                                λj e−βj z f˜1 (αj z).
+                               X                            X
+                         e−z         (1 − ̟n )E(Xn )      =
+                               n⩾1
+                                                       n! 1⩽j⩽k
+
+On the other hand
+                 X X                 X n (W ) (D)     zn
+             e−z                          π πn−j E(Xj )
+                    n⩾2 1⩽j<n S∈WD
+                                        j j             n!
+                             S=W ∪D
+                                                                    !                              !
+                                           X        X         zn           X                  zn
+                                = e−z                   πn(D)                   πn(W ) E(Xn )          .
+                                                    n⩾1
+                                                              n!            n⩾1
+                                                                                              n!
+                                          S∈WD
+                                         S=W ∪D
+
+The largest terms (as |z| → ∞ in ℜ(z) > 0) comes from the whole set S = {H1 , . . . , Hm },
+which is itself a WOD set and produces terms of the form (by (3))
+                              !                       !
+                            n                       n
+                          z                       z
+                                                        = f˜1 (αz) +       λj e−βj z f˜1 (αj z),
+                X               X                                     X
+        e−z         πn(D)           πn(W ) E(Xn )
+                n⩾1
+                          n!    n⩾1
+                                                  n!                 1⩽j⩽k
+
+for some λj ∈ {−1, 1} and 0 < αj , βj < 1 (whose values may differ fromP      one occurrence to
+another). For all other WOD sets different from {H1 , . . . , Hm}, we have Hi ∈S pi < 1 and
+they can be regrouped as
+                                       !                       !
+                                     n                       n
+                                   z                       z
+                                                                         λj e−βj z f˜1 (αj z),
+                X        X               X                          X
+       e−z                   πn(D)           πn(W ) E(Xn )       =
+               S∈WD      n⩾1
+                                   n!    n⩾1
+                                                           n!      1⩽j⩽k
+               S=W ∪D
+            S6={H1 ,...,Hm }
+
+where λj ∈ {−1, 1} and 0 < αj , βj < 1. The remaining computations are straightforward.
+Thus, our claim is proved.
+   We will write (10) as
+                                        f˜1 (z) = f˜1 (αz) + 1 + φ̃1 (z),                                  (11)
+where φ̃1 (z) is exponentially small in the half-plane ℜ(z) > 0.
+
+Variance.     Consider now the Poisson generating function of E(Xn2 ), denoted by
+                                                                          zn
+                                         f˜2 (z) := e−z
+                                                          X
+                                                                E(Xn2 )      .
+                                                          n⩾1
+                                                                          n!
+
+Define
+                                          Ṽ (z) := f˜2 (z) − f˜1 (z)2 .
+Lemma 2. The function Ṽ (z) satisfies the functional equation
+
+                                          Ṽ (z) = Ṽ (αz) + φ̃3 (z),                                      (12)
+
+where φ̃3 (z) is an exponentially small term.
+
+                                                          8
+Proof. A similar analysis as that used for f˜1 (z) leads to the functional equation
+
+                                f˜2 (z) = f˜2 (αz) + 2f˜1 (αz) + 1 + φ̃2 (z),                    (13)
+
+where φ̃2 (z) consists of exponentially small terms (involving both f˜1 (z) and f˜2 (z)). Then (12)
+follows from (11) and (13).
+
+Asymptotics and JS-admissibility. From the Poisson generating functions f˜1 (z) (which is
+indeed the expected cost Xn when n itself follows a Poisson(z) distribution), we can recover
+the asymptotic behaviors of E(Xn ) by the relation
+
+                                            µn = n![z n ]ez f˜1 (z).
+
+This can be done by several means, and a by-now standard approach are the so-called analytic
+de-Poissonization techniques largely developed by Jacquet and Szpankowski in [25], which
+rely on the saddle-point method (see [13]). The use of such an approach can be further schema-
+tized by introducing the notion of JS -admissible functions, which we formulated in [19]. We
+briefly sketch the underlying ideas, and refer the interested readers to our previous papers for
+more details [15, 19]. Similarly, since µn is of logarithmic order and the variance is bounded,
+the function Ṽ (z) will provide a sufficiently good approximation to the variance V(Xn ).
+    We recall the following definition from [19]. Let
+
+                                         Cε := {z : | arg(z)| ⩽ ε},
+
+where ε > 0 is an arbitrary constant (which will subsequently be used as a generic symbol
+whose value may change from one occurrence to another).
+Definition 1. Let f˜(z) be an entire function and ξ, η ∈ R. Then f˜(z) is JS-admissible, written
+f˜ ∈ JS (or more precisely, f˜ ∈ JSξ,η ), if for 0 < φ < π/2 and all |z| ⩾ 1 the following
+two conditions hold.
+  (I) Uniformly for z ∈ Cε ,
+                                           f˜(z) = O |z|ξ (log+ |z|)η ,
+                                                                     
+
+        where log+ x := log(1 + x).
+ (O) Uniformly for φ ⩽ | arg(z)| ⩽ π,
+
+                                         f (z) := ez f˜(z) = O e(1−ε)|z| ,
+                                                                        
+
+        for some ε > 0.
+   Such functions enjoy closure properties under several different operations, and it is these
+properties that make such a notion really useful. Also if f ∈ JSξ,η , then
+
+                                 X f˜(j) (n)
+              n![z n ]f (z) =                τj (n) + O nξ−k (log n)η
+                                                                      
+                                                                                      (k ⩾ 1),
+                                       j!
+                                0⩽j<2k
+
+where
+                               X j          n!nj−ℓ
+                     τj (n) :=       (−1)j−ℓ                           (j = 0, 1, . . . )
+                                  ℓ          (n − ℓ)!
+                                 0⩽ℓ⩽j
+
+
+                                                       9
+are Charlier polynomials. In particular,
+
+                                        f˜′′ (n)    f˜′′′ (n)
+                n![z n ]f (z) = f˜(n) −                       n + O nξ−2 (log n)η .
+                                                                                 
+                                                 n+                                         (14)
+                                            2           3
+Specific to our analysis, we need additionally the following property.
+Lemma 3. Let f˜ and g̃ be two entire functions satisfying the functional equation
+
+                       f˜(z) = f˜(αz) +        λj e−βj z f˜(αj z) + g̃(z),
+                                          X
+                                                                                            (15)
+                                           1⩽j⩽k
+
+
+with f˜(0) = g̃(0) = 0, where λj ∈ R, βj > 0 and α, αj ∈ (0, 1). Then
+
+                                 g̃ ∈ JS      ⇐⇒         f˜ ∈ JS .
+
+   The proof is similar to that of Proposition 3 in the Appendix of [15], and is omitted here.
+   From this and (11), (13), we see that f˜1 ∈ JS0,1 and f˜2 ∈ JS0,2 . By (14) and the
+arguments used for the variance in [19], we obtain that
+
+                E(Xn ) = f˜1 (n) + O n−1 ,         V(Xn ) = Ṽ (n) + O n−1 .
+                                                                            
+                                                                                            (16)
+
+Thus for asymptotic purposes, we can entirely focus on the Poisson model. A standard ap-
+proach for the asymptotics of the Poisson generating function for large |z| in similar situations
+is based on the Mellin transform techniques
+                                                 Z ∞
+                            F (s) = M [f˜; s] :=
+                              ∗
+                                                      f˜(z)z s−1 dz;
+                                                     0
+
+see [11] for an authoritative survey. We first derive the asymptotic behavior for functions
+satisfying the more general equation (15). Let
+
+                                               λj e−βj z f˜(αj z).
+                                          X
+                                φ̃(z) :=
+                                           1⩽j⩽k
+
+Proposition 1. Let L := log(1/α) and χk := 2kπi/L.
+  (i) Assume that g̃ ∈ JS ξ,η with ξ < 0. Then, as |z| → ∞ in the sector Cε ,
+                        1X ∗
+                f˜(z) =       (Φ (χk ) + G∗ (χk )) z −χk + O |z|− min{1,ξ} (log |z|)η ,
+                                                                                     
+                                                                                            (17)
+                        L k∈Z
+
+      where Φ∗ (s) := M [φ̃; s] and G∗ (s) := M [g̃; s].
+ (ii) Assume that g̃ ∈ JS and
+                                        g̃(z) = c + O |z|−ξ ,
+                                                           
+
+      as |z| → ∞ in the sector Cε . Then
+                          c d + Φ∗ (0) X ∗
+      f˜(z) = c log1/α z + +                 (Φ (χk ) + G∗ (χk )) z −χk + O |z|− min{1,ξ} ,
+                                                                                         
+                                      +
+                          2     L       k6=0
+
+      as |z| → ∞ in Cε , where d = lims→0 (G∗ (s) + c/s).
+
+                                                10
+Remark 1. Note that Fourier coefficients of the periodic functions in the above result are less
+explicit due to the occurrence of f˜(z) in φ̃(z). However, in some situations (e.g., CTLS) they
+can be made explicit; see [37] and the remarks in Section 3.
+
+Proof. Consider part (i). The assumptions imply that G∗ (s) exists in the strip −1 < ℜ(s) < −ξ
+and
+                                           Φ∗ (s) + G∗ (s)
+                    F ∗ (s) := M [f˜; z] =                 ,   ℜ(s) ∈ (−1, 0).                 (18)
+                                               1 − α−s
+Note that from the assumptions, Lemma 3 and the Exponential Smallness Lemma in [16],
+we obtain that F ∗ (s) decays exponentially fast along vertical lines in −1 < ℜ(s) < −ξ.
+Consequently, by standard Mellin argument, we deduce (17).
+    For part (ii), by the Direct Mapping Theorem in [11], we see that G∗ (s) has a simple pole at
+s = 0 with the singularity expansion G∗ (s) ≍ c/s + d + · · · . The rest of the proof then follows
+as in part (i).
+    Collecting all results, we then derive the asymptotics of the mean and the variance.
+Theorem 1 (Log-games). If ρ = 1, then the number of rounds Xn to find a leader used by
+GJLS satisfies
+                   E(Xn ) = log1/α n + P1 (log1/α n) + O n−1 ,
+                                                            
+
+and
+                               V(Xn ) = P2 (log1/α n) + O n−1 ,
+                                                             
+
+where P1 (t), P2 (t) are bounded, 1-periodic functions.
+
+Limit law. We now turn to the limit law. We begin with considering the Poisson generating
+function of the probability generating function of Xn
+                                                      X               zn
+                                 P̃ (y, z) := e−z           E y Xn        ,
+                                                      n⩾1
+                                                                       n!
+
+which satisfies the functional equation
+                                              X
+               P̃ (y, z) = y P̃ (y, αz) + y           λj e−βj z P̃ (y, αj z) + (1 − y)ze−z ,
+                                              1⩽j⩽k
+
+where λj ∈ {−1, 1} and α, αj , βj ∈ (0, 1). Observe that
+
+                                      P̃ (y, z) X
+                                               =  Ãℓ (z)y ℓ ,
+                                       1−y
+                                                      ℓ⩾0
+
+where
+                                               −z
+                                                    X            zn
+                                 Ãℓ (z) := e           P(Xn ⩽ ℓ) .
+                                                    n⩾0
+                                                                 n!
+By dividing the above functional equation by 1 − y and reading off coefficients, we obtain the
+recursive functional equation
+                                          X
+                   Ãℓ+1 (z) = Ãℓ (αz) +    λj e−βj z Ãℓ (αj z), (ℓ ⩾ 0)                (19)
+                                              1⩽j⩽k
+
+
+                                                      11
+with Ã0 (z) = ze−z .
+    The equations here are similar to those in [15], and the remaining analysis follows along
+the same lines there, which we now sketch. First, define R̃0 (z) := Ã0 (z) and for ℓ ⩾ 0
+                                          X
+                             R̃ℓ+1 (z) :=       λj e−βj z Ãℓ (αj z).
+                                             1⩽j⩽k
+
+Then
+                                Ãℓ+1 (z) = Ãℓ (αz) + R̃ℓ+1 (z),
+which, by iteration, leads to                    X
+                                                         R̃j αℓ−j z .
+                                                                   
+                                   Ãℓ (z) =
+                                                 0⩽j⩽ℓ
+
+   For the asymptotics, we need the JS-admissibility in a stronger uniform form.
+
+Lemma 4. For ℓ ⩾ 1, Ãℓ (z) is uniformly JS-admissible, i.e., for | arg(z)| ⩽ ε, 0 < ε < π/2,
+
+                                      Ãℓ (z) = O (|z|ε1 ) ,                                (20)
+
+uniformly in z, and, for ε ⩽ | arg(z)| ⩽ π,
+
+                                   ez Ãℓ (z) = O e(1−ε2 )|z| ,
+                                                             
+                                                                                            (21)
+
+uniformly in z. Here the involved constants in both cases are absolute and ε1 , ε2 are positive
+constants.
+
+Proof. The proof is similar to that of Lemma 3 in [15].
+   Then, by standard de-Poissonization arguments [19, 25], we deduce that
+                                         X
+                                            R̃j αℓ−j n + O n−1+ε ,
+                                                                
+                         P(Xn ⩽ ℓ) =
+                                        0⩽j⩽ℓ
+
+
+uniformly in ℓ. On the other hand, by the definition of R̃j (x), we see that |R̃j (x)| ⩽ e−px for
+some p > 0. Consequently,
+                 X              X −pαℓ−j n X −pα−j n
+                     R̃j αℓ−j n ⩽                                = O e−pn .
+                                                                            
+                                       e         =      e
+                  j>ℓ                j>ℓ                    j⩾1
+
+The latter implies that
+                                           X
+                                                 R̃j αℓ−j n + O n−1+ε ,
+                                                                    
+                          P(Xn ⩽ ℓ) =
+                                           j⩾0
+
+uniformly in ℓ.
+    Replacing now ℓ by ⌊log1/α n⌋ + ℓ, and writing ϑ(n) = {log1/α n}, we obtain
+                                                 X
+                                                       R̃j α−ϑ(n)+ℓ−j + O n−1+ε .
+                                                                              
+                P(Xn ⩽ ⌊log1/α n⌋ + ℓ) =
+                                                 j⩾0
+
+We summarize the analysis as follows.
+
+                                                   12
+Theorem 2 (Log-games). If ρ = 1, then the number Xn of rounds used by GJLS until a leader
+is selected satisfies
+                                            X
+                                              R̃j α−ϑ(n)+ℓ−j + O n−1 ,
+                                                                     
+                   P(Xn ⩽ ⌊log1/α n⌋ + ℓ) =
+                                                           j⩾0
+
+uniformly in ℓ.
+    The improved error term comes from refining the above analysis (by expanding more terms
+in the de-Poissonization procedure).
+Remark 2. It is possible to derive more explicit expressions for Ãℓ (z) and R̃j (z) in Theorem 2,
+but they are generally messy. For that purpose, rewrite (19) as
+                                           X
+                               Ãℓ+1 (z) =       λj e−βj z Ãℓ (αj z),
+                                                   0⩽j⩽k
+
+where λ0 = 1, α0 = α and β0 = 0. Iterating yields
+                               X                Pℓ
+                 Ãℓ (z) =                 λj e− i=1 αj1 ···αji−1 βji z Ã0 (αj z),
+                              j=(j1 ,...,jℓ )∈{0,...,k}ℓ
+
+
+where λj = λj1 λj2 · · · λjℓ , and αj = αj1 αj2 · · · αjℓ . Since Ã0 (z) = ze−z , we then have
+                                         X                       Pℓ+1
+                      Ãℓ (z) = z                       αj λj e− i=1 αj1 ···αji−1 βji z ,
+                                   j=(j1 ,...,jℓ )∈{0,...,k}ℓ
+
+with jℓ+1 := 1. We will give some examples for which this expression simplifies in Section 3.
+
+2.3 Exp-games
+In this section we consider the exp-games for which ρ < 1 and the probability ̟n of tie occur-
+ring satisfies ̟n ∼ νρn . We show that Xn converges (with all its moments) to an exponential
+distribution.
+Theorem 3 (Exp-games). Assume ρ < 1. The number of rounds Xn used to select a leader by
+GJLS converges in distribution and with all moments to an exponential distribution:
+                                                            d
+                                            νρn Xn −→ Exp(1),
+where Exp(1) denotes an exponential random variable with mean one. In particular,
+                                             E(Xn ) ∼ ν −1 ρ−n .
+    The proof relies on the recurrence (8) using the method of moments.
+    First, taking the m-th moment on both sides of (8) gives (µn,m := E (Xnm ))
+                        X m
+                                   E Tnm−k µJn ,k
+                                            
+               µn,m =
+                               k
+                       0⩽k⩽m
+                                                             
+                        1 X m               m−k
+                                                 X X           n (W ) (D)
+                    =                 E Tn                          π πn−j µj,k .                 (22)
+                       ̟n 0⩽k⩽m k                 1⩽j<n S∈WD
+                                                                j j
+                                                                 S=W ∪D
+
+
+                                                           13
+We single out the terms corresponding to k = m and have
+                                    
+                     1 X X           n (W ) (D)
+          µn,m =                         π πn−j µj,m
+                   ̟n 1⩽j<n          j j
+                              S∈WD
+                             S=W ∪D
+                                                
+                       1 X m          m−k
+                                           X X   n (W ) (D)
+                     +             E Tn             π πn−j µj,k .                           (23)
+                       ̟n 0⩽k<m k          1⩽j<n
+                                                  j j
+                                                            S∈WD
+                                                           S=W ∪D
+
+The proof proceeds in two steps: first, we derive an upper bound for µn,m, and then we refine it
+and get a more precise asymptotic approximation to µn,m .
+Lemma 5. For m ⩾ 0,
+                                      E(Tnm ) = O ρ−nm .
+                                                      
+
+Proof. This follows from the fact that E(Tnm ) = P (̟n−1 ), where P (x) is a polynomial of degree
+m (without constant term), and the asymptotics (7) of ̟n .
+   We now use this to find a similar bound for µn,m .
+Lemma 6. For m ⩾ 0,
+                                       µn,m = O ρ−nm .
+                                                    
+
+Proof. We prove by induction that
+                                        µn,m ⩽ cm ρ−nm ,                                    (24)
+for some constants cm .
+    Assume that the bound (24) is proved for all moments of order < m and for the m-th
+moment for all indices < n. To prove it for n, we use (23). First, observe that
+              1 X m
+                                       X X n (W ) (D)
+                                  m−k
+                             E(Tn )                        π πn−j µj,k
+             ̟n 0⩽k<m k                 1⩽j<n S∈WD
+                                                        j j
+                                               S=W ∪D
+                                                                         
+                                                            
+                      1 X −n(m−k) X                    X  n (W ) (D) −jk 
+                  = O          ρ                             π πn−j ρ 
+                       ̟n 0⩽k<m   1⩽j<n
+                                                            j j
+                                                     S∈WD
+                                                    S=W ∪D
+                  = O ρ−nm .
+                          
+
+Thus
+            1 X m
+                             X X n (W ) (D)
+                          m−k
+                       E(Tn )              πj πn−j µj,k ⩽ dm ρ−nm
+            ̟n 0⩽k<m k        1⩽j<n S∈WD
+                                         j
+                                             S=W ∪D
+for a suitable constant dm . By this bound, induction hypothesis and (23), we obtain that
+                                               
+                             cm X X             n (W ) (D) −jm
+                    µn,m ⩽                         π πn−j ρ       + dm ρ−nm
+                             ̟n 1⩽j<n S∈WD j j
+                                      S=W ∪D
+                             m
+                        ⩽ (ρ     cm + dm ) ρ−nm ⩽ cm ρ−nm ,
+where the last step follows by choosing cm such that cm ⩾ dm /(1 − ρm ).
+   Now we refine Lemma 5.
+
+                                               14
+Lemma 7. For m ⩾ 0,
+                                                          m!
+                                         E(Tnm ) ∼                  .                                (25)
+                                                        ν m ρnm
+Proof. The moment generating function of ̟n Tn is given by
+                                                      ̟n e̟n t
+                               E(e̟n Tn t ) =                       .
+                                                 1 − (1 − ̟n )e̟n t
+Since ̟n → 0, we see that
+                                                    1
+                                        E(e̟n Tn t ) →  ,
+                                                  1−t
+for |t| < 1. The latter is the moment generating function of an exponential distribution with
+mean 1. Consequently, we have
+                                E(̟n Tn )m → m!                (m ⩾ 0),
+which, together with the asymptotics of ̟n , proves (25).
+   We now prove a similar result for µn,m . Rewrite (22) as follows.
+                                                   X X n (W ) (D)
+          m         m      1 X m               m−k
+    E(Xn ) = E(Tn ) +                     E(Tn )                      π πn−j µj,k .                  (26)
+                          ̟n 1⩽k⩽m k                1⩽j<n
+                                                                    j j
+                                                                         S∈WD
+                                                                        S=W ∪D
+
+Lemma 8. For m ⩾ 0,
+                                                         m!
+                                          µn,m ∼                .                                    (27)
+                                                      ν m ρnm
+Proof. We use (26). First the second term on the right hand side of (26) is bounded above by
+                                       X X n (W ) (D)
+               1 X m               m−k
+                               E(Tn )                      πj πn−j µj,k
+             ̟n 1⩽k⩽m k                 1⩽j<n
+                                                        j
+                                                    S∈WD
+                                                   S=W ∪D
+                                                                       
+                            X                        
+                                           X X n (W ) (D)
+                  = O ρ−n       ρ−n(m−k)                  πj πn−j ρ−jk 
+                                                                       
+                           1⩽k⩽m          S∈WD 1⩽j<n
+                                                       j
+                                                  S=W ∪D
+                                                                                                
+                                                                                            !n
+                      X n(m−k+1) X                                 X            X
+                  = O   ρ                                 ρ−k            pj +         pℓ
+                                                                                                 
+                                                                                                 
+                          1⩽k⩽m                  S∈WD               j∈W          ℓ∈D
+                                                S=W ∪D
+                      n      
+                       ρ̃   −nm
+                  =O       ρ      ,
+                       ρ
+where                          (                                                            )
+                                   X            X
+                    ρ̃ = max           pj + ρ         pj : S = W ∪ D ∈ WD                       .
+                                j∈W             j∈D
+
+Since ρ̃ < ρ, we see that (ρ̃/ρ)n is exponentially smaller than 1. Thus by substituting the above
+estimate and Lemma 7 into (26), we prove (27).
+    The estimates (27) imply the convergence in distribution of Xn by the method of moment.
+This proves Theorem 3.
+
+                                                   15
+3 Applications
+We apply in this section the previous theorems to a few concrete cases.
+
+CTLS. For leader selection by coin tossing, the set of hands is given by {H1 , H2}, where
+H1 corresponds to head, and H2 to tail. The only one WOD set is {H1 , H2 }, where H1 is the
+winning hand and H2 the losing hand. The remaining subsets of hands all lead to ties. Thus
+CTLS is a log-game and both Theorems 1 and 2 apply.
+    For instance, in the case of an unbiased coin (i.e., p1 = p2 = 21 ), we obtain ̟n = 1 − 21−n ,
+and for (6)                               1−n
+                                         2 ,  if j = n;
+                            P(In = j) =          n
+                                         2−n         , if 1 ⩽ j < n.
+                                                 j
+Thus the functional equation (15) satisfied by the Poisson generating functions of the moments
+has the form                                       z 
+                               f˜(z) = 1 + e−z/2 f˜         + g̃(z),
+                                                         2
+with f˜(0) = g̃(0) = 0, which can be further simplified by considering
+                                         f˜(z)                       g̃(z)
+                            fˆ(z) :=           ,        ĝ(z) :=           ,
+                                       1 − e−z                     1 − e−z
+so that (by ĝ(0) = 0)                  z            X z
+                             fˆ(z) = fˆ      + ĝ(z) =     ĝ j .
+                                         2             j⩾0
+                                                              2
+From this we can derive an explicit expression for the Fourier coefficients in Proposition 1
+(compare Remark 1); see [37] for details.
+    Furthermore, the Poisson generating function for the distribution function satisfies (see
+(19))
+                                                        z 
+                                 Ãℓ+1 (z) = 1 + e−z/2 Ãℓ        .
+                                                              2
+Then by Remark 2, the sum on the right-hand side in Theorem 2 indeed simplifies to the
+expression in (2).
+    In addition, our results also apply to the case of an unbiased coin (p1 6= p2 ) and one then
+recovers the results from [24]. In this case, the sum on the right-hand side in Theorem 2 can be
+written more elegantly as an integral with respect to a suitable defined point measure; see [24]
+for details.
+
+RPSLS. For the classical Janken (RPS) game, the set of hands is {H1 , H2 , H3} and all sub-
+sets of cardinality two are WOD sets, i.e., {H1, H2 }, {H1, H3 } and {H2 , H3}, all other sub-
+sets leading to ties. Thus RPSLS is an exp-game and Theorem 3 applies.
+    For instance, for p1 = p2 = p3 = 31 , we have ρ = 23 and ν = 3 and one recovers the main
+result from [31]; see also Section 1.
+
+Other three-hand games. Apart from RPSLS many other games with three hands are possi-
+ble. We content ourselves here with a short discussion of games defined on a dominance graph
+with p1 = p2 = p3 = 13 . All five connected dominance graphs are given as follows.
+
+                                                   16
+                   I              II             III            IV
+                                                                             V
+
+The games based on these graphs are played in a natural way. Only the GJLS arising from
+Graph V requires some more explanation. Assume that the hands are {H1, H2 , H3 }, where
+Hi corresponds to the i-th node from the top to the bottom on Graph V. Then all WOD sets
+are {H1, H2 , H3 } (with H1 the winning hand), {H1 , H2 } (with H1 the winning hand) and
+{H2 , H3 } (with H2 the winnings hand). In particular, note that we define {H1 , H3 } as a tie
+(no transitivity); for a more general definition of games arising from general dominance graphs,
+see the paragraph on Janken games around the world below.
+    Note that the GJLS defined on Graph I corresponds to RPSLS and is the only exp-game;
+games on all other graphs are log-games.
+    For instance, the GJLS defined on Graph II has ̟n = 1 − 31−n , and (6) has the form
+                                    
+                                    31−n,                    if j = n;
+                        P(In = j) =          n
+                                    3−n         (2n−j + 1) , if 1 ⩽ j < n.
+                                              j
+The mean and the variance are then described by applying Theorem 1. For the limit law,
+observe that (19) becomes
+                                                         z 
+                          Ãℓ+1 (z) = 1 + e−z/3 + e−2z/3 Ãℓ   .
+                                                             3
+Then the explicit expression in Remark 2 specializes to
+                                 z      ℓ
+                                           Y            j        j
+                                                                    
+                       Ãℓ (z) = ℓ e−z/3        1 + e−z/3 + e−2z/3 ,
+                                 3        1⩽j⩽ℓ
+
+and one then obtains for the sum on the right-hand side in Theorem 2
+       X                            X k               k
+                                                           Y          j         j
+                                                                                     
+           R̃j (3j z) = ze−z + ze−z       e−3 z + e−2·3 z        1 + e−3 z + e−2·3 z
+        j⩾0                            k⩾0                  0⩽j<k
+                           z
+                       = z   .
+                        e −1
+Note that this gives the same result as for CTLS with an unbiased coin, with the only difference
+that 2 is replaced by 3 in (2); for a generalization with 2 replaced by any number m see the next
+paragraph below.
+    Consider now the games defined on Graphs III and IV, which can be seen to correspond
+to CTLS with a biased coin whose probability of head is either 13 (Graph III) or 23 (Graph IV).
+For example, for the game defined on Graph III, we have ̟n = 1 − (2n + 1)3−n and then (6)
+becomes                                    n         −n
+                                          (2 +1)3      , if j = n;
+                           P(In = j) = 2      n−j
+                                                     
+                                                   n
+                                           n         ,     if 1 ⩽ j < n.
+                                              3    j
+
+                                               17
+    Finally, the GJLS defined on Graph V is also equivalent to CTLS with a biased coin, and
+̟n and (6) are identical to those of the GJLS on Graph III.
+    In summary, there are exactly five different three-hand games defined on connected domi-
+nance graphs, where hands are chosen uniformly at random. One of them is an exp-game and
+all others are log-games. Moreover, the exp-game is RPSLS and three of the four log-games
+correspond to CTLS with a biased coin. Finally, the fourth log-game is a natural extension of
+CTLS from two hands to three hands.
+
+Janken games on acyclic cliques and CTLS. We consider Janken games defined on a di-
+rected acyclic clique. Note that such a clique contains exactly one node of out-degree i for
+i = 0, . . . , m − 1; see the following graphs for m = 2, . . . , 6.
+
+
+
+
+    The GJLS (played in the natural way) on such a directed acyclic graph is a natural extension
+of CTLS with an unbiased coin, and the GJLS from the previous paragraph on Graph II. The
+functional equation for the moments becomes
+                                                                z
+              f˜(z) = 1 + e−z/m + e−2z/m + · · · + e−(m−1)z/m f˜         + g̃(z).
+                                                                     m
+Thus the same normalization technique as that used for CTLS with an unbiased coin applies,
+and the Fourier coefficients in Theorem 1 can be made more explicit.
+   Moreover, for the asymptotic distribution, we have
+                                                                   z
+               Ãℓ+1 (z) = 1 + e−z/m + e−2z/m + · · · + e−(m−1)z/m Ãℓ    ,
+                                                                       m
+which gives again the same form as (2) but with 2 there replaced by m.
+
+Regular tournament Janken games. A tournament is a directed graph (digraph) obtained
+by assigning a direction for every edge in a complete graph. A regular tournament of 2m + 1
+nodes is a tournament in which every node dominates exactly m other nodes and is dominated
+by the remaining m nodes.
+    Typical examples of regular tournaments are the dominance graphs of RPSLS and the rock-
+paper-scissors-Spock-lizard game. Also the dominance graph of the rock-paper-scissors-well
+game is a subtournament of the rock-paper-scissors-Spock-lizard game. Note that up to isomor-
+phism there is only one regular tournament of 5 nodes, two regular tournaments of 7 nodes, and
+the number increases very rapidly with the number of nodes. The case of regular tournaments
+on infinitely many nodes also makes sense and will be briefly discussed in Section 5.
+    We consider a class of Janken games arising from a regular tournament generalizing the
+RPS game. The hands {H1 , . . . , H2m+1 } correspond to the nodes of the regular tournament.
+For instance, the hands can be ordered cyclically such that Hi dominates Hj for j − i ≡
+{1, . . . , m} mod (2m + 1). The game is played as follows: if the n players choose the hands
+S = {Hi1 , . . . , Hiℓ }, then the game is in a tie if and only if either of the following condition
+holds:
+
+                                                18
+                            B                                       G
+
+
+            S                           W              C                           F
+
+
+
+
+                 R                 P                        R                T
+          Bird, Stone, Revolver, Plank, Water         God, Chicken, Rifle, Termite, Fox
+                     (MALAYSIA)                            (Guangdong, CHINA)
+
+
+   • S is a singleton, or
+
+   • the induced subgraph of S contains a cycle.
+
+Otherwise the game is in a WOD situation.
+   Since by definition, the set of all hands is a tie, this is an exp-game. Thus the cost of this
+Janken game is described by Theorem 3. For instance, if pi = 1/(2m + 1) for 1 ⩽ i ⩽ 2m + 1,
+then ρ = (m + 1)/(2m + 1) and ν = 2m + 1. On the other hand, if we do not count rounds in
+which the induced subgraph of S contains a cycle, then the number of steps needed is predicted
+by Theorem 1 and Theorem 2; see Section 4 where counting without ties is considered in more
+generality.
+
+Some other Janken games around the world. Many variants of RPS are played all over
+the world. Examples include (i) the rock-paper-scissors-well game in Germany; (ii) the bird-
+stone-revolver-plank-water game in Malaysia, and (iii) the god-chicken-rifle-termite-fox game
+in Guangdong province (in China); see the following figure for an illustration of (ii) and (iii).
+See also [31].
+     All the three games (i)–(iii) are mainly played as two-person games. They can be general-
+ized to n-person games. More precisely, assume that the hands are given by {H1 , . . . , Hm }.
+If the n players choose the hands S = {Hi1 , . . . , Hiℓ }, then we consider the subgraph induced
+by these hands. The game is in a tie if and only if either the subgraph consists only of isolated
+nodes or there is a cycle in one of the connected components of the subgraph. (Note that in
+contrast to the regular tournament Janken game, induced subgraphs are now not necessarily
+connected). Thus, if S is a WOD set (i.e., not a tie), then the induced subgraph has at least one
+node with only outgoing edges. All these nodes together with the isolated nodes form the set
+of winning hands; the remaining hands are the losing hands.
+     As an example, assume that in the god-chicken-rifle-termite-fox game, the players choose
+the hands {G, C, F }. Then this set is a WOD set where {G, F } are the winning hands and {C}
+is the losing hand.
+     The games (i)–(iii) are all of exponential type since there are cycles in the dominance
+graphs. Thus the number of rounds is described by Theorem 3. For instance, if hands are
+chosen uniformly at random, then one obtains the following game indices:
+
+
+                                                19
+                                         GJLS                     ρ    ν
+                                                                  3
+                         (i) rock-paper-scissors-well             4
+                                                                       2
+                                                                  4
+                         (ii) rock-stone-revolver-plank-water     5
+                                                                       1
+                                                                  4
+                         (iii) god-chicken-rifle-termite-fox      5
+                                                                       3
+
+Games on a circulant payoff matrix. These games where introduced in [45] for selecting a
+leader in a distributed system. In contrast to all the previous games, they are not defined via an
+underlying dominance graph. We first recall their definition.
+    The games are played with 2m + 1 hands {H1 , . . . , H2m+1 }, where for 1 ⩽ i, j ⩽ 2m + 1
+with i 6= j, the hand Hi gets a payoff of 2m+g(i,j) from Hj . Here i − j ≡ g(i, j) mod (2m + 1)
+with −m ⩽ g(i, j) ⩽ m. If the players choose the hands S = {Hi1 , . . . , Hiℓ }, then the total
+gain of Hij is defined as
+                                              X
+                                    Gij ,S =         2m+g(ij ,ik ) .
+                                            Hik ∈S
+
+Denote by SM the subset of hands from S with the maximal total gain. Then S is a WOD set
+with winning hands SM and losing hands S \ SM if and only if #SM < #S.
+    Examples of a three-hand game and a five-hand game defined on circulant payoff matrices
+are given in Figure 1. Note that m = 1 corresponds to RPSLS. On the other hand, the game
+with m = 2 is different from the rock-paper-scissors-Spock-lizard game since there are more
+WOD sets in the former. This is also the reason why the five-hand circulant payoff matrix game
+was described as more efficient than the five-hand regular tournament Janken game in [45].
+
+                                                     hands   H1   H2   H3    H4    H5
+           hands     rock   paper    scissors         H1     22   21   20    24    23
+            rock      21     20         22            H2     23   22   21    20    24
+           paper      22     21         20            H3     24   23   22    21    20
+          scissors    20     22         21            H4     20   24   23    22    21
+                                                      H5     21   20   24    23    22
+
+        Table 1: Three-hand (left) and five-hand (right) circulant payoff matrix game.
+
+   The set of all hands in a circulant payoff matrix game is obviously a tie because each hand
+has the same total gain. Thus, circulant payoff matrix games are of exponential type and their
+complexity are described by Theorem 3. For instance, if pi = 1/(2m + 1) for 1 ⩽ i ⩽ 2m + 1,
+then ρ = 2m/(2m+1) and ν = 2m+1. This generalizes the observation made in [45], namely,
+(2m + 1)-hand circulant payoff matrix games are more efficient than (2m + 1)-hand regular
+tournament games.
+
+
+4 Extensions and Other Gap Theorems
+Another equally important cost measure for GJLS is the total number of hands used until a
+leader is selected, which corresponds to the number of times the random variate is generated
+if the hands are generated by random mechanisms. We show that instead of the log-exp com-
+plexity change, there is a change from linear to exponential for the expected cost; also the limit
+law exists in either case (log or exp).
+
+                                                20
+    On the other hand, we saw, from the above analysis, that ties play a crucial role in distin-
+guishing between log-games and exp-games. We examine in this section the contribution of
+ties in slightly more detail. More precisely, we discuss the number of rounds until a leader is
+selected when ties are ignored.
+
+4.1 The total number of hands
+We consider here the total number of hands Yn used by all players before finding a leader by
+GJLS. It turns out that Yn exhibits a scale change from linear (ρ = 1) to exponential (ρ < 1).
+   We begin with the case ρ = 1 for which we have the recurrence (cf. (5))
+                                          d
+                                       Yn = YIn + n,          (n ⩾ 2),
+
+where Yn , In are independent, Y1 = 0 and In is defined in (6).
+    While the asymptotic distribution of Xn is dictated by periodic oscillations, the distribution
+of Yn follows a central limit theorem.
+
+Theorem 4 (Log-games). The total number of hands Yn used by GJLS to find a leader in
+log-games (ρ = 1) is asymptotically normally distributed
+
+                                        Yn − E(Yn ) d
+                                         p         −→ N (0, 1),
+                                           V(Yn )
+
+where N (0, 1) denotes the standard normal distribution. Furthermore, the mean and the vari-
+ance satisfy
+                                  1
+                       E(Yn ) =       n + P3 (log1/α n) + o(1),
+                                1−α                                                                    (28)
+                                    α
+                       V(Yn ) =          n + P4 (log1/α n) log n + O(1),
+                                (1 − α)2
+
+where P3 (z), P4 (z) are one-periodic functions.
+
+Proof. (Sketch) As in Section 2.2, we consider
+                                              zn                                                zn
+              f˜1 (z) := e−z                                  f˜2 (z) := e−z
+                               X                                                X
+                                     E(Yn )         and                               E(Yn2 )      ,
+                               n⩾1
+                                              n!                                n⩾1
+                                                                                                n!
+
+which, by a similar computation as in Section 2.2, satisfy the functional equations
+
+                 f˜1 (z) = f˜1 (αz) + z + φ̃1 (z)
+                 f˜2 (z) = f˜2 (αz) + 2z f˜1 (αz) + 2αz f˜′ (αz) + z 2 + z + φ̃2 (z),
+                                                              1
+
+
+where φ̃1 (z) and φ̃2 (z) are finite sums of exponentially small terms.
+    The proof of (28) then follows the same line of arguments as that of Theorem 1 except for
+the variance for which we need to consider the Poissonized variance (see [19])
+
+                                 Ṽ (z) := f˜2 (z) − f˜1 (z)2 − z f˜1′ (z)2 ,
+
+
+                                                     21
+which then satisfies the equation
+
+                        Ṽ (z) = Ṽ (αz) + α(1 − α)z f˜1′ (αz)2 + φ̃3 (z),
+
+where φ̃3 (z) consists of exponentially small terms.
+    Finally, the central limit theorem can be proved either by the method of moments using
+the shifting-the-mean technique (see [5]) or by the contraction method [33]; details are omitted
+here.
+    Note that for CTLS with an unbiased coin, it was proved in [37] that E(Yn ) = 2n (α = 12 ).
+This is a rather exceptional result which does not seem to hold in general. Furthermore, in this
+case, P4 (z) ≡ 0.
+    We now consider exp-games (ρ < 1). Here the total number of hands used satisfies the
+distributional recurrence
+                                     d
+                                 Yn = YJn + nTn ,      (n ⩾ 2),
+where Yn , Jn , Tn are independent, Tn is a geometrically distributed random variable with pa-
+rameter ̟n , Y1 = 0 and Jn is defined in (9).
+   Then the same approach used in Section 2.3 applies and we obtain the same exponential
+limit law for Yn .
+
+Theorem 5 (Exp-games). The total number of hands Yn used to find a leader by GJLS in
+exp-games (ρ < 1) satisfies
+                                    νρn      d
+                                        Yn −→ Exp(1),
+                                     n
+where Exp(1) denotes an exponentially distributed random variable with mean one. In addi-
+tion, we have convergence of all moments. In particular, the mean satisfies
+                                                       n
+                                           E(Yn ) ∼       .
+                                                      νρn
+   Overall, we see that the total number of hands used by GJLS exhibits a sharp scale change
+from linear to exponential.
+
+4.2 Counting without ties
+Denote by Zn the number of rounds used by GJLS until a leader is selected where ties are
+ignored. Then Zn satisfies the same recurrence as (8) with Tn there replaced by 1, namely,
+                                       d
+                                    Zn = ZJn + 1,        (n ⩾ 2),
+
+where Zn , Jn are independent, Z1 = 0 and Jn is defined in (9). It turns out that in such a case
+the expected cost is always logarithmic, independent of ρ. For simplicity, we consider only the
+mean.
+    We introduce first some notations. Denote by S1 , . . . Sν the WOD sets for which the maxi-
+mum is attained in (4). Furthermore, define
+                                      X
+                               αℓ :=        pj ,   (1 ⩽ ℓ ⩽ ν),
+                                       Hj ∈Wℓ
+
+
+                                                22
+where Wℓ is the set of winning hands belonging to Sℓ .
+   By the same arguments used in Section 2.2, we obtain the functional equation
+                                                  
+                           ˜       1 X ˜ αℓ
+                          f1 (z) =         f1     z + 1 + φ̃1 (z),
+                                   ν 1⩽ℓ⩽ν      ρ
+
+with f˜1 (0) = φ̃1 (0) = 0, where
+                                                                    zn
+                                    f˜1 (z) := e−z
+                                                     X
+                                                           E(Zn )      ,
+                                                     n⩾1
+                                                                    n!
+
+and φ̃1 (z) is a finite sum of exponentially small terms.
+   Asymptotics of E(Zn ) then follows from the same Mellin and de-Poissonization arguments
+we used above. The major difference here is that the Mellin transform of f˜1 (z) has now the
+denominator                                          s
+                                            1 X        ρ
+                                       1−                 ,
+                                            ν 1⩽ℓ⩽ν αℓ
+
+instead of 1 − α−s when ρ = 1; see (18).
+    For the inverse Mellin transform, one needs to clarify the set of zeros of this function for
+which much has been known; see [9, 12] for more information. First, it is easy to see that all
+zeros must satisfy ℜ(s) > 0. Moreover, it is well-known that s = 0 is the only zero on the
+vertical line ℜ(s) = 0 if and only if at least one of the ratios log(ρ/αj )/ log(ρ/αk ) is irrational.
+Note that if the latter does not hold, then there exits an r > 1 such that ρ/αj = r κj for positive
+integers κj , and there are infinitely many zeros on ℜ(s) = 0 that are equally spaced along this
+line; for these and related properties see, e.g., [12] and references therein.
+    Using this and the approach from Section 2.2, we obtain the following result.
+Theorem 6. The expected number of rounds Zn , counted without ties, used by GJLS to find a
+leader satisfies
+                         E(Zn ) = hν log n + P (logr n) + o(1),
+where
+                                                       1
+                                    hν :=                      ,
+                                            1
+                                              P                ρ
+                                            ν   1⩽ℓ⩽ν log      αℓ
+
+and P (z) is a constant if at least one of the ratios log(ρ/αj )/ log(ρ/αk ) is irrational, and is a
+one-periodic function otherwise.
+   Thus ties dominate in an exp-game.
+
+
+5 A concluding remark
+In this paper, we discussed leader selection based on generalized Janken games. Our framework
+contains as special cases the classical leader selection procedure using coin-tossing, which is
+widely used in computer science and related areas, and the popular two-person RPS game (and
+its variants), which is played in many countries and is of importance in game theory, biology
+and physics. We showed that leader selection based on the latter as well as many other previous
+
+                                                  23
+examples of Janken games exhibit only dichotomous behaviors: either very efficient of log-
+order or very laborious of exp-order.
+   We conclude this paper with a remark on an infinite-hand Janken game generalizing the
+regular tournament Janken game introduced in Section 3.
+   Assume that the n players choose points uniformly at random on the surface of the unit
+sphere in the ℓ-space. Then the probability that all points lie on the same hemisphere [50] is
+                                             X n − 1
+                                        1−n
+                                      2                    .
+                                            0⩽j<ℓ
+                                                      j
+
+Consider the unit circle (ℓ = 2). Assume that two players choose points P and Q, respectively.
+We define the dominance relation according to the clockwise arc-length: if the clockwise arc-
+length from Q to P is larger than the counter-clockwise one, then we say that Q dominates P
+(or Q wins); see [23]. Obviously, there is a winner whenever all players choose points lying
+on the same semicircle; otherwise, the game is in a tie. The expected time until a winner is
+selected is 1/p − 1, where p is the probability that all points lie on the same semicircle. By the
+above result, the latter probability is given by p = n/2n−1 and, consequently, the expected time
+is given by
+                                            n−1 2n−1 − 1.
+This is again a game of exponential type. Note that its discrete version is the regular tournament
+Janken game with pi = 1/(2m + 1) for 1 ⩽ i ⩽ m.
+
+
+References
+ [1] P. N. Bajaj and G. R. Mendieta (1993). An open toss problem, Internat. J. Math. & Math.
+     Sci., 16:3, 621–623.
+
+ [2] O. I. Bogoyavlensky (1988). Integrable discretizations of the KdV equation, Phys. Lett.
+     A, 134, 34–38.
+
+ [3] F. T. Bruss and C. A. O’Cinneide (1990). On the maximum and its uniqueness for geo-
+     metric random samples, J. Appl. Probab., 27:3, 598–610.
+
+ [4] J. Capetanakis (1979). Tree algorithms for packet broadcast channels, IEEE Trans. In-
+     form. Theory, 25, 505–515.
+
+ [5] W.-M. Chen and H.-K. Hwang (2003). Analysis in distribution of two randomized algo-
+     rithms for finding the maximum in a broadcast communication model, J. Algorithms, 46,
+     140–177.
+
+ [6] L. Devroye (1992). A limit theory for random skip lists, Ann. Appl. Probab., 2, 597–609.
+
+ [7] B. Eisenberg (2008). On the expectation of the maximum of IID geometric random vari-
+     ables, Stat. Probabil. Lett., 78:2, 135–143.
+
+ [8] W. J. Ewens and G. R. Grant. Statistical Methods in Bioinformatics: An Introduction,
+     Statistics for Biology and Health, 2nd edition, Springer, 2010.
+
+
+                                               24
+ [9] G. Fayolle, P. Flajolet, M. Hofri (1986). On a functional equation arising in the analysis
+     of a protocol for a multi-access broadcast channel, Adv. in Appl. Probab., 18, 441–472.
+[10] J. A. Fill, H. M. Mahmoud, W. Szpankowski (1996). On the distribution for the duration
+     of a randomized leader election algorithm, Ann. Appl. Probab., 6, 1260–1283.
+[11] P. Flajolet, X. Gourdon, P. Dumas (1995). Mellin transforms and asymptotics: harmonic
+     sums, Theoret. Comput. Sci., 144:1-2, 3-58.
+[12] P. Flajolet, M. Roux, B. Vallee (2010). Digital trees and memoryless sources: from arith-
+     metics to analysis. In 21st International Meeting on Probabilistic, Combinatorial, and
+     Asymptotic Methods in the Analysis of Algorithms (AofA10), Discrete Math. Theor.
+     Comput. Sci. Proc., 233–260.
+[13] P. Flajolet and R. Sedgewick, Analytic Combinatorics, Cambridge University Press, Cam-
+     bridge, 2009.
+[14] L. Frachebourg and P. L. Krapivsky (1998). Fixation in a cyclic Lotka-Volterra model, J.
+     Phys. A: Math. Gen., 31, L287–L293.
+[15] M. Fuchs, H.-K. Hwang, Y. Itoh, H. M. Mahmoud (2014). A binomial splitting process in
+     connection with corner parking problems, J. Appl. Probab., 51:4, 971–989.
+[16] M. Fuchs, H.-K. Hwang, V. Zacharovas (2014). An analytic approach to the asymptotic
+     variance of trie statistics and related structures, Theor. Comput. Sci., 527, 1–36.
+[17] J. Hofbauer and K. Sigmund. The Theory of Evolution and Dynamical Systems: Mathe-
+     matical Aspects of Selection, Cambridge University Press, 1988.
+[18] D. R. Hush and C. Wood (1998). Analysis of tree algorithms for RFID arbitration, In
+     Proc. of ISIT, page 107.
+[19] H.-K. Hwang, M. Fuchs, V. Zacharovas (2010). Asymptotic variance of random symmet-
+     ric digital search trees, Discrete Math. Theor. Comput. Sci., 12:2, 103–166.
+[20] Y. Itoh (1971). Boltzmann equation on some algebraic structure concerning struggle for
+     existence, Proc. Japan Acad., 47, 854–858.
+[21] Y. Itoh (1975). An H-theorem for a system of competing species, Proc. Japan Acad., 51,
+     374–379.
+[22] Y. Itoh (1987). Integrals of a Lotka-Volterra system of odd number of variables, Progr.
+     Theoret. Phys., 78, 507–510.
+[23] Y. Itoh, H. Maehara, N. Tokushige (2000). Oriented graphs generated by random points
+     on a circle, J. Appl. Probab., 37, 534–539.
+[24] S. Janson and W. Szpankowski (1997). Analysis of an asymmetric leader election algo-
+     rithm, Electron. J. Combinat., 4:1, 16 pages.
+[25] P. Jacquet and W. Szpankowski (1998). Analytical de-Poissonization and its applications,
+     Theoret. Comput. Sci., 201:1–2, 1–62.
+
+                                              25
+[26] A. W. Kemp (1984). Bulk buying of possibly defective items, J. Oper. Res. Soc., 35:9,
+     859–864.
+
+[27] J. Knebel, T. Krüger, M. F. Weber, E. Frey (2013). Coexistence and survival in conserva-
+     tive Lotka-volterra networks, Phys. Rev. Lett., 110, 168106.
+
+[28] S. Linhart (1995). Some thoughts on the Ken Game in Japan: from the viewpoint of
+     comparative civilization studies, Senri Ethnological Studies, 40, 101–124.
+
+[29] S. Linhart. Cultural History of Ken Games, Kadokawa, Tokyo, 1998 (in Japanese).
+
+[30] B. Lundberg (1955). Fatigue failure of airplane structures, J. Aeronautical Sci., 22, 394.
+
+[31] H. Maehara and S. Ueda (2000). On the waiting time in a Janken game, J. Appl. Prob.,
+     37, 601–605.
+
+[32] B. H. Margolin and H. S. Winokur Jr. (1967). Exact moments of the order statistics of the
+     geometric distribution and their relation to inverse sampling and reliability of redundant
+     systems, J. Am. Statist. Assoc., 62:319, 915–925.
+
+[33] R. Neininger and L. Rüschendorf (2004). A general limit theorem for recursive algorithms
+     and combinatorial structures, Ann. Appl. Probab., 14:1, 378–418.
+
+[34] K. Nakano and S. Olariu (2002). Randomized initialization protocols for radio networks,
+     In Handbook of Wireless Networks and Mobile Computing, Edited by Ivan Stojmenovic,
+     John Wiley & Sons.
+
+[35] J. von Neumann. Probabilistic Logics and the Synthesis of Reliable Organisms from Un-
+     reliable Components, printed notes of lectures given at CALTEC, 1952.
+
+[36] T. Obayashi, Y. Kishino, T. Sougawa, S. Yamashita (Eds.), Encyclopedia of Ethnic Play
+     and Games, Taishuukan-Shoten, Tokyo, 1998 (in Japanese).
+
+[37] H. Prodinger (1993). How to select a loser, Discrete Math., 120:1-3, 149–159.
+
+[38] V. Rego and A. P. Mathur (1990). Exploiting parallelism across program execution: a
+     unification technique and its analysis, IEEE Trans. Parallel Distrib. Syst., 1:4, 399–414.
+
+[39] V. Rego and W. Szpankowski (1993). Yet another application of a binomial recurrence.
+     Order statistics, Computing, 43, 401–410.
+
+[40] B. Sinervo and C. M. Lively (1996). The rock-paper-scissors game and the evolution of
+     alternative male strategies, Nature, 380, 240–243.
+
+[41] J. M. Smith. Evolution and the Theory of Games, Cambridge University Press, 1982.
+
+[42] J. E. Spencer (1981). Probability, defectives and mail ordering, J. Oper. Res. Soc., 32:10,
+     899–906.
+
+[43] M. Suzaki and S. Osaki (2008). Probabilistic analysis and approximate calculations for
+     ordering Janken, IEICE Trans. Fundam. Electron., Comm. & Comput. Sci., 91:3, 393–398
+     (in Japanese).
+
+                                              26
+[44] M. Suzaki and S. Osaki (2009). A leader election algorithm by a 4-hand rock-paper-
+     scissors type model: probabilistic analysis and asymptotic behavior, IEICE Trans. Fun-
+     dam. Electron., Comm. & Comput. Sci., 92:8, 571–575 (in Japanese).
+
+[45] M. Suzaki and S. Osaki (2011). Numerical study for expected time to select a leader for
+     five-hand Janken games, RIMS Kokyuroku, 1734, 164–171 (in Japanese).
+
+[46] G. Szabó and G. Fath (2007). Evolutionary games on graphs, Phys. Rep., 446, 97–216.
+
+[47] K. I. Tainaka (1988). Lattice model for the Lotka-Volterra system, J. Phys. Soc. Japan,
+     57, 2588–2590.
+
+[48] B. S. Tsybakov and V. A. Mikhailov (1978). Free synchronous packet access in a broad-
+     cast channel with feedback, Probl. Peredachi Inf., 14:4, 32–59.
+
+[49] G. Weiss (1962). On certain redundant systems which operate at discrete times, Techno-
+     metrics, 4, 69.
+
+[50] J. G. Wendel (1962). A problem in geometric probability, Math. Scand., 11, 109–111.
+
+
+
+
+                                            27
+

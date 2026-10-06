@@ -1,0 +1,480 @@
+                                                      No Fair!!
+                                        An Interaction with a Cheating Robot
+
+                                    Elaine Short, Justin Hart, Michelle Vu, Brian Scassellati
+                                                 Department of Computer Science
+                                                         Yale University
+                                                      New Haven, CT 06511
+                      elaine.short@yale.edu, justin.hart@yale.edu, michelle.vu@yale.edu, scaz@cs.yale.edu
+
+
+
+   Abstract—Using a humanoid robot and a simple children’s               object that it has selected. This “nonverbal leakage” is a subtle
+game, we examine the degree to which variations in behavior              expression of mental state on the part of the robot. Proto-
+result in attributions of mental state and intentionality. Partici-      social responses have also been used to increase the human
+pants play the well-known children’s game “rock-paper-scissors”
+against a robot that either plays fairly, or that cheats in one of two   participants’ feeling of engagement, as well as the length of
+ways. In the “verbal cheat” condition, the robot announces the           time they fix their attention to a robot [4]. Breazeal [5] uses
+wrong outcome on several rounds which it loses, declaring itself         affective communication to create engagement between naı̈ve
+the winner. In the “action cheat” condition, the robot changes its       participants and a humanoid robot. Mental state attribution
+gesture after seeing its opponent’s play. We find that participants      may also play a role in studies that observe other phenomena.
+display a greater level of social engagement and make greater
+attributions of mental state when playing against the robot in           In their study of humans teaching robots, Kim, Leyzberg, Tsui,
+the conditions in which it cheats.                                       and Scassellati found that participants speak more to a robot
+   Index Terms—Affective & emotional responses, Beliefs about            that has trouble performing a learning task [6].
+robots, Mental models of robot behavior                                     Simple experiments involving the motion of shapes across
+                                                                         a computer screen or stage have also been used to probe
+                        I. I NTRODUCTION                                 questions of intentionality. Early work demonstrated that
+   When people play games with each other, they do not                   simple shapes moving across a screen will be treated as
+merely go through the motions of game play. The intrigue of              animate, provided they move in a way which allows such an
+poker is in bluffing, fooling your opponent so that they fall into       interpretation [7]–[9]. Premack suggests that infants perceive
+your trap. This dynamic can be seen in the actions taken in the          the motion of blocks as intentional when they appear to move
+game, and it is reflective of the thought processes behind game          independently of external stimuli. The infants show surprise
+play. Bandura states, “to be an agent is to intentionally make           when an “intentionally moving” shape does not demonstrate
+things happen by one’s actions” [1]. In this experiment, we              preference for shapes of its own kind [10]. Infants even
+model this very human aspect of games in a humanoid robot                read morality into the actions of blocks that either “help” or
+by having it cheat during a simple children’s game. By setting           “hinder” another block and preferentially look at a “helping”
+up the task in this way, we are seeking to make participants             block over a “hindering” block [11]. These attributions are
+treat the robot not as a device mechanically running through             based on the actions that the blocks take, and are related to
+the steps of a program, but as an entity with underlying desires         perceptions of mental state on the part of the infant. The infant
+and motivations. That is, we hope to have them attribute mental          perceives that one block is trying to impede the other and
+state to the robot and treat it like an agent performing a               prefers the helpful one.
+task rather than a device passively processing input. To the                Games are a popular medium for human robot interaction
+participant, it is obvious that the robot has failed to play             [3], [12], [13]. Kahn et al. [14] have proposed a number of
+by the rules when it cheats. With this behavior we hope                  design patterns for social human robot interaction, including
+to create the perception that it wants to win. Is this simple            “reciprocal turn-taking in game context”. In this work, we
+manipulation sufficient to increase attributions of mental state?        use a similar pattern, except that players’ actions during
+Will participants find the interaction more human-like and               rounds of this game occur simultaneously. Participants play the
+engaging? What if its behavior might easily be confused with a           children’s game rock-paper-scissors with a humanoid robot.
+malfunction? Is the unexpected behavior sufficient to produce            Although the participant assumes the robot will play normally,
+these effects?                                                           we break from this expected paradigm of behavior. In some
+   Many social robots have been designed to foster attributions          cases, the robot makes an ambiguous error which could be
+of intentionality as a mechanism to promote more engaging                perceived as either cheating or a malfunction, in others it
+human-robot interactions (i.e. [2]). A simple social cue related         clearly cheats. We observe the effects of this manipulation by
+to intentionality is used in [3], in which the authors set up            observing the video-recorded behavior of the participants and
+a guessing game where participants ask a robot “yes/no”                  administering a post-interaction survey. Our research is guided
+questions in order to find a chosen object from a set of objects         by the following questions: Will participants find the clearly
+laid out on a table. During play, the robot briefly glances at the       cheating robot to be more engaging? Will participants make
+
+
+ 978-1-4244-4893-7/10/$25.00 © 2010 IEEE                             219
+greater attributions of mental state to it? Is any departure from   raising their forearms parallel to their chests. The participants
+the expected paradigm sufficient to produce these results?          then lower their fists parallel to the ground. They repeat this
+                                                                    raising-lowering motion three more times. These gestures may
+                     II. M ETHODOLOGY                               or may not be accompanied by the phrase, “rock, paper,
+   We devised a simple interaction based on the children’s          scissors, shoot”. The last time they lower their fist, they change
+game rock-paper-scissors in order to answer our questions           their fist into one of three shapes. They may choose to retain
+regarding how engagement and attributions of mental state to        the fist shape, symbolizing “rock”, to flatten their hand out,
+a robot vary in cases in which the robot either is likely to be     symbolizing “paper”, or to curl their ring and little fingers in
+perceived as malfunctioning or is clearly cheating. We used a       towards their palm, spreading the index and middle fingers
+between-participants design, with each participant seeing the       apart, and curling their thumb over the ring and little fingers,
+robot play in one of three conditions: the control conditon, in     symbolizing “scissors”. The symbol for “scissors” is identical
+which the robot plays according to the rules and announces          to the well-known “peace” or “victory” hand gestures, but
+all outcomes correctly; the verbal cheat condition, in which        is held with the fingers pointing horizontally away from the
+the robot sometimes declares itself the winner despite having       body. The arm motions are performed in unison by the two
+lost or tied the round; or the action cheat condition, in which     participants, ensuring that the final hand gestures are made
+the robot sometimes changes the symbol that it has thrown           at the same time. The winner is determined by identifying
+after having seen that it has lost or tied the round. After a       which symbol “beats” the other. “Rock” smashes “scissors”,
+brief introduction to the task, which excludes any mention of       “scissors” cut “paper”, “paper” wraps around “rock”. The
+possible cheating, participants are left to play twenty rounds      cyclic nature of these relationships assures that no symbol has
+of rock-paper-scissors with the robot. A short questionnaire is     an advantage over the others.
+then administered.                                                     We have chosen this game for its simple rules and famil-
+   Given these conditions, we propose the following hypothe-        iarity, so that cheating behaviors will be more obvious to
+ses:                                                                participants. The rounds are short, so many rounds can be
+   H1      The verbal cheat will be characterized as a malfunc-     played without exhausting the participant. The gestures used
+           tion while the action cheat will be interpreted as       are easy to program into our robot. Finally, the game does
+           intentional cheating.                                    not involve any physical contact, ensuring the safety of both
+   H2      Participants in the action cheat condition will become   human and robot.
+           more socially engaged with the robot than in the            To play, the robot raises and lowers its arm four times, and
+           other conditions.                                        makes a gesture immediately after lowering its arm for the
+   H3      Participants in the action cheat condition will inter-   fourth time: “Rock, paper, scissors, shoot!”. After each round,
+           pret such cheats as intentional attempts to modify       the robot announces the result: “Yes, I win”, “Aw, you win”
+           the outcome of the game, and will thus make greater      or “We have tied this round.” The robot’s choice of symbol on
+           attributions of mental state to the robot.               all rounds for all participants were randomly generated prior
+                                                                    to the experiment, so all participants see the same sequence
+A. Experimental Setup                                               of throws. This also makes it easy for the wizard to keep a
+   Our experiment uses the “Wizard of Oz” arrangement [15],         consistent rhythm while playing, and to determine the outcome
+in which a human operator controls the actions of the robot         of each round quickly.
+from behind the scenes. The participant is unaware of the              In all conditions, the participant and the robot play 20
+remote operator, and interacts with the robot as if the robot       rounds of rock-paper-scissors, unless additional rounds are
+were autonomous. This setup allows us to quickly design             needed in the cheating conditions, as explained below. In the
+rich interactions and to avoid software errors that could           control condition, exactly 20 rounds are played, and the robot
+compromise our results. The latter consideration is especially      announces the outcome of each round correctly. In the verbal
+important in this experiment, as one of the manipulations is        cheat condition, the robot incorrectly declares itself the victor
+intended to be easily mistaken for a malfunction.                   on the 4th, 8th, and 15th rounds. In the action cheat condition,
+   The robot sits on a desk facing the participant. A pair of       the robot cheats on the 4th, 8th, and 15th rounds by changing
+standard computer speakers serve to play the robot’s voice,         its hand gesture to the winning gesture (without repeating the
+while a microphone under the desk and a video camera behind         full arm movement) and then declaring itself the victor. If the
+the robot provide video and audio recording. The remote             robot in fact wins fairly on a round designated for cheating,
+operator, or “wizard”, controls the robot remotely from another     the cheat is attempted on the next round. The subsequent cheat
+room. Cameras in the robot’s eyes allow the wizard to see the       rounds are pushed back, such that the spacing between rounds
+participant and interact appropriately.                             of cheating is preserved. For instance, if the robot wins the 4th
+   During the task, the robot plays the game rock-paper-            round outright, but cheats on the 5th round, the next attempt to
+scissors with participants. Rock-paper-scissors is a game fa-       cheat is made on the 9th round, instead of the 8th. The entire
+miliar to most Americans. It is played by children and adults       interaction is then lengthened accordingly, such that there are
+alike to settle minor disputes and make simple decisions. To        always five rounds where the robot does not cheat after the
+play, two participants face each other and each make a fist,        final round of cheating. The randomly generated sequence
+
+
+                                                                220
+                     (a) Rock                                            (b) Paper                                           (c) Scissors
+
+     Fig. 1.   The three modified gestures Nico uses while playing rock-paper-scissors. Mechanical limitations prevent use of the traditional gestures.
+
+
+
+of throws is longer than 20, assuring that participants see a                   paper-scissors gestures used by a human, so we developed a
+consistent sequence even during an extended interaction.                        simple set of similar gestures for the robot to use (Figure 1).
+   During the experiment, the wizard sits in an office separate                 The robot’s modified gestures are demonstrated to participants
+from the lab where the robot is. In a conference room, another                  before the game; participants are allowed to use the normal
+experimenter briefs the study participant, then brings them into                gestures.
+the lab. The experimenter demonstrates three rounds of rock-
+paper-scissors so that the participant can see each of the robot’s              C. Survey
+hand gestures and hear each of the robot’s statements, before                      This study uses a survey that is adapted from the one used
+leaving the lab. The participant plays the requisite number of                  by Bainbridge et al. [17], which is modified from the ver-
+rounds of rock-paper-scissors with the robot, after which the                   sion of the Interactive Experiences Questionnaire, originally
+robot thanks the participant for playing by saying, “Thank you                  developed by Lombard and Ditton [18], used in Kidd and
+for playing with me. Someone will come get you shortly.”                        Breazeal [19]. Kidd and Breazeal [19] used this questionnaire
+The experimenter comes back into the lab and brings the                         as a test of the perceived social presence of a set of characters
+participant back to the conference room. The participant fills                  in an interaction. We use it for its questions concerning the
+out the questionnaire and is then debriefed.                                    social characteristics of an agent. Our modified version. In our
+                                                                                modified version, we added two Likert scale questions - How
+B. The Robot Platform                                                           well did Nico play the game?, Would you like to play rock,
+   Nico is an upper torso humanoid robot with 22 mechanical                     paper, scissors with Nico again? and one open-ended question
+degrees of freedom: 6 in each arm, 6 in the head, 2 in the                      - Did anything about Nico’s behavior seem unusual? What?
+right hand, a shoulder motion and the ability to twist its torso
+(see Figure 2). It is designed to mimic the size, proportions,                  D. Coding
+and kinematic structure of a 12-month-old human male infant                        Five coders with no other involvement with the experiment
+at the fiftieth percentile [16]. Nico has a foveated active vision              examined responses to the question, “Did anything about
+system with two NTSC color cameras mounted in each eye.                         Nico’s behavior seem unusual? What?” These coders were
+The robot is clothed in a child’s t-shirt and cap, and has                      broken up into two groups. Three coders were responsible
+stylistic accents that give it a non-threatening appearance.                    for coding whether responses referred to Nico as “cheating”
+   For this experiment, Nico’s software is run on a local area                  or “malfunctioning or making a mistake”, and whether or not
+network of 3 different computers. The programs to play its                      the participant appeared to anthropomorphize the robot in their
+voice and to stream video from its cameras over the network                     response. Using the third coder as a tie-breaker, the majority
+run on a Linux machine located in the same room as the                          response was taken for each of these measures. Inter-annotator
+experimental area. A QNX machine connected to the network                       agreement is listed in Table I.
+of microcontrollers driving Nico’s actuators for the hand, arm,                    We are also interested in the extent to which participants
+and head is also located in this room. The hand is driven by a                  attributed mental state to the robot. Did they think of the
+custom motor board attached to an Atmega16 microcontroller                      robot as making choices and taking actions, or as a passive
+running software that was developed in-house. Finally, the                      processor of the task at hand? The remaining two coders
+wizard uses a Linux laptop set up in another room connected                     were given lists of all of the verb phrases related to Nico
+over the network.                                                               appearing in response to the question, “Did anything about
+   Nico’s hand was designed with two mechanical degrees of                      Nico’s behavior seem unusual? What?” They were tasked with
+freedom. The hand cannot exactly mimic the typical rock-                        classifying each verb phrase as being either in active or passive
+
+
+                                                                            221
+  Coders      Metric                      “Cheating”                      “Malfunction or Mistake”              “Anthropomorphize”
+   1&2     Cohen’s Kappa                     0.860                                 0.655                               0.552
+            Chi-squared       χ2 (1, N = 58) = 43.066, p < 0.001   χ2 (1, N = 58) = 24.865, p < 0.001   χ2 (1, N = 58) = 19.376, p < 0.001
+   1&3     Cohen’s Kappa                     0.678                                 0.506                               0.345
+            Chi-squared       χ2 (1, N = 58) = 28.458, p < 0.001   χ2 (1, N = 58) = 15.975, p < 0.001   χ2 (1, N = 58) = 7.108, p = 0.008
+   2&3     Cohen’s Kappa                     0.817                                 0.582                               0.552
+            Chi-squared       χ2 (1, N = 58) = 40.030, p < 0.001   χ2 (1, N = 58) = 21.136, p < 0.001   χ2 (1, N = 58) = 22.095, p < 0.001
+
+
+                                                            TABLE I
+   I NTER - ANNOTATOR AGREEMENT RATING RESPONSES TO THE QUESTION : “D ID ANYTHING ABOUT N ICO ’ S BEHAVIOR SEEM UNUSUAL ? W HAT ?”
+
+
+
+
+                                                                        used to synchronize timing and keep track of the number
+                                                                        of movements before the throw, we did not count “Rock,
+                                                                        paper, scissors, shoot” in the number of words uttered by the
+                                                                        participant. We use the adjusted word count as a metric to
+                                                                        quantify social engagement between conditions.
+
+                                                                                                  III. R ESULTS
+                                                                           We recruited 73 participants from the Yale community
+                                                                        through posters, the Facebook social networking site, and
+                                                                        personal invitations. We discarded seven because of opera-
+                                                                        tor error, three because of technical malfunctions, and three
+                                                                        because of failure to properly participate in the task. Operator
+                                                                        errors consisted mainly of cheating in the wrong way during
+                                                                        trials, or failure to start recording equipment. Mechanical
+                                                                        problems included a stripped set-screw in the hand which
+                                                                        needed replacing, and a cable in the hand that broke during
+                                                                        one trial. Discounting discarded participants, 21 participants
+                                                                        were placed in our control group, 20 into the verbal cheat
+                                                                        group, and 19 into the action cheat group. Of these, we had
+                                                                        23 male participants, 32 female participants, and five who did
+                                                                        not report demographic information.
+                                                                           One of our first concerns is establishing whether or not the
+                                                                        paradigm of the experiment works – that is, is it ambiguous
+                                                                        to the verbal cheat group whether Nico was cheating or
+                                                                        malfunctioning, and do participants in the action cheat group
+                                                                        perceive Nico as cheating more often than in the other groups?
+                Fig. 2.    The humanoid robot, Nico.
+                                                                        Hypothesis testing via a one-way analysis of variance shows
+                                                                        that Nico’s behavior affected participants perceptions both of
+                                                                        cheating, F (2, 56) = 33.407, p < .001 and malfunctioning
+                                                                        or making a mistake, F (2, 56) = 14.000, p < .001. Unless
+voice. Inter-annotator agreement was Cohen’s Kappa = 0.394,             otherwise specified, all post hoc analyses presented in this
+χ2 (1, N = 144) = 35.332, p < 0.001. The mean number of                 paper use Fischer’s LSD post hoc criterion. Post hoc analyses
+verbs classified as active was taken for each response. These           indicate that all mean differences are significant for cheating,
+sum was divided by the number of verb phrases appearing in              and that all differences but that between the control group
+each response, normalizing it to one. That is, we measured the          and action cheat group are significant for malfunctioning or
+proportion of verbs in each response classified as “active” or          making a mistake at p < 0.05. Malfunctioning or making a
+“passive”.                                                              mistake is borderline significant at p = 0.089. Results from
+  Finally, from the video taken of the participants playing             the classification of the written responses appear in Figure
+with Nico, we transcribed the participants’ utterances and              3. Confirming our first hypothesis, the participants who saw
+counted the number of words spoken by each participant                  the action cheat mentioned cheating, while the participants
+during the interaction with Nico. We discarded those words              who saw the verbal cheat frequently described it as a mistake
+spoken to the experimenter while the experimenter is in the             or malfunction, while only sometimes calling it cheating.
+room with the participant demonstrating the task. Because the           The participants in the control group, unsurprisingly, were
+phrase does not contain communicative intent, and is mostly             not sure at all about what the unusual behavior might be,
+
+
+                                                                     222
+Fig. 3. Proportion of participants who indicated that Nico cheated or made   Fig. 4. Seven point Likert scale ratings evaluating Nico as “fair” and “honest”
+a malfunction or mistake. Bars represent standard error.                     by participants. Bars represent standard error.
+
+
+
+although many noticed that the computer-generated voice                      verbal cheat case (Figure 5(a)) tend more towards confusion,
+lacked emotion:                                                              while their reactions to the action cheat (Figure 5(b)) are more
+   • “Robotic voice? Some fingers didn’t work? I’m not really                exaggerated, showing surprise, amusement, and occasionally
+      sure.”                                                                 anger. People speak more when they are socially engaged.
+   • “His expressions when he won seemed a bit flat.”                        Looking at the responses when participants were asked to
+   The participants in the verbal cheat group might be aware                 rate “How often did you want to or did you speak to Nico?”
+that Nico always won when he cheated, but suspected that the                 on a Likert scale of one to seven, we see that they report
+cheat was just an error:                                                     wanting to speak with the verbal cheat robot more than the
+                                                                             action-cheat robot (Figure 6(a)). An analysis of variance shows
+   • “Sometimes I won but he said he did... did he just
+                                                                             that there is a significant interaction between the experimental
+      misrecognize my symbol?”                                               condition and this score F (2, 51) = 4.683, p = 0.014. Post
+   • “Sometimes he would pronounce the results of the match
+                                                                             hoc analyses using the Scheffé post hoc criterion indicate that
+      wrong [...] but he would never make a mistake in my                    the only significant interaction is between the verbal cheat and
+      favor.”                                                                control groups p = 0.004. The interaction between the action
+   Participants in the action cheat group were often quite                   and verbal cheat groups is nearly significant at p = 0.062.
+certain of what the robot was doing:                                         The interaction between the control and action groups is not
+   • “He cheats! Would change his sign after he saw mine!”                   significant at p > 0.308. When we count the actual number
+   • “It was unusual that it KNEW how to cheat. I did not                    of words spoken by each participant during the interaction
+      expect that at all.”                                                   (Figure 6(b)) however, the result is suggestive that they might
+   Participants often had an emotional reaction to the robot’s               actually speak more to the action-cheat robot, although analy-
+behavior and made unfavorable character attributions to the                  sis of variance indicates that there is no significant interaction
+cheating robot. In Figure 4 we see that participants in the                  between the independent variable and the number of words
+action cheat condition regarded the robot as less honest than                participants spoke, F (2, 51) = 1.248, p = 0.296. It is possible
+did participants in the other two conditions. An analysis of                 that in their survey evaluation of their experience, they were
+variance shows that Nico’s actions affected perceptions of the               simply trying to punish the “bad” cheating robot, but were
+robot as “fair”, F (2, 59) = 12.573, p < .001, and “honest”,                 more sympathetic to the robot which makes mistakes. In terms
+F (2, 59) = 6.985, p = 0.002. Post hoc analyses indicate that                of our second hypothesis, our results, though inconclusive,
+differences for both the action and verbal cheat conditions are              are suggestive that any deviation from expected operation is
+significant when compared to control, but not when compared                  sufficient to create a greater degree of engagement in the
+to each other for perceptions of the robot as “fair” p < 0.05.               interaction. Though the action cheat may perform slightly
+For perceptions of the robot as “honest”, all mean differences               better, this comes at the cost of ill-will towards the robot.
+are significant except for that between control and verbal at                   Finally, we investigate attributions of mental state to Nico
+p < 0.05. As one might expect, in both the action cheat                      across the three conditions. Do participants perceive the cheat-
+condition and the verbal cheat condition the game is rated less              ing behavior of the action cheat robot as more intentional
+“fair” than in the control condition. Even if the robot does not             and attribute more mental state to Nico in this condition,
+mean to falsely report the outcome of the game, the game has                 while perceiving the malfunctioning robot as simply running
+not been played according to the rules, and this is reflected in             a flawed program?
+their responses.                                                                It is not easy to measure the attribution of mental state. How
+   Qualitatively, we see that the participants’ reactions in the             do we identify whether participants think of the robot as an
+
+
+                                                                         223
+                                                                              agent reasoning about a game, rather than a machine stepping
+                                                                              through a task? Asking “How much does the robot think?” is
+                                                                              not sufficient. Instead we have to rely on more subtle cues in
+                                                                              the participants’ behavior and written responses. The nature
+                                                                              of participants’ responses to the open-response question, “Did
+                                                                              you notice anything unusual about Nico’s behavior? What?”
+                                                                              gives us insight into their attributions of mental state to Nico
+                                                                              across the various conditions. For instance, members of the
+                                                                              action cheat group said:
+                                                                                 • “He seemed to change from rock to scissors or paper
+                                                                                   sometimes to win, but it seemed like a cute behavior
+                                                                                   rather than an annoying one - I liked it that he wanted to
+                                                                                   win!”
+                                                                                 • “I noticed Nico cheated a few times. I didn’t mind, it
+                 (a) Participant reacts to verbal cheat.                           made him more interesting to play with.”
+                                                                              While members of the verbal cheat group said:
+                                                                               • “He either misread my choice or his hands didn’t move
+                                                                                  as they should or he cheats. Either way, at least 3 times
+                                                                                  he won when he should have lost. I think scissors is
+                                                                                  difficult. I would have corrected him if I thought he was
+                                                                                  programmed to listen.”
+                                                                               • “More often than not, Nico either misinterpreted my hand
+                                                                                  position or was dishonest about the outcome of the game.
+                                                                                  The position he mostly had trouble with or wasn’t honest
+                                                                                  about was scissors.”
+                                                                                 As can be seen in Figure 7(a), participants in the action
+                                                                              cheat group use a higher ratio of active voice to passive voice
+                                                                              verbs than those in the other two groups. An analysis of
+                                                                              variance indicates that the interaction between study group and
+                 (b) Participant reacts to action cheat.                      this ratio is significant, F (2, 49) = 6.686, p = 0.003. Post hoc
+                                                                              analyses indicate that all pairwise interactions are borderline-
+                    Fig. 5.   Participant Reactions                           significant p <= 0.071, and that the interaction between the
+                                                                              action cheat and control groups is significant at p < 0.001.
+                                                                              This use of active voice implies action and choice, and
+                                                                              attributions of mental state to the robot, whereas passive voice
+                                                                              represents things that happen to the robot. Participants perceive
+                                                                              Nico as a more active participant in the scene when it cheats,
+                                                                              but malfunctioning is something that happens to a device due
+                                                                              to a flaw in its design. Participants in the verbal cheat group
+                                                                              seemed to use more verbs to describe what happened, as if,
+                                                                              in their uncertainty, they wanted to cover all possible explana-
+                                                                              tions for the behavior (Figure 7(b)). However, an analysis of
+                                                                              variance indicates a significant interaction between the study
+                                                                              group and this statistic, F (2, 56) = 4.978, p = 0.010. Post
+                                                                              hoc analyses indicate that the only pairwise interaction that
+                                                                              is significant is between verbal and control p = 0.003, with
+                                                                              action and control borderline significant at p = 0.076 and
+                                                                              action and verbal not significant at p = 0.188. Additionally,
+                                                                              participants anthropomorphize the active condition the most
+(a) Seven point Likert scale re-        (b) Number of words spoken
+sponses to the question “How            by participants while interacting
+                                                                              (M = 0.89, SD = 0.072), followed by the verbal (M = 0.74,
+often did you want to or did you        with Nico. Bars represent stan-       SD = 0.104), then control (M = 0.42, SD = 0.116).
+speak to Nico?” Bars represent          dard error.                           Hypothesis testing by analysis of variance shows that the
+standard error.
+                                                                              interaction between experimental condition and this variable
+Fig. 6.   Participants’ self-reported and actual speech with the robot.
+                                                                              is significant F (2, 56) = 5.906, p = 0.005. Post hoc analyses
+                                                                              indicate that all pairwise interactions with the control group
+
+
+                                                                            224
+                                                                               the interaction with both cheating robots as less fair than the
+                                                                               control, but they rate the action cheat robot as less honest, and
+                                                                               they say that they do not want to speak to it as much, even
+                                                                               though the result of counting the number of words spoken to
+                                                                               each robot indicates that they may actually speak to it more.
+                                                                               That is, their negative feelings towards the cheating robot lead
+                                                                               them to say that they did not want to speak to it as much,
+                                                                               independent of their actions. They sympathize with the robot
+                                                                               in the verbal cheat condition, behave punitively towards the
+                                                                               robot in the action cheat condition.
+                                                                                  The attribution of mental state to a robotic partner has
+                                                                               dramatic consequences for the relationship between robot
+                                                                               and human. A friend has mental state, a vacuum cleaner
+                                                                               does not. In our experiment, mental state is implied in the
+                                                                               idea of “cheating” – a cheating opponent is acting out of a
+                                                                               desire to win the game. A malfunction, on the other hand,
+  (a) Proportion of active voice          (b) Number of verbs used to          is entirely accidental, and could be the fault of physical
+  verbs used to describe Nico’s           describe Nico’s actions in each
+  actions in each condition. Bars         condition. Bars represent stan-
+                                                                               design or faulty programming, and can even occur entirely
+  represent standard error.               dard error.                          without involvement on the part of the robot. A malfunction
+                                                                               is something that happens to a machine, while a social entity
+   Fig. 7.   Participants’ self-reported and actual speech with the robot.     that can cheat has motivations and desires.
+                                                                                  We find support for the idea of the “cheater” as an agent
+                                                                               with mental state in our classification of the verbs in the
+are significant p <= 0.029, but that the mean difference                       written responses. Participants in the action cheat group use
+between the action and verbal cheat groups is not significant                  more active verbs to describe the robot’s behavior, while the
+p = 0.266 These data agree with our third hypothesis that                      participants in the verbal cheat group use more passive verbs.
+participants would attribute greater mental state to the robot                 Active verbs imply will on the robot’s part, as it is deliberately
+that is perceived as actively trying to change the outcome of                  acting in order to win the game. On the other hand, passive
+the match in the action cheat condition.                                       verbs are associated with objects and entities which exist in the
+                                                                               world without acting upon it. The verbal cheat group perceives
+                           IV. D ISCUSSION                                     the robot’s cheating as a flaw in the design, a mistake, a
+   We have crafted a task around the children’s game rock-                     classification error, or a shortcoming in the techniques used
+paper-scissors in order to study attributions of mental state and              to program it. The action cheat group, on the other hand,
+social engagement with a robot. The different conditions in this               perceives the robot’s cheating as a deliberately unscrupulous
+experiment are distinguished by small, easy-to-program behav-                  act, in which it not only wants to win, but planned out the
+iors that can be attributed to either cheating or malfunctioning.              appropriate steps to accomplish that goal.
+This simple interaction lends itself to modification. Further                     When studying how humans perceive and interact with
+investigation into the attribution of animacy, intentionality                  robots, we often wish to encourage them to think of the robot
+and mental state might focus on the modification of other                      as a social entity. While other research has moved towards
+parameters. One might vary the robot’s movement between                        creating sophisticated emotional models which cause complex
+groups: one group seeing a smooth-moving, lifelike robot,                      behavior [2], we demonstrate that there are much simpler
+while the other sees a robot that moves in a more mechanical-                  ways to foster the attribution of mental state to a robot, as
+looking way.                                                                   well as to enhance participants’ engagement in the interaction.
+   Participants find both the verbal cheat and action cheat                    The action cheat behavior appears to create slightly more
+conditions to be more engaging than the control condition.                     engagement than the verbal cheat, but at the cost of causing
+Qualitatively, the participants in both cheating groups are more               negative feelings towards a robot that is perceived as dishonest.
+entertained than the control participants, most of whom appear                 We attribute this engagement partly to the deviation from
+to be bored halfway through the interaction. We have tested                    expected behavior, and partly to attributions of mental state
+this by analyzing their vocalizations for word count and note                  towards the robot. We believe that many interactions can be
+that between the three groups, action cheat receives the most                  improved by the introduction of such simple behaviors, and
+words, then verbal cheat, then control. This result is not sta-                that this should be exploited by designers in HRI. Bringing
+tistically significant, however, and bears further investigation.              human and robot together to perform a simple, repetitive,
+   Even though it would appear that participants find both                     familiar task and then having the robot behave unexpectedly
+experimental conditions to be more engaging than the control,                  can increase engagement and mental state attribution without
+they are far more likely to make negative personality attribu-                 complex behavioral or mechanical additions.
+tions to the robot with a clear “cheating” behavior. They rate                    This study was limited in part by the characteristics of our
+
+
+                                                                             225
+participants. Participants were mostly Yale undergraduate and        program, Microsoft, and the Sloan Foundation. This work was
+graduate students, and while none of them had seen the robot         made possible through a software grant from QNX Software
+before, they were mostly younger, and therefore grew up with         Systems Ltd and hardware grants by Ugobe Inc.
+computers and similar technology. We would like to have been
+                                                                                                   R EFERENCES
+able to recruit a group of participants which more widely
+represented different age ranges and degrees of familiarity           [1] A. Bandura, “Social cognitive theory: An agentic perspective,” Annual
+                                                                          Review of Psychology, vol. 52, pp. 1–26, 2001.
+with technology. Additionally, we would have liked to have            [2] C. Breazeal and B. Scassellati, “How to build robots that make friends
+added more survey questions which could contribute to our                 and influence people,” in IEEE International Conference on Intelligent
+conclusions about the participants’ perception of the robot’s             Robots and Systems (IROS-99), vol. 2. Kyongju, Korea: IEEE, August
+                                                                          1999, pp. 858–863.
+mental state. Finally, we would like to have reduced the delay        [3] B. Mutlu, F. Yamaoka, T. Kanda, H. Ishiguro, and N. Hagita, “Nonverbal
+in the system, because although it was the same across all                leakage in robots: communication of intentions through seemingly
+conditions and would not affect our conclusions, many of the              unintentional behavior,” in HRI ’09: Proceedings of the 4th ACM/IEEE
+                                                                          international conference on Human robot interaction.            La Jolla,
+participants found the interaction to be stilted because of it.           California: ACM, March 2009, pp. 69–76.
+                                                                      [4] C. L. Sidner, C. Lee, C. D. Kidd, N. Lesh, and C. Rich, “Explorations
+                       V. C ONCLUSION                                     in engagement for humans and robots,” Artificial Intelligence, vol. 166,
+                                                                          no. 1–2, pp. 140–164, 2005.
+   We have designed a robot that plays rock-paper-scissors            [5] C. Breazeal, “Affective interaction between humans and robots,” in
+with human participants. In one of our experimental con-                  Proceedings of the 6th European Conference on Advances in Artificial
+ditions, the robot cheats by announcing the incorrect result              Life (ECAL ’01). Bremen, Germany: Springer-Verlag, September 2001,
+                                                                          pp. 582–591.
+(always in the robot’s favor). In another, the robot cheats by        [6] E. S. Kim, D. Leyzberg, K. M. Tsui, and B. Scassellati, “How people
+changing its throw to the winning throw.                                  talk when teaching a robot,” in HRI ’09: Proceedings of the 4th
+   We find that, as expected, that participants are more likely to        ACM/IEEE international conference on human-robot interaction. La
+                                                                          Jolla, California: ACM, March 2009, pp. 23–30.
+consider the verbal cheat as a malfunction and the action cheat       [7] C. Crick and B. Scassellati, “Inferring narrative and intention from
+as a cheating behavior. Participants in both cheating groups              playground games,” in Proceedings of the 7th IEEE International
+rate the interaction as less fair than those in the control group.        Conference on Development and Learning (ICDL 2008). Monterrey,
+                                                                          California: IEEE, August 2008.
+Furthermore, the participants in those groups are more engaged        [8] F. Heider and M. Simmel, “An experimental study of apparent behavior,”
+in the interaction than the participants in the control group.            The American Journal of Psychology, vol. 57, no. 2, pp. 243–259, 1944.
+They both report wanting to speak more, and actually speak            [9] B. J. Scholl and P. D. Tremoulet, “Perceptual causality and animacy,”
+                                                                          Trends in cognitive sciences, vol. 4, no. 8, pp. 299–309, 2000.
+more with the robot. Although we do not find a statistically         [10] D. Premack, “The infant’s theory of self-propelled objects,” Cognition,
+significant difference in how much they speak to the action-              vol. 36, no. 1, pp. 1–16, 1990.
+cheat robot versus the verbal cheat robot, the results suggest       [11] J. K. Hamlin, K. Wynn, and P. Bloom, “Social evaluation by preverbal
+                                                                          infants,” Nature, vol. 450, no. 7169, pp. 557–559, 2007.
+that they speak more to the robot that cheats by changing its        [12] B. Mutlu, S. Osman, J. Forlizzi, J. Hodgins, and S. Kiesler, “Perceptions
+throw than the one whose actions could be interpreted as a                of asimo: An exploration on co-operation and competition with humans
+mere malfunction.                                                         and humanoid robots,” in HRI ’06: Proceedings of the 1st ACM/IEEE
+                                                                          Conference on Human-Robot Interaction, vol. 2006. Salt Lake City,
+   Our results point towards a greater attribution of mental state        Utah: ACM, March 2006, pp. 351–352.
+to a cheating robot than one that behaves entirely as expected,      [13] C. Nass, Y. Moon, B. J. Fogg, B. Reeves, and D. C. Dryer, “Can
+providing a simple way for robotics researchers to increase the           computer personalities be human personalities?” International Journal
+                                                                          of Human - Computer Studies, vol. 43, no. 2, pp. 223–239, 1995.
+engagement of a human participant with the robot, although           [14] P. H. Kahn, N. G. Freier, T. Kanda, H. Ishiguro, J. H. Ruckert, R. L.
+at the expense of positive emotions towards the robot.                    Severson, and S. K. Kane, “Design patterns for sociality in human-robot
+   In a game such as rock-paper-scissors, people expect con-              interaction,” in HRI ’08: Proceedings of the 3rd ACM/IEEE international
+                                                                          conference on human-robot interaction. Amsterdam, The Netherlands:
+sistent behavior. When the robot does something unexpected,               ACM, March 2008, pp. 97–104.
+especially when the behavior has a clear intention (as opposed       [15] A. Steinfeld, O. C. Jenkins, and B. Scassellati, “The oz of wizard: Sim-
+to a malfunction) they are surprised into interacting socially.           ulating the human for interaction research,” in HRI ’09: Proceedings of
+                                                                          the 4th ACM/IEEE international conference on human-robot interaction.
+In the words of one participant, “You totally cheated! You’re             La Jolla, California, USA: ACM, March 2008, pp. 101–107.
+not allowed to cheat. You’re the robot.”                             [16] G. Sun and B. Scassellati, “A fast and efficient model for learning to
+                                                                          reach.” International Journal of Humanoid Robotics, vol. 2, no. 4, pp.
+                    ACKNOWLEDGEMENTS                                      391–413, 2005.
+                                                                     [17] W. A. Bainbridge, J. W. Hart, E. S. Kim, and B. Scassellati, “The effect
+   The authors would like to thank Ahmet Aktay, Emily                     of presence on human-robot interaction,” in 17th IEEE International
+Bernier, Christian Csar, Julie Hersh, Michael Mester, and                 Symposium on Robot and Human Interactive Communication (RO-
+                                                                          MAN). Munich, Germany: IEEE, August 2008.
+Drew Westphal for the time that they spent coding. Support           [18] M. Lombard, T. B. Ditton, D. Crane, B. Davis, G. Gil-Egui, K. Horvath,
+for this work was provided by National Science Foundation                 and J. Rossman, “Measuring presence: A literature-based approach to the
+awards #0534610 (Quantitative Measures of Social Response                 development of a standardized paper-and-pencil instrument,” in Presence
+                                                                          2000: The Third International Workshop on Presence, Netherlands,
+in Autism), #0835767 (Understanding Regulation of Visual                  Delft, The Netherlands, 2000.
+Attention in Autism through Computational and Robotic Mod-           [19] C. D. Kidd and C. Breazeal, “Effect of a robot on user perceptions,”
+eling) and CAREER award #0238334 (Social Robots and Hu-                   in 2004 IEEE/RSJ International Conference on Intelligent Robots and
+                                                                          Systems (IROS), vol. 4. Sendai, Japan: IEEE, October 2004, pp. 3559–
+man Social Development). The authors also acknowledge the                 3564.
+generous support of the DARPA Computer Science Futures II
+
+
+                                                                 226
+

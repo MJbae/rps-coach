@@ -1,0 +1,308 @@
+
+ Lose-Shift Responding in Humans Is Promoted by Increased Cognitive Load - PMC
+ Skip to main content
+ An official website of the United States government
+ Here's how you know 
+ Here's how you know 
+ Official websites use .gov 
+ A
+ .gov website belongs to an official
+ government organization in the United States.
+ Secure .gov websites use HTTPS 
+ A lock (
+ Lock 
+ Locked padlock icon
+ ) or https:// means you've safely
+ connected to the .gov website. Share sensitive
+ information only on official, secure websites.
+ Search
+ Log in 
+ Dashboard
+ Publications
+ Account settings
+ Log out
+ Search…
+ Search NCBI
+ Primary site navigation
+ Search
+ Logged in as:
+ Dashboard
+ Publications
+ Account settings
+ Log in
+ Search PMC Full-Text Archive 
+ Search in PMC 
+ Journal List
+ User Guide
+PERMALINK 
+ Copy 
+ As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+ the contents by NLM or the National Institutes of Health.
+ Learn more:
+ PMC Disclaimer 
+ |
+ PMC Copyright Notice
+ Front Integr Neurosci . 2018 Mar 8;12:9. doi: 10.3389/fnint.2018.00009 
+ Search in PMC 
+ Search in PubMed 
+ View in NLM Catalog 
+ Add to search 
+Lose-Shift Responding in Humans Is Promoted by Increased Cognitive Load 
+ Victorita E Ivan 
+ Victorita E Ivan 
+ 1 Canadian Centre for Behavioral Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada 
+Find articles by Victorita E Ivan 
+ 1 , Parker J Banks 
+ Parker J Banks 
+ 1 Canadian Centre for Behavioral Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada 
+Find articles by Parker J Banks 
+ 1 , Kris Goodfellow 
+ Kris Goodfellow 
+ 1 Canadian Centre for Behavioral Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada 
+Find articles by Kris Goodfellow 
+ 1 , Aaron J Gruber 
+ Aaron J Gruber 
+ 1 Canadian Centre for Behavioral Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada 
+Find articles by Aaron J Gruber 
+ 1, * 
+ Author information 
+ Article notes 
+ Copyright and License information 
+ 1 Canadian Centre for Behavioral Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada 
+Edited by: Mark Laubach, American University, United States 
+Reviewed by: Vincent Daniel Costa, National Institute of Mental Health (NIH), United States; James M. Hyman, University of Nevada, Las Vegas, United States 
+ ✉ 
+*Correspondence: Aaron J. Gruber aaron.gruber@uleth.ca 
+Received 2017 Dec 12; Accepted 2018 Feb 22; Collection date 2018. 
+Copyright © 2018 Ivan, Banks, Goodfellow and Gruber. 
+This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms. 
+ PMC Copyright notice 
+PMCID: PMC5852382  PMID: 29568264 
+Abstract 
+The propensity of animals to shift choices immediately after unexpectedly poor reinforcement outcomes is a pervasive strategy across species and tasks. We report here on the memory supporting such lose-shift responding in humans, assessed using a binary choice task in which random responding is the optimal strategy. Participants exhibited little lose-shift responding when fully attending to the task, but this increased by 30%–40% in participants that performed with additional cognitive load that is known to tax executive systems. Lose-shift responding in the cognitively loaded adults persisted throughout the testing session, despite being a sub-optimal strategy, but was less likely as the time increased between reinforcement and the subsequent choice. Furthermore, children (5–9 years old) without load performed similarly to the cognitively loaded adults. This effect disappeared in older children aged 11–13 years old. These data provide evidence supporting our hypothesis that lose-shift responding is a default and reflexive strategy in the mammalian brain, likely mediated by a decaying memory trace, and is normally suppressed by executive systems. Reducing the efficacy of executive control by cognitive load (adults) or underdevelopment (children) increases its prevalence. It may therefore be an important component to consider when interpreting choice data, and may serve as an objective behavioral assay of executive function in humans that is easy to measure. 
+ Keywords: lose-switch, prefrontal cortex, adult, children, cognitive load, WSLS 
+Introduction 
+The ability to adapt behavior in response to dynamic environments is a paramount feature of the mammalian brain. The prefrontal cortex (PFC) is credited as a brain region involved in supporting behavioral adaptation through executive functions such as reasoning, working memory, impulse suppression and outcome evaluation (Kane and Engle, 2002 ; Balleine and O’Doherty, 2009 ; Passingham and Wise, 2012 ). Behavioral flexibility, a broad concept generally embodying the change in response policies to accommodate changing environmental or internal states, is a key feature of the decision making processes that depends on the PFC in humans (Garavan et al., 2002 ; Braver et al., 2009 ), non-human primates (Barraclough et al., 2004 ; Moore et al., 2009 ), and rats (Kolb, 1984 ; de Bruin et al., 1994 ; Ragozzino, 2007 ). While the PFC plays an important role in behavioral control in many situations, there are several other neural systems that also contribute unique features to decision-making and strongly influence choice (Balleine and O’Doherty, 2009 ; Dalley et al., 2011 ; Gruber and McDonald, 2012 ). Two pervasive choice strategies across species and tasks are lose-shift and win-stay responding, which have long been studied as measures of behavioral flexibility (Evenden and Robbins, 1983 ). These responses reflect the propensity of participants to repeat choices that resulted in a reward in the previous trial (win-stay), and to shift responding away from options that formerly led to a poor outcome (lose-shift). Humans show this type of behavior in various tasks and reward contingencies (Hayden and Platt, 2009 ; Worthy et al., 2013 ). 
+We have recently discovered (Skelin et al., 2014 ; Gruber et al., 2017 ) that lose-shift responding in rats depends on the lateral striatum (LS), a sensorimotor region of the striatum homologous to the putamen in primates (Johnston et al., 1990 ; Voorn et al., 2004 ; Balleine and O’Doherty, 2009 ). The PFC normally inhibits the behavioral control exerted by sensorimotor systems, which includes the expression of habits (Jahanshahi et al., 1998 , 2000 ; Knoch et al., 2005 ). We therefore hypothesized that impairment or preoccupation of PFC will lead to increased control by sensorimotor systems, and therefore increased lose-shift responding in humans. The influence of executive systems in choice is reduced when participants are given cognitively demanding tasks to perform in tandem with decisions. A typical method is to have the participants perform a serial subtraction task in which they recite a numerically descending series (Brown et al., 1999 ; Ingram et al., 2000 ). Thus, we predicted that participants engaged in such cognitively demanding activity while performing the choice task will exhibit increased prevalence of lose-shift responding. We tested this prediction here by having participants engage in a competitive binary choice task (CBCT) with or without concurrent cognitive load. 
+We made a second prediction based on the fact that the PFC is not fully developed in humans until adulthood (Sowell et al., 1999 ; Fuster, 2002 ; Gogtay et al., 2004 ). It, therefore, likely has weaker control over sensorimotor and other brain systems in children (Zelazo et al., 1996 , 2004 ; Munakata et al., 2012 ). We thus predicted that children without additional cognitive load would show lose-shift responding on the CBCT similar to the cognitively loaded adults. Indeed, we found here that children (5–9 years old) and cognitively loaded adults showed prevalent lose-shift responding, whereas adults with no additional cognitive load and pre-teens did not. Further, we provide strong evidence that the mechanisms underlying lose-shift responding are temporally brief and are dissociated from those mediating win-stay. Thus, lose-shift responding appears to be a default and reflexive response strategy in humans that is normally suppressed by executive functions. 
+Materials and Methods 
+Competitive Binary Choice Task: Box Format 
+All procedures were approved by the University of Lethbridge Human Subject Research Committee. All subjects gave written informed consent in accordance with the Declaration of Helsinki and all procedures are in compliance with the APA ethical standards. For Experiment 1, we recruited male ( n = 6) and female ( n = 12) participants (age 18–26) from the undergraduate student population at the University of Lethbridge. Participants provided informed consent after the nature and possible consequences of the studies were explained, and received course credit for their participation. We analyzed data from participants screening negative on written self-evaluations for Attention-Deficit Hyperactivity Disorder using the World Health Organization Adult Self-Report Scale, substance abuse (WHO-ASSIST v3.0), problem gambling (CAMH Gambling Screen), head injury requiring medical care, and prior anxiety/depression diagnosis. 
+The task was implemented on a touch-screen enabled tablet computer (Microsoft Surface Pro 3). Participants first touched a centrally-located square to initiate a trial, and then touched one of two target boxes that would then appear 3 cm on either side of the square. Immediately following, the target boxes disappeared, and a numeric value would appear to indicate either a win (“Win $10” in green text) or loss (“Lose $10” in red text). This message remained for a randomly chosen delay period (1–4.5 s). Afterwards, the screen went blank and the square would appear to initiate the next trial. The computer implemented a competitive zero-sum game sometimes called “Matching Pennies”, which has been previously described (Seo et al., 2007 ; Vickery et al., 2011 ; Skelin et al., 2014 ). Briefly, the algorithm attempted to minimize the number of rewards delivered. The algorithm would choose the rewarded side randomly, unless it detected that the subject was likely to non-randomly select a target option. The detection was done by computing the likelihood that a participant was engaging in patterned responses over the past 1–4 trials. If the previous sequence of responses to the right (R) and left (L) option (and reinforcement) was R(win), R(lose), R(win), R(lose), then the algorithm would compute whether the L side was likely to be selected with a probability greater or less than chance by computing frequency of the sequences RL, RRL, RRRL and RRRRL in all past trials in the session. It analogously computed the frequency of sequences of choice and reward (e.g., R(lose)L, R(win)R(lose)L, …). If any of these sequences occurred more than at chance levels (probability > 0.5 by the binomial test, p < 0.05), the algorithm would then select the L side to be unrewarded. The same procedure was used to determine if the participant was more likely than chance to select the R option, in which case it would be unrewarded on the current trial. If neither the R or L choice were more likely than chance, then the rewarded side was selected randomly. The competitive algorithm therefore punished predictable response patterns. The optimal strategy for the participants was to be as stochastic as possible in their choices. Participants performed 180 trials per session. Concurrently with the competitive choice tasks, some participants ( n = 8) were instructed to also engage in a serial subtraction task as a cognitive load. The task consisted of reciting the numeric series starting with 999 and decrementing by 3 on each iteration. If participants reached the number 0, they were instructed to start over beginning with 998. If the recitation rate became lower than one number every 3 s, the experimenter asked them to try to count faster. One subject was unable to perform the counting task, and another subject generated lose-shift behavior that was 6 standard deviations from the population mean and was determined to be an outlier by the Extreme Studentized Deviate method; both participants were excluded from the data set. A total of 16 participants were thus included in the analysis. The inter-trial interval (ITI) was computed as the time from the onset of the feedback to the press of the central square to start the subsequent trial. We then ran a second experiment in which the feedback was presented for 1 s every trial, and a blank screen was presented for a delay of 1, 6.5 or 12 s (randomly chosen for each trial). All participants in this experiment completed the task concurrently with the cognitive load. We excluded participants that either could not perform the serial subtraction task (more than 20 errors in the session; n = 2), or employed a choice pattern independent of reinforcement (e.g., alternation; n = 2). A total of n = 12 participants were included in the analysis for Experiment 2. 
+Competitive Binary Choice Task: Maze Format 
+For Experiment 3, we recruited male ( n = 14) and female ( n = 42) participants (age 18–27; mean age = 20.8, SD = 2.64) from the undergraduate student population at the University of Lethbridge. Subjects received course credit for participation. Consent and subject screening was performed as described for the Box format of the task. We implemented the same competitive algorithm described above on a touch-screen enabled tablet PC. In this format of the task, the participants had to choose between left and right targets by guiding a video character (a raccoon) to one of two trees in order to find a hidden target (a strawberry). The participants would use their finger to drag the raccoon icon on a touchscreen to either the right or left side of a partition. The tree disappeared upon character contact, and revealed either a strawberry (a win) or the background color (a loss). A progress bar at the top of the screen indicated the relative number of trials completed. Exclusion criteria were the same as previously described, resulting in elimination of participants that scored positive on the ADHD Self-Report Scale ( n = 4), those who had a “moderate” or greater risk score on the WHO-ASSIST substance abuse questionnaire ( n = 12), those who employed a strongly patterned response, such as alternation or perseveration on one side ( n = 9), those diagnosed with anxiety/depression ( n = 4), those who were significantly slower and were determined to be an outlier by the Extreme Studentized Deviate method ( n = 1), or who could not perform the serial subtraction task ( n = 1). Consistent with our previous design, some participants ( n = 12) were instructed to do the counting task while performing the experiment. A total of 25 participants were included in the analysis for this group. All adults performed 180 trials on the task so as to be consistent with the box version of the task. 
+For Experiment 4, we recruited 17 children (nine female, eight male), with ages between 5 years and 9 years old (mean age = 7.4, SD = 1.04), to perform 40 trials of the same Maze format of the task described above. The children were enrolled through a local elementary school and parental consent was obtained. Parents were informed of the nature and possible consequences of the studies, and were present during testing. Participants were excluded if the parent reported a prior diagnosis of ADHD ( n = 1), if they were significantly slower ( n = 1), or if they used a strongly patterned response ( n = 4). Therefore, 11 participants were included in the analysis. At the end of the session, the children received a small toy regardless of their performance. 
+For Experiment 5, 14 children (six female, eight male) with ages between 11 years and 13 years old (mean age = 12.1, SD = 0.94) were tested on the same task in the Maze format for 140 trials. Parents provided written consent and were given the option to attend the testing. Participants were excluded if they used a strongly patterned response ( n = 1). All participants received a voucher for entry to a local movie theater after testing. 
+Analysis 
+Data were analyzed and plotted with custom written code and built-in function of Matlab 2013a or GraphPad Prism version 7. The probability of lose-shift was calculated as the probability that the subject would chose the alternate response option in trials following reward omission. Likewise, the probability of win-stay was calculated as the probability that the subject would repeat the selection on trials immediately following rewarded trials. In defining consecutive trials, we include only trials that were less than 20 s apart. Mean values for each group were computed based on session-averaged data for each subject. When comparing among different cohorts of adults, all 180 trials were used for the session means. Because the young children only completed 40 trials, we generated session means for the adult contrast groups based on the first 40 trials of the session. The behavioral responses of adults computed over the first 40 trials was not different than that computed for the full session ( t -tests, p ’s = 0.09–0.89). Furthermore, analysis of behavior binned into quartiles of trial number within the session revealed no difference in either lose-shift (RM analysis of variances (ANOVAs), p ’s = 0.14–0.99) or win-stay (RM ANOVAs, p ’s = 0.29–0.99), regardless of the cognitive load condition. Data were normally distributed as determined by the D’Agostino-Pearson test in GraphPad Prism (alpha = 0.05) unless otherwise stated. 
+Results 
+We used a touch-screen tablet computer to assess choice strategies in adults and children performing the CBCT. The task had two presentation formats, a Box version in which the participants chose one of two rectangular boxes in order to collect a fictitious monetary reward, or a Maze version in which participants guided a cartoon character to one of two trees to find a concealed target. We first tested how adult participants adapted responses on trials immediately following wins or losses in the Box format (Figure 1A ). This task is modeled after the classic “Matching Pennies” game in which two players compete by each making a binary choice, such as secretly turning a coin to be heads or tails. The rules for winning are established before play such that one player wins if both players’ choices match, and the other wins if the choices do not match. Previous studies have shown that humans approach the optimal solution against rational opponents, which is to select randomly on each trial to win on 50% of the trials (Vickery et al., 2011 ). This is because any predictability in the choice of the player, such as alternation, can be exploited by the opponent so that the player wins less than 50% of the time. Participants should therefore avoid using lose-shift or win-stay strategies in this task. Deviation from random responding reveals innate choice strategies. The opponent in the present work is a computer algorithm. 
+Figure 1. 
+ Open in a new tab 
+Lose-shift responding by healthy adult participants. (A) Schematic illustration of the Box format of the competitive binary choice task (CBCT). (B,C) Adult participants show little lose-shift or win-stay responding above chance level when performing the task with no other cognitive load (−load), but a prominent lose-shift strategy emerges in participants that are performing concurrently with a cognitively demanding serial subtraction task (+load). Box plots show the median (red line), upper and lower quartiles, and the extreme data points (whiskers). (D) The probability of lose-shift responses for the +load group, which decreased with increasing inter-trial interval (ITI). (E) Schematic illustration of the modified choice task with a blank-screen delay of 1, 6.5 or 12 s. (F,G) Participants showed reduced lose-shift with longer delays, whereas win-stay did not vary with delay; plots show individual values, mean and error bars represent SEM. Statistical significance ( p < 0.001) is indicated by “***”. Main effect of ITI ( p < 0.05) is indicated by § and ( p < 0.00005) is indicated by §§. 
+Cognitive Load Increases Lose-Shift Responding in Adult Human Participants 
+Our first objective was to test our hypothesis that taxing the executive system with cognitive load would increase lose-shift responding. We therefore instructed one group to perform a cognitively demanding task (serial subtraction of 3 starting from 999) during the task ( n = 8), while a control group did not have this additional cognitive load ( n = 8). The control group did not exhibit lose-shift or win-stay strategies beyond that expected by chance (Figures 1B,C ), consistent with the optimal strategy on the task. The cognitive load did not increase win-stay responding ( t -test that mean is the same with or without load; t (15) = 0.06, p = 0.48; Figure 1B ), but did significantly increase lose-shift responding as compared to the control group (two-tailed t -test: t (15) = 4.59, p = 2E-4, d = 1.77; Figure 1C ). This suggests that lose-shift responding is normally suppressed by the executive systems preoccupied by the counting task, whereas win-stay is not. 
+We next sought to determine if the memory trace supporting lose-shift responses decays with time, as has been reported in rats (Gruber and Thapa, 2016 ). We found that the lose-shift probability among the group with the cognitive load does indeed decay with increasing (ITI; F vs. constant model = 13.4, df = 4, p = 0.02; r 2 = 0.71; Figure 1D ). The ITI is defined here as the time between the onset of reward feedback and the choice on the subsequent trial. In this experiment, the delay was randomly set between 1 s and 4.5 s by the software, but participants showed self-paced ITI spanning approximately 1–9 s. We thus ran a second experiment with new participants ( n = 12) under cognitive load in which the delays (blank screen without feedback) were randomly presented within sessions at fixed intervals of either 1, 6.5, or 12 s (Figure 1E ). This delay is exclusive of the reinforcement feedback (1 s) and the initialization time on the subsequent trial. These participants also exhibited strongly decreased lose-shift responding as the ITI increased (main within subjects effect of ITI RM-ANOVA: F (2,22) = 17.1, p = 3E-5; Figure 1F ), whereas the probability of win-stay was not affected by delay (main within subjects effect of ITI RM-ANOVA: F (2,22) = 0.1, p = 0.93; Figure 1G ). These data provide strong evidence that the memory trace supporting lose-shift responding decays over several seconds in humans. 
+Children Perform Similarly to Adults Under Cognitive Load 
+We hypothesized that the underdeveloped executive functions in children would result in increased lose-shift responding, even in the absence of additional cognitive load. Because pilot testing revealed that children were not engaged in the Box version of the task, we developed a more game-like version modeled after the classic T-Maze (Figure 2A ). We first tested whether the change in task format significantly affected the performance of adults. We found no difference in performance on the Maze format as compared to the Box format for either adult control participants or adults under cognitive load. Regardless of the presentation design (multiple comparisons Two-way ANOVA; main effect of design: F (1,40) = 0.0553, p = 0.81), the probability of lose-shift increased significantly when adult participants have an increased cognitive load (main effect of load: F (1,40) = 32.1, p = 1.39E-6; Figure 2B ). However, win-stay is not significantly dependent on the cognitive load ( F (1,40) = 0.005, p = 0.94; Figure 2C ) or the task format ( F (1,40) = 1.038, p = 0.31). 
+Figure 2. 
+ Open in a new tab 
+Comparison of performance among task formats. (A) Schematic illustration of the Maze format of the task. (B) Adult participants show little lose-shift responding when performing either task format (Box or Maze) under no other cognitive load (−load), but a prominent lose-shift strategy emerges when they concurrently engage in serial subtraction (+load) in either task format. (C) Win-stay responding is invariant to task format or cognitive load. Plots show individual values, mean and error bars represent SEM. Statistical significance ( p < 0.0001) is indicated by “****”. 
+We next investigated the performance of younger (aged 5–9) and older (aged 11–13) children on the Maze format of the task under no additional cognitive load. The younger children were asked to perform 40 trials, so we compared their performance to the first 40 trials of the comparison groups: older children; adults with no cognitive load; and adults with cognitive load. We found a main effect of group on lose-shift responding (one-way ANOVA: F (3,45) = 6.02, p = 0.0015; Figure 3A ). Post hoc tests revealed that when compared to the adults performing without the cognitive load, the younger children (Dunnett’s multiple comparison post hoc test: p = 0.004; d = 1.45) and the adults engaged in serial subtraction ( p = 0.001; d = 1.39) show an increased lose-shift response. This effect disappears in the older children. The 11–13 years old show no difference ( p = 0.119). There was no difference for win-stay responding for any group (one-way ANOVA; main effect of group: F (3,45) = 0.793, p = 0.504; Figure 3B ). 
+Figure 3. 
+ Open in a new tab 
+Performance of children compared to adults. (A) Lose-shift responding is significantly increased in 5–9 years old children and adults under cognitive load, compared to the (−load) adults. (B) The probability of win-stay in children is similar to that in adults, regardless of their cognitive load. Plots show individual values, mean and error bars represent SEM. Statistical significance ( p < 0.005) is indicated by “**”. 
+Given that the probability of lose-shift reduces with slower performance (Figure 1D ), the increase in lose-shift under cognitive load could be explained if participants increased their performance speed when counting. However, the groups with increased lose-shift responding have an increased mean trial duration over the first 40 trials (one-way ANOVA; main effect of group: F (3,45) = 4.366, p = 0.008; Figure 4A ). The 5–9 years old and cognitively loaded adults tend to be slower than the non-counting adults (Dunnett’s multiple comparison post hoc test; children: p = 0.012, d = 1.28; +load adults: p = 0.028, d = 1.02). The results of Experiment 1 indicate that the slowing effect of the load or young age should decrease lose-shift, and thus does not account for the observed increase. In addition, the number of wins was not affected by load or age (one-way ANOVA: F (3,45) = 1.61, p = 0.199; Figure 4B ), which indicates that the increase in lose-shift in the +load and 5–9 years old groups is not due to an overall performance deficit, frustration, or other factor related to a different frequency of wins and losses. 
+Figure 4. 
+ Open in a new tab 
+Effect of group on response rate and number of wins. (A) Mean trial duration, showing that adults under load and 5–9 year olds tend to be slower. (B) Percentage of rewarded trials, showing that each group collected equivalent proportions of wins. Plots show individual values, mean and error bars represent SEM. Statistical significance ( p < 0.05) is indicated by “*”. 
+Discussion 
+We investigated decision-making processes in adults and children, using a deceptively simple task in which random responding is the best selection policy. Deviation from random responding reveals innate choice strategies. The data show that reward omission has a pronounced short-lasting effect on subsequent choice, which can be described by the classic notion of lose-shift responding. We found here that lose-shift is prominent in children and in adults under cognitive load, but not in older children or adults unburdened by other cognitively effortful tasks. 
+Humans show win-stay/lose-shift (WSLS) responses in several behavioral contexts. Participants rely heavily on a WSLS strategy in other binary and trinary analogs of the present task (Vickery et al., 2011 ). Choice behavior on the Iowa Gambling Task (IGT) is also well explained by a WSLS strategy (Worthy et al., 2013 ). This tactic yields superior results in some games such as the Prisoner’s Dilemma (Nowak and Sigmund, 1993 ; Posch, 1999 ), but not the present task. The competitive nature of our task ensured that high levels of predictable strategies diminished the number of rewards. Nonetheless, while control participants employed little to no lose-shift, participants performing under increased cognitive load continued to employ it throughout the session. Together, these studies indicate that lose-shift responding should be considered when interpreting data from choice tasks. 
+The probability of lose-shift responding decayed with increasing delays between the feedback signal and the next choice. This decay is very similar to that of the lose-shift observed in rodents performing against the same computer algorithm (Gruber and Thapa, 2016 ). The time dependence is consistent with findings in other species. WSLS responding decreases with longer ITIs in rhesus monkeys (Deets, 1970 ) and in pigeons (Rayburn-Reeves et al., 2013 ). We did not find such a temporal relationship with win-stay in the present data, providing evidence supporting the hypothesis that win-stay and lose-shift are mediated by different neural mechanisms (Skelin et al., 2014 ; Gruber and Thapa, 2016 ; Gruber et al., 2017 ). We can only speculate on the information encoded by the decaying memory trace, but we suspect it is an inhibition of the reward position rather than an explicit representation of the reward omission. We base this on a separate set of experiments (unpublished data) in which the targets (box version) appeared in a translated position on some trials. The probability of lose-shift was lower when the target pairs shifted in space as compared to when they were presented in the same location as in the previous trial. This should not occur if the memory was based primarily on reinforcement and not position. 
+Although we cannot rule-out the possibility that the memory trace supporting lose-shift involves working memory, we argue that this is unlikely for several reasons. Lose-shift prevalence increases under cognitive load. The serial subtraction task we used appears to involve the dorsolateral PFC (Burbaud et al., 1995 ; Vansteensel et al., 2010 ). This structure is also proposed to subsume working memory (Berman et al., 1995 ; Curtis and D’Esposito, 2003 ). It thus stands to reason that the cognitive load should reduce lose-shift responding if the response depends on working memory. However, we acknowledge that the complex nature of working memory and its temporal variability makes it difficult to rule out. It is possible that the limitations of the executive function in the cognitively loaded adults and young children has constrained the working memory to a shorter time span such that choice is based more prominently on the immediately previous trial, rather than some weighted average of past outcomes. 
+We instead propose that lose-shift is mediated by sensorimotor systems, including the putamen in primates or LS in rodents. This is consistent with lesion data in rats (Skelin et al., 2014 ; Gruber et al., 2017 ), and impairments in a similar task (Rock-Paper-Scissors) in human patients with damage to the putamen (Danckert et al., 2012 ). Furthermore, it provides a parsimonious explanation for the increase in lose-shift in adults under load: the normal suppression of sensorimotor control by PFC (Jahanshahi et al., 1998 ; Knoch et al., 2005 ) is disrupted by the subtraction task, thereby unmasking lose-shift behavior mediated by sensorimotor system. This also provides an explanation for the ubiquity of lose-shift responding across an enormous variety of animals, including pigeons (Rayburn-Reeves et al., 2013 ), mice (Amodeo et al., 2012 ), rats (Evenden and Robbins, 1983 ), and monkeys (Lee et al., 2004 ). The sensorimotor systems, including the striatum, are largely phylogenetically conserved in mammals (Johnston et al., 1990 ). If lose-shift is mediated by this conserved structure, we expect it to present in many species. We propose that the reason rats lose-shift more on the analogous task (68 ± 1%; Gruber and Thapa, 2016 ) is that they have a more primitive PFC that does not hold the same level of cognitive control over sensorimotor systems, leaving them to rely more on this reflex responding. 
+We cannot rule out possible PFC contributions to performance other than sensorimotor suppression. The PFC mediates many computations used in decisions. For instance, humans with lesions in the ventromedial PFC (vmPFC) show impaired decisions involving future consequences (Bechara et al., 1994 ), and the orbitofrontal region of PFC appears to be important for decisions based on reward magnitude (Rogers et al., 1999 ). The task used here, however, does not require such computations. The vmPFC does activate during guessing (Elliott et al., 1999 ), which may be relevant in our task. On the other hand, another study showed no activation of the PFC during WSLS responses in a two-choice prediction task using fMRI (Paulus et al., 2001 ). This latter study is consistent with our proposal that WSLS is mediated predominantly by the striatum. 
+The dorsolateral PFC (dlPFC) is likely involved in performance on the present task. The cognitive control mediated by this region is exerted through both proactive and reactive strategies (Paxton et al., 2008 ; Braver et al., 2009 ). For instance, it exerts behavioral proactive inhibition via the putamen (Smittenaar et al., 2013 ). Furthermore, the dlPFC-dorsal striatum circuit is activated when participants are suppressing the tendency to claim an immediate reward in lieu of a larger delayed one (Tanaka et al., 2006 ). This circuit is engaged when participants need to employ a strategy based on past choices and reinforcements to maximize their rewards. Conversely, when previous decisions have no influence over the outcome, the OFC-ventral striatum loop is activated (Tanaka et al., 2006 ). These results support the hypothesis that the PFC normally inhibits the reflex of lose-shift, but when it is engaged in another highly demanding task, it releases the brake on the sensorimotor system and allows it to exert control over behavior. 
+The relatively late development of cognitive control in young children has been linked to the late neurobiological development of the PFC, which likely accounts for their relatively poor performance in various tasks as compared to adults (Diamond, 1988 ; Zelazo et al., 1996 ; Hooper, 2004 ). Children have deficits in inhibiting inappropriate responses, which correlate with a lack of activation of the PFC (Bunge et al., 2002 ). Inadequate response inhibition, along with working memory deficits, have been reported in adolescents (ages 9–17) performing the IGT (Hooper, 2004 ). In another study, however, healthy 12–14 year olds are reported to perform similarly to healthy adults in the IGT (Ernst et al., 2003 ). Such discrepancies likely involve the ongoing, and highly variable, development of PFC prior to adulthood (Adleman et al., 2002 ). In our task, the 11–13 year old group performs at an intermediary level between the control adults and the 5–9 year olds. We acknowledge that our relatively small sample size does not allow us to make any definitive statements, but we speculate that the data reflects that the level of development of executive functions in the older children surpasses the one of the 5–9 year old group. 
+In addition to cognitive control, the development of the human brain also affects systems involved in learning from reinforcements. A recent study examined the functional connectivity between the medial PFC and the striatum in participants between the ages of 8 and 22 performing a reinforcement learning task (van den Bos et al., 2012 ). They found that as age progresses, participants are less influenced by negative feedback, suggesting that adults utilize lose-shift responding less than children. These differences in adaptive learning are correlated with the strength of the functional connectivity between the ventral part of the putamen and mPFC. This corroborates our findings. 
+In conclusion, lose-shift responding appears to be a reflexive response strategy in humans that is normally suppressed by executive functions of the PFC. It is easily measured with little or no subject awareness, and may be a useful metric for determining the governance of PFC in decisions. Lose-shift responding has a prominent effect on trial-by-trial choice adaptation, particularly when ITIs are short and executive systems are otherwise occupied or impaired. It is therefore an important component to include in theories and computational models of choice, and a potential confound in behavioral experiments in humans. 
+Author Contributions 
+VEI was involved in all parts of the project, with support from PJB for data collection and software design, KG for data collection, and with substantial input from AJG for data analysis and writing the manuscript. PJB is now at McMaster University, ON, Canada. 
+Conflict of Interest Statement 
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. 
+Acknowledgments 
+We would like to thank Ali Briggs for helping with data collection, and the reviewers for helpful suggestions. 
+Footnotes 
+ Funding. This research was supported by the Natural Sciences and Engineering Research Council (NSERC) Discovery Grant, the Alberta Gambling Research Institute, University of Alberta and the BranchOut Neurological Foundation. 
+References 
+ Adleman N. E., Menon V., Blasey C. M., White C. D., Warsofsky I. S., Glover G. H., et al. (2002). A developmental fMRI study of the stroop color-word task. Neuroimage
+16, 61–75. 10.1006/nimg.2001.1046 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Amodeo D. A., Jones J. H., Sweeney J. A., Ragozzino M. E. (2012). Differences in BTBR T+ tf/J and C57BL/6J mice on probabilistic reversal learning and stereotyped behaviors. Behav. Brain Res.
+227, 64–72. 10.1016/j.bbr.2011.10.032 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Balleine B. W., O’Doherty J. P. (2009). Human and rodent homologies in action control: corticostriatal determinants of goal-directed and habitual action. Neuropsychopharmacology
+35, 48–69. 10.1038/npp.2009.131 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Barraclough D. J., Conroy M. L., Lee D. (2004). Prefrontal cortex and decision making in a mixed-strategy game. Nat. Neurosci.
+7, 404–410. 10.1038/nn1209 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Bechara A., Damasio A. R., Damasio H., Anderson S. W. (1994). Insensitivity to future consequences following damage to human prefrontal cortex. Cognition
+50, 7–15. 10.1016/0010-0277(94)90018-3 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Berman K. F., Ostrem J. L., Randolph C., Gold J., Goldberg T. E., Coppola R., et al. (1995). Physiological activation of a cortical network during performance of the Wisconsin Card Sorting Test: a positron emission tomography study. Neuropsychologia
+33, 1027–1046. 10.1016/0028-3932(95)00035-2 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Braver T. S., Paxton J. L., Locke H. S., Barch D. M. (2009). Flexible neural mechanisms of cognitive control within human prefrontal cortex. Proc. Natl. Acad. Sci. U S A
+106, 7351–7356. 10.1073/pnas.0808187106 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Brown L. A., Shumway-Cook A., Woollacott M. H. (1999). Attentional demands and postural recovery: the effects of aging. J. Gerontol. A Biol. Sci. Med. Sci.
+54, M165–M171. 10.1093/gerona/54.4.m165 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Bunge S. A., Dudukovic N. M., Thomason M. E., Vaidya C. J., Gabrieli J. D. E. (2002). Immature frontal lobe contributions to cognitive control in children: evidence from fMRI. Neuron
+33, 301–311. 10.1016/S0896-6273(01)00583-9 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Burbaud P., Degreze P., Lafon P., Franconi J. M., Bouligand B., Bioulac B., et al. (1995). Lateralization of prefrontal activation during internal mental calculation: a functional magnetic resonance imaging study. J. Neurophysiol.
+74, 2194–2200. 10.1152/jn.1995.74.5.2194 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Curtis C. E., D’Esposito M. (2003). Persistent activity in the prefrontal cortex during working memory. Trends Cogn. Sci.
+7, 415–423. 10.1016/s1364-6613(03)00197-9 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Dalley J. W., Everitt B. J., Robbins T. W. (2011). Impulsivity, compulsivity, and top-down cognitive control. Neuron
+69, 680–694. 10.1016/j.neuron.2011.01.020 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Danckert J., Stöttinger E., Quehl N., Anderson B. (2012). Right hemisphere brain damage impairs strategy updating. Cereb. Cortex
+22, 2745–2760. 10.1093/cercor/bhr351 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ de Bruin J. P. C., Sànchez-Santed F., Heinsbroek R. P. W., Donker A., Postmes P. (1994). A behavioural analysis of rats with damage to the medial prefrontal cortex using the Morris water maze: evidence for behavioural flexibility, but not for impaired spatial navigation. Brain Res.
+652, 323–333. 10.1016/0006-8993(94)90243-7 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Deets A. C. (1970). Effects of intertrial interval and Trial 1 reward during acquisition of an object-discrimination learning set in monkeys. J. Comp. Physiol. Psychol.
+73, 501–505. 10.1037/h0030231 [ DOI ] [ Google Scholar ] 
+ Diamond A. (1988). Abilities and neural mechanisms underlying AB performance. Child Dev.
+59, 523–527. 10.2307/1130330 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Elliott R., Rees G., Dolan R. J. (1999). Ventromedial prefrontal cortex mediates guessing. Neuropsychologia
+37, 403–411. 10.1016/s0028-3932(98)00107-9 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Ernst M., Grant S. J., London E. D., Contoreggi C. S., Kimes A. S., Spurgeon L. (2003). Decision making in adolescents with behavior disorders and adults with substance abuse. Am. J. Psychiatry
+160, 33–40. 10.1176/appi.ajp.160.1.33 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Evenden J. L., Robbins T. W. (1983). Dissociable effects of d-amphetamine, chlordiazepoxide and α-flupenthixol on choice and rate measures of reinforcement in the rat. Psychopharmacology
+79, 180–186. 10.1007/bf00427808 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Fuster J. M. (2002). Frontal lobe and cognitive development. J. Neurocytol.
+31, 373–385. 10.1023/A:1024190429920 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Garavan H., Ross T. J., Murphy K., Roche R. A. P., Stein E. A. (2002). Dissociable executive functions in the dynamic control of behavior: inhibition, error detection, and correction. Neuroimage
+17, 1820–1829. 10.1006/nimg.2002.1326 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Gogtay N., Giedd J. N., Lusk L., Hayashi K. M., Greenstein D., Vaituzis A. C., et al. (2004). Dynamic mapping of human cortical development during childhood through early adulthood. Proc. Natl. Acad. Sci. U S A
+101, 8174–8179. 10.1073/pnas.0402680101 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Gruber A. J., McDonald R. J. (2012). Context, emotion, and the strategic pursuit of goals: interactions among multiple brain systems controlling motivated behavior. Front. Behav. Neurosci.
+6:50. 10.3389/fnbeh.2012.00050 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Gruber A. J., Thapa R. (2016). The memory trace supporting lose-shift responding decays rapidly after reward omission and is distinct from other learning mechanisms in rats. eNeuro
+3:ENEURO.0167-16.2016. 10.1523/ENEURO.0167-16.2016 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Gruber A. J., Thapa R., Randolph S. H. (2017). Feeder approach between trials is increased by uncertainty and affects subsequent choices. eNeuro
+4:ENEURO.0437-17.2017. 10.1523/eneuro.0437-17.2017 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Hayden B. Y., Platt M. L. (2009). Gambling for Gatorade: risk-sensitive decision making for fluid rewards in humans. Anim. Cogn.
+12, 201–207. 10.1007/s10071-008-0186-8 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Hooper C. J. (2004). Adolescents′ performance on the iowa gambling task: implications for the development of decision making and ventromedial prefrontal cortex. Dev. Psychol.
+40, 1148–1158. 10.1037/0012-1649.40.6.1148 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Ingram H. A., van Donkelaar P., Cole J., Vercher J. L., Gauthier G. M., Miall R. C. (2000). The role of proprioception and attention in a visuomotor adaptation task. Exp. Brain Res.
+132, 114–126. 10.1007/s002219900322 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Jahanshahi M., Dirnberger G., Fuller R., Frith C. D. (2000). The role of the dorsolateral prefrontal cortex in random number generation: a study with positron emission tomography. Neuroimage
+12, 713–725. 10.1006/nimg.2000.0647 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Jahanshahi M., Profice P., Brown R. G., Ridding M. C., Dirnberger G., Rothwell J. C. (1998). The effects of transcranial magnetic stimulation over the dorsolateral prefrontal cortex on suppression of habitual counting during random number generation. Brain
+121, 1533–1544. 10.1093/brain/121.8.1533 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Johnston J. G., Gerfen C. R., Haber S. N., van der Kooy D. (1990). Mechanisms of striatal pattern formation: conservation of mammalian compartmentalization. Dev. Brain Res.
+57, 93–102. 10.1016/0165-3806(90)90189-6 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Kane M. J., Engle R. W. (2002). The role of prefrontal cortex in working-memory capacity, executive attention, and general fluid intelligence: an individual-differences perspective. Psychon. Bull. Rev.
+9, 637–671. 10.3758/bf03196323 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Knoch D., Brugger P., Regard M. (2005). Suppressing versus releasing a habit: frequency-dependent effects of prefrontal transcranial magnetic stimulation. Cereb. Cortex
+15, 885–887. 10.1093/cercor/bhh196 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Kolb B. (1984). Functions of the frontal cortex of the rat: a comparative review. Brain Res. Rev.
+8, 65–98. 10.1016/0165-0173(84)90018-3 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Lee D., Conroy M. L., McGreevy B. P., Barraclough D. J. (2004). Reinforcement learning and decision making in monkeys during a competitive game. Cogn. Brain Res.
+22, 45–58. 10.1016/j.cogbrainres.2004.07.007 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Moore T. L., Schettler S. P., Killiany R. J., Rosene D. L., Moss M. B. (2009). Effects on executive function following damage to the prefrontal cortex in the rhesus monkey. Behav. Neurosci.
+123, 231–241. 10.1037/a0014723 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Munakata Y., Snyder H. R., Chatham C. H. (2012). Developing cognitive control: three key transitions. Curr. Dir. Psychol. Sci.
+21, 71–77. 10.1177/0963721412436807 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Nowak M., Sigmund K. (1993). A strategy of win-stay, lose-shift that outperforms tit-for-tat in the Prisoner’s Dilemma game. Nature
+364, 56–58. 10.1038/364056a0 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Passingham R. E., Wise S. P. (2012). The Neurobiology of the Prefrontal Cortex: Anatomy, Evolution, and the Origin of Insight.
+Oxford: Oxford University Press. [ Google Scholar ] 
+ Paulus M. P., Hozack N., Zauscher B., McDowell J. E., Frank L., Brown G. G., et al. (2001). Prefrontal, parietal, and temporal cortex networks underlie decision-making in the presence of uncertainty. Neuroimage
+13, 91–100. 10.1006/nimg.2000.0667 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Paxton J. L., Barch D. M., Racine C. A., Braver T. S. (2008). Cognitive control, goal maintenance, and prefrontal function in healthy aging. Cereb. Cortex
+18, 1010–1028. 10.1093/cercor/bhm135 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Posch M. (1999). Win-Stay, lose-shift strategies for repeated games—memory length, aspiration levels and noise. J. Theor. Biol.
+198, 183–195. 10.1006/jtbi.1999.0909 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Ragozzino M. E. (2007). The contribution of the medial prefrontal cortex, orbitofrontal cortex, and dorsomedial striatum to behavioral flexibility. Ann. N Y Acad. Sci.
+1121, 355–375. 10.1196/annals.1401.013 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Rayburn-Reeves R. M., Laude J. R., Zentall T. R. (2013). Pigeons show near-optimal win-stay/lose-shift performance on a simultaneous-discrimination, midsession reversal task with short intertrial intervals. Behav. Processes
+92, 65–70. 10.1016/j.beproc.2012.10.011 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Rogers R. D., Owen A. M., Middleton H. C., Williams E. J., Pickard J. D., Sahakian B. J., et al. (1999). Choosing between small, likely rewards and large, unlikely rewards activates inferior and orbital prefrontal cortex. J. Neurosci.
+19, 9029–9038. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Seo H., Barraclough D. J., Lee D. (2007). Dynamic signals related to choices and outcomes in the dorsolateral prefrontal cortex. Cereb. Cortex
+17, i110–i117. 10.1093/cercor/bhm064 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Skelin I., Hakstol R., VanOyen J., Mudiayi D., Molina L. A., Holec V., et al. (2014). Lesions of dorsal striatum eliminate lose-switch responding but not mixed-response strategies in rats. Eur. J. Neurosci.
+39, 1655–1663. 10.1111/ejn.12518 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Smittenaar P., Guitart-Masip M., Lutti A., Dolan R. J. (2013). Preparing for selective inhibition within frontostriatal loops. J. Neurosci.
+33, 18087–18097. 10.1523/JNEUROSCI.2167-13.2013 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Sowell E. R., Thompson P. M., Holmes C. J., Batth R., Jernigan T. L., Toga A. W. (1999). Localizing age-related changes in brain structure between childhood and adolescence using statistical parametric mapping. Neuroimage
+9, 587–597. 10.1006/nimg.1999.0436 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Tanaka S. C., Samejima K., Okada G., Ueda K., Okamoto Y., Yamawaki S., et al. (2006). Brain mechanism of reward prediction under predictable and unpredictable environmental dynamics. Neural Netw.
+19, 1233–1241. 10.1016/j.neunet.2006.05.039 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ van den Bos W., Cohen M. X., Kahnt T., Crone E. A. (2012). Striatum-medial prefrontal cortex connectivity predicts developmental changes in reinforcement learning. Cereb. Cortex
+22, 1247–1255. 10.1093/cercor/bhr198 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ] 
+ Vansteensel M. J., Hermes D., Aarnoutse E. J., Bleichner M. G., Schalk G., van Rijen P. C., et al. (2010). Brain-computer interfacing based on cognitive control. Ann. Neurol.
+67, 809–816. 10.1002/ana.21985 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Vickery T. J., Chun M. M., Lee D. (2011). Ubiquity and specificity of reinforcement signals throughout the human brain. Neuron
+72, 166–177. 10.1016/j.neuron.2011.08.011 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Voorn P., Vanderschuren L. J. M. J., Groenewegen H. J., Robbins T. W., Pennartz C. M. A. (2004). Putting a spin on the dorsal-ventral divide of the striatum. Trends Neurosci.
+27, 468–474. 10.1016/j.tins.2004.06.006 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Worthy D. A., Hawthorne M. J., Otto A. R. (2013). Heterogeneity of strategy use in the Iowa gambling task: a comparison of win-stay/ lose-shift and reinforcement learning models. Psychon. Bull. Rev.
+20, 364–371. 10.3758/s13423-012-0324-9 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Zelazo P. D., Craik F. I. M., Booth L. (2004). Executive function across the life span. Acta Psychol. Amst.
+115, 167–183. 10.1016/j.actpsy.2003.12.005 [ DOI ] [ PubMed ] [ Google Scholar ] 
+ Zelazo P. D., Frye D., Rapus T. (1996). An age-related dissociation between knowing rules and using them. Cogn. Dev.
+11, 37–63. 10.1016/s0885-2014(96)90027-1 [ DOI ] [ Google Scholar ] 
+Articles from Frontiers in Integrative Neuroscience are provided here courtesy of Frontiers Media SA 
+ACTIONS 
+ View on publisher site 
+ PDF (1.2 MB) 
+ Cite 
+ Collections 
+ Permalink 
+PERMALINK 
+ Copy 
+RESOURCES 
+ Similar articles
+ Cited by other articles
+ Links to NCBI Databases
+Cite 
+ Copy 
+ Download .nbib 
+ .nbib 
+ Format: 
+ AMA
+ APA
+ MLA
+ NLM
+Add to Collections 
+ Create a new collection 
+ Add to an existing collection 
+ Name your collection
+ * 
+ Choose a collection
+ Unable to load your collection due to an error
+ Please try again 
+ Add
+ Cancel
+ Follow NCBI
+ NCBI on X (formerly known as Twitter) 
+ NCBI on Facebook 
+ NCBI on LinkedIn 
+ NCBI on GitHub 
+ NCBI RSS feed 
+ Connect with NLM
+ NLM on X (formerly known as Twitter) 
+ NLM on Facebook 
+ NLM on YouTube 
+ National Library of Medicine
+ 8600 Rockville Pike
+ Bethesda, MD 20894 
+ Web Policies
+ FOIA
+ HHS Vulnerability Disclosure
+ Help
+ Accessibility
+ Careers
+ NLM
+ NIH
+ HHS
+ USA.gov
+ Back to Top 
